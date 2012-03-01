@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>Selenium_Testlink</groupId>
+        <artifactId>Selenium_Testlink</artifactId>
+        <version>1.0</version>
+       
+       <dependencies>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>2.19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.10</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>logging-selenium</groupId>
+                <artifactId>logging-selenium</artifactId>
+                <version>1.2</version>
+                <scope>system</scope>
+                <systemPath>/Users/georgegaspar/Selenium-Server-2.18/logging-selenium-1.2.jar</systemPath>
+            </dependency>
+            <dependency>
+                <groupId>selenium-java</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>2.18.0</version>
+                <scope>system</scope>
+                <systemPath>/Users/georgegaspar/Selenium-Server-2.18/selenium-2.18.0/selenium-java-2.18.0.jar</systemPath>
+            </dependency>
+            <dependency>
+                <groupId>selenium-java</groupId>
+                <artifactId>testlink-java-api</artifactId>
+                <version>1.9.3-1</version>
+                <scope>system</scope>
+                <systemPath>/Users/georgegaspar/testlink-1.9.2/testlink-java-api-1.9.3-1.jar</systemPath>
+            </dependency>
+        </dependencies>
+</project>
+
