@@ -52,7 +52,7 @@ public class TestRedmineLogin {
 
      private static final String DEFAULT_TIMEOUT = "30000";
 
-     private static final String TEBA_URL = "http://redmine.local:8080/redmine/";
+     private static final String TEBA_URL = "http://redmine.local:8080";
 
      private static final String SCREENSHOT_PATH = "Screenshots";
   
@@ -195,7 +195,7 @@ public class TestRedmineLogin {
 	public void testRedmineLogin() throws InterruptedException, ParseException {
         selenium.setContext("MyFirstTestcase()");
         
-		selenium.open("/");
+		selenium.open("/redmine");
 
 		selenium.captureScreenshot(screenshotsResultsPath
                  + File.separator
