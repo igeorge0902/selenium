@@ -86,7 +86,7 @@ public class TestRedmineLogin {
     
      public void CreateNewInsatnce(){
     	 
-     String url = "http://localhost:8080/testlink/lib/api/xmlrpc.php";
+     String url = "http://localhost/testlink/lib/api/xmlrpc.php";
      String devKey = "962b935af54b4516f6124bd311c143dc";
      TestLinkAPI api = null;
      
