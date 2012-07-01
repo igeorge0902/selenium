@@ -52,7 +52,7 @@ public class TestRedmineLogin {
 
      private static final String DEFAULT_TIMEOUT = "30000";
 
-     private static final String TEBA_URL = "http://redmine.local:8080";
+     private static final String TEBA_URL = "http://redmine.local";
 
      private static final String SCREENSHOT_PATH = "Screenshots";
   
@@ -100,7 +100,7 @@ public class TestRedmineLogin {
     
      public void CreateNewInsatnce() throws TestLinkAPIException{
     	 
-     String url = "http://localhost:8080/testlink/lib/api/xmlrpc.php";
+     String url = "http://localhost/testlink/lib/api/xmlrpc.php";
      String devKey = "962b935af54b4516f6124bd311c143dc";
      TestLinkAPI api = null;
      
