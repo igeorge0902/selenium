@@ -100,7 +100,7 @@ public class TestRedmineLogin {
     
      public void CreateNewInsatnce() throws TestLinkAPIException{
     	 
-     String url = "http://localhost/testlink/lib/api/xmlrpc.php";
+     String url = "https://localhost/testlink/lib/api/xmlrpc.php";
      String devKey = "962b935af54b4516f6124bd311c143dc";
      TestLinkAPI api = null;
      
