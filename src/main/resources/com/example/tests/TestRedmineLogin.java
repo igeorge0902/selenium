@@ -38,7 +38,7 @@ public class TestRedmineLogin {
 
      private static final String DEFAULT_TIMEOUT = "30000";
 
-     private static final String TEBA_URL = "http://localhost:3000";
+     private static final String TEBA_URL = "http://redmine.local";
 
      private static final String SCREENSHOT_PATH = "Screenshots";
   
