@@ -11,7 +11,7 @@
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>2.19.0</version>
+                <version>2.24.1</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
@@ -25,13 +25,6 @@
                 <version>1.2</version>
                 <scope>system</scope>
                 <systemPath>/Users/georgegaspar/Selenium-Server-2.18/logging-selenium-1.2.jar</systemPath>
-            </dependency>
-            <dependency>
-                <groupId>selenium-java</groupId>
-                <artifactId>selenium-java</artifactId>
-                <version>2.18.0</version>
-                <scope>system</scope>
-                <systemPath>/Users/georgegaspar/Selenium-Server-2.18/selenium-2.18.0/selenium-java-2.18.0.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>selenium-java</groupId>
