@@ -50,7 +50,7 @@ public class TestRedmineLogin {
 
      private static final String RESULT_FILE_ENCODING = "UTF-8";
 
-     private static final String DEFAULT_TIMEOUT = "600000";
+     private static final String DEFAULT_TIMEOUT = "500000";
 
      private static final String TEBA_URL = "http://redmine.local";
 
