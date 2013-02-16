@@ -90,7 +90,7 @@ public class TestRedmineLogin {
           // has to be "/" as this is a URI
           
           htmlFormatter.setAutomaticScreenshotPath(screenshotsResultsPath);
-          LoggingCommandProcessor myProcessor = new LoggingCommandProcessor(new HttpCommandProcessor("localhost", 4444, "*firefox",
+          LoggingCommandProcessor myProcessor = new LoggingCommandProcessor(new HttpCommandProcessor("localhost", 4444, "*chrome",
                   TEBA_URL), htmlFormatter);
           myProcessor.setExcludedCommands(new String[] {});
           selenium = new LoggingDefaultSelenium(myProcessor);
