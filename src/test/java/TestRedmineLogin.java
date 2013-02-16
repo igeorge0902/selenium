@@ -96,6 +96,8 @@ public class TestRedmineLogin {
           selenium = new LoggingDefaultSelenium(myProcessor);
           
           selenium.start();
+          
+          selenium.windowMaximize();
 	}
     
      public void CreateNewInsatnce() throws TestLinkAPIException{
