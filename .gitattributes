@@ -11,10 +11,6 @@ src/main/resources/com/example/tests/TebaLogin.java -text
 src/main/resources/com/example/tests/TestRedmineLogin.java -text
 src/test/java/TestRedmineLogin.java -text
 src/test/resources/suite.xml -text
-target/classes/com/example/tests/GoogleTest.java -text
-target/classes/com/example/tests/RedmineLogin.java -text
-target/classes/com/example/tests/TebaLogin.java -text
-target/classes/com/example/tests/TestRedmineLogin.java -text
 target/classes/main/resources/com/example/tests/GoogleTest.class -text
 target/classes/main/resources/com/example/tests/RedmineLogin.class -text
 target/classes/main/resources/com/example/tests/TebaLogin.class -text
