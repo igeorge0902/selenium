@@ -207,7 +207,14 @@ public class TestRedmineLogin {
 		
 		assertEquals("Expected page title not found", "Redmine", selenium.getTitle(), selenium);
 		
-		selenium.click("css=a.login");
+		//selenium.click("css=a.login");
+		
+		if(selenium.isElementPresent("css=a.login")) {
+		    selenium.click("css=a.login");
+		} else {
+		    System.out.printf("Element: " +"css=a.login"+ " is not available on page.");
+		}
+		
 		selenium.waitForPageToLoad(DEFAULT_TIMEOUT);
 		selenium.type("id=username", "gygaspar");
 		selenium.type("id=password", "Bugsbunny666");
