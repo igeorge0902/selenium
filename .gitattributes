@@ -12,6 +12,3 @@ target/classes/com/example/tests/GoogleTest.java -text
 target/surefire-reports/TEST-test.java.TestRedmineLogin.xml -text
 target/surefire-reports/test.java.TestRedmineLogin.txt -text
 target/test-classes/suite.xml -text
-target/test-classes/test/java/TestRedmineLogin$TestCaseExecutor.class -text
-target/test-classes/test/java/TestRedmineLogin$TestPlanPrepare.class -text
-target/test-classes/test/java/TestRedmineLogin.class -text
