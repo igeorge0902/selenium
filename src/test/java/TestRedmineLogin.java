@@ -232,7 +232,7 @@ public class TestRedmineLogin {
 	    */
 
 		if(selenium.isElementPresent("css=a.logout")) {
-		    selenium.click("css=a.login");
+		    selenium.click("css=a.logout");
 		} else {
 		    System.out.printf("Element: " +"css=a.logout"+ " is not available on page.");
 		}
