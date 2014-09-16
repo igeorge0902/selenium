@@ -198,14 +198,14 @@ public class TestRedmineLogin {
         selenium.setContext("MyFirstTestcase()");
         
 		selenium.open("/redmine");
-
-		selenium.captureScreenshot(screenshotsResultsPath
-                 + File.separator
-                 + "redmine_test"
-                 + LoggingUtils.timeStampForFileName()
-                 + ".png");
 		
 		assertEquals("Expected page title not found", "Redmine", selenium.getTitle(), selenium);
+		
+		selenium.captureScreenshot(screenshotsResultsPath
+                + File.separator
+                + "redmine_test"
+                + LoggingUtils.timeStampForFileName()
+                + ".png");
 		
 		//selenium.click("css=a.login");
 		
