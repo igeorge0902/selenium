@@ -6,15 +6,9 @@
 /pom[!!-~]copy.xml -text
 /pom.xml -text
 src/main/resources/com/example/tests/GoogleTest.java -text
-src/main/resources/com/example/tests/RedmineLogin.java -text
-src/main/resources/com/example/tests/TebaLogin.java -text
-src/main/resources/com/example/tests/TestRedmineLogin.java -text
 src/test/java/TestRedmineLogin.java -text
 src/test/resources/suite.xml -text
 target/classes/com/example/tests/GoogleTest.java -text
-target/classes/com/example/tests/RedmineLogin.java -text
-target/classes/com/example/tests/TebaLogin.java -text
-target/classes/com/example/tests/TestRedmineLogin.java -text
 target/classes/test/java/TestRedmineLogin$TestCaseExecutor.class -text
 target/classes/test/java/TestRedmineLogin$TestPlanPrepare.class -text
 target/classes/test/java/TestRedmineLogin.class -text

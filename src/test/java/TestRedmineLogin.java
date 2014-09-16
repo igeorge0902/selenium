@@ -52,7 +52,7 @@ public class TestRedmineLogin {
 
      private static final String DEFAULT_TIMEOUT = "600000";
 
-     private static final String TEBA_URL = "http://redmine.local";
+     private static final String TEBA_URL = "https://localhost";
 
      private static final String SCREENSHOT_PATH = "Screenshots";
   
@@ -90,7 +90,7 @@ public class TestRedmineLogin {
           // has to be "/" as this is a URI
           
           htmlFormatter.setAutomaticScreenshotPath(screenshotsResultsPath);
-          LoggingCommandProcessor myProcessor = new LoggingCommandProcessor(new HttpCommandProcessor("localhost", 4444, "*chrome",
+          LoggingCommandProcessor myProcessor = new LoggingCommandProcessor(new HttpCommandProcessor("localhost", 4444, "*firefox",
                   TEBA_URL), htmlFormatter);
           myProcessor.setExcludedCommands(new String[] {});
           selenium = new LoggingDefaultSelenium(myProcessor);
