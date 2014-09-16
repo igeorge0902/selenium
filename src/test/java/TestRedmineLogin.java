@@ -231,7 +231,13 @@ public class TestRedmineLogin {
 		}
 	    */
 
-		for (int second = 0;; second++) {
+		if(selenium.isElementPresent("css=a.logout")) {
+		    selenium.click("css=a.login");
+		} else {
+		    System.out.printf("Element: " +"css=a.logout"+ " is not available on page.");
+		}
+		
+		/*for (int second = 0;; second++) {
 			if (second >= 120) fail("timeout");
 			try { if (selenium.isVisible("css=a.logout")) 
 				
@@ -239,43 +245,29 @@ public class TestRedmineLogin {
 			Thread.sleep(10000);
 			
 		}
+		*/
 		
 
-		
-/*
-		int second = 0;
-		while(second > 120 && !selenium.isVisible("css=button.x-btn-text")){
-			Thread.sleep(1000);
-			second++;
-		}
-*/
-		
 		assertTrue("not found", selenium.isVisible("css=a.logout"), selenium);
 	
 
+		 //If element is available on page then perform click operation.
 		
-        //If element is available on page then perform click operation.
-		
-		if(selenium.isVisible("css=a.logout")) {
+		/*if(selenium.isVisible("css=a.logout")) {
 		   selenium.click("css=a.logout");
 	       } else {
 		    System.out.printf( "Element is not available on page." );}
-		 
-		
-	
+		 */
 		
 	        
-//		public void safeClick(String elementLocator) { 
-//			if(selenium.isVisible("css=button.x-btn-text")) {
-//				selenium.click("css=button.x-btn-text"); 
-//			} else {
+		/*public void safeClick(String elementLocator) { 
+			if(selenium.isVisible("css=button.x-btn-text")) {
+				selenium.click("css=button.x-btn-text"); 
+			} else {
 				// Using the TestNG API for logging
 				//Reporter.log( "Element: " +elementLocator + selenium.getLocation());
-//			}
-		
-
-		//selenium.click("css=button.x-btn-text");
-	    
+			}
+		*/
 		
 		selenium.captureScreenshot(screenshotsResultsPath
                  + File.separator
