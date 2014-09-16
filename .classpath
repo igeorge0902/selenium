@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server-2.18/logging-selenium-1.2.jar" sourcepath="/Users/georgegaspar/apache-maven-3.0.3/Selenium/src"/>
-	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server-2.18/junit4.10/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server-2.18/junit-4.11.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/testlink/EclipsePlugins/testlink-java-api-1.9.3-1.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/testlink/EclipsePlugins/testlink-api-client-2.0.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/testlink/EclipsePlugins/testlink.eclipse.plugin_0.20.9.jar"/>
