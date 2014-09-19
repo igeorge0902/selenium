@@ -8,7 +8,6 @@
 src/main/resources/com/example/tests/GoogleTest.java -text
 src/test/java/TestRedmineLogin.java -text
 src/test/resources/suite.xml -text
-target/classes/com/example/tests/GoogleTest.java -text
 target/surefire-reports/TEST-test.java.TestRedmineLogin.xml -text
 target/surefire-reports/test.java.TestRedmineLogin.txt -text
 target/test-classes/suite.xml -text
