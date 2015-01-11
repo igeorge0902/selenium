@@ -6,6 +6,7 @@ import static com.unitedinternet.portal.selenium.utils.logging.LoggingAssert.ass
 import static org.junit.Assert.*;
 
 import com.thoughtworks.selenium.*;
+import org.openqa.selenium.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -24,21 +25,6 @@ import com.unitedinternet.portal.selenium.utils.logging.LoggingDefaultSelenium;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingResultsFormatter;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingSelenium;
 import com.unitedinternet.portal.selenium.utils.logging.LoggingUtils;
-
-import br.eti.kinoshita.testlinkjavaapi.*;
-
-import testlink.api.java.client.TestLinkAPIException;
-import testlink.api.java.client.tc.autoexec.TestPlan;
-import testlink.api.java.client.TestLinkAPIClient;
-import testlink.api.java.client.TestLinkAPIException;
-import testlink.api.java.client.tc.autoexec.TestCase;
-import testlink.api.java.client.tc.autoexec.TestCaseExecutor;
-import testlink.api.java.client.tc.autoexec.TestPlan;
-import testlink.api.java.client.tc.autoexec.TestPlanPrepare;
-
-
-import org.dbfacade.testlink.eclipse.plugin.*;
-
 
 
 @SuppressWarnings("unused")
@@ -99,98 +85,6 @@ public class TestRedmineLogin {
           
           selenium.windowMaximize();
 	}
-    
-     public void CreateNewInsatnce() throws TestLinkAPIException{
-    	 
-     String url = "https://localhost/testlink/lib/api/xmlrpc.php";
-     String devKey = "1fffc1f9eb38e724a7e8abb617463a05";
-     TestLinkAPI api = null;
-     
-     URL testlinkURL = null;
-     
-     try
-     {
-             testlinkURL = new URL(url);
-     }
-     catch ( MalformedURLException mue )
-     {
-             mue.printStackTrace( System.err );
-             System.exit(-1);
-     }
-     
-     api = new TestLinkAPI(testlinkURL, devKey);
-     
-     
-     System.out.println(api.ping());
-     
-     }
-     
-     public interface TestPlanPrepare
-     {
-           /**
-            * Optionally made available by callers to the interface
-            *
-            * @param directory
-            */
-           public void setExternalPath(String path);
-           /**
-            * Optionally made available by callers to the interface
-            *
-            * @param user
-            */
-           public void setTCUser(String igeorge1982);
-           /**
-            * Make changes to the contents of the test plan and test cases.
-            *
-            * @param plan
-            * @return A test plan which has had the executors set for each test case.
-            *
-            */
-           public TestPlan adjust(
-                 TestLinkAPIClient apiClient,
-                 TestPlan plan) throws TestLinkAPIException;
-     }
-     
-     public interface TestCaseExecutor
-     {
-           // Results
-           public static final short RESULT_UNKNOWN = -1;
-           public static final short RESULT_PASSED = 0;
-           public static final short RESULT_FAILED = 1;
-           public static final short RESULT_BLOCKED = 2;
-           // States
-           public static final short STATE_READY = 100;
-           public static final short STATE_RUNNING = 101;
-           public static final short STATE_BOMBED = 102;
-           public static final short STATE_COMPLETED = 103;
-           public static final short STATE_RESET = 104;
-           /**
-            * Get the state of the execution
-            *
-            * @return
-            */
-           public short getExecutionState();
-           /**
-            * Set the new state of the executor
-            *
-            * @param newState
-            */
-           public void setExecutionState(
-                 short newState);
-           /**
-            * Return the result state of the test case execution.
-            *
-            * @return The result of the test case. Implementers should set the initial
-     status to UNKNOWN.
-            */
-           public short getExecutionResult();
-           /**
-            * Set the results of the test from an external source.
-            *
-            * @param result
-            */
-   
-     }
      
 
 	@Test /*(expected=AssertionError.class)*/
@@ -200,6 +94,11 @@ public class TestRedmineLogin {
 		selenium.open("/redmine");
 		
 		assertEquals("Expected page title not found", "Redmine", selenium.getTitle(), selenium);
+		
+		if (selenium instanceof JavascriptExecutor) {
+			((JavascriptExecutor) selenium)
+				.executeScript("alert('hello world');");
+		}
 		
 		selenium.captureScreenshot(screenshotsResultsPath
                 + File.separator
