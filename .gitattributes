@@ -6,8 +6,8 @@
 /pom[!!-~]copy.xml -text
 /pom.xml -text
 src/main/resources/com/example/tests/GoogleTest.java -text
+src/test/java/TestRedmine.java -text
 src/test/java/TestRedmineLogin.java -text
 src/test/java/google.java -text
 src/test/resources/suite.xml -text
-target/classes/com/example/tests/GoogleTest.java -text
 target/test-classes/suite.xml -text
