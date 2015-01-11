@@ -83,7 +83,6 @@ public class TestRedmineLogin {
           
           selenium.start();
           
-          selenium.windowMaximize();
 	}
      
 
