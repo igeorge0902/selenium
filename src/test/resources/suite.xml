@@ -3,9 +3,9 @@
 <suite name="My test suite" verbose="1" parallel="false" thread-count="2"
     data-provider-thread-count="3">
 
-    <test name="TestRedmineLogin">
+    <test name="TestTest">
         <classes>
-            <class name="TestRedmineLogin"></class>
+            <class name="TestTest"></class>
            </classes>
     </test>
  
