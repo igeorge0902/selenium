@@ -94,11 +94,6 @@ public class TestRedmineLogin {
 		
 		assertEquals("Expected page title not found", "Redmine", selenium.getTitle(), selenium);
 		
-		if (selenium instanceof JavascriptExecutor) {
-			((JavascriptExecutor) selenium)
-				.executeScript("alert('hello world');");
-		}
-		
 		selenium.captureScreenshot(screenshotsResultsPath
                 + File.separator
                 + "redmine_test"
