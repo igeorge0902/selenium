@@ -30,20 +30,21 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
+import org.eclipse.jetty.util.log.Log;
 
 
-@Listeners(CaptureScreenshotOnFailureListener.class)
+@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
 
 
-
-public class TestTest /*extends WebComponent*/{
+public class TestTest extends TestBase {
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
   private static WebDriver driver;
-  private static WebElement element;
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
+
+
 
   /*
   @BeforeMethod
@@ -86,7 +87,8 @@ public class TestTest /*extends WebComponent*/{
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
-  /*
+  
+ /*
   @Test
   public void test1() throws Exception {
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
@@ -129,6 +131,7 @@ public class TestTest /*extends WebComponent*/{
   }
   
   
+  
   @Test
   public void test2() throws Exception {
     driver.get(BaseUrls.YAHOO.get() + "/?p=us");
@@ -169,18 +172,22 @@ public class TestTest /*extends WebComponent*/{
   
   @Test
   public void testHbogoWebdriverTest1() throws Exception {
+	  
+	  Actions action = new Actions(driver);
+	  	  
 	    driver.get(BaseUrls.HBO.get() + "/group/offers");
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
-
-	    try {
-	      assertTrue(isElementPresent(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
+	    
+	    for (int second = 0;; second++) {
+	    	if (second >= 60) fail("timeout");
+	    	try { if (isElementPresent(By.xpath("(//a[contains(text(),'Sorozatok')])[2]"))) break; } catch (Exception e) {}
+	    	Thread.sleep(1000);
 	    }
+	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.xpath(".//*[@id='slide_categories']/a[2]"))) break; } catch (Exception e) {}
@@ -188,6 +195,7 @@ public class TestTest /*extends WebComponent*/{
 	    }
 
 	    driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")).click();
+	    
 	    driver.findElement(By.id("selection_button")).click();
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -202,57 +210,9 @@ public class TestTest /*extends WebComponent*/{
 	    	Thread.sleep(1000);
 	    }
 
-	    try {
-	      assertTrue(isElementPresent(By.linkText("1. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("2. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("3. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("4. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("50. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("6. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("7. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("8. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("9. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("10. RÉSZ")));
-	    } catch (Error e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    driver.findElement(By.linkText("1. RÉSZ")).click();
+	  
+	    driver.findElement(By.xpath("//html/body/div[9]/div[3]/div[1]/div[1]/div[7]/div[2]/div/div[1]/div/a[1]")).click();
+	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.xpath("//div[@id='content-inner']/div/div/div[2]"))) break; } catch (Exception e) {}
@@ -264,31 +224,24 @@ public class TestTest /*extends WebComponent*/{
 	    	try { if (isElementPresent(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
-	    
-        element = driver.findElement(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"));
-	            
-        Actions action = new Actions(driver);
-        action.moveToElement(element).build().perform();
-	    
-        
-	    try {
-	      assertEquals("Előzetes lejátszása", driver.findElement(By.linkText("Előzetes lejátszása")).getText());
-	    } catch (Exception e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    try {
-	      assertTrue(isElementPresent(By.linkText("Előzetes lejátszása")));
-	    } catch (Exception e) {
-	      verificationErrors.append(e.toString());
-	    }
-	    
-		
+	    	    
+	    WebElement mousehover;
+	    mousehover = driver.findElement(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"));	            
+        action.moveToElement(mousehover).build().perform();        
+        Log.info("Action performed");
+               
+        WebElement playcontent;
+        playcontent = driver.findElement(By.xpath(".//*[@id='play_dropdown']/ul/li/ul/li[2]/a"));        
+        action.click(playcontent).build().perform();        
+        Log.info("Player started");
+    	
 		Reporter.log("Test done | ");
 	    
 	  }
 
   @AfterMethod
 
+ 
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
@@ -297,6 +250,7 @@ public class TestTest /*extends WebComponent*/{
     }
   }
 
+  
   private boolean isElementPresent(By by) {
     try {
       driver.findElement(by);

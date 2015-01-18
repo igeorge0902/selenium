@@ -7,9 +7,9 @@
     <classes>
       <class name="test.java.TestTest">
         <methods>
-          <include name="test2"/>
           <include name="testHbogoWebdriverTest1"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- test.java.TestTest -->
     </classes>
