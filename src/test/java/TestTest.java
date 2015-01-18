@@ -3,76 +3,93 @@ package test.java;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.*;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.TakesScreenshot;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestContext;
 import org.testng.annotations.Listeners;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+
 
 @Listeners(CaptureScreenshotOnFailureListener.class)
 
 
 
-public class TestTest {
+public class TestTest /*extends WebComponent*/{
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
   private static WebDriver driver;
-  private WebElement element;
-  private static String baseUrl;
-  private static String baseUrl2;
-  private static String baseUrl3;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
+  private static WebElement element;
+  private static boolean acceptNextAlert = true;
+  private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
-/*
+
+  /*
   @BeforeMethod
   public void setUp() throws Exception {
+  
 	DOMConfigurator.configure("log4j.xml");
     driver = new FirefoxDriver();
     
     Log.info("New driver instantiated");
     
-    baseUrl = "https://www.google.hu/";
-    baseUrl2 = "https://www.yahoo.com/";
-    baseUrl3 = "https://www.hbogo.hu/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }*/
 
+  public enum BaseUrls {
+	  
+	  GOOGLE("https://www.google.hu/"),
+	  YAHOO("https://www.yahoo.com/"),
+	  HBO("http://www.hbogo.hu/");
+  
+  private String myUrls;
+  
+  BaseUrls (String url) {
+	  myUrls = url;
+  	}
+  public String get() {
+	  return myUrls;
+  	}
+  
+  }
+  
   @BeforeClass
-  public static void setUp(ITestContext context, String FirefoxDriver) throws Exception
+  public static void setUp(ITestContext context) throws Exception
   {
-      // get the web driver parameters from the testng xml file
+	  
+	  // get the web driver parameters from the testng xml file
       String browser = context.getCurrentXmlTest().getParameter("browser");
-      String url         = context.getCurrentXmlTest().getParameter("url");
+      //String url         = context.getCurrentXmlTest().getParameter("url");
 
-      driver = WebDriverManager.startDriver(FirefoxDriver, url, 40);
-      DOMConfigurator.configure("log4j.xml");
-      Log.info("New driver instantiated");
-      
-      baseUrl = "https://www.google.hu/";
-      baseUrl2 = "https://www.yahoo.com/";
-      baseUrl3 = "https://www.hbogo.hu/";
+      driver = WebDriverManager.startDriver(browser, 40);      
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
+  /*
   @Test
   public void test1() throws Exception {
-    driver.get(baseUrl + "?gws_rd=ssl");
+    driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
     if(driver.getTitle().equals("Google"))
     	{
@@ -83,9 +100,11 @@ public class TestTest {
     Log.info("Verification Failed for Title"); 
     }
     
-	assertEquals("Expected page title not found", "Google", driver.getTitle());
+	Assert.assertEquals("Expected page title not found", "Gooogle", driver.getTitle());
 
-    assertTrue(isElementPresent(By.id("gbqfq")));
+    Assert.assertTrue(isElementPresent(By.id("gbqfq")));
+    
+    //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
     
     try{
 	element = driver.findElement (By.id("gbqfq"));
@@ -103,9 +122,7 @@ public class TestTest {
 			.executeScript("alert('hello world');");
 	}
 	
-	driver.quit();
-	 
-    Log.info("Browser closed");
+	
 	
 	Reporter.log("Test done | ");
     
@@ -114,7 +131,7 @@ public class TestTest {
   
   @Test
   public void test2() throws Exception {
-    driver.get(baseUrl2 + "/?p=us");
+    driver.get(BaseUrls.YAHOO.get() + "/?p=us");
     
     if(driver.getTitle().equals("Google"))
     	{
@@ -145,18 +162,14 @@ public class TestTest {
 			.executeScript("alert('hello world');");
 	}
 	
-	driver.quit();
-	 
-    Log.info("Browser closed");
-	
 	Reporter.log("Test done | ");
     
   }
-  
+  */
   
   @Test
   public void testHbogoWebdriverTest1() throws Exception {
-	    driver.get(baseUrl3 + "/group/offers");
+	    driver.get(BaseUrls.HBO.get() + "/group/offers");
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
@@ -269,15 +282,13 @@ public class TestTest {
 	      verificationErrors.append(e.toString());
 	    }
 	    
-		driver.quit();
-		 
-	    Log.info("Browser closed");
 		
 		Reporter.log("Test done | ");
 	    
 	  }
 
   @AfterMethod
+
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();

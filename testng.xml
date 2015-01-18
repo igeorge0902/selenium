@@ -1,0 +1,16 @@
+<suite name="Test Demo Run" verbose="10">
+  <parameter name="browser" value="*firefox" />
+  <parameter name="url" value="http://www.google.com" />
+ 
+  <test name="TestTest" preserve-order="true">
+    <classes>
+      <class name="test.TestTest">
+        <methods>
+          <include name="test1" />
+          <include name="test2" />
+          <include name="testHbogoWebdriverTest1" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

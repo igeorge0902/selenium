@@ -39,6 +39,11 @@
             	<artifactId>testng</artifactId>
             	<version>6.8.8</version>
            	</dependency>
+           	<dependency>
+				<groupId>org.uncommons</groupId>
+				<artifactId>reportng</artifactId>
+				<version>1.1.4</version>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.maven.surefire</groupId>
 				<artifactId>surefire-api</artifactId>

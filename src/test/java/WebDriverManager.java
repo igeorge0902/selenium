@@ -3,6 +3,8 @@ package test.java;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,18 +34,25 @@ public class WebDriverManager
 {
     private static WebDriver driver = null;
     private static String browser = null;
+    private static Logger Log = Logger.getLogger(Logger.class.getName());
+
 
      // Default constructor, no need to extend this just use as a static
     public WebDriverManager()   {
+    	
+    	
     }
 
     /**
      * Static method for starting a webdriver, defaults  the wait time to 30 seconds and the browser to
      * the firefox driver.
      */
-    public static WebDriver startDriver(String browser, String portalUrl, int timeout)
+    public static WebDriver startDriver(String browser, int timeout)
     {
         WebDriverManager.browser = browser;
+        
+        DOMConfigurator.configure("log4j.xml");
+        Log.info("New driver instantiated");
 
         /*
         * Determine what browser were using and start the appropiate driver instance
@@ -58,7 +67,7 @@ public class WebDriverManager
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url
-            driver.get(portalUrl);
+            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
@@ -83,7 +92,7 @@ public class WebDriverManager
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url
-            driver.get(portalUrl);
+            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -133,7 +142,7 @@ public class WebDriverManager
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url
-            driver.get(portalUrl);
+            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -152,7 +161,7 @@ public class WebDriverManager
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url
-            driver.get(portalUrl);
+            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -169,7 +178,7 @@ public class WebDriverManager
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url
-            driver.get(portalUrl);
+            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
