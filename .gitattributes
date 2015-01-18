@@ -33,6 +33,7 @@ test-output/failed.png -text
 test-output/index.html -text
 test-output/jquery-1.7.1.min.js -text
 test-output/junitreports/TEST-test.java.TestTest.xml -text
+test-output/junitreports/TEST-test.java.VerifyTests.xml -text
 test-output/navigator-bullet.png -text
 test-output/old/Default[!!-~]suite/Default[!!-~]test.properties -text
 test-output/old/Default[!!-~]suite/classes.html -text
