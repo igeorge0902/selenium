@@ -35,6 +35,11 @@ public class WebDriverManager
     private static WebDriver driver = null;
     private static String browser = null;
     private static Logger Log = Logger.getLogger(Logger.class.getName());
+	
+	public static int m_numberOfTimes;
+	public WebDriverManager (int numberOfTimes) {
+	    m_numberOfTimes = numberOfTimes;
+	}
 
 
      // Default constructor, no need to extend this just use as a static
@@ -49,7 +54,14 @@ public class WebDriverManager
      */
     public static WebDriver startDriver(String browser, int timeout)
     {
-        WebDriverManager.browser = browser;
+
+    	 
+  	  int m_numberOfTimes = WebDriverManager.m_numberOfTimes;
+		for (int i = 0; i < m_numberOfTimes; i++) {
+			// access the web page
+		}
+		
+    	WebDriverManager.browser = browser;
         
         DOMConfigurator.configure("log4j.xml");
         Log.info("New driver instantiated");

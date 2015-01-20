@@ -26,7 +26,6 @@ import org.testng.annotations.Listeners;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
@@ -37,26 +36,13 @@ import org.eclipse.jetty.util.log.Log;
 
 
 public class TestTest extends TestBase {
-  //FirefoxProfile profile = new FirefoxProfile();
+  FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
+	
   private static WebDriver driver;
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
-
-
-
-  /*
-  @BeforeMethod
-  public void setUp() throws Exception {
-  
-	DOMConfigurator.configure("log4j.xml");
-    driver = new FirefoxDriver();
-    
-    Log.info("New driver instantiated");
-    
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-  }*/
 
   public enum BaseUrls {
 	  
@@ -76,7 +62,7 @@ public class TestTest extends TestBase {
   }
   
   @BeforeClass
-  public static void setUp(ITestContext context) throws Exception
+  public void setUp(ITestContext context) throws Exception
   {
 	  
 	  // get the web driver parameters from the testng xml file
@@ -171,11 +157,20 @@ public class TestTest extends TestBase {
   */
   
   @Test
-  public void testHbogoWebdriverTest1() throws Exception {
+  public static void testHbogoWebdriverTest1() throws Exception {
 	  
-	  Actions action = new Actions(driver);
+	  Actions action = new Actions(driver);	  
+	  
+	  int m_numberOfTimes = WebDriverManager.m_numberOfTimes;
+	  			for (int i = 0; i < m_numberOfTimes; i++) {
+	  				// access the web page
+		}
 	  	  
 	    driver.get(BaseUrls.HBO.get() + "/group/offers");
+	    
+	    verifyTrue(driver.getTitle().equals("HBO GO. Bárhol. Bármikor."));
+    	
+	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
@@ -202,6 +197,7 @@ public class TestTest extends TestBase {
 	    	try { if (isElementPresent(By.xpath("(//a[@onclick='trackItem()'])[2]"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
+
 
 	    driver.findElement(By.xpath("(//a[@onclick='trackItem()'])[2]")).click();
 	    for (int second = 0;; second++) {
@@ -230,10 +226,6 @@ public class TestTest extends TestBase {
         action.moveToElement(mousehover).build().perform();        
         Log.info("Action performed");
                
-        WebElement playcontent;
-        playcontent = driver.findElement(By.xpath(".//*[@id='play_dropdown']/ul/li/ul/li[2]/a"));        
-        action.click(playcontent).build().perform();        
-        Log.info("Player started");
     	
 		Reporter.log("Test done | ");
 	    
@@ -242,6 +234,7 @@ public class TestTest extends TestBase {
   @AfterMethod
 
  
+  
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
@@ -249,9 +242,10 @@ public class TestTest extends TestBase {
       fail(verificationErrorString);
     }
   }
+  
 
   
-  private boolean isElementPresent(By by) {
+  private static boolean isElementPresent(By by) {
     try {
       driver.findElement(by);
       return true;

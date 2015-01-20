@@ -11,6 +11,7 @@
           <include name="testHbogoWebdriverTest1" />
         </methods>
       </class>
-    </classes>
+      <class name="test.WebTestFactory" />
+     </classes>
   </test>
 </suite>
