@@ -18,6 +18,7 @@ src/test/java/WebDriverManager.java -text
 src/test/java/WebTestFactory.java -text
 src/test/java/elementScreenshot.java -text
 src/test/resources/suite.xml -text
+target/classes/com/example/tests/GoogleTest.java -text
 target/test-classes/suite.xml -text
 test-output/Demo[!!-~]Test[!!-~]Run/Default[!!-~]test.html -text
 test-output/Demo[!!-~]Test[!!-~]Run/Default[!!-~]test.xml -text
@@ -33,6 +34,7 @@ test-output/index.html -text
 test-output/jquery-1.7.1.min.js -text
 test-output/junitreports/TEST-test.java.TestTest.xml -text
 test-output/junitreports/TEST-test.java.VerifyTests.xml -text
+test-output/junitreports/TEST-test.java.elementScreenshot.xml -text
 test-output/navigator-bullet.png -text
 test-output/old/Default[!!-~]suite/Default[!!-~]test.properties -text
 test-output/old/Default[!!-~]suite/classes.html -text
