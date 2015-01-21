@@ -70,16 +70,16 @@ Test done]]>
       <![CDATA[About to end executing Suite Test Demo Run]]>
     </line>
   </reporter-output>
-  <suite name="Test Demo Run" duration-ms="41780" started-at="2015-01-21T03:28:30Z" finished-at="2015-01-21T03:29:12Z">
+  <suite name="Test Demo Run" duration-ms="44601" started-at="2015-01-21T23:17:27Z" finished-at="2015-01-21T23:18:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41780" started-at="2015-01-21T03:28:30Z" finished-at="2015-01-21T03:29:12Z">
+    <test name="Default test" duration-ms="44601" started-at="2015-01-21T23:17:27Z" finished-at="2015-01-21T23:18:11Z">
       <class name="test.java.TestTest">
-        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:test.java.TestTest@7ca48474]" name="setUp" is-config="true" duration-ms="9785" started-at="2015-01-21T04:28:30Z" finished-at="2015-01-21T04:28:40Z">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:test.java.TestTest@7ca48474]" name="setUp" is-config="true" duration-ms="17421" started-at="2015-01-22T00:17:27Z" finished-at="2015-01-22T00:17:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3224a577]]>
+                <![CDATA[org.testng.TestRunner@3b74ac8]]>
               </value>
             </param>
           </params>
@@ -92,7 +92,7 @@ Test done]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testHbogoWebdriverTest1()[pri:0, instance:test.java.TestTest@7ca48474]" name="testHbogoWebdriverTest1" duration-ms="31284" started-at="2015-01-21T04:28:40Z" finished-at="2015-01-21T04:29:11Z">
+        <test-method status="PASS" signature="testHbogoWebdriverTest1()[pri:0, instance:test.java.TestTest@7ca48474]" name="testHbogoWebdriverTest1" duration-ms="26873" started-at="2015-01-22T00:17:44Z" finished-at="2015-01-22T00:18:11Z">
           <reporter-output>
             <line>
               <![CDATA[
@@ -122,7 +122,7 @@ Test done]]>
             </line>
           </reporter-output>
         </test-method> <!-- testHbogoWebdriverTest1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.TestTest@7ca48474]" name="tearDown" is-config="true" duration-ms="687" started-at="2015-01-21T04:29:11Z" finished-at="2015-01-21T04:29:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.TestTest@7ca48474]" name="tearDown" is-config="true" duration-ms="268" started-at="2015-01-22T00:18:11Z" finished-at="2015-01-22T00:18:11Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : TestTest.tearDown]]>

@@ -10,19 +10,21 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class elementScreenshot {
-public static WebDriver driver;
+@SuppressWarnings("unused")
+public class ElementScreenshot {
+static TestTest driver = new TestTest();
 
 
 
@@ -43,26 +45,29 @@ public static WebDriver driver;
  }
 */
 
- @Test
- public void captureScreenshot() throws Exception {
-  //Locate Image element to capture screenshot.
-        WebElement Image = driver.findElement(By.xpath("//img[@border='0']"));
+// @Test
+ public static void captureScreenshot() throws Exception {
+	 
+	 
+  By arg0 = null;
+		//Locate Image element to capture screenshot.
+        WebElement Image = TestTest.driver.findElement(arg0);
         //Call captureElementScreenshot function to capture screenshot of element.
         captureElementScreenshot(Image);
  }
  
- public void captureElementScreenshot(WebElement element) throws IOException{
-     
+ public static void captureElementScreenshot(WebElement element) throws IOException{
 	 
-     String testMethodAndTestClass = driver.getClass().getName();
-     
+	 
+       	  
+	  //Locate Image element to capture screenshot.
+	  WebElement Image = null;
 
 	  Calendar calendar = Calendar.getInstance();
       String userHome = System.getProperty("user.home");
       String screenShotsFolder = userHome + "/Documents/Tests/";
       
 	String screen = screenShotsFolder  + WebDriverManager.getBroswer() + "-"
-              + testMethodAndTestClass + "-"
 	          + calendar.get(Calendar.YEAR) + "-"
 	          + calendar.get(Calendar.MONTH) + "-"
 	          + calendar.get(Calendar.DAY_OF_MONTH) + "-"
@@ -74,7 +79,7 @@ public static WebDriver driver;
 	 
 	 //Capture entire page screenshot as buffer.
   //Used TakesScreenshot, OutputType Interface of selenium and File class of java to capture screenshot of entire page.
-  File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  File scrFile = ((TakesScreenshot) TestTest.driver).getScreenshotAs(OutputType.FILE);
   
   
   
@@ -101,7 +106,7 @@ public static WebDriver driver;
   //save Image screenshot In D: drive.
   
  
-      FileUtils.copyFile(scrFile, new File(screen));
+  FileUtils.copyFile(scrFile, new File(screen));
 
   
  }

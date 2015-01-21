@@ -42,8 +42,6 @@ public class TestTest extends TestBase {
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
-
-
   
   public enum BaseUrls {
 	  
@@ -210,9 +208,13 @@ public class TestTest extends TestBase {
 	    	try { if (isElementPresent(By.xpath(".//*[@id='slide_categories']/a[2]"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
+	    
+
+    
 
 	    //elementScreenshot.driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]"));
-	    
+    	
+	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")));
 	    driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")).click();
 
 	    
@@ -333,4 +335,5 @@ public class TestTest extends TestBase {
       acceptNextAlert = true;
     }
   }
+
 }
