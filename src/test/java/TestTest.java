@@ -1,5 +1,6 @@
 package test.java;
 
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
@@ -11,9 +12,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.TakesScreenshot;
 
-import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 //import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,21 +28,23 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
+
 
 
 @Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
 
 
 public class TestTest extends TestBase {
-  FirefoxProfile profile = new FirefoxProfile();
+  //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
-  private static WebDriver driver;
+  public static WebDriver driver;
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
 
+
+  
   public enum BaseUrls {
 	  
 	  GOOGLE("https://www.google.hu/"),
@@ -69,7 +70,7 @@ public class TestTest extends TestBase {
       String browser = context.getCurrentXmlTest().getParameter("browser");
       //String url         = context.getCurrentXmlTest().getParameter("url");
 
-      driver = WebDriverManager.startDriver(browser, 40);      
+      driver = WebDriverManager.startDriver(browser, 40);  
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
@@ -165,10 +166,29 @@ public class TestTest extends TestBase {
 	  			for (int i = 0; i < m_numberOfTimes; i++) {
 	  				// access the web page
 		}
-	  	  
-	    driver.get(BaseUrls.HBO.get() + "/group/offers");
+	  			
+		driver.get(BaseUrls.HBO.get() + "/group/offers");
 	    
-	    verifyTrue(driver.getTitle().equals("HBO GO. Bárhol. Bármikor."));
+	    /*
+		for (int i=1; i<10; i++)
+	    {
+	     //To verify element is present on page or not.
+	     String XPath = "//input[@id='text"+i+"']";
+	     */
+	     
+	     Boolean title_is = driver.getTitle().equals("HBO GO. Bárhol. Bármikor.");
+	     if (title_is == true)
+	     {
+	      Reporter.log("\nTitle"+" Is Present On The Page | ");
+	     }
+	     else
+	     {
+	      Reporter.log("\nTitle"+" Is Not Present On The Page | ");
+	     }
+	    	   
+	    
+	    verifyTrue(driver.getTitle().equals("HBO. Bárhol. Bármikor."));
+	  			
     	
 	    
 	    for (int second = 0;; second++) {
@@ -176,6 +196,8 @@ public class TestTest extends TestBase {
 	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
+	    
+	    
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -189,7 +211,10 @@ public class TestTest extends TestBase {
 	    	Thread.sleep(1000);
 	    }
 
+	    //elementScreenshot.driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]"));
+	    
 	    driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")).click();
+
 	    
 	    driver.findElement(By.id("selection_button")).click();
 	    for (int second = 0;; second++) {
@@ -226,12 +251,43 @@ public class TestTest extends TestBase {
         action.moveToElement(mousehover).build().perform();        
         Log.info("Action performed");
                
-    	
-		Reporter.log("Test done | ");
+        
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	 
+	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
+	   System.out.println("Document state : "+js.executeScript("return document.readyState"));
+	    
+	   //// Return the domain name of the server that loaded the document: 'document.domain;'
+	   System.out.println("Domain : "+js.executeScript("return document.domain"));
+	    
+	   //// The title property returns the title of the current document (the text inside the HTML title element): 'document.title'
+	   System.out.println("Page Title : "+js.executeScript("return document.title"));
+	    
+	   //// The URL property returns the full URL of the current document: 'document.URL'
+	   System.out.println("URL : "+js.executeScript("return document.URL"));
+	    
+	   //// Return the cookies associated with the current document: 'document.cookie'
+	   System.out.println("Cookie : "+js.executeScript("return document.cookie"));
+	    
+	   //// Returns the width of a window screen: 'screen.width'
+	   System.out.println("Screen Width : "+js.executeScript("return screen.width"));
+	    
+	   //// Return JavaScript Errors associated with the current window: 'window.jsErrors'
+	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
+        
+        
+        //if (driver instanceof JavascriptExecutor) {
+    	//	((JavascriptExecutor) driver)
+    	//		.executeScript($('#play_dropdown').find('ul ul:first li:last a').attr("onclick"));
+    	//}
+    	    	    	
+		Reporter.log("\nTest done");
 	    
 	  }
 
-  @AfterMethod
+
+
+@AfterMethod
 
  
   

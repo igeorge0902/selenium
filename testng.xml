@@ -4,14 +4,14 @@
  
   <test name="TestTest" preserve-order="true">
     <classes>
-      <class name="test.TestTest">
+      <class name="test.java.TestTest">
         <methods>
           <include name="test1" />
           <include name="test2" />
           <include name="testHbogoWebdriverTest1" />
         </methods>
       </class>
-      <class name="test.WebTestFactory" />
+      <class name="test.java.WebTestFactory" />
      </classes>
   </test>
 </suite>

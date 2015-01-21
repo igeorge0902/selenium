@@ -2,8 +2,11 @@ package test.java;
 
 
 import com.opera.core.systems.OperaDesktopDriver;
+import com.thoughtworks.selenium.Selenium;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +18,9 @@ import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -36,10 +41,12 @@ import java.util.Date;
 
 public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 {
-    @Override
+	
+	@Override
     public void onTestFailure (ITestResult testResult)
     {
-        // call the superclass
+        
+		// call the superclass
         super.onTestFailure(testResult);
 
         // Get a driver instance from the web driver manager object
@@ -92,8 +99,11 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 
     } // end of onTestFailure
    
-/*
-    protected void reportLogScreenshot(File file) {
+
+
+
+
+	protected void reportLogScreenshot(File file) {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
     
         String absolute = file.getAbsolutePath();
@@ -105,7 +115,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
   Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");
   Reporter.log("<p><img width=\"1024\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
   }
-*/
+
 
 } // enf of class
 
