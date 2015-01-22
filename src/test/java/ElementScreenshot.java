@@ -26,9 +26,6 @@ import org.testng.annotations.Test;
 public class ElementScreenshot {
 static TestTest driver = new TestTest();
 
-
-
-
 /*
  @BeforeClass
  public void setUp(ITestContext context) throws Exception

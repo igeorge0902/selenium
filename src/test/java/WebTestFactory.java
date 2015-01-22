@@ -7,7 +7,7 @@ public class WebTestFactory {
 	  public static Object[] createInstances() {
 	   Object[] result = new Object[10]; 
 	   for (int i = 0; i < 10; i++) {
-	      result[i] = new WebDriverManager(i * 10);
+	      result[i] = new TestTest(i * 10);
 	    }
 	    return result;
 	  }

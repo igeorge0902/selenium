@@ -11,7 +11,7 @@
           <include name="testHbogoWebdriverTest1" />
         </methods>
       </class>
-      <class name="test.java.WebTestFactory" />
+      <class name="WebTestFactory" />
      </classes>
   </test>
 </suite>

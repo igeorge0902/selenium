@@ -52,7 +52,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void onFinish(ITestContext arg0) {
 
-		Reporter.log("Completed executing test " + arg0.getName(), true);
+		Reporter.log("\nCompleted executing test " + arg0.getName(), true);
 
 	}
 
@@ -104,7 +104,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	private void printTestResults(ITestResult result) {
 
-		Reporter.log("Test Method resides in " + result.getTestClass().getName(), true);
+		Reporter.log("\nTest Method resides in " + result.getTestClass().getName(), true);
 
 		if (result.getParameters().length != 0) {
 
@@ -116,7 +116,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 			}
 
-			Reporter.log("Test Method had the following parameters : " + params, true);
+			Reporter.log("\nTest Method had the following parameters : " + params, true);
 
 		}
 
@@ -160,7 +160,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void afterInvocation(IInvokedMethod arg0, ITestResult arg1) {
 
-		String textMsg = "Completed executing following method : " + returnMethodName(arg0.getTestMethod());
+		String textMsg = "\nCompleted executing following method : " + returnMethodName(arg0.getTestMethod());
 
 		Reporter.log(textMsg, true);
 

@@ -42,7 +42,12 @@ public class TestTest extends TestBase {
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
+
   
+  public TestTest() {
+	// TODO Auto-generated constructor stub
+  }
+
   public enum BaseUrls {
 	  
 	  GOOGLE("https://www.google.hu/"),
@@ -72,6 +77,10 @@ public class TestTest extends TestBase {
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
+  public static int m_numberOfTimes;
+  public TestTest (int numberOfTimes) {
+	    m_numberOfTimes = numberOfTimes;
+	}
   
  /*
   @Test
@@ -157,22 +166,11 @@ public class TestTest extends TestBase {
   
   @Test
   public static void testHbogoWebdriverTest1() throws Exception {
-	  
-	  Actions action = new Actions(driver);	  
-	  
-	  int m_numberOfTimes = WebDriverManager.m_numberOfTimes;
-	  			for (int i = 0; i < m_numberOfTimes; i++) {
-	  				// access the web page
-		}
-	  			
+
+	   Actions action = new Actions(driver);	  
+
+		
 		driver.get(BaseUrls.HBO.get() + "/group/offers");
-	    
-	    /*
-		for (int i=1; i<10; i++)
-	    {
-	     //To verify element is present on page or not.
-	     String XPath = "//input[@id='text"+i+"']";
-	     */
 	     
 	     Boolean title_is = driver.getTitle().equals("HBO GO. Bárhol. Bármikor.");
 	     if (title_is == true)
@@ -185,9 +183,7 @@ public class TestTest extends TestBase {
 	     }
 	    	   
 	    
-	    verifyTrue(driver.getTitle().equals("HBO. Bárhol. Bármikor."));
-	  			
-    	
+	    verifyTrue(driver.getTitle().equals("HBO. Bárhol. Bármikor.")); 	
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -208,12 +204,7 @@ public class TestTest extends TestBase {
 	    	try { if (isElementPresent(By.xpath(".//*[@id='slide_categories']/a[2]"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
-	    
-
-    
-
-	    //elementScreenshot.driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]"));
-    	
+	        	
 	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")));
 	    driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")).click();
 
@@ -278,10 +269,10 @@ public class TestTest extends TestBase {
 	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
         
         
-        //if (driver instanceof JavascriptExecutor) {
-    	//	((JavascriptExecutor) driver)
-    	//		.executeScript($('#play_dropdown').find('ul ul:first li:last a').attr("onclick"));
-    	//}
+        if (driver instanceof JavascriptExecutor) {
+    		((JavascriptExecutor) driver)
+    			.executeScript("PlayerManager.handlePlay('PlayContent',{$})");
+    	}
     	    	    	
 		Reporter.log("\nTest done");
 	    
