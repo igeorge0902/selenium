@@ -14,6 +14,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Parameters;
 
 import com.opera.core.systems.OperaDriver;
 
@@ -197,6 +198,7 @@ public class WebDriverManager
      *
      * @param - the instance of the driver to stop
      */
+@Parameters
  public static void stopDriver()
     {
         driver.quit();
@@ -208,7 +210,7 @@ public class WebDriverManager
     }
 
     /**
-     * Getter method for the currect browser being used for testing
+     * Getter method for the current browser being used for testing
      * @return the browser string being used for testing
      */
     public static String getBroswer()

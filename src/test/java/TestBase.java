@@ -12,6 +12,7 @@ import org.testng.Reporter;
 public class TestBase {
 	
 	
+	
 	protected static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
     public static void assertTrue(boolean condition) {

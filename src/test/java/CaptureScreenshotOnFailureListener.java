@@ -2,7 +2,7 @@ package test.java;
 
 
 import com.opera.core.systems.OperaDesktopDriver;
-import com.thoughtworks.selenium.Selenium;
+import com.thoughtworks.selenium.*;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
@@ -94,14 +94,14 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
             {
                 e.printStackTrace();
             }
-
+            
+            return;
+            
         } // end of if
+        
 
     } // end of onTestFailure
    
-
-
-
 
 	protected void reportLogScreenshot(File file) {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
@@ -112,8 +112,8 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
         String screenShot = relative.replace('\\','/');
     
     
-  Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");
-  Reporter.log("<p><img width=\"1024\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
+        Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");
+        Reporter.log("<p><img width=\"1024\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
   }
 
 

@@ -1,5 +1,6 @@
 package test.java;
 
+import java.lang.reflect.Method;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -23,6 +24,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestContext;
 import org.testng.annotations.Listeners;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterMethod;
@@ -34,7 +36,7 @@ import org.apache.log4j.Logger;
 @Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
 
 
-public class TestTest extends TestBase {
+public class TestTest2 extends TestBase {
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
@@ -44,7 +46,7 @@ public class TestTest extends TestBase {
   private static Logger Log = Logger.getLogger(Logger.class.getName());
 
   
-  public TestTest() {
+  public TestTest2() {
 	// TODO Auto-generated constructor stub
   }
 
@@ -78,92 +80,47 @@ public class TestTest extends TestBase {
   }
   
   public static int m_numberOfTimes;
-  public TestTest (int numberOfTimes) {
+  public TestTest2 (int numberOfTimes) {
 	    m_numberOfTimes = numberOfTimes;
 	}
-  
+ 
   
   @Test
-  public static void testHbogoWebdriverTest1() throws Exception {
+  
+  public void test1() throws Exception {
+    driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
+    
+    if(driver.getTitle().equals("Google"))
+    	{
+    Log.info("Verification Passed for Title");	 
+    	}
+    else
+    	{
+    Log.info("Verification Failed for Title"); 
+    }
+    
+	Assert.assertEquals("Google", "Google", driver.getTitle());
+	
+	verifyFalse(driver.getTitle().equals("Google"));
 
-	   Actions action = new Actions(driver);	  
 
+    Assert.assertTrue(isElementPresent(By.id("gbqfq")));
+    
+    //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
+
+    
+    driver.findElement(By.id("gbqfq")).clear();
+	driver.findElement(By.id("gbqfq")).sendKeys("hello");
+    driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
+    
+	if (driver instanceof JavascriptExecutor) {
+		((JavascriptExecutor) driver)
+			.executeScript("alert('hello world');");
+	}
 		
-		driver.get(BaseUrls.HBO.get() + "/group/offers");
-	     
-	     Boolean title_is = driver.getTitle().equals("HBO GO. Bárhol. Bármikor.");
-	     if (title_is == true)
-	     {
-	      Reporter.log("\nTitle"+" Is Present On The Page | ");
-	     }
-	     else
-	     {
-	      Reporter.log("\nTitle"+" Is Not Present On The Page | ");
-	     }
-	    	   
-	    
-	    verifyTrue(driver.getTitle().equals("HBO. Bárhol. Bármikor.")); 	
-	    
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-	    
-	    
-	    
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.xpath("(//a[contains(text(),'Sorozatok')])[2]"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-	    
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.xpath(".//*[@id='slide_categories']/a[2]"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-	        	
-	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")));
-	    driver.findElement(By.xpath("(//a[contains(text(),'Sorozatok')])[2]")).click();
-
-	    
-	    driver.findElement(By.id("selection_button")).click();
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.xpath("(//a[@onclick='trackItem()'])[2]"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-
-
-	    driver.findElement(By.xpath("(//a[@onclick='trackItem()'])[2]")).click();
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.id("episode_chooser"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-
-	  
-	    driver.findElement(By.xpath("//html/body/div[9]/div[3]/div[1]/div[1]/div[7]/div[2]/div/div[1]/div/a[1]")).click();
-	    
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.xpath("//div[@id='content-inner']/div/div/div[2]"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"))) break; } catch (Exception e) {}
-	    	Thread.sleep(1000);
-	    }
-	    	    
-	    WebElement mousehover;
-	    mousehover = driver.findElement(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"));	            
-        action.moveToElement(mousehover).build().perform();        
-        Log.info("Action performed");
                
-        
+		Alert alert = driver.switchTo().alert(); alert.accept();
+	
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	 
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
@@ -187,17 +144,47 @@ public class TestTest extends TestBase {
 	   //// Return JavaScript Errors associated with the current window: 'window.jsErrors'
 	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
         
-        
-        if (driver instanceof JavascriptExecutor) {
-    		((JavascriptExecutor) driver)
-    			.executeScript("PlayerManager.handlePlay('PlayContent',{$})");
-    	}
     	    	    	
 		Reporter.log("\nTest done");
 	    
 	  }
 
+  
+  
+/*
+  @Test
+  public void test2() throws Exception {
+    driver.get(BaseUrls.YAHOO.get() + "/?p=us");
+    
+    if(driver.getTitle().equals("Google"))
+    	{
+    Log.info("Verification Passed for Title");	 
+    	}
+    else
+    	{
+    Log.info("Verification Failed for Title"); 
+    }
+    
+	//assertEquals("Expected page title not found", "Yahoo România", driver.getTitle());
+	
+	assertTrue(isElementPresent(By.id("p_13838465-p")));
+    
+    
+    driver.findElement(By.id("p_13838465-p")).clear();
+    driver.findElement(By.id("p_13838465-p")).sendKeys("hello");
+    driver.findElement(By.id("p_13838465-p")).sendKeys(Keys.ENTER);
+    
+	if (driver instanceof JavascriptExecutor) {
+		((JavascriptExecutor) driver)
+			.executeScript("alert('hello world');");
+	}
+	
+	Reporter.log("Test done | ");
+    
+  }
+  
 
+*/
 
 @AfterMethod
 
@@ -211,9 +198,6 @@ public class TestTest extends TestBase {
     }
   }
   
-	public WebDriver getWebDriver() {
-	    return getWebDriver();
-	}
   
   private static boolean isElementPresent(By by) {
     try {

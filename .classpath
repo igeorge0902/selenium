@@ -51,5 +51,8 @@
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/selenium-java-2.44.0-srcs.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/guice-3.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
