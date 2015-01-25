@@ -36,7 +36,7 @@ import org.apache.log4j.Logger;
 @Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
 
 
-public class TestTest2 extends TestBase {
+public class TestTest2 extends CustomVerification {
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
@@ -50,22 +50,8 @@ public class TestTest2 extends TestBase {
 	// TODO Auto-generated constructor stub
   }
 
-  public enum BaseUrls {
-	  
-	  GOOGLE("https://www.google.hu/"),
-	  YAHOO("https://www.yahoo.com/"),
-	  HBO("http://www.hbogo.hu/");
   
-  private String myUrls;
   
-  BaseUrls (String url) {
-	  myUrls = url;
-  	}
-  public String get() {
-	  return myUrls;
-  	}
-  
-  }
   
   @BeforeClass
   public void setUp(ITestContext context) throws Exception
@@ -86,8 +72,8 @@ public class TestTest2 extends TestBase {
  
   
   @Test
-  
-  public void test1() throws Exception {
+  	
+  	public void test1() throws Exception {
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
     if(driver.getTitle().equals("Google"))
@@ -99,7 +85,7 @@ public class TestTest2 extends TestBase {
     Log.info("Verification Failed for Title"); 
     }
     
-	Assert.assertEquals("Google", "Google", driver.getTitle());
+	Assert.assertEquals("Google", "Googole", driver.getTitle());
 	
 	verifyFalse(driver.getTitle().equals("Google"));
 
