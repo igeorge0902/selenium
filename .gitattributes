@@ -12,7 +12,6 @@ src/test/java/CaptureScreenshotOnFailureListener.java -text
 src/test/java/CustomTestListener.java -text
 src/test/java/CustomVerification.java -text
 src/test/java/ElementScreenshot.java -text
-src/test/java/IfFileExists.java -text
 src/test/java/SampleDataProvider.java -text
 src/test/java/TestBase.java -text
 src/test/java/TestListenerAdapter.java -text

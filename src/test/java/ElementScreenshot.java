@@ -53,7 +53,7 @@ static TestTest driver = new TestTest();
         captureElementScreenshot(Image);
  }
  
- public static void captureElementScreenshot(WebElement element) throws IOException{
+ public static void captureElementScreenshot(WebElement element) throws Exception{
 	 
 	 
        	  
@@ -100,11 +100,11 @@ static TestTest driver = new TestTest();
   ImageIO.write(dest, "png", scrFile);
   
   //Used FileUtils class of apache.commons.io.
-  //save Image screenshot In D: drive.
-  
- 
-  FileUtils.copyFile(scrFile, new File(screen));
 
+  
+  FileUtils.copyFile(scrFile, new File(screen));
+  
+  return;
   
  }
 }

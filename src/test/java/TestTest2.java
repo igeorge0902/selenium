@@ -85,7 +85,7 @@ public class TestTest2 extends CustomVerification {
     Log.info("Verification Failed for Title"); 
     }
     
-	Assert.assertEquals("Google", "Googole", driver.getTitle());
+	//Assert.assertEquals("Google", "Googole", driver.getTitle());
 	
 	verifyFalse(driver.getTitle().equals("Google"));
 
