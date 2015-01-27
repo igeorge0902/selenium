@@ -41,7 +41,7 @@ import java.util.Date;
 
 public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 {
-	
+	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
 	@Override
     public void onTestFailure (ITestResult testResult)
     {
@@ -95,27 +95,25 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
                 e.printStackTrace();
             }
             
-            return;
+            
+       //(File file)
+                File file = new File(filename);
+        		System.setProperty(ESCAPE_PROPERTY, "false");
+            
+                String absolute = file.getAbsolutePath();
+                int beginIndex = absolute.indexOf(".");
+                String relative = absolute.substring(beginIndex).replace(".\\","");
+                String screenShot = relative.replace('\\','/');
+            
+            
+                Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");
+                Reporter.log("<p><img width=\"50%\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
+          
             
         } // end of if
         
 
-    } // end of onTestFailure
-   
-
-	protected void reportLogScreenshot(File file) {
-        System.setProperty("org.uncommons.reportng.escape-output", "false");
-    
-        String absolute = file.getAbsolutePath();
-        int beginIndex = absolute.indexOf(".");
-        String relative = absolute.substring(beginIndex).replace(".\\","");
-        String screenShot = relative.replace('\\','/');
-    
-    
-        Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");
-        Reporter.log("<p><img width=\"1024\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
-  }
-
+    } // end of onTestFailure	
 
 } // enf of class
 

@@ -4,25 +4,25 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="35,198">
+           time="44,975">
   <properties />
-            <testcase name="testHbogoWebdriverTest1" time="35,198" classname="test.java.TestTest">
+            <testcase name="testHbogoWebdriverTest1" time="44,975" classname="test.java.TestTest">
                 <failure type="org.openqa.selenium.WebDriverException"
                   message="CustomerManager.customer is null
-Command duration or timeout: 57 milliseconds
+Command duration or timeout: 20 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0c99d3d6-ab07-dc40-bf7b-d5b94e1aaa82"
+Session ID: f627cceb-2dd3-f949-a4fc-e91dbcf10fc9"
               >
 <![CDATA[org.openqa.selenium.WebDriverException: CustomerManager.customer is null
-Command duration or timeout: 57 milliseconds
+Command duration or timeout: 20 milliseconds
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'igeorge.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0c99d3d6-ab07-dc40-bf7b-d5b94e1aaa82
+Session ID: f627cceb-2dd3-f949-a4fc-e91dbcf10fc9
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,8 +60,8 @@ Caused by: org.openqa.selenium.WebDriverException: CustomerManager.customer is n
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'igeorge.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
 Driver info: driver.version: unknown
-  <anonymous class>.PlayerManager.checkAllowedContents(http://www.hbogo.hu/media/scripts/HBO.min.js?1566632928%3E:287:87781)
-  <anonymous class>.PlayerManager.handlePlay(http://www.hbogo.hu/media/scripts/HBO.min.js?1566632928%3E:287:88159)
+  <anonymous class>.PlayerManager.checkAllowedContents(http://www.hbogo.hu/media/scripts/HBO.min.js?446285367%3E:287:87781)
+  <anonymous class>.PlayerManager.handlePlay(http://www.hbogo.hu/media/scripts/HBO.min.js?446285367%3E:287:88159)
   <anonymous class>.anonymous(http://www.hbogo.hu/content/game-of-thrones-iv.-1-two-swords-255061514 line 68 > Function:1:1)
   <anonymous class>.handleEvaluateEvent(http://www.hbogo.hu/content/game-of-thrones-iv.-1-two-swords-255061514:68:20)
 ]]>

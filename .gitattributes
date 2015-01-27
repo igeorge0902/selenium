@@ -21,7 +21,6 @@ src/test/java/TestTest2.java -text
 src/test/java/WebDriverManager.java -text
 src/test/java/WebTestFactory.java -text
 src/test/resources/suite.xml -text
-target/classes/com/example/tests/GoogleTest.java -text
 target/test-classes/suite.xml -text
 test-output/html/index.html -text
 test-output/html/output.html -text

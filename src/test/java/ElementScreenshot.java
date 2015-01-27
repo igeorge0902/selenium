@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -18,6 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -25,6 +27,8 @@ import org.testng.annotations.Test;
 @SuppressWarnings("unused")
 public class ElementScreenshot {
 static TestTest driver = new TestTest();
+private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
+
 
 /*
  @BeforeClass
@@ -103,8 +107,20 @@ static TestTest driver = new TestTest();
 
   
   FileUtils.copyFile(scrFile, new File(screen));
+    
+  File file = new File(screen);
   
-  return;
+  System.setProperty(ESCAPE_PROPERTY, "false");
+
+  String absolute = file.getAbsolutePath();
+  int beginIndex = absolute.indexOf(".");
+  String relative = absolute.substring(beginIndex).replace(".\\","");
+  String screenShot = relative.replace('\\','/');
+
+
+  Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\"Element screenshot at " + new Date()+ "</p>");
+  Reporter.log("<p><img width=\"50%\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
+
   
  }
 }

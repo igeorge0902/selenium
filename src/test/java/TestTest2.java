@@ -31,12 +31,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
 
+import com.google.common.base.Verify;
+import com.google.common.base.VerifyException;
+
 
 
 @Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
 
 
-public class TestTest2 extends CustomVerification {
+public class TestTest2 extends TestBase {
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
@@ -44,11 +47,10 @@ public class TestTest2 extends CustomVerification {
   private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
-
-  
   public TestTest2() {
-	// TODO Auto-generated constructor stub
   }
+  private static final String EXPECTED_EXCEPTIONS = "org.uncommons.reportng.show-expected-exceptions"; 
+
 
   
   
@@ -74,6 +76,8 @@ public class TestTest2 extends CustomVerification {
   @Test
   	
   	public void test1() throws Exception {
+	System.setProperty(EXPECTED_EXCEPTIONS, "true");
+
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
     if(driver.getTitle().equals("Google"))
@@ -90,7 +94,7 @@ public class TestTest2 extends CustomVerification {
 	verifyFalse(driver.getTitle().equals("Google"));
 
 
-    Assert.assertTrue(isElementPresent(By.id("gbqfq")));
+    Assert.assertEquals(isElementPresent(By.id("gbfq")), driver.getTitle(), "Huston baj van");
     
     //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
 
