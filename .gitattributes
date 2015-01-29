@@ -16,11 +16,13 @@ src/test/java/SampleDataProvider.java -text
 src/test/java/TestBase.java -text
 src/test/java/TestListenerAdapter.java -text
 src/test/java/TestListeners.java -text
+src/test/java/TestMethodListener.java -text
 src/test/java/TestTest.java -text
 src/test/java/TestTest2.java -text
 src/test/java/WebDriverManager.java -text
 src/test/java/WebTestFactory.java -text
 src/test/resources/suite.xml -text
+target/classes/com/example/tests/GoogleTest.java -text
 target/test-classes/suite.xml -text
 test-output/html/index.html -text
 test-output/html/output.html -text

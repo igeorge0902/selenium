@@ -31,7 +31,7 @@ import org.apache.log4j.Logger;
 
 
 
-@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
+@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class })
 
 
 public class TestTest extends TestBase {
@@ -39,7 +39,8 @@ public class TestTest extends TestBase {
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
   public static WebDriver driver;
-  private static boolean acceptNextAlert = true;
+  public static WebElement element;
+
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
 
@@ -84,16 +85,14 @@ public class TestTest extends TestBase {
 	      Reporter.log("\nTitle"+" Is Not Present On The Page | ");
 	     }
 	    	   
-	    
-	    verifyTrue(driver.getTitle().equals("HBO. Bárhol. Bármikor.")); 	
+	    verifyEquals(driver.getTitle(), "HB. Brhol. Bármikor"); 	
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("slide_categories"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
-	    
-	    
+	        
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -125,8 +124,7 @@ public class TestTest extends TestBase {
 	    	try { if (isElementPresent(By.id("episode_chooser"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }
-
-	  
+  
 	    driver.findElement(By.xpath("//html/body/div[9]/div[3]/div[1]/div[1]/div[7]/div[2]/div/div[1]/div/a[1]")).click();
 	    
 	    for (int second = 0;; second++) {
@@ -145,7 +143,7 @@ public class TestTest extends TestBase {
 	    mousehover = driver.findElement(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"));	            
         action.moveToElement(mousehover).build().perform();        
         Log.info("Action performed");
-               
+                  
         
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	 
@@ -207,28 +205,5 @@ public class TestTest extends TestBase {
     }
   }
 
-  private boolean isAlertPresent() {
-    try {
-      driver.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-  }
-
-  private String closeAlertAndGetItsText() {
-    try {
-      Alert alert = driver.switchTo().alert();
-      String alertText = alert.getText();
-      if (acceptNextAlert) {
-        alert.accept();
-      } else {
-        alert.dismiss();
-      }
-      return alertText;
-    } finally {
-      acceptNextAlert = true;
-    }
-  }
 
 }

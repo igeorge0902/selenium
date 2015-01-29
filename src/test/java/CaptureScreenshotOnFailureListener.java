@@ -101,9 +101,9 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
         		System.setProperty(ESCAPE_PROPERTY, "false");
             
                 String absolute = file.getAbsolutePath();
-                int beginIndex = absolute.indexOf(".");
-                String relative = absolute.substring(beginIndex).replace(".\\","");
-                String screenShot = relative.replace('\\','/');
+                //int beginIndex = absolute.indexOf(".");
+                //String relative = absolute.substring(beginIndex).replace(".\\","");
+                String screenShot = absolute.replace('\\','/');
             
             
                 Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\">Error screenshot at " + new Date()+ "</p>");

@@ -110,7 +110,7 @@ public class TestBase {
 		return verificationFailures == null ? new ArrayList<Throwable>() : verificationFailures;
 	}
 	
-	private static void addVerificationFailure(Throwable e) {
+	public static void addVerificationFailure(Throwable e) {
 		List<Throwable> verificationFailures = getVerificationFailures();
 		verificationFailuresMap.put(Reporter.getCurrentTestResult(), verificationFailures);
 		verificationFailures.add(e);

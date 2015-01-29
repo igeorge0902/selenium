@@ -113,9 +113,9 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   System.setProperty(ESCAPE_PROPERTY, "false");
 
   String absolute = file.getAbsolutePath();
-  int beginIndex = absolute.indexOf(".");
-  String relative = absolute.substring(beginIndex).replace(".\\","");
-  String screenShot = relative.replace('\\','/');
+  //int beginIndex = absolute.indexOf(".");
+  //String relative = absolute.substring(beginIndex).replace(".\\","");
+  String screenShot = absolute.replace('\\','/');
 
 
   Reporter.log("<a href=\"" + screenShot + "\"><p align=\"left\"Element screenshot at " + new Date()+ "</p>");

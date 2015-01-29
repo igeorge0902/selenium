@@ -1,8 +1,6 @@
 package test.java;
 
-import java.lang.reflect.Method;
-import java.util.List;
-import java.util.regex.Pattern;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -12,31 +10,27 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 
-import static org.hamcrest.CoreMatchers.*;
+//import static org.hamcrest.CoreMatchers.*;
 
 //import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.PageFactory;
+//import org.openqa.selenium.firefox.FirefoxProfile;
+//import org.openqa.selenium.interactions.Actions;
+//import org.openqa.selenium.support.ui.Select;
+//import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestContext;
 import org.testng.annotations.Listeners;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
 
-import com.google.common.base.Verify;
-import com.google.common.base.VerifyException;
 
 
-
-@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class })
+@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class TestTest2 extends TestBase {
@@ -44,13 +38,11 @@ public class TestTest2 extends TestBase {
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
   public static WebDriver driver;
-  private static boolean acceptNextAlert = true;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
   public TestTest2() {
   }
-  private static final String EXPECTED_EXCEPTIONS = "org.uncommons.reportng.show-expected-exceptions"; 
-
+  
 
   
   
@@ -76,7 +68,6 @@ public class TestTest2 extends TestBase {
   @Test
   	
   	public void test1() throws Exception {
-	System.setProperty(EXPECTED_EXCEPTIONS, "true");
 
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
@@ -91,10 +82,10 @@ public class TestTest2 extends TestBase {
     
 	//Assert.assertEquals("Google", "Googole", driver.getTitle());
 	
-	verifyFalse(driver.getTitle().equals("Google"));
+	//verifyFalse(driver.getTitle().equals("Google"), "Hello-Bello");
+    verifyEquals(driver.getTitle(), "Hello-Bello");
+    verifyTrue(driver.getTitle().equals("Google"), "Hello-Bello");
 
-
-    Assert.assertEquals(isElementPresent(By.id("gbfq")), driver.getTitle(), "Huston baj van");
     
     //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
 
@@ -108,9 +99,10 @@ public class TestTest2 extends TestBase {
 			.executeScript("alert('hello world');");
 	}
 		
-               
-		Alert alert = driver.switchTo().alert(); alert.accept();
-	
+    Alert alert = driver.switchTo().alert();
+	Reporter.log(alert.getText(), true);
+	alert.accept();
+    	
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	 
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
@@ -198,28 +190,5 @@ public class TestTest2 extends TestBase {
     }
   }
 
-  private boolean isAlertPresent() {
-    try {
-      driver.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-  }
-
-  private String closeAlertAndGetItsText() {
-    try {
-      Alert alert = driver.switchTo().alert();
-      String alertText = alert.getText();
-      if (acceptNextAlert) {
-        alert.accept();
-      } else {
-        alert.dismiss();
-      }
-      return alertText;
-    } finally {
-      acceptNextAlert = true;
-    }
-  }
 
 }
