@@ -80,11 +80,11 @@ public class TestTest2 extends TestBase {
     Log.info("Verification Failed for Title"); 
     }
     
-	//Assert.assertEquals("Google", "Googole", driver.getTitle());
-	
-	//verifyFalse(driver.getTitle().equals("Google"), "Hello-Bello");
+
     verifyEquals(driver.getTitle(), "Hello-Bello");
     verifyTrue(driver.getTitle().equals("Google"), "Hello-Bello");
+    verifySuccess(driver.getTitle().equals("Google"));
+
 
     
     //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
@@ -100,8 +100,8 @@ public class TestTest2 extends TestBase {
 	}
 		
     Alert alert = driver.switchTo().alert();
-	Reporter.log(alert.getText(), true);
-	alert.accept();
+	Reporter.log("JavaScript text:" + alert.getText() + "<br>", true);
+    alert.accept();
     	
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	 
@@ -127,7 +127,7 @@ public class TestTest2 extends TestBase {
 	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
         
     	    	    	
-		Reporter.log("\nTest done");
+		Reporter.log("<p>Test done</p>");
 	    
 	  }
 

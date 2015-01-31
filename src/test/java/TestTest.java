@@ -75,16 +75,8 @@ public class TestTest extends TestBase {
 		
 		driver.get(BaseUrls.HBO.get() + "/group/offers");
 	     
-	     Boolean title_is = driver.getTitle().equals("HBO GO. Bárhol. Bármikor.");
-	     if (title_is == true)
-	     {
-	      Reporter.log("\nTitle"+" Is Present On The Page | ");
-	     }
-	     else
-	     {
-	      Reporter.log("\nTitle"+" Is Not Present On The Page | ");
-	     }
-	    	   
+	    verifySuccess(driver.getTitle().equals("HBO. Bárhol. Bármikor"));
+   
 	    verifyEquals(driver.getTitle(), "HB. Brhol. Bármikor"); 	
 	    
 	    for (int second = 0;; second++) {
@@ -174,7 +166,7 @@ public class TestTest extends TestBase {
     			.executeScript("PlayerManager.handlePlay('PlayContent',{$})");
     	}
     	    	    	
-		Reporter.log("\nTest done");
+		Reporter.log("<p>Test done</p>");
 	    
 	  }
 

@@ -53,6 +53,21 @@ public class TestBase {
     	}
     }
     
+    public static boolean verifySuccess(boolean condition) {
+    	try {
+    		assertTrue(condition);
+    	} catch(Throwable e) {
+    		addVerificationFailure(e);
+    	} if (condition == true)
+	    {
+    		Reporter.log("Verification is successfull<br>");
+	    } else
+	    {
+	    	Reporter.log("Verification is not successfull<br>");
+	    }
+	    return condition;
+    }
+    
     public static void verifyTrue(boolean condition, String message) {
     	try {
     		assertTrue(condition, message);
