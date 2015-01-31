@@ -4,19 +4,19 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="31,532">
+           time="38,528">
   <properties />
-            <testcase name="testHbogoWebdriverTest1" time="31,532" classname="test.java.TestTest">
+            <testcase name="testHbogoWebdriverTest1" time="38,528" classname="test.java.TestTest">
                 <failure type="java.lang.Throwable"
                   message="Multiple failures (2)
 (1)java.lang.AssertionError:expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]
 (2)org.openqa.selenium.WebDriverException:CustomerManager.customer is null
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 25 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d3d4b912-68a5-3a42-ab27-201e3d2deed4
+Session ID: 5510a6ae-a5d7-4f44-95cd-f84d7edac08a
 
 Failure 1 of 2
 java.lang.AssertionError: expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]
@@ -54,22 +54,22 @@ java.lang.AssertionError: expected [HB. Brhol. Bármikor] but found [HBO GO. Bá
 
 Failure 2 of 2
 org.openqa.selenium.WebDriverException: CustomerManager.customer is null
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 25 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d3d4b912-68a5-3a42-ab27-201e3d2deed4"
+Session ID: 5510a6ae-a5d7-4f44-95cd-f84d7edac08a"
               >
 <![CDATA[java.lang.Throwable: Multiple failures (2)
 (1)java.lang.AssertionError:expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]
 (2)org.openqa.selenium.WebDriverException:CustomerManager.customer is null
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 25 milliseconds
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'igeorge.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
+System info: host: 'igeorge.local', ip: '192.168.1.108', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d3d4b912-68a5-3a42-ab27-201e3d2deed4
+Session ID: 5510a6ae-a5d7-4f44-95cd-f84d7edac08a
 
 Failure 1 of 2
 java.lang.AssertionError: expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]
@@ -107,12 +107,12 @@ java.lang.AssertionError: expected [HB. Brhol. Bármikor] but found [HBO GO. Bá
 
 Failure 2 of 2
 org.openqa.selenium.WebDriverException: CustomerManager.customer is null
-Command duration or timeout: 21 milliseconds
+Command duration or timeout: 25 milliseconds
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'igeorge.local', ip: '192.168.1.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
+System info: host: 'igeorge.local', ip: '192.168.1.108', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d3d4b912-68a5-3a42-ab27-201e3d2deed4
+Session ID: 5510a6ae-a5d7-4f44-95cd-f84d7edac08a
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

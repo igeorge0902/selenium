@@ -6,7 +6,6 @@
 /log4j.xml -text
 /pom[!!-~]copy.xml -text
 /pom.xml -text
-src/main/resources/com/example/tests/GoogleTest.java -text
 src/test/java/BaseUrls.java -text
 src/test/java/CaptureScreenshotOnFailureListener.java -text
 src/test/java/CustomTestListener.java -text
