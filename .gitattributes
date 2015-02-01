@@ -13,6 +13,7 @@ src/test/java/CustomVerification.java -text
 src/test/java/ElementScreenshot.java -text
 src/test/java/SampleDataProvider.java -text
 src/test/java/TestBase.java -text
+src/test/java/TestDataSample.java -text svneol=unset#text/plain
 src/test/java/TestListenerAdapter.java -text
 src/test/java/TestListeners.java -text
 src/test/java/TestMethodListener.java -text
@@ -30,6 +31,7 @@ test-output/html/reportng.js -text
 test-output/html/sorttable.js -text
 test-output/html/suite1_test1_results.html -text
 test-output/html/suites.html -text
+test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestTest2_results.xml -text
 test-output/xml/test.java.TestTest_results.xml -text
 /testng.xml -text

@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
 
 @SuppressWarnings("unused")
 public class ElementScreenshot {
-static TestTest driver = new TestTest();
+//static TestTest driver = new TestTest();
 private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
 
 
@@ -52,7 +52,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
 	 
   By arg0 = null;
 		//Locate Image element to capture screenshot.
-        WebElement Image = TestTest.driver.findElement(arg0);
+        WebElement Image = WebDriverManager.driver.findElement(arg0);
         //Call captureElementScreenshot function to capture screenshot of element.
         captureElementScreenshot(Image);
  }
@@ -80,7 +80,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
 	 
 	 //Capture entire page screenshot as buffer.
   //Used TakesScreenshot, OutputType Interface of selenium and File class of java to capture screenshot of entire page.
-  File scrFile = ((TakesScreenshot) TestTest.driver).getScreenshotAs(OutputType.FILE);
+  File scrFile = ((TakesScreenshot) WebDriverManager.driver).getScreenshotAs(OutputType.FILE);
   
   
   

@@ -14,6 +14,9 @@ import org.openqa.selenium.WebDriver;
 
 //import static org.hamcrest.CoreMatchers.*;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.firefox.FirefoxProfile;
 //import org.openqa.selenium.interactions.Actions;
@@ -38,6 +41,7 @@ public class TestTest2 extends TestBase {
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
   public static WebDriver driver;
+  public static WebElement element;
   private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
   public TestTest2() {
@@ -57,6 +61,7 @@ public class TestTest2 extends TestBase {
 
       driver = WebDriverManager.startDriver(browser, 40);  
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+      
   }
   
   public static int m_numberOfTimes;
@@ -65,9 +70,9 @@ public class TestTest2 extends TestBase {
 	}
  
   
-  @Test
+  @Test(dataProviderClass=SampleDataProvider.class,dataProvider="fileDataProvider")
   	
-  	public void test1() throws Exception {
+  	public void test1(String line) throws Exception {
 
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
@@ -91,7 +96,15 @@ public class TestTest2 extends TestBase {
 
     
     driver.findElement(By.id("gbqfq")).clear();
-	driver.findElement(By.id("gbqfq")).sendKeys("hello");
+	driver.findElement(By.id("gbqfq")).sendKeys(line);
+    driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
+    
+    element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("rso")));
+       
+    ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("rso")));
+    
+    driver.findElement(By.id("gbqfq")).clear();
+	driver.findElement(By.id("gbqfq")).sendKeys("Milo");
     driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
     
 	if (driver instanceof JavascriptExecutor) {

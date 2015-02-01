@@ -33,7 +33,7 @@ import com.opera.core.systems.OperaDriver;
 
 public class WebDriverManager
 {
-    private static WebDriver driver = null;
+    static WebDriver driver = null;
     private static String browser = null;
     private static Logger Log = Logger.getLogger(Logger.class.getName());
 

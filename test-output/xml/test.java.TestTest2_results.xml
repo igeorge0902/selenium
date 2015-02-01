@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestTest"
+<testsuite name="Default test"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="3,658">
+           time="8,042">
   <properties />
-            <testcase name="test1" time="3,658" classname="test.java.TestTest2">
+            <testcase name="test1" time="8,042" classname="test.java.TestTest2">
                 <failure type="java.lang.Throwable"
                   message="Multiple failures (1)
 (1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
@@ -25,7 +25,7 @@ java.lang.AssertionError: expected [Hello-Bello] but found [Google]
   org.testng.Assert.assertEquals(Assert.java:165)
   test.java.TestBase.assertEquals(TestBase.java:37)
   test.java.TestBase.verifyEquals(TestBase.java:105)
-  test.java.TestTest2.test1(TestTest2.java:84)
+  test.java.TestTest2.test1(TestTest2.java:89)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

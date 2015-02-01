@@ -5,7 +5,7 @@
    </listeners>
   <sysproperty key="org.uncommons.reportng.escape-output" value="false" />
   <parameter name="browser" value="*firefox" />
- 
+  <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <test name="TestTest" preserve-order="true">
     <classes>
       <class name="test.java.TestTest" />

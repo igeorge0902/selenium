@@ -60,10 +60,10 @@ public class TestBase {
     		addVerificationFailure(e);
     	} if (condition == true)
 	    {
-    		Reporter.log("Verification is successfull<br>");
+    		Reporter.log("<br><p>Verification is successfull<br></p>");
 	    } else
 	    {
-	    	Reporter.log("Verification is not successfull<br>");
+	    	Reporter.log("<br><p>Verification is not successfull<br></p>");
 	    }
 	    return condition;
     }
