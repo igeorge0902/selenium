@@ -171,31 +171,4 @@ public class TestTest extends TestBase {
 	  }
 
 
-
-@AfterMethod
-
- 
-  
-  public void tearDown() throws Exception {
-    driver.quit();
-    String verificationErrorString = verificationErrors.toString();
-    if (!"".equals(verificationErrorString)) {
-      fail(verificationErrorString);
-    }
-  }
-  
-	public WebDriver getWebDriver() {
-	    return getWebDriver();
-	}
-  
-  private static boolean isElementPresent(By by) {
-    try {
-      driver.findElement(by);
-      return true;
-    } catch (NoSuchElementException e) {
-      return false;
-    }
-  }
-
-
 }

@@ -198,7 +198,6 @@ public class WebDriverManager
      *
      * @param - the instance of the driver to stop
      */
-@Parameters
  public static void stopDriver()
     {
         driver.quit();

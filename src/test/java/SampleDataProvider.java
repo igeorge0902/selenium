@@ -10,9 +10,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
- 
+import java.util.Set;
+
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
@@ -38,6 +40,28 @@ public class SampleDataProvider {
         return dataToBeReturned.iterator();
  
     }
+    
+    @DataProvider(name="colors") 
+    public static Iterator<Object[]> getColors(){
+    	  Set<Object[]> result=new HashSet<Object[]>();
+    	  result.add(new Object[]{"black"});
+    	  result.add(new Object[]{"silver"});
+    	  result.add(new Object[]{"gray"});
+    	  result.add(new Object[]{"white"});
+    	  result.add(new Object[]{"maroon"});
+    	  result.add(new Object[]{"red"});
+    	  result.add(new Object[]{"purple"});
+    	  result.add(new Object[]{"fuchsia"});
+    	  result.add(new Object[]{"green"});
+    	  result.add(new Object[]{"lime"});
+    	  result.add(new Object[]{"olive"});
+    	  result.add(new Object[]{"yellow"});
+    	  result.add(new Object[]{"navy"});
+    	  result.add(new Object[]{"blue"});
+    	  result.add(new Object[]{"teal"});
+    	  result.add(new Object[]{"aqua"});
+    	  return result.iterator();
+    	}
  
     private static List<String> getFileContentList(String filenamePath)
     {

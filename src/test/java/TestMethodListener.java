@@ -18,7 +18,7 @@ public class TestMethodListener implements IInvokedMethodListener{
            //     throw new RuntimeException("Stale error buffer detected!");
            //}
              
-            TestBase.addVerificationFailure(new Throwable()); // each test method will have its own error buffer
+          TestBase.addVerificationFailure(new Throwable()); // each test method will have its own error buffer
         }
  
     }

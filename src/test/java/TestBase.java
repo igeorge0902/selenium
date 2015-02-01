@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -120,6 +122,14 @@ public class TestBase {
     	Assert.fail(message);
     }
     
+    protected static boolean isElementPresent(By by) {
+        try {
+          WebDriverManager.driver.findElement(by);
+          return true;
+        } catch (NoSuchElementException e) {
+          return false;
+        }
+    }
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());
 		return verificationFailures == null ? new ArrayList<Throwable>() : verificationFailures;
