@@ -26,7 +26,6 @@ import org.testng.annotations.Test;
 
 @SuppressWarnings("unused")
 public class ElementScreenshot {
-//static TestTest driver = new TestTest();
 private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
 
 
@@ -66,7 +65,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
 
 	  Calendar calendar = Calendar.getInstance();
       String userHome = System.getProperty("user.home");
-      String screenShotsFolder = userHome + "/Documents/Tests/";
+      String screenShotsFolder = userHome +File.separator+"Documents" + File.separator + "Tests" + File.separator;
       
 	String screen = screenShotsFolder  + WebDriverManager.getBroswer() + "-"
 	          + calendar.get(Calendar.YEAR) + "-"

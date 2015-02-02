@@ -4,16 +4,11 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import static org.hamcrest.CoreMatchers.*;
 
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -22,16 +17,15 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestContext;
 import org.testng.annotations.Listeners;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
 
 
 
-@Listeners({ test.java.TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class })
+@SuppressWarnings("unused")
+@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class TestTest extends TestBase {
@@ -41,7 +35,7 @@ public class TestTest extends TestBase {
   public static WebDriver driver;
   public static WebElement element;
 
-  private static StringBuffer verificationErrors = new StringBuffer();
+  //private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
 
   
@@ -160,12 +154,17 @@ public class TestTest extends TestBase {
 	   //// Return JavaScript Errors associated with the current window: 'window.jsErrors'
 	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
         
-        
+   	   
+	   
+	  /* 
+	   String jQuery = "$('#play_dropdown').find('ul ul:first li:last a').attr("onclick")";
+  
         if (driver instanceof JavascriptExecutor) {
     		((JavascriptExecutor) driver)
-    			.executeScript("PlayerManager.handlePlay('PlayContent',{$})");
-    	}
-    	    	    	
+    			.executeScript(jQuery);
+    	}*/    	
+    
+        
 		Reporter.log("<p>Test done</p>");
 	    
 	  }

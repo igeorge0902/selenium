@@ -2,9 +2,7 @@ package test.java;
 
 
 import com.opera.core.systems.OperaDesktopDriver;
-import com.thoughtworks.selenium.*;
 
-import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -18,9 +16,7 @@ import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -42,6 +38,8 @@ import java.util.Date;
 public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 {
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
+	private static Logger Log = Logger.getLogger(Logger.class.getName());
+
 	@Override
     public void onTestFailure (ITestResult testResult)
     {
@@ -65,13 +63,11 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
             
             // Get the users home path and append the screen shots folder destination
             String userHome = System.getProperty("user.home");
-            String screenShotsFolder = userHome + "/Documents/Tests/";
+            String screenShotsFolder = userHome + File.separator + "Documents" + File.separator + "Tests" + File.separator;
 
             // The file includes the the test method and the test class
             String testMethodAndTestClass = testResult.getMethod().getMethodName() + "(" + testResult.getTestClass().getName() + ")";
-
-            System.out.println(" *** Capture files are created in Documents/Tests folder for the Test \n" + testMethodAndTestClass );
-
+            
             // Create the filename for the screen shots
             String filename = screenShotsFolder + WebDriverManager.getBroswer() + "-"
                                                 + testMethodAndTestClass + "-"
@@ -95,6 +91,8 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
                 e.printStackTrace();
             }
             
+            System.out.println(" *** Capture files are created in " + userHome + File.separator + "Documents" + File.separator + "Tests" + File.separator + testMethodAndTestClass );
+            Log.info(" *** Capture files are created in " + userHome + File.separator + "Documents" + File.separator + "Tests" + File.separator + testMethodAndTestClass);
             
        //(File file)
                 File file = new File(filename);

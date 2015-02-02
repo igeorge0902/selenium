@@ -14,7 +14,6 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.Parameters;
 
 import com.opera.core.systems.OperaDriver;
 
