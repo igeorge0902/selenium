@@ -5,17 +5,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
 public class TestBase {
 	
+	private String pageTitle;
+	private static Logger Log = Logger.getLogger(Logger.class.getName());
+
+	
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
-    public static void assertTrue(boolean condition) {
+
+
+	public static void assertTrue(boolean condition) {
     	Assert.assertTrue(condition);
     }
     
@@ -52,6 +59,7 @@ public class TestBase {
     		assertTrue(condition);
     	} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
     	}
     }
     
@@ -60,12 +68,15 @@ public class TestBase {
     		assertTrue(condition);
     	} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
     	} if (condition == true)
 	    {
     		Reporter.log("<br><p>Verification is successfull<br></p>");
+    		Log.info("Verification is successfull");
 	    } else
 	    {
 	    	Reporter.log("<br><p>Verification is not successfull<br></p>");
+	    	Log.info("Verification is not successfull");
 	    }
 	    return condition;
     }
@@ -75,6 +86,7 @@ public class TestBase {
     		assertTrue(condition, message);
     	} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
     	}
     }
     
@@ -83,6 +95,7 @@ public class TestBase {
     		assertFalse(condition);
 		} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
 		}
     }
     
@@ -91,6 +104,7 @@ public class TestBase {
     		assertFalse(condition, message);
     	} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
     	}
     }
     
@@ -99,6 +113,7 @@ public class TestBase {
     		assertEquals(actual, expected);
 		} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
 		}
     }
 
@@ -107,6 +122,7 @@ public class TestBase {
     		assertEquals(actual, expected);
 		} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
 		}
     }
     
@@ -115,6 +131,7 @@ public class TestBase {
     		assertEquals(actual, expected);
 		} catch(Throwable e) {
     		addVerificationFailure(e);
+    		Log.info(getVerificationFailures(), e);
 		}
     }
 
@@ -122,14 +139,83 @@ public class TestBase {
     	Assert.fail(message);
     }
     
+    
     protected static boolean isElementPresent(By by) {
         try {
           WebDriverManager.driver.findElement(by);
-          return true;
-        } catch (NoSuchElementException e) {
-          return false;
+          Log.info((by));
+          Reporter.log("Element found", 10);
+          		return true;
+        	} 	catch (Throwable e) {
+    			addVerificationFailure(e);
+    			Log.info(getVerificationFailures(), e);{
+    			return false;
+    		}
+    			
         }
-    }
+     } 
+    
+	public boolean isElementPresentAndDisplay(By by) {
+		try {
+			  WebDriverManager.driver.findElement(by).isDisplayed();
+	          Log.info((by));
+	          Reporter.log("Element is displayed", 10);
+			  	return true;
+			  } catch (Throwable e) {
+				addVerificationFailure(e);
+				Log.info(getVerificationFailures(), e);{
+				return false;
+			}
+			
+		}
+	}
+	
+	public boolean isElementPresent(String _cssSelector){
+		try {
+			  WebDriverManager.driver.findElement(By.cssSelector(_cssSelector));
+	          Log.info((_cssSelector));
+	          Reporter.log("CSS found", 10);
+			  	return true;
+		      } catch (Throwable e) {
+			    addVerificationFailure(e);
+			    Log.info(getVerificationFailures(), e);{			
+			    return false;
+		    }
+	    }
+	}
+	
+	protected void sendText(String cssSelector, String text) {
+			  WebDriverManager.driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
+	          Log.info((cssSelector));
+	          Reporter.log("CSS found", 10);
+	}
+
+	public boolean isTextPresent(String text){ 
+		try {
+			  WebDriverManager.driver.getPageSource().contains(text);
+	          Log.info((text));
+	          Reporter.log("Text found", 10);
+	            return true;
+		      } catch (Throwable e) {
+			    addVerificationFailure(e);
+			    Log.info(getVerificationFailures(), e);{			
+			    return false;
+			}
+		}
+	}
+	
+	public String getTitle() {
+			return pageTitle;
+	}
+	
+	public boolean isPageLoad(){
+		return (WebDriverManager.driver.getTitle().contains(pageTitle));
+	}
+	
+	
+
+        
+   
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());
 		return verificationFailures == null ? new ArrayList<Throwable>() : verificationFailures;

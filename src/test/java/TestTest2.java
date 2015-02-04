@@ -1,6 +1,7 @@
 package test.java;
 
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -26,7 +27,7 @@ import org.apache.log4j.Logger;
 
 
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, /*TestMethodListener.class, */CustomTestListener.class})
 
 
 public class TestTest2 extends TestBase {
@@ -64,9 +65,9 @@ public class TestTest2 extends TestBase {
 	}
  
   
-  @Test(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
+  @Test//(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
   	
-  	public void test1(String input) throws Exception {
+  	public void test1(/*String input*/) throws Exception {
 
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
@@ -81,6 +82,8 @@ public class TestTest2 extends TestBase {
     
 
     verifyEquals(driver.getTitle(), "Hello-Bello");
+    verifyEquals(driver.getTitle(), "Hello-Bello");
+
     verifyTrue(driver.getTitle().equals("Google"), "Hello-Bello");
     verifySuccess(driver.getTitle().equals("Google"));
 
@@ -89,13 +92,15 @@ public class TestTest2 extends TestBase {
     //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
 
     
-    driver.findElement(By.id("gbqfq")).clear();
-	driver.findElement(By.id("gbqfq")).sendKeys(input);
+    driver.findElement(By.id("gbqfq")).clear();    
+	driver.findElement(By.id("gbqfq")).sendKeys("Hello");
     driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
     
     element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("rso")));
-       
+    isElementPresent(By.id("rso"));
     ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("rso")));
+    Log.info("ScreenShot done");
+    
     
     driver.findElement(By.id("gbqfq")).clear();
 	driver.findElement(By.id("gbqfq")).sendKeys("Milo");
@@ -135,14 +140,16 @@ public class TestTest2 extends TestBase {
         
     	    	    	
 		Reporter.log("<p>Test done</p>");
+		Log.info("Test done");
+
 	    
 	  }
 
   
   
 
-  @Test (dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
-  public void test2(String input) throws Exception {
+  @Test //(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
+  public void test2(/*String input*/) throws Exception {
     driver.get(BaseUrls.YAHOO.get() + "/?p=us");
     
     if(driver.getTitle().equals("Google"))
@@ -160,7 +167,7 @@ public class TestTest2 extends TestBase {
     
     
     driver.findElement(By.id("p_13838465-p")).clear();
-    driver.findElement(By.id("p_13838465-p")).sendKeys(input);
+    driver.findElement(By.id("p_13838465-p")).sendKeys("Hello");
     driver.findElement(By.id("p_13838465-p")).sendKeys(Keys.ENTER);
     
     element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));
@@ -201,6 +208,8 @@ public class TestTest2 extends TestBase {
         
     	    	    	
 		Reporter.log("<p>Test done</p>");
+		Log.info("Test done");
+
     
   }
 

@@ -166,6 +166,7 @@ public class TestTest extends TestBase {
     
         
 		Reporter.log("<p>Test done</p>");
+		Log.info("Test done");
 	    
 	  }
 

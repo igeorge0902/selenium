@@ -104,10 +104,16 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   
   //Used FileUtils class of apache.commons.io.
 
-  
+  try  {
   FileUtils.copyFile(scrFile, new File(screen));
+  }
+  catch (IOException e)
+  {
+     e.printStackTrace();
+  }
     
   File file = new File(screen);
+  
   
   System.setProperty(ESCAPE_PROPERTY, "false");
 

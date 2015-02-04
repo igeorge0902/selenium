@@ -20,6 +20,7 @@ src/test/java/TestListeners.java -text
 src/test/java/TestMethodListener.java -text
 src/test/java/TestTest.java -text
 src/test/java/TestTest2.java -text
+src/test/java/WaitTool.java -text svneol=unset#text/plain
 src/test/java/WebDriverManager.java -text
 src/test/java/WebTestFactory.java -text
 src/test/resources/suite.xml -text

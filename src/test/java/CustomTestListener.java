@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.internal.Utils;
 
-public class CustomTestListener extends TestListenerAdapter {
+public class CustomTestListener extends TestMethodListener {
 	
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult result) {
