@@ -87,6 +87,8 @@ public class TestBase {
     	} catch(Throwable e) {
     		addVerificationFailure(e);
     		Log.info(getVerificationFailures(), e);
+    		Log.info(message);
+    		Reporter.log(message);
     	}
     }
     
@@ -105,6 +107,8 @@ public class TestBase {
     	} catch(Throwable e) {
     		addVerificationFailure(e);
     		Log.info(getVerificationFailures(), e);
+    		Log.info(message);
+    		Reporter.log(message);
     	}
     }
     
@@ -137,6 +141,8 @@ public class TestBase {
 
     public static void fail(String message) {
     	Assert.fail(message);
+		Log.info(message);
+		Reporter.log(message);
     }
     
     

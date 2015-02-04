@@ -82,9 +82,10 @@ public class TestTest2 extends TestBase {
     
 
     verifyEquals(driver.getTitle(), "Hello-Bello");
-    verifyEquals(driver.getTitle(), "Hello-Bello");
 
     verifyTrue(driver.getTitle().equals("Google"), "Hello-Bello");
+    Log.info(driver.getTitle().equals("Google"));
+    
     verifySuccess(driver.getTitle().equals("Google"));
 
 
