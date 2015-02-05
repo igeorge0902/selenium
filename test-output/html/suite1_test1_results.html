@@ -12,57 +12,112 @@
 <body>
 <h1>Default test</h1>
 <p>
-  Test duration: 92,861s
+  Test duration: 0,004s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">test.java.TestTest2</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">test.java.TestTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  test1
+                  setUp
       </td>
   <td class="duration">
-    8,735s
+    0,000s
   </td>
   <td class="result">
         
+          <i>Method arguments: </i><span class="arguments">org.testng.TestRunner@6a2b953e</span><br />
     
             <div class="testOutput">
-                        <br><p>Verification is successfull<br></p>
-                                <a href="/Users/georgegaspar/Documents/Tests/*firefox-2015-1-4-4-17-35-326.png"><p align="left"Element screenshot at Wed Feb 04 04:17:36 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*firefox-2015-1-4-4-17-35-326.png" alt="screenshot at Wed Feb 04 04:17:36 CET 2015"/></p></a><br />
-                                <p>JavaScript text: </p>hello world<br>
-                                <p>Test done</p>
-                                Completed executing following method : TestTest2.test1<br>
-                                Completed executing following method : TestTest2.test1<br>
-                                Test Method resides in test.java.TestTest2<br>
-                                <p>Test Status: </p><p>Failed</p>
-                                <a href="/Users/georgegaspar/Documents/Tests/*firefox-test1(test.java.TestTest2)-2015-1-4-4-17-39-251.png"><p align="left">Error screenshot at Wed Feb 04 04:17:39 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*firefox-test1(test.java.TestTest2)-2015-1-4-4-17-39-251.png" alt="screenshot at Wed Feb 04 04:17:39 CET 2015"/></p></a><br />
+                        Completed executing following method : TestTest.setUp&lt;br&gt;<br />
+                                Completed executing following method : TestTest.setUp&lt;br&gt;<br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Hello-Bello] but found [Google]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Unknown command: {&quot;id&quot;:&quot;ahf59rqq2qcf&quot;,&quot;name&quot;:&quot;sendKeysToActiveElement&quot;,&quot;parameters&quot;:{&quot;value&quot;:[&quot;&quot;]}} (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 21 milliseconds<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.safari.SafariDriver<br/>
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]<br/>
+Session ID: null</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:494)<br />
-              org.testng.Assert.assertEquals(Assert.java:123)<br />
-              org.testng.Assert.assertEquals(Assert.java:165)<br />
-              test.java.TestBase.assertEquals(TestBase.java:46)<br />
-              test.java.TestBase.verifyEquals(TestBase.java:126)<br />
-              test.java.TestTest2.test1(TestTest2.java:84)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:34)<br />
+              org.openqa.selenium.remote.RemoteKeyboard.pressKey(RemoteKeyboard.java:43)<br />
+              org.openqa.selenium.interactions.KeyDownAction.perform(KeyDownAction.java:39)<br />
+              org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)<br />
+              org.openqa.selenium.interactions.Actions.perform(Actions.java:367)<br />
+              test.java.WebDriverManager.startDriver(WebDriverManager.java:205)<br />
+              test.java.TestTest.setUp(TestTest.java:57)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:483)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testHbogoWebdriverTest1
+      </td>
+  <td class="duration">
+    0,004s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.util.ArrayList.rangeCheck(ArrayList.java:653)<br />
+              java.util.ArrayList.get(ArrayList.java:429)<br />
+              test.java.TestMethodListener.afterInvocation(TestMethodListener.java:48)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeAfterInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:100)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br />
+              org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:777)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
               org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
@@ -87,37 +142,6 @@
       </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">test.java.TestTest2</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  test2
-      </td>
-  <td class="duration">
-    78,239s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        <a href="/Users/georgegaspar/Documents/Tests/*firefox-2015-1-4-4-18-50-377.png"><p align="left"Element screenshot at Wed Feb 04 04:18:54 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*firefox-2015-1-4-4-18-50-377.png" alt="screenshot at Wed Feb 04 04:18:54 CET 2015"/></p></a><br />
-                                <p>JavaScript text: </p>hello world<br>
-                                <p>Test done</p>
-                                Completed executing following method : TestTest2.test2<br>
-                                Completed executing following method : TestTest2.test2<br>
-                                Test Method resides in test.java.TestTest2<br>
-                                <p>Test Status: </p><p>Pass</p>
-                  </div>
-    
-
-      </td>
-</tr>
-      </table>
   
 </body>
 </html>

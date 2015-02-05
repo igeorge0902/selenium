@@ -54,5 +54,6 @@
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/velocity-dep-1.4.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/reportng-1.1.4.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/Silverlight-Selenium.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

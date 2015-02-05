@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -169,13 +170,29 @@ public class WebDriverManager
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
         }
-        else
+        else if ( browser.equalsIgnoreCase("Firefox") )
         {
-            System.out.println("browser : Firefox (Default)\n");
+            System.out.println("browser :"+ browser);
 
-            // start a firefox driver instance
+
             driver = new FirefoxDriver();
 
+            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+
+            // open the url
+            //driver.get(portalUrl);
+
+            driver.manage().deleteAllCookies();
+
+            new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
+
+        }
+        else
+        {
+            System.out.println("browser : Safari (Default)\n");
+
+            // start a firefox driver instance
+            driver = new SafariDriver();
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
             // open the url

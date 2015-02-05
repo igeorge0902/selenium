@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -16,10 +17,23 @@ public class TestBase {
 	
 	private String pageTitle;
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	
+    static String[] playTrailer = new String[]{"PlayTrailer"};
+    static String[] playContent = new String[]{"PlayContent"};
+    static String[] playFree = new String[]{"PlayFree"};
+    static String[] playLive = new String[]{"PlayLive"};
+    static String[] playExtra = new String[]{"PlayExtra"};
+    static String[] playInteractive = new String[]{"PlayInteractive"};
+    static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
 
 	
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
+
+	public static void currentPlatform() {
+	    	Platform.getCurrent();
+	    return;
+	}
 
 
 	public static void assertTrue(boolean condition) {

@@ -10,6 +10,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.thoughtworks.selenium.*;
+
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
@@ -32,8 +34,9 @@ public class TestTest extends TestBase {
   //FirefoxProfile profile = new FirefoxProfile();
   //profile.setAssumeUntrustedCertificateIssuer(false);
 	
-  public static WebDriver driver;
-  public static WebElement element;
+  private static WebDriver driver;
+  private static WebElement element;
+  private static Silvernium silvernium;
 
   //private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
@@ -132,7 +135,29 @@ public class TestTest extends TestBase {
                   
         
     	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	 
+    	
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+        
+        String[] playTrailer = new String[]{"PlayTrailer"};
+        
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playTrailer.length;j++)
+            {
+                if(onClick.contains(playTrailer[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+        
+       silvernium.fullScreen();
+    	       
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
 	   System.out.println("Document state : "+js.executeScript("return document.readyState"));
 	    
@@ -153,17 +178,8 @@ public class TestTest extends TestBase {
 	    
 	   //// Return JavaScript Errors associated with the current window: 'window.jsErrors'
 	   System.out.println("Windows js errors : "+js.executeScript("return window.jsErrors")); 
-        
-   	   
-	   
-	  /* 
-	   String jQuery = "$('#play_dropdown').find('ul ul:first li:last a').attr("onclick")";
-  
-        if (driver instanceof JavascriptExecutor) {
-    		((JavascriptExecutor) driver)
-    			.executeScript(jQuery);
-    	}*/    	
-    
+         	
+       driver.quit();
         
 		Reporter.log("<p>Test done</p>");
 		Log.info("Test done");
