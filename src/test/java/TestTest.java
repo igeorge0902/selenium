@@ -4,13 +4,15 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import com.thoughtworks.selenium.*;
+//import com.thoughtworks.selenium.*;
+import org.openqa.selenium.*;
+
+import com.thoughtworks.selenium.Selenium;
+import com.thoughtworks.selenium.Silvernium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriverException;
 
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -37,6 +39,9 @@ public class TestTest extends TestBase {
   private static WebDriver driver;
   private static WebElement element;
   private static Silvernium silvernium;
+  
+  //@SuppressWarnings("deprecation")
+  private static Selenium selenium;
 
   //private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
@@ -45,6 +50,7 @@ public class TestTest extends TestBase {
   public TestTest() {
 	// TODO Auto-generated constructor stub
   }
+  
   
   @BeforeClass
   public void setUp(ITestContext context) throws Exception
@@ -64,12 +70,17 @@ public class TestTest extends TestBase {
 	}
   
   
+  public TestTest(WebDriver driver) {
+	   silvernium = new Silvernium( (Selenium) driver, silverlightPlayer); 
+  }
+  
   @Test
   public static void testHbogoWebdriverTest1() throws Exception {
 
+//	   silvernium = new Silvernium((Selenium) driver, silverlightPlayer); 
+
 	   Actions action = new Actions(driver);	  
 
-		
 		driver.get(BaseUrls.HBO.get() + "/group/offers");
 	     
 	    verifySuccess(driver.getTitle().equals("HBO. Bárhol. Bármikor"));
@@ -138,9 +149,7 @@ public class TestTest extends TestBase {
     	
     	List<WebElement> playbuttonmenu;
         playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-        
-        String[] playTrailer = new String[]{"PlayTrailer"};
-        
+                
         for(int i =0; i<playbuttonmenu.size();i++)    
         {
             String onClick = playbuttonmenu.get(i).getAttribute("onclick");
@@ -156,8 +165,10 @@ public class TestTest extends TestBase {
             
         }
         
-       silvernium.fullScreen();
-    	       
+        
+        silvernium.equals(playTrailer);
+    	
+            	       
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
 	   System.out.println("Document state : "+js.executeScript("return document.readyState"));
 	    

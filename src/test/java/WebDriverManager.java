@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -175,7 +177,9 @@ public class WebDriverManager
             System.out.println("browser :"+ browser);
 
 
-            driver = new FirefoxDriver();
+            ProfilesIni profilesIni = new ProfilesIni();
+            FirefoxProfile profile = profilesIni.getProfile("teszt");
+            driver = new FirefoxDriver(profile);
 
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 
@@ -191,7 +195,6 @@ public class WebDriverManager
         {
             System.out.println("browser : Safari (Default)\n");
 
-            // start a firefox driver instance
             driver = new SafariDriver();
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 

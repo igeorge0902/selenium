@@ -8,14 +8,15 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+
 public class TestBase {
 	
-	private String pageTitle;
+	protected String pageTitle;
+	public static String silverlightPlayer;
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
     static String[] playTrailer = new String[]{"PlayTrailer"};
@@ -164,7 +165,7 @@ public class TestBase {
         try {
           WebDriverManager.driver.findElement(by);
           Log.info((by));
-          Reporter.log("Element found", 10);
+          Reporter.log("Element is present");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
@@ -179,7 +180,7 @@ public class TestBase {
 		try {
 			  WebDriverManager.driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          Reporter.log("Element is displayed", 10);
+	          Reporter.log("Element is displayed");
 			  	return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
@@ -194,7 +195,7 @@ public class TestBase {
 		try {
 			  WebDriverManager.driver.findElement(By.cssSelector(_cssSelector));
 	          Log.info((_cssSelector));
-	          Reporter.log("CSS found", 10);
+	          Reporter.log(_cssSelector);
 			  	return true;
 		      } catch (Throwable e) {
 			    addVerificationFailure(e);
@@ -207,14 +208,14 @@ public class TestBase {
 	protected void sendText(String cssSelector, String text) {
 			  WebDriverManager.driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
 	          Log.info((cssSelector));
-	          Reporter.log("CSS found", 10);
+	          Reporter.log(cssSelector);
 	}
 
 	public boolean isTextPresent(String text){ 
 		try {
 			  WebDriverManager.driver.getPageSource().contains(text);
-	          Log.info((text));
-	          Reporter.log("Text found", 10);
+	          Log.info(text);
+	          Reporter.log(text);
 	            return true;
 		      } catch (Throwable e) {
 			    addVerificationFailure(e);
@@ -228,12 +229,10 @@ public class TestBase {
 			return pageTitle;
 	}
 	
-	public boolean isPageLoad(){
+	public boolean isPageLoad() {
 		return (WebDriverManager.driver.getTitle().contains(pageTitle));
 	}
 	
-	
-
         
    
 	public static List<Throwable> getVerificationFailures() {
@@ -246,5 +245,6 @@ public class TestBase {
 		verificationFailuresMap.put(Reporter.getCurrentTestResult(), verificationFailures);
 		verificationFailures.add(e);
 	}
+
 	
 }
