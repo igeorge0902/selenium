@@ -8,6 +8,8 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -15,8 +17,8 @@ import org.testng.Reporter;
 
 public class TestBase {
 	
-	protected String pageTitle;
-	public static String silverlightPlayer;
+	protected static String pageTitle;
+	public static String silverlightPlayer = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
     static String[] playTrailer = new String[]{"PlayTrailer"};
@@ -26,8 +28,17 @@ public class TestBase {
     static String[] playExtra = new String[]{"PlayExtra"};
     static String[] playInteractive = new String[]{"PlayInteractive"};
     static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
-
-	
+    
+    protected WebDriver driver;
+    
+	  public TestBase(WebDriver driver) {
+		  this.driver = driver; 
+	  }
+	  
+	  public TestBase() {
+		  
+	  }
+    
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
 
@@ -165,7 +176,7 @@ public class TestBase {
         try {
           WebDriverManager.driver.findElement(by);
           Log.info((by));
-          Reporter.log("Element is present");
+          Reporter.log("Element is present<br>");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
@@ -180,7 +191,7 @@ public class TestBase {
 		try {
 			  WebDriverManager.driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          Reporter.log("Element is displayed");
+	          Reporter.log("Element is displayed<br>");
 			  	return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
@@ -233,6 +244,38 @@ public class TestBase {
 		return (WebDriverManager.driver.getTitle().contains(pageTitle));
 	}
 	
+	/**
+	 * Verify the error message is displayed. 
+	 */
+	public boolean verifyErrorMessageRequired_displayed() {  		
+        	return isErrorMessageOfField_display(By.name("EmailAddressAgain"));       
+    	}  
+	
+
+	/**
+	 * Verify the error message of "I accept Terms of Service" is displayed.
+	 */
+	public boolean isErrorMessageRequired_Check_TOS_displayed() { 
+        	return isErrorMessageOfField_display(By.id("Terms_theme"));           
+    	} 
+	
+	/**
+	 * Check the Error Message field displayed.  
+	 * It will wait for the JavaScript error message to be present on the DOM, and displayed. 
+	 * 
+	 * @param by
+	 * @return
+	 */
+	private boolean isErrorMessageOfField_display(By by){
+		WebElement element = null; 
+		//wait for the Error Message Element to be present and display
+		element = WebDriverManager.driver.findElement(by); 
+		if (element != null){
+			return true;  
+		}
+		
+		return false; 
+	}
         
    
 	public static List<Throwable> getVerificationFailures() {

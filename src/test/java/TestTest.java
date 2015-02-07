@@ -33,8 +33,6 @@ import org.apache.log4j.Logger;
 
 
 public class TestTest extends TestBase {
-  //FirefoxProfile profile = new FirefoxProfile();
-  //profile.setAssumeUntrustedCertificateIssuer(false);
 	
   private static WebDriver driver;
   private static WebElement element;
@@ -165,9 +163,7 @@ public class TestTest extends TestBase {
             
         }
         
-        
-        silvernium.equals(playTrailer);
-    	
+            	
             	       
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
 	   System.out.println("Document state : "+js.executeScript("return document.readyState"));
