@@ -33,7 +33,7 @@ public class HboSignIn extends TestBase{
 		return new HboSignIn(driver); 
 	}
 	    
-		public HboSignIn newDevice() throws Exception{
+	public HboSignIn newDevice() throws Exception{
 			try 
 			
 			{ if (isElementPresent(By.xpath("newDeviceInput"))); 

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
@@ -14,11 +15,13 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import test.java.WaitTool;
+
 
 public class TestBase {
 	
 	protected static String pageTitle;
-	public static String silverlightPlayer = "silverlightPlayer";
+	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
     static String[] playTrailer = new String[]{"PlayTrailer"};
@@ -29,7 +32,12 @@ public class TestBase {
     static String[] playInteractive = new String[]{"PlayInteractive"};
     static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
     
-    protected WebDriver driver;
+
+	/**
+	 * softAssert methods
+	 **/
+	
+	protected WebDriver driver;
     
 	  public TestBase(WebDriver driver) {
 		  this.driver = driver; 
@@ -107,6 +115,7 @@ public class TestBase {
 	    return condition;
     }
     
+    
     public static void verifyTrue(boolean condition, String message) {
     	try {
     		assertTrue(condition, message);
@@ -117,6 +126,7 @@ public class TestBase {
     		Reporter.log(message);
     	}
     }
+    
     
     public static void verifyFalse(boolean condition) {
     	try {
@@ -172,30 +182,33 @@ public class TestBase {
     }
     
     
-    protected static boolean isElementPresent(By by) {
+    protected boolean isElementPresent(By by)  {
         try {
           WebDriverManager.driver.findElement(by);
           Log.info((by));
-          Reporter.log("Element is present<br>");
+          Reporter.log("Element is present");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
-    			Log.info(getVerificationFailures(), e);{
+    			Log.info(getVerificationFailures(), e);
+    	        Reporter.log("Element is not present");
     			return false;
     		}
     			
         }
-     } 
+      
     
 	public boolean isElementPresentAndDisplay(By by) {
 		try {
 			  WebDriverManager.driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          Reporter.log("Element is displayed<br>");
+	          Reporter.log("Element is present");
 			  	return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
-				Log.info(getVerificationFailures(), e);{
+				Log.info(getVerificationFailures(), e);
+    	        Reporter.log("Element is not present");
+				{
 				return false;
 			}
 			
@@ -266,10 +279,10 @@ public class TestBase {
 	 * @param by
 	 * @return
 	 */
-	private boolean isErrorMessageOfField_display(By by){
+	protected boolean isErrorMessageOfField_display(By by){
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
-		element = WebDriverManager.driver.findElement(by); 
+		element = WaitTool.waitForElement(driver, by, 3); 
 		if (element != null){
 			return true;  
 		}

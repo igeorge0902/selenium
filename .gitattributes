@@ -15,6 +15,7 @@ src/test/java/FileSeparator.java -text svneol=unset#text/plain
 src/test/java/HboSignIn.java -text svneol=unset#text/plain
 src/test/java/HboSignUp.java -text svneol=unset#text/plain
 src/test/java/HboSignUpForm.java -text svneol=unset#text/plain
+src/test/java/ObjectMessages.java -text
 src/test/java/PlayTrailer.java -text svneol=unset#text/plain
 src/test/java/SampleDataProvider.java -text
 src/test/java/TestBase.java -text
@@ -40,6 +41,8 @@ test-output/html/sorttable.js -text
 test-output/html/suite1_test1_results.html -text
 test-output/html/suites.html -text
 test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestHboSignIn_results.xml -text
+test-output/xml/test.java.TestHboSignUp_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text
 test-output/xml/test.java.TestTest_results.xml -text
 /testng.xml -text

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
 
-//import com.thoughtworks.selenium.*;
+
 import org.openqa.selenium.*;
 
 import com.thoughtworks.selenium.Selenium;
@@ -14,7 +14,6 @@ import com.thoughtworks.selenium.Silvernium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 
-//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -28,7 +27,7 @@ import org.apache.log4j.Logger;
 
 
 
-@SuppressWarnings("unused")
+@SuppressWarnings({ "unused", "deprecation" })
 @Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
@@ -38,7 +37,6 @@ public class TestTest extends TestBase {
   private static WebElement element;
   private static Silvernium silvernium;
   
-  //@SuppressWarnings("deprecation")
   private static Selenium selenium;
 
   //private static StringBuffer verificationErrors = new StringBuffer();
@@ -69,11 +67,11 @@ public class TestTest extends TestBase {
   
   
   public TestTest(WebDriver driver) {
-	   silvernium = new Silvernium( (Selenium) driver, silverlightPlayer); 
+	   silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
   }
   
   @Test
-  public static void testHbogoWebdriverTest1() throws Exception {
+  public void testHbogoWebdriverTest1() throws Exception {
 
 //	   silvernium = new Silvernium((Selenium) driver, silverlightPlayer); 
 

@@ -12,7 +12,7 @@
 <body>
 <h1>Default test</h1>
 <p>
-  Test duration: 73,619s
+  Test duration: 101,663s
 </p>
 
 
@@ -20,53 +20,77 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">test.java.TestTest</td>
+        <td colspan="3" class="group">test.java.TestHboSignIn</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testHbogoWebdriverTest1
+                  testSignInSuccess
       </td>
   <td class="duration">
-    50,735s
+    91,990s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <br><p>Verification is not successfull<br></p>
+                        <p>selectOperator test is done<br></p>
+                                <p>submit test is done<br></p>
+                                Element is not present
+                                <p>newDevice test is done<br></p>
+                                <br><p>Verification is successfull<br></p>
                                 Element is present
                                 Element is present
                                 Element is present
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-6-0-59-26-725.png"><p align="left"Element screenshot at Fri Feb 06 00:59:32 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-6-0-59-26-725.png" alt="screenshot at Fri Feb 06 00:59:32 CET 2015"/></p></a><br />
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-7-23-45-12-663.png"><p align="left"Element screenshot at Sat Feb 07 23:45:19 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-7-23-45-12-663.png" alt="screenshot at Sat Feb 07 23:45:19 CET 2015"/></p></a><br />
                                 Element is present
                                 Element is present
                                 Element is present
                                 Element is present
-                                Completed executing following method : TestTest.testHbogoWebdriverTest1<br>
-                                Completed executing following method : TestTest.testHbogoWebdriverTest1<br>
-                                Test Method resides in test.java.TestTest<br>
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br>
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-7-23-45-31-172.png"><p align="left">Error screenshot at Sat Feb 07 23:45:37 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-7-23-45-31-172.png" alt="screenshot at Sat Feb 07 23:45:37 CET 2015"/></p></a><br />
+                                Test Method resides in test.java.TestHboSignIn<br>
                                 <p>Test Status: </p><p>Failed</p>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-testHbogoWebdriverTest1(test.java.TestTest)-2015-1-6-0-59-43-611.png"><p align="left">Error screenshot at Fri Feb 06 00:59:52 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-testHbogoWebdriverTest1(test.java.TestTest)-2015-1-6-0-59-43-611.png" alt="screenshot at Fri Feb 06 00:59:52 CET 2015"/></p></a><br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Multiple failures (3)<br/>
-(1)java.lang.AssertionError:expected [true] but found [false]<br/>
-(2)java.lang.AssertionError:expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]<br/>
-(3)java.lang.NullPointerException:null<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Multiple failures (2)<br/>
+(1)org.openqa.selenium.NoSuchElementException:Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;newDeviceInput&quot;}<br/>
+Command duration or timeout: 30.08 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: e0bfbbf8-1a26-c147-9fa7-93082639c4d8<br/>
+(2)java.lang.NullPointerException:null<br/>
 <br/>
-Failure 1 of 3<br/>
-java.lang.AssertionError: expected [true] but found [false]<br/>
-	at org.testng.Assert.fail(Assert.java:94)<br/>
-	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
-	at org.testng.Assert.assertTrue(Assert.java:42)<br/>
-	at org.testng.Assert.assertTrue(Assert.java:52)<br/>
-	at test.java.TestBase.assertTrue(TestBase.java:41)<br/>
-	at test.java.TestBase.verifySuccess(TestBase.java:83)<br/>
-	at test.java.TestTest.testHbogoWebdriverTest1(TestTest.java:86)<br/>
+Failure 1 of 2<br/>
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;newDeviceInput&quot;}<br/>
+Command duration or timeout: 30.08 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: e0bfbbf8-1a26-c147-9fa7-93082639c4d8<br/>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br/>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br/>
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br/>
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br/>
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br/>
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br/>
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br/>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br/>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)<br/>
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)<br/>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br/>
+	at test.java.TestBase.isElementPresent(TestBase.java:187)<br/>
+	at test.java.HboSignIn.newDevice(HboSignIn.java:39)<br/>
+	at test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:52)<br/>
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
@@ -91,45 +115,19 @@ java.lang.AssertionError: expected [true] but found [false]<br/>
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;newDeviceInput&quot;}<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: driver.version: unknown<br/>
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous3047980768604171203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)<br/>
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous3047980768604171203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)<br/>
 <br/>
-Failure 2 of 3<br/>
-java.lang.AssertionError: expected [HB. Brhol. Bármikor] but found [HBO GO. Bárhol. Bármikor.]<br/>
-	at org.testng.Assert.fail(Assert.java:94)<br/>
-	at org.testng.Assert.failNotEquals(Assert.java:494)<br/>
-	at org.testng.Assert.assertEquals(Assert.java:123)<br/>
-	at org.testng.Assert.assertEquals(Assert.java:165)<br/>
-	at test.java.TestBase.assertEquals(TestBase.java:61)<br/>
-	at test.java.TestBase.verifyEquals(TestBase.java:141)<br/>
-	at test.java.TestTest.testHbogoWebdriverTest1(TestTest.java:88)<br/>
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
-	at java.lang.reflect.Method.invoke(Method.java:483)<br/>
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br/>
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br/>
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
-	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
-	at org.testng.TestNG.run(TestNG.java:1057)<br/>
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
-<br/>
-Failure 3 of 3<br/>
+Failure 2 of 2<br/>
 java.lang.NullPointerException</b></a><br />
     <div class="stackTrace" id="exception-0">
-              test.java.TestTest.testHbogoWebdriverTest1(TestTest.java:169)<br />
+              test.java.PlayTrailer.playTrailer(PlayTrailer.java:118)<br />
+              test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:58)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

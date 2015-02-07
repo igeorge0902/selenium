@@ -9,13 +9,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Listeners;
 
+import com.thoughtworks.selenium.Selenium;
+import com.thoughtworks.selenium.Silvernium;
+
+@SuppressWarnings("deprecation")
 @Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class PlayTrailer extends TestBase {
 	
+	private static Silvernium silvernium;	
+	
 	public PlayTrailer(WebDriver driver){
 		super(driver); 
 	}
+
+	//silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
+	
+	  public void PlayTrailerSilverLight(WebDriver driver) {
+		   silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
+	  }
+
 	
 	public PlayTrailer playTrailer() throws Exception {
 
@@ -101,6 +114,8 @@ public class PlayTrailer extends TestBase {
 	            }
 	            
 	        }
+	        
+	//verifyTrue(silvernium.isLoaded());
 
 
 	return new PlayTrailer(driver); 

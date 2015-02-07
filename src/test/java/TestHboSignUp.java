@@ -3,8 +3,9 @@ package test.java;
 
 
 
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
@@ -28,22 +29,28 @@ public class TestHboSignUp extends TestBase{
 	      //String url         = context.getCurrentXmlTest().getParameter("url");
 
 	      driver = WebDriverManager.startDriver(browser, 40);  
-	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	      //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
 	
   @Test
-  public void testSignupFail(){
+  public void testSignupFail() throws Exception{
 		HboSignUp SignUpPage = new HboSignUp(driver); 
 		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
+		
 		//select operator
 		SignUpPage.selectOperator();
+		
 		//enter data
 		SignUpForm.fillCustomerData();
 		
+		//submit form
 		SignUpForm.submitForm();
 		
-		verifyTrue(isTextPresent("Az e-mail címek nem egyeznek"), "Verify: the Valid Email error message displayed.");
-		
+		verifyTrue(isTextPresent("<p>Az e-mail címek nem egyeznek<br></p>"), "Verify: the Valid Email error message displayed.");
+
+		verifyTrue(isErrorMessageRequired_Check_TOS_displayed(), "ToS is checked");
+				
+		ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath(".//*[@id='operatorTypeNormal']/div[2]")));
 		
  
 	}
