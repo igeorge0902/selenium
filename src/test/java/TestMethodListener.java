@@ -44,8 +44,8 @@ public class TestMethodListener implements IInvokedMethodListener{
                 int size = lThrowable.size();
  
                 /* if there is only one throwable then set it directly to test result */
-                if(size == 1){
-                    testResult.setThrowable(lThrowable.get(1));
+                if(size == 0){
+                    testResult.setThrowable(lThrowable.get(0));
                 }else{
  
                     StringBuffer failureMessage = new StringBuffer("Multiple failures (").append(size).append(")\n");

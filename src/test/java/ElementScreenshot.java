@@ -103,6 +103,9 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   ImageIO.write(dest, "png", scrFile);
   
   //Used FileUtils class of apache.commons.io.
+  
+  
+  String fileNameToCopy = screen;
 
   try  {
   FileUtils.copyFile(scrFile, new File(screen));

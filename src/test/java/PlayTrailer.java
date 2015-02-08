@@ -17,6 +17,7 @@ import com.thoughtworks.selenium.Silvernium;
 
 public class PlayTrailer extends TestBase {
 	
+	@SuppressWarnings("unused")
 	private static Silvernium silvernium;	
 	
 	public PlayTrailer(WebDriver driver){
@@ -34,7 +35,7 @@ public class PlayTrailer extends TestBase {
 
 		   Actions action = new Actions(driver);	  
 
-			//driver.get(BaseUrls.HBO.get() + "/group/offers");
+			driver.get(BaseUrls.HBO.get() + "/group/offers");
 		     
 		    verifySuccess(driver.getTitle().equals("HBO GO. Bárhol. Bármikor."));
 	   		    

@@ -1,7 +1,6 @@
 package test.java;
 
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -27,24 +26,16 @@ import org.apache.log4j.Logger;
 
 
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, /*TestMethodListener.class, */CustomTestListener.class})
+@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, /*CustomTestListener.class*/})
 
 
 public class TestTest2 extends TestBase {
-  //FirefoxProfile profile = new FirefoxProfile();
-  //profile.setAssumeUntrustedCertificateIssuer(false);
-	
   public static WebDriver driver;
   public static WebElement element;
-  //private static StringBuffer verificationErrors = new StringBuffer();
   private static Logger Log = Logger.getLogger(Logger.class.getName());
   public TestTest2() {
   }
-  
-
-  
-  
-  
+    
   @BeforeClass
   public void setUp(ITestContext context) throws Exception
   {
@@ -65,7 +56,7 @@ public class TestTest2 extends TestBase {
 	}
  
   
-  @Test//(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
+  @Test (groups = { "functional_test" }/*(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")*/)
   	
   	public void test1(/*String input*/) throws Exception {
 
@@ -87,11 +78,6 @@ public class TestTest2 extends TestBase {
     Log.info(driver.getTitle().equals("Google"));
     
     verifySuccess(driver.getTitle().equals("Google"));
-
-
-    
-    //Assert.assertSame("myValue", allOf(startsWith("my"), containsString("Val")));
-
     
     driver.findElement(By.id("gbqfq")).clear();    
 	driver.findElement(By.id("gbqfq")).sendKeys("Hello");
@@ -145,11 +131,9 @@ public class TestTest2 extends TestBase {
 
 	    
 	  }
+ 
 
-  
-  
-
-  @Test //(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")
+  @Test (groups = { "functional_test" }/*(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")*/)
   public void test2(/*String input*/) throws Exception {
     driver.get(BaseUrls.YAHOO.get() + "/?p=us");
     
@@ -161,9 +145,7 @@ public class TestTest2 extends TestBase {
     	{
     Log.info("Verification Failed for Title"); 
     }
-    
-	//assertEquals("Expected page title not found", "Yahoo România", driver.getTitle());
-	
+    	
 	assertTrue(isElementPresent(By.id("p_13838465-p")));
     
     

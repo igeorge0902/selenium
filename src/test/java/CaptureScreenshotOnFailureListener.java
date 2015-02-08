@@ -83,6 +83,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
             // Take the screen shot and then copy the file to the screen shot folder
             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
+            
             try  {
                 FileUtils.copyFile(scrFile, new File(filename));
             }

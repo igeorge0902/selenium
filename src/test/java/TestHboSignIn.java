@@ -9,6 +9,7 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+ 
 
 @Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
@@ -17,7 +18,6 @@ public class TestHboSignIn extends TestBase{
 	
 	  private static WebDriver driver;
 	  private static Logger Log = Logger.getLogger(Logger.class.getName());
-
 
 
 	@BeforeClass
@@ -31,11 +31,9 @@ public class TestHboSignIn extends TestBase{
 	      driver = WebDriverManager.startDriver(browser, 40);  
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
-	
-  @Test
+  @Test (groups = { "functional_test" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
-		//PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		
 		//select operator
 		SignInPage.selectOperator();
@@ -52,12 +50,17 @@ public class TestHboSignIn extends TestBase{
 		SignInPage.enterNewDevice();
 	    Log.info("newDevice test is done");
 	    Reporter.log("<p>newDevice test is done<br></p>");
-
-	    /*
+  }
+    @Test (dependsOnMethods = { "testSignInSuccess" },alwaysRun=true, groups = { "functional_test" }, description= "Play trailer after login")
+    public void testPlayerSuccess() throws Exception{
+		PlayTrailer PlayTrailer = new PlayTrailer(driver);
+		
 	    //playTrailer
 	    PlayTrailer.playTrailer();
 	    Log.info("playTrailer test is done"); 
 	    Reporter.log("<p>playTrailer test is done<br></p>");
-		*/
+		
 	}
+    
+    
 }

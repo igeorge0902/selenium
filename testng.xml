@@ -7,9 +7,18 @@
   <parameter name="browser" value="Firefox" />
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <test name="TestTest" preserve-order="true">
+    <groups>
+    <run>
+      <include name="functional_test"/>
+    </run>
+  </groups>
     <classes>
       <class name="test.java.TestTest" />
       <class name="test.java.TestTest2" />
+      		<methods>
+        		<include name="test1" />
+        		<include name="test2" />
+      		</methods>   		
       <class name="WebTestFactory" />
      </classes>
   </test>

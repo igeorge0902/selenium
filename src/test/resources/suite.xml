@@ -3,13 +3,22 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
    </listeners>
-  <sysproperty key="org.uncommons.reportng.escape-output" value="false" />
-  <parameter name="browser" value="*firefox" />
+  <sysproperty key="org.uncommons.reportng.escape-output" value="false" />    
+  <parameter name="browser" value="Firefox" />
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <test name="TestTest" preserve-order="true">
+    <groups>
+    <run>
+      <include name="functional_test"/>
+    </run>
+  </groups>
     <classes>
       <class name="test.java.TestTest" />
       <class name="test.java.TestTest2" />
+      		<methods>
+        		<exclude name="test1" />
+        		<include name="test2" />
+      		</methods>   		
       <class name="test.java.WebTestFactory" />
      </classes>
   </test>
