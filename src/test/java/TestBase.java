@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
@@ -183,15 +182,15 @@ public class TestBase {
     
     
     protected boolean isElementPresent(By by)  {
-        try {
-          WebDriverManager.driver.findElement(by);
-          Log.info((by));
-          Reporter.log("Element is present");
+       try {
+        	 WebDriverManager.driver.findElement(by);
+        	 Log.info((by));
+        	 Reporter.log("Element is present<br>");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
     			Log.info(getVerificationFailures(), e);
-    	        Reporter.log("Element is not present");
+    	        Reporter.log("Element is not present<br>");
     			return false;
     		}
     			
@@ -202,20 +201,17 @@ public class TestBase {
 		try {
 			  WebDriverManager.driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          Reporter.log("Element is present");
-			  	return true;
+	          Reporter.log("Element is present<br>");
+			    return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
 				Log.info(getVerificationFailures(), e);
-    	        Reporter.log("Element is not present");
-				{
-				return false;
-			}
-			
+    	        Reporter.log("Element is not present<br>");
+				return false;			
 		}
 	}
 	
-	public boolean isElementPresent(String _cssSelector){
+	  public boolean isElementPresent(String _cssSelector){
 		try {
 			  WebDriverManager.driver.findElement(By.cssSelector(_cssSelector));
 	          Log.info((_cssSelector));
@@ -223,17 +219,12 @@ public class TestBase {
 			  	return true;
 		      } catch (Throwable e) {
 			    addVerificationFailure(e);
-			    Log.info(getVerificationFailures(), e);{			
+			    Log.info(getVerificationFailures(), e);
+    	        Reporter.log(_cssSelector);			
 			    return false;
-		    }
 	    }
 	}
-	
-	protected void sendText(String cssSelector, String text) {
-			  WebDriverManager.driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
-	          Log.info((cssSelector));
-	          Reporter.log(cssSelector);
-	}
+
 
 	public boolean isTextPresent(String text){ 
 		try {
@@ -243,9 +234,8 @@ public class TestBase {
 	            return true;
 		      } catch (Throwable e) {
 			    addVerificationFailure(e);
-			    Log.info(getVerificationFailures(), e);{			
+			    Log.info(getVerificationFailures(), e);		
 			    return false;
-			}
 		}
 	}
 	
@@ -261,7 +251,7 @@ public class TestBase {
 	 * Verify the error message is displayed. 
 	 */
 	public boolean verifyErrorMessageRequired_displayed() {  		
-        	return isErrorMessageOfField_display(By.name("EmailAddressAgain"));       
+        	return isElementDisplayed(By.name("EmailAddressAgain"));       
     	}  
 	
 
@@ -269,7 +259,7 @@ public class TestBase {
 	 * Verify the error message of "I accept Terms of Service" is displayed.
 	 */
 	public boolean isErrorMessageRequired_Check_TOS_displayed() { 
-        	return isErrorMessageOfField_display(By.id("Terms_theme"));           
+        	return isElementDisplayed(By.id("Terms_theme"));           
     	} 
 	
 	/**
@@ -279,7 +269,7 @@ public class TestBase {
 	 * @param by
 	 * @return
 	 */
-	protected boolean isErrorMessageOfField_display(By by){
+	protected boolean isElementDisplayed(By by){
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3); 

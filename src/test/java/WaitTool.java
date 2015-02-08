@@ -37,7 +37,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * http://www.apache.org/licenses/LICENSE-2.0
  * 
  */
-public class WaitTool {
+public class WaitTool extends TestBase {
+	
+	public WaitTool(WebDriver driver){
+		super(driver); 
+	}
 
 	/** Default wait time for an element. 7  seconds. */ 
 	public static final int DEFAULT_WAIT_4_ELEMENT = 7; 
@@ -339,6 +343,7 @@ public class WaitTool {
 	 * @param by - selector to find the element
 	 * @return boolean
 	 */
+	/*
 	private static boolean isElementPresent(WebDriver driver, By by) {
 		try {
 			driver.findElement(by);//if it does not find the element throw NoSuchElementException, which calls "catch(Exception)" and returns false; 
@@ -347,7 +352,7 @@ public class WaitTool {
 			return false;
 		}
 	}
-	
+	*/
 
 	/**
 	 * Checks if the List<WebElement> are in the DOM, regardless of being displayed or not.

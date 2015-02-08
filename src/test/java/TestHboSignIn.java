@@ -35,7 +35,7 @@ public class TestHboSignIn extends TestBase{
   @Test
   public void testSignInSuccess() throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
-		PlayTrailer PlayTrailer = new PlayTrailer(driver);
+		//PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		
 		//select operator
 		SignInPage.selectOperator();
@@ -49,15 +49,15 @@ public class TestHboSignIn extends TestBase{
 
 		
 		//new device dialog
-		SignInPage.newDevice();
+		SignInPage.enterNewDevice();
 	    Log.info("newDevice test is done");
 	    Reporter.log("<p>newDevice test is done<br></p>");
 
-	    
+	    /*
 	    //playTrailer
 	    PlayTrailer.playTrailer();
 	    Log.info("playTrailer test is done"); 
 	    Reporter.log("<p>playTrailer test is done<br></p>");
-
+		*/
 	}
 }
