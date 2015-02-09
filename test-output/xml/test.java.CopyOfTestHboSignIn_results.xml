@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="16"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="134,535">
+  <properties />
+  
+  
+            <testcase name="testSearchEngines" time="18,705" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="5,862" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="6,938" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="6,593" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,387" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,335" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="8,087" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="8,457" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,747" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="9,581" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="6,728" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="10,112" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="9,276" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,266" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,175" classname="test.java.CopyOfTestHboSignIn" />
+                <testcase name="testSearchEngines" time="7,286" classname="test.java.CopyOfTestHboSignIn" />
+      
+</testsuite>

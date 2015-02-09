@@ -2,6 +2,9 @@ package test.java;
 
 import java.util.concurrent.TimeUnit;
 
+import main.TestBase;
+import main.WebDriverManager;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -9,9 +12,14 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import pageObjects.HboSignIn;
+import pageObjects.PlayTrailer;
+import testng.TestListeners;
+import testng.TestMethodListener;
  
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class TestHboSignIn extends TestBase{
@@ -31,6 +39,7 @@ public class TestHboSignIn extends TestBase{
 	      driver = WebDriverManager.startDriver(browser, 40);  
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
+	
   @Test (groups = { "functional_test" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
@@ -51,7 +60,7 @@ public class TestHboSignIn extends TestBase{
 	    Log.info("newDevice test is done");
 	    Reporter.log("<p>newDevice test is done<br></p>");
   }
-    @Test (dependsOnMethods = { "testSignInSuccess" },alwaysRun=true, groups = { "functional_test" }, description= "Play trailer after login")
+    @Test (dependsOnMethods = { "testSignInSuccess" }/*,alwaysRun=true*/, groups = { "functional_test" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		

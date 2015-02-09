@@ -3,6 +3,11 @@ package test.java;
 
 import java.util.concurrent.TimeUnit;
 
+import main.BaseUrls;
+import main.ElementScreenshot;
+import main.TestBase;
+import main.WebDriverManager;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,13 +29,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
 
+import testng.TestListeners;
+import testng.TestMethodListener;
 
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, /*CustomTestListener.class*/})
+
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, /*CustomTestListener.class*/})
 
 
 public class TestTest2 extends TestBase {
-  public static WebDriver driver;
+	
+	public TestTest2(WebDriver driver){
+		super(driver); 
+	}
+  //public static WebDriver driver;
   public static WebElement element;
   private static Logger Log = Logger.getLogger(Logger.class.getName());
   public TestTest2() {
@@ -56,9 +68,9 @@ public class TestTest2 extends TestBase {
 	}
  
   
-  @Test (groups = { "functional_test" }/*(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")*/)
+  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
   	
-  	public void test1(/*String input*/) throws Exception {
+  	public void test1(String input) throws Exception {
 
     driver.get(BaseUrls.GOOGLE.get() + "?gws_rd=ssl");
     
@@ -80,7 +92,7 @@ public class TestTest2 extends TestBase {
     verifySuccess(driver.getTitle().equals("Google"));
     
     driver.findElement(By.id("gbqfq")).clear();    
-	driver.findElement(By.id("gbqfq")).sendKeys("Hello");
+	driver.findElement(By.id("gbqfq")).sendKeys(input);
     driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
     
     element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("rso")));
@@ -133,8 +145,8 @@ public class TestTest2 extends TestBase {
 	  }
  
 
-  @Test (groups = { "functional_test" }/*(dataProviderClass=SampleDataProvider.class,dataProvider="getColors")*/)
-  public void test2(/*String input*/) throws Exception {
+  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  public void test2(String input) throws Exception {
     driver.get(BaseUrls.YAHOO.get() + "/?p=us");
     
     if(driver.getTitle().equals("Google"))
@@ -150,7 +162,7 @@ public class TestTest2 extends TestBase {
     
     
     driver.findElement(By.id("p_13838465-p")).clear();
-    driver.findElement(By.id("p_13838465-p")).sendKeys("Hello");
+    driver.findElement(By.id("p_13838465-p")).sendKeys(input);
     driver.findElement(By.id("p_13838465-p")).sendKeys(Keys.ENTER);
     
     element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));

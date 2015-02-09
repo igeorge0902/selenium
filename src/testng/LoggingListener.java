@@ -1,4 +1,4 @@
-package test.java;
+package testng;
 
 /*
  * For custom logging messages after tests have finished.

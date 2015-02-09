@@ -1,5 +1,8 @@
-package test.java;
+package pageObjects;
 
+
+import main.BaseUrls;
+import main.TestBase;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -23,7 +26,7 @@ public class HboSignUp extends TestBase {
 
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementPresent(By.cssSelector("div.settings_description_white > #headerButtonLogin"))) break; } catch (Exception e) {}
+		    	try { if (isElementPresent(By.id("headerButtonLogin"))) break; } catch (Exception e) {}
 		    	Thread.sleep(1000);
 		    }
 			driver.findElement(By.id("headerButtonLogin")).click();
@@ -65,7 +68,7 @@ public class HboSignUp extends TestBase {
 		    	Thread.sleep(1000);
 		    }
 		    driver.findElement(By.cssSelector("button.button_submit.next")).click();
-		  		
+		    		  		
 		
 		return new HboSignUp(driver); 
 	}

@@ -1,4 +1,4 @@
-package test.java;
+package main;
 
 public enum BaseUrls {
 	  
@@ -6,7 +6,7 @@ public enum BaseUrls {
 	  YAHOO("https://www.yahoo.com/"),
 	  HBO("http://www.hbogo.hu/");
 
-private String myUrls;
+public String myUrls;
 
 BaseUrls (String url) {
 	  myUrls = url;

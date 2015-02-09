@@ -1,4 +1,7 @@
-package test.java;
+package pageObjects;
+
+import main.BaseUrls;
+import main.TestBase;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -6,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
 public class HboSignIn extends TestBase{
+	
+	
 
 	public HboSignIn(WebDriver driver){
 		super(driver); 

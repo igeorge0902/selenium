@@ -1,4 +1,4 @@
-package test.java;
+package main;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import test.java.WaitTool;
+import utils.WaitTool;
 
 
 public class TestBase {
@@ -23,26 +23,28 @@ public class TestBase {
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
-    static String[] playTrailer = new String[]{"PlayTrailer"};
-    static String[] playContent = new String[]{"PlayContent"};
-    static String[] playFree = new String[]{"PlayFree"};
-    static String[] playLive = new String[]{"PlayLive"};
-    static String[] playExtra = new String[]{"PlayExtra"};
-    static String[] playInteractive = new String[]{"PlayInteractive"};
-    static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
+    public static String[] playTrailer = new String[]{"PlayTrailer"};
+    public static String[] playContent = new String[]{"PlayContent"};
+    public static String[] playFree = new String[]{"PlayFree"};
+    public static String[] playLive = new String[]{"PlayLive"};
+    public static String[] playExtra = new String[]{"PlayExtra"};
+    public static String[] playInteractive = new String[]{"PlayInteractive"};
+    public static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
     
 
-	/**
-	 * softAssert methods
-	 **/
-	
-	protected WebDriver driver;
     
-	  public TestBase(WebDriver driver) {
-		  this.driver = driver; 
+
+	/*
+	 * softAssert methods
+	 */
+	
+	protected static WebDriver driver;
+    
+	public TestBase(WebDriver driver) {
+		  TestBase.driver = driver; 
 	  }
 	  
-	  public TestBase() {
+	public TestBase() {
 		  
 	  }
     
@@ -226,7 +228,7 @@ public class TestBase {
 	}
 
 
-	public boolean isTextPresent(String text){ 
+	public static boolean isTextPresent(String text){ 
 		try {
 			  WebDriverManager.driver.getPageSource().contains(text);
 	          Log.info(text);
@@ -258,7 +260,7 @@ public class TestBase {
 	/**
 	 * Verify the error message of "I accept Terms of Service" is displayed.
 	 */
-	public boolean isErrorMessageRequired_Check_TOS_displayed() { 
+	public static boolean isErrorMessageRequired_Check_TOS_displayed() { 
         	return isElementDisplayed(By.id("Terms_theme"));           
     	} 
 	
@@ -269,7 +271,7 @@ public class TestBase {
 	 * @param by
 	 * @return
 	 */
-	protected boolean isElementDisplayed(By by){
+	protected static boolean isElementDisplayed(By by){
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3); 

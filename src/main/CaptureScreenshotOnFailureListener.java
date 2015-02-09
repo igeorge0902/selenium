@@ -1,4 +1,4 @@
-package test.java;
+package main;
 
 
 import com.opera.core.systems.OperaDesktopDriver;

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Default test"
-           tests="1"
+<testsuite name="TestTest"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="31,147">
+           time="77,430">
   <properties />
   
   
-            <testcase name="testSignupFail" time="31,147" classname="test.java.TestHboSignUp" />
+            <testcase name="testSignupFail" time="29,711" classname="test.java.TestHboSignUp" />
+                <testcase name="testSignupFail" time="47,719" classname="test.java.TestHboSignUp" />
       
 </testsuite>

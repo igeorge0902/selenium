@@ -1,6 +1,10 @@
-package test.java;
+package pageObjects;
 
 import java.util.List;
+
+import main.BaseUrls;
+import main.ElementScreenshot;
+import main.TestBase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,11 +13,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Listeners;
 
+import testng.TestListeners;
+import testng.TestMethodListener;
+
 import com.thoughtworks.selenium.Selenium;
 import com.thoughtworks.selenium.Silvernium;
 
 @SuppressWarnings("deprecation")
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class PlayTrailer extends TestBase {
 	

@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="TestTest"
-           tests="16"
+           tests="32"
            failures="16"
            errors="0"
            skipped="0"
-           time="0,139">
+           time="361,315">
   <properties />
-            <testcase name="test2" time="0,007" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="9,638" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -40,12 +55,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,004" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="11,014" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,12 +104,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,021" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="11,144" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,12 +153,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,006" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="7,734" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,12 +202,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,003" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="12,290" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,12 +251,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,011" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="7,417" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,12 +300,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,001" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="11,889" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -244,12 +349,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,003" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="6,817" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -278,12 +398,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,000" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="10,414" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -312,12 +447,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,002" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="10,275" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -346,12 +496,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,002" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="10,978" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -380,12 +545,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,008" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="7,290" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -414,12 +594,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,028" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="8,654" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -448,12 +643,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,000" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="16,126" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -482,12 +692,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,003" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="9,237" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -516,12 +741,27 @@
       </failure>
 
           </testcase>
-            <testcase name="test2" time="0,040" classname="test.java.TestTest2">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="Google" time="8,056" classname="test.java.TestSearchEngines">
+                <failure type="java.lang.Throwable"
+                  message="Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]"
               >
-<![CDATA[java.lang.NullPointerException
-  test.java.TestTest2.test2(TestTest2.java:150)
+<![CDATA[java.lang.Throwable: Multiple failures (1)
+(1)java.lang.AssertionError:expected [Hello-Bello] but found [Google]
+
+Failure 1 of 1
+java.lang.AssertionError: expected [Hello-Bello] but found [Google]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:494)
+  org.testng.Assert.assertEquals(Assert.java:123)
+  org.testng.Assert.assertEquals(Assert.java:165)
+  main.TestBase.assertEquals(TestBase.java:81)
+  main.TestBase.verifyEquals(TestBase.java:163)
+  pageObjects.Google.test(Google.java:41)
+  test.java.TestSearchEngines.Google(TestSearchEngines.java:61)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -552,5 +792,21 @@
           </testcase>
   
   
-  
+            <testcase name="Yahoo" time="11,878" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="13,592" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="10,323" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="14,444" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="11,978" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="14,910" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="11,478" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="9,568" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="12,175" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="14,684" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="12,319" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="9,948" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="12,993" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="15,211" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="11,709" classname="test.java.TestSearchEngines" />
+                <testcase name="Yahoo" time="15,132" classname="test.java.TestSearchEngines" />
+      
 </testsuite>

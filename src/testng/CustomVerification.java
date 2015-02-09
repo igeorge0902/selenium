@@ -1,4 +1,4 @@
-package test.java;
+package testng;
 
 import org.testng.Assert;
 import org.testng.Reporter;

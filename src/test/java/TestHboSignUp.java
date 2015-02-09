@@ -5,6 +5,10 @@ package test.java;
 
 //import java.util.concurrent.TimeUnit;
 
+import main.ElementScreenshot;
+import main.TestBase;
+import main.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -12,10 +16,21 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+import pageObjects.HboSignUp;
+import pageObjects.HboSignUpForm;
+import testng.TestListeners;
+import testng.TestMethodListener;
+
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class TestHboSignUp extends TestBase{
+	
+	  public static int m_numberOfTimes;
+	  public TestHboSignUp (int numberOfTimes) {
+		    m_numberOfTimes = numberOfTimes;
+		}
+	
 	
 	  private static WebDriver driver;
 
@@ -32,8 +47,10 @@ public class TestHboSignUp extends TestBase{
 	      //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
 	
-  @Test
-  public void testSignupFail() throws Exception{
+  @Test 
+  public static void testSignupFail() throws Exception{
+	  for (int i = 0; i < m_numberOfTimes; i++) {
+		  
 		HboSignUp SignUpPage = new HboSignUp(driver); 
 		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
 		
@@ -54,4 +71,5 @@ public class TestHboSignUp extends TestBase{
 		
  
 	}
+  }
 }

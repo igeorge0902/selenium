@@ -1,0 +1,63 @@
+package test.java;
+
+import java.util.concurrent.TimeUnit;
+
+import main.TestBase;
+
+
+
+
+import main.WebDriverManager;
+
+//import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pageObjects.Google;
+import pageObjects.Yahoo;
+import testng.TestListeners;
+import testng.TestMethodListener;
+
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+
+public class TestSearchEngines extends TestBase{
+	
+	  private static WebDriver driver;
+	  
+	  /*
+	  public static int m_numberOfTimes;
+	  public TestYahoo (int numberOfTimes) {
+		    m_numberOfTimes = numberOfTimes;
+		}
+	  */
+
+	@BeforeClass
+	  public void setUp(ITestContext context) throws Exception
+	  {
+		  
+		  // get the web driver parameters from the testng xml file
+	      String browser = context.getCurrentXmlTest().getParameter("browser");
+	      //String url         = context.getCurrentXmlTest().getParameter("url");
+
+	      driver = WebDriverManager.startDriver(browser, 40);  
+	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  }
+
+	
+  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  public void Yahoo(String input) throws Exception {
+	  Yahoo YahooSearch = new Yahoo(driver);
+	  
+	  YahooSearch.test(input);
+  }
+  
+  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  public void Google(String input) throws Exception {
+	  Google GoogleSearch = new Google(driver);
+	  
+	  GoogleSearch.test(input);
+  }
+}

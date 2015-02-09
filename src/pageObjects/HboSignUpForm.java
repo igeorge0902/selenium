@@ -1,11 +1,16 @@
-package test.java;
+package pageObjects;
 
+
+import main.TestBase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 
-@Listeners({ TestListeners.class, test.java.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+import testng.TestListeners;
+import testng.TestMethodListener;
+
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class HboSignUpForm extends TestBase {

@@ -1,6 +1,8 @@
-package test.java;
+package testng;
 
 import java.util.List;
+
+import main.TestBase;
 
 import org.testng.IInvokedMethod;
 import org.testng.ITestResult;

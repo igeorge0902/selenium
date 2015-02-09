@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Default test</title>
+  <title>Test Results Report - TestTest</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Default test</h1>
+<h1>TestTest</h1>
 <p>
-  Test duration: 40,154s
+  Test duration: 157,812s
 </p>
 
 
@@ -28,7 +28,7 @@
                   <span class="description" title="HBO login">testSignInSuccess</span>
       </td>
   <td class="duration">
-    16,202s
+    36,682s
   </td>
   <td class="result">
         
@@ -45,10 +45,10 @@
                                 <p>newDevice test is done<br></p>
                                 Completed executing following method : TestHboSignIn.testSignInSuccess<br>
                                 Completed executing following method : TestHboSignIn.testSignInSuccess<br>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-9-1-34-29-579.png"><p align="left">Error screenshot at Mon Feb 09 01:34:32 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-9-1-34-29-579.png" alt="screenshot at Mon Feb 09 01:34:32 CET 2015"/></p></a><br />
                                 Test Method resides in test.java.TestHboSignIn<br>
                                 <p>Test Status: </p><p>Failed</p>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-8-19-44-48-632.png"><p align="left">Error screenshot at Sun Feb 08 19:44:49 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-8-19-44-48-632.png" alt="screenshot at Sun Feb 08 19:44:49 CET 2015"/></p></a><br />
                   </div>
     
 
@@ -62,11 +62,11 @@ java.lang.AssertionError: expected [false] but found [true]</b></a><br />
               org.testng.Assert.failNotEquals(Assert.java:494)<br />
               org.testng.Assert.assertFalse(Assert.java:63)<br />
               org.testng.Assert.assertFalse(Assert.java:73)<br />
-              test.java.TestBase.assertFalse(TestBase.java:67)<br />
-              test.java.TestBase.verifyFalse(TestBase.java:132)<br />
-              test.java.HboSignIn.isNewDevice(HboSignIn.java:71)<br />
-              test.java.HboSignIn.enterNewDevice(HboSignIn.java:76)<br />
-              test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:50)<br />
+              main.TestBase.assertFalse(TestBase.java:69)<br />
+              main.TestBase.verifyFalse(TestBase.java:134)<br />
+              pageObjects.HboSignIn.isNewDevice(HboSignIn.java:76)<br />
+              pageObjects.HboSignIn.enterNewDevice(HboSignIn.java:81)<br />
+              test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:59)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -96,9 +96,8 @@ java.lang.AssertionError: expected [false] but found [true]</b></a><br />
 </tr>
       </table>
 
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">test.java.TestHboSignIn</td>
       </tr>
@@ -108,26 +107,95 @@ java.lang.AssertionError: expected [false] but found [true]</b></a><br />
                   <span class="description" title="Play trailer after login">testPlayerSuccess</span>
       </td>
   <td class="duration">
-    18,039s
+    0,000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">test.java.TestHboSignIn.testSignInSuccess</span>
+                
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestHboSignUp</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testSignupFail
+      </td>
+  <td class="duration">
+    47,719s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <br><p>Verification is successfull<br></p>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-8-19-44-53-506.png"><p align="left"Element screenshot at Sun Feb 08 19:44:58 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-8-19-44-53-506.png" alt="screenshot at Sun Feb 08 19:44:58 CET 2015"/></p></a><br />
+                        Element is present<br>
                                 Element is present<br>
                                 Element is present<br>
                                 Element is present<br>
                                 Element is present<br>
-                                <p>playTrailer test is done<br></p>
-                                Completed executing following method : TestHboSignIn.testPlayerSuccess<br>
-                                Completed executing following method : TestHboSignIn.testPlayerSuccess<br>
-                                Test Method resides in test.java.TestHboSignIn<br>
+                                Element is present<br>
+                                <p>Az e-mail címek nem egyeznek<br></p>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-33-12-843.png"><p align="left"Element screenshot at Mon Feb 09 01:33:15 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-33-12-843.png" alt="screenshot at Mon Feb 09 01:33:15 CET 2015"/></p></a><br />
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                <p>Az e-mail címek nem egyeznek<br></p>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-33-31-371.png"><p align="left"Element screenshot at Mon Feb 09 01:33:32 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-33-31-371.png" alt="screenshot at Mon Feb 09 01:33:32 CET 2015"/></p></a><br />
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Test Method resides in test.java.TestHboSignUp<br>
+                                <p>Test Status: </p><p>Pass</p>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testSignupFail
+      </td>
+  <td class="duration">
+    29,711s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                <p>Az e-mail címek nem egyeznek<br></p>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-32-12-459.png"><p align="left"Element screenshot at Mon Feb 09 01:32:14 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-32-12-459.png" alt="screenshot at Mon Feb 09 01:32:14 CET 2015"/></p></a><br />
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                Element is present<br>
+                                <p>Az e-mail címek nem egyeznek<br></p>
+                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-32-28-159.png"><p align="left"Element screenshot at Mon Feb 09 01:32:29 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-9-1-32-28-159.png" alt="screenshot at Mon Feb 09 01:32:29 CET 2015"/></p></a><br />
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Test Method resides in test.java.TestHboSignUp<br>
                                 <p>Test Status: </p><p>Pass</p>
                   </div>
     

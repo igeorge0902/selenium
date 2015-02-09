@@ -6,32 +6,37 @@
 /log4j.xml -text
 /pom[!!-~]copy.xml -text
 /pom.xml -text
-src/test/java/BaseUrls.java -text
-src/test/java/CaptureScreenshotOnFailureListener.java -text
-src/test/java/CustomTestListener.java -text
-src/test/java/CustomVerification.java -text
-src/test/java/ElementScreenshot.java -text
-src/test/java/FileSeparator.java -text svneol=unset#text/plain
-src/test/java/HboSignIn.java -text svneol=unset#text/plain
-src/test/java/HboSignUp.java -text svneol=unset#text/plain
-src/test/java/HboSignUpForm.java -text svneol=unset#text/plain
-src/test/java/LoggingListener.java -text
-src/test/java/ObjectMessages.java -text
-src/test/java/PlayTrailer.java -text svneol=unset#text/plain
-src/test/java/SampleDataProvider.java -text
-src/test/java/TestBase.java -text
-src/test/java/TestDataSample.java -text svneol=unset#text/plain
+src/main/BaseUrls.java -text
+src/main/CaptureScreenshotOnFailureListener.java -text
+src/main/ElementScreenshot.java -text
+src/main/TestBase.java -text
+src/main/WebDriverManager.java -text
+src/pageObjects/Google.java -text
+src/pageObjects/HboSignIn.java -text svneol=unset#text/plain
+src/pageObjects/HboSignUp.java -text svneol=unset#text/plain
+src/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
+src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
+src/pageObjects/Yahoo.java -text
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
-src/test/java/TestListenerAdapter.java -text
-src/test/java/TestListeners.java -text
-src/test/java/TestMethodListener.java -text
+src/test/java/TestSearchEngines.java -text
 src/test/java/TestTest.java -text
 src/test/java/TestTest2.java -text
-src/test/java/WaitTool.java -text svneol=unset#text/plain
-src/test/java/WebDriverManager.java -text
-src/test/java/WebTestFactory.java -text
 src/test/resources/suite.xml -text
+src/testng/CustomTestListener.java -text
+src/testng/CustomVerification.java -text
+src/testng/LoggingListener.java -text
+src/testng/TestListenerAdapter.java -text
+src/testng/TestListeners.java -text
+src/testng/TestMethodListener.java -text
+src/utils/FileSeparator.java -text svneol=unset#text/plain
+src/utils/ObjectMessages.java -text
+src/utils/SampleDataProvider.java -text
+src/utils/TestDataSample.java -text svneol=unset#text/plain
+src/utils/WaitTool.java -text svneol=unset#text/plain
+src/utils/WebTestFactory.java -text
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst -text
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst -text
 target/test-classes/suite.xml -text
 test-output/html/index.html -text
 test-output/html/output.html -text
@@ -39,11 +44,15 @@ test-output/html/overview.html -text
 test-output/html/reportng.css -text
 test-output/html/reportng.js -text
 test-output/html/sorttable.js -text
+test-output/html/suite1_groups.html -text
 test-output/html/suite1_test1_results.html -text
 test-output/html/suites.html -text
+test-output/xml/test.java.CopyOfTestHboSignIn_results.xml -text
 test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestHboSignIn_results.xml -text
 test-output/xml/test.java.TestHboSignUp_results.xml -text
+test-output/xml/test.java.TestSearchEngines_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text
 test-output/xml/test.java.TestTest_results.xml -text
+test-output/xml/test.java.TestYahoo_results.xml -text
 /testng.xml -text

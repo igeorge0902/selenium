@@ -1,7 +1,9 @@
-package test.java;
+package utils;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import main.TestBase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

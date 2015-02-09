@@ -1,4 +1,4 @@
-package test.java;
+package main;
 
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
@@ -35,7 +35,7 @@ import com.opera.core.systems.OperaDriver;
 
 public class WebDriverManager
 {
-    static WebDriver driver = null;
+    public static WebDriver driver = null;
     private static String browser = null;
     private static Logger Log = Logger.getLogger(Logger.class.getName());
 

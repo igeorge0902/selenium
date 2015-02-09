@@ -1,6 +1,9 @@
-package test.java;
+package utils;
 
 import org.testng.annotations.Factory;
+
+import test.java.TestHboSignUp;
+import test.java.TestTest2;
 
 public class WebTestFactory {
 	  
@@ -8,7 +11,7 @@ public class WebTestFactory {
 	  public static Object[] createInstances() {
 	   Object[] result = new Object[2]; 
 	   for (int i = 0; i < 2; i++) {
-	      result[i] = new TestTest(i * 2);
+	      result[i] = new TestHboSignUp(i * 2);
 	    }
 	    return result;
 	  }
@@ -22,6 +25,9 @@ public class WebTestFactory {
 	  }
 	  return result;
 	}
+	
+	
+	
 }
 
 
