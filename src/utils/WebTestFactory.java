@@ -6,7 +6,8 @@ import test.java.TestHboSignUp;
 import test.java.TestTest2;
 
 public class WebTestFactory {
-	  
+
+
 	  @Factory
 	  public static Object[] createInstances() {
 	   Object[] result = new Object[2]; 
@@ -15,7 +16,7 @@ public class WebTestFactory {
 	    }
 	    return result;
 	  }
-	 
+
 
 	@Factory
 	public static Object[] createInstances1() {

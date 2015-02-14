@@ -2,8 +2,7 @@ package test.java;
 
 
 
-
-//import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 
 import main.ElementScreenshot;
 import main.TestBase;
@@ -18,20 +17,21 @@ import org.testng.annotations.Test;
 
 import pageObjects.HboSignUp;
 import pageObjects.HboSignUpForm;
+import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
 
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignUp extends TestBase{
 	
+	  
 	  public static int m_numberOfTimes;
 	  public TestHboSignUp (int numberOfTimes) {
 		    m_numberOfTimes = numberOfTimes;
 		}
-	
-	
+	  
 	  private static WebDriver driver;
 
 
@@ -44,12 +44,11 @@ public class TestHboSignUp extends TestBase{
 	      //String url         = context.getCurrentXmlTest().getParameter("url");
 
 	      driver = WebDriverManager.startDriver(browser, 40);  
-	      //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
 	
   @Test 
   public static void testSignupFail() throws Exception{
-	  for (int i = 0; i < m_numberOfTimes; i++) {
 		  
 		HboSignUp SignUpPage = new HboSignUp(driver); 
 		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
@@ -63,13 +62,13 @@ public class TestHboSignUp extends TestBase{
 		//submit form
 		SignUpForm.submitForm();
 		
-		verifyTrue(isTextPresent("<p>Az e-mail címek nem egyeznek<br></p>"), "Verify: the Valid Email error message displayed.");
+		verifyTrue(isTextPresent("<p>Az e-mail címek nem egyeznek<br></p>"), "Verify: the Valid Email error message displayed.<br>");
 
-		verifyTrue(isErrorMessageRequired_Check_TOS_displayed(), "ToS is checked");
+		verifyFalse(isErrorMessageRequired_Check_TOS_displayed(), "ToS is not checked<br>");
 				
 		ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath(".//*[@id='operatorTypeNormal']/div[2]")));
 		
  
 	}
-  }
 }
+

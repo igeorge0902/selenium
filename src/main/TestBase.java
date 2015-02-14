@@ -120,6 +120,8 @@ public class TestBase {
     public static void verifyTrue(boolean condition, String message) {
     	try {
     		assertTrue(condition, message);
+    		Log.info(message);
+    		Reporter.log(message);
     	} catch(Throwable e) {
     		addVerificationFailure(e);
     		Log.info(getVerificationFailures(), e);
@@ -261,7 +263,7 @@ public class TestBase {
 	 * Verify the error message of "I accept Terms of Service" is displayed.
 	 */
 	public static boolean isErrorMessageRequired_Check_TOS_displayed() { 
-        	return isElementDisplayed(By.id("Terms_theme"));           
+        	return isElementDisplayed(By.id("Terms"));           
     	} 
 	
 	/**

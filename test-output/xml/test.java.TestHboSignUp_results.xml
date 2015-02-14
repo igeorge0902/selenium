@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="77,430">
+           time="39,210">
   <properties />
   
   
-            <testcase name="testSignupFail" time="29,711" classname="test.java.TestHboSignUp" />
-                <testcase name="testSignupFail" time="47,719" classname="test.java.TestHboSignUp" />
+            <testcase name="testSignupFail" time="17,018" classname="test.java.TestHboSignUp" />
+                <testcase name="testSignupFail" time="22,192" classname="test.java.TestHboSignUp" />
       
 </testsuite>

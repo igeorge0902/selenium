@@ -15,11 +15,12 @@ import org.testng.annotations.Test;
 
 import pageObjects.HboSignIn;
 import pageObjects.PlayTrailer;
+import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
  
 
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignIn extends TestBase{

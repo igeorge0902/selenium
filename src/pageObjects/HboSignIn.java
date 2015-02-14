@@ -53,6 +53,11 @@ public class HboSignIn extends TestBase{
 	    driver.findElement(By.name("EmailAddress")).clear();
 	    driver.findElement(By.name("EmailAddress")).sendKeys("gyorgy.gaspar@mediaux.biz");
 	    
+	    for (int second = 0;; second++) {
+	    	if (second >= 60) fail("timeout");
+	    	try { if (isElementPresent(By.name("Password"))) break; } catch (Exception e) {}
+	    	Thread.sleep(1000);
+	    }		    
 	    driver.findElement(By.name("Password")).clear();	    
 	    driver.findElement(By.name("Password")).sendKeys("common");
 	    

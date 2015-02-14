@@ -7,6 +7,7 @@ package testng;
  */
 
 
+
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
@@ -14,38 +15,38 @@ public class LoggingListener extends TestListenerAdapter {
 		  private int m_count = 0;
 		  	 
 		  @Override
-		  public void onTestFailure(ITestResult testResult) {
+		  public void onTestFailure(ITestResult tr) {
 		    
 		    
 				// call the superclass
-		        super.onTestFailure(testResult);
+		        super.onTestFailure(tr);
+		        	        
 	        
-	        
-	        log("F");
+	        log("Fuck\n");
 		  }
 		 
 		  @Override
-		  public void onTestSkipped(ITestResult testResult) {
+		  public void onTestSkipped(ITestResult tr) {
 			  
 				// call the superclass
-		        super.onTestSkipped(testResult);
+		        super.onTestSkipped(tr);
 			  
-		     log("S");
+		     log("Shit happens\n");
 		  }
 		 
 		  @Override
-		  public void onTestSuccess(ITestResult testResult) {
+		  public void onTestSuccess(ITestResult tr) {
 			  
 				// call the superclass
-		        super.onTestSkipped(testResult); 
+		        super.onTestSuccess(tr); 
 			  
-		    log(".");
+		    log("Minden fasza\n");
 		  }
 		 
 		  private void log(String string) {
 		    System.out.print(string);
 		    if (++m_count % 40 == 0) {
-		      System.out.println("");
+		      System.out.println("Hello");
 		    }
 		  }
 		} 
