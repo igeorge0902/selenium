@@ -19,7 +19,6 @@ import utils.WaitTool;
 
 public class TestBase {
 	
-	protected static String pageTitle;
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
@@ -38,15 +37,16 @@ public class TestBase {
 	 * softAssert methods
 	 */
 	
-	protected static WebDriver driver;
+	protected static WebDriver driver = null;
     
 	public TestBase(WebDriver driver) {
-		  TestBase.driver = driver; 
+		  TestBase.driver = WebDriverManager.driver; 
 	  }
 	  
 	public TestBase() {
 		  
 	  }
+
     
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
@@ -187,7 +187,7 @@ public class TestBase {
     
     protected boolean isElementPresent(By by)  {
        try {
-        	 WebDriverManager.driver.findElement(by);
+        	 driver.findElement(by);
         	 Log.info((by));
         	 Reporter.log("Element is present<br>");
           		return true;
@@ -200,10 +200,11 @@ public class TestBase {
     			
         }
       
+
     
 	public boolean isElementPresentAndDisplay(By by) {
 		try {
-			  WebDriverManager.driver.findElement(by).isDisplayed();
+			  driver.findElement(by).isDisplayed();
 	          Log.info((by));
 	          Reporter.log("Element is present<br>");
 			    return true;
@@ -217,7 +218,7 @@ public class TestBase {
 	
 	  public boolean isElementPresent(String _cssSelector){
 		try {
-			  WebDriverManager.driver.findElement(By.cssSelector(_cssSelector));
+			  driver.findElement(By.cssSelector(_cssSelector));
 	          Log.info((_cssSelector));
 	          Reporter.log(_cssSelector);
 			  	return true;
@@ -232,7 +233,7 @@ public class TestBase {
 
 	public static boolean isTextPresent(String text){ 
 		try {
-			  WebDriverManager.driver.getPageSource().contains(text);
+			  driver.getPageSource().contains(text);
 	          Log.info(text);
 	          Reporter.log(text);
 	            return true;
@@ -241,14 +242,6 @@ public class TestBase {
 			    Log.info(getVerificationFailures(), e);		
 			    return false;
 		}
-	}
-	
-	public String getTitle() {
-			return pageTitle;
-	}
-	
-	public boolean isPageLoad() {
-		return (WebDriverManager.driver.getTitle().contains(pageTitle));
 	}
 	
 	/**
@@ -267,8 +260,15 @@ public class TestBase {
     	} 
 	
 	/**
-	 * Check the Error Message field displayed.  
-	 * It will wait for the JavaScript error message to be present on the DOM, and displayed. 
+	 * Verify the new device dialog is not displayed.
+	 */
+	public static boolean isNewDeviceDialog() { 
+        	return isElementDisplayed(By.id("newDeviceInput"));           
+    	} 
+	
+	/**
+	 * Check if the element is displayed.  
+	 * It will wait for the element to be present on the DOM, and displayed. 
 	 * 
 	 * @param by
 	 * @return

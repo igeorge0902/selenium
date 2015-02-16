@@ -1,7 +1,6 @@
 package test.java;
 
 
-
 import java.util.concurrent.TimeUnit;
 
 import main.ElementScreenshot;
@@ -32,7 +31,7 @@ public class TestHboSignUp extends TestBase{
 		    m_numberOfTimes = numberOfTimes;
 		}
 	  
-	  private static WebDriver driver;
+	  private static WebDriver driver = null;
 
 
 	@BeforeClass

@@ -89,6 +89,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   //Retrieve height of element.
   int ImageHeight = element.getSize().getHeight();  
   
+  
   //Used selenium Point class to get x y coordinates of Image element.
   //get location(x y coordinates) of the element.
   Point point = element.getLocation();
@@ -98,8 +99,14 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   //Reading full image screenshot.
   BufferedImage img = ImageIO.read(scrFile);
   
+  System.out.printf("Original Image Dimension: " + element.getSize().getWidth(), element.getSize().getHeight());
+  
   //cut Image using height, width and x y coordinates parameters.
   BufferedImage dest = img.getSubimage(xcord, ycord, ImageWidth, ImageHeight);
+  
+  System.out.println("New Image Dimension: "+ screen);
+
+  
   ImageIO.write(dest, "png", scrFile);
   
   //Used FileUtils class of apache.commons.io.
@@ -131,4 +138,6 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
 
   
  }
+
+
 }

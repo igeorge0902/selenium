@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import main.BaseUrls;
 import main.TestBase;
 
@@ -16,11 +17,13 @@ public class HboSignIn extends TestBase{
 		super(driver); 
 	}
 
+	
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	
 
 		
 	public HboSignIn selectOperator() throws Exception{
-		
+				
 	    driver.get(BaseUrls.HBO.get() + "/group/offers");
 		Log.info(BaseUrls.HBO.get() + "/group/offers");
 	    
@@ -44,7 +47,7 @@ public class HboSignIn extends TestBase{
 	    	Thread.sleep(1000);
 	    }	
 	    driver.findElement(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26")).click();
-	    
+	    	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.name("EmailAddress"))) break; } catch (Exception e) {}
@@ -78,7 +81,7 @@ public class HboSignIn extends TestBase{
 	}
 	    
 	public boolean isNewDevice(boolean condition) {
-			verifyFalse(isElementDisplayed((By.id("newDeviceInput"))));
+			verifyFalse(isNewDeviceDialog());
 			return condition;
 	    }
 	
@@ -86,13 +89,13 @@ public class HboSignIn extends TestBase{
 		if (isNewDevice(false))
 		{
 			Log.info("No New Device");
-		} else {
+		} else 	{
 			driver.findElement(By.id("newDeviceInput")).clear();
 			driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
 			driver.findElement(By.cssSelector("button.button_submit")).click();
 			Log.info("New Device is named MacBook");
 			Reporter.log("New Device is named MacBook");
-			}	
+		}
 		return new HboSignIn(driver);
 		
 	}

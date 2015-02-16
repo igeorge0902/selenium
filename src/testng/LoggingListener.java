@@ -9,6 +9,7 @@ package testng;
 
 
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
 public class LoggingListener extends TestListenerAdapter {
@@ -21,7 +22,7 @@ public class LoggingListener extends TestListenerAdapter {
 				// call the superclass
 		        super.onTestFailure(tr);
 		        	        
-	        
+	        Reporter.log("Fuck<br>");
 	        log("Fuck\n");
 		  }
 		 

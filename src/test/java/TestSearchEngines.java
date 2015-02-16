@@ -9,8 +9,10 @@ import main.TestBase;
 
 import main.WebDriverManager;
 
-//import org.apache.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
+//import org.apache.log4j.Logger;
+//import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -24,15 +26,9 @@ import testng.TestMethodListener;
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class TestSearchEngines extends TestBase{
-	
-	  private static WebDriver driver;
+		  
+	private WebDriver driver = null;
 	  
-	  /*
-	  public static int m_numberOfTimes;
-	  public TestYahoo (int numberOfTimes) {
-		    m_numberOfTimes = numberOfTimes;
-		}
-	  */
 
 	@BeforeClass
 	  public void setUp(ITestContext context) throws Exception
@@ -40,10 +36,10 @@ public class TestSearchEngines extends TestBase{
 		  
 		  // get the web driver parameters from the testng xml file
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      //String url         = context.getCurrentXmlTest().getParameter("url");
+	      //String url = context.getCurrentXmlTest().getParameter("url");
 
-	      driver = WebDriverManager.startDriver(browser, 40);  
-	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+          driver = WebDriverManager.startDriver(browser, 40);
+	      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	  }
 
 	

@@ -3,18 +3,82 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - TestTest</title>
+  <title>Test Results Report - Default test</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>TestTest</h1>
+<h1>Default test</h1>
 <p>
-  Test duration: 97,844s
+  Test duration: 0,005s
 </p>
 
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">test.java.TestHboSignIn</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">org.testng.TestRunner@747ddf94</span><br />
+    
+            <div class="testOutput">
+                        Completed executing following method : TestHboSignIn.setUp&lt;br&gt;<br />
+                                Completed executing following method : TestHboSignIn.setUp&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Failed to connect to SafariDriver after 10174 ms<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: driver.version: SafariDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.safari.SafariDriverCommandExecutor.start(SafariDriverCommandExecutor.java:124)<br />
+              org.openqa.selenium.safari.SafariDriver.startClient(SafariDriver.java:72)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)<br />
+              org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:58)<br />
+              main.WebDriverManager.startDriver(WebDriverManager.java:218)<br />
+              test.java.TestHboSignIn.setUp(TestHboSignIn.java:40)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
 
 
   <table class="resultsTable">
@@ -28,52 +92,24 @@
                   <span class="description" title="HBO login">testSignInSuccess</span>
       </td>
   <td class="duration">
-    30,466s
+    0,004s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                <p>selectOperator test is done<br></p>
-                                Element is present<br>
-                                <p>submit test is done<br></p>
-                                New Device is named MacBook
-                                <p>newDevice test is done<br></p>
-                                Completed executing following method : TestHboSignIn.testSignInSuccess<br>
-                                Completed executing following method : TestHboSignIn.testSignInSuccess<br>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-14-19-20-53-708.png"><p align="left">Error screenshot at Sat Feb 14 19:20:59 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-testSignInSuccess(test.java.TestHboSignIn)-2015-1-14-19-20-53-708.png" alt="screenshot at Sat Feb 14 19:20:59 CET 2015"/></p></a><br />
-                                Test Method resides in test.java.TestHboSignIn<br>
-                                <p>Test Status: </p><p>Failed</p>
-                  </div>
-    
+        
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Multiple failures (1)<br/>
-(1)java.lang.AssertionError:expected [false] but found [true]<br/>
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Multiple failures (1)<br/>
+(1)java.lang.Throwable:null<br/>
 <br/>
 Failure 1 of 1<br/>
-java.lang.AssertionError: expected [false] but found [true]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:494)<br />
-              org.testng.Assert.assertFalse(Assert.java:63)<br />
-              org.testng.Assert.assertFalse(Assert.java:73)<br />
-              main.TestBase.assertFalse(TestBase.java:69)<br />
-              main.TestBase.verifyFalse(TestBase.java:136)<br />
-              pageObjects.HboSignIn.isNewDevice(HboSignIn.java:81)<br />
-              pageObjects.HboSignIn.enterNewDevice(HboSignIn.java:86)<br />
-              test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:60)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+java.lang.Throwable</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br />
+              org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
               org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
@@ -121,87 +157,6 @@ java.lang.AssertionError: expected [false] but found [true]</b></a><br />
 </tr>
       </table>
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">test.java.TestHboSignUp</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  testSignupFail
-      </td>
-  <td class="duration">
-    22,192s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                <p>Az e-mail címek nem egyeznek<br></p>
-                                Verify: the Valid Email error message displayed.<br>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-14-19-20-6-900.png"><p align="left"Element screenshot at Sat Feb 14 19:20:08 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-14-19-20-6-900.png" alt="screenshot at Sat Feb 14 19:20:08 CET 2015"/></p></a><br />
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Test Method resides in test.java.TestHboSignUp<br>
-                                <p>Test Status: </p><p>Pass</p>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  testSignupFail
-      </td>
-  <td class="duration">
-    17,018s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                <p>Az e-mail címek nem egyeznek<br></p>
-                                Verify: the Valid Email error message displayed.<br>
-                                <a href="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-14-19-19-37-770.png"><p align="left"Element screenshot at Sat Feb 14 19:19:39 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/Firefox-2015-1-14-19-19-37-770.png" alt="screenshot at Sat Feb 14 19:19:39 CET 2015"/></p></a><br />
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Test Method resides in test.java.TestHboSignUp<br>
-                                <p>Test Status: </p><p>Pass</p>
-                  </div>
-    
-
-      </td>
-</tr>
-      </table>
   
 </body>
 </html>

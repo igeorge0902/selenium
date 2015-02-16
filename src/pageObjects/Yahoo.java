@@ -12,9 +12,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+
+import utils.WaitTool;
+
 
 public class Yahoo extends TestBase {
 	
@@ -29,7 +30,7 @@ public class Yahoo extends TestBase {
 
 		driver.get(BaseUrls.YAHOO.get() + "/?p=us");
 	    
-	    if(driver.getTitle().equals("Google"))
+	    if(driver.getTitle().equals("Yahoo"))
 	    	{
 	    Log.info("Verification Passed for Title");	 
 	    	}
@@ -45,7 +46,9 @@ public class Yahoo extends TestBase {
 	    driver.findElement(By.id("p_13838465-p")).sendKeys(input);
 	    driver.findElement(By.id("p_13838465-p")).sendKeys(Keys.ENTER);
 	    
-	    element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));
+	    //element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));
+	    
+        WaitTool.waitForElementPresent(driver, By.id("main"), 10);
 	    
 	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("main")));
 	    
@@ -89,4 +92,5 @@ public class Yahoo extends TestBase {
 			return new Yahoo(driver);
 
 	}
+
 }

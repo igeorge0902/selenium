@@ -1,5 +1,6 @@
 package main;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
@@ -13,10 +14,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
 
@@ -49,14 +53,17 @@ public class WebDriverManager
     /**
      * Static method for starting a webdriver, defaults  the wait time to 30 seconds and the browser to
      * the firefox driver.
+     * @param url 
+     * @throws Exception 
      */
-    public static WebDriver startDriver(String browser, int timeout)
+    public static WebDriver startDriver(String browser, int timeout) throws Exception
     {
 
     	WebDriverManager.browser = browser;
-        
         DOMConfigurator.configure("log4j.xml");
         Log.info("New driver instantiated");
+        Log.info(getDriverInstance());
+
 
         /*
         * Determine what browser were using and start the appropiate driver instance
@@ -194,16 +201,32 @@ public class WebDriverManager
         else
         {
             System.out.println("browser : Safari (Default)\n");
+            
+            SafariOptions options = new SafariOptions();
+            
+            // Add an extra extension            
+            String userHome = System.getProperty("user.home");
+            String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver2.safariextz";
+            options.addExtensions(new File(extensionFolder));
+            options.setUseCleanSession(true);
+            options.setSkipExtensionInstallation(true);
+            options.getUseCleanSession();
+            
+            
+            // For use with SafariDriver:
+            //SafariDriver driver = new SafariDriver(options);
+            driver = new SafariDriver(options);
 
-            driver = new SafariDriver();
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+
+            //driver = new SafariDriver();
+            driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
 
             // open the url
-            //driver.get(portalUrl);
+            driver.get("http://www.yahoo.com");
 
             driver.manage().deleteAllCookies();
 
-            new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
+            //new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
         }
 
@@ -217,7 +240,7 @@ public class WebDriverManager
      *
      * @param - the instance of the driver to stop
      */
- public static void stopDriver()
+    public static void stopDriver()
     {
         driver.quit();
     }

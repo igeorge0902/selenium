@@ -4,19 +4,52 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
    </listeners>
   <sysproperty key="org.uncommons.reportng.escape-output" value="false" />    
-  <parameter name="browser" value="Firefox" />
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
-  <test name="TestTest" preserve-order="true">
-    <classes>
-      <class name="test.java.TestHboSignUp" />
-      <class name="test.java.TestHboSignIn" />
-      <class name="test.java.TestSearchEngines"> 
-            <methods>
-        		<exclude name="Yahoo" />
-        		<exclude name="Google" />
-      		</methods>
-      	</class>   
-      	<class name="utils.WebTestFactory" />
-     </classes>
+  <parameter name="browser" value="*safari" />
+  <test name="Test on Firefox" preserve-order="true">
+  	<parameter name="browser" value="*safari" />
+  	<classes>
+  	      <class name="test.java.TestHboSignUp">
+		     <methods>
+        		<exclude name="testSignupFail" />
+    		</methods>
+      		</class>
+	      <class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    <class name="test.java.TestSearchEngines"> 
+	          <methods>
+	      		<exclude name="Yahoo" />
+	      		<exclude name="Google" />
+	    		</methods>
+	    	</class>
+	    <class name="utils.WebTestFactory" />   
+   </classes>
   </test>
+  <test name="Test on Safari" preserve-order="true">
+    <parameter name="browser" value="Firefox" />
+  	<classes>
+  	      <class name="test.java.TestHboSignUp">
+		     <methods>
+        		<exclude name="testSignupFail" />
+    		</methods>
+      		</class>
+	      <class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    <class name="test.java.TestSearchEngines"> 
+	          <methods>
+	      		<exclude name="Yahoo" />
+	      		<exclude name="Google" />
+	    		</methods>
+	    	</class>
+	    <class name="utils.WebTestFactory" />   
+   </classes>
+   </test>
 </suite>

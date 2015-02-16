@@ -25,7 +25,7 @@ import testng.TestMethodListener;
 
 public class TestHboSignIn extends TestBase{
 	
-	  private static WebDriver driver;
+	  private static WebDriver driver = null;
 	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 

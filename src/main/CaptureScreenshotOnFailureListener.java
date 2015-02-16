@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
@@ -56,6 +57,8 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
          */
         if ( (driver instanceof InternetExplorerDriver) || (driver instanceof FirefoxDriver)
                                                                        || (driver instanceof ChromeDriver)
+                                                                       || (driver instanceof SafariDriver)
+                                                                       || (driver instanceof InternetExplorerDriver)
                                                                        || (driver instanceof OperaDesktopDriver))
         {
             // Create a calendar object so we can create a date and time for the screenshot

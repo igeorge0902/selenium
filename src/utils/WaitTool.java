@@ -51,7 +51,7 @@ public class WaitTool extends TestBase {
 	 * The average webpage load time is 6 seconds in 2012. 
 	 * Based on your tests, please set this value. 
 	 * "0" will nullify implicitlyWait and speed up a test. */ 
-	public static final int DEFAULT_WAIT_4_PAGE = 12; 
+	public static final int DEFAULT_WAIT_4_PAGE = 30; 
 
 
 	
@@ -80,7 +80,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element	
 		} catch (Exception e) {
-			e.printStackTrace();
+			addVerificationFailure(e);
 		} 
 		return null; 
 	}
@@ -110,7 +110,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			e.printStackTrace();
+			addVerificationFailure(e);
 		} 
 		return null; 
 	}
@@ -143,7 +143,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return elements; //return the element	
 		} catch (Exception e) {
-			e.printStackTrace();
+				addVerificationFailure(e);
 		} 
 		return null; 
 	}
@@ -183,7 +183,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			e.printStackTrace();
+				addVerificationFailure(e);
 		} 
 		return null; 
 	 }
@@ -214,7 +214,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return isPresent; 
 		} catch (Exception e) {
-			e.printStackTrace();
+				addVerificationFailure(e);
 		} 
 		return false; 
 	}
@@ -249,7 +249,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return jscondition; 
 		} catch (Exception e) {
-			e.printStackTrace();
+				addVerificationFailure(e);
 		} 
 		return false; 
 	}
@@ -278,7 +278,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return jQcondition; 
 		} catch (Exception e) {
-			e.printStackTrace();
+				addVerificationFailure(e);
 		} 
 		return jQcondition; 
     }
@@ -333,6 +333,7 @@ public class WaitTool extends TestBase {
 		try {
 				return driver.findElement(by).getText().contains(text);
 		} catch (NullPointerException e) {
+				addVerificationFailure(e);
 				return false;
 		}
 	}
@@ -350,7 +351,8 @@ public class WaitTool extends TestBase {
 		try {
 			driver.findElement(by);//if it does not find the element throw NoSuchElementException, which calls "catch(Exception)" and returns false; 
 			return true;
-		} catch (NoSuchElementException e) {
+		} catch (NoSuchElementException e)  {
+			addVerificationFailure(e);
 			return false;
 		}
 	}
@@ -368,6 +370,7 @@ public class WaitTool extends TestBase {
 			driver.findElements(by); 
 			return true; 
 		} catch (NoSuchElementException e) {
+			addVerificationFailure(e);
 			return false;
 		}
 	}
@@ -383,6 +386,7 @@ public class WaitTool extends TestBase {
 		try {			
 			return driver.findElement(by).isDisplayed();
 		} catch (NoSuchElementException e) {
+			addVerificationFailure(e);
 			return false;
 		}
 	}

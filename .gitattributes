@@ -31,6 +31,8 @@ src/testng/TestListeners.java -text
 src/testng/TestMethodListener.java -text
 src/utils/FileSeparator.java -text svneol=unset#text/plain
 src/utils/ObjectMessages.java -text
+src/utils/SafariTest.java -text
+src/utils/SafariTest2.java -text
 src/utils/SampleDataProvider.java -text
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
@@ -46,6 +48,7 @@ test-output/html/reportng.js -text
 test-output/html/sorttable.js -text
 test-output/html/suite1_groups.html -text
 test-output/html/suite1_test1_results.html -text
+test-output/html/suite1_test2_results.html -text
 test-output/html/suites.html -text
 test-output/xml/test.java.CopyOfTestHboSignIn_results.xml -text
 test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
@@ -55,4 +58,5 @@ test-output/xml/test.java.TestSearchEngines_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text
 test-output/xml/test.java.TestTest_results.xml -text
 test-output/xml/test.java.TestYahoo_results.xml -text
+test-output/xml/utils.SafariTest_results.xml -text
 /testng.xml -text
