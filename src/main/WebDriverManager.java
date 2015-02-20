@@ -1,6 +1,5 @@
 package main;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
@@ -8,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,7 +20,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import utils.WaitTool;
+//import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
 
@@ -200,33 +200,24 @@ public class WebDriverManager
         }
         else
         {
-            System.out.println("browser : Safari (Default)\n");
+            System.out.println("browser : Safari (Default)\n");      
             
             SafariOptions options = new SafariOptions();
             
-            // Add an extra extension            
-            String userHome = System.getProperty("user.home");
-            String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver2.safariextz";
-            options.addExtensions(new File(extensionFolder));
+            // Add an extra extension
+            //String userHome = System.getProperty("user.home");
+            //String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver.safariextz";
+            //options.addExtensions(new File(extensionFolder));
+            //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
-            options.setSkipExtensionInstallation(true);
             options.getUseCleanSession();
             
-            
-            // For use with SafariDriver:
-            //SafariDriver driver = new SafariDriver(options);
+            // For use with SafariDriver:           
             driver = new SafariDriver(options);
 
-
-            //driver = new SafariDriver();
-            driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
-
-            // open the url
-            driver.get("http://www.yahoo.com");
+            //driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
 
             driver.manage().deleteAllCookies();
-
-            //new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
         }
 

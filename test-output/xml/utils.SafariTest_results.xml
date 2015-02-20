@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21,915">
+           time="6,580">
   <properties />
   
   
-            <testcase name="spawnSafari" time="21,915" classname="utils.SafariTest" />
+            <testcase name="spawnSafari" time="6,580" classname="utils.SafariTest" />
       
 </testsuite>
