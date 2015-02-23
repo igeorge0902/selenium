@@ -6,9 +6,11 @@
 /log4j.xml -text
 /pom[!!-~]copy.xml -text
 /pom.xml -text
+src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
 src/main/CaptureScreenshotOnFailureListener.java -text
 src/main/ElementScreenshot.java -text
+src/main/EventListener.java -text
 src/main/TestBase.java -text
 src/main/WebDriverManager.java -text
 src/pageObjects/Google.java -text

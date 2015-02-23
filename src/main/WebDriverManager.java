@@ -1,5 +1,6 @@
 package main;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
@@ -15,12 +16,18 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 //import utils.WaitTool;
+
+
+
+
+import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
 
@@ -183,15 +190,19 @@ public class WebDriverManager
         {
             System.out.println("browser :"+ browser);
 
-
+            //Use specific Firefox profile
             ProfilesIni profilesIni = new ProfilesIni();
             FirefoxProfile profile = profilesIni.getProfile("teszt");
             driver = new FirefoxDriver(profile);
+            
+            //Event listener
+            EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
+            EventListener eventListener = new EventListener(driver);
+            eventFiringDriver.register(eventListener);
+            
+            driver = new EventFiringWebDriver(eventFiringDriver);
 
             driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-
-            // open the url
-            //driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -205,17 +216,24 @@ public class WebDriverManager
             SafariOptions options = new SafariOptions();
             
             // Add an extra extension
-            //String userHome = System.getProperty("user.home");
-            //String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver.safariextz";
-            //options.addExtensions(new File(extensionFolder));
+            String userHome = System.getProperty("user.home");
+            String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver2.safariextz";
+            options.addExtensions(new File(extensionFolder));
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
             options.getUseCleanSession();
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
-
-            //driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
+            
+            //Event listener
+            EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
+            EventListener eventListener = new EventListener(driver);
+            eventFiringDriver.register(eventListener);
+            
+            driver = new EventFiringWebDriver(eventFiringDriver);
+           
+            driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
 
             driver.manage().deleteAllCookies();
 

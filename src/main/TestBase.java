@@ -189,12 +189,12 @@ public class TestBase {
        try {
         	 driver.findElement(by);
         	 Log.info((by));
-        	 Reporter.log("Element is present<br>");
+        	 //Reporter.log("Element is present:"+by.toString()+"<br>");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
     			Log.info(getVerificationFailures(), e);
-    	        Reporter.log("Element is not present<br>");
+    	        Reporter.log("Element is not present:"+by.toString()+"<br>");
     			return false;
     		}
     			
@@ -206,12 +206,12 @@ public class TestBase {
 		try {
 			  driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          Reporter.log("Element is present<br>");
+	          //Reporter.log("Element is present:"+by.toString()+"<br>");
 			    return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
 				Log.info(getVerificationFailures(), e);
-    	        Reporter.log("Element is not present<br>");
+    	        Reporter.log("Element is not present:"+by.toString()+"<br>");
 				return false;			
 		}
 	}

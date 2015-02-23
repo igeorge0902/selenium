@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
@@ -55,11 +56,12 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
          * We can only take screen shots for those browsers that support screen shot capture, html unit
          * does not support screenshots as part of its capabilities.
          */
-        if ( (driver instanceof InternetExplorerDriver) || (driver instanceof FirefoxDriver)
-                                                                       || (driver instanceof ChromeDriver)
-                                                                       || (driver instanceof SafariDriver)
-                                                                       || (driver instanceof InternetExplorerDriver)
-                                                                       || (driver instanceof OperaDesktopDriver))
+        if ( (driver instanceof InternetExplorerDriver) 
+		   || (driver instanceof FirefoxDriver)
+           || (driver instanceof ChromeDriver)
+           || (driver instanceof SafariDriver)
+           || (driver instanceof OperaDesktopDriver)
+           || (driver instanceof EventFiringWebDriver))
         {
             // Create a calendar object so we can create a date and time for the screenshot
             Calendar calendar = Calendar.getInstance();

@@ -60,6 +60,7 @@ public class TestHboSignIn extends TestBase{
 		SignInPage.enterNewDevice();
 	    Log.info("newDevice test is done");
 	    Reporter.log("<p>newDevice test is done<br></p>");
+  
   }
     @Test (dependsOnMethods = { "testSignInSuccess" }/*,alwaysRun=true*/, groups = { "functional_test" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{

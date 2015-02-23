@@ -63,7 +63,7 @@ public class TestHboSignUp extends TestBase{
 		
 		verifyTrue(isTextPresent("<p>Az e-mail címek nem egyeznek<br></p>"), "Verify: the Valid Email error message displayed.<br>");
 
-		verifyFalse(isErrorMessageRequired_Check_TOS_displayed(), "ToS is not checked<br>");
+		//verifyFalse(isErrorMessageRequired_Check_TOS_displayed(), "ToS is not checked<br>");
 				
 		ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath(".//*[@id='operatorTypeNormal']/div[2]")));
 		

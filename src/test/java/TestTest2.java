@@ -29,12 +29,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
 
+import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
 
 
 
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, /*CustomTestListener.class*/})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestTest2 extends TestBase {

@@ -3,82 +3,65 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Test on Firefox</title>
+  <title>Test Results Report - Test on Safari</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Test on Firefox</h1>
+<h1>Test on Safari</h1>
 <p>
-  Test duration: 29,120s
+  Test duration: 35,645s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">test.java.TestHboSignUp</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">test.java.TestHboSignUp</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testSignupFail
+                  setUp
       </td>
   <td class="duration">
-    10,076s
+    0,000s
   </td>
   <td class="result">
         
+          <i>Method arguments: </i><span class="arguments">org.testng.TestRunner@11392934</span><br />
     
             <div class="testOutput">
-                        Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Fuck<br>
-                                Test Method resides in test.java.TestHboSignUp<br>
-                                <p>Test Status: </p><p>Failed</p>
-                                <a href="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-1-19-23-8-32-594.png"><p align="left">Error screenshot at Thu Feb 19 23:08:33 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-1-19-23-8-32-594.png" alt="screenshot at Thu Feb 19 23:08:33 CET 2015"/></p></a><br />
+                        Completed executing following method : TestHboSignUp.setUp<br>
+                                Completed executing following method : TestHboSignUp.setUp<br>
+                                Completed executing following method : TestHboSignUp.setUp<br>
+                                Completed executing following method : TestHboSignUp.setUp<br>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 42 milliseconds<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Failed to connect to SafariDriver after 11120 ms<br/>
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
 System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
-Driver info: org.openqa.selenium.safari.SafariDriver<br/>
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]<br/>
-Session ID: null</b></a><br />
+Driver info: driver.version: SafariDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
-              pageObjects.HboSignUp.selectOperator(HboSignUp.java:54)<br />
-              test.java.TestHboSignUp.testSignupFail(TestHboSignUp.java:56)<br />
+              org.openqa.selenium.safari.SafariDriverCommandExecutor.start(SafariDriverCommandExecutor.java:124)<br />
+              org.openqa.selenium.safari.SafariDriver.startClient(SafariDriver.java:72)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)<br />
+              org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:58)<br />
+              main.WebDriverManager.startDriver(WebDriverManager.java:227)<br />
+              test.java.TestHboSignUp.setUp(TestHboSignUp.java:45)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:483)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
               org.testng.TestRunner.run(TestRunner.java:617)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
@@ -96,58 +79,232 @@ Session ID: null</b></a><br />
                 </div>
       </td>
 </tr>
+    
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestHboSignUp</td>
+      </tr>
+            
 <tr>
   <td class="method">
                   testSignupFail
       </td>
   <td class="duration">
-    11,911s
+    0,001s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        Element is present<br>
-                                Element is present<br>
-                                Element is present<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Completed executing following method : TestHboSignUp.testSignupFail<br>
-                                Fuck<br>
-                                Test Method resides in test.java.TestHboSignUp<br>
-                                <p>Test Status: </p><p>Failed</p>
-                                <a href="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-1-19-23-8-48-755.png"><p align="left">Error screenshot at Thu Feb 19 23:08:50 CET 2015</p>
-                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-1-19-23-8-48-755.png" alt="screenshot at Thu Feb 19 23:08:50 CET 2015"/></p></a><br />
-                  </div>
-    
+        
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 239 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html<br/>
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
-Driver info: org.openqa.selenium.safari.SafariDriver<br/>
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]<br/>
-Session ID: null</b></a><br />
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.Throwable: Multiple failures (5)<br/>
+(1)java.lang.Throwable:null<br/>
+(2)java.lang.Throwable:null<br/>
+(3)java.lang.Throwable:null<br/>
+(4)java.lang.Throwable:null<br/>
+(5)java.lang.Throwable:Multiple failures (4)<br/>
+(1)java.lang.Throwable:null<br/>
+(2)java.lang.Throwable:null<br/>
+(3)java.lang.Throwable:null<br/>
+(4)java.lang.Throwable:null<br/>
+<br/>
+Failure 1 of 4<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 2 of 4<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 3 of 4<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 4 of 4<br/>
+<br/>
+<br/>
+Failure 1 of 5<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 2 of 5<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 3 of 5<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 4 of 5<br/>
+java.lang.Throwable<br/>
+	at testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br/>
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br/>
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br/>
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br/>
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br/>
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br/>
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br/>
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br/>
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)<br/>
+	at org.testng.TestRunner.run(TestRunner.java:617)<br/>
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br/>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br/>
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br/>
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)<br/>
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br/>
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br/>
+	at org.testng.TestNG.run(TestNG.java:1057)<br/>
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br/>
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br/>
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br/>
+<br/>
+Failure 5 of 5<br/>
+</b></a><br />
     <div class="stackTrace" id="exception-1">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
-              pageObjects.HboSignUp.selectOperator(HboSignUp.java:47)<br />
-              test.java.TestHboSignUp.testSignupFail(TestHboSignUp.java:56)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              testng.TestMethodListener.beforeInvocation(TestMethodListener.java:23)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)<br />
+              org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br />
+              org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:687)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
               org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
@@ -172,6 +329,73 @@ Session ID: null</b></a><br />
       </table>
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestHboSignUp</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testSignupFail
+      </td>
+  <td class="duration">
+    31,093s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Found element:By.id: headerButtonLogin<br>
+                                Found element:By.id: headerButtonLogin<br>
+                                Found element:By.selector: div.settings_description_white > #headerButtonLogin<br>
+                                Found element:By.selector: div.settings_description_white > #headerButtonLogin<br>
+                                Found element:By.id: OperatorId<br>
+                                Found element:By.id: OperatorId<br>
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+                                Found element:By.name: SpecificData<br>
+                                Found element:By.name: SpecificData<br>
+                                Found element:By.name: SpecificData<br>
+                                Found element:By.selector: button.button_submit.next<br>
+                                Found element:By.selector: button.button_submit.next<br>
+                                Found element:By.name: EmailAddress<br>
+                                Found element:By.name: EmailAddress<br>
+                                Found element:By.name: EmailAddress<br>
+                                Found element:By.name: EmailAddressAgain<br>
+                                Found element:By.name: EmailAddressAgain<br>
+                                Found element:By.name: EmailAddressAgain<br>
+                                Found element:By.name: Nick<br>
+                                Found element:By.name: Nick<br>
+                                Found element:By.name: Nick<br>
+                                Found element:By.name: Password<br>
+                                Found element:By.name: Password<br>
+                                Found element:By.name: Password<br>
+                                Found element:By.name: PasswordAgain<br>
+                                Found element:By.name: PasswordAgain<br>
+                                Found element:By.name: PasswordAgain<br>
+                                Found element:By.id: Newsletter_theme<br>
+                                Found element:By.id: Newsletter_theme<br>
+                                Found element:By.id: Terms_theme<br>
+                                Found element:By.id: Terms_theme<br>
+                                Found element:By.selector: button.button_submit.submit<br>
+                                <p>Az e-mail címek nem egyeznek<br></p>
+                                Verify: the Valid Email error message displayed.<br>
+                                Found element:By.xpath: .//*[@id='operatorTypeNormal']/div[2]<br>
+                                <a href="/Users/georgegaspar/Documents/Tests/*safari-2015-1-23-3-31-55-449.png"><p align="left"Element screenshot at Mon Feb 23 03:31:58 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*safari-2015-1-23-3-31-55-449.png" alt="screenshot at Mon Feb 23 03:31:58 CET 2015"/></p></a><br />
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Test Method resides in test.java.TestHboSignUp<br>
+                                <p>Test Status: </p><p>Pass</p>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

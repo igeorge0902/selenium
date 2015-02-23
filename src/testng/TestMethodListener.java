@@ -63,7 +63,7 @@ public class TestMethodListener implements IInvokedMethodListener{
                     Throwable last = lThrowable.get(size-1);                   
                     failureMessage.append("(").append(size).append(")").append(last.getClass().getName()).append(":").append(last.getMessage()).append("\n\n");
                      
-                    fullStack.append(last.toString());
+                    //fullStack.append(last.toString());
  
                     testResult.setThrowable(new Throwable(failureMessage.toString() + fullStack.toString()));
                     testResult.getThrowable().setStackTrace(last.getStackTrace());

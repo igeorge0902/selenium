@@ -6,7 +6,7 @@
   <sysproperty key="org.uncommons.reportng.escape-output" value="false" />    
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <parameter name="browser" value="*safari" />
-  <test name="Test on Firefox" preserve-order="true">
+  <test name="Test on Safari" preserve-order="true">
   	<parameter name="browser" value="*safari" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">
@@ -29,7 +29,7 @@
 	    <class name="utils.WebTestFactory" />   
    </classes>
   </test>
-  <test name="Test on Safari" preserve-order="true">
+  <test name="Test on Firefox" preserve-order="true">
     <parameter name="browser" value="Firefox" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">

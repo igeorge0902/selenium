@@ -1,24 +1,20 @@
 package testng;
 
+import org.apache.log4j.Logger;
 import org.testng.IInvokedMethod;
-
 import org.testng.IInvokedMethodListener;
-
 import org.testng.ISuite;
-
 import org.testng.ISuiteListener;
-
 import org.testng.ITestContext;
-
 import org.testng.ITestListener;
-
 import org.testng.ITestNGMethod;
-
 import org.testng.ITestResult;
-
 import org.testng.Reporter;
 
 public class TestListeners implements ITestListener, ISuiteListener, IInvokedMethodListener {
+	
+	private static Logger Log = Logger.getLogger(Logger.class.getName());
+
 
 	// This belongs to ISuiteListener and will execute before the Suite start
 
@@ -74,6 +70,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 		printTestResults(arg0);
 
+
 	}
 
 	// This belongs to ITestListener and will execute before the main test start (@Test)
@@ -89,6 +86,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 	public void onTestSkipped(ITestResult arg0) {
 
 		printTestResults(arg0);
+
 
 	}
 
@@ -143,6 +141,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 		}
 
 		Reporter.log("<p>Test Status: </p>" + status, true);
+		Log.info("Test Status:" + status);
 
 	}
 
