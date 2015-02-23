@@ -14,10 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
 import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
 import main.WebDriverManager;
+import main.WebElements;
 
 import org.openqa.selenium.*;
 
@@ -46,7 +48,7 @@ import testng.TestMethodListener;
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
-public class TestTest extends TestBase {
+public class TestTest extends TestBase implements WebElements{
 	
   private static WebDriver driver;
   private static WebElement element;

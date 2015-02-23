@@ -13,6 +13,7 @@ src/main/ElementScreenshot.java -text
 src/main/EventListener.java -text
 src/main/TestBase.java -text
 src/main/WebDriverManager.java -text
+src/main/WebElements.java -text
 src/pageObjects/Google.java -text
 src/pageObjects/HboSignIn.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUp.java -text svneol=unset#text/plain

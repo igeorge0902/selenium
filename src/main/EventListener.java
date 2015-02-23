@@ -59,6 +59,7 @@ public void afterNavigateForward(WebDriver driver) {
 @Override
 public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 	wait.until(ExpectedConditions.presenceOfElementLocated(by));
+	driver.switchTo().activeElement();
 
 }
 
@@ -82,7 +83,7 @@ public void afterClickOn(WebElement element, WebDriver driver) {
 }
 
 @Override
-public void afterClickOn(By by, WebDriver driver) {
+public void afterClickOn(By by, WebElement element, WebDriver driver) {
 	Reporter.log("Clicked on:"+by.toString()+"<br>");
 	Log.info("Element clicked on:"+by);
 }

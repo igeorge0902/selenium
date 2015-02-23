@@ -5,6 +5,7 @@ import java.util.List;
 import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
+import main.WebElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -22,7 +23,7 @@ import com.thoughtworks.selenium.Silvernium;
 @SuppressWarnings("deprecation")
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
-public class PlayTrailer extends TestBase {
+public class PlayTrailer extends TestBase implements WebElements{
 	
 	@SuppressWarnings("unused")
 	private static Silvernium silvernium;	

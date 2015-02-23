@@ -27,6 +27,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 
 
+
+
 import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
@@ -219,9 +221,12 @@ public class WebDriverManager
             String userHome = System.getProperty("user.home");
             String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver2.safariextz";
             options.addExtensions(new File(extensionFolder));
+            options.setDataDir(null);
+
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
             options.getUseCleanSession();
+
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);

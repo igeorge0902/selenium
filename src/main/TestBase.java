@@ -22,6 +22,7 @@ public class TestBase {
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
+	/*
     public static String[] playTrailer = new String[]{"PlayTrailer"};
     public static String[] playContent = new String[]{"PlayContent"};
     public static String[] playFree = new String[]{"PlayFree"};
@@ -29,7 +30,7 @@ public class TestBase {
     public static String[] playExtra = new String[]{"PlayExtra"};
     public static String[] playInteractive = new String[]{"PlayInteractive"};
     public static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
-    
+    */
 
     
 
