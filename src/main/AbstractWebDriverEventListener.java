@@ -56,5 +56,6 @@ public interface AbstractWebDriverEventListener extends WebDriverEventListener {
 
   public void onException(Throwable throwable, WebDriver driver);
 
-  public void afterClickOn(By by, WebElement element, WebDriver driver);
+  public void afterClickedOn(By by, WebElement element, WebDriver driver);
+
 }

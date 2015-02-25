@@ -1,6 +1,5 @@
 package test.java;
 
-import java.util.concurrent.TimeUnit;
 
 import main.TestBase;
 import main.WebDriverManager;
@@ -18,6 +17,7 @@ import pageObjects.PlayTrailer;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.WaitTool;
  
 
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
@@ -38,7 +38,7 @@ public class TestHboSignIn extends TestBase{
 	      //String url         = context.getCurrentXmlTest().getParameter("url");
 
 	      driver = WebDriverManager.startDriver(browser, 40);  
-	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	      WaitTool.setImplicitWait(driver, 30);
 	  }
 	
   @Test (groups = { "functional_test" }, description= "HBO login" )

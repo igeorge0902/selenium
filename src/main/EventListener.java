@@ -4,9 +4,9 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+
+import utils.WaitTool;
 
 public class EventListener extends TestBase implements AbstractWebDriverEventListener {
 
@@ -14,8 +14,8 @@ public class EventListener extends TestBase implements AbstractWebDriverEventLis
 		super(driver); 
 	}
 	
-	WebDriverWait wait = new WebDriverWait(driver, 30);
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	private final String browser = "*safari";
 
 	   
 //////////NAVIGATION RELATED METHODS ////////////////
@@ -58,16 +58,25 @@ public void afterNavigateForward(WebDriver driver) {
 /////////////////// FINDBY RELATED METHODS ///////////////
 @Override
 public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-	wait.until(ExpectedConditions.presenceOfElementLocated(by));
-	driver.switchTo().activeElement();
+
+    if (browser == WebDriverManager.getBroswer()) {
+	WaitTool.waitForElementPresent(driver, by, 10);
+    driver.switchTo().activeElement();
+    }
+
 
 }
 
 @Override
 public void afterFindBy(By by, WebElement element, WebDriver driver) {
-	driver.switchTo().activeElement();
-	Reporter.log("Found element:"+by.toString()+"<br>");
-	Log.info("Element found:"+by);
+    
+    if (browser == WebDriverManager.getBroswer()) {
+   	WaitTool.waitForElementPresent(driver, by, 10);
+    driver.switchTo().activeElement().click();
+    }
+    
+    Reporter.log("Found element:"+by.toString()+"<br>");
+    Log.info("Element found:"+by);
 }
 
 ////////////////////CLICKON RELATED METHODS ///////////////
@@ -79,13 +88,15 @@ public void beforeClickOn(WebElement element, WebDriver driver) {
 
 @Override
 public void afterClickOn(WebElement element, WebDriver driver) {
-	driver.switchTo().activeElement();
+	//driver.switchTo().activeElement();
+	Reporter.log("Clicked on:"+element.toString()+"<br>");
+	Log.info("Element clicked on:"+element);
 }
 
 @Override
-public void afterClickOn(By by, WebElement element, WebDriver driver) {
+public void afterClickedOn(By by, WebElement element, WebDriver driver) {
 	Reporter.log("Clicked on:"+by.toString()+"<br>");
-	Log.info("Element clicked on:"+by);
+	Log.info("Element clicked On:"+by);
 }
 
 

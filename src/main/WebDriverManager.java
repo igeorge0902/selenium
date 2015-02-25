@@ -2,7 +2,6 @@ package main;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -21,12 +20,6 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-//import utils.WaitTool;
-
-
-
-
 
 
 import utils.WaitTool;
@@ -71,7 +64,7 @@ public class WebDriverManager
     	WebDriverManager.browser = browser;
         DOMConfigurator.configure("log4j.xml");
         Log.info("New driver instantiated");
-        Log.info(getDriverInstance());
+        Log.info(getBroswer());
 
 
         /*
@@ -84,7 +77,7 @@ public class WebDriverManager
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver();
 
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             // open the url
             //driver.get(portalUrl);
@@ -109,7 +102,7 @@ public class WebDriverManager
             // start a html unit driver instance and enable javascript
             driver = new HtmlUnitDriver(true);
 
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             // open the url
             //driver.get(portalUrl);
@@ -159,7 +152,7 @@ public class WebDriverManager
 
             driver = new ChromeDriver(options);
 
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             // open the url
             //driver.get(portalUrl);
@@ -178,7 +171,7 @@ public class WebDriverManager
 
             driver = new OperaDriver(operaCapabilities);
 
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             // open the url
             //driver.get(portalUrl);
@@ -204,7 +197,7 @@ public class WebDriverManager
             
             driver = new EventFiringWebDriver(eventFiringDriver);
 
-            driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             driver.manage().deleteAllCookies();
 
@@ -226,6 +219,8 @@ public class WebDriverManager
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
             options.getUseCleanSession();
+            options.setDataDir(null);
+            options.equals(browser);
 
             
             // For use with SafariDriver:           
@@ -238,7 +233,7 @@ public class WebDriverManager
             
             driver = new EventFiringWebDriver(eventFiringDriver);
            
-            driver.manage().timeouts().implicitlyWait(WaitTool.DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS);
+            WaitTool.setImplicitWait(driver, 30);
 
             driver.manage().deleteAllCookies();
 

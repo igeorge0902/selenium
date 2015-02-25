@@ -4,6 +4,7 @@
 .settings/org.eclipse.jdt.core.prefs -text
 .settings/org.eclipse.m2e.core.prefs -text
 /log4j.xml -text
+/logfile.log.2015-02-23 -text
 /pom[!!-~]copy.xml -text
 /pom.xml -text
 src/main/AbstractWebDriverEventListener.java -text

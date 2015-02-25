@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test on Safari"
+<testsuite name="Test on Firefox"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="34,955">
+           time="42,194">
   <properties />
   
   
-            <testcase name="testSignupFail" time="16,837" classname="test.java.TestHboSignUp" />
-                <testcase name="testSignupFail" time="18,118" classname="test.java.TestHboSignUp" />
+            <testcase name="testSignupFail" time="22,360" classname="test.java.TestHboSignUp" />
+                <testcase name="testSignupFail" time="19,834" classname="test.java.TestHboSignUp" />
       
 </testsuite>

@@ -1,14 +1,8 @@
 package test.java;
 
-import java.util.concurrent.TimeUnit;
 
 import main.TestBase;
-
-
-
-
 import main.WebDriverManager;
-
 
 import org.openqa.selenium.WebDriver;
 //import org.apache.log4j.Logger;
@@ -22,6 +16,7 @@ import pageObjects.Google;
 import pageObjects.Yahoo;
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.WaitTool;
 
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
@@ -39,7 +34,7 @@ public class TestSearchEngines extends TestBase{
 	      //String url = context.getCurrentXmlTest().getParameter("url");
 
           driver = WebDriverManager.startDriver(browser, 40);
-	      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	      WaitTool.setImplicitWait(driver, 30);
 	  }
 
 	

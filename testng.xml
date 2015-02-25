@@ -34,7 +34,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<exclude name="testSignupFail" />
+        		<include name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
