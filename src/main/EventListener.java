@@ -72,7 +72,7 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
     
     if (browser == WebDriverManager.getBroswer()) {
    	WaitTool.waitForElementPresent(driver, by, 10);
-    driver.switchTo().activeElement().click();
+    //driver.switchTo().activeElement().click();
     }
     
     Reporter.log("Found element:"+by.toString()+"<br>");

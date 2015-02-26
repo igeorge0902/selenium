@@ -6,8 +6,10 @@
   <sysproperty key="org.uncommons.reportng.escape-output" value="false" />    
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <parameter name="browser" value="*safari" />
+  <parameter name="url" value="http://www.google.com" />
   <test name="Test on Safari" preserve-order="true">
   	<parameter name="browser" value="*safari" />
+  	<parameter name="url" value="http://www.google.com" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
@@ -31,6 +33,7 @@
   </test>
   <test name="Test on Firefox" preserve-order="true">
     <parameter name="browser" value="Firefox" />
+    <parameter name="url" value="http://www.google.com" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>

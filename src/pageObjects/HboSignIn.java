@@ -62,7 +62,7 @@ public class HboSignIn extends TestBase{
 	    	Thread.sleep(1000);
 	    }		    
 	    driver.findElement(By.name("Password")).clear();	    
-	    driver.findElement(By.name("Password")).sendKeys("common");
+	    driver.findElement(By.name("Password")).sendKeys("");
 	    
 	    Log.info("selectOperator is successful");
 		return new HboSignIn(driver); 

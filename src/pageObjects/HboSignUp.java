@@ -15,7 +15,7 @@ public class HboSignUp extends TestBase {
 		super(driver); 
 	}
 	 
-	  private static String voucher = "PHRPGV";
+	  private static String voucher = "AAABBB";
 	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	

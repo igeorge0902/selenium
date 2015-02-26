@@ -40,9 +40,9 @@ public class TestHboSignUp extends TestBase{
 		  
 		  // get the web driver parameters from the testng xml file
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      //String url         = context.getCurrentXmlTest().getParameter("url");
+	      String url = context.getCurrentXmlTest().getParameter("url");
 
-	      driver = WebDriverManager.startDriver(browser, 40);  
+	      driver = WebDriverManager.startDriver(browser, url, 40);  
 	      WaitTool.setImplicitWait(driver, 30);
 	  }
 	
@@ -63,7 +63,7 @@ public class TestHboSignUp extends TestBase{
 		
 		verifyTrue(isTextPresent("<p>Az e-mail címek nem egyeznek<br></p>"), "Verify: the Valid Email error message displayed.<br>");
 
-		//verifyFalse(isErrorMessageRequired_Check_TOS_displayed(), "ToS is not checked<br>");
+		verifyFalse(isErrorMessageRequired_Check_TOS_displayed(), "ToS is not checked<br>");
 				
 		ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath(".//*[@id='operatorTypeNormal']/div[2]")));
 				

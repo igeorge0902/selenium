@@ -31,9 +31,9 @@ public class TestSearchEngines extends TestBase{
 		  
 		  // get the web driver parameters from the testng xml file
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      //String url = context.getCurrentXmlTest().getParameter("url");
+	      String url = context.getCurrentXmlTest().getParameter("url");
 
-          driver = WebDriverManager.startDriver(browser, 40);
+          driver = WebDriverManager.startDriver(browser, url, 40);
 	      WaitTool.setImplicitWait(driver, 30);
 	  }
 

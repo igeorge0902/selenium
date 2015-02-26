@@ -58,7 +58,7 @@ public class WebDriverManager
      * @param url 
      * @throws Exception 
      */
-    public static WebDriver startDriver(String browser, int timeout) throws Exception
+    public static WebDriver startDriver(String browser, String portalUrl, int timeout) throws Exception
     {
 
     	WebDriverManager.browser = browser;
@@ -80,7 +80,7 @@ public class WebDriverManager
             WaitTool.setImplicitWait(driver, 30);
 
             // open the url
-            //driver.get(portalUrl);
+           driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
@@ -105,7 +105,7 @@ public class WebDriverManager
             WaitTool.setImplicitWait(driver, 30);
 
             // open the url
-            //driver.get(portalUrl);
+            driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -155,7 +155,7 @@ public class WebDriverManager
             WaitTool.setImplicitWait(driver, 30);
 
             // open the url
-            //driver.get(portalUrl);
+            driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -174,7 +174,7 @@ public class WebDriverManager
             WaitTool.setImplicitWait(driver, 30);
 
             // open the url
-            //driver.get(portalUrl);
+            driver.get(portalUrl);
 
             driver.manage().deleteAllCookies();
 
@@ -198,7 +198,10 @@ public class WebDriverManager
             driver = new EventFiringWebDriver(eventFiringDriver);
 
             WaitTool.setImplicitWait(driver, 30);
-
+            
+            // open the url
+            driver.get(portalUrl);
+            
             driver.manage().deleteAllCookies();
 
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
@@ -219,7 +222,6 @@ public class WebDriverManager
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
             options.getUseCleanSession();
-            options.setDataDir(null);
             options.equals(browser);
 
             
@@ -234,7 +236,10 @@ public class WebDriverManager
             driver = new EventFiringWebDriver(eventFiringDriver);
            
             WaitTool.setImplicitWait(driver, 30);
-
+            
+            // open the url
+            driver.get(portalUrl);
+            
             driver.manage().deleteAllCookies();
 
         }
