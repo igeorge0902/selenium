@@ -76,7 +76,7 @@ public class WebDriverManager
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver();
 
-            driver = driverEventListener(portalUrl);
+            driver = driverEventListener(null);
             WaitTool.setImplicitWait(driver, 30);
 
             driver.get(portalUrl);
