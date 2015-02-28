@@ -21,7 +21,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-
 import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
@@ -77,14 +76,15 @@ public class WebDriverManager
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver();
 
+            driver = driverEventListener(portalUrl);
             WaitTool.setImplicitWait(driver, 30);
 
-            // open the url
-           driver.get(portalUrl);
+            driver.get(portalUrl);
+            driver.manage().deleteAllCookies();  
 
-            driver.manage().deleteAllCookies();
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
  
+            /*
             // click the override link if it exists
             try
             {
@@ -93,7 +93,7 @@ public class WebDriverManager
             catch (Exception e) {
                 // do nothing as this exception is expected if no security ssl cert issue
             }
-
+			*/
         }
         else if ( browser.equalsIgnoreCase("HTML_UNIT") )
         {
@@ -190,20 +190,12 @@ public class WebDriverManager
             FirefoxProfile profile = profilesIni.getProfile("teszt");
             driver = new FirefoxDriver(profile);
             
-            //Event listener
-            EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
-            EventListener eventListener = new EventListener(driver);
-            eventFiringDriver.register(eventListener);
-            
-            driver = new EventFiringWebDriver(eventFiringDriver);
-
+            driver = driverEventListener(profile);
             WaitTool.setImplicitWait(driver, 30);
-            
-            // open the url
-            driver.get(portalUrl);
-            
-            driver.manage().deleteAllCookies();
 
+            driver.get(portalUrl);
+            driver.manage().deleteAllCookies();          
+            
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
         }
@@ -228,19 +220,11 @@ public class WebDriverManager
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
             
-            //Event listener
-            EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
-            EventListener eventListener = new EventListener(driver);
-            eventFiringDriver.register(eventListener);
-            
-            driver = new EventFiringWebDriver(eventFiringDriver);
-           
+            driver = driverEventListener(options);
             WaitTool.setImplicitWait(driver, 30);
-            
-            // open the url
+
             driver.get(portalUrl);
-            
-            driver.manage().deleteAllCookies();
+            driver.manage().deleteAllCookies();  
 
         }
 
@@ -248,6 +232,15 @@ public class WebDriverManager
         return driver;
     }
 
+    
+    private static WebDriver driverEventListener(Object object) {
+    	
+        EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
+        EventListener eventListener = new EventListener(driver);
+        eventFiringDriver.register(eventListener); 
+        
+        return driver = new EventFiringWebDriver(eventFiringDriver);
+	}
 
     /**
      * Stops the browser driver started
