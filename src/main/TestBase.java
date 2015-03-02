@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,31 +16,18 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import testng.Verify;
 import utils.WaitTool;
 
 
-public class TestBase {
+public class TestBase extends Verify {
 	
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
-	
-	/*
-    public static String[] playTrailer = new String[]{"PlayTrailer"};
-    public static String[] playContent = new String[]{"PlayContent"};
-    public static String[] playFree = new String[]{"PlayFree"};
-    public static String[] playLive = new String[]{"PlayLive"};
-    public static String[] playExtra = new String[]{"PlayExtra"};
-    public static String[] playInteractive = new String[]{"PlayInteractive"};
-    public static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
-    */
-
-    
-
-	/*
-	 * softAssert methods
-	 */
+	 
 	
 	protected static WebDriver driver = null;
+	protected static WebElement element = null;
     
 	public TestBase(WebDriver driver) {
 		  TestBase.driver = WebDriverManager.driver; 
@@ -47,6 +36,10 @@ public class TestBase {
 	public TestBase() {
 		  
 	  }
+
+	/**
+	 * softAssert methods
+	 */
 
     
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
@@ -57,6 +50,28 @@ public class TestBase {
 	    return;
 	}
 
+	/**
+	* Confirm alert, prompt, or confirmation dialog that is present on the page.
+	* Does nothing if confirmation not present on page and returns empty string.
+	* @return String 		alert text or empty string
+	*/
+	
+	public String getAlertConfirmation() {		
+		try{
+			Alert alert = driver.switchTo().alert();
+			String alertText = alert.getText();
+			alert.accept();
+			Log.info("<p>JavaScript text: </p>" + alert.getText() + "<br>");
+			Reporter.log("<p>JavaScript text: </p>" + alert.getText() + "<br>", true);
+			return alertText;		
+			//}catch(Throwable e){
+			//}catch(UnexpectedAlertOpenException ex){ //assume this is the correct exception to detect in Safari, per  issue 3969 ? I haven't tested yet.
+			}catch(NoAlertPresentException e){
+			Log.info(e);
+			Reporter.log("<p>JavaScript text: </p>" + "NoAlertPresentException" + "<br>", true);
+			return ""; //if there is no alert displayed, do nothing, return empty string.
+		}
+	}
 
 	public static void assertTrue(boolean condition) {
     	Assert.assertTrue(condition);
@@ -244,6 +259,7 @@ public class TestBase {
 			    return false;
 		}
 	}
+	
 	
 	/**
 	 * Verify the error message is displayed. 

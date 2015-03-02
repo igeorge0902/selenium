@@ -1,6 +1,6 @@
 package main;
 
-import java.io.File;
+
 import java.util.Arrays;
 
 import org.apache.log4j.Logger;
@@ -25,6 +25,9 @@ import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
 
+import org.openqa.selenium.Platform;
+import org.testng.annotations.BeforeClass;
+
 /**
  * Author: anthony.kearns
  * Date: 13/01/2012
@@ -42,6 +45,8 @@ public class WebDriverManager
 {
     public static WebDriver driver = null;
     private static String browser = null;
+    private static String portalUrl;
+    private static int timeout;
     private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 
@@ -50,6 +55,29 @@ public class WebDriverManager
     	
     	
     }
+    
+    /*
+    private static boolean isSupportedPlatformMac() {
+        Platform current = Platform.getCurrent();
+        return Platform.MAC.is(current);
+      }
+    */ 
+    
+    public static boolean isSupportedPlatformWindows(boolean condition) {
+        Platform current = Platform.getCurrent();
+        return Platform.WINDOWS.is(current);
+      }
+    
+    
+    @BeforeClass
+    public WebDriver createDriver() throws InterruptedException {
+    	try {if ( browser.equalsIgnoreCase("INTERNET_EXPLORER")) {
+    	} return driver = startDriver(browser, portalUrl, timeout);
+    	} catch (Exception e) {
+    	} 
+    	return driver = null;
+    }
+    
 
     /**
      * Static method for starting a webdriver, defaults  the wait time to 30 seconds and the browser to
@@ -63,21 +91,28 @@ public class WebDriverManager
     	WebDriverManager.browser = browser;
         DOMConfigurator.configure("log4j.xml");
         Log.info("New driver instantiated");
+        Log.info(Platform.getCurrent());
         Log.info(getBroswer());
+
+
+
 
 
         /*
         * Determine what browser were using and start the appropiate driver instance
         */
-        if ( browser.equalsIgnoreCase("INTERNET_EXPLORER") )
+        if ( browser.equalsIgnoreCase("INTERNET_EXPLORER"))
         {
+        	            	            
             System.out.println("browser : "+ browser);
+            
+    		TestBase.assertTrue(isSupportedPlatformWindows(true));
 
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver();
 
             driver = driverEventListener(null);
-            WaitTool.setImplicitWait(driver, 30);
+            WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
             driver.manage().deleteAllCookies();  
@@ -102,7 +137,7 @@ public class WebDriverManager
             // start a html unit driver instance and enable javascript
             driver = new HtmlUnitDriver(true);
 
-            WaitTool.setImplicitWait(driver, 30);
+            WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
             driver.get(portalUrl);
@@ -152,7 +187,7 @@ public class WebDriverManager
 
             driver = new ChromeDriver(options);
 
-            WaitTool.setImplicitWait(driver, 30);
+            WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
             driver.get(portalUrl);
@@ -165,13 +200,13 @@ public class WebDriverManager
         {
             System.out.println("browser :"+ browser);
 
-            DesiredCapabilities operaCapabilities = DesiredCapabilities.opera();
+            DesiredCapabilities operaCapabilities = DesiredCapabilities.operaBlink();
             operaCapabilities.setJavascriptEnabled(true);
             operaCapabilities.setCapability("-autotestmode", true);
 
             driver = new OperaDriver(operaCapabilities);
 
-            WaitTool.setImplicitWait(driver, 30);
+            WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
             driver.get(portalUrl);
@@ -191,7 +226,7 @@ public class WebDriverManager
             driver = new FirefoxDriver(profile);
             
             driver = driverEventListener(profile);
-            WaitTool.setImplicitWait(driver, 30);
+            WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
             driver.manage().deleteAllCookies();          
@@ -203,25 +238,22 @@ public class WebDriverManager
         {
             System.out.println("browser : Safari (Default)\n");      
             
-            SafariOptions options = new SafariOptions();
-            
-            // Add an extra extension
-            String userHome = System.getProperty("user.home");
-            String extensionFolder = userHome +File.separator+"Downloads"+File.separator+"SafariDriver2.safariextz";
-            options.addExtensions(new File(extensionFolder));
-            options.setDataDir(null);
+            SafariOptions options = new SafariOptions();  
 
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
             options.getUseCleanSession();
             options.equals(browser);
+            
+            
 
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
             
             driver = driverEventListener(options);
-            WaitTool.setImplicitWait(driver, 30);
+            
+            WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
             driver.manage().deleteAllCookies();  
@@ -238,7 +270,9 @@ public class WebDriverManager
         EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
         EventListener eventListener = new EventListener(driver);
         eventFiringDriver.register(eventListener); 
-        
+
+        //WaitTool.setImplicitWait(driver, 30);
+
         return driver = new EventFiringWebDriver(eventFiringDriver);
 	}
 

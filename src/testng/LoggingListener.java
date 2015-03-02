@@ -31,7 +31,8 @@ public class LoggingListener extends TestListenerAdapter {
 			  
 				// call the superclass
 		        super.onTestSkipped(tr);
-			  
+		     
+		     Reporter.log("Shit happens");
 		     log("Shit happens\n");
 		  }
 		 
@@ -40,7 +41,8 @@ public class LoggingListener extends TestListenerAdapter {
 			  
 				// call the superclass
 		        super.onTestSuccess(tr); 
-			  
+  
+		    Reporter.log("Minden fasza");
 		    log("Minden fasza\n");
 		  }
 		 

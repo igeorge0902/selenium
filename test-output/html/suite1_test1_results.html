@@ -3,52 +3,219 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Default test</title>
+  <title>Test Results Report - Test on Safari</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Default test</h1>
+<h1>Test on Safari</h1>
 <p>
-  Test duration: 13,125s
+  Test duration: 45,578s
 </p>
 
 
 
-
-
   <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">utils.SafariTest</td>
+        <td colspan="3" class="group">test.java.TestHboSignUp</td>
       </tr>
             
 <tr>
   <td class="method">
-                  spawnSafari
+                  testSignupFail
       </td>
   <td class="duration">
-    1,440s
+    9,015s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Found element:By.name: q&lt;br&gt;<br />
-                                Found element:By.name: btnG&lt;br&gt;<br />
-                                Clicked on:[[SafariDriver: safari on MAC (null)] -&gt; name: btnG]&lt;br&gt;<br />
-                                Completed executing following method : SafariTest.spawnSafari&lt;br&gt;<br />
-                                Completed executing following method : SafariTest.spawnSafari&lt;br&gt;<br />
-                                Test Method resides in utils.SafariTest&lt;br&gt;<br />
-                                &lt;p&gt;Test Status: &lt;/p&gt;&lt;p&gt;Pass&lt;/p&gt;<br />
+                        Found element:By.id: headerButtonLogin<br>
+                                Found element:By.id: headerButtonLogin<br>
+                                Clicked on:[[SafariDriver: safari on MAC (null)] -> id: headerButtonLogin]<br>
+                                Found element:By.cssSelector: div.settings_description_white > #headerButtonLogin<br>
+                                Found element:By.cssSelector: div.settings_description_white > #headerButtonLogin<br>
+                                Clicked on:[[SafariDriver: safari on MAC (null)] -> css selector: div.settings_description_white > #headerButtonLogin]<br>
+                                Found element:By.id: OperatorId<br>
+                                Found element:By.id: OperatorId<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Fuck<br>
+                                <a href="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-2-2-4-53-32-663.png"><p align="left">Error screenshot at Mon Mar 02 04:53:33 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-2-2-4-53-32-663.png" alt="screenshot at Mon Mar 02 04:53:33 CET 2015"/></p></a><br />
+                                Test Method resides in test.java.TestHboSignUp<br>
+                                <p>Test Status: </p><p>Failed</p>
                   </div>
     
 
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: Element is no longer attached to the DOM (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 193 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.safari.SafariDriver<br/>
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]<br/>
+Session ID: null</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)<br />
+              com.sun.proxy.$Proxy9.click(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)<br />
+              com.sun.proxy.$Proxy10.click(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)<br />
+              pageObjects.HboSignUp.selectOperator(HboSignUp.java:47)<br />
+              test.java.TestHboSignUp.testSignupFail(TestHboSignUp.java:56)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testSignupFail
+      </td>
+  <td class="duration">
+    9,604s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Found element:By.id: headerButtonLogin<br>
+                                Found element:By.id: headerButtonLogin<br>
+                                Clicked on:[[SafariDriver: safari on MAC (null)] -> id: headerButtonLogin]<br>
+                                Found element:By.cssSelector: div.settings_description_white > #headerButtonLogin<br>
+                                Found element:By.cssSelector: div.settings_description_white > #headerButtonLogin<br>
+                                Clicked on:[[SafariDriver: safari on MAC (null)] -> css selector: div.settings_description_white > #headerButtonLogin]<br>
+                                Found element:By.id: OperatorId<br>
+                                Found element:By.id: OperatorId<br>
+                                Clicked on:[[SafariDriver: safari on MAC (null)] -> id: OperatorId]<br>
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Completed executing following method : TestHboSignUp.testSignupFail<br>
+                                Fuck<br>
+                                <a href="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-2-2-4-53-16-619.png"><p align="left">Error screenshot at Mon Mar 02 04:53:18 CET 2015</p>
+                                <p><img width="50%" src="/Users/georgegaspar/Documents/Tests/*safari-testSignupFail(test.java.TestHboSignUp)-2015-2-2-4-53-16-619.png" alt="screenshot at Mon Mar 02 04:53:18 CET 2015"/></p></a><br />
+                                Test Method resides in test.java.TestHboSignUp<br>
+                                <p>Test Status: </p><p>Failed</p>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 210 milliseconds<br/>
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;<br/>
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;<br/>
+Driver info: org.openqa.selenium.safari.SafariDriver<br/>
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]<br/>
+Session ID: null</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)<br />
+              com.sun.proxy.$Proxy9.click(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)<br />
+              com.sun.proxy.$Proxy10.click(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)<br />
+              pageObjects.HboSignUp.selectOperator(HboSignUp.java:54)<br />
+              test.java.TestHboSignUp.testSignupFail(TestHboSignUp.java:56)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
       </td>
 </tr>
       </table>
+
+
   
 </body>
 </html>

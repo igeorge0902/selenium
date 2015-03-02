@@ -7,7 +7,6 @@ import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -64,9 +63,7 @@ public class Google extends TestBase {
 				.executeScript("alert('hello world');");
 		}
 			
-	    Alert alert = driver.switchTo().alert();
-		Reporter.log("<p>JavaScript text: </p>" + alert.getText() + "<br>", true);
-	    alert.accept();
+		getAlertConfirmation();
 	    	
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	 

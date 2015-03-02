@@ -1,6 +1,8 @@
 package main;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
@@ -25,27 +27,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 @SuppressWarnings("unused")
-public class ElementScreenshot {
+public class ElementScreenshot extends TestBase{
 private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output"; 
 
-
-/*
- @BeforeClass
- public void setUp(ITestContext context) throws Exception
- {
-	  
-	  // get the web driver parameters from the testng xml file
-     String browser = context.getCurrentXmlTest().getParameter("browser");
-     //String url         = context.getCurrentXmlTest().getParameter("url");
-
-     driver = WebDriverManager.startDriver(browser, 40);  
-     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-     driver.get("http://only-testing-blog.blogspot.in/2014/09/selectable.html");
-
- }
-*/
-
-// @Test
  public static void captureScreenshot() throws Exception {
 	 
 	 
@@ -56,7 +40,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
         captureElementScreenshot(Image);
  }
  
- public static void captureElementScreenshot(WebElement element) throws Exception{
+ public static void captureElementScreenshot(final WebElement element) throws Exception{
 	 
 	 
        	  
@@ -81,7 +65,8 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   //Used TakesScreenshot, OutputType Interface of selenium and File class of java to capture screenshot of entire page.
   File scrFile = ((TakesScreenshot) WebDriverManager.driver).getScreenshotAs(OutputType.FILE);
   
-  
+  //Reading full image screenshot.
+  BufferedImage img = ImageIO.read(scrFile);
   
   //Used selenium getSize() method to get height and width of element.
   //Retrieve width of element.
@@ -96,22 +81,23 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   int xcord = point.getX();
   int ycord = point.getY();
   
-  //Reading full image screenshot.
-  BufferedImage img = ImageIO.read(scrFile);
-  
+  //Reading full image screenshot.  
   System.out.printf("Original Image Dimension: " + element.getSize().getWidth(), element.getSize().getHeight());
   
+  
   //cut Image using height, width and x y coordinates parameters.
+  try {
   BufferedImage dest = img.getSubimage(xcord, ycord, ImageWidth, ImageHeight);
+  ImageIO.write(dest, "png", scrFile);
+  }
+  catch (IOException e) {
+	  e.printStackTrace();
+  }
   
   System.out.println("New Image Dimension: "+ screen);
 
-  
-  ImageIO.write(dest, "png", scrFile);
-  
+    
   //Used FileUtils class of apache.commons.io.
-  
-  
   String fileNameToCopy = screen;
 
   try  {
@@ -137,7 +123,7 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   Reporter.log("<p><img width=\"50%\" src=\"" + file.getAbsoluteFile()  + "\" alt=\"screenshot at " + new Date()+ "\"/></p></a><br />"); 
 
   
- }
+ 	}
 
 
 }

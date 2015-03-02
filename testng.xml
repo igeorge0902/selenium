@@ -55,4 +55,28 @@
 	    <class name="utils.WebTestFactory" />   
    </classes>
    </test>
+     <test name="Test on Internet Explorer" preserve-order="true">
+    <parameter name="browser" value="INTERNET_EXPLORER" />
+    <parameter name="url" value="http://www.google.com" />
+  	<classes>
+  	      <class name="test.java.TestHboSignUp">
+		     <methods>
+        		<exclude name="testSignupFail" />
+    		</methods>
+      		</class>
+	      <class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    <class name="test.java.TestSearchEngines"> 
+	          <methods>
+	      		<include name="Yahoo" />
+	      		<exclude name="Google" />
+	    		</methods>
+	    	</class>
+	    <class name="utils.WebTestFactory" />   
+   </classes>
+   </test>
 </suite>

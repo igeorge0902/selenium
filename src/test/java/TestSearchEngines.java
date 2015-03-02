@@ -16,7 +16,7 @@ import pageObjects.Google;
 import pageObjects.Yahoo;
 import testng.TestListeners;
 import testng.TestMethodListener;
-import utils.WaitTool;
+//import utils.WaitTool;
 
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
@@ -33,8 +33,8 @@ public class TestSearchEngines extends TestBase{
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
 	      String url = context.getCurrentXmlTest().getParameter("url");
 
-          driver = WebDriverManager.startDriver(browser, url, 40);
-	      WaitTool.setImplicitWait(driver, 30);
+          driver = WebDriverManager.startDriver(browser, url, 30);
+	      //WaitTool.setImplicitWait(driver, 30);
 	  }
 
 	

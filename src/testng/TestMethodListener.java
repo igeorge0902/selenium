@@ -1,5 +1,6 @@
 package testng;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import main.TestBase;
@@ -14,16 +15,18 @@ public class TestMethodListener implements IInvokedMethodListener{
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
  
-        if(method.isTestMethod()){ 
-             
-           // if(TestBase.getVerificationFailures()!=null){
-           //     throw new RuntimeException("Stale error buffer detected!");
-           //}
-             
-          TestBase.addVerificationFailure(new Throwable()); // each test method will have its own error buffer
-        }
- 
-    }
+    	if(method.isTestMethod()){
+    		if(TestMethodErrorBuffer.get()!=null){
+    			
+    		try {
+				throw new InterruptedException("Stale error buffer detected!");
+				} catch (InterruptedException e) {
+						e.printStackTrace();
+			}
+		}
+    		TestMethodErrorBuffer.set(new ArrayList<Throwable>()); // each test method will have its own error buffer
+		}
+	}
  
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
@@ -71,7 +74,7 @@ public class TestMethodListener implements IInvokedMethodListener{
  
             }
              
-            //TestMethodErrorBuffer.remove(); // remove stale
+            TestMethodErrorBuffer.remove(); // remove stale
              
         }
     }

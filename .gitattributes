@@ -32,7 +32,10 @@ src/testng/CustomVerification.java -text
 src/testng/LoggingListener.java -text
 src/testng/TestListenerAdapter.java -text
 src/testng/TestListeners.java -text
+src/testng/TestMethodErrorBuffer.java -text svneol=unset#text/plain
 src/testng/TestMethodListener.java -text
+src/testng/VerificationError.java -text svneol=unset#text/plain
+src/testng/Verify.java -text svneol=unset#text/plain
 src/utils/FileSeparator.java -text svneol=unset#text/plain
 src/utils/ObjectMessages.java -text
 src/utils/SafariTest.java -text

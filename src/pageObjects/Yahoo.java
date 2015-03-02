@@ -7,7 +7,6 @@ import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -39,27 +38,26 @@ public class Yahoo extends TestBase {
 	    Log.info("Verification Failed for Title"); 
 	    }
 	    	
-		assertTrue(isElementPresent(By.id("p_13838465-p")));
+		assertTrue(isElementPresent(By.id("UHSearchBox")));
 	    
 	    
-	    driver.findElement(By.id("p_13838465-p")).clear();
-	    driver.findElement(By.id("p_13838465-p")).sendKeys(input);
-	    driver.findElement(By.id("p_13838465-p")).sendKeys(Keys.ENTER);
+	    driver.findElement(By.id("UHSearchBox")).clear();
+	    driver.findElement(By.id("UHSearchBox")).sendKeys(input);
+	    driver.findElement(By.id("UHSearchBox")).sendKeys(Keys.ENTER);
 	    
 	    //element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));
 	    
         WaitTool.waitForElementPresent(driver, By.id("main"), 10);
 	    
-	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("main")));
-	    
+	    //ElementScreenshot.getScreenshot(driver.findElement(By.id("main")));
+	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("hd")));
+
 		if (driver instanceof JavascriptExecutor) {
 			((JavascriptExecutor) driver)
 				.executeScript("alert('hello world');");
 		}
-			
-	    Alert alert = driver.switchTo().alert();
-		Reporter.log("<p>JavaScript text: </p>" + alert.getText() + "<br>", true);
-	    alert.accept();
+		
+		getAlertConfirmation();
 	    	
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	 

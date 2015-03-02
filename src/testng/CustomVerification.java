@@ -5,6 +5,7 @@ import org.testng.Reporter;
 
 import com.thoughtworks.selenium.SeleneseTestBase;
 
+@SuppressWarnings("deprecation")
 public class CustomVerification extends SeleneseTestBase {
 
  private StringBuffer verificationErrors;
