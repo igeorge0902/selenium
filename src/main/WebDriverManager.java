@@ -26,7 +26,6 @@ import utils.WaitTool;
 import com.opera.core.systems.OperaDriver;
 
 import org.openqa.selenium.Platform;
-import org.testng.annotations.BeforeClass;
 
 /**
  * Author: anthony.kearns
@@ -45,8 +44,7 @@ public class WebDriverManager
 {
     public static WebDriver driver = null;
     private static String browser = null;
-    private static String portalUrl;
-    private static int timeout;
+
     private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 
@@ -67,17 +65,7 @@ public class WebDriverManager
         Platform current = Platform.getCurrent();
         return Platform.WINDOWS.is(current);
       }
-    
-    
-    @BeforeClass
-    public WebDriver createDriver() throws InterruptedException {
-    	try {if ( browser.equalsIgnoreCase("INTERNET_EXPLORER")) {
-    	} return driver = startDriver(browser, portalUrl, timeout);
-    	} catch (Exception e) {
-    	} 
-    	return driver = null;
-    }
-    
+       
 
     /**
      * Static method for starting a webdriver, defaults  the wait time to 30 seconds and the browser to

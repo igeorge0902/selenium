@@ -13,7 +13,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
@@ -37,7 +37,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
