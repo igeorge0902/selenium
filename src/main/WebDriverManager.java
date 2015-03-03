@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -54,18 +53,6 @@ public class WebDriverManager
     	
     }
     
-    /*
-    private static boolean isSupportedPlatformMac() {
-        Platform current = Platform.getCurrent();
-        return Platform.MAC.is(current);
-      }
-    */ 
-    
-    public static boolean isSupportedPlatformWindows(boolean condition) {
-        Platform current = Platform.getCurrent();
-        return Platform.WINDOWS.is(current);
-      }
-       
 
     /**
      * Static method for starting a webdriver, defaults  the wait time to 30 seconds and the browser to
@@ -82,10 +69,6 @@ public class WebDriverManager
         Log.info(Platform.getCurrent());
         Log.info(getBroswer());
 
-
-
-
-
         /*
         * Determine what browser were using and start the appropiate driver instance
         */
@@ -94,12 +77,14 @@ public class WebDriverManager
         	            	            
             System.out.println("browser : "+ browser);
             
-    		TestBase.assertTrue(isSupportedPlatformWindows(true));
+    		TestBase.assertTrue(TestBase.isSupportedPlatformWindows(true));
 
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver();
 
             driver = driverEventListener(null);
+            Log.info(browser + "driver initialized with eventListeners");
+
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -214,6 +199,8 @@ public class WebDriverManager
             driver = new FirefoxDriver(profile);
             
             driver = driverEventListener(profile);
+            Log.info(browser + "driver initialized with eventListeners");
+
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -240,6 +227,7 @@ public class WebDriverManager
             driver = new SafariDriver(options);
             
             driver = driverEventListener(options);
+            Log.info(browser + "driver initialized with eventListeners");
             
             WaitTool.setImplicitWait(driver, timeout);
 
@@ -251,7 +239,6 @@ public class WebDriverManager
         // return a reference to the static web driver instance started
         return driver;
     }
-
     
     private static WebDriver driverEventListener(Object object) {
     	
@@ -264,6 +251,15 @@ public class WebDriverManager
         return driver = new EventFiringWebDriver(eventFiringDriver);
 	}
 
+    public static WebDriver unregister(Object object){
+    	
+        EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(driver);
+        EventListener eventListener = new EventListener(driver);
+   
+        return driver = eventFiringDriver.unregister(eventListener); 
+    	
+	}
+    
     /**
      * Stops the browser driver started
      *
@@ -271,7 +267,10 @@ public class WebDriverManager
      */
     public static void stopDriver()
     {
-        driver.quit();
+        driver.close();
+        unregister(driver);
+        System.out.println("eventListeners unregistered");
+        
     }
 
     public static WebDriver getDriverInstance()

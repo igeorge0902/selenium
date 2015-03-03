@@ -10,7 +10,6 @@ import main.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -19,8 +18,7 @@ public class Google extends TestBase {
 	public Google(WebDriver driver){
 		super(driver); 
 	}
-	public static WebElement element;
-
+	private static String Searchbox = "gbqfq";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
 	public Google test(String input) throws Exception {
@@ -44,9 +42,9 @@ public class Google extends TestBase {
 	    
 	    verifySuccess(driver.getTitle().equals("Google"));
 	    
-	    driver.findElement(By.id("gbqfq")).clear();    
-		driver.findElement(By.id("gbqfq")).sendKeys(input);
-	    driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
+	    driver.findElement(By.id(Searchbox)).clear();    
+		driver.findElement(By.id(Searchbox)).sendKeys(input);
+	    driver.findElement(By.id(Searchbox)).sendKeys(Keys.ENTER);
 	    
 	    element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("rso")));
 	    isElementPresent(By.id("rso"));
@@ -54,9 +52,9 @@ public class Google extends TestBase {
 	    Log.info("ScreenShot done");
 	    
 	    
-	    driver.findElement(By.id("gbqfq")).clear();
-		driver.findElement(By.id("gbqfq")).sendKeys("Milo");
-	    driver.findElement(By.id("gbqfb")).sendKeys(Keys.ENTER);
+	    driver.findElement(By.id(Searchbox)).clear();
+		driver.findElement(By.id(Searchbox)).sendKeys("Milo");
+	    driver.findElement(By.id(Searchbox)).sendKeys(Keys.ENTER);
 	    
 		if (driver instanceof JavascriptExecutor) {
 			((JavascriptExecutor) driver)

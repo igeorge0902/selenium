@@ -4,18 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import main.TestBase;
+import main.WebDriverManager;
 
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 import org.testng.internal.Utils;
  
-public class TestMethodListener implements IInvokedMethodListener{
+public class TestMethodListener extends TestBase implements IInvokedMethodListener{
+	
  
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
  
     	if(method.isTestMethod()){
+    		TestMethodErrorBuffer.remove(); // remove stale
+            System.out.println("Stale removed at beforeInvocation");
     		if(TestMethodErrorBuffer.get()!=null){
     			
     		try {
@@ -75,6 +79,10 @@ public class TestMethodListener implements IInvokedMethodListener{
             }
              
             TestMethodErrorBuffer.remove(); // remove stale
+            System.out.println("Stale removed afterInvocation");
+            WebDriverManager.unregister(driver);
+            System.out.println("eventListeners cleared afterInvocation");
+
              
         }
     }

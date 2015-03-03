@@ -1,5 +1,8 @@
 package testng;
 
+
+import main.WebDriverManager;
+
 import org.apache.log4j.Logger;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
@@ -22,7 +25,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void onStart(ISuite arg0) {
 
-		Reporter.log("About to begin executing Suite " + arg0.getName() + "<br>", true);
+		Reporter.log("About to begin executing Suite " + arg0.getName(), true);
 
 	}
 
@@ -32,7 +35,10 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void onFinish(ISuite arg0) {
 
-		Reporter.log("About to end executing Suite " + arg0.getName() + "<br>", true);
+		Reporter.log("About to end executing Suite " + arg0.getName(), true);
+		WebDriverManager.stopDriver();
+		System.out.println("Driver stopped");
+		Log.info("Driver stopped");
 
 	}
 
@@ -40,7 +46,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void onStart(ITestContext arg0) {
 
-		Reporter.log("About to begin executing Test " + arg0.getName() + "<br>", true);
+		Reporter.log("About to begin executing Test " + arg0.getName(), true);
 
 	}
 
@@ -48,7 +54,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void onFinish(ITestContext arg0) {
 
-		Reporter.log("Completed executing test " + arg0.getName() + "<br>", true);
+		Reporter.log("Completed executing test " + arg0.getName(), true);
 
 	}
 
@@ -78,6 +84,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 	public void onTestStart(ITestResult arg0) {
 
 		System.out.println("The execution of the main test starts now");
+		Log.info("The execution of the main test starts now");
 
 	}
 
@@ -102,7 +109,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	private void printTestResults(ITestResult result) {
 
-		Reporter.log("Test Method resides in " + result.getTestClass().getName()  + "<br>", true);
+		Reporter.log("Test Method resides in " + result.getTestClass().getName(), true);
 
 		if (result.getParameters().length != 0) {
 
@@ -114,7 +121,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 			}
 
-			Reporter.log("Test Method had the following parameters : " + params  + "<br>", true);
+			Reporter.log("Test Method had the following parameters : " + params, true);
 
 		}
 
@@ -124,23 +131,23 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 		case ITestResult.SUCCESS:
 
-			status = "<p>Pass</p>";
+			status = "Pass";
 
 			break;
 
 		case ITestResult.FAILURE:
 
-			status = "<p>Failed</p>";
+			status = "Failed";
 
 			break;
 
 		case ITestResult.SKIP:
 
-			status = "<p>Skipped</p>";
+			status = "Skipped";
 
 		}
 
-		Reporter.log("<p>Test Status: </p>" + status, true);
+		Reporter.log("Test Status: " + status, true);
 		Log.info("Test Status:" + status);
 
 	}
@@ -149,7 +156,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void beforeInvocation(IInvokedMethod arg0, ITestResult arg1) {
 
-		String textMsg = "About to begin executing following method : " + returnMethodName(arg0.getTestMethod())  + "<br>";
+		String textMsg = "About to begin executing following method : " + returnMethodName(arg0.getTestMethod());
 
 		Reporter.log(textMsg, true);
 
@@ -159,7 +166,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 
 	public void afterInvocation(IInvokedMethod arg0, ITestResult arg1) {
 
-		String textMsg = "Completed executing following method : " + returnMethodName(arg0.getTestMethod()) + "<br>";
+		String textMsg = "Completed executing following method : " + returnMethodName(arg0.getTestMethod());
 
 		Reporter.log(textMsg, true);
 

@@ -8,7 +8,6 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,7 +36,7 @@ public class TestBase extends Verify {
 		  
 	  }
 
-	/**
+	/*
 	 * softAssert methods
 	 */
 
@@ -50,27 +49,31 @@ public class TestBase extends Verify {
 	    return;
 	}
 
+    public static boolean isSupportedPlatformMac(boolean condition) {
+        Platform current = Platform.getCurrent();
+        return Platform.MAC.is(current);
+      }
+     
+    
+    public static boolean isSupportedPlatformWindows(boolean condition) {
+        Platform current = Platform.getCurrent();
+        return Platform.WINDOWS.is(current);
+      }
+       
+	
 	/**
 	* Confirm alert, prompt, or confirmation dialog that is present on the page.
 	* Does nothing if confirmation not present on page and returns empty string.
-	* @return String 		alert text or empty string
+	 * @return 
 	*/
 	
-	public String getAlertConfirmation() {		
-		try{
-			Alert alert = driver.switchTo().alert();
-			String alertText = alert.getText();
-			alert.accept();
-			Log.info("<p>JavaScript text: </p>" + alert.getText() + "<br>");
-			Reporter.log("<p>JavaScript text: </p>" + alert.getText() + "<br>", true);
-			return alertText;		
-			//}catch(Throwable e){
-			//}catch(UnexpectedAlertOpenException ex){ //assume this is the correct exception to detect in Safari, per  issue 3969 ? I haven't tested yet.
-			}catch(NoAlertPresentException e){
-			Log.info(e);
-			Reporter.log("<p>JavaScript text: </p>" + "NoAlertPresentException" + "<br>", true);
-			return ""; //if there is no alert displayed, do nothing, return empty string.
-		}
+	public String getAlertConfirmation() throws InterruptedException{		
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		alert.accept();
+		Log.info("JavaScript text: " + alert.getText());
+		Reporter.log("JavaScript text: " + alert.getText(), true);
+		return alertText;		
 	}
 
 	public static void assertTrue(boolean condition) {

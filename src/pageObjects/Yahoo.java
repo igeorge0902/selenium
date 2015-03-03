@@ -10,7 +10,6 @@ import main.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
 import utils.WaitTool;
@@ -21,8 +20,7 @@ public class Yahoo extends TestBase {
 	public Yahoo(WebDriver driver){
 		super(driver); 
 	}
-	public static WebElement element;
-
+	private static String Searchbox = "p";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
 	public Yahoo test(String input) throws Exception {
@@ -38,12 +36,11 @@ public class Yahoo extends TestBase {
 	    Log.info("Verification Failed for Title"); 
 	    }
 	    	
-		assertTrue(isElementPresent(By.id("UHSearchBox")));
-	    
-	    
-	    driver.findElement(By.id("UHSearchBox")).clear();
-	    driver.findElement(By.id("UHSearchBox")).sendKeys(input);
-	    driver.findElement(By.id("UHSearchBox")).sendKeys(Keys.ENTER);
+		assertTrue(isElementPresent(By.name(Searchbox)));
+	       
+	    driver.findElement(By.name(Searchbox)).clear();
+	    driver.findElement(By.name(Searchbox)).sendKeys(input);
+	    driver.findElement(By.name(Searchbox)).sendKeys(Keys.ENTER);
 	    
 	    //element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("main")));
 	    
@@ -58,7 +55,7 @@ public class Yahoo extends TestBase {
 		}
 		
 		getAlertConfirmation();
-	    	
+		
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	 
 		   //// The readyState property returns the (loading) status of the current document: 'document.readyState'

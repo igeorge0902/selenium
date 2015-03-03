@@ -75,7 +75,7 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
     //driver.switchTo().activeElement().click();
     }
     
-    Reporter.log("Found element:"+by.toString()+"<br>");
+    Reporter.log("Found element:"+by.toString());
     Log.info("Element found:"+by);
 }
 
@@ -89,13 +89,13 @@ public void beforeClickOn(WebElement element, WebDriver driver) {
 @Override
 public void afterClickOn(WebElement element, WebDriver driver) {
 	//driver.switchTo().activeElement();
-	Reporter.log("Clicked on:"+element.toString()+"<br>");
+	Reporter.log("Clicked on:"+element.toString());
 	Log.info("Element clicked on:"+element);
 }
 
 @Override
 public void afterClickedOn(By by, WebElement element, WebDriver driver) {
-	Reporter.log("Clicked on:"+by.toString()+"<br>");
+	Reporter.log("Clicked on:"+by.toString());
 	Log.info("Element clicked On:"+by);
 }
 
@@ -129,10 +129,9 @@ public void afterScript(String script, WebDriver driver) {
 /////////////// EXCEPTION RELATED METHODS ///////////////////////
 @Override
 public void onException(Throwable throwable, WebDriver driver) {
-// TODO Auto-generated method stub
+	}
 
 }
 
 
 
-}
