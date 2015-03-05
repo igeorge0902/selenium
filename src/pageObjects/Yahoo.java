@@ -54,7 +54,7 @@ public class Yahoo extends TestBase {
 				.executeScript("alert('hello world');");
 		}
 		
-		getAlertConfirmation();
+		//getAlertConfirmation();
 		
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	 

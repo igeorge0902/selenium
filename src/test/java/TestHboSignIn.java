@@ -40,8 +40,9 @@ public class TestHboSignIn extends TestBase{
 	      driver = WebDriverManager.startDriver(browser, url, 40);  
 	      WaitTool.setImplicitWait(driver, 30);
 	  }
+		
 	
-  @Test (groups = { "functional_test" }, description= "HBO login" )
+  @Test (groups = { "functional_test1" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
 		
@@ -62,7 +63,7 @@ public class TestHboSignIn extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (dependsOnMethods = { "testSignInSuccess" }/*,alwaysRun=true*/, groups = { "functional_test" }, description= "Play trailer after login")
+    @Test (dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "functional_test" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		
@@ -72,6 +73,5 @@ public class TestHboSignIn extends TestBase{
 	    Reporter.log("<p>playTrailer test is done<br></p>");
 		
 	}
-    
-    
+
 }

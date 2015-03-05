@@ -1,6 +1,7 @@
 package main;
 
 
+import java.io.File;
 import java.util.Arrays;
 
 import org.apache.log4j.Logger;
@@ -77,12 +78,23 @@ public class WebDriverManager
         	            	            
             System.out.println("browser : "+ browser);
             
-    		TestBase.assertTrue(TestBase.isSupportedPlatformWindows(true));
+    		TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
+    			
+    		System.setProperty("webdriver.ie.driver", "C:\\Dev\\IEWebDriver\\IEDriverServer32.exe");
+    		
+    		DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
+            Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+            Capabilities.isJavascriptEnabled();
+            Capabilities.setCapability("enablePersistentHover", false);
+            Capabilities.setVersion("11");
+            Capabilities.getVersion();
+            Capabilities.equals(browser);
+
 
             // start a internet explorer driver instance
-            driver = new InternetExplorerDriver();
+            driver = new InternetExplorerDriver(Capabilities);
 
-            driver = driverEventListener(null);
+            driver = driverEventListener(Capabilities);
             Log.info(browser + "driver initialized with eventListeners");
 
             WaitTool.setImplicitWait(driver, timeout);
@@ -138,11 +150,18 @@ public class WebDriverManager
              * where the driver exe resides for each machine instance via this variable.
              * Use the environment variable to then set the property.
              */
+            
+    		TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
+            
             try
             {
-                String chromeDriverPath = System.getenv( "webdriver.chrome.driver" );
-                System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-            }
+                String userHome = System.getProperty("user.home");
+                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
+        		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+                //String chromeDriverPath = System.getenv( "webdriver.chrome.driver" );
+                //System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+
+                            }
             catch (Exception ex)
             {
                 System.out.println("\nException in getting and setting the webdriver chrome driver: "
@@ -157,9 +176,17 @@ public class WebDriverManager
              */
             ChromeOptions options = new ChromeOptions();
             options.addArguments(Arrays.asList(new String[]{"--ignore-certificate-errors", "--start-maximized"}));
-
+            
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            Log.info(DesiredCapabilities.chrome());
+            capabilities.isJavascriptEnabled();
+        
+            Object object = new Object [] {options, capabilities};
+            
             driver = new ChromeDriver(options);
 
+            driver = driverEventListener(object);
+            Log.info(browser + "driver initialized with eventListeners");
             WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
@@ -195,7 +222,7 @@ public class WebDriverManager
 
             //Use specific Firefox profile
             ProfilesIni profilesIni = new ProfilesIni();
-            FirefoxProfile profile = profilesIni.getProfile("teszt");
+            FirefoxProfile profile = profilesIni.getProfile("Test");
             driver = new FirefoxDriver(profile);
             
             driver = driverEventListener(profile);
@@ -211,17 +238,16 @@ public class WebDriverManager
         }
         else
         {
-            System.out.println("browser : Safari (Default)\n");      
+            System.out.println("browser : Safari (Default)\n");    
+            
+    		TestBase.assertTrue(TestBase.isSupportedPlatformMac(true));
+
             
             SafariOptions options = new SafariOptions();  
 
             //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
-            options.getUseCleanSession();
-            options.equals(browser);
-            
-            
-
+            options.getUseCleanSession();            
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
@@ -269,6 +295,7 @@ public class WebDriverManager
     {
         driver.close();
         unregister(driver);
+        Log.info("Driver closed afterInvocation");
         System.out.println("eventListeners unregistered");
         
     }

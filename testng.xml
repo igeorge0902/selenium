@@ -13,7 +13,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<exclude name="testSignupFail" />
+        		<include name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
@@ -37,7 +37,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<exclude name="testSignupFail" />
+        		<include name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
@@ -48,7 +48,7 @@
 	      		   	</class>
 	    <class name="test.java.TestSearchEngines"> 
 	          <methods>
-	      		<include name="Yahoo" />
+	      		<exclude name="Yahoo" />
 	      		<exclude name="Google" />
 	    		</methods>
 	    	</class>
@@ -61,7 +61,7 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<exclude name="testSignupFail" />
+        		<include name="testSignupFail" />
     		</methods>
       		</class>
 	      <class name="test.java.TestHboSignIn">
@@ -72,7 +72,31 @@
 	      		   	</class>
 	    <class name="test.java.TestSearchEngines"> 
 	          <methods>
-	      		<include name="Yahoo" />
+	      		<exclude name="Yahoo" />
+	      		<exclude name="Google" />
+	    		</methods>
+	    	</class>
+	    <class name="utils.WebTestFactory" />   
+   </classes>
+   </test>
+   <test name="Test on Chrome" preserve-order="true">
+    <parameter name="browser" value="CHROME" />
+    <parameter name="url" value="http://www.google.com" />
+  	<classes>
+  	      <class name="test.java.TestHboSignUp">
+		     <methods>
+        		<include name="testSignupFail" />
+    		</methods>
+      		</class>
+	      <class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    <class name="test.java.TestSearchEngines"> 
+	          <methods>
+	      		<exclude name="Yahoo" />
 	      		<exclude name="Google" />
 	    		</methods>
 	    	</class>

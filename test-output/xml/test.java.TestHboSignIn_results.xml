@@ -1,120 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Default test"
+<testsuite name="Test on Chrome"
            tests="2"
            failures="1"
            errors="0"
            skipped="1"
-           time="34,738">
+           time="7,608">
   <properties />
-            <testcase name="testSignInSuccess" time="34,737" classname="test.java.TestHboSignIn">
-                <failure type="java.lang.Throwable"
-                  message="Multiple failures (2)
-(1)org.openqa.selenium.TimeoutException:Timed out after 3 seconds waiting for visibility of element located by By.id: newDeviceInput
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
-(2)org.openqa.selenium.InvalidElementStateException:Element is not currently interactable and may not be manipulated (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 7 milliseconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
-
-Failure 1 of 2
-org.openqa.selenium.TimeoutException: Timed out after 3 seconds waiting for visibility of element located by By.id: newDeviceInput
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utils.WaitTool.waitForElement(WaitTool.java:78)
-	at main.TestBase.isElementDisplayed(TestBase.java:293)
-	at main.TestBase.isNewDeviceDialog(TestBase.java:280)
-	at pageObjects.HboSignIn.isNewDevice(HboSignIn.java:84)
-	at pageObjects.HboSignIn.enterNewDevice(HboSignIn.java:89)
-	at test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-
-Failure 2 of 2
-"
+            <testcase name="testSignInSuccess" time="7,608" classname="test.java.TestHboSignIn">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="unknown error: Element is not clickable at point (909, 417). Other element would receive the click: &lt;div id=&quot;loaderOverlay&quot; class=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=39.0.2171.65)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Gyuri&apos;, ip: &apos;192.168.21.50&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\IGEORG~1\AppData\Local\Temp\scoped_dir11912_17256}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.65, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d8bb04819826a02ca74cece231b0c27d"
               >
-<![CDATA[java.lang.Throwable: Multiple failures (2)
-(1)org.openqa.selenium.TimeoutException:Timed out after 3 seconds waiting for visibility of element located by By.id: newDeviceInput
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
-(2)org.openqa.selenium.InvalidElementStateException:Element is not currently interactable and may not be manipulated (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 7 milliseconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
-
-Failure 1 of 2
-org.openqa.selenium.TimeoutException: Timed out after 3 seconds waiting for visibility of element located by By.id: newDeviceInput
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utils.WaitTool.waitForElement(WaitTool.java:78)
-	at main.TestBase.isElementDisplayed(TestBase.java:293)
-	at main.TestBase.isNewDeviceDialog(TestBase.java:280)
-	at pageObjects.HboSignIn.isNewDevice(HboSignIn.java:84)
-	at pageObjects.HboSignIn.enterNewDevice(HboSignIn.java:89)
-	at test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-
-Failure 2 of 2
-
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (909, 417). Other element would receive the click: <div id="loaderOverlay" class=""></div>
+  (Session info: chrome=39.0.2171.65)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\IGEORG~1\AppData\Local\Temp\scoped_dir11912_17256}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.65, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d8bb04819826a02ca74cece231b0c27d
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,23 +35,23 @@ Failure 2 of 2
   org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
   org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-  org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:483)
   org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-  com.sun.proxy.$Proxy8.clear(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:360)
+  com.sun.proxy.$Proxy9.click(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:483)
   org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-  com.sun.proxy.$Proxy9.clear(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:360)
-  pageObjects.HboSignIn.enterNewDevice(HboSignIn.java:93)
-  test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:60)
+  com.sun.proxy.$Proxy10.click(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+  pageObjects.HboSignIn.selectOperator(HboSignIn.java:42)
+  test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:50)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -45,7 +45,7 @@ public class PlayTrailer extends TestBase implements WebElements{
 
 			driver.get(BaseUrls.HBO.get() + "/group/offers");
 		     
-		    verifySuccess(driver.getTitle().equals("HBO GO. BÃ¡rhol. BÃ¡rmikor."));
+		    verifySuccess(driver.getTitle().equals("HBO GO. Bárhol. Bármikor."));
 	   		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");

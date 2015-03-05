@@ -2,6 +2,7 @@ package main;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
@@ -15,7 +16,9 @@ public class EventListener extends TestBase implements AbstractWebDriverEventLis
 	}
 	
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
-	private final String browser = "*safari";
+	private final String safari = "*safari";
+	private final String chrome = "CHROME";
+
 
 	   
 //////////NAVIGATION RELATED METHODS ////////////////
@@ -59,7 +62,7 @@ public void afterNavigateForward(WebDriver driver) {
 @Override
 public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 
-    if (browser == WebDriverManager.getBroswer()) {
+    if (safari == WebDriverManager.getBroswer()) {
 	WaitTool.waitForElementPresent(driver, by, 10);
     driver.switchTo().activeElement();
     }
@@ -70,9 +73,13 @@ public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 @Override
 public void afterFindBy(By by, WebElement element, WebDriver driver) {
     
-    if (browser == WebDriverManager.getBroswer()) {
+    if (safari == WebDriverManager.getBroswer()) {
    	WaitTool.waitForElementPresent(driver, by, 10);
     //driver.switchTo().activeElement().click();
+    }
+    
+    if (chrome == WebDriverManager.getBroswer()) {    
+    ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().y+")");
     }
     
     Reporter.log("Found element:"+by.toString());

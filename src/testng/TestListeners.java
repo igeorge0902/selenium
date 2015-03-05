@@ -36,9 +36,6 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 	public void onFinish(ISuite arg0) {
 
 		Reporter.log("About to end executing Suite " + arg0.getName(), true);
-		WebDriverManager.stopDriver();
-		System.out.println("Driver stopped");
-		Log.info("Driver stopped");
 
 	}
 
@@ -65,6 +62,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		WebDriverManager.stopDriver();
 
 	}
 
@@ -75,6 +73,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		WebDriverManager.stopDriver();
 
 
 	}
@@ -93,7 +92,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 	public void onTestSkipped(ITestResult arg0) {
 
 		printTestResults(arg0);
-
+		WebDriverManager.stopDriver();
 
 	}
 

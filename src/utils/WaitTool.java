@@ -80,14 +80,9 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element	
 		} catch (Exception e) {
-			addVerificationFailure(e);
 		} 
 		return null; 
 	}
-	
-	
-	
-	
 
 	/**
 	  * Wait for the element to be present in the DOM, regardless of being displayed or not.
@@ -110,7 +105,6 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			addVerificationFailure(e);
 		} 
 		return null; 
 	}
@@ -142,8 +136,7 @@ public class WaitTool extends TestBase {
 			elements = driver.findElements(by); 
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return elements; //return the element	
-		} catch (Exception e) {
-				addVerificationFailure(e);
+		} catch (Exception e) {				
 		} 
 		return null; 
 	}
@@ -183,7 +176,6 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-				addVerificationFailure(e);
 		} 
 		return null; 
 	 }
@@ -214,13 +206,9 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return isPresent; 
 		} catch (Exception e) {
-				addVerificationFailure(e);
 		} 
 		return false; 
 	}
-	
-
-
 
 	/** 
 	 * Waits for the Condition of JavaScript.  

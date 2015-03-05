@@ -298,9 +298,10 @@ public class TestBase extends Verify {
 		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3); 
 		if (element != null){
+			Log.info("Element found: "+by);
 			return true;  
 		}
-		
+		Log.info("Element not found");
 		return false; 
 	}
         

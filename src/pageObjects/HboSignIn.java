@@ -17,7 +17,7 @@ public class HboSignIn extends TestBase{
 		super(driver); 
 	}
 
-	
+	private static String password = "12345678";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
 
@@ -62,7 +62,7 @@ public class HboSignIn extends TestBase{
 	    	Thread.sleep(1000);
 	    }		    
 	    driver.findElement(By.name("Password")).clear();	    
-	    driver.findElement(By.name("Password")).sendKeys("");
+	    driver.findElement(By.name("Password")).sendKeys(password);
 	    
 	    Log.info("selectOperator is successful");
 		return new HboSignIn(driver); 
@@ -79,17 +79,15 @@ public class HboSignIn extends TestBase{
 	    Log.info("submit is successful");
 		return new HboSignIn(driver); 
 	}
-	    
-	public boolean isNewDevice(boolean condition) {
-			verifyFalse(isNewDeviceDialog());
-			return condition;
-	    }
+	
 	
 	public HboSignIn enterNewDevice() {
-		if (isNewDevice(false))
-		{
-			Log.info("No New Device");
-		} else 	{
+		if (isNewDeviceDialog() == false) {
+			Log.info("hello");
+			return new HboSignIn(driver);
+			
+		} else if (isNewDeviceDialog() == true) 	{
+			
 			driver.findElement(By.id("newDeviceInput")).clear();
 			driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
 			driver.findElement(By.cssSelector("button.button_submit")).click();
