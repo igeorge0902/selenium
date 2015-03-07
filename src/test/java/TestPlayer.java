@@ -44,23 +44,7 @@ public class TestPlayer extends TestBase{
 	private void closeBrowser(ITestContext context) {
 		WebDriverManager.stopDriver();
 	}
-	
-	@BeforeGroups(groups = {"signin", "player"})
-	public void setUpGroups(ITestContext context) throws Exception
-	{
-		  // get the web driver parameters from the testng xml file
-	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      String url = context.getCurrentXmlTest().getParameter("url");
 
-	      driver = WebDriverManager.startDriver(browser, url, 40);  
-	      WaitTool.setImplicitWait(driver, 30);
-
-	}
-	
-	@AfterGroups(groups = {"signin", "player"})
-	private void closeBrowserGroups(ITestContext context) {
-		WebDriverManager.stopDriver();
-	}
 	
   @Test (groups = { "signin" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{

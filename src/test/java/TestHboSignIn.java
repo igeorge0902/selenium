@@ -44,23 +44,7 @@ public class TestHboSignIn extends TestBase{
 	private void closeBrowser(ITestContext context) {
 		WebDriverManager.stopDriver();
 	}
-	
-	@BeforeGroups(groups = {"functional-test1"})
-	public void setUpGroups(ITestContext context) throws Exception
-	{
-		  // get the web driver parameters from the testng xml file
-	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      String url = context.getCurrentXmlTest().getParameter("url");
 
-	      driver = WebDriverManager.startDriver(browser, url, 40);  
-	      WaitTool.setImplicitWait(driver, 30);
-
-	}
-	
-	@AfterGroups(groups = {"functional-test1"})
-	private void closeBrowserGroups(ITestContext context) {
-		WebDriverManager.stopDriver();
-	}
 	
   @Test (groups = { "functional_test1" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{

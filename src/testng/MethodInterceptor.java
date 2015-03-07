@@ -3,11 +3,13 @@ package testng;
 import java.util.ArrayList;
 import java.util.List;
 
+import main.TestBase;
+
 import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 
-public class MethodInterceptor implements IMethodInterceptor {
+public class MethodInterceptor extends TestBase implements IMethodInterceptor {
 	 
     @Override
     public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
@@ -20,14 +22,17 @@ public class MethodInterceptor implements IMethodInterceptor {
     		if (MethodName.contains("Yahoo"))
     		{
     			newList.add(0, m);
+    			System.out.println("Hello Yahoo!");
     		}
     		else if (MethodName.contains("player"))
     		{
     			newList.add(m);
+    			System.out.println("Hello player!");
     		}
     		else if (MethodName.contains("Google"))
     		{
     			newList.add(m);
+    			System.out.println("Hello Google!");
     		}
     		else
     		{
