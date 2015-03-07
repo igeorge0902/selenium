@@ -4,7 +4,6 @@ package test.java;
 import main.TestBase;
 import main.WebDriverManager;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.Reporter;
@@ -16,16 +15,14 @@ import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
 import utils.WaitTool;
-import testng.MethodInterceptor;
  
 
-@Listeners({ MethodInterceptor.class, TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestPlayer extends TestBase{
 	
 	  private static WebDriver driver = null;
-	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 
 	  @BeforeClass

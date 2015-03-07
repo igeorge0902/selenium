@@ -5,20 +5,17 @@ import main.TestBase;
 import main.WebDriverManager;
 
 import org.openqa.selenium.WebDriver;
-//import org.apache.log4j.Logger;
-//import org.openqa.selenium.WebDriver;
+
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 import pageObjects.Google;
 import pageObjects.Yahoo;
-import testng.MethodInterceptor;
 import testng.TestListeners;
 import testng.TestMethodListener;
-//import utils.WaitTool;
 import utils.WaitTool;
 
-@Listeners({ MethodInterceptor.class, TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class TestSearchEngines extends TestBase{
 		  

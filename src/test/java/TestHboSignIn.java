@@ -14,12 +14,11 @@ import pageObjects.HboSignIn;
 import pageObjects.PlayTrailer;
 import testng.LoggingListener;
 import testng.TestListeners;
-import testng.MethodInterceptor;
 import testng.TestMethodListener;
 import utils.WaitTool;
  
 
-@Listeners({ MethodInterceptor.class, TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignIn extends TestBase{

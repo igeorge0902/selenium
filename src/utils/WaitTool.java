@@ -82,9 +82,8 @@ public class WaitTool extends TestBase {
 			return element; //return the element	
 		} catch (Exception e) {
 			Log.info(e);
-			throw new ExpectedExceptions("Element is not found:" +by);
 		} 
-		//return null; 
+		return null; 
 	}
 
 	/**
@@ -108,6 +107,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
+			Log.info(e);
 		} 
 		return null; 
 	}
@@ -139,7 +139,8 @@ public class WaitTool extends TestBase {
 			elements = driver.findElements(by); 
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return elements; //return the element	
-		} catch (Exception e) {				
+		} catch (Exception e) {	
+			Log.info(e);
 		} 
 		return null; 
 	}
@@ -179,6 +180,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
+			Log.info(e);
 		} 
 		return null; 
 	 }
@@ -209,6 +211,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return isPresent; 
 		} catch (Exception e) {
+			Log.info(e);
 		} 
 		return false; 
 	}
@@ -240,7 +243,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return jscondition; 
 		} catch (Exception e) {
-				addVerificationFailure(e);
+			Log.info(e);
 		} 
 		return false; 
 	}

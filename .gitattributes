@@ -48,7 +48,6 @@ src/utils/GroupTestExample.java -text svneol=unset#text/plain
 src/utils/MessageUtil.java -text svneol=unset#text/plain
 src/utils/ObjectMessages.java -text
 src/utils/SafariTest.java -text
-src/utils/SafariTest2.java -text
 src/utils/SampleDataProvider.java -text
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain

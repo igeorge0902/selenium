@@ -9,6 +9,10 @@ import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 
+/** 
+ * This class is used to alter the list of test methods that TestNG is about to run.
+ **/
+
 public class MethodInterceptor extends TestBase implements IMethodInterceptor {
 	 
     @Override
@@ -19,20 +23,20 @@ public class MethodInterceptor extends TestBase implements IMethodInterceptor {
     	for(IMethodInstance m : methods)
     	{
     		String MethodName =m.getMethod().getMethodName();
-    		if (MethodName.contains("Yahoo"))
+    		if (MethodName.contains("testSignInSuccess"))
     		{
     			newList.add(0, m);
-    			System.out.println("Hello Yahoo!");
+    			System.out.println("testSignInSuccess");
     		}
-    		else if (MethodName.contains("player"))
+    		else if (MethodName.contains("testSignInFail"))
     		{
     			newList.add(m);
-    			System.out.println("Hello player!");
+    			System.out.println("testSignInFail");
     		}
-    		else if (MethodName.contains("Google"))
+    		else if (MethodName.contains("Yahoo"))
     		{
     			newList.add(m);
-    			System.out.println("Hello Google!");
+    			System.out.println("Yahoo");
     		}
     		else
     		{
