@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import main.BaseUrls;
@@ -19,7 +18,6 @@ public class Google extends TestBase {
 		super(driver); 
 	}
 	private static String Searchbox = "gbqfq";
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
 	public Google test(String input) throws Exception {
 

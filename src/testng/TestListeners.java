@@ -1,9 +1,8 @@
 package testng;
 
 
-import main.WebDriverManager;
+import main.TestBase;
 
-import org.apache.log4j.Logger;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ISuite;
@@ -14,10 +13,8 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-public class TestListeners implements ITestListener, ISuiteListener, IInvokedMethodListener {
+public class TestListeners extends TestBase implements ITestListener, ISuiteListener, IInvokedMethodListener {
 	
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
-
 
 	// This belongs to ISuiteListener and will execute before the Suite start
 
@@ -62,7 +59,6 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
-		WebDriverManager.stopDriver();
 
 	}
 
@@ -73,7 +69,7 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
-		WebDriverManager.stopDriver();
+		
 
 
 	}
@@ -92,7 +88,6 @@ public class TestListeners implements ITestListener, ISuiteListener, IInvokedMet
 	public void onTestSkipped(ITestResult arg0) {
 
 		printTestResults(arg0);
-		WebDriverManager.stopDriver();
 
 	}
 

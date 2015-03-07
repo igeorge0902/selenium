@@ -62,9 +62,14 @@ public void afterNavigateForward(WebDriver driver) {
 @Override
 public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 
-    if (safari == WebDriverManager.getBroswer()) {
-	WaitTool.waitForElementPresent(driver, by, 10);
-    driver.switchTo().activeElement();
+    if (WebDriverManager.getBroswer().equals(safari)) {
+    	try {
+    		WaitTool.waitForElementPresent(driver, by, 10);
+    		driver.switchTo().activeElement();
+    		System.out.println("beforeFindBy event done for Safari");
+    	} catch (Exception e) {
+    		System.out.println("No beforeFindBy event done for Safari");
+    	}
     }
 
 
@@ -73,15 +78,33 @@ public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 @Override
 public void afterFindBy(By by, WebElement element, WebDriver driver) {
     
-    if (safari == WebDriverManager.getBroswer()) {
-   	WaitTool.waitForElementPresent(driver, by, 10);
-    //driver.switchTo().activeElement().click();
+    if (WebDriverManager.getBroswer().equals(safari)) {
+    	try {
+    		driver.switchTo().activeElement().click();
+    		System.out.println("afterFindBy event done for Safari");
+    	} catch (Exception e) {
+    		System.out.println("No afterFindBy event done for Safari");
+    	}
     }
     
-    if (chrome == WebDriverManager.getBroswer()) {    
-    ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().y+")");
+    if (WebDriverManager.getBroswer().equals(chrome)) {  
+    	try {
+			Thread.sleep(1000);
+		} catch (InterruptedException ex) {
+			// TODO Auto-generated catch block
+			ex.printStackTrace();
+		}
+        try {
+            ((JavascriptExecutor) driver).executeScript(
+                    "arguments[0].scrollIntoView(true);", by);
+            System.out.println("afterFindBy event done for CHROME");
+        } catch (Exception e) {
+            System.out.println("No afterFindBy event done for CHROME");
+        }
     }
-    
+               
+    //((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().y+")");
+       
     Reporter.log("Found element:"+by.toString());
     Log.info("Element found:"+by);
 }

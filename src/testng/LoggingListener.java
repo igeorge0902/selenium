@@ -7,7 +7,7 @@ package testng;
  */
 
 
-
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
@@ -44,6 +44,14 @@ public class LoggingListener extends TestListenerAdapter {
   
 		    Reporter.log("Minden fasza");
 		    log("Minden fasza\n");
+		  }
+		  
+		  @Override
+		  public void onFinish(ITestContext context) {
+			  
+				// call the superclass
+		        super.onFinish(context); 
+		        
 		  }
 		 
 		  private void log(String string) {

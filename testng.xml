@@ -7,16 +7,39 @@
   <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
   <parameter name="browser" value="*safari" />
   <parameter name="url" value="http://www.google.com" />
+  <test name="Test Groups">
+    <parameter name="browser" value="*safari" />
+  	<parameter name="url" value="http://www.google.com" /> 
+         <groups>      
+         <run>
+            <include name ="signin" />
+            <exclude name ="player" />
+         </run>
+         </groups>
+   <classes>
+      <class name="utils.GroupTestExample" />
+      <class name="test.java.TestPlayer" />
+      <class name="test.java.TestHboSignUp" />
+      <class name="test.java.TestSearchEngines" />
+      <class name="test.java.TestHboSignIn" />
+   </classes>   
+  </test>
   <test name="Test on Safari" preserve-order="true">
   	<parameter name="browser" value="*safari" />
   	<parameter name="url" value="http://www.google.com" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
-	      <class name="test.java.TestHboSignIn">
+	      <class name="test.java.TestPlayer">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	      		   	<class name="test.java.TestHboSignIn">
 	             <methods>
 	        		<exclude name="testSignInSuccess" />
 	        		<exclude name="testPlayerSuccess" />
@@ -37,16 +60,22 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
-	      <class name="test.java.TestHboSignIn">
+	      	<class name="test.java.TestPlayer">
 	             <methods>
 	        		<exclude name="testSignInSuccess" />
 	        		<exclude name="testPlayerSuccess" />
 	      		</methods>
 	      		   	</class>
-	    <class name="test.java.TestSearchEngines"> 
+	      		   	<class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    	<class name="test.java.TestSearchEngines"> 
 	          <methods>
 	      		<exclude name="Yahoo" />
 	      		<exclude name="Google" />
@@ -55,22 +84,28 @@
 	    <class name="utils.WebTestFactory" />   
    </classes>
    </test>
-     <test name="Test on Internet Explorer" preserve-order="true">
+   <test name="Test on Internet Explorer" preserve-order="true">
     <parameter name="browser" value="INTERNET_EXPLORER" />
     <parameter name="url" value="http://www.google.com" />
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
-	      <class name="test.java.TestHboSignIn">
+	      	<class name="test.java.TestPlayer">
 	             <methods>
 	        		<exclude name="testSignInSuccess" />
 	        		<exclude name="testPlayerSuccess" />
 	      		</methods>
 	      		   	</class>
-	    <class name="test.java.TestSearchEngines"> 
+	      		   	<class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    	<class name="test.java.TestSearchEngines"> 
 	          <methods>
 	      		<exclude name="Yahoo" />
 	      		<exclude name="Google" />
@@ -85,16 +120,22 @@
   	<classes>
   	      <class name="test.java.TestHboSignUp">
 		     <methods>
-        		<include name="testSignupFail" />
+        		<exclude name="testSignupFail" />
     		</methods>
       		</class>
-	      <class name="test.java.TestHboSignIn">
+	      	<class name="test.java.TestPlayer">
 	             <methods>
 	        		<exclude name="testSignInSuccess" />
 	        		<exclude name="testPlayerSuccess" />
 	      		</methods>
 	      		   	</class>
-	    <class name="test.java.TestSearchEngines"> 
+	      		   	<class name="test.java.TestHboSignIn">
+	             <methods>
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
+	      		</methods>
+	      		   	</class>
+	    	<class name="test.java.TestSearchEngines"> 
 	          <methods>
 	      		<exclude name="Yahoo" />
 	      		<exclude name="Google" />

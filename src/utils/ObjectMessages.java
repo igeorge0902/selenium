@@ -8,7 +8,8 @@ import javax.jms.ObjectMessage;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
-public class ObjectMessages {
+
+public class ObjectMessages {  
 	
 	/**
 	 * This implementation converts a TextMessage back to a String, a

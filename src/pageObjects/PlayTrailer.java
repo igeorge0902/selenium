@@ -1,6 +1,5 @@
 package pageObjects;
 
-import java.util.List;
 
 import main.BaseUrls;
 import main.ElementScreenshot;
@@ -8,7 +7,6 @@ import main.TestBase;
 import main.WebElements;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,26 +15,15 @@ import org.testng.annotations.Listeners;
 import testng.TestListeners;
 import testng.TestMethodListener;
 
-import com.thoughtworks.selenium.Selenium;
-import com.thoughtworks.selenium.Silvernium;
 
-@SuppressWarnings("deprecation")
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class PlayTrailer extends TestBase implements WebElements{
 	
-	@SuppressWarnings("unused")
-	private static Silvernium silvernium;	
 	
 	public PlayTrailer(WebDriver driver){
 		super(driver); 
 	}
-
-	//silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
-	
-	  public void PlayTrailerSilverLight(WebDriver driver) {
-		   silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
-	  }
 
 	
 	public PlayTrailer playTrailer() throws Exception {
@@ -45,7 +32,7 @@ public class PlayTrailer extends TestBase implements WebElements{
 
 			driver.get(BaseUrls.HBO.get() + "/group/offers");
 		     
-		    verifySuccess(driver.getTitle().equals("HBO GO. Bárhol. Bármikor."));
+		    verifySuccess(driver.getTitle().equals("HBO GO. Bï¿½rhol. Bï¿½rmikor."));
 	   		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
@@ -104,7 +91,10 @@ public class PlayTrailer extends TestBase implements WebElements{
 	        action.moveToElement(mousehover).build().perform();        
 	                  
 	        
-	    	JavascriptExecutor js = (JavascriptExecutor) driver;
+	        playTrailers();
+	        
+	        /*
+	    	JavascriptExecutor js = (JavascriptExecutor) driver;   	
 	    	
 	    	List<WebElement> playbuttonmenu;
 	        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
@@ -122,9 +112,8 @@ public class PlayTrailer extends TestBase implements WebElements{
 	                }
 	            }
 	            
-	        }
-	        
-	//verifyTrue(silvernium.isLoaded());
+	        }*/
+	       
 
 
 	return new PlayTrailer(driver); 

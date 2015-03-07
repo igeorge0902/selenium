@@ -64,13 +64,14 @@ public class TestMethodListener extends TestBase implements IInvokedMethodListen
                         failureMessage.append("(").append(i+1).append(")").append(lThrowable.get(i).getClass().getName()).append(":").append(lThrowable.get(i).getMessage()).append("\n");                     
                         fullStack.append("Failure ").append(i+1).append(" of ").append(size).append("\n"); 
                         fullStack.append(Utils.stackTrace(lThrowable.get(i),false)[1]).append("\n");
+                        
                     }
  
                     fullStack.append("Failure ").append(size).append(" of ").append(size).append("\n");
                     Throwable last = lThrowable.get(size-1);                   
                     failureMessage.append("(").append(size).append(")").append(last.getClass().getName()).append(":").append(last.getMessage()).append("\n\n");
                      
-                    //fullStack.append(last.toString());
+                    fullStack.append(last.toString());
  
                     testResult.setThrowable(new Throwable(failureMessage.toString() + fullStack.toString()));
                     testResult.getThrowable().setStackTrace(last.getStackTrace());

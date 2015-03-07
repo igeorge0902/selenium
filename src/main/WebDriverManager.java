@@ -22,9 +22,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import utils.WaitTool;
-
 import com.opera.core.systems.OperaDriver;
-
 import org.openqa.selenium.Platform;
 
 /**
@@ -150,13 +148,11 @@ public class WebDriverManager
              * where the driver exe resides for each machine instance via this variable.
              * Use the environment variable to then set the property.
              */
-            
-    		TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
-            
+                        
             try
             {
                 String userHome = System.getProperty("user.home");
-                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
+                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver";
         		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 //String chromeDriverPath = System.getenv( "webdriver.chrome.driver" );
                 //System.setProperty("webdriver.chrome.driver", chromeDriverPath);
@@ -240,7 +236,7 @@ public class WebDriverManager
         {
             System.out.println("browser : Safari (Default)\n");    
             
-    		TestBase.assertTrue(TestBase.isSupportedPlatformMac(true));
+    		TestBase.assertFalse(TestBase.isSupportedPlatformWindows(false));
 
             
             SafariOptions options = new SafariOptions();  

@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import main.BaseUrls;
@@ -21,7 +20,6 @@ public class Yahoo extends TestBase {
 		super(driver); 
 	}
 	private static String Searchbox = "p";
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	
 	public Yahoo test(String input) throws Exception {
 

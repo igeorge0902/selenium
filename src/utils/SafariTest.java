@@ -41,7 +41,7 @@ public class SafariTest extends TestBase {
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
 	
-    @Test
+    @Test (groups = { "functional_test1" })
     public void spawnSafari() throws Exception {
     	        
         driver.get("http://www.google.com");

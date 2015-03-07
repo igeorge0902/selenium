@@ -1,19 +1,6 @@
 package test.java;
 
 import java.util.List;
-import java.util.regex.Pattern;
-import java.util.concurrent.TimeUnit;
-
-
-
-
-
-
-
-
-
-
-
 
 import main.BaseUrls;
 import main.ElementScreenshot;
@@ -22,42 +9,24 @@ import main.WebDriverManager;
 import main.WebElements;
 
 import org.openqa.selenium.*;
-
-import com.thoughtworks.selenium.Selenium;
-import com.thoughtworks.selenium.Silvernium;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestContext;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import org.testng.Reporter;
-import org.apache.log4j.Logger;
 
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.WaitTool;
 
 
 
-@SuppressWarnings({ "unused", "deprecation" })
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 
 public class TestTest extends TestBase implements WebElements{
 	
   private static WebDriver driver;
-  private static WebElement element;
-  private static Silvernium silvernium;
-  
-  private static Selenium selenium;
-
-  //private static StringBuffer verificationErrors = new StringBuffer();
-  private static Logger Log = Logger.getLogger(Logger.class.getName());
+  //private static WebElement element;
 
   
   public TestTest() {
@@ -74,23 +43,34 @@ public class TestTest extends TestBase implements WebElements{
       String url = context.getCurrentXmlTest().getParameter("url");
 
       driver = WebDriverManager.startDriver(browser, url, 40);  
-      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+      WaitTool.setImplicitWait(driver, 30);
   }
-  
-  public static int m_numberOfTimes;
-  public TestTest (int numberOfTimes) {
-	    m_numberOfTimes = numberOfTimes;
+	
+	@AfterClass
+	private void closeBrowser(ITestContext context) {
+		WebDriverManager.stopDriver();
+	}
+	
+	@BeforeGroups(groups = {"functional-test1"})
+	public void setUpGroups(ITestContext context) throws Exception
+	{
+		  // get the web driver parameters from the testng xml file
+	      String browser = context.getCurrentXmlTest().getParameter("browser");
+	      String url = context.getCurrentXmlTest().getParameter("url");
+	
+	      driver = WebDriverManager.startDriver(browser, url, 40);  
+	      WaitTool.setImplicitWait(driver, 30);
+	
+	}
+	
+	@AfterGroups(groups = {"functional-test1"})
+	private void closeBrowserGroups(ITestContext context) {
+		WebDriverManager.stopDriver();
 	}
   
   
-  public TestTest(WebDriver driver) {
-	   silvernium = new Silvernium( (Selenium) driver, silverLightPlayerObjectId); 
-  }
-  
   @Test
-  public void testHbogoWebdriverTest1() throws Exception {
-
-//	   silvernium = new Silvernium((Selenium) driver, silverlightPlayer); 
+  public void testHbogoWebdriverTest1() throws Exception { 
 
 	   Actions action = new Actions(driver);	  
 

@@ -8,21 +8,24 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import testng.ExpectedExceptions;
 import testng.Verify;
 import utils.WaitTool;
 
 
-public class TestBase extends Verify {
+public class TestBase extends Verify implements WebElements{
 	
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	public static Logger Log = Logger.getLogger(Logger.class.getName());
 	 
 	
 	protected static WebDriver driver = null;
@@ -40,7 +43,7 @@ public class TestBase extends Verify {
 	 * softAssert methods
 	 */
 
-    
+	
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 
 
@@ -57,7 +60,7 @@ public class TestBase extends Verify {
     
     public static boolean isSupportedPlatformWindows(boolean condition) {
         Platform current = Platform.getCurrent();
-        return Platform.WINDOWS.is(current);
+        return Platform.WIN8.is(current) || Platform.WIN8_1.is(current);
       }
        
 	
@@ -266,23 +269,26 @@ public class TestBase extends Verify {
 	
 	/**
 	 * Verify the error message is displayed. 
+	 * @throws ExpectedExceptions 
 	 */
-	public boolean verifyErrorMessageRequired_displayed() {  		
+	public boolean verifyErrorMessageRequired_displayed() throws ExpectedExceptions {  		
         	return isElementDisplayed(By.name("EmailAddressAgain"));       
     	}  
 	
 
 	/**
 	 * Verify the error message of "I accept Terms of Service" is displayed.
+	 * @throws ExpectedExceptions 
 	 */
-	public static boolean isErrorMessageRequired_Check_TOS_displayed() { 
+	public static boolean isErrorMessageRequired_Check_TOS_displayed() throws ExpectedExceptions { 
         	return isElementDisplayed(By.id("Terms"));           
     	} 
 	
 	/**
 	 * Verify the new device dialog is not displayed.
+	 * @throws ExpectedExceptions 
 	 */
-	public static boolean isNewDeviceDialog() { 
+	public static boolean isNewDeviceDialog() throws ExpectedExceptions { 
         	return isElementDisplayed(By.id("newDeviceInput"));           
     	} 
 	
@@ -292,8 +298,9 @@ public class TestBase extends Verify {
 	 * 
 	 * @param by
 	 * @return
+	 * @throws ExpectedExceptions 
 	 */
-	protected static boolean isElementDisplayed(By by){
+	protected static boolean isElementDisplayed(By by) throws ExpectedExceptions {
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3); 
@@ -304,7 +311,306 @@ public class TestBase extends Verify {
 		Log.info("Element not found");
 		return false; 
 	}
-        
+
+	/**
+	 * By (by) = element mouse over method. Uses actions class which is object of the driver.
+	 * 
+	 * @param by
+	 * @return
+	 * @throws ExpectedExceptions 
+	 */
+	
+	public static boolean ElementMouseOver(By by) throws ExpectedExceptions
+        {
+		
+		WebElement element = null; 
+		//wait for the Error Message Element to be present and display
+		element = WaitTool.waitForElement(driver, by, 3);
+		
+            driver.manage().window().maximize();
+            Actions actions = new Actions(driver);
+            try
+            {
+            	actions.moveToElement(element).build().perform();
+                Thread.sleep(2000);//2 sec is just to for this blog.
+                                   //I use custome method to wait element being appeared after mouse hover event.
+                                   //You can use other variable wait time but make sure your give some pause
+                                   //otherwise mouse hover will happen for fraction of seconds and then disappear.
+             }
+            catch (Exception e)
+            {
+                Log.info(e.getMessage());
+                return false;
+            }
+            return true;
+        }
+
+
+	/**
+	 * Element mouse over method with JavaScript
+	 * 
+	 * @param by
+	 * @throws ExpectedExceptions 
+	 */
+	
+	public static void MouseHoverByJavaScript(By by) throws ExpectedExceptions
+        {
+		
+		WebElement element = null; 
+		//wait for the Error Message Element to be present and display
+		element = WaitTool.waitForElement(driver, by, 3);
+ 
+            String javaScript = "var evObj = document.createEvent('MouseEvents');"+
+                                "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"+
+                                "arguments[0].dispatchEvent(evObj);";
+            
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript(javaScript, element);
+          }
+    /**
+     * 
+     * PlayTrailer method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playTrailers(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playTrailer.length;j++)
+            {
+                if(onClick.contains(playTrailer[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+    /**
+     * 
+     * Play main content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playContents(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playContent.length;j++)
+            {
+                if(onClick.contains(playContent[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+    /**
+     * 
+     * Play free content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playFrees(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playFree.length;j++)
+            {
+                if(onClick.contains(playFree[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+	 /**
+     * 
+     * Play live content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playLives(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playLive.length;j++)
+            {
+                if(onClick.contains(playLive[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+	 /**
+     * 
+     * Play extra content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playExtras(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playExtra.length;j++)
+            {
+                if(onClick.contains(playExtra[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+	 /**
+     * 
+     * Play interactive content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playInteractives(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playInteractive.length;j++)
+            {
+                if(onClick.contains(playInteractive[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+	 /**
+     * 
+     * Play free interactive content method. PlayButtons are selected from the PlayButton menu list.
+     *     
+     */
+	
+	public static void playFreeInteractives(){
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+    	List<WebElement> playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+                
+        for(int i =0; i<playbuttonmenu.size();i++)    
+        {
+            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            
+            for(int j=0; j<playFreeInteractive.length;j++)
+            {
+                if(onClick.contains(playFreeInteractive[j]))
+                {
+                    js.executeScript(onClick);
+                
+                }
+            }
+            
+        }
+		
+	}
+	
+	/**
+	 * 
+	 * Wrap the clicking action into a loop. 
+	 * It clicks the element for multiple attempts if it is necessary. 
+	 * The number of iterations is one of the method parameters with value 1 as default.
+	 * 
+	 * @param by
+	 * @param iterations
+	 * @throws ExpectedExceptions 
+	 */
+	
+	   public static void SmartClick(By by, int iterations) throws ExpectedExceptions
+	   {
+		WebElement element = null; 
+		//wait for the Error Message Element to be present and display
+		element = WaitTool.waitForElement(driver, by, 3);
+		
+	      int i = iterations;
+	      iterations = 1;
+	   
+	      if (element == null) 
+	      { 
+	         //add 'Element is null' error message into your log file or throw NoSuchElement or NullReference exception 
+	      }
+	      if(!element.isDisplayed()) 
+	      { 
+	         //add 'Element is not displayed and cannot be clicked' error message into your log file 
+	         //you may add a screenshot here
+	      }
+	      if(!element.isEnabled()) 
+	      {
+	         //add 'Element is not displayed and cannot be clicked' error message into your log file
+	         //plus a screenshot
+	      }
+	      
+	      while (i > 0)
+	      {
+	         i--;
+	         element.click();
+	      }      
+	   }
    
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());

@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import testng.ExpectedExceptions;
+
 
 /**
  * Wait tool class.  Provides Wait methods for an elements, and AJAX elements to load.  
@@ -52,8 +54,6 @@ public class WaitTool extends TestBase {
 	 * Based on your tests, please set this value. 
 	 * "0" will nullify implicitlyWait and speed up a test. */ 
 	public static final int DEFAULT_WAIT_4_PAGE = 30; 
-
-
 	
 
 	/**
@@ -65,8 +65,9 @@ public class WaitTool extends TestBase {
 	  * @param int	The time in seconds to wait until returning a failure
 	  *
 	  * @return WebElement	the first WebElement using the given method, or null (if the timeout is reached)
+	 * @throws ExpectedExceptions 
 	  */
-	public static WebElement waitForElement(WebDriver driver, final By by, int timeOutInSeconds) {
+	public static WebElement waitForElement(WebDriver driver, final By by, int timeOutInSeconds) throws ExpectedExceptions {
 		WebElement element; 
 		try{	
 			//To use WebDriverWait(), we would have to nullify implicitlyWait(). 
@@ -80,8 +81,10 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element	
 		} catch (Exception e) {
+			Log.info(e);
+			throw new ExpectedExceptions("Element is not found:" +by);
 		} 
-		return null; 
+		//return null; 
 	}
 
 	/**

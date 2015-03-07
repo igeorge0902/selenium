@@ -46,7 +46,6 @@
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/protobuf-java-2.4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/sac-1.3.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/serializer-2.7.1.jar"/>
-	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/testng-6.8.5.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/xalan-2.7.1.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/libs/xml-apis-1.4.01.jar"/>

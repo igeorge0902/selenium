@@ -8,19 +8,18 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.Reporter;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import pageObjects.HboSignIn;
 import pageObjects.PlayTrailer;
 import testng.LoggingListener;
 import testng.TestListeners;
+import testng.MethodInterceptor;
 import testng.TestMethodListener;
 import utils.WaitTool;
  
 
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({ MethodInterceptor.class, TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignIn extends TestBase{
@@ -41,6 +40,27 @@ public class TestHboSignIn extends TestBase{
 	      WaitTool.setImplicitWait(driver, 30);
 	  }
 		
+	@AfterClass
+	private void closeBrowser(ITestContext context) {
+		WebDriverManager.stopDriver();
+	}
+	
+	@BeforeGroups(groups = {"functional-test1"})
+	public void setUpGroups(ITestContext context) throws Exception
+	{
+		  // get the web driver parameters from the testng xml file
+	      String browser = context.getCurrentXmlTest().getParameter("browser");
+	      String url = context.getCurrentXmlTest().getParameter("url");
+
+	      driver = WebDriverManager.startDriver(browser, url, 40);  
+	      WaitTool.setImplicitWait(driver, 30);
+
+	}
+	
+	@AfterGroups(groups = {"functional-test1"})
+	private void closeBrowserGroups(ITestContext context) {
+		WebDriverManager.stopDriver();
+	}
 	
   @Test (groups = { "functional_test1" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{
@@ -63,7 +83,7 @@ public class TestHboSignIn extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "functional_test" }, description= "Play trailer after login")
+    @Test (dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		

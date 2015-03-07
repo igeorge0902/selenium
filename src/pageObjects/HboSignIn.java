@@ -3,36 +3,35 @@ package pageObjects;
 
 import main.BaseUrls;
 import main.TestBase;
+import main.WebElements;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-public class HboSignIn extends TestBase{
-	
-	
+import testng.ExpectedExceptions;
+
+public class HboSignIn extends TestBase implements WebElements{
+		
 
 	public HboSignIn(WebDriver driver){
 		super(driver); 
 	}
 
-	private static String password = "12345678";
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
-	
+	private static String password = "12345678";	
 
 		
 	public HboSignIn selectOperator() throws Exception{
 				
-	    driver.get(BaseUrls.HBO.get() + "/group/offers");
-		Log.info(BaseUrls.HBO.get() + "/group/offers");
+	    driver.get(BaseUrls.PLAYER.get() + OffersScreen);
+		Log.info(BaseUrls.PLAYER.get() + OffersScreen);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("headerButtonLogin"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
-	    }	    
-	    driver.findElement(By.id("headerButtonLogin")).click();
+	    }
+		driver.findElement(By.id("headerButtonLogin")).click();
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -46,6 +45,7 @@ public class HboSignIn extends TestBase{
 	    	try { if (isElementPresent(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }	
+	    
 	    driver.findElement(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26")).click();
 	    	    
 	    for (int second = 0;; second++) {
@@ -82,17 +82,22 @@ public class HboSignIn extends TestBase{
 	
 	
 	public HboSignIn enterNewDevice() {
-		if (isNewDeviceDialog() == false) {
-			Log.info("hello");
-			return new HboSignIn(driver);
-			
-		} else if (isNewDeviceDialog() == true) 	{
-			
-			driver.findElement(By.id("newDeviceInput")).clear();
-			driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
-			driver.findElement(By.cssSelector("button.button_submit")).click();
-			Log.info("New Device is named MacBook");
-			Reporter.log("New Device is named MacBook");
+		try {
+			if (isNewDeviceDialog() == false) {
+				Log.info("hello");
+				return new HboSignIn(driver);
+				
+			} else if (isNewDeviceDialog() == true) 	{
+				
+				driver.findElement(By.id("newDeviceInput")).clear();
+				driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
+				driver.findElement(By.cssSelector("button.button_submit")).click();
+				Log.info("New Device is named MacBook");
+				Reporter.log("New Device is named MacBook");
+			}
+		} catch (ExpectedExceptions e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return new HboSignIn(driver);
 		

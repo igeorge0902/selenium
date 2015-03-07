@@ -4,7 +4,6 @@ package pageObjects;
 import main.BaseUrls;
 import main.TestBase;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,7 +15,6 @@ public class HboSignUp extends TestBase {
 	}
 	 
 	  private static String voucher = "AAABBB";
-	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	
 	public HboSignUp selectOperator() throws Exception{
