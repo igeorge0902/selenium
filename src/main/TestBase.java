@@ -578,39 +578,42 @@ public class TestBase extends Verify implements WebElements{
 	 * 
 	 * @param by
 	 * @param iterations
-	 * @throws ExpectedExceptions 
+	 * @throws Exception 
 	 */
 	
-	   public static void SmartClick(By by, int iterations) throws ExpectedExceptions
+	   public static void SmartClick(WebElement element, int iterations) throws Exception
 	   {
-		WebElement element = null; 
-		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElement(driver, by, 3);
-		
 	      int i = iterations;
-	      iterations = 1;
 	   
 	      if (element == null) 
 	      { 
-	         //add 'Element is null' error message into your log file or throw NoSuchElement or NullReference exception 
+	         Log.info(element+" not found!");
+	    	  //add 'Element is null' error message into your log file or throw NoSuchElement or NullReference exception 
 	      }
 	      if(!element.isDisplayed()) 
 	      { 
-	         //add 'Element is not displayed and cannot be clicked' error message into your log file 
+		         Log.info(element+" is not displayed!");
+	    	  //add 'Element is not displayed and cannot be clicked' error message into your log file 
 	         //you may add a screenshot here
 	      }
 	      if(!element.isEnabled()) 
 	      {
-	         //add 'Element is not displayed and cannot be clicked' error message into your log file
+		         Log.info(element+" is not enabled!");
+	    	  //add 'Element is not displayed and cannot be clicked' error message into your log file
 	         //plus a screenshot
 	      }
 	      
 	      while (i > 0)
 	      {
 	         i--;
+	         /*
+	         for (int second = 0;; second++) {
+			    	if (second >= 60) fail("timeout");
+			  */
 	         element.click();
-	      }      
-	   }
+	         } 
+	      }
+	   //}
    
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());

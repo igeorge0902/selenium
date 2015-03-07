@@ -59,6 +59,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		Log.info(arg0.getName()+" test succeeded!");
 
 	}
 
@@ -69,6 +70,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		Log.info(arg0.getName()+" test failed!");
 		
 
 
@@ -79,7 +81,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 	public void onTestStart(ITestResult arg0) {
 
 		System.out.println("The execution of the main test starts now");
-		Log.info("The execution of the main test starts now");
+		Log.info("The execution of "+arg0.getName()+" starts now");
 
 	}
 
@@ -88,6 +90,8 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 	public void onTestSkipped(ITestResult arg0) {
 
 		printTestResults(arg0);
+		Log.info(arg0.getName()+" was skipped!");
+
 
 	}
 

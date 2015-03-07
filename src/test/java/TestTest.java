@@ -25,7 +25,6 @@ import utils.WaitTool;
 
 public class TestTest extends TestBase implements WebElements{
 	
-  private static WebDriver driver;
   //private static WebElement element;
 
   

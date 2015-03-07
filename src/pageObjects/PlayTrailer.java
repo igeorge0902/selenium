@@ -91,7 +91,7 @@ public class PlayTrailer extends TestBase implements WebElements{
 	        action.moveToElement(mousehover).build().perform();        
 	                  
 	        
-	        playTrailers();
+	        TestBase.playTrailers();
 	        
 	        /*
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;   	

@@ -67,7 +67,7 @@ public class WaitTool extends TestBase {
 	  * @return WebElement	the first WebElement using the given method, or null (if the timeout is reached)
 	 * @throws ExpectedExceptions 
 	  */
-	public static WebElement waitForElement(WebDriver driver, final By by, int timeOutInSeconds) throws ExpectedExceptions {
+	public static WebElement waitForElement(WebDriver driver, final By by, int timeOutInSeconds) {
 		WebElement element; 
 		try{	
 			//To use WebDriverWait(), we would have to nullify implicitlyWait(). 

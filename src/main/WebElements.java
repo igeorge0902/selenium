@@ -1,5 +1,8 @@
 package main;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 
 
 /**
@@ -8,6 +11,7 @@ package main;
 
 public interface WebElements { 
 	
+		
 	public static String[] playTrailer = new String[]{"PlayTrailer"};
     public static String[] playContent = new String[]{"PlayContent"};
     public static String[] playFree = new String[]{"PlayFree"};
@@ -27,6 +31,9 @@ public interface WebElements {
     
     public static String ContentUrl1 = "/content/the-dog-and-the-cat-from-here-to-there--1689771606";
     public static String OffersScreen = "/group/offers";
+    public static String PlayButton1 = "play-button-07572899-1f5a-4f4e-9204-2fcc63a82775";
+    
+    public WebElement playPuttony = WebDriverManager.driver.findElement(By.id(PlayButton1));
 
 
 }

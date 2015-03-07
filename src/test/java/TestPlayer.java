@@ -33,7 +33,7 @@ public class TestPlayer extends TestBase{
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
 	      String url = context.getCurrentXmlTest().getParameter("url");
 
-	      driver = WebDriverManager.startDriver(browser, url, 40);  
+	      driver = WebDriverManager.startDriver(browser, url, 40); 
 	      WaitTool.setImplicitWait(driver, 30);
 	  }
 		

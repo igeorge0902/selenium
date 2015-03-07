@@ -247,10 +247,11 @@ public class WebDriverManager
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
+            keepAlive();
             
             driver = driverEventListener(options);
             Log.info(browser + "driver initialized with eventListeners");
-            
+                        
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -281,6 +282,29 @@ public class WebDriverManager
         return driver = eventFiringDriver.unregister(eventListener); 
     	
 	}
+    
+    public static WebDriver keepAlive() {
+    	
+        Thread t = new Thread(new Runnable()
+        {
+          public void run()
+          {
+            driver.get(Thread.currentThread().getName());
+          }
+        } );
+        t.start();
+        try
+        {
+          t.join(60);
+          Log.info(driver);
+          System.out.println("keepAlive");
+        }
+        catch (InterruptedException e)
+        { 
+        	// ignore
+        }
+		return driver;
+    }
     
     /**
      * Stops the browser driver started

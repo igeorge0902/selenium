@@ -12,10 +12,13 @@
   	<parameter name="url" value="http://www.google.com" /> 
          <groups>      
          <run>
-            <exclude name ="signin" />
-            <exclude name ="player" />
+            <exclude name ="functest" />
+            <exclude name ="checkintest" />
          </run>
-         </groups>  
+         </groups>
+     <classes>
+    	<class name="utils.GroupTestExample"/>
+  	</classes>  
   </test>
   <test name="Test on Safari" preserve-order="true">
   	<parameter name="browser" value="*safari" />
@@ -28,8 +31,8 @@
       		</class>
 	      <class name="test.java.TestPlayer">
 	             <methods>
-	        		<exclude name="testSignInSuccess" />
-	        		<exclude name="testPlayerSuccess" />
+	        		<include name="testSignInSuccess" />
+	        		<include name="testPlayerSuccess" />
 	      		</methods>
 	      		   	</class>
 	      		   	<class name="test.java.TestHboSignIn">
@@ -118,8 +121,8 @@
       		</class>
 	      	<class name="test.java.TestPlayer">
 	             <methods>
-	        		<include name="testSignInSuccess" />
-	        		<include name="testPlayerSuccess" />
+	        		<exclude name="testSignInSuccess" />
+	        		<exclude name="testPlayerSuccess" />
 	      		</methods>
 	      		   	</class>
 	      		   	<class name="test.java.TestHboSignIn">
