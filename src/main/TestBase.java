@@ -26,8 +26,7 @@ public class TestBase extends Verify implements WebElements{
 	
 	public static String silverLightPlayerObjectId = "silverlightPlayer";
 	public static Logger Log = Logger.getLogger(Logger.class.getName());
-	 
-	
+	 	
 	protected static WebDriver driver = null;
 	protected static WebElement element = null;
     
@@ -297,13 +296,13 @@ public class TestBase extends Verify implements WebElements{
 	 * It will wait for the element to be present on the DOM, and displayed. 
 	 * 
 	 * @param by
-	 * @return
-	 * @throws ExpectedExceptions 
+	 * @return if element != null it returns true otherwise false.
+	 * @throws Expected
 	 */
 	protected static boolean isElementDisplayed(By by) throws ExpectedExceptions {
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElement(driver, by, 3); 
+		element = WaitTool.waitForElement(driver, by, 5); 
 		if (element != null){
 			Log.info("Element found: "+by);
 			return true;  
@@ -317,13 +316,14 @@ public class TestBase extends Verify implements WebElements{
 	 * 
 	 * @param by
 	 * @return
-	 * @throws ExpectedExceptions 
+	 * @throws Exception 
 	 */
 	
-	public static boolean ElementMouseOver(By by) throws ExpectedExceptions
+	public static boolean ElementMouseOver(By by) throws Exception
         {
 		
 		WebElement element = null; 
+		
 		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3);
 		
@@ -332,10 +332,8 @@ public class TestBase extends Verify implements WebElements{
             try
             {
             	actions.moveToElement(element).build().perform();
-                Thread.sleep(2000);//2 sec is just to for this blog.
-                                   //I use custome method to wait element being appeared after mouse hover event.
-                                   //You can use other variable wait time but make sure your give some pause
-                                   //otherwise mouse hover will happen for fraction of seconds and then disappear.
+                Thread.sleep(2000);
+  
              }
             catch (Exception e)
             {
@@ -347,13 +345,13 @@ public class TestBase extends Verify implements WebElements{
 
 
 	/**
-	 * Element mouse over method with JavaScript
+	 * Element mouse hover method with JavaScript. 
 	 * 
 	 * @param by
-	 * @throws ExpectedExceptions 
+	 * @throws Exception 
 	 */
 	
-	public static void MouseHoverByJavaScript(By by) throws ExpectedExceptions
+	public static void MouseHoverByJavaScript(By by) throws Exception
         {
 		
 		WebElement element = null; 
@@ -365,8 +363,14 @@ public class TestBase extends Verify implements WebElements{
                                 "arguments[0].dispatchEvent(evObj);";
             
             JavascriptExecutor js = (JavascriptExecutor) driver;
+            try {
             js.executeScript(javaScript, element);
+            Thread.sleep(2000);
+          } catch (Exception e) {
+        	  Log.info(e);
           }
+        }
+	
     /**
      * 
      * PlayTrailer method. PlayButtons are selected from the PlayButton menu list.
@@ -606,14 +610,11 @@ public class TestBase extends Verify implements WebElements{
 	      while (i > 0)
 	      {
 	         i--;
-	         /*
-	         for (int second = 0;; second++) {
-			    	if (second >= 60) fail("timeout");
-			  */
+
 	         element.click();
 	         } 
 	      }
-	   //}
+	   
    
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());

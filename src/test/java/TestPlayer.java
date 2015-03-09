@@ -14,7 +14,6 @@ import pageObjects.PlayMainContent;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
-import utils.WaitTool;
  
 
 @Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
@@ -25,23 +24,36 @@ public class TestPlayer extends TestBase{
 	  private static WebDriver driver = null;
 
 
-	  @BeforeClass
-	  public void setUp(ITestContext context) throws Exception
-	  {
-		  
-		  // get the web driver parameters from the testng xml file
-	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      String url = context.getCurrentXmlTest().getParameter("url");
+		@BeforeClass
+		  public void setUp(ITestContext context) throws Exception {
+			
+			  try {			  
+			  // get the web driver parameters from the testng xml file
+		      String browser = context.getCurrentXmlTest().getParameter("browser");
+		      String url = context.getCurrentXmlTest().getParameter("url");
+		      
+		      driver = WebDriverManager.startDriver(browser, url, 40); 
+		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
 
-	      driver = WebDriverManager.startDriver(browser, url, 40); 
-	      WaitTool.setImplicitWait(driver, 30);
-	  }
-		
+			  } catch (Exception e) {
+				
+				  Log.info(e);
+				  Log.info("Safari is reconnecting!");
+				  // get the web driver parameters from the testng xml file
+			      String browser = context.getCurrentXmlTest().getParameter("browser");
+			      String url = context.getCurrentXmlTest().getParameter("url");
+			      
+			      driver = WebDriverManager.startDriver(browser, url, 40); 
+			      TestBase.verifyNotNull(driver, "Driver setUp failed!");
+			  }
+			  
+		}
+	
 	@AfterClass
 	private void closeBrowser(ITestContext context) {
 		WebDriverManager.stopDriver();
 	}
-
+	
 	
   @Test (groups = { "signin" }, description= "HBO login" )
   public void testSignInSuccess() throws Exception{
@@ -64,7 +76,7 @@ public class TestPlayer extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "player" }, description= "Play trailer after login")
+    @Test (/*dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "player" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		

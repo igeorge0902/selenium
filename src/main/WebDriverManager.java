@@ -22,7 +22,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import utils.WaitTool;
+
 import com.opera.core.systems.OperaDriver;
+
 import org.openqa.selenium.Platform;
 
 /**
@@ -94,7 +96,7 @@ public class WebDriverManager
 
             driver = driverEventListener(Capabilities);
             Log.info(browser + "driver initialized with eventListeners");
-
+            keepAlive();
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -173,6 +175,7 @@ public class WebDriverManager
             ChromeOptions options = new ChromeOptions();
             options.addArguments(Arrays.asList(new String[]{"--ignore-certificate-errors", "--start-maximized"}));
             
+            
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             Log.info(DesiredCapabilities.chrome());
             capabilities.isJavascriptEnabled();
@@ -183,6 +186,7 @@ public class WebDriverManager
 
             driver = driverEventListener(object);
             Log.info(browser + "driver initialized with eventListeners");
+            keepAlive();
             WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
@@ -223,7 +227,7 @@ public class WebDriverManager
             
             driver = driverEventListener(profile);
             Log.info(browser + "driver initialized with eventListeners");
-
+            keepAlive();
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -247,11 +251,10 @@ public class WebDriverManager
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
-            keepAlive();
             
             driver = driverEventListener(options);
             Log.info(browser + "driver initialized with eventListeners");
-                        
+            keepAlive();            
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -269,8 +272,6 @@ public class WebDriverManager
         EventListener eventListener = new EventListener(driver);
         eventFiringDriver.register(eventListener); 
 
-        //WaitTool.setImplicitWait(driver, 30);
-
         return driver = new EventFiringWebDriver(eventFiringDriver);
 	}
 
@@ -285,23 +286,33 @@ public class WebDriverManager
     
     public static WebDriver keepAlive() {
     	
-        Thread t = new Thread(new Runnable()
+        Thread t = new Thread
+        		
+        		(new Runnable()
         {
-          public void run()
-          {
+          public void run()        
+          {        	  
             driver.get(Thread.currentThread().getName());
-          }
-        } );
-        t.start();
+            Log.info("Current thread name :"+ Thread.currentThread().getName());
+          }       	
+        		} );        
+        	t.start();        	
+        	if (t.isInterrupted() == false)
+            	Log.info("Thread is interrupted: "+t.isInterrupted());
+        		Thread.getDefaultUncaughtExceptionHandler();
+        		Thread.State.TIMED_WAITING.name();        		
+        		Log.info(Thread.State.TIMED_WAITING.name());        	        	
         try
-        {
-          t.join(60);
-          Log.info(driver);
-          System.out.println("keepAlive");
+        { 
+        	if (t.isInterrupted() == false)
+        		t.getState();
+        		Log.info(t.getState());
+        		t.join(10);
+        		Log.info("Active thread count :" +Thread.activeCount());
         }
         catch (InterruptedException e)
         { 
-        	// ignore
+        	Log.info(e);
         }
 		return driver;
     }

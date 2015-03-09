@@ -9,8 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-import testng.ExpectedExceptions;
-
 public class HboSignIn extends TestBase implements WebElements{
 		
 
@@ -25,7 +23,7 @@ public class HboSignIn extends TestBase implements WebElements{
 				
 	    driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		Log.info(BaseUrls.PLAYER.get() + OffersScreen);
-	    
+		
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if (isElementPresent(By.id("headerButtonLogin"))) break; } catch (Exception e) {}
@@ -95,9 +93,8 @@ public class HboSignIn extends TestBase implements WebElements{
 				Log.info("New Device is named MacBook");
 				Reporter.log("New Device is named MacBook");
 			}
-		} catch (ExpectedExceptions e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+				} catch (Exception e) {
+					e.printStackTrace();
 		}
 		return new HboSignIn(driver);
 		

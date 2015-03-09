@@ -180,6 +180,15 @@ public class Verify {
 			addToErrorBuffer(e);
 		}
 	}
+	
+	static public boolean verifyNotSameBoolean(Object actual, Object expected) {
+		try{
+			Assert.assertNotSame(actual,expected);
+		}catch(AssertionError e){
+			addToErrorBuffer(e);
+		}
+		return true;
+	}
 
 	static public void verifyEquals(Collection<?> actual, Collection<?> expected) {
 		try{

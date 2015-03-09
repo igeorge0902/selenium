@@ -17,6 +17,20 @@ public class TestMethodListener extends TestBase implements IInvokedMethodListen
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
  
+    	if(method.isConfigurationMethod()){
+    		TestMethodErrorBuffer.remove(); // remove stale
+            System.out.println("Stale removed at beforeInvocation");
+    		if(TestMethodErrorBuffer.get()!=null){
+    			
+    		try {
+				throw new InterruptedException("Stale error buffer detected!");
+				} catch (InterruptedException e) {
+						e.printStackTrace();
+			}
+		}
+    		TestMethodErrorBuffer.set(new ArrayList<Throwable>()); // each test method will have its own error buffer
+		}
+    	
     	if(method.isTestMethod()){
     		TestMethodErrorBuffer.remove(); // remove stale
             System.out.println("Stale removed at beforeInvocation");

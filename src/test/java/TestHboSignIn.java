@@ -15,7 +15,6 @@ import pageObjects.PlayTrailer;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
-import utils.WaitTool;
  
 
 @Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
@@ -26,18 +25,32 @@ public class TestHboSignIn extends TestBase{
 	  private static WebDriver driver = null;
 	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
-
 	@BeforeClass
-	  public void setUp(ITestContext context) throws Exception
-	  {
-		  
+	  public void setUp(ITestContext context) throws Exception {
+		
+		  try {			  
 		  // get the web driver parameters from the testng xml file
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
 	      String url = context.getCurrentXmlTest().getParameter("url");
+	      
+	      driver = WebDriverManager.startDriver(browser, url, 40); 
+	      TestBase.verifyNotNull(driver, "Driver setUp failed!");
+	      Log.info("Before setUp is SUCCESS!");
 
-	      driver = WebDriverManager.startDriver(browser, url, 40);  
-	      WaitTool.setImplicitWait(driver, 30);
-	  }
+		  } catch (Exception e) {
+			
+			  Log.info(e);
+			  Log.info("Safari is reconnecting!");
+			  // get the web driver parameters from the testng xml file
+		      String browser = context.getCurrentXmlTest().getParameter("browser");
+		      String url = context.getCurrentXmlTest().getParameter("url");
+		      
+		      driver = WebDriverManager.startDriver(browser, url, 40); 
+		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
+		  }
+		  
+	}
+	      	  
 		
 	@AfterClass
 	private void closeBrowser(ITestContext context) {
@@ -66,7 +79,7 @@ public class TestHboSignIn extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
+    @Test (/*dependsOnMethods = { "testSignInSuccess" },alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		

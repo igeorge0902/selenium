@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.testng.Reporter;
 
 import utils.WaitTool;
@@ -80,6 +81,7 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
     
     if (WebDriverManager.getBroswer().equals(safari)) {
     	try {
+    		WaitTool.waitForElement(driver, by, 5);
     		driver.switchTo().activeElement().click();
     		System.out.println("afterFindBy event done for Safari");
     	} catch (Exception e) {
@@ -88,16 +90,23 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
     }
     
     if (WebDriverManager.getBroswer().equals(chrome)) {  
+    	
     	try {
-			Thread.sleep(1000);
-		} catch (InterruptedException ex) {
-			// TODO Auto-generated catch block
+		
+    		Thread.sleep(1000);
+		
+    	} catch (InterruptedException ex) {
+
 			ex.printStackTrace();
 		}
         try {
+        	
+        	if (driver instanceof JavascriptExecutor) {
+        		
             ((JavascriptExecutor) driver).executeScript(
                     "arguments[0].scrollIntoView(true);", by);
             System.out.println("afterFindBy event done for CHROME");
+        	}
         } catch (Exception e) {
             System.out.println("No afterFindBy event done for CHROME");
         }
@@ -112,13 +121,19 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
 ////////////////////CLICKON RELATED METHODS ///////////////
 @Override
 public void beforeClickOn(WebElement element, WebDriver driver) {
-// TODO Auto-generated method stub
-
+/*
+    if (WebDriverManager.getBroswer().equals(safari)) {
+    	try {
+    		driver.switchTo().activeElement();
+    		System.out.println("beforeClickOn event done for Safari");
+    	} catch (Exception e) {
+    		System.out.println("No beforeClickOn event done for Safari");
+    	}
+    }*/
 }
 
 @Override
 public void afterClickOn(WebElement element, WebDriver driver) {
-	//driver.switchTo().activeElement();
 	Reporter.log("Clicked on:"+element.toString());
 	Log.info("Element clicked on:"+element);
 }
@@ -152,8 +167,8 @@ public void beforeScript(String script, WebDriver driver) {
 
 @Override
 public void afterScript(String script, WebDriver driver) {
-// TODO Auto-generated method stub
-
+	Reporter.log("Script run: "+ script);
+	Log.info("Script run: "+ script);
 }
 
 /////////////// EXCEPTION RELATED METHODS ///////////////////////

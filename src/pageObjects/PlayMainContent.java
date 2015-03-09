@@ -1,11 +1,14 @@
 package pageObjects;
 
 
+import java.util.List;
+
 import main.BaseUrls;
 import main.TestBase;
 import main.WebElements;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,8 +16,10 @@ import org.testng.annotations.Listeners;
 
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.WaitTool;
 
 
+@SuppressWarnings("unused")
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
 public class PlayMainContent extends TestBase implements WebElements{
@@ -33,25 +38,21 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementPresent(By.id(PlayButton1))) break; } catch (Exception e) {
+		    	try { if (isElementDisplayed(By.id(PlayButton1))) break; } catch (Exception e) {
 		    		Log.info(e);
 		    	}
 		    	Thread.sleep(2000);
 		    }			
 
 		    TestBase.verifyNotNull(playPuttony);
-	    	Thread.sleep(2000);
-	    	
-	    	/*
-	    	WebElement mousehover;
-		    mousehover = driver.findElement(By.id(PlayButton1));	            
-	        action.moveToElement(mousehover).build().perform();   
-		    
-	        TestBase.playContents();
-	        */
-	    	
-	        TestBase.SmartClick(playPuttony, 3);  
-		    
+	    		            
+	        playPuttony.getAttribute(PlayButton1); 
+	        Log.info(playPuttony.getAttribute(PlayButton1));
+	    	 
+	    	TestBase.MouseHoverByJavaScript(By.id(PlayButton1));
+
+	    	TestBase.SmartClick(playPuttony, 1);
+	    			    
 			Thread.sleep(5000);
 
 
