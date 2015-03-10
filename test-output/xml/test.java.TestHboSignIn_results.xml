@@ -1,107 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test on Safari"
-           tests="1"
+<testsuite name="Test on Chrome"
+           tests="3"
            failures="1"
            errors="0"
-           skipped="0"
-           time="39,955">
+           skipped="2"
+           time="0,003">
   <properties />
-            <testcase name="testPlayerSuccess" time="39,955" classname="test.java.TestHboSignIn">
-                <failure type="java.lang.ExceptionInInitializerError"
+            <testcase name="setUp" time="0,000" classname="test.java.TestHboSignIn">
+                <failure type="java.lang.IllegalMonitorStateException"
                   message="(null)"
               >
-<![CDATA[java.lang.ExceptionInInitializerError
-  main.TestBase.playTrailers(TestBase.java:390)
-  pageObjects.PlayTrailer.playTrailer(PlayTrailer.java:97)
-  test.java.TestHboSignIn.testPlayerSuccess(TestHboSignIn.java:89)
+<![CDATA[java.lang.IllegalMonitorStateException
+  java.lang.Object.wait(Native Method)
+  java.lang.Object.wait(Object.java:502)
+  main.WebDriverManager.startDriver(WebDriverManager.java:190)
+  test.java.TestHboSignIn.setUp(TestHboSignIn.java:48)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:483)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
   org.testng.TestRunner.privateRun(TestRunner.java:767)
   org.testng.TestRunner.run(TestRunner.java:617)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-  org.testng.SuiteRunner.run(SuiteRunner.java:240)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-  org.testng.TestNG.run(TestNG.java:1057)
-  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Could not find element: {"using":"id","value":"play-button-07572899-1f5a-4f4e-9204-2fcc63a82775"} (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'igeorge.local', ip: '192.168.1.103', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.1.6, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
-Session ID: null
-*** Element info: {Using=id, value=play-button-07572899-1f5a-4f4e-9204-2fcc63a82775}
-  sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-  org.openqa.selenium.By$ById.findElement(By.java:214)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-  sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-  com.sun.proxy.$Proxy8.findElement(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-  sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-  com.sun.proxy.$Proxy9.findElement(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-  main.WebElements.<clinit>(WebElements.java:36)
-  main.TestBase.playTrailers(TestBase.java:390)
-  pageObjects.PlayTrailer.playTrailer(PlayTrailer.java:97)
-  test.java.TestHboSignIn.testPlayerSuccess(TestHboSignIn.java:89)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-  org.testng.SuiteRunner.run(SuiteRunner.java:240)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-  org.testng.TestNG.run(TestNG.java:1057)
-  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
 ]]>
       </failure>
 
           </testcase>
   
+            <testcase name="closeBrowser" time="0.0" classname="test.java.TestHboSignIn">
+          <skipped />
+    </testcase>
+            <testcase name="testPlayerSuccess" time="0.0" classname="test.java.TestHboSignIn">
+          <skipped />
+    </testcase>
   
   
 </testsuite>

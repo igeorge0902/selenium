@@ -32,22 +32,17 @@ public class PlayMainContent extends TestBase implements WebElements{
 	public PlayMainContent playMainContent() throws Exception {
 
 		Actions action = new Actions(driver);
-		
-		
+			
 			driver.get(BaseUrls.PLAYER.get() + ContentUrl1);
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementDisplayed(By.id(PlayButton1))) break; } catch (Exception e) {
-		    		Log.info(e);
+		    	try { if (isElementPresentAndDisplay(By.id(PlayButton1))) break; } catch (Exception e) {
+		    		Log.info(e.getCause());
 		    	}
-		    	Thread.sleep(2000);
 		    }			
 
 		    TestBase.verifyNotNull(playPuttony);
-	    		            
-	        playPuttony.getAttribute(PlayButton1); 
-	        Log.info(playPuttony.getAttribute(PlayButton1));
 	    	 
 	    	TestBase.MouseHoverByJavaScript(By.id(PlayButton1));
 

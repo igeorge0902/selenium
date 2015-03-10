@@ -270,7 +270,7 @@ public class TestBase extends Verify implements WebElements{
 	 * Verify the error message is displayed. 
 	 * @throws ExpectedExceptions 
 	 */
-	public boolean verifyErrorMessageRequired_displayed() throws ExpectedExceptions {  		
+	public boolean verifyErrorMessageRequired_displayed() throws Exception {  		
         	return isElementDisplayed(By.name("EmailAddressAgain"));       
     	}  
 	
@@ -279,7 +279,7 @@ public class TestBase extends Verify implements WebElements{
 	 * Verify the error message of "I accept Terms of Service" is displayed.
 	 * @throws ExpectedExceptions 
 	 */
-	public static boolean isErrorMessageRequired_Check_TOS_displayed() throws ExpectedExceptions { 
+	public static boolean isErrorMessageRequired_Check_TOS_displayed() throws Exception { 
         	return isElementDisplayed(By.id("Terms"));           
     	} 
 	
@@ -287,9 +287,19 @@ public class TestBase extends Verify implements WebElements{
 	 * Verify the new device dialog is not displayed.
 	 * @throws ExpectedExceptions 
 	 */
-	public static boolean isNewDeviceDialog() throws ExpectedExceptions { 
+	public static boolean isNewDeviceDialog() throws Exception { 
         	return isElementDisplayed(By.id("newDeviceInput"));           
     	} 
+	
+	  /** 
+	   * Send text keys to the element that finds by cssSelector.  
+	   * It shortens "driver.findElement(By.cssSelector()).sendKeys()". 
+	   * @param cssSelector
+	   * @param text
+	   */
+	  protected void sendText(String cssSelector, String text) {
+			driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
+	  }
 	
 	/**
 	 * Check if the element is displayed.  
@@ -297,17 +307,18 @@ public class TestBase extends Verify implements WebElements{
 	 * 
 	 * @param by
 	 * @return if element != null it returns true otherwise false.
-	 * @throws Expected
+	 * @throws Exception
 	 */
-	protected static boolean isElementDisplayed(By by) throws ExpectedExceptions {
-		WebElement element = null; 
+	protected static boolean isElementDisplayed(By by) {
+
 		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElement(driver, by, 5); 
-		if (element != null){
-			Log.info("Element found: "+by);
-			return true;  
+		element = WaitTool.waitForElement(driver, by, 3); 
+		
+			if (element != null){
+				Log.info("Element found: "+by);
+				return true;  
 		}
-		Log.info("Element not found");
+		Log.info("Element not found: "+by);
 		return false; 
 	}
 
@@ -591,7 +602,7 @@ public class TestBase extends Verify implements WebElements{
 	   
 	      if (element == null) 
 	      { 
-	         Log.info(element+" not found!");
+	         Log.info(element +" not found!");
 	    	  //add 'Element is null' error message into your log file or throw NoSuchElement or NullReference exception 
 	      }
 	      if(!element.isDisplayed()) 

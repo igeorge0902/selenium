@@ -96,7 +96,6 @@ public class WebDriverManager
 
             driver = driverEventListener(Capabilities);
             Log.info(browser + "driver initialized with eventListeners");
-            keepAlive();
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -186,7 +185,7 @@ public class WebDriverManager
 
             driver = driverEventListener(object);
             Log.info(browser + "driver initialized with eventListeners");
-            keepAlive();
+  
             WaitTool.setImplicitWait(driver, timeout);
 
             // open the url
@@ -195,6 +194,7 @@ public class WebDriverManager
             driver.manage().deleteAllCookies();
 
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
+            
         }
         else if ( browser.equalsIgnoreCase("OPERA") )
         {
@@ -227,14 +227,14 @@ public class WebDriverManager
             
             driver = driverEventListener(profile);
             Log.info(browser + "driver initialized with eventListeners");
-            keepAlive();
+            //keepAlive();
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
             driver.manage().deleteAllCookies();          
             
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
-
+            
         }
         else
         {
@@ -254,7 +254,7 @@ public class WebDriverManager
             
             driver = driverEventListener(options);
             Log.info(browser + "driver initialized with eventListeners");
-            keepAlive();            
+
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -284,38 +284,6 @@ public class WebDriverManager
     	
 	}
     
-    public static WebDriver keepAlive() {
-    	
-        Thread t = new Thread
-        		
-        		(new Runnable()
-        {
-          public void run()        
-          {        	  
-            driver.get(Thread.currentThread().getName());
-            Log.info("Current thread name :"+ Thread.currentThread().getName());
-          }       	
-        		} );        
-        	t.start();        	
-        	if (t.isInterrupted() == false)
-            	Log.info("Thread is interrupted: "+t.isInterrupted());
-        		Thread.getDefaultUncaughtExceptionHandler();
-        		Thread.State.TIMED_WAITING.name();        		
-        		Log.info(Thread.State.TIMED_WAITING.name());        	        	
-        try
-        { 
-        	if (t.isInterrupted() == false)
-        		t.getState();
-        		Log.info(t.getState());
-        		t.join(10);
-        		Log.info("Active thread count :" +Thread.activeCount());
-        }
-        catch (InterruptedException e)
-        { 
-        	Log.info(e);
-        }
-		return driver;
-    }
     
     /**
      * Stops the browser driver started

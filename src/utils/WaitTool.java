@@ -81,7 +81,8 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element	
 		} catch (Exception e) {
-			Log.info(e);
+			Log.info(e.getMessage());
+			e.printStackTrace();
 		} 
 		return null; 
 	}
@@ -107,7 +108,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			Log.info(e);
+			Log.info(e.getMessage());
 		} 
 		return null; 
 	}
@@ -140,7 +141,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return elements; //return the element	
 		} catch (Exception e) {	
-			Log.info(e);
+			Log.info(e.getMessage());
 		} 
 		return null; 
 	}
@@ -180,7 +181,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			Log.info(e);
+			Log.info(e.getMessage());
 		} 
 		return null; 
 	 }
@@ -211,7 +212,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return isPresent; 
 		} catch (Exception e) {
-			Log.info(e);
+			Log.info(e.getMessage());
 		} 
 		return false; 
 	}
@@ -243,7 +244,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return jscondition; 
 		} catch (Exception e) {
-			Log.info(e);
+			Log.info(e.getMessage());
 		} 
 		return false; 
 	}
@@ -272,7 +273,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return jQcondition; 
 		} catch (Exception e) {
-				addVerificationFailure(e);
+			Log.info(e.getMessage());
 		} 
 		return jQcondition; 
     }
@@ -328,6 +329,7 @@ public class WaitTool extends TestBase {
 				return driver.findElement(by).getText().contains(text);
 		} catch (NullPointerException e) {
 				addVerificationFailure(e);
+				Log.info(e.getMessage());
 				return false;
 		}
 	}
@@ -365,6 +367,7 @@ public class WaitTool extends TestBase {
 			return true; 
 		} catch (NoSuchElementException e) {
 			addVerificationFailure(e);
+			Log.info(e.getMessage());
 			return false;
 		}
 	}
@@ -381,6 +384,7 @@ public class WaitTool extends TestBase {
 			return driver.findElement(by).isDisplayed();
 		} catch (NoSuchElementException e) {
 			addVerificationFailure(e);
+			Log.info(e.getMessage());
 			return false;
 		}
 	}
