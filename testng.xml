@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Demo Run" parallel="tests" thread-count="5" verbose="10">
+<suite name="Test Demo Run" verbose="10">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 	<parameter name="filenamePath"
 		value="/Users/georgegaspar/Documents/Breakpoints.xml" />
-	<parameter name="browser" value="*safari" />
+	<parameter name="browser" value="INTERNET_EXPLORER" />
 	<parameter name="url" value="http://www.google.com" />
 	<test name="Test Groups">
 		<parameter name="browser" value="*safari" />
@@ -40,6 +40,7 @@
 			<class name="test.java.TestHboSignIn">
 				<methods>
 					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
@@ -70,6 +71,7 @@
 			<class name="test.java.TestHboSignIn">
 				<methods>
 					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
@@ -85,6 +87,7 @@
 	<test name="Test on Internet Explorer" preserve-order="true">
 		<parameter name="browser" value="INTERNET_EXPLORER" />
 		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 		<classes>
 			<class name="test.java.TestHboSignUp">
 				<methods>
@@ -100,6 +103,7 @@
 			<class name="test.java.TestHboSignIn">
 				<methods>
 					<exclude name="testSignInSuccess" />
+					<include name="testListActionGroupContents" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
@@ -123,13 +127,14 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testPlayerSuccess" />
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
 				<methods>
 					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
