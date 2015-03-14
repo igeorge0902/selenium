@@ -56,11 +56,11 @@ public class TestPlayer extends TestBase{
 	
 	
   @Test (groups = { "signin" }, description= "HBO login" )
-  public void testSignInSuccess() throws Exception{
+  public void testSignInSuccess(String operator) throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
 		
 		//select operator
-		SignInPage.selectOperator();
+		SignInPage.selectOperator(operator);
 	    Log.info("selectOperator test is done");
 	    Reporter.log("<p>selectOperator test is done<br></p>");
 		

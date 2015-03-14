@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import testng.ExpectedExceptions;
 
@@ -210,13 +211,55 @@ public class WaitTool extends TestBase {
 	        });
 	        isPresent = isTextPresent(driver, by, text);
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
+			
+			Log.info("Element found: "+by+" with text "+text);
+			Reporter.log("Element found: "+by+" with text "+text);			
+			
 			return isPresent; 
+		
 		} catch (Exception e) {
 			Log.info(e.getMessage());
 		} 
 		return false; 
 	}
 
+	/**
+	  * Wait for the Text to be present in the given element, regardless of being displayed or not.
+	  *
+	  * @param WebDriver	The driver object to be used to wait and find the element
+	  * @param locator	selector of the given element, which should contain the matched regex expression
+	  * @param String	The regex we are looking
+	  * @param Int	The time in seconds to wait until returning a failure
+	  * 
+	  * @return boolean 
+	  */
+	
+	public static boolean waitForTextPresentRegex(WebDriver driver, final By by, final String regex, int timeOutInSeconds) {
+		boolean isPresent = false; 
+		try{	
+			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait() 
+	        new WebDriverWait(driver, timeOutInSeconds) {
+	        }.until(new ExpectedCondition<Boolean>() {
+	
+	            @Override
+	            public Boolean apply(WebDriver driverObject) {
+	            	return isTextPresentRegex(driverObject, by, regex); //is the Text in the DOM
+	            }
+	        });
+	        isPresent = isTextPresentRegex(driver, by, regex);
+			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
+			
+			Log.info("Element found: "+by+" with text "+regex);
+			Reporter.log("Element found: "+by+" with text "+regex);			
+			
+			return isPresent; 
+		
+		} catch (Exception e) {
+			Log.info(e.getMessage());
+		} 
+		return false; 
+	}
+	
 	/** 
 	 * Waits for the Condition of JavaScript.  
 	 *
@@ -334,6 +377,26 @@ public class WaitTool extends TestBase {
 		}
 	}
 		
+	
+    /**
+	   * Checks if the text is present in the element. 
+      * 
+	   * @param driver - The driver object to use to perform this element search
+	   * @param by - selector to find the element that should contain text
+	   * @param regex - The Text element found with regex expression you are looking for
+	   * @return true or false
+	   */
+	private static boolean isTextPresentRegex(WebDriver driver, By by, String regex)
+	{
+		try {
+				return driver.findElement(by).getText().matches(regex);
+		} catch (Exception e) {
+				addVerificationFailure(e);
+				Log.info(e.getMessage());
+				return false;
+		}
+	}
+	
 
 	/**
 	 * Checks if the elment is in the DOM, regardless of being displayed or not.

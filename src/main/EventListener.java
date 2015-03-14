@@ -111,7 +111,7 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
             System.out.println("No afterFindBy event done for CHROME");
         }
     }
-               
+                   
     //((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+element.getLocation().y+")");
        
     Reporter.log("Found element:"+by.toString());

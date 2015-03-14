@@ -19,7 +19,7 @@ public class HboSignIn extends TestBase implements WebElements{
 	private static String password = "12345678";	
 
 		
-	public HboSignIn selectOperator() throws Exception{
+	public HboSignIn selectOperator(String operator) throws Exception{
 				
 	    driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		Log.info(BaseUrls.PLAYER.get() + OffersScreen);
@@ -40,7 +40,7 @@ public class HboSignIn extends TestBase implements WebElements{
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresent(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"))) break; } catch (Exception e) {}
+	    	try { if (isElementPresent(By.id(operator))) break; } catch (Exception e) {}
 	    	Thread.sleep(1000);
 	    }	
 	    

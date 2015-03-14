@@ -1,5 +1,9 @@
 package main;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +41,9 @@ public class TestBase extends Verify implements WebElements{
 	public TestBase() {
 		  
 	  }
+	
+	public static JavascriptExecutor js = (JavascriptExecutor) driver;
+
 
 	/*
 	 * softAssert methods
@@ -210,7 +217,6 @@ public class TestBase extends Verify implements WebElements{
        try {
         	 driver.findElement(by);
         	 Log.info((by));
-        	 //Reporter.log("Element is present:"+by.toString()+"<br>");
           		return true;
         	} 	catch (Throwable e) {
     			addVerificationFailure(e);
@@ -227,7 +233,6 @@ public class TestBase extends Verify implements WebElements{
 		try {
 			  driver.findElement(by).isDisplayed();
 	          Log.info((by));
-	          //Reporter.log("Element is present:"+by.toString()+"<br>");
 			    return true;
 			  } catch (Throwable e) {
 				addVerificationFailure(e);
@@ -367,7 +372,7 @@ public class TestBase extends Verify implements WebElements{
 		
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElement(driver, by, 3);
+		element = WaitTool.waitForElementPresent(driver, by, 3);
  
             String javaScript = "var evObj = document.createEvent('MouseEvents');"+
                                 "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"+
@@ -382,13 +387,16 @@ public class TestBase extends Verify implements WebElements{
           }
         }
 	
+   	
     /**
      * 
-     * PlayTrailer method. PlayButtons are selected from the PlayButton menu list.
+     * Play any contents method. PlayButton types are selected from the PlayButton menu list. 
+     * PlayButton types are iterated from a String [] array defined in the {@link main.WebElements.class}
      *     
+     * @param String play
      */
-	
-	public static void playTrailers(){
+	/*
+	public static void playContents(String playContent){
     	JavascriptExecutor js = (JavascriptExecutor) driver;
 		
     	List<WebElement> playbuttonmenu;
@@ -398,24 +406,25 @@ public class TestBase extends Verify implements WebElements{
         {
             String onClick = playbuttonmenu.get(i).getAttribute("onclick");
             
-            for(int j=0; j<playTrailer.length;j++)
-            {
-                if(onClick.contains(playTrailer[j]))
+           // for(int j=0; j<playContent.length;j++)
+            //{
+            
+                if(onClick.contains(playContent))
                 {
                     js.executeScript(onClick);
                 
                 }
-            }
+            //}
             
         }
 		
-	}
+	}*/
 	
-    /**
-     * 
-     * Play main content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
+	 /**
+	*
+	* Play main content method. PlayButtons are selected from the PlayButton menu list.
+	*
+	*/
 	
 	public static void playContents(){
     	JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -440,25 +449,19 @@ public class TestBase extends Verify implements WebElements{
 		
 	}
 	
-    /**
-     * 
-     * Play free content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
-	
-	public static void playFrees(){
+	public static void playPause(){
     	JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+    	List<WebElement> playpause;
+        playpause = driver.findElement(By.id("playbackControls")).findElements(By.id("playPause")); 
                 
-        for(int i =0; i<playbuttonmenu.size();i++)    
+        for(int i =0; i<playpause.size();i++)    
         {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
+            String onClick = playpause.get(i).getAttribute("onclick");
             
-            for(int j=0; j<playFree.length;j++)
+            for(int j=0; j<playPause.length;j++)
             {
-                if(onClick.contains(playFree[j]))
+                if(onClick.contains(playPause[j]))
                 {
                     js.executeScript(onClick);
                 
@@ -469,121 +472,6 @@ public class TestBase extends Verify implements WebElements{
 		
 	}
 	
-	 /**
-     * 
-     * Play live content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
-	
-	public static void playLives(){
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j=0; j<playLive.length;j++)
-            {
-                if(onClick.contains(playLive[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
-        }
-		
-	}
-	
-	 /**
-     * 
-     * Play extra content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
-	
-	public static void playExtras(){
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j=0; j<playExtra.length;j++)
-            {
-                if(onClick.contains(playExtra[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
-        }
-		
-	}
-	
-	 /**
-     * 
-     * Play interactive content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
-	
-	public static void playInteractives(){
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j=0; j<playInteractive.length;j++)
-            {
-                if(onClick.contains(playInteractive[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
-        }
-		
-	}
-	
-	 /**
-     * 
-     * Play free interactive content method. PlayButtons are selected from the PlayButton menu list.
-     *     
-     */
-	
-	public static void playFreeInteractives(){
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j=0; j<playFreeInteractive.length;j++)
-            {
-                if(onClick.contains(playFreeInteractive[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
-        }
-		
-	}
 	
 	/**
 	 * 
@@ -625,6 +513,25 @@ public class TestBase extends Verify implements WebElements{
 	         element.click();
 	         } 
 	      }
+	   
+	    public static List<String> getGroupContentList(InputStream contents)
+	    {
+	        //Sample utility method to get the contents of a string array list (?)
+	    	
+	        List<String> lines = new ArrayList<String> ();
+	        try {
+	            DataInputStream in = new DataInputStream(contents);
+	            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+	            String strLine;
+	            while ((strLine = br.readLine()) != null)   {
+	                lines.add(strLine);
+	            }
+	            
+	        } catch (Exception e) {
+	        	Log.info(e.getMessage());
+	        }
+	        return lines;
+	    }
 	   
    
 	public static List<Throwable> getVerificationFailures() {

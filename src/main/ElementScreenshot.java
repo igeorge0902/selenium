@@ -93,9 +93,6 @@ private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-out
   catch (IOException e) {
 	  e.printStackTrace();
   }
-  
-  System.out.println("New Image Dimension: "+ screen);
-
     
   //Used FileUtils class of apache.commons.io.
   String fileNameToCopy = screen;

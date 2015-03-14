@@ -1,6 +1,5 @@
 package test.java;
 
-import java.util.List;
 
 import main.BaseUrls;
 import main.ElementScreenshot;
@@ -131,30 +130,11 @@ public class TestTest extends TestBase implements WebElements{
         Log.info("Action performed");
                   
         
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j=0; j<playTrailer.length;j++)
-            {
-                if(onClick.contains(playTrailer[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
-        }
-        
-            	
+        TestBase.playContents();
+           	
             	       
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'
-	   System.out.println("Document state : "+js.executeScript("return document.readyState"));
+	   System.out.println("Document state : "+TestBase.js.executeScript("return document.readyState"));
 	    
 	   //// Return the domain name of the server that loaded the document: 'document.domain;'
 	   System.out.println("Domain : "+js.executeScript("return document.domain"));

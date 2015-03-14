@@ -15,15 +15,27 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import main.TestBase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
-public class SampleDataProvider {
+public class SampleDataProvider extends TestBase{
  
+	
+	public SampleDataProvider(WebDriver driver){
+		super(driver); 
+	}
+	
     @DataProvider
     public static Iterator<Object[]> fileDataProvider (ITestContext context) {
+    	
         //Get the input file path from the ITestContext
         String inputFile = context.getCurrentXmlTest().getParameter("filenamePath");
+        
         //Get a list of String file content (line items) from the test file.
         List<String> testData = getFileContentList(inputFile);
  
@@ -35,10 +47,36 @@ public class SampleDataProvider {
         {
             dataToBeReturned.add(new Object[] { userData } );
         }
+        
         //return the iterator - testng will initialize the test class and calls the
         //test method with each of the content of this iterator.
+        
         return dataToBeReturned.iterator();
  
+    }
+    
+    @DataProvider
+    public static Iterator<Object[]> groupDataProvider (ITestContext context) {
+    	
+    	//Get the list of webelements from the ITestContext
+        List<WebElement> findElements = driver.findElements(By.id("normalView"));
+        
+        //We will be returning an iterator of Object arrays so create that first.
+        List<Object[]> dataToBeReturned = new ArrayList<Object[]>();
+
+        //Populate our List of Object arrays
+        for (WebElement webElement : findElements)
+        	
+        {	
+        	Object [] contents = webElement.findElements(By.tagName("href")).toArray();
+
+            dataToBeReturned.add(new Object[] { contents } );}
+
+        //return the iterator - testng will initialize the test class and calls the
+        //test method with each of the content of this iterator.
+        	
+        return dataToBeReturned.iterator();
+
     }
     
     @DataProvider(name="colors") 
@@ -85,6 +123,7 @@ public class SampleDataProvider {
         }    
         return lines;
     }
+    
 }
 
 

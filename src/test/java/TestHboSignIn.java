@@ -12,6 +12,7 @@ import org.testng.annotations.*;
 
 import pageObjects.HboSignIn;
 import pageObjects.PlayTrailer;
+import pageObjects.SelectMovieGroups;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
@@ -57,13 +58,13 @@ public class TestHboSignIn extends TestBase{
 		WebDriverManager.stopDriver();
 	}
 
-	
+  @Parameters ({"operator"})
   @Test (groups = { "functional_test1" }, description= "HBO login" )
-  public void testSignInSuccess() throws Exception{
+  public void testSignInSuccess(String operator) throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
 		
 		//select operator
-		SignInPage.selectOperator();
+		SignInPage.selectOperator(operator);
 	    Log.info("selectOperator test is done");
 	    Reporter.log("<p>selectOperator test is done<br></p>");
 		
@@ -75,11 +76,23 @@ public class TestHboSignIn extends TestBase{
 		
 		//new device dialog
 		SignInPage.enterNewDevice();
+		Thread.sleep(3);
 	    Log.info("newDevice test is done");
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (/*dependsOnMethods = { "testSignInSuccess" },alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
+  	
+    @Test //(dataProviderClass=utils.SampleDataProvider.class,dataProvider="groupDataProvider")
+    public void testListActionGroupContents() throws Exception{
+    	SelectMovieGroups ActionGroup = new SelectMovieGroups(driver);
+    	
+    	ActionGroup.actionGroups();
+	    Log.info("testListActionGroupContents test is done"); 
+	    Reporter.log("<p>testListActionGroupContents test is done<br></p>");
+    	
+    }
+  
+    @Test (/*dependsOnMethods = { "testSignInSuccess" }, alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		

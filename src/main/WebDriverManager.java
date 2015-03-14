@@ -89,7 +89,7 @@ public class WebDriverManager
             Capabilities.setVersion("11");
             Capabilities.getVersion();
             Capabilities.equals(browser);
-
+            
 
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver(Capabilities);
@@ -99,7 +99,8 @@ public class WebDriverManager
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
-            driver.manage().deleteAllCookies();  
+            driver.manage().deleteAllCookies();
+            driver.manage().window().maximize();
 
             new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
  
@@ -153,7 +154,7 @@ public class WebDriverManager
             try
             {
                 String userHome = System.getProperty("user.home");
-                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver";
+                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
         		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 //String chromeDriverPath = System.getenv( "webdriver.chrome.driver" );
                 //System.setProperty("webdriver.chrome.driver", chromeDriverPath);
@@ -178,6 +179,7 @@ public class WebDriverManager
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             Log.info(DesiredCapabilities.chrome());
             capabilities.isJavascriptEnabled();
+            
         
             Object object = new Object [] {options, capabilities};
             
