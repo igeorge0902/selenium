@@ -25,6 +25,7 @@ src/pageObjects/HboSignUp.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
 src/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
 src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
+src/pageObjects/SelectMovieGroups.java -text
 src/pageObjects/Yahoo.java -text
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
