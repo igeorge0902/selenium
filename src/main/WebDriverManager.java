@@ -152,14 +152,24 @@ public class WebDriverManager
              */
                         
             try
-            {
-                String userHome = System.getProperty("user.home");
-                String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
-        		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-                //String chromeDriverPath = System.getenv( "webdriver.chrome.driver" );
-                //System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-
-                            }
+            {	
+            	
+            	if (!TestBase.isSupportedPlatformMac(true)) {
+            		
+            		String userHome = System.getProperty("user.home");
+            		String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
+            		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+                }
+            	
+            	else if (TestBase.isSupportedPlatformMac(true)) {
+            		
+                    String userHome = System.getProperty("user.home");
+                    String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver";
+            		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+            	}
+            	
+            }
+            
             catch (Exception ex)
             {
                 System.out.println("\nException in getting and setting the webdriver chrome driver: "
@@ -192,6 +202,7 @@ public class WebDriverManager
 
             // open the url
             driver.get(portalUrl);
+            driver.manage().window().maximize();
 
             driver.manage().deleteAllCookies();
 

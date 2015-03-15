@@ -8,7 +8,11 @@
 /logfile.log.2015-02-28 -text
 /logfile.log.2015-03-01 -text
 /logfile.log.2015-03-02 -text
-/pom[!!-~]copy.xml -text
+/logfile.log.2015-03-03 -text
+/logfile.log.2015-03-06 -text
+/logfile.log.2015-03-07 -text
+/logfile.log.2015-03-08 -text
+/logfile.log.2015-03-09 -text
 /pom.xml -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
@@ -75,6 +79,8 @@ test-output/html/suite1_groups.html -text
 test-output/html/suite1_test1_results.html -text
 test-output/html/suite1_test2_results.html -text
 test-output/html/suite1_test3_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test4_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test5_results.html -text svneol=unset#text/plain
 test-output/html/suites.html -text
 test-output/index.html -text svneol=unset#text/plain
 test-output/jquery-1.7.1.min.js -text svneol=unset#text/plain
@@ -103,9 +109,11 @@ test-output/xml/test.java.CopyOfTestHboSignIn_results.xml -text
 test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestHboSignIn_results.xml -text
 test-output/xml/test.java.TestHboSignUp_results.xml -text
+test-output/xml/test.java.TestPlayer_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestSearchEngines_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text
 test-output/xml/test.java.TestTest_results.xml -text
 test-output/xml/test.java.TestYahoo_results.xml -text
+test-output/xml/utils.GroupTestExample_results.xml -text svneol=unset#text/plain
 test-output/xml/utils.SafariTest_results.xml -text
 /testng.xml -text

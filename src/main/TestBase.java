@@ -1,11 +1,8 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -242,6 +239,27 @@ public class TestBase extends Verify implements WebElements{
 		}
 	}
 	
+	/**
+	 * Check if the element is displayed.  
+	 * It will wait for the element to be present on the DOM, and displayed. 
+	 * 
+	 * @param by
+	 * @return if element != null it returns true otherwise false.
+	 * @throws Exception
+	 */
+	protected static boolean isElementDisplayed(By by) {
+
+		//wait for the Error Message Element to be present and display
+		element = WaitTool.waitForElement(driver, by, 3); 
+		
+			if (element != null){
+				Log.info("Element found: "+by);
+				return true;  
+		}
+		Log.info("Element not found: "+by);
+		return false; 
+	}
+	
 	  public boolean isElementPresent(String _cssSelector){
 		try {
 			  driver.findElement(By.cssSelector(_cssSelector));
@@ -306,26 +324,7 @@ public class TestBase extends Verify implements WebElements{
 			driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
 	  }
 	
-	/**
-	 * Check if the element is displayed.  
-	 * It will wait for the element to be present on the DOM, and displayed. 
-	 * 
-	 * @param by
-	 * @return if element != null it returns true otherwise false.
-	 * @throws Exception
-	 */
-	protected static boolean isElementDisplayed(By by) {
 
-		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElement(driver, by, 3); 
-		
-			if (element != null){
-				Log.info("Element found: "+by);
-				return true;  
-		}
-		Log.info("Element not found: "+by);
-		return false; 
-	}
 
 	/**
 	 * By (by) = element mouse over method. Uses actions class which is object of the driver.
@@ -514,24 +513,45 @@ public class TestBase extends Verify implements WebElements{
 	         } 
 	      }
 	   
-	    public static List<String> getGroupContentList(InputStream contents)
-	    {
-	        //Sample utility method to get the contents of a string array list (?)
+	    
+	    public static Iterator<Object[]> contents() {
 	    	
-	        List<String> lines = new ArrayList<String> ();
-	        try {
-	            DataInputStream in = new DataInputStream(contents);
-	            BufferedReader br = new BufferedReader(new InputStreamReader(in));
-	            String strLine;
-	            while ((strLine = br.readLine()) != null)   {
-	                lines.add(strLine);
+	        
+        	List<Object[]> dataToBeReturned = new ArrayList<Object[]>();	            
+   
+        	List<WebElement> findElements;
+        	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
+        		   
+	            for (WebElement webElement : findElements)
+	            	
+	            {	
+	            	String contents = webElement.getAttribute("href");
+	                dataToBeReturned.add(new Object[] { contents } );
+	                
 	            }
-	            
-	        } catch (Exception e) {
-	        	Log.info(e.getMessage());
-	        }
-	        return lines;
+	                            
+    	        if (dataToBeReturned.isEmpty()) {
+    	        	System.out.println("No contents in the Category!!");
+    	        	Log.info("No contents in the Category!!");
+    	        	Reporter.log("No contents in the Category!!");
+    	        }
+                
+    	        else if (!dataToBeReturned.isEmpty()) {
+    	        		        		                
+                	for(Object[] contentlist : dataToBeReturned) {	                
+                		StringBuffer contentlistbuffer = new StringBuffer();
+                		
+                    for(int i = 0; i < contentlist.length; i++) {
+                    	contentlistbuffer.append(contentlist[i]);
+
+                    System.out.println(contentlistbuffer.toString());
+                    Log.info(contentlistbuffer.toString());
+                    
+                    }
+                }	                
+	        }	return dataToBeReturned.iterator();
 	    }
+
 	   
    
 	public static List<Throwable> getVerificationFailures() {

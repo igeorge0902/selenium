@@ -11,7 +11,7 @@ public class TestDataSample {
      
     //Declare the dataprovider class and the dataprovider we want to use. This way of keeping separate class
     //to keep all your dataproviders make it easy to manate them when the test system gets complicated over time.
-    @Test(dataProviderClass=SampleDataProvider.class,dataProvider="groupDataProvider")
+    @Test(dataProviderClass=SampleDataProvider.class,dataProvider="fileDataProvider")
     public void testDataProvider(String line) {
         //This should print each of the file content one after the other
         //testng calls this method for each line.

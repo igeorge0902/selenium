@@ -83,12 +83,16 @@
   <profiles>
     <profile>
       <id>release-profile</id>
-
+      		<properties>
+				<testng.xml.file>testng.xml</testng.xml.file>
+			</properties>
       <activation>
         <property>
           <name>performRelease</name>
         </property>
       </activation>
+     </profile>
+  </profiles>
              
      <build>
 		<plugins>
@@ -167,8 +171,6 @@
         
 		</plugins>
 	</build>
-   </profile>
-  </profiles>
 	
 </project>
 

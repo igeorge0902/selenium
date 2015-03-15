@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test on Chrome"
-           tests="3"
-           failures="1"
+           tests="1"
+           failures="0"
            errors="0"
-           skipped="2"
-           time="0,003">
+           skipped="0"
+           time="73,141">
   <properties />
-            <testcase name="setUp" time="0,000" classname="test.java.TestHboSignIn">
-                <failure type="java.lang.IllegalMonitorStateException"
-                  message="(null)"
-              >
-<![CDATA[java.lang.IllegalMonitorStateException
-  java.lang.Object.wait(Native Method)
-  java.lang.Object.wait(Object.java:502)
-  main.WebDriverManager.startDriver(WebDriverManager.java:190)
-  test.java.TestHboSignIn.setUp(TestHboSignIn.java:48)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
-  
-            <testcase name="closeBrowser" time="0.0" classname="test.java.TestHboSignIn">
-          <skipped />
-    </testcase>
-            <testcase name="testPlayerSuccess" time="0.0" classname="test.java.TestHboSignIn">
-          <skipped />
-    </testcase>
   
   
+            <testcase name="testListActionGroupContents" time="73,141" classname="test.java.TestHboSignIn" />
+      
 </testsuite>

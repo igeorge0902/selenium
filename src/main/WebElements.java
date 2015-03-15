@@ -35,7 +35,7 @@ public interface WebElements {
     
     //******Movie Categories
     //Action Category
-    public static String [] actionGroup = new String [] {"GoogleHelper.track('CLICKSTAT','MENU_CATEGORIES','Akció, Kaland');"};
+    public static String [] actionGroup = new String [] {"GoogleHelper.track('CLICKSTAT','MENU_CATEGORIES','Akciï¿½, Kaland');"};
 
     
     //WebPage String elements
@@ -56,7 +56,7 @@ public interface WebElements {
     //WebPage elements
     public WebElement playPuttony = WebDriverManager.driver.findElement(By.id(PlayButton1));
 	public static String [] contentname = new String[]{"content/"};
-	public static String [] hashmarks = new String [] {"#"};
+	public static String hashmarks = "http://player.mediaux.biz/#";
 
     
     //Player elements
