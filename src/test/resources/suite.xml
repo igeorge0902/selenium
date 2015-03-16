@@ -1,22 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Demo Run" verbose="10">
- <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-   </listeners>
-  <sysproperty key="org.uncommons.reportng.escape-output" value="false" />    
-  <parameter name="browser" value="Firefox" />
-  <parameter name="filenamePath" value="/Users/georgegaspar/Documents/Breakpoints.xml" />
-  <test name="TestTest" preserve-order="true">
-    <classes>
-      <class name="test.java.TestHboSignUp" />
-      <class name="test.java.TestHboSignIn" />
-      <class name="test.java.TestSearchEngines"> 
-            <methods>
-        		<exclude name="Yahoo" />
-        		<exclude name="Google" />
-      		</methods>
-      	</class>   
-      	<class name="utils.WebTestFactory" />
-     </classes>
-  </test>
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<parameter name="filenamePath"
+		value="/Users/georgegaspar/Documents/Breakpoints.xml" />
+	<parameter name="browser" value="INTERNET_EXPLORER" />
+	<parameter name="url" value="http://www.google.com" />
+	<test name="Test Groups">
+		<parameter name="browser" value="*safari" />
+		<parameter name="url" value="http://www.google.com" />
+		<groups>
+			<run>
+				<exclude name="functest" />
+				<exclude name="checkintest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="utils.GroupTestExample" />
+		</classes>
+	</test>
+	<test name="Test on Safari" preserve-order="true">
+		<parameter name="browser" value="*safari" />
+		<parameter name="url" value="http://www.google.com" />
+		<classes>
+			<class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+				</methods>
+			</class>
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="utils.WebTestFactory" />
+		</classes>
+	</test>
+	<test name="Test on Firefox" preserve-order="true">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="url" value="http://www.google.com" />
+		<classes>
+			<class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+				</methods>
+			</class>
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="utils.WebTestFactory" />
+		</classes>
+	</test>
+	<test name="Test on Internet Explorer" preserve-order="true">
+		<parameter name="browser" value="INTERNET_EXPLORER" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+		<classes>
+			<class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+				</methods>
+			</class>
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testListActionGroupContents" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="utils.WebTestFactory" />
+		</classes>
+	</test>
+	<test name="Test on Chrome" preserve-order="true">
+		<parameter name="browser" value="CHROME" />
+		<parameter name="url" value="http://www.google.com" />
+		<classes>
+			<class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+				</methods>
+			</class>
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<include name="testListActionGroupContents" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="utils.WebTestFactory" />
+		</classes>
+	</test>
 </suite>

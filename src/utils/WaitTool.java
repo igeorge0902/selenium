@@ -197,6 +197,7 @@ public class WaitTool extends TestBase {
 	  * 
 	  * @return boolean 
 	  */
+	 
 	public static boolean waitForTextPresent(WebDriver driver, final By by, final String text, int timeOutInSeconds) {
 		boolean isPresent = false; 
 		try{	
@@ -270,6 +271,7 @@ public class WaitTool extends TestBase {
 	 * 
 	 * @return boolean true or false(condition fail, or if the timeout is reached)
 	 **/
+	
 	public static boolean waitForJavaScriptCondition(WebDriver driver, final String javaScript, 
             								   int timeOutInSeconds) {
 		boolean jscondition = false; 
@@ -365,12 +367,13 @@ public class WaitTool extends TestBase {
 	   * @param by - selector to find the element that should contain text
 	   * @param text - The Text element you are looking for
 	   * @return true or false
+	   * @exception Exception e - addVerificationFailure(e);
 	   */
 	private static boolean isTextPresent(WebDriver driver, By by, String text)
 	{
 		try {
 				return driver.findElement(by).getText().contains(text);
-		} catch (NullPointerException e) {
+		} catch (Exception e) {
 				addVerificationFailure(e);
 				Log.info(e.getMessage());
 				return false;
@@ -385,6 +388,8 @@ public class WaitTool extends TestBase {
 	   * @param by - selector to find the element that should contain text
 	   * @param regex - The Text element found with regex expression you are looking for
 	   * @return true or false
+	   * @exception Exception e - addVerificationFailure(e);
+
 	   */
 	private static boolean isTextPresentRegex(WebDriver driver, By by, String regex)
 	{
@@ -423,6 +428,7 @@ public class WaitTool extends TestBase {
 	 * @param driver - The driver object to use to perform this element search
 	 * @param by - selector to find the element
 	 * @return boolean
+	 * @exception Exception e - addVerificationFailure(e);
 	 */
 	private static boolean areElementsPresent(WebDriver driver, By by) {
 		try {
@@ -441,6 +447,7 @@ public class WaitTool extends TestBase {
 	 * @param driver - The driver object to use to perform this element search
 	 * @param by - selector to find the element
 	 * @return boolean
+	 * @exception Exception e - addVerificationFailure(e);
 	 */
 	private static boolean isElementPresentAndDisplay(WebDriver driver, By by) {
 		try {			

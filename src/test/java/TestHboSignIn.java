@@ -82,7 +82,7 @@ public class TestHboSignIn extends TestBase{
   
   }
   	
-    @Test //(dataProviderClass=utils.SampleDataProvider.class,dataProvider="groupDataProvider")
+    @Test //(dataProviderClass=utils.SampleDataProvider.class,dataProvider="contenturls")
     public void testListActionGroupContents() throws Exception{
     	SelectMovieGroups ActionGroup = new SelectMovieGroups(driver);
     	

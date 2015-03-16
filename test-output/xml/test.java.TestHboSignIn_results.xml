@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="73,141">
+           time="80,987">
   <properties />
   
   
-            <testcase name="testListActionGroupContents" time="73,141" classname="test.java.TestHboSignIn" />
+            <testcase name="testListActionGroupContents" time="80,987" classname="test.java.TestHboSignIn" />
       
 </testsuite>

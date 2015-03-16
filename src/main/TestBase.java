@@ -18,19 +18,20 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import testng.ExpectedExceptions;
 import testng.Verify;
 import utils.WaitTool;
 
 
 public class TestBase extends Verify implements WebElements{
 	
-	public static String silverLightPlayerObjectId = "silverlightPlayer";
-	public static Logger Log = Logger.getLogger(Logger.class.getName());
-	 	
-	protected static WebDriver driver = null;
+	public static Logger Log = Logger.getLogger(Logger.class.getName());	 	
 	protected static WebElement element = null;
     
+	/**
+	 *  The constructor driver for all classes, that extend TestBase. The driver is returned in {@link WebDriverManager.class}, 
+	 *  where it will be instantiated with {@value browser} and {@value url} params.
+	 */
+	protected static WebDriver driver = null;
 	public TestBase(WebDriver driver) {
 		  TestBase.driver = WebDriverManager.driver; 
 	  }
@@ -48,6 +49,8 @@ public class TestBase extends Verify implements WebElements{
 
 	
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
+	
+	//private static Map<String, List<WebElement>> contentsMap = new HashMap<String, List<WebElement>>();
 
 
 	public static void currentPlatform() {
@@ -70,7 +73,8 @@ public class TestBase extends Verify implements WebElements{
 	/**
 	* Confirm alert, prompt, or confirmation dialog that is present on the page.
 	* Does nothing if confirmation not present on page and returns empty string.
-	 * @return 
+	* 
+	* @return alertText
 	*/
 	
 	public String getAlertConfirmation() throws InterruptedException{		
@@ -209,8 +213,14 @@ public class TestBase extends Verify implements WebElements{
 		Reporter.log(message);
     }
     
+	  /**
+		* Checks if the elment is in the DOM. 
+		* 
+		* @param by - selector to find the element
+		* @return true or false
+		*/
     
-    protected boolean isElementPresent(By by)  {
+    public static boolean isElementPresent(By by)  {
        try {
         	 driver.findElement(by);
         	 Log.info((by));
@@ -225,6 +235,12 @@ public class TestBase extends Verify implements WebElements{
         }
       
 
+	  /**
+		* Checks if the elment is in the DOM and displayed. 
+		* 
+		* @param by - selector to find the element
+		* @return true or false
+		*/
     
 	public boolean isElementPresentAndDisplay(By by) {
 		try {
@@ -241,7 +257,7 @@ public class TestBase extends Verify implements WebElements{
 	
 	/**
 	 * Check if the element is displayed.  
-	 * It will wait for the element to be present on the DOM, and displayed. 
+	 * It will wait for 3 seconds for the element to be present on the DOM, and displayed. 
 	 * 
 	 * @param by
 	 * @return if element != null it returns true otherwise false.
@@ -260,6 +276,13 @@ public class TestBase extends Verify implements WebElements{
 		return false; 
 	}
 	
+	  /** 
+	   * Check if the Element present in the DOM. 
+	   * 
+	   * @param _cssSelector 		element locater
+	   * @return					WebElement
+	   */
+	
 	  public boolean isElementPresent(String _cssSelector){
 		try {
 			  driver.findElement(By.cssSelector(_cssSelector));
@@ -274,6 +297,11 @@ public class TestBase extends Verify implements WebElements{
 	    }
 	}
 
+	 /**
+	 * Verify if the text is displayed in the page source. 
+	 * 
+	 * @throws Exceptions 
+	 */
 
 	public static boolean isTextPresent(String text){ 
 		try {
@@ -290,8 +318,8 @@ public class TestBase extends Verify implements WebElements{
 	
 	
 	/**
-	 * Verify the error message is displayed. 
-	 * @throws ExpectedExceptions 
+	 * Verify if the error message is displayed. 
+	 * @throws Exceptions 
 	 */
 	public boolean verifyErrorMessageRequired_displayed() throws Exception {  		
         	return isElementDisplayed(By.name("EmailAddressAgain"));       
@@ -300,15 +328,15 @@ public class TestBase extends Verify implements WebElements{
 
 	/**
 	 * Verify the error message of "I accept Terms of Service" is displayed.
-	 * @throws ExpectedExceptions 
+	 * @throws Exceptions 
 	 */
 	public static boolean isErrorMessageRequired_Check_TOS_displayed() throws Exception { 
         	return isElementDisplayed(By.id("Terms"));           
     	} 
 	
 	/**
-	 * Verify the new device dialog is not displayed.
-	 * @throws ExpectedExceptions 
+	 * Verify if the new device dialog is displayed.
+	 * @throws Exceptions 
 	 */
 	public static boolean isNewDeviceDialog() throws Exception { 
         	return isElementDisplayed(By.id("newDeviceInput"));           
@@ -330,7 +358,7 @@ public class TestBase extends Verify implements WebElements{
 	 * By (by) = element mouse over method. Uses actions class which is object of the driver.
 	 * 
 	 * @param by
-	 * @return
+	 * @return Returns true if the action was successful.
 	 * @throws Exception 
 	 */
 	
@@ -448,28 +476,25 @@ public class TestBase extends Verify implements WebElements{
 		
 	}
 	
+	/**
+	 * 
+	 * Use this method to pause / play the content in the player. 
+	 * 
+	 */
+	
 	public static void playPause(){
     	JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-    	List<WebElement> playpause;
-        playpause = driver.findElement(By.id("playbackControls")).findElements(By.id("playPause")); 
+    	WebElement playpause;
+        playpause = driver.findElement(By.id("playbackControls")).findElement(By.id("playPause")); 
                 
-        for(int i =0; i<playpause.size();i++)    
-        {
-            String onClick = playpause.get(i).getAttribute("onclick");
+            String onClick = playpause.getAttribute("onclick");
             
-            for(int j=0; j<playPause.length;j++)
-            {
-                if(onClick.contains(playPause[j]))
+                if(onClick.equals(playPause))
                 {
                     js.executeScript(onClick);
-                
                 }
-            }
-            
-        }
-		
-	}
+          }
 	
 	
 	/**
@@ -512,13 +537,19 @@ public class TestBase extends Verify implements WebElements{
 	         element.click();
 	         } 
 	      }
+	   	
+	    /**
+	    * 
+	    * <Object[]> iterator to retrieve elements by "href" from a page.
+	    * 
+	    */
 	   
-	    
 	    public static Iterator<Object[]> contents() {
 	    	
-	        
-        	List<Object[]> dataToBeReturned = new ArrayList<Object[]>();	            
-   
+      	  	//Set<Object[]> dataSetToBeReturned=new HashSet<Object[]>();
+        	List<Object[]> dataToBeReturned = new ArrayList<Object[]>(/*dataSetToBeReturned*/);	
+            //List<String> lines = new ArrayList<String> ();
+            
         	List<WebElement> findElements;
         	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
         		   
@@ -526,7 +557,10 @@ public class TestBase extends Verify implements WebElements{
 	            	
 	            {	
 	            	String contents = webElement.getAttribute("href");
-	                dataToBeReturned.add(new Object[] { contents } );
+	                
+	            	//dataToBeReturned.add(new Object[] { contents } );
+	                //TODO: collect only content urls
+	                dataToBeReturned.add(new Object [] {contents});
 	                
 	            }
 	                            
@@ -535,7 +569,7 @@ public class TestBase extends Verify implements WebElements{
     	        	Log.info("No contents in the Category!!");
     	        	Reporter.log("No contents in the Category!!");
     	        }
-                
+    	        
     	        else if (!dataToBeReturned.isEmpty()) {
     	        		        		                
                 	for(Object[] contentlist : dataToBeReturned) {	                
@@ -546,18 +580,29 @@ public class TestBase extends Verify implements WebElements{
 
                     System.out.println(contentlistbuffer.toString());
                     Log.info(contentlistbuffer.toString());
-                    
-                    }
-                }	                
-	        }	return dataToBeReturned.iterator();
+                                    
+                  }	                	                
+               }
+    	    }
+				return dataToBeReturned.iterator();
 	    }
-
-	   
-   
+	 
+	 /**
+	 * Retrieves verficationFailures' to from List<Throwable>, 
+	 * that will be appended to the ITestReport by {@link TestMethodListener.class}.
+	 * 
+	 */    
+	    
 	public static List<Throwable> getVerificationFailures() {
 		List<Throwable> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());
 		return verificationFailures == null ? new ArrayList<Throwable>() : verificationFailures;
 	}
+	
+	 /**
+	 * Adds verficationFailures' to the List<Throwable>, 
+	 * that will be appended to the ITestReport by {@link TestMethodListener.class}.
+	 * @param e
+	 */
 	
 	public static void addVerificationFailure(Throwable e) {
 		List<Throwable> verificationFailures = getVerificationFailures();

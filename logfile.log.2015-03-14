@@ -1,0 +1,1145 @@
+[14/03/15 07:51:06:006 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 07:51:06:006 CET]  INFO log4j.Logger: MAC
+[14/03/15 07:51:06:006 CET]  INFO log4j.Logger: CHROME
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: java.lang.IllegalStateException: The driver executable does not exist: /Users/georgegaspar/Tests/chromedriver.exe
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: Safari is reconnecting!
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: MAC
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: CHROME
+[14/03/15 07:51:07:007 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 07:51:08:008 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 07:51:08:008 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 07:51:08:008 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 08:07:17:017 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:07:17:017 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:07:17:017 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: java.lang.IllegalStateException: The driver executable does not exist: /Users/georgegaspar/Tests/chromedriver.exe
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: Safari is reconnecting!
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 08:07:18:018 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 08:10:12:012 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:10:12:012 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:10:12:012 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:16:00:000 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:16:00:000 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:16:00:000 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:16:16:016 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:16:37:037 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:16:46:046 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:16:46:046 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:17:06:006 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:17:08:008 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:17:08:008 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (39d98d63fe93f80e5bc083cc0177a9fb)] -> id: headerButtonMenu]
+[14/03/15 08:17:09:009 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:17:10:010 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:17:10:010 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:17:12:012 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:17:13:013 CET]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/Tests/testListActionGroupContents(test.java.TestHboSignIn)
+[14/03/15 08:17:13:013 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 08:17:13:013 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 08:17:15:015 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 08:18:44:044 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:18:44:044 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:18:44:044 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:18:44:044 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:18:48:048 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:18:54:054 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:18:54:054 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:19:44:044 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:19:45:045 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:19:46:046 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (15e760cc1b7085a36d715bfdfd0ef395)] -> id: headerButtonMenu]
+[14/03/15 08:19:47:047 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:19:48:048 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:19:48:048 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:19:50:050 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:19:50:050 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (15e760cc1b7085a36d715bfdfd0ef395)] -> link text: Akció, Kaland]
+[14/03/15 08:19:53:053 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:19:54:054 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:19:55:055 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:19:55:055 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:19:55:055 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:19:56:056 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:57:057 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:19:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:19:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:19:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:19:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nobels-last-will--348152981
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-call--240100033
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ghost-ship-923642401
+[14/03/15 08:20:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/breakout-932663456
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-touch-of-cloth-3--348768496
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-body-624523194
+[14/03/15 08:20:02:002 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:03:003 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/quest-for-fire-755738151
+[14/03/15 08:20:03:003 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:03:003 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dom-hemingway--565016365
+[14/03/15 08:20:03:003 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:03:003 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/machete-kills-664410900
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pavement-29614195
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/certain-prey--870757122
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nightfall--270624017
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fun-size--967633542
+[14/03/15 08:20:04:004 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fort-apache-the-bronx-1547897695
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/lansky--559700339
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/jack-reacher-1982723953
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/consequence-1427787680
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/birth--679125951
+[14/03/15 08:20:05:005 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blind-justice-102598186
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/inumber-number-1939435033
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-disappearance-of-nora-1388603401
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-mule--62575333
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:06:006 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fear-is-the-key-321768823
+[14/03/15 08:20:07:007 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:07:007 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/back-in-crime--693361445
+[14/03/15 08:20:07:007 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/citizen-x-1680287433
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bring-me-the-head-of-the-machine-gun-woman--670999514
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ambushed--325237081
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/paranormal-activity-the-marked-ones--2043968680
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-last-chase--157737072
+[14/03/15 08:20:08:008 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/thesis-on-a-homicide--1508068004
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/witness-protection-1825661633
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/code-name-wolverine--1254955401
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/daybreak-821907241
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:09:009 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/tommy-667587356
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dirty-deeds-590650828
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bullets-&-cookies--164255026
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nuns-on-the-run-1941907067
+[14/03/15 08:20:10:010 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:11:011 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/cast-a-deadly-spell-995061711
+[14/03/15 08:20:11:011 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:11:011 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nine-miles-down--1370816405
+[14/03/15 08:20:11:011 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:11:011 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/mistrial-211452130
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dear-detective--1569017306
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/witch-hunt--1133989306
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-appearing--2054559792
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-promise-to-carolyn-1649321033
+[14/03/15 08:20:12:012 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/3-days-to-kill--224176479
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/american-hustle-1858400640
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bank-shot--1264023319
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/black-cat-run-1086335045
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/captain-america-the-winter-soldier-1510029941
+[14/03/15 08:20:13:013 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/city-on-fire-1091962552
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/falcone--1258205987
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dead-silence-381464446
+[14/03/15 08:20:14:014 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:15:015 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/flypaper--134884663
+[14/03/15 08:20:15:015 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/good-guys-wear-black--133253602
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-dominici-affair-459975001
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-french-detective-1644972032
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-grilling-813423799
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/picassos-gang-137237270
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/plan-c-1857251570
+[14/03/15 08:20:16:016 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/prosecuting-casey-anthony--974429116
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/simon-killer-319235192
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/such-a-gorgeous-kid-like-me-1050975602
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/suspect-zero--74243756
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:17:017 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-adventures-of-huck-finn-1369021145
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/mona-lisa-1112494666
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/my-brother-the-devil--1074756966
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/no-one-lives-517661310
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/one-hundred-days-in-palermo-1030807501
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:18:018 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/klondike-fever--589911039
+[14/03/15 08:20:19:019 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:19:019 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/love-child-1191260839
+[14/03/15 08:20:19:019 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/martins-day--1545328587
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/masks--628424022
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/trance--178522339
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/unman-wittering-and-zigo--1375609806
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:20:020 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/wasteland--1632075031
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-long-good-friday--496620277
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-laramie-project-388654165
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-prince-1477784608
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-snowtown-murders--150014591
+[14/03/15 08:20:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-wind-in-the-willows--943263351
+[14/03/15 08:20:23:023 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:20:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nobels-last-will--348152981
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-call--240100033
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ghost-ship-923642401
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/breakout-932663456
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-touch-of-cloth-3--348768496
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-body-624523194
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/quest-for-fire-755738151
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dom-hemingway--565016365
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/machete-kills-664410900
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pavement-29614195
+[14/03/15 08:20:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/certain-prey--870757122
+[14/03/15 08:20:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nightfall--270624017
+[14/03/15 08:20:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fun-size--967633542
+[14/03/15 08:20:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fort-apache-the-bronx-1547897695
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/lansky--559700339
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/jack-reacher-1982723953
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/consequence-1427787680
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/birth--679125951
+[14/03/15 08:20:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blind-justice-102598186
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/inumber-number-1939435033
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-disappearance-of-nora-1388603401
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-mule--62575333
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fear-is-the-key-321768823
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/back-in-crime--693361445
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/citizen-x-1680287433
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bring-me-the-head-of-the-machine-gun-woman--670999514
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ambushed--325237081
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/paranormal-activity-the-marked-ones--2043968680
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-last-chase--157737072
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/thesis-on-a-homicide--1508068004
+[14/03/15 08:20:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:36:036 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/witness-protection-1825661633
+[14/03/15 08:20:36:036 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:36:036 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/code-name-wolverine--1254955401
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/daybreak-821907241
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/tommy-667587356
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dirty-deeds-590650828
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bullets-&-cookies--164255026
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nuns-on-the-run-1941907067
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/cast-a-deadly-spell-995061711
+[14/03/15 08:20:37:037 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nine-miles-down--1370816405
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/mistrial-211452130
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dear-detective--1569017306
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/witch-hunt--1133989306
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-appearing--2054559792
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-promise-to-carolyn-1649321033
+[14/03/15 08:20:38:038 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/3-days-to-kill--224176479
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/american-hustle-1858400640
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bank-shot--1264023319
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/black-cat-run-1086335045
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/captain-america-the-winter-soldier-1510029941
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/city-on-fire-1091962552
+[14/03/15 08:20:39:039 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/falcone--1258205987
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dead-silence-381464446
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/flypaper--134884663
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/good-guys-wear-black--133253602
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-dominici-affair-459975001
+[14/03/15 08:20:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-french-detective-1644972032
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-grilling-813423799
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/picassos-gang-137237270
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/plan-c-1857251570
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/prosecuting-casey-anthony--974429116
+[14/03/15 08:20:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/simon-killer-319235192
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/such-a-gorgeous-kid-like-me-1050975602
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/suspect-zero--74243756
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-adventures-of-huck-finn-1369021145
+[14/03/15 08:20:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/mona-lisa-1112494666
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/my-brother-the-devil--1074756966
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/no-one-lives-517661310
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/one-hundred-days-in-palermo-1030807501
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/klondike-fever--589911039
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/love-child-1191260839
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/martins-day--1545328587
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/masks--628424022
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/trance--178522339
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/unman-wittering-and-zigo--1375609806
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/wasteland--1632075031
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-long-good-friday--496620277
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-laramie-project-388654165
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-prince-1477784608
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-snowtown-murders--150014591
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:20:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-wind-in-the-willows--943263351
+[14/03/15 08:20:49:049 CET]  INFO log4j.Logger: testListActionGroupContents test is done
+[14/03/15 08:20:49:049 CET]  INFO log4j.Logger: Test Status:Pass
+[14/03/15 08:20:49:049 CET]  INFO log4j.Logger: testListActionGroupContents test succeeded!
+[14/03/15 08:20:50:050 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 08:23:49:049 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:23:49:049 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:23:49:049 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:23:49:049 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:23:53:053 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:24:01:001 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:24:01:001 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:24:16:016 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:24:17:017 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:24:19:019 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (ea35d9378edc5c9841de87a47f422457)] -> id: headerButtonMenu]
+[14/03/15 08:24:20:020 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:24:21:021 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:24:21:021 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:24:52:052 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 08:24:52:052 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 08:24:54:054 CET]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/Tests/testListActionGroupContents(test.java.TestHboSignIn)
+[14/03/15 08:24:54:054 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 08:25:14:014 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:25:14:014 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:25:14:014 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:25:14:014 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:25:19:019 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:25:26:026 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:25:26:026 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:25:47:047 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:25:49:049 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:25:49:049 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (0c5ec52420c81270a6edd821fc4b46d9)] -> id: headerButtonMenu]
+[14/03/15 08:25:52:052 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:25:53:053 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:25:53:053 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:26:17:017 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:26:18:018 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (0c5ec52420c81270a6edd821fc4b46d9)] -> link text: Akció, Kaland]
+[14/03/15 08:26:21:021 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:26:23:023 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:26:24:024 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:26:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:26:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:26:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:26:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:26:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:26:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nobels-last-will--348152981
+[14/03/15 08:26:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:26:31:031 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-call--240100033
+[14/03/15 08:31:05:005 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:31:05:005 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:31:05:005 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:31:05:005 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:31:08:008 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:31:12:012 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:31:12:012 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:31:20:020 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:31:22:022 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:31:23:023 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (aaea7526dea028f1324075b2428a27b5)] -> id: headerButtonMenu]
+[14/03/15 08:31:24:024 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:31:25:025 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:31:26:026 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:31:27:027 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:31:27:027 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (aaea7526dea028f1324075b2428a27b5)] -> link text: Akció, Kaland]
+[14/03/15 08:31:30:030 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:31:31:031 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:32:032 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:33:033 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:31:34:034 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:31:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:31:35:035 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:32:38:038 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:32:38:038 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:32:38:038 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:32:38:038 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:32:41:041 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:32:46:046 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:32:46:046 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:32:53:053 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:32:55:055 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:32:55:055 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (88344ace7773765875c20c6c79051908)] -> id: headerButtonMenu]
+[14/03/15 08:32:56:056 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:32:57:057 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:32:57:057 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:32:59:059 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:32:59:059 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (88344ace7773765875c20c6c79051908)] -> link text: Akció, Kaland]
+[14/03/15 08:33:01:001 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:33:02:002 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:33:03:003 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:33:07:007 CET]  INFO log4j.Logger: testListActionGroupContents test is done
+[14/03/15 08:33:07:007 CET]  INFO log4j.Logger: Test Status:Pass
+[14/03/15 08:33:07:007 CET]  INFO log4j.Logger: testListActionGroupContents test succeeded!
+[14/03/15 08:33:07:007 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 08:34:58:058 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:34:58:058 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:34:58:058 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:34:58:058 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:35:01:001 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:35:06:006 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:35:06:006 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:35:13:013 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:35:14:014 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:35:15:015 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (97588ed765c8cd626efb53aad44d50f3)] -> id: headerButtonMenu]
+[14/03/15 08:35:16:016 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:35:17:017 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:35:17:017 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:35:18:018 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:35:18:018 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (97588ed765c8cd626efb53aad44d50f3)] -> link text: Akció, Kaland]
+[14/03/15 08:35:22:022 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:35:23:023 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:35:24:024 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:35:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:35:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:24:024 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:35:25:025 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:35:26:026 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nobels-last-will--348152981
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-call--240100033
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ghost-ship-923642401
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:27:027 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/breakout-932663456
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-touch-of-cloth-3--348768496
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-body-624523194
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/quest-for-fire-755738151
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dom-hemingway--565016365
+[14/03/15 08:35:28:028 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/machete-kills-664410900
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pavement-29614195
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/certain-prey--870757122
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nightfall--270624017
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fun-size--967633542
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fort-apache-the-bronx-1547897695
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/lansky--559700339
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/jack-reacher-1982723953
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:29:029 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/consequence-1427787680
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/birth--679125951
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blind-justice-102598186
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/inumber-number-1939435033
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-disappearance-of-nora-1388603401
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-mule--62575333
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fear-is-the-key-321768823
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/back-in-crime--693361445
+[14/03/15 08:35:30:030 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:44:49:049 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:44:49:049 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:44:49:049 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:44:49:049 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:44:53:053 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:44:57:057 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:44:57:057 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:45:05:005 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:45:07:007 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:45:07:007 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (8074663569568a460adab8507ae4a3a6)] -> id: headerButtonMenu]
+[14/03/15 08:45:08:008 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:45:09:009 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:45:09:009 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:45:15:015 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:45:15:015 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (8074663569568a460adab8507ae4a3a6)] -> link text: Akció, Kaland]
+[14/03/15 08:45:18:018 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:45:19:019 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:45:20:020 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:21:021 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:22:022 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:45:23:023 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:23:023 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:45:23:023 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:23:023 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:45:23:023 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:55:13:013 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 08:55:13:013 CET]  INFO log4j.Logger: MAC
+[14/03/15 08:55:13:013 CET]  INFO log4j.Logger: CHROME
+[14/03/15 08:55:20:020 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 08:55:24:024 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 08:55:28:028 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 08:55:28:028 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 08:55:37:037 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:55:38:038 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 08:55:39:039 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (d06e43a026e30cc6e5efa9abebdbd5b7)] -> id: headerButtonMenu]
+[14/03/15 08:55:40:040 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:55:41:041 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 08:55:41:041 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 08:55:42:042 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 08:55:43:043 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (d06e43a026e30cc6e5efa9abebdbd5b7)] -> link text: Akció, Kaland]
+[14/03/15 08:55:46:046 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:55:47:047 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 08:55:48:048 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 08:56:40:040 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 08:56:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 08:56:41:041 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:42:042 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nobels-last-will--348152981
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:43:043 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-call--240100033
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ghost-ship-923642401
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/breakout-932663456
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/a-touch-of-cloth-3--348768496
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-body-624523194
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/quest-for-fire-755738151
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dom-hemingway--565016365
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/machete-kills-664410900
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pavement-29614195
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:44:044 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/certain-prey--870757122
+[14/03/15 08:56:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nightfall--270624017
+[14/03/15 08:56:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fun-size--967633542
+[14/03/15 08:56:45:045 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fort-apache-the-bronx-1547897695
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/lansky--559700339
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/jack-reacher-1982723953
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/consequence-1427787680
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/birth--679125951
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blind-justice-102598186
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/inumber-number-1939435033
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-disappearance-of-nora-1388603401
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-mule--62575333
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/fear-is-the-key-321768823
+[14/03/15 08:56:46:046 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/back-in-crime--693361445
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/citizen-x-1680287433
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bring-me-the-head-of-the-machine-gun-woman--670999514
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/ambushed--325237081
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/paranormal-activity-the-marked-ones--2043968680
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-last-chase--157737072
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/thesis-on-a-homicide--1508068004
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/witness-protection-1825661633
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/code-name-wolverine--1254955401
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/daybreak-821907241
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/tommy-667587356
+[14/03/15 08:56:47:047 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/dirty-deeds-590650828
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/bullets-&-cookies--164255026
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/nuns-on-the-run-1941907067
+[14/03/15 08:56:48:048 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 09:24:05:005 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 09:24:05:005 CET]  INFO log4j.Logger: MAC
+[14/03/15 09:24:05:005 CET]  INFO log4j.Logger: CHROME
+[14/03/15 09:24:05:005 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 09:24:17:017 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 09:24:22:022 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 09:24:22:022 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 09:24:34:034 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 09:24:36:036 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 09:24:36:036 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (d4727316e13cdb88fd4841ed9d2d6a5a)] -> id: headerButtonMenu]
+[14/03/15 09:24:37:037 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 09:24:39:039 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 09:24:39:039 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 09:24:40:040 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 09:24:40:040 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (d4727316e13cdb88fd4841ed9d2d6a5a)] -> link text: Akció, Kaland]
+[14/03/15 09:24:43:043 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 09:24:44:044 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 09:24:45:045 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 09:25:17:017 CET]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/Tests/testListActionGroupContents(test.java.TestHboSignIn)
+[14/03/15 09:25:17:017 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 09:25:17:017 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 09:25:18:018 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 09:29:36:036 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 09:29:36:036 CET]  INFO log4j.Logger: MAC
+[14/03/15 09:29:36:036 CET]  INFO log4j.Logger: CHROME
+[14/03/15 09:29:36:036 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 09:29:40:040 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 09:29:44:044 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 09:29:44:044 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 09:29:52:052 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 09:29:54:054 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 09:29:54:054 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (14ac2fea073ccdca06369b401d26afba)] -> id: headerButtonMenu]
+[14/03/15 09:29:55:055 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 09:29:56:056 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 09:29:56:056 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 09:29:58:058 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 09:29:58:058 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (14ac2fea073ccdca06369b401d26afba)] -> link text: Akció, Kaland]
+[14/03/15 09:30:00:000 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 09:30:01:001 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 09:30:02:002 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 09:30:33:033 CET]  INFO log4j.Logger: Test Status:Failed
+[14/03/15 09:30:33:033 CET]  INFO log4j.Logger: testListActionGroupContents test failed!
+[14/03/15 09:30:33:033 CET]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/Tests/testListActionGroupContents(test.java.TestHboSignIn)
+[14/03/15 09:30:34:034 CET]  INFO log4j.Logger: Driver closed afterInvocation
+[14/03/15 11:34:00:000 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 11:34:00:000 CET]  INFO log4j.Logger: MAC
+[14/03/15 11:34:00:000 CET]  INFO log4j.Logger: CHROME
+[14/03/15 11:34:01:001 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 11:34:22:022 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 11:34:34:034 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 11:34:34:034 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 11:34:44:044 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 11:34:46:046 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 11:34:46:046 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (e4fd2fa9076c057bb5cd6cdf8a0755e8)] -> id: headerButtonMenu]
+[14/03/15 11:34:47:047 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 11:34:48:048 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 11:34:49:049 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 11:34:52:052 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 11:34:53:053 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (e4fd2fa9076c057bb5cd6cdf8a0755e8)] -> link text: Akció, Kaland]
+[14/03/15 11:34:55:055 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 11:34:57:057 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:58:058 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 11:34:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/turkish-for-beginners--479008108
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/zero-dark-thirty-1336271120
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-conjuring--2069571036
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blacks-game-1688495827
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/pacific-rim--2101818637
+[14/03/15 11:35:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:40:30:030 CET]  INFO log4j.Logger: New driver instantiated
+[14/03/15 11:40:30:030 CET]  INFO log4j.Logger: MAC
+[14/03/15 11:40:30:030 CET]  INFO log4j.Logger: CHROME
+[14/03/15 11:40:30:030 CET]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/03/15 11:40:33:033 CET]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/03/15 11:40:39:039 CET]  INFO log4j.Logger: Before setUp is SUCCESS!
+[14/03/15 11:40:39:039 CET]  INFO log4j.Logger: The execution of testListActionGroupContents starts now
+[14/03/15 11:40:49:049 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 11:40:50:050 CET]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[14/03/15 11:40:50:050 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (2032620e8f7bdd06eacc5390ab783446)] -> id: headerButtonMenu]
+[14/03/15 11:40:51:051 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 11:40:52:052 CET]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[14/03/15 11:40:52:052 CET]  INFO log4j.Logger: Script run: arguments[0].scrollIntoView(true);
+[14/03/15 11:40:54:054 CET]  INFO log4j.Logger: Element found:By.linkText: Akció, Kaland
+[14/03/15 11:40:54:054 CET]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on MAC (2032620e8f7bdd06eacc5390ab783446)] -> link text: Akció, Kaland]
+[14/03/15 11:40:57:057 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 11:40:58:058 CET]  INFO log4j.Logger: Element found:By.id: normalView
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: Element found:By.tagName: a
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/recently-added
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/last-chance
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:40:59:059 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/views
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/rating
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/dateadded
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/group/action,-adventure/all/az
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-hobbit-the-desolation-of-smaug-519206054
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/angelique-976043498
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/freezer--849036903
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/i-frankenstein-333190210
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:00:000 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/man-of-steel--1653884281
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/blood--581719937
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/g.i.-joe-retaliation-1340888150
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/the-love-punch-578317069
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/#
+[14/03/15 11:41:01:001 CET]  INFO log4j.Logger: http://player.mediaux.biz/content/deadfall-679955854

@@ -1,17 +1,13 @@
 package pageObjects;
 
 
-import java.util.List;
-
 import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
 import main.WebElements;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;

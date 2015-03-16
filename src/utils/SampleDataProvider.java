@@ -22,7 +22,6 @@ import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
 public class SampleDataProvider extends TestBase{
- 
 	
 	public SampleDataProvider(WebDriver driver){
 		super(driver); 
@@ -97,6 +96,7 @@ public class SampleDataProvider extends TestBase{
         }    
         return lines;
     }
+    
     
 }
 

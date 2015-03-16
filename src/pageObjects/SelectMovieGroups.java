@@ -5,6 +5,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -40,25 +41,34 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	
 	public SelectMovieGroups actionGroups() throws Exception {
 
-		Actions action = new Actions(driver);
+		Actions actions = new Actions(driver);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 			
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 			
-			WaitTool.waitForElement(driver, By.id("headerButtonMenu"), 5);
-			driver.findElement(By.id("headerButtonMenu")).click();
+			WaitTool.waitForElement(driver, By.id(HeaderButton), 5);
+			driver.findElement(By.id(HeaderButton)).click();
+
+			TestBase.isElementPresent(By.id(Movies));
+			WebElement element = driver.findElement(By.id(Movies));
 			
-			WaitTool.waitForElement(driver, By.id("categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1"), 5);			
-			WebElement element = driver.findElement(By.id("categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1"));
-				
+			WebElement category;
+			category = driver.findElement(By.linkText(actionCategory));
 			//scroll into view of the element
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			Thread.sleep(500); 			
+			js.executeScript("arguments[0].scrollIntoView(true);", category);
+			Thread.sleep(500);
+						
+	        js.executeScript("javascript:window.scrollBy(250,350)");
+	        
+	        actions.moveToElement(element);
+	        actions.perform();
 			
-			driver.findElement(By.linkText("Akció, Kaland")).click();
+			driver.findElement(By.linkText(actionCategory)).click();
 	        
 	        WaitTool.waitForElement(driver, By.id("normalView"), 10);
-	        	      	        
+	        
 	        TestBase.contents();
+	        
 	        
 	return new SelectMovieGroups(driver); 
 	}	

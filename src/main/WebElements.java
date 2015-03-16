@@ -1,5 +1,6 @@
 package main;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -31,15 +32,18 @@ public interface WebElements {
     	"PlayFreeInteractive"};
     
     //play states
-    public static String [] playPause = new String []{"PlayerManager.playPause()"};
+    public static String playPause = "PlayerManager.playPause()";
+    
     
     //******Movie Categories
     //Action Category
-    public static String [] actionGroup = new String [] {"GoogleHelper.track('CLICKSTAT','MENU_CATEGORIES','Akci�, Kaland');"};
+    public static String [] actionGroup = new String [] {"GoogleHelper.track('CLICKSTAT','MENU_CATEGORIES','Akció, Kaland');"};
+    public static String actionCategory = "Akció, Kaland";
 
     
     //WebPage String elements
     public static String SignInRegister_button = "headerButtonLogin";
+    public static String HeaderButton = "headerButtonMenu";
     public static String Register_button = "div.settings_description_white > #headerButtonLogin";
     public static String Operator_button = "OperatorId";
     public static String HBO_GO_Vip_Club_Hungary = "OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26";
@@ -47,15 +51,15 @@ public interface WebElements {
     public static String Next_Step = "button.button_submit.next";
     public static String EmailAddress = "EmailAddress";
     public static String Terms_of_use = "Terms_theme";
+    public static String Movies = "categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1";
+    public static String OffersScreen = "/group/offers";
     
     public static String ContentUrl1 = "/content/the-dog-and-the-cat-from-here-to-there--1689771606";
-    public static String OffersScreen = "/group/offers";
     public static String PlayButton1 = "play-button-07572899-1f5a-4f4e-9204-2fcc63a82775";
     
     
     //WebPage elements
     public WebElement playPuttony = WebDriverManager.driver.findElement(By.id(PlayButton1));
-	public static String [] contentname = new String[]{"content/"};
 	public static String hashmarks = "http://player.mediaux.biz/#";
 
     
@@ -75,6 +79,5 @@ public interface WebElements {
     public static String playbackElapsedTime = "playbackElapsedTime";
     public WebElement playbackElapsed_Time = WebDriverManager.driver.findElement(By.id(playbackElapsedTime));
     
-
 
 }
