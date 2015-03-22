@@ -54,7 +54,7 @@ public class TestPlayer extends TestBase{
 		WebDriverManager.stopDriver();
 	}
 	
-	
+  @Parameters ({"operator"})
   @Test (groups = { "signin" }, description= "HBO login" )
   public void testSignInSuccess(String operator) throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 

@@ -177,7 +177,8 @@ public class Verify {
 		try{
 			Assert.assertNotSame(actual,expected);
 		}catch(AssertionError e){
-			addToErrorBuffer(e);
+			//addToErrorBuffer(e);
+			TestBase.addVerificationFailure(e);
 		}
 	}
 	

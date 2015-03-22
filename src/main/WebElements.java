@@ -1,6 +1,7 @@
 package main;
 
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -54,12 +55,12 @@ public interface WebElements {
     public static String Movies = "categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1";
     public static String OffersScreen = "/group/offers";
     
-    public static String ContentUrl1 = "/content/the-dog-and-the-cat-from-here-to-there--1689771606";
-    public static String PlayButton1 = "play-button-07572899-1f5a-4f4e-9204-2fcc63a82775";
+    public static String ContentUrl1 = "/content/game-of-thrones-iv.-1-two-swords-255061514";
+    public static String PlayButton1 = "//img[starts-with(@id, 'play-button-')]";
     
     
     //WebPage elements
-    public WebElement playPuttony = WebDriverManager.driver.findElement(By.id(PlayButton1));
+    public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton1));
 	public static String hashmarks = "http://player.mediaux.biz/#";
 
     
@@ -78,6 +79,8 @@ public interface WebElements {
     
     public static String playbackElapsedTime = "playbackElapsedTime";
     public WebElement playbackElapsed_Time = WebDriverManager.driver.findElement(By.id(playbackElapsedTime));
+    
+    public static String player_mediaux_biz = "^http\\:\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+";
     
 
 }

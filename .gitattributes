@@ -39,6 +39,7 @@ src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
 src/test/java/TestPlayer.java -text svneol=unset#text/plain
 src/test/java/TestSearchEngines.java -text
+src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
 src/testng/CustomTestListener.java -text
@@ -54,10 +55,13 @@ src/testng/VerificationError.java -text svneol=unset#text/plain
 src/testng/Verify.java -text svneol=unset#text/plain
 src/utils/FileSeparator.java -text svneol=unset#text/plain
 src/utils/GroupTestExample.java -text svneol=unset#text/plain
+src/utils/LinkGetter.java -text
 src/utils/MessageUtil.java -text svneol=unset#text/plain
 src/utils/ObjectMessages.java -text
+src/utils/RegexTestPatternMatcher.java -text
 src/utils/SafariTest.java -text
 src/utils/SampleDataProvider.java -text
+src/utils/StringMatcher.java -text
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text

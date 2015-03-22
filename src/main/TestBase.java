@@ -1,5 +1,10 @@
 package main;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,11 +26,16 @@ import org.testng.Reporter;
 import testng.Verify;
 import utils.WaitTool;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class TestBase extends Verify implements WebElements{
 	
 	public static Logger Log = Logger.getLogger(Logger.class.getName());	 	
 	protected static WebElement element = null;
+	private static Pattern link;
+
     
 	/**
 	 *  The constructor driver for all classes, that extend TestBase. The driver is returned in {@link WebDriverManager.class}, 
@@ -37,10 +47,11 @@ public class TestBase extends Verify implements WebElements{
 	  }
 	  
 	public TestBase() {
-		  
+
 	  }
 	
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
+		  
 
 
 	/*
@@ -242,7 +253,7 @@ public class TestBase extends Verify implements WebElements{
 		* @return true or false
 		*/
     
-	public boolean isElementPresentAndDisplay(By by) {
+	public static boolean isElementPresentAndDisplay(By by) {
 		try {
 			  driver.findElement(by).isDisplayed();
 	          Log.info((by));
@@ -399,7 +410,7 @@ public class TestBase extends Verify implements WebElements{
 		
 		WebElement element = null; 
 		//wait for the Error Message Element to be present and display
-		element = WaitTool.waitForElementPresent(driver, by, 3);
+		element = WaitTool.waitForElementPresent(driver, by, 5);
  
             String javaScript = "var evObj = document.createEvent('MouseEvents');"+
                                 "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"+
@@ -413,6 +424,23 @@ public class TestBase extends Verify implements WebElements{
         	  Log.info(e);
           }
         }
+	
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 * @param driver
+	 * @param element
+	 * @return
+	 */
+	
+	public static String getText(WebDriver driver, WebElement element){
+		
+	    return (String) ((JavascriptExecutor) driver).executeScript(
+	    		
+	        "return jQuery(arguments[0]).text();", element);
+	}
 	
    	
     /**
@@ -475,6 +503,81 @@ public class TestBase extends Verify implements WebElements{
         }
 		
 	}
+	
+	/*
+	public static void startPlayBack () throws Exception {
+		
+		Actions action = new Actions(driver);
+		
+		String stringToSearch = "dd";
+		
+	    // the pattern we want to search for
+	    Pattern p = Pattern.compile("(^[a-z]{4}-[a-z]{6}-[a-z0-9\\.-]{36})");
+	    
+	    Matcher m = p.matcher(stringToSearch);
+	 
+	    // if we find a match, get the group
+	    if (m.find())
+	    {
+	      
+	      // we're only looking for one group, so get it
+	      String theGroup = m.group(1);
+	       
+	      // print the group out for verification
+	      System.out.format("%s\n", theGroup);
+	      
+	      Log.info(String.format("%s\n", theGroup));
+	     	    		
+		TestBase.MouseHoverByJavaScript(By.id(String.format("%s\n", theGroup)));	    	    
+	    }
+	    
+    	//start playback
+    	TestBase.playContents();
+    		    		
+    	//check title (it also will be logged by the method)
+    	WaitTool.waitForTextPresent(driver, By.id(playbackTitle), "playbacktitle_value", 20);	
+
+	    for (int second = 0;; second++) {
+	    	if (second >= 60) fail("timeout");
+	    	try { if (isElementPresentAndDisplay(By.id(play_pause))) break; } catch (Exception e) {
+	    		Log.info(e.getCause());
+	    	}
+	    }
+	    
+	    //mousehover the play/pause button
+    	TestBase.MouseHoverByJavaScript(By.id(play_pause));
+	    
+    	ElementScreenshot.captureElementScreenshot(playback_Info);
+    	
+    	//pause
+	    TestBase.playPause();
+    	
+	    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
+	    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
+	    action.dragAndDropBy(SeekDot, 0, 200).build().perform();
+	    
+	    //for cycle for elapsed time check
+	    for (int second = 0;; second++) {
+	    	if (second >= 60) Thread.sleep(1000);
+	    	
+	    	 if (isElementPresent(By.id(playbackElapsedTime))) {
+	    		
+			    String elapsedtime;
+			    elapsedtime = driver.findElement(By.id(playbackElapsedTime)).getText();
+			    System.out.println(elapsedtime);
+			    Reporter.log("Playback works fine");
+			    Log.info("Playback works fine");
+	    	} break; 
+	    }
+	    
+	    //TODO: do a quit playback
+	    
+	    //TODO: check if the page is the same where the playback started from
+	    
+	    //end
+		
+	}*/
+
 	
 	/**
 	 * 
@@ -539,16 +642,17 @@ public class TestBase extends Verify implements WebElements{
 	      }
 	   	
 	    /**
+	    * 					
 	    * 
 	    * <Object[]> iterator to retrieve elements by "href" from a page.
 	    * 
 	    */
 	   
-	    public static Iterator<Object[]> contents() {
+	    public static Iterator<String> contents(String url) {
 	    	
       	  	//Set<Object[]> dataSetToBeReturned=new HashSet<Object[]>();
         	List<Object[]> dataToBeReturned = new ArrayList<Object[]>(/*dataSetToBeReturned*/);	
-            //List<String> lines = new ArrayList<String> ();
+            List<String> links = new ArrayList<String> ();
             
         	List<WebElement> findElements;
         	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
@@ -558,7 +662,6 @@ public class TestBase extends Verify implements WebElements{
 	            {	
 	            	String contents = webElement.getAttribute("href");
 	                
-	            	//dataToBeReturned.add(new Object[] { contents } );
 	                //TODO: collect only content urls
 	                dataToBeReturned.add(new Object [] {contents});
 	                
@@ -572,7 +675,8 @@ public class TestBase extends Verify implements WebElements{
     	        
     	        else if (!dataToBeReturned.isEmpty()) {
     	        		        		                
-                	for(Object[] contentlist : dataToBeReturned) {	                
+                	for(Object[] contentlist : dataToBeReturned) {	 
+                		
                 		StringBuffer contentlistbuffer = new StringBuffer();
                 		
                     for(int i = 0; i < contentlist.length; i++) {
@@ -581,11 +685,139 @@ public class TestBase extends Verify implements WebElements{
                     System.out.println(contentlistbuffer.toString());
                     Log.info(contentlistbuffer.toString());
                                     
-                  }	                	                
+                  }
+                                      
+                    try {
+                    	
+            	    BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(new URL(url).openStream()));
+            	    
+            	      String s = contentlistbuffer.toString();
+            	      
+            	      StringBuilder builder = new StringBuilder();
+            	      
+            	      while ((s = bufferedreader.readLine()) != null) {
+            	        builder.append(s);
+            	      }
+            	                 	      
+            	      Matcher tagmatch = link.matcher(builder.toString());
+            	      
+            	      Log.info("Matches: "+link.matcher(builder.toString()));
+            	      	
+            	      while (tagmatch.find()) {
+            	          
+            	    	  Matcher matcher = link.matcher(tagmatch.group());
+            	          matcher.find();
+            	          
+            	          String link = matcher.group().toString();
+            	          
+            	          if (valid(link)) {
+            	            
+            	        	  links.add(makeAbsolute(url, link));
+            	          
+            	          }
+            	      
+            	      }
+            	      
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    
+                    } catch (IOException e) {
+                      e.printStackTrace();
+                    
+                    }
+                    
                }
     	    }
-				return dataToBeReturned.iterator();
+				return links.iterator();
 	    }
+    	
+	    
+	    /**
+	    * 					 
+	    * <String> iterator to retrieve elements by "href" from a page.
+	    * 
+	    */
+    
+	    public static Iterator<String> contents_() throws MalformedURLException, IOException {
+	    	
+        	List<String> dataToBeReturned = new ArrayList<String>(/*dataSetToBeReturned*/);	
+           // List<String> links = new ArrayList<String> ();
+            StringBuilder builder = new StringBuilder();
+
+        	List<WebElement> findElements;
+        	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
+        		   
+	            for (WebElement webElement : findElements)
+	            	
+	            {	
+	            	String contents = webElement.getAttribute("href");
+	                
+	                //TODO: collect only content urls
+	                dataToBeReturned.add(contents);
+	                builder.append(contents);
+	                
+	            }
+	                            
+    	        if (dataToBeReturned.isEmpty()) {
+    	        	System.out.println("No contents in the Category!!");
+    	        	Log.info("No contents in the Category!!");
+    	        	Reporter.log("No contents in the Category!!");
+    	        }
+    	        
+    	        else if (!dataToBeReturned.isEmpty()) {
+    	        		        		                
+                	for(String contentlist : dataToBeReturned) {	 
+
+                        Log.info(contentlist);
+                        
+                	}
+    	        }	return dataToBeReturned.iterator();
+	    }
+	
+	  /**
+	   * Url String validator. It returns false if regex matches "javascript:.*|mailto:.*".
+	   *   
+	   * @param s
+	   * @return
+	   */
+	    
+    private static boolean valid(String s) {
+        if (s.matches("javascript:.*|mailto:.*")) {
+          return false;
+        }
+        return true;
+      }
+    
+    /**
+     * 
+     * It makes absolute url from an url and link parameter.
+     * 
+     * @param url
+     * @param link
+     * @return
+     */
+    
+    
+    private static String makeAbsolute(String url, String link) {
+        if (link.matches("http://.*")) {
+          return link;
+        }
+        if (link.matches("/.*") && url.matches(".*$[^/]")) {
+          return url + "/" + link;
+        }
+        if (link.matches("[^/].*") && url.matches(".*[^/]")) {
+          return url + "/" + link;
+        }
+        if (link.matches("/.*") && url.matches(".*[/]")) {
+          return url + link;
+        }
+        if (link.matches("/.*") && url.matches(".*[^/]")) {
+          return url + link;
+        }
+        throw new RuntimeException("Cannot make the link absolute. Url: " + url
+            + " Link " + link);
+      }
+    	        
 	 
 	 /**
 	 * Retrieves verficationFailures' to from List<Throwable>, 
