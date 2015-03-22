@@ -4,6 +4,12 @@
 .settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 .settings/org.eclipse.jdt.core.prefs -text
 .settings/org.eclipse.m2e.core.prefs -text
+/eurotext.bmp -text
+/eurotext.pdf -text
+/eurotext.png -text
+/eurotext.tif -text
+/eurotext_deskew.png -text
+/eurotext_unlv.png -text
 /log4j.xml -text
 /logfile.log.2015-02-23 -text
 /logfile.log.2015-02-28 -text
@@ -16,6 +22,7 @@
 /logfile.log.2015-03-09 -text
 /logfile.log.2015-03-10 -text
 /logfile.log.2015-03-14 -text
+/logfile.log.2015-03-15 -text
 /pom[!!-~]copy.xml -text svneol=unset#text/plain
 /pom.xml -text
 src/main/AbstractWebDriverEventListener.java -text
@@ -62,9 +69,14 @@ src/utils/RegexTestPatternMatcher.java -text
 src/utils/SafariTest.java -text
 src/utils/SampleDataProvider.java -text
 src/utils/StringMatcher.java -text
+src/utils/TesseractExample.java -text svneol=unset#text/plain
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text
+tessdata/configs/api_config -text
+tessdata/configs/digits -text
+tessdata/configs/hocr -text
+tessdata/eng.traineddata -text
 test-output/Default[!!-~]suite/Default[!!-~]test.html -text svneol=unset#text/plain
 test-output/Default[!!-~]suite/Default[!!-~]test.xml -text svneol=unset#text/plain
 test-output/Default[!!-~]suite/testng-failed.xml -text svneol=unset#text/plain
@@ -121,4 +133,5 @@ test-output/xml/test.java.TestTest_results.xml -text
 test-output/xml/test.java.TestYahoo_results.xml -text
 test-output/xml/utils.GroupTestExample_results.xml -text svneol=unset#text/plain
 test-output/xml/utils.SafariTest_results.xml -text
+test-output/xml/utils.TestDataSample_results.xml -text svneol=unset#text/plain
 /testng.xml -text

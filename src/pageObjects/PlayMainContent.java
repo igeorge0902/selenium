@@ -40,14 +40,14 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementPresentAndDisplay(By.xpath(PlayButton1))) break; } catch (Exception e) {
+		    	try { if (isElementPresentAndDisplay(By.xpath(PlayButton))) break; } catch (Exception e) {
 		    		Log.info(e.getCause());
 		    	}
 		    }			
 
 		    TestBase.verifyNotNull(playPuttony);
 	    	 
-	    	TestBase.MouseHoverByJavaScript(By.xpath(PlayButton1));
+	    	TestBase.MouseHoverByJavaScript(By.xpath(PlayButton));
 
 	    	
 	    	//start playback
@@ -119,9 +119,11 @@ public class PlayMainContent extends TestBase implements WebElements{
 				    elapsedTime2 = driver.findElement(By.id(playbackElapsedTime));				    				    
 				    
 				    
-				    //prints out elapsed time
+				    //Thread goes to sleep for 5 seconds 
+				    //so that the second elapsed time check will be after the first one
 	        	    Thread.sleep(5000);
-	        	    
+				    
+	        	    //prints out elapsed time
 				    String text2 = TestBase.getText(driver, elapsedTime);
 				    System.out.println("Elapsed time second: "+text2);
 

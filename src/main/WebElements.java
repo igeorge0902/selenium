@@ -56,11 +56,11 @@ public interface WebElements {
     public static String OffersScreen = "/group/offers";
     
     public static String ContentUrl1 = "/content/game-of-thrones-iv.-1-two-swords-255061514";
-    public static String PlayButton1 = "//img[starts-with(@id, 'play-button-')]";
+    public static String PlayButton = "//img[starts-with(@id, 'play-button-')]";
     
     
     //WebPage elements
-    public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton1));
+    public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton));
 	public static String hashmarks = "http://player.mediaux.biz/#";
 
     

@@ -1,11 +1,9 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -34,7 +32,6 @@ public class TestBase extends Verify implements WebElements{
 	
 	public static Logger Log = Logger.getLogger(Logger.class.getName());	 	
 	protected static WebElement element = null;
-	private static Pattern link;
 
     
 	/**
@@ -648,11 +645,9 @@ public class TestBase extends Verify implements WebElements{
 	    * 
 	    */
 	   
-	    public static Iterator<String> contents(String url) {
+	    public static Iterator<Object []> contents() {
 	    	
-      	  	//Set<Object[]> dataSetToBeReturned=new HashSet<Object[]>();
-        	List<Object[]> dataToBeReturned = new ArrayList<Object[]>(/*dataSetToBeReturned*/);	
-            List<String> links = new ArrayList<String> ();
+        	List<Object[]> dataToBeReturned = new ArrayList<Object[]>();	
             
         	List<WebElement> findElements;
         	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
@@ -686,62 +681,23 @@ public class TestBase extends Verify implements WebElements{
                     Log.info(contentlistbuffer.toString());
                                     
                   }
-                                      
-                    try {
-                    	
-            	    BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(new URL(url).openStream()));
-            	    
-            	      String s = contentlistbuffer.toString();
-            	      
-            	      StringBuilder builder = new StringBuilder();
-            	      
-            	      while ((s = bufferedreader.readLine()) != null) {
-            	        builder.append(s);
-            	      }
-            	                 	      
-            	      Matcher tagmatch = link.matcher(builder.toString());
-            	      
-            	      Log.info("Matches: "+link.matcher(builder.toString()));
-            	      	
-            	      while (tagmatch.find()) {
-            	          
-            	    	  Matcher matcher = link.matcher(tagmatch.group());
-            	          matcher.find();
-            	          
-            	          String link = matcher.group().toString();
-            	          
-            	          if (valid(link)) {
-            	            
-            	        	  links.add(makeAbsolute(url, link));
-            	          
-            	          }
-            	      
-            	      }
-            	      
-                    } catch (MalformedURLException e) {
-                        e.printStackTrace();
-                    
-                    } catch (IOException e) {
-                      e.printStackTrace();
-                    
-                    }
-                    
-               }
-    	    }
-				return links.iterator();
+                }
+    	      }
+				return dataToBeReturned.iterator();
 	    }
     	
 	    
 	    /**
 	    * 					 
-	    * <String> iterator to retrieve elements by "href" from a page.
+	    * <String> iterator to retrieve elements by "href" from a page. 
+	    * The returned String List is filtered by the actual regex patter.
 	    * 
 	    */
     
-	    public static Iterator<String> contents_() throws MalformedURLException, IOException {
+	    public static Iterator<String> contents_() {
 	    	
-        	List<String> dataToBeReturned = new ArrayList<String>(/*dataSetToBeReturned*/);	
-           // List<String> links = new ArrayList<String> ();
+	    	List<String> dataToBeReturned = new ArrayList<String>();	
+            List<String> links = new ArrayList<String> ();
             StringBuilder builder = new StringBuilder();
 
         	List<WebElement> findElements;
@@ -770,9 +726,67 @@ public class TestBase extends Verify implements WebElements{
 
                         Log.info(contentlist);
                         
-                	}
-    	        }	return dataToBeReturned.iterator();
+                        try {	
+              			   
+                        	String stringToSearch = contentlist;
+            			    
+            			    //*** the pattern we want to search for
+            			    Pattern p = Pattern.compile("(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)");
+            			    
+            			    Matcher m = p.matcher(stringToSearch);
+            			 
+            			    // if we find a match, get the group
+            			    if (m.find())
+            			    {
+            			      // we're only looking for one group, so get it
+            			      String theGroup = m.group(1);
+            			       
+            			      // print and log the group out for verification
+            			      System.out.format("%s", theGroup);
+            			      
+            			      Log.info(String.format("%s\n", theGroup));
+            			      
+            			      //add the matching urls to the links List
+                	          links.add(String.format("%s", theGroup));
+          	                  builder.append(String.format("%s", theGroup));
+          	                  
+          	                  if (links.isEmpty()) {
+          	                	  
+              			    	Log.info("Url matcher failed!");
+              			    	Log.info("Urls will be returned unfiltered from dataToBeReturned List!");
+              			    	
+              					return dataToBeReturned.iterator();
+          	                	  
+          	                  }
+            			    }
+        			    
+                        } catch (Exception e) {
+                        		
+                        		
+            			    	Log.info("Url matcher failed!");
+            			    	Log.info("Urls will be returned unfiltered from dataToBeReturned List!");
+            			    	Log.info(e.getMessage());
+            			    	
+            					return dataToBeReturned.iterator();
+
+                        	}                      
+                  }
+                
+    	        }	return links.iterator();
+
 	    }
+	    
+	    
+	 /**
+	  * Get current time in SimpleDateFormat ("MMM dd,yyyy HH:mm:ss").
+	  * 
+	  * @return
+	  */
+	    
+	public static String getCurrentTime(){
+        SimpleDateFormat sdf = new SimpleDateFormat("MMM dd,yyyy HH:mm:ss");
+        return sdf.format(new Date().getTime()); 
+	}	
 	
 	  /**
 	   * Url String validator. It returns false if regex matches "javascript:.*|mailto:.*".
@@ -781,7 +795,7 @@ public class TestBase extends Verify implements WebElements{
 	   * @return
 	   */
 	    
-    private static boolean valid(String s) {
+    public static boolean valid(String s) {
         if (s.matches("javascript:.*|mailto:.*")) {
           return false;
         }
@@ -798,7 +812,7 @@ public class TestBase extends Verify implements WebElements{
      */
     
     
-    private static String makeAbsolute(String url, String link) {
+    public static String makeAbsolute(String url, String link) {
         if (link.matches("http://.*")) {
           return link;
         }
