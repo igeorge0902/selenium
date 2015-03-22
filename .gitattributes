@@ -10,6 +10,21 @@
 /eurotext.tif -text
 /eurotext_deskew.png -text
 /eurotext_unlv.png -text
+/eurotext_unlv.uzn -text
+lib/commons-io-2.4.jar -text
+lib/ghost4j-0.5.1.jar -text
+lib/jai_imageio.jar -text
+lib/jna-4.1.0.jar -text
+lib/junit-4.10.jar -text
+lib/log4j-1.2.17.jar -text
+lib/pdfpagecount.ps -text
+lib/tess4j.jar -text
+lib/win32-x86-64/gsdll64.dll -text
+lib/win32-x86-64/liblept168.dll -text
+lib/win32-x86-64/libtesseract302.dll -text
+lib/win32-x86/gsdll32.dll -text
+lib/win32-x86/liblept168.dll -text
+lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
 /logfile.log.2015-02-23 -text
 /logfile.log.2015-02-28 -text
@@ -42,6 +57,7 @@ src/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
 src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
 src/pageObjects/SelectMovieGroups.java -text
 src/pageObjects/Yahoo.java -text
+src/test/java/TesseractTest.java -text svneol=unset#text/plain
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
 src/test/java/TestPlayer.java -text svneol=unset#text/plain

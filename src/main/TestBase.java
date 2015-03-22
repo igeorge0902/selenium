@@ -708,7 +708,6 @@ public class TestBase extends Verify implements WebElements{
 	            {	
 	            	String contents = webElement.getAttribute("href");
 	                
-	                //TODO: collect only content urls
 	                dataToBeReturned.add(contents);
 	                builder.append(contents);
 	                
@@ -744,7 +743,7 @@ public class TestBase extends Verify implements WebElements{
             			      // print and log the group out for verification
             			      System.out.format("%s", theGroup);
             			      
-            			      Log.info(String.format("%s\n", theGroup));
+            			      Log.info(String.format("%s", theGroup));
             			      
             			      //add the matching urls to the links List
                 	          links.add(String.format("%s", theGroup));
@@ -761,8 +760,7 @@ public class TestBase extends Verify implements WebElements{
             			    }
         			    
                         } catch (Exception e) {
-                        		
-                        		
+                        		                      		
             			    	Log.info("Url matcher failed!");
             			    	Log.info("Urls will be returned unfiltered from dataToBeReturned List!");
             			    	Log.info(e.getMessage());
@@ -778,9 +776,9 @@ public class TestBase extends Verify implements WebElements{
 	    
 	    
 	 /**
-	  * Get current time in SimpleDateFormat ("MMM dd,yyyy HH:mm:ss").
+	  * Get the current time in SimpleDateFormat.
 	  * 
-	  * @return
+	  * @return "MMM dd,yyyy HH:mm:ss"
 	  */
 	    
 	public static String getCurrentTime(){

@@ -56,13 +56,20 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	//TODO: if any error happens, go to verification error case
 	    	
 	    	
-	    	//check title (it also will be logged by the method) --TODO: check Title presence with regex
     	    String titleName = driver.findElement(By.id(playbackTitle)).getText();
-	    	Pattern title = Pattern.compile(".");
-	    	//*********
-	    	
-	    	WaitTool.waitForTextPresent(driver, By.id(playbackTitle), "TRÓNOK HARCA", 20);	
-	    	
+    	   
+    	    //wait for title presence with regex
+	    	Pattern title = Pattern.compile("(.)");
+    	    Matcher matchertitle = title.matcher(titleName);
+    	    if (matchertitle.find()) {
+    	    	
+    	    	String theGroup = matchertitle.group(1);
+    	    	
+    	    	String titletext = String.format("%s", theGroup);
+    	    	WaitTool.waitForTextPresent(driver, By.id(playbackTitle), titletext, 20);	
+
+    	    }
+	    		    	
 	    	//wait for element, where second = nr. of attempts
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
@@ -74,13 +81,14 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    
 		    //mousehover the play/pause button
 	    	TestBase.MouseHoverByJavaScript(By.id(play_pause));
-		    
-	    	//ElementScreenshot.captureElementScreenshot(playback_Info);
+		        	
 	    	
 	    	//pause
 		    TestBase.playPause();
 	    	Log.info("playback stopped");
 		    
+	    	//ElementScreenshot.captureElementScreenshot(playback_Info);
+	    	
 	    	
 		    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
 		    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));

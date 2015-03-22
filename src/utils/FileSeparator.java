@@ -2,6 +2,8 @@ package utils;
 
 import java.io.File;
 
+import main.TestBase;
+
 public class FileSeparator {
 
     public static void main(String[] args) {
@@ -9,19 +11,22 @@ public class FileSeparator {
         String userHome = System.getProperty("user.home");
         String screenShotsFolder = userHome +File.separator+"Documents"+File.separator+"Tests"+File.separator;
         
+        System.out.println(TestBase.getCurrentTime());
+        
         	int second = 60;
         	 
         	while(second > 0) {
         	   try {
-        	     Thread.sleep(5000);
+        	     Thread.sleep(500);
         	     System.out.println(screenShotsFolder);
 
         	   }
         	   catch(Exception e) {}
         	   second--;
         	}
-    	
-       // System.out.println(screenShotsFolder);
+
+        	System.getProperty("sun.arch.data.model");
+        	System.out.println(System.getProperty("sun.arch.data.model"));
 
     }
 
