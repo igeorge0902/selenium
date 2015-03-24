@@ -89,6 +89,7 @@ src/utils/TesseractExample.java -text svneol=unset#text/plain
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text
+target/test-classes/suite.xml -text svneol=unset#application/xml
 tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
