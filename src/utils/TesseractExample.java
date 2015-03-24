@@ -7,7 +7,6 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import net.sourceforge.tess4j.*;
-import net.sourceforge.javaocr.*;
 
 public class TesseractExample {
     public static void main(String[] args) {

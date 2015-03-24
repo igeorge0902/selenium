@@ -53,6 +53,8 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	//start playback
 	    	TestBase.playContents();
 	    		
+	    	//TODO: parental
+	    	
 	    	//TODO: if any error happens, go to verification error case
 	    	
 	    	
@@ -86,11 +88,13 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	//pause
 		    TestBase.playPause();
 	    	Log.info("playback stopped");
-		    
-	    	//ElementScreenshot.captureElementScreenshot(playback_Info);
 	    	
+	    	//TODO: player controller tests (volume, audio, subs track, fullscreen, exit fullscreen, GUI goes away after 3 seconds)
+		    
+	    	//TODO: if there is next or previous episode, it could be tested here
 	    	
 		    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
+	    	//TODO: seek to the beginning of the content
 		    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
 		    action.dragAndDropBy(SeekDot, 0, 200).build().perform();
 		    
@@ -145,10 +149,13 @@ public class PlayMainContent extends TestBase implements WebElements{
 				    int elapsedtime2 = Integer.parseInt(matcher2.replaceAll(""));
 
 				    TestBase.verifyNotSame(elapsedTime, elapsedTime2);
+				    
+				    //verify should work the way that if playback fails, next content will be loaded to avoid loop for playback fails
 				    TestBase.verifyTrue(elapsedtime2>elapsedtime, "Playback stopped after 5 seconds due to unkown error!");
 				    
         	   }
         	   catch(Exception e) {
+       	    	   ElementScreenshot.captureElementScreenshot(playeR);
         		   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
         	   }
         	   second--;

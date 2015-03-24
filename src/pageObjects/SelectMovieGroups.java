@@ -46,6 +46,7 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	public SelectMovieGroups actionGroups() throws Exception {
 
 		Actions actions = new Actions(driver);
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 			
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
@@ -82,18 +83,14 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	        Iterator<String> list = TestBase.contents_();	        
             StringBuilder builder = new StringBuilder();
             
-	        
-            //while (list.hasNext()) {
-	        	
-            	do {
-            	
-            	//try {	
+	        	        	
+            	do {            	
+            		
             	//load the new url	
 	        	driver.get(list.next());
 	        	System.out.println("Hello");
 	        	
-	        	//find the actual playbutton --TODO
-			   // String stringToSearch = "play-button-07572899-1f5a-4f4e-9204-2fcc63a82775";
+	        	//find the actual playbutton
 			    try {
 			    
 				    for (int second = 0;; second++) {
@@ -115,32 +112,33 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 			    					    
 			    //do a mouse hover on the actual playbutton  
 		    	TestBase.MouseHoverByJavaScript(By.xpath("//img[starts-with(@id, 'play-button-')]"));
-			    //}
+			    
 		    	
 		    	Log.info("MouseHover on the playbutton succeeded!");
 		    	
 			    try {
-		    	//start playback
+			    			    
+		    	//start playback (TODO: it should run another pageObject per se)
 		    	TestBase.playContents();
 		    	Log.info("Playback has started!");
 		    	
-			    } catch (Exception e) {
-			    	Log.info("Content playback start has failed!");
-			    }
-			    
-			    //player test
+		    	//TODO: parental
+
+			    //TODO: insert player test script
+
 		    	
-			    } catch (Exception e) {
-			    	Log.info("No content on the url");
+			    			} catch (Exception e) {
+			    				Log.info("Content playback start has failed!");
+			    		}
+			    
+		    	
+			    	} catch (Exception e) {
+			    		Log.info("No content on the url");
 			    }
 
-		    				    
-		    	//TODO: test method for playback
-	        	
+		    				    	        	
 	        	// iterate until the list has next url
-            	} while (list.hasNext());
-	        	
-            //}	        
+            	} while (list.hasNext());	        	        
 	        
 	return new SelectMovieGroups(driver); 
 	}	

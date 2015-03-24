@@ -74,6 +74,9 @@ public interface WebElements {
     public static String playbackInfo ="playbackInfo";
     public WebElement playback_Info = WebDriverManager.driver.findElement(By.id(playbackInfo));
     
+    public static String player ="player";
+    public WebElement playeR = WebDriverManager.driver.findElement(By.id(player));
+    
     public static String positionsSeek = "seekbar";
     public WebElement SeekDot = WebDriverManager.driver.findElement(By.id(positionsSeek));
     
