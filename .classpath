@@ -52,8 +52,7 @@
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/ghost4j-0.5.1.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/jai_imageio.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/junit-4.10.jar"/>
-	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/JavaOCR.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/tess4j.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/mysql-connector-java-5.1.35-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

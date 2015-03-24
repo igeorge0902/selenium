@@ -17,6 +17,7 @@ lib/jai_imageio.jar -text
 lib/jna-4.1.0.jar -text
 lib/junit-4.10.jar -text
 lib/log4j-1.2.17.jar -text
+lib/mysql-connector-java-5.1.35-bin.jar -text
 lib/pdfpagecount.ps -text
 lib/tess4j.jar -text
 lib/win32-x86-64/gsdll64.dll -text
@@ -26,19 +27,6 @@ lib/win32-x86/gsdll32.dll -text
 lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
-/logfile.log.2015-02-23 -text
-/logfile.log.2015-02-28 -text
-/logfile.log.2015-03-01 -text
-/logfile.log.2015-03-02 -text
-/logfile.log.2015-03-03 -text
-/logfile.log.2015-03-06 -text
-/logfile.log.2015-03-07 -text
-/logfile.log.2015-03-08 -text
-/logfile.log.2015-03-09 -text
-/logfile.log.2015-03-10 -text
-/logfile.log.2015-03-14 -text
-/logfile.log.2015-03-15 -text
-/pom[!!-~]copy.xml -text svneol=unset#text/plain
 /pom.xml -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
@@ -80,8 +68,10 @@ src/utils/FileSeparator.java -text svneol=unset#text/plain
 src/utils/GroupTestExample.java -text svneol=unset#text/plain
 src/utils/LinkGetter.java -text
 src/utils/MessageUtil.java -text svneol=unset#text/plain
+src/utils/MySQLAccess.java -text svneol=unset#text/plain
 src/utils/ObjectMessages.java -text
 src/utils/RegexTestPatternMatcher.java -text
+src/utils/SQLTest.java -text svneol=unset#text/plain
 src/utils/SafariTest.java -text
 src/utils/SampleDataProvider.java -text
 src/utils/StringMatcher.java -text
@@ -89,7 +79,7 @@ src/utils/TesseractExample.java -text svneol=unset#text/plain
 src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text
-target/test-classes/suite.xml -text svneol=unset#application/xml
+target/test-classes/suite.xml -text svneol=unset#text/plain
 tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
