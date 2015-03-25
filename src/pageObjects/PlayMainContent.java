@@ -53,7 +53,7 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	
 	    	//start playback
 	    	TestBase.playContents();
-	    		
+	    	
 	    	//TODO: parental
 	    	
 	    	//TODO: if any error happens, go to verification error case
@@ -157,30 +157,31 @@ public class PlayMainContent extends TestBase implements WebElements{
         	   }
         	   catch(Exception e) {
         		   CaptureScreenshotOnFailureListener.captureScreenShot();
+       			   Reporter.log("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
         		   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
         	   }
-        		//??
-        		try {
-        			TestBase.MouseHoverByJavaScript(By.id(playbackClose));
-        		
-        				} catch (Exception e) {
-        		
-        			Log.info("Playback quit not succeeded...");
-        			}
-        		
-        		//go to the next item in the list
+       		
         	   second--;
-
         	}
+        	
+    		try {
+    			TestBase.MouseHoverByJavaScript(By.id(playbackClose));
+    		
+    				} catch (Exception e) {
+    			Reporter.log("Playback quit not succeeded...");
+    			Log.info("Playback quit not succeeded...");
+    			}
+			Reporter.log("Playback works fine: "+driver.findElement(By.id(playbackTitle)).getText());
 		    Reporter.log("Playback works fine");
 		    Log.info("Playback works fine");
 		    
 	    		} catch (Exception e) {
-	    		Log.info("Playback start failed!");
+	            CaptureScreenshotOnFailureListener.captureScreenShot();
+			    Reporter.log("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
+	    		Log.info("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
 	    			
 	    	}
-		    
-		    
+		    		    
 
 
 	return new PlayMainContent(driver); 

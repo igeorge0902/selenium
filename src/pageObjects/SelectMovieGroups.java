@@ -89,7 +89,6 @@ public class SelectMovieGroups extends TestBase implements WebElements{
             		
             	//load the new url	
 	        	driver.get(list.next());
-	        	System.out.println("Hello");
 	        	
 	        			try {
 	        				//start playback
