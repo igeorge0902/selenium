@@ -15,10 +15,11 @@ import org.testng.Reporter;
 
 import testng.TestListeners;
 import testng.TestMethodListener;
+import testng.CustomReport;
 
 
 
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReport.class})
 
 
 public class TestTest extends TestBase implements WebElements{

@@ -46,11 +46,12 @@ public class Yahoo extends TestBase {
 	    
 	    //ElementScreenshot.getScreenshot(driver.findElement(By.id("main")));
 	    ElementScreenshot.captureElementScreenshot(driver.findElement(By.id("hd")));
-
+	    
+	    /*
 		if (driver instanceof JavascriptExecutor) {
 			((JavascriptExecutor) driver)
 				.executeScript("alert('hello world');");
-		}
+		}*/
 		
 		//getAlertConfirmation();
 		

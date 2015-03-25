@@ -17,7 +17,7 @@ public class Google extends TestBase {
 	public Google(WebDriver driver){
 		super(driver); 
 	}
-	private static String Searchbox = "gbqfq";
+	private static String Searchbox = ".//*[@id='gs_htif0']";
 	
 	public Google test(String input) throws Exception {
 
@@ -40,9 +40,9 @@ public class Google extends TestBase {
 	    
 	    verifySuccess(driver.getTitle().equals("Google"));
 	    
-	    driver.findElement(By.id(Searchbox)).clear();    
-		driver.findElement(By.id(Searchbox)).sendKeys(input);
-	    driver.findElement(By.id(Searchbox)).sendKeys(Keys.ENTER);
+	    driver.findElement(By.xpath(Searchbox)).clear();    
+		driver.findElement(By.xpath(Searchbox)).sendKeys(input);
+	    driver.findElement(By.xpath(Searchbox)).sendKeys(Keys.ENTER);
 	    
 	    element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("rso")));
 	    isElementPresent(By.id("rso"));
@@ -54,12 +54,12 @@ public class Google extends TestBase {
 		driver.findElement(By.id(Searchbox)).sendKeys("Milo");
 	    driver.findElement(By.id(Searchbox)).sendKeys(Keys.ENTER);
 	    
-		if (driver instanceof JavascriptExecutor) {
+		/*if (driver instanceof JavascriptExecutor) {
 			((JavascriptExecutor) driver)
 				.executeScript("alert('hello world');");
-		}
+		}*/
 			
-		getAlertConfirmation();
+		//getAlertConfirmation();
 	    	
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	 

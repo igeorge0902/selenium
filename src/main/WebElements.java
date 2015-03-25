@@ -83,6 +83,9 @@ public interface WebElements {
     public static String playbackElapsedTime = "playbackElapsedTime";
     public WebElement playbackElapsed_Time = WebDriverManager.driver.findElement(By.id(playbackElapsedTime));
     
+    public static String playbackClose = "playbackClose";
+    public WebElement playBack_Close = WebDriverManager.driver.findElement(By.id(playbackClose));
+    
     public static String player_mediaux_biz = "(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)";
 
 }

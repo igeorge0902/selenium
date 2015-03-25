@@ -11,6 +11,7 @@ import org.testng.annotations.*;
 
 import pageObjects.HboSignIn;
 import pageObjects.PlayMainContent;
+import pageObjects.SelectMovieGroups;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
@@ -84,6 +85,18 @@ public class TestPlayer extends TestBase{
 	    PlayMainContent.playMainContent();
 	    Log.info("playTrailer test is done"); 
 	    Reporter.log("<p>playTrailer test is done<br></p>");
+		
+	}
+    
+
+	@Test (/*dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "player" }, description= "Play trailer after login")
+	public void testSelectContentsPlay() throws Exception{
+		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
+		
+	    //playTrailer
+		SelectMovieGroups.actionGroups();
+	    Log.info("selectMovieGroups test is done"); 
+	    Reporter.log("<p>selectMovieGroups test is done<br></p>");
 		
 	}
 

@@ -5,7 +5,7 @@ public enum BaseUrls {
 	  GOOGLE("https://www.google.hu/"),
 	  YAHOO("https://www.yahoo.com/"),
 	  HBO("http://www.hbogo.hu/"),
-	  PLAYER("huvip.hbogo.eu");
+	  PLAYER("http://player.mediaux.biz");
 
 public String myUrls;
 

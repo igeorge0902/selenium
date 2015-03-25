@@ -11,6 +11,8 @@
 /eurotext_deskew.png -text
 /eurotext_unlv.png -text
 /eurotext_unlv.uzn -text
+lib/IEDriverServer32.exe -text svneol=unset#application/x-dosexec
+lib/chromedriver.exe -text svneol=unset#application/x-dosexec
 lib/commons-io-2.4.jar -text
 lib/ghost4j-0.5.1.jar -text
 lib/jai_imageio.jar -text
@@ -27,6 +29,7 @@ lib/win32-x86/gsdll32.dll -text
 lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
+/logfile.log -text
 /pom.xml -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
@@ -53,6 +56,7 @@ src/test/java/TestSearchEngines.java -text
 src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
+src/testng/CustomReport.java -text
 src/testng/CustomTestListener.java -text
 src/testng/CustomVerification.java -text
 src/testng/ExpectedExceptions.java -text svneol=unset#text/plain
@@ -84,6 +88,7 @@ tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
 tessdata/eng.traineddata -text
+test-output/CustomReport.html -text
 test-output/Default[!!-~]suite/Default[!!-~]test.html -text svneol=unset#text/plain
 test-output/Default[!!-~]suite/Default[!!-~]test.xml -text svneol=unset#text/plain
 test-output/Default[!!-~]suite/testng-failed.xml -text svneol=unset#text/plain

@@ -4,24 +4,54 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="39,246">
+           time="21,533">
   <properties />
-            <testcase name="testPlayerSuccess" time="35,629" classname="test.java.TestPlayer">
-                <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
+            <testcase name="testSignInSuccess" time="4,485" classname="test.java.TestPlayer">
+                <failure type="org.openqa.selenium.ElementNotVisibleException"
+                  message="Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 291 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Gyuri&apos;, ip: &apos;192.168.21.50&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:18497/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 3b71a9d1-4429-42b7-b37a-a520e386f479"
               >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:494)
-  org.testng.Assert.assertTrue(Assert.java:42)
-  org.testng.Assert.assertTrue(Assert.java:52)
-  main.TestBase.assertTrue(TestBase.java:101)
-  pageObjects.PlayMainContent.playMainContent(PlayMainContent.java:133)
-  test.java.TestPlayer.testPlayerSuccess(TestPlayer.java:84)
+<![CDATA[org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 291 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:18497/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 3b71a9d1-4429-42b7-b37a-a520e386f479
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+  com.sun.proxy.$Proxy12.click(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+  com.sun.proxy.$Proxy13.click(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+  pageObjects.HboSignIn.selectOperator(HboSignIn.java:32)
+  test.java.TestPlayer.testSignInSuccess(TestPlayer.java:64)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -46,52 +76,18 @@
       </failure>
 
           </testcase>
-            <testcase name="testSignInSuccess" time="3,617" classname="test.java.TestPlayer">
-                <failure type="org.openqa.selenium.ElementNotVisibleException"
-                  message="Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 141 milliseconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
-System info: host: &apos;Gyuri&apos;, ip: &apos;192.168.21.50&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39390/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 8679805e-3f0c-48ef-a6fc-d0bb22ee9849"
+            <testcase name="testSelectContentsPlay" time="17,048" classname="test.java.TestPlayer">
+                <failure type="java.util.NoSuchElementException"
+                  message="(null)"
               >
-<![CDATA[org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 141 milliseconds
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
-System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:39390/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 8679805e-3f0c-48ef-a6fc-d0bb22ee9849
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+<![CDATA[java.util.NoSuchElementException
+  java.util.ArrayList$Itr.next(Unknown Source)
+  pageObjects.SelectMovieGroups.actionGroups(SelectMovieGroups.java:91)
+  test.java.TestPlayer.testSelectContentsPlay(TestPlayer.java:97)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-  com.sun.proxy.$Proxy12.click(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-  com.sun.proxy.$Proxy13.click(Unknown Source)
-  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
-  pageObjects.HboSignIn.selectOperator(HboSignIn.java:32)
-  test.java.TestPlayer.testSignInSuccess(TestPlayer.java:63)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)

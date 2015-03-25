@@ -46,6 +46,7 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	public SelectMovieGroups actionGroups() throws Exception {
 
 		Actions actions = new Actions(driver);
+		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 			
@@ -90,53 +91,14 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	        	driver.get(list.next());
 	        	System.out.println("Hello");
 	        	
-	        	//find the actual playbutton
-			    try {
-			    
-				    for (int second = 0;; second++) {
-				    	
-				    	if (second >= 60) fail("timeout");
-				    	
-				    	try { if (isElementPresentAndDisplay(By.xpath("//img[starts-with(@id, 'play-button-')]")))
-				    		
-				    		break; 
-				    	
-				    	} catch (Exception e) {
-				    	
-				    		Log.info(e.getCause());
-				    	}   
-				    	
-				    	Thread.sleep(1000);
-
-				    }	
-			    					    
-			    //do a mouse hover on the actual playbutton  
-		    	TestBase.MouseHoverByJavaScript(By.xpath("//img[starts-with(@id, 'play-button-')]"));
-			    
-		    	
-		    	Log.info("MouseHover on the playbutton succeeded!");
-		    	
-			    try {
-			    			    
-		    	//start playback (TODO: it should run another pageObject per se)
-		    	TestBase.playContents();
-		    	Log.info("Playback has started!");
-		    	
-		    	//TODO: parental
-
-			    //TODO: insert player test script
-
-		    	
-			    			} catch (Exception e) {
-			    				Log.info("Content playback start has failed!");
-			    		}
-			    
-		    	
-			    	} catch (Exception e) {
-			    		Log.info("No content on the url");
-			    }
-
-		    				    	        	
+	        			try {
+	        				//start playback
+	        				PlayMainContent.playMainContent();
+	        				
+	        			} catch (Exception e) {	        				
+	        				TestBase.addVerificationFailure(e);
+	        		}
+	        	
 	        	// iterate until the list has next url
             	} while (list.hasNext());	        	        
 	        

@@ -730,7 +730,7 @@ public class TestBase extends Verify implements WebElements{
                         	String stringToSearch = contentlist;
             			    
             			    //*** the pattern we want to search for
-            			    Pattern p = Pattern.compile("(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)");
+            			    Pattern p = Pattern.compile(player_mediaux_biz);
             			    
             			    Matcher m = p.matcher(stringToSearch);
             			 

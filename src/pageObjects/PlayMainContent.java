@@ -20,6 +20,7 @@ import org.testng.annotations.Listeners;
 import testng.TestListeners;
 import testng.TestMethodListener;
 import utils.WaitTool;
+import main.CaptureScreenshotOnFailureListener;
 
 
 @SuppressWarnings("unused")
@@ -36,13 +37,13 @@ public class PlayMainContent extends TestBase implements WebElements{
 
 		Actions action = new Actions(driver);
 			
-			driver.get(BaseUrls.PLAYER.get() + ContentUrl1);
+			//driver.get(BaseUrls.PLAYER.get() + ContentUrl1);
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
 		    	try { if (isElementPresentAndDisplay(By.xpath(PlayButton))) break; } catch (Exception e) {
 		    		Log.info(e.getCause());
-		    	}
+		    	} Thread.sleep(1000);
 		    }			
 
 		    TestBase.verifyNotNull(playPuttony);
@@ -56,7 +57,7 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	//TODO: parental
 	    	
 	    	//TODO: if any error happens, go to verification error case
-	    	
+	    	try {
 	    	
     	    String titleName = driver.findElement(By.id(playbackTitle)).getText();
     	   
@@ -96,14 +97,14 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
 	    	//TODO: seek to the beginning of the content
 		    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
-		    action.dragAndDropBy(SeekDot, 0, 200).build().perform();
+		    action.dragAndDropBy(SeekDot, 0, -1100).build().perform();
 		    
 		    //start
 		    TestBase.playPause();
 	    	Log.info("playback is running");
 		    
 		    //while cycle for elapsed time check
-        	int second = 60;
+        	int second = 30;
        	
         	while(second > 0) {
         	   
@@ -136,7 +137,7 @@ public class PlayMainContent extends TestBase implements WebElements{
 	        	    Thread.sleep(5000);
 				    
 	        	    //prints out elapsed time
-				    String text2 = TestBase.getText(driver, elapsedTime);
+				    String text2 = TestBase.getText(driver, elapsedTime2);
 				    System.out.println("Elapsed time second: "+text2);
 
 	        	    //find and replace elapsed time string value       	    
@@ -151,18 +152,36 @@ public class PlayMainContent extends TestBase implements WebElements{
 				    TestBase.verifyNotSame(elapsedTime, elapsedTime2);
 				    
 				    //verify should work the way that if playback fails, next content will be loaded to avoid loop for playback fails
-				    TestBase.verifyTrue(elapsedtime2>elapsedtime, "Playback stopped after 5 seconds due to unkown error!");
+				    TestBase.verifyTrue(elapsedtime2>elapsedtime, "Playback is working fine!");
 				    
         	   }
         	   catch(Exception e) {
-       	    	   ElementScreenshot.captureElementScreenshot(playeR);
+        		   CaptureScreenshotOnFailureListener.captureScreenShot();
         		   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
         	   }
+        		//??
+        		try {
+        			TestBase.MouseHoverByJavaScript(By.id(playbackClose));
+        		
+        				} catch (Exception e) {
+        		
+        			Log.info("Playback quit not succeeded...");
+        			}
+        		
+        		//go to the next item in the list
         	   second--;
+
         	}
 		    Reporter.log("Playback works fine");
 		    Log.info("Playback works fine");
-		    		    
+		    
+	    		} catch (Exception e) {
+	    		Log.info("Playback start failed!");
+	    			
+	    	}
+		    
+		    
+
 
 	return new PlayMainContent(driver); 
 	}

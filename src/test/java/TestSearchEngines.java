@@ -10,10 +10,13 @@ import org.testng.annotations.*;
 
 import pageObjects.Google;
 import pageObjects.Yahoo;
+import testng.CustomReport;
 import testng.TestListeners;
+
 import testng.TestMethodListener;
 
-@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
+
+@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReport.class})
 
 public class TestSearchEngines extends TestBase{
 		  
@@ -51,14 +54,16 @@ public class TestSearchEngines extends TestBase{
 	}
 	
 	
-  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
   public void Yahoo(String input) throws Exception {
 	  Yahoo YahooSearch = new Yahoo(driver);
 	  
 	  YahooSearch.test(input);
+	  
   }
   
-  @Test (groups = { "functional_test" }, dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  
+  @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
   public void Google(String input) throws Exception {
 	  Google GoogleSearch = new Google(driver);
 	  

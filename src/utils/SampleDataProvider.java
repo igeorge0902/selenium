@@ -15,17 +15,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import main.TestBase;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
-public class SampleDataProvider extends TestBase{
+public class SampleDataProvider {
 	
-	public SampleDataProvider(WebDriver driver){
-		super(driver); 
-	}
 	
     @DataProvider
     public static Iterator<Object[]> fileDataProvider (ITestContext context) {
