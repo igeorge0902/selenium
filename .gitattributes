@@ -85,7 +85,7 @@ src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text
 src/utils/deleteLines.java -text
-target/test-classes/suite.xml -text svneol=unset#application/xml
+target/test-classes/suite.xml -text svneol=unset#text/plain
 tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
