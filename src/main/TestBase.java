@@ -1,8 +1,11 @@
 package main;
 
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -481,22 +484,46 @@ public class TestBase extends Verify implements WebElements{
 		}
 	}
 	
+	
 	/**
 	 * Write a text file with the given list elements retrieved from the list.
 	 * 
 	 * @param newfile
 	 * @param list
+	 * @throws IOException 
 	 */
 	
 	public static void writeFile(String newfile, List<String> list) {
 		
 		Path textFile = Paths.get(newfile);
+		String path = Paths.get(newfile).toString();
 		Charset charset = Charset.defaultCharset();
 		List<String> urlList = list;
+		
 		try {
-			Files.write(textFile, urlList, charset);
+		
+            BufferedWriter bufferedWriter = new BufferedWriter( new FileWriter(path));
+            PrintWriter printWriter = new PrintWriter (bufferedWriter);
+            
+                  for (String item : urlList) {
+                	                   
+                	  printWriter.write(item);
+                	  bufferedWriter.newLine();
+			
+                  }
+        
+                  printWriter.flush();
+                  printWriter.close();
+			
 		} catch (IOException e) {
 			e.printStackTrace();
+			
+			try {
+				Files.write(textFile, urlList, charset);
+			
+				} catch (IOException e1) {
+					e1.printStackTrace();
+			}
 		}
 	}
 	
@@ -510,6 +537,7 @@ public class TestBase extends Verify implements WebElements{
 	 */
 	
 	public static boolean readFile(Path textFile, boolean condition) {
+		
 		List<String> linesRead = null;
 		try {
 			linesRead = Files.readAllLines(textFile);
@@ -622,80 +650,6 @@ public class TestBase extends Verify implements WebElements{
         }
 		
 	}
-	
-	/*
-	public static void startPlayBack () throws Exception {
-		
-		Actions action = new Actions(driver);
-		
-		String stringToSearch = "dd";
-		
-	    // the pattern we want to search for
-	    Pattern p = Pattern.compile("(^[a-z]{4}-[a-z]{6}-[a-z0-9\\.-]{36})");
-	    
-	    Matcher m = p.matcher(stringToSearch);
-	 
-	    // if we find a match, get the group
-	    if (m.find())
-	    {
-	      
-	      // we're only looking for one group, so get it
-	      String theGroup = m.group(1);
-	       
-	      // print the group out for verification
-	      System.out.format("%s\n", theGroup);
-	      
-	      Log.info(String.format("%s\n", theGroup));
-	     	    		
-		TestBase.MouseHoverByJavaScript(By.id(String.format("%s\n", theGroup)));	    	    
-	    }
-	    
-    	//start playback
-    	TestBase.playContents();
-    		    		
-    	//check title (it also will be logged by the method)
-    	WaitTool.waitForTextPresent(driver, By.id(playbackTitle), "playbacktitle_value", 20);	
-
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) fail("timeout");
-	    	try { if (isElementPresentAndDisplay(By.id(play_pause))) break; } catch (Exception e) {
-	    		Log.info(e.getCause());
-	    	}
-	    }
-	    
-	    //mousehover the play/pause button
-    	TestBase.MouseHoverByJavaScript(By.id(play_pause));
-	    
-    	ElementScreenshot.captureElementScreenshot(playback_Info);
-    	
-    	//pause
-	    TestBase.playPause();
-    	
-	    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
-	    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
-	    action.dragAndDropBy(SeekDot, 0, 200).build().perform();
-	    
-	    //for cycle for elapsed time check
-	    for (int second = 0;; second++) {
-	    	if (second >= 60) Thread.sleep(1000);
-	    	
-	    	 if (isElementPresent(By.id(playbackElapsedTime))) {
-	    		
-			    String elapsedtime;
-			    elapsedtime = driver.findElement(By.id(playbackElapsedTime)).getText();
-			    System.out.println(elapsedtime);
-			    Reporter.log("Playback works fine");
-			    Log.info("Playback works fine");
-	    	} break; 
-	    }
-	    
-	    //TODO: do a quit playback
-	    
-	    //TODO: check if the page is the same where the playback started from
-	    
-	    //end
-		
-	}*/
 
 	
 	/**
@@ -779,7 +733,6 @@ public class TestBase extends Verify implements WebElements{
 	            {	
 	            	String contents = webElement.getAttribute("href");
 	                
-	                //TODO: collect only content urls
 	                dataToBeReturned.add(new Object [] {contents});
 	                
 	            }

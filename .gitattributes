@@ -58,7 +58,8 @@ src/test/java/TestSearchEngines.java -text
 src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
-src/testng/CustomReport.java -text
+src/testng/CustomException.java -text svneol=unset#text/plain
+src/testng/CustomReportListener.java -text
 src/testng/CustomTestListener.java -text
 src/testng/CustomVerification.java -text
 src/testng/ExpectedExceptions.java -text svneol=unset#text/plain
@@ -75,10 +76,8 @@ src/utils/GroupTestExample.java -text svneol=unset#text/plain
 src/utils/LinkGetter.java -text
 src/utils/MessageUtil.java -text svneol=unset#text/plain
 src/utils/MySQLAccess.java -text svneol=unset#text/plain
-src/utils/ObjectMessages.java -text
 src/utils/RegexTestPatternMatcher.java -text
 src/utils/SQLTest.java -text svneol=unset#text/plain
-src/utils/SafariTest.java -text
 src/utils/SampleDataProvider.java -text
 src/utils/StringMatcher.java -text
 src/utils/TesseractExample.java -text svneol=unset#text/plain

@@ -28,7 +28,6 @@ public class TesseractExample {
             System.out.println(result);
             
 		} catch (IOException | TesseractException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

@@ -7,13 +7,14 @@ public enum BaseUrls {
 	  HBO("http://www.hbogo.hu/"),
 	  PLAYER("http://huvip.hbogo.eu");
 
-public String myUrls;
+	  public String myUrls;
 
-BaseUrls (String url) {
-	  myUrls = url;
-	}
-public String get() {
-	  return myUrls;
-	}
+	  	BaseUrls (String url) {
+	  		myUrls = url;
+	  	}
+
+	  	public String get() {
+		  return myUrls;
+		}
 
 }

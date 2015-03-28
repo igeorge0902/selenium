@@ -8,7 +8,6 @@ public class ExpectedExceptions extends Exception{
 	
 	public ExpectedExceptions(String message){
 		super(message);
-	
-	
+		
 	}
 }

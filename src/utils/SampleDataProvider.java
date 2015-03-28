@@ -109,19 +109,24 @@ public class SampleDataProvider {
         //this can be adapted, this is just one way of achieving the result.
         InputStream is;
         List<String> lines = new ArrayList<String> ();
+        
         try {
-            is = new FileInputStream(new File(filenamePath));
+            
+        	is = new FileInputStream(new File(filenamePath));
             DataInputStream in = new DataInputStream(is);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             String strLine;
+            
             while ((strLine = br.readLine()) != null)   {
                 lines.add(strLine);
             }
             in.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        	
+        		} catch (FileNotFoundException e) {
+        			e.printStackTrace();
+        
+        	} catch (IOException e) {
+        		e.printStackTrace();
         }
         
         

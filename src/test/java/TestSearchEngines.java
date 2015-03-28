@@ -10,13 +10,12 @@ import org.testng.annotations.*;
 
 import pageObjects.Google;
 import pageObjects.Yahoo;
-import testng.CustomReport;
+import testng.CustomReportListener;
 import testng.TestListeners;
-
 import testng.TestMethodListener;
 
 
-@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReport.class})
+@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReportListener.class})
 
 public class TestSearchEngines extends TestBase{
 		  

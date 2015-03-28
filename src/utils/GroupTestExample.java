@@ -2,11 +2,16 @@ package utils;
 
 
 import main.TestBase;
-import main.WebDriverManager;
 
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
+
+import testng.CustomReportListener;
+import testng.TestListeners;
+
+@Listeners({ TestListeners.class, CustomReportListener.class})
+
 public class GroupTestExample extends TestBase {
 	
    String message = ".com";
@@ -15,7 +20,7 @@ public class GroupTestExample extends TestBase {
 
 	@BeforeGroups
 	  public void setUp(ITestContext context) throws Exception {
-		
+		/*
 		  try {			  
 		  // get the web driver parameters from the testng xml file
 	      String browser = context.getCurrentXmlTest().getParameter("browser");
@@ -34,7 +39,7 @@ public class GroupTestExample extends TestBase {
 		      
 		      driver = WebDriverManager.startDriver(browser, url, 40); 
 		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-		  }
+		  }*/
 		  
 	}
    

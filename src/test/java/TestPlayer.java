@@ -82,7 +82,7 @@ public class TestPlayer extends TestBase{
   }
     
     
-	@Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "player" }, description= "Selecting contents for playback tests.")
+	@Test (/*dependsOnMethods = { "testSignInSuccess" },*/ groups = { "player" }, description= "Selecting contents for playback tests.")
 	public void testSelectContentsPlay() throws Exception{
 		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
 		
@@ -93,7 +93,7 @@ public class TestPlayer extends TestBase{
 		
 	}
 	
-    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", dependsOnMethods = { "testSelectContentsPlay" }, description= "Playback test of main contents")
+    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", /*dependsOnMethods = { "testSelectContentsPlay" },*/ description= "Playback test of main contents")
     public void testPlayerSuccess(String urls) throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		

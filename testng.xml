@@ -70,7 +70,7 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<exclude name="testSelectContentsPlay" />
+					<include name="testSelectContentsPlay" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
@@ -103,9 +103,9 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testSelectContentsPlay" />
-					<include name="testPlayerSuccess" />					
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />					
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
