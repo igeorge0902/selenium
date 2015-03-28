@@ -4,7 +4,7 @@ import java.io.File;
 
 import main.TestBase;
 
-public class FileSeparator {
+public class FileSeparator extends TestBase {
 
     public static void main(String[] args) {
     	
@@ -13,7 +13,7 @@ public class FileSeparator {
         
         System.out.println(TestBase.getCurrentTime());
         
-        	int second = 60;
+        	int second = 2;
         	 
         	while(second > 0) {
         	   try {
@@ -27,7 +27,7 @@ public class FileSeparator {
 
         	System.getProperty("sun.arch.data.model");
         	System.out.println(System.getProperty("sun.arch.data.model"));
-
+        	
     }
 
 }

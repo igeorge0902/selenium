@@ -15,7 +15,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
@@ -38,6 +37,41 @@ public class SampleDataProvider {
         for (String userData : testData)
         {
             dataToBeReturned.add(new Object[] { userData } );
+        }
+        
+        //return the iterator - testng will initialize the test class and calls the
+        //test method with each of the content of this iterator.
+        
+        return dataToBeReturned.iterator();
+ 
+    }
+    
+    @DataProvider
+    public static Iterator<String> urlDataProvider (ITestContext context) throws FileNotFoundException {
+    	
+        //Get the input file path from the ITestContext
+    	
+        String inputFile = context.getCurrentXmlTest().getParameter("filenamePath");
+                
+        //Get a list of String file content (line items) from the test file.
+        List<String> testData = getFileContentList(inputFile);
+ 
+        //We will be returning an iterator of String arrays so create that first.
+        List<String> dataToBeReturned = new ArrayList<String>();
+        StringBuilder builder = new StringBuilder();
+
+ 
+        //Populate our List of Object arrays with the file content.
+        if (!testData.isEmpty()) {
+        for (String urlData : testData)
+        {
+            dataToBeReturned.add( urlData  );
+            builder.append(urlData);
+        	}       
+        }
+        
+        else {
+        	//TODO: do something
         }
         
         //return the iterator - testng will initialize the test class and calls the
@@ -88,7 +122,10 @@ public class SampleDataProvider {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }    
+        }
+        
+        
+        
         return lines;
     }
     

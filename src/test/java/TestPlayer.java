@@ -1,6 +1,7 @@
 package test.java;
 
 
+import main.BaseUrls;
 import main.TestBase;
 import main.WebDriverManager;
 
@@ -67,6 +68,8 @@ public class TestPlayer extends TestBase{
 		
 		//submit
 		SignInPage.submit();
+		Thread.sleep(3000);
+		TestBase.assertTrue(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen));
 	    Log.info("submit test is done");
 	    Reporter.log("<p>submit test is done<br></p>");
 
@@ -77,19 +80,9 @@ public class TestPlayer extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-    @Test (/*dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "player" }, description= "Play trailer after login")
-    public void testPlayerSuccess() throws Exception{
-		PlayMainContent PlayMainContent = new PlayMainContent(driver);
-		
-	    //playTrailer
-	    PlayMainContent.playMainContent();
-	    Log.info("playTrailer test is done"); 
-	    Reporter.log("<p>playTrailer test is done<br></p>");
-		
-	}
     
-
-	@Test (/*dependsOnMethods = { "testSignInSuccess" },/*alwaysRun=true,*/ groups = { "player" }, description= "Play trailer after login")
+    
+	@Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "player" }, description= "Selecting contents for playback tests.")
 	public void testSelectContentsPlay() throws Exception{
 		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
 		
@@ -97,6 +90,17 @@ public class TestPlayer extends TestBase{
 		SelectMovieGroups.actionGroups();
 	    Log.info("selectMovieGroups test is done"); 
 	    Reporter.log("<p>selectMovieGroups test is done<br></p>");
+		
+	}
+	
+    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", dependsOnMethods = { "testSelectContentsPlay" }, description= "Playback test of main contents")
+    public void testPlayerSuccess(String urls) throws Exception{
+		PlayMainContent PlayMainContent = new PlayMainContent(driver);
+		
+	    //playTrailer
+	    PlayMainContent.playMainContent(urls);
+	    Log.info("playMainContent test is done"); 
+	    Reporter.log("<p>playMainContent test is done<br></p>");
 		
 	}
 

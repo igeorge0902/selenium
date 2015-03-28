@@ -1,13 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Default test"
-           tests="1"
+           tests="94"
            failures="0"
            errors="0"
            skipped="0"
-           time="0,028">
+           time="0,217">
   <properties />
   
   
-            <testcase name="testDataProvider" time="0,028" classname="utils.TestDataSample" />
+            <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,004" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,009" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,011" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,017" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,004" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,005" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,008" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,004" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,012" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,009" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,005" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,016" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,005" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,004" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,004" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,000" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,003" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,002" classname="utils.TestDataSample" />
+                <testcase name="testDataProvider" time="0,001" classname="utils.TestDataSample" />
       
 </testsuite>

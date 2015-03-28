@@ -5,8 +5,7 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-	<parameter name="filenamePath"
-		value="/Users/georgegaspar/Documents/Breakpoints.xml" />
+    <parameter name="filenamePath" value=".\lib\output.txt" />		
 	<parameter name="browser" value="Firefox" />
 	<parameter name="url" value="http://www.google.com" />
 	<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
@@ -14,6 +13,7 @@
 		<parameter name="browser" value="*safari" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<groups>
 			<run>
 				<exclude name="functest" />
@@ -36,8 +36,8 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<exclude name="testPlayerSuccess" />
 					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -60,6 +60,7 @@
 		<parameter name="browser" value="Firefox" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
 			<class name="test.java.TestHboSignUp">
 				<methods>
@@ -69,8 +70,8 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<exclude name="testPlayerSuccess" />
 					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -93,6 +94,7 @@
 		<parameter name="browser" value="INTERNET_EXPLORER" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
 			<class name="test.java.TestHboSignUp">
 				<methods>
@@ -102,8 +104,8 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<include name="testSignInSuccess" />
-					<exclude name="testPlayerSuccess" />
 					<include name="testSelectContentsPlay" />
+					<include name="testPlayerSuccess" />					
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -126,6 +128,7 @@
 		<parameter name="browser" value="CHROME" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
 			<class name="test.java.TestHboSignUp">
 				<methods>
@@ -135,8 +138,8 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<exclude name="testPlayerSuccess" />
 					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">

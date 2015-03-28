@@ -34,17 +34,21 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <tr><td style="text-align:left;padding-right:2em"><a href="#t1">Test Groups</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi">checkintest functest </td></tr>
 <tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Test on Safari</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Test on Internet Explorer</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0h:0m:30s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Test on Internet Explorer</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">0h:0m:39s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr><td style="text-align:left;padding-right:2em"><a href="#t5">Test on Chrome</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <p></p>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <b align="center">Result Summary Table</b>
 <tr><th>Class</th><th>Method</th><th># of<br>Scenarios</th><th>Start</th><th>Time<br>elapsed</th><th>Custom</th></tr>
 <tr id="t4"><th colspan="6">Test on Internet Explorer — failed</th></tr>
-<tr class="failedodd"><td rowspan="2">test.java.TestPlayer</td><td><a href="#m1"><b>testSignInSuccess</b> (signin) ("HBO login")</a></td><td class="numi">1</td><td> márc. 25 at 06:11 DU</td><td class="numi">0h:0m:4s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="failedodd"><td><a href="#m2"><b>testSelectContentsPlay</b> (player) ("Play trailer after login")</a></td><td class="numi">1</td><td> márc. 25 at 06:11 DU</td><td class="numi">0h:0m:17s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr class="failedodd"><td>test.java.TestPlayer</td><td><a href="#m1"><b>testSelectContentsPlay</b> (player) ("Selecting contents for playback tests.")</a></td><td class="numi">1</td><td> márc. 27 at 08:20 DU</td><td class="numi">0h:0m:16s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr><th colspan="6">Test on Internet Explorer — skipped</th></tr>
+<tr class="skippedodd"><td>test.java.TestPlayer</td><td><a href="#m2"><b>testPlayerSuccess</b>  ("Playback test of main contents")</a></td><td class="numi">1</td><td> márc. 27 at 08:20 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr><th colspan="6">Test on Internet Explorer — passed</th></tr>
+<tr class="passedodd"><td>test.java.TestPlayer</td><td><a href="#m3"><b>testSignInSuccess</b> (signin) ("HBO login")</a></td><td class="numi">1</td><td> márc. 27 at 08:20 DU</td><td class="numi">0h:0m:14s</td><td><a href='emailable-report.html'>Test</a></td></tr>
 </table>
 <br/><b align="center">Method Summaries</b><br/>
 <h1>Test Demo Run</h1>
@@ -52,37 +56,44 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <h3>Test on Safari</h3>
 <h3>Test on Firefox</h3>
 <h3>Test on Internet Explorer</h3>
-<h2 id="m1">test.java.TestPlayer : testSignInSuccess</h2>
+<h2 id="m1">test.java.TestPlayer : testSelectContentsPlay</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Param.1</th></tr>
-<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
-</tr>
-<tr><td>
+<tr><td><i>Test did not have parameters.</i></td></tr> 
+<div>
 <h3>Test Messages</h3>
-Found element:By.id: headerButtonLogin<br>
-Found element:By.id: headerButtonLogin<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-<a href="C:/Users/igeorge1982/Documents/Tests/INTERNET_EXPLORER-testSignInSuccess(test.java.TestPlayer)-2015-2-25-18-11-22-110.png"><p align="left">Error screenshot at Wed Mar 25 18:11:23 CET 2015</p><br>
-<p><img width="50%" src="C:\Users\igeorge1982\Documents\Tests\INTERNET_EXPLORER-testSignInSuccess(test.java.TestPlayer)-2015-2-25-18-11-22-110.png" alt="screenshot at Wed Mar 25 18:11:23 CET 2015"/></p></a><br /><br>
-Test Method resides in test.java.TestPlayer<br>
-Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
-Test Status: Failed<br>
+Found element:By.id: headerButtonMenu<br>
+Found element:By.id: headerButtonMenu<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> id: headerButtonMenu]<br>
+Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1<br>
+Found element:By.linkText: Akció, Kaland<br>
+Script run: arguments[0].scrollIntoView(true);<br>
+Script run: javascript:window.scrollBy(250,350)<br>
+Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1<br>
+Found element:By.linkText: Akció, Kaland<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> link text: Akció, Kaland]<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+Completed executing following method : TestPlayer.testSelectContentsPlay<br>
+<a href="C:/Users/igeorge1982/Documents/Tests/INTERNET_EXPLORER-testSelectContentsPlay(test.java.TestPlayer)-2015-2-27-20-20-40-191.png"><p align="left">Error screenshot at Fri Mar 27 20:20:40 CET 2015</p><br>
+<p><img width="50%" src="C:\Users\igeorge1982\Documents\Tests\INTERNET_EXPLORER-testSelectContentsPlay(test.java.TestPlayer)-2015-2-27-20-20-40-191.png" alt="screenshot at Fri Mar 27 20:20:40 CET 2015"/></p></a><br /><br>
 Fuck<br><br>
+Test Method resides in test.java.TestPlayer<br>
+Test Status: Failed<br>
 <h3>Failure</h3>
-<div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with id == normalView (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 291 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
 System info: host: &apos;Gyuri&apos;, ip: &apos;192.168.21.50&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_31&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:18497/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 3b71a9d1-4429-42b7-b37a-a520e386f479
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:34868/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 5b676150-9cb3-4212-9f41-f74e4e79e525
+*** Element info: {Using=id, value=normalView}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -90,24 +101,49 @@ Session ID: 3b71a9d1-4429-42b7-b37a-a520e386f479
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
-	at pageObjects.HboSignIn.selectOperator(HboSignIn.java:32)
-	at test.java.TestPlayer.testSignInSuccess(TestPlayer.java:64)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at main.TestBase.contents_(TestBase.java:826)
+	at pageObjects.SelectMovieGroups.actionGroups(SelectMovieGroups.java:86)
+	at test.java.TestPlayer.testSelectContentsPlay(TestPlayer.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -133,71 +169,61 @@ Session ID: 3b71a9d1-4429-42b7-b37a-a520e386f479
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </div>
-</td></tr>
+</div>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">test.java.TestPlayer : testSelectContentsPlay</h2>
+<h2 id="m2">test.java.TestPlayer : testPlayerSuccess</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><td><i>Test did not have parameters.</i></td></tr> 
-<div>
-<h3>Test Messages</h3>
-Found element:By.id: headerButtonMenu<br>
-Found element:By.id: headerButtonMenu<br>
-Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3b71a9d1-4429-42b7-b37a-a520e386f479)] -> id: headerButtonMenu]<br>
-Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1<br>
-Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1<br>
-Found element:By.linkText: Akció, Kaland<br>
-Script run: arguments[0].scrollIntoView(true);<br>
-Script run: javascript:window.scrollBy(250,350)<br>
-Found element:By.linkText: Akció, Kaland<br>
-Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3b71a9d1-4429-42b7-b37a-a520e386f479)] -> link text: Akció, Kaland]<br>
-Found element:By.id: normalView<br>
-Found element:By.id: normalView<br>
-Found element:By.tagName: a<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-Completed executing following method : TestPlayer.testSelectContentsPlay<br>
-<a href="C:/Users/igeorge1982/Documents/Tests/INTERNET_EXPLORER-testSelectContentsPlay(test.java.TestPlayer)-2015-2-25-18-11-40-100.png"><p align="left">Error screenshot at Wed Mar 25 18:11:43 CET 2015</p><br>
-<p><img width="50%" src="C:\Users\igeorge1982\Documents\Tests\INTERNET_EXPLORER-testSelectContentsPlay(test.java.TestPlayer)-2015-2-25-18-11-40-100.png" alt="screenshot at Wed Mar 25 18:11:43 CET 2015"/></p></a><br /><br>
+<tr><td><i>Test did not have report output.</i></td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">test.java.TestPlayer : testSignInSuccess</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
+</tr>
+<tr><td>
+Found element:By.id: headerButtonLogin<br>
+Found element:By.id: headerButtonLogin<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> id: headerButtonLogin]<br>
+Found element:By.id: OperatorId<br>
+Found element:By.id: OperatorId<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> id: OperatorId]<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+<p>selectOperator test is done<br></p><br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (5b676150-9cb3-4212-9f41-f74e4e79e525)] -> css selector: #sign-in-buttons > button.button_submit]<br>
+<p>submit test is done<br></p><br>
+Found element:By.id: newDeviceInput<br>
+Found element:By.id: newDeviceInput<br>
+Found element:By.id: newDeviceInput<br>
+Found element:By.id: newDeviceInput<br>
+Found element:By.id: newDeviceInput<br>
+Found element:By.id: newDeviceInput<br>
+<p>newDevice test is done<br></p><br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Minden fasza<br>
 Test Method resides in test.java.TestPlayer<br>
-Test Status: Failed<br>
-Fuck<br><br>
-<h3>Failure</h3>
-<div class="stacktrace">java.util.NoSuchElementException
-	at java.util.ArrayList$Itr.next(Unknown Source)
-	at pageObjects.SelectMovieGroups.actionGroups(SelectMovieGroups.java:91)
-	at test.java.TestPlayer.testSelectContentsPlay(TestPlayer.java:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</div>
-</div>
+Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
+Test Status: Pass<br>
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h3>Test on Chrome</h3>

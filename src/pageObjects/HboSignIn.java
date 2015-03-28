@@ -16,7 +16,8 @@ public class HboSignIn extends TestBase implements WebElements{
 		super(driver); 
 	}
 
-	private static String password = "";	
+	private static String password = "";
+	private static String email = "";
 
 		
 	public HboSignIn selectOperator(String operator) throws Exception{
@@ -52,7 +53,7 @@ public class HboSignIn extends TestBase implements WebElements{
 	    	Thread.sleep(1000);
 	    }	
 	    driver.findElement(By.name("EmailAddress")).clear();
-	    driver.findElement(By.name("EmailAddress")).sendKeys("gyorgy.gaspar@mediaux.biz");
+	    driver.findElement(By.name("EmailAddress")).sendKeys(email);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");

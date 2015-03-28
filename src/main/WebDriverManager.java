@@ -80,7 +80,7 @@ public class WebDriverManager
             
     		TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
     			
-    		System.setProperty("webdriver.ie.driver", "C:\\Dev\\IEWebDriver\\IEDriverServer32.exe");
+    		System.setProperty("webdriver.ie.driver", "lib/IEDriverServer32.exe");
     		
     		DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
             Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
@@ -89,6 +89,8 @@ public class WebDriverManager
             Capabilities.setVersion("11");
             Capabilities.getVersion();
             Capabilities.equals(browser);
+            Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+            Capabilities.setCapability(InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
             
 
             // start a internet explorer driver instance
@@ -156,8 +158,8 @@ public class WebDriverManager
             	
             	if (!TestBase.isSupportedPlatformMac(true)) {
             		
-            		String userHome = System.getProperty("user.home");
-            		String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver.exe";
+            		//String userHome = System.getProperty("user.home");
+            		String chromeDriverPath = "lib/chromedriver.exe";
             		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
                 }
             	

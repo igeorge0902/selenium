@@ -2,6 +2,9 @@ package main;
 
 
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -87,5 +90,21 @@ public interface WebElements {
     public WebElement playBack_Close = WebDriverManager.driver.findElement(By.id(playbackClose));
     
     public static String player_mediaux_biz = "(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)";
+    public static String huvip = "(^[a-z]{4}\\W\\/\\/+[a-z]{5}\\.[a-z]{5}\\.[a-z]{2}\\/[content]+\\/.+-[0-9]+$)";
+
+    
+    /**
+     * input file containing urls from a given category view.
+     */
+    
+	public Path textFile = Paths.get("lib/urls.txt");
+	
+	/**
+	 * output file for test urls.
+	 */
+	public Path textFile2 = Paths.get("lib/output.txt");
+	
+	public String urlsFile = "lib/urls.txt";
+	public String outputFile = "lib/output.txt";
 
 }

@@ -1,6 +1,12 @@
 package main;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -422,9 +428,125 @@ public class TestBase extends Verify implements WebElements{
           }
         }
 	
+	public static void clearJavaScript(By by) throws Exception
+    {                     
+		
+	WebElement element = null; 
+	//wait for the Error Message Element to be present and display
+	element = WaitTool.waitForElementPresent(driver, by, 5);
+
+        String javaScript = "var scripts =  document.getElementsByTagName('script');"+
+        					"var torefreshs = ['HBO.min.js'];"+ // list of js to be refresh
+        					"var key = 1;"+ // change this key every time you want force a refresh
+        					"for(var i=0;i<scripts.length;i++){"+ 
+        						"for(var j=0;j<torefreshs;j++){"+ 
+        							"if(scripts[i].src && (scripts[i].src.indexOf(torefreshs[j]) > -1)){"+
+        								"new_src = scripts[i].src.replace(torefreshs[j],torefreshs[j] + 'k=' + key );"+
+        								"scripts[i].src = new_src;"+ // change src in order to refresh js
+        							"}"+ 
+        						"}"+
+        					"}";
+        
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        try {
+        js.executeScript(javaScript, element);
+        Thread.sleep(2000);
+      } catch (Exception e) {
+    	  Log.info(e);
+      }
+    }
+	
 	
 	/**
 	 * 
+	 * Creates a new file with Path param. 
+	 * If the given file on the path exists, it will be deleted first.
+	 * 
+	 * @param newfile
+	 * 
+	 */
+	
+	public static void createFile(String newfile) {
+		
+		Path newFile = Paths.get(newfile);
+		try {
+			Files.deleteIfExists(newFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			Files.createFile(newFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Write a text file with the given list elements retrieved from the list.
+	 * 
+	 * @param newfile
+	 * @param list
+	 */
+	
+	public static void writeFile(String newfile, List<String> list) {
+		
+		Path textFile = Paths.get(newfile);
+		Charset charset = Charset.defaultCharset();
+		List<String> urlList = list;
+		try {
+			Files.write(textFile, urlList, charset);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 
+	 * Reads up a file, and checks if it has any lines.
+	 * 
+	 * @param textFile
+	 * @param condition
+	 * @return true if the file is not empty
+	 */
+	
+	public static boolean readFile(Path textFile, boolean condition) {
+		List<String> linesRead = null;
+		try {
+			linesRead = Files.readAllLines(textFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		if (linesRead !=null) {
+			for (String line : linesRead) {
+				Log.info(line);
+			}
+		}
+		return true;
+	}
+	
+	public static void deleteFile(String textfile) {
+		
+		try{
+			 
+    		File file = new File(textfile);
+ 
+    		if(file.delete()){
+    			System.out.println(file.getName() + " is deleted!");
+    		}else{
+    			System.out.println("Delete operation is failed.");
+    		}
+ 
+    	}catch(Exception e){
+ 
+    		e.printStackTrace();
+ 
+    	}
+		
+	}
+	
+	/**
+	 * Retrieve text of any elements in the DOM, with javaScript.
 	 * 
 	 * 
 	 * @param driver
@@ -730,7 +852,7 @@ public class TestBase extends Verify implements WebElements{
                         	String stringToSearch = contentlist;
             			    
             			    //*** the pattern we want to search for
-            			    Pattern p = Pattern.compile(player_mediaux_biz);
+            			    Pattern p = Pattern.compile(huvip);
             			    
             			    Matcher m = p.matcher(stringToSearch);
             			 
@@ -771,6 +893,86 @@ public class TestBase extends Verify implements WebElements{
                   }
                 
     	        }	return links.iterator();
+
+	    }
+	    
+ public static List<String> contentsList() {
+	    	
+	    	List<String> dataToBeReturned = new ArrayList<String>();	
+            List<String> links = new ArrayList<String> ();
+            StringBuilder builder = new StringBuilder();
+
+        	List<WebElement> findElements;
+        	findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
+        		   
+	            for (WebElement webElement : findElements)
+	            	
+	            {	
+	            	String contents = webElement.getAttribute("href");
+	                
+	                dataToBeReturned.add(contents);
+	                builder.append(contents);
+	                
+	            }
+	                            
+    	        if (dataToBeReturned.isEmpty()) {
+    	        	System.out.println("No contents in the Category!!");
+    	        	Log.info("No contents in the Category!!");
+    	        	Reporter.log("No contents in the Category!!");
+    	        }
+    	        
+    	        else if (!dataToBeReturned.isEmpty()) {
+    	        		        		                
+                	for(String contentlist : dataToBeReturned) {	 
+
+                        Log.info(contentlist);
+                        
+                        try {	
+              			   
+                        	String stringToSearch = contentlist;
+            			    
+            			    //*** the pattern we want to search for
+            			    Pattern p = Pattern.compile(huvip);
+            			    
+            			    Matcher m = p.matcher(stringToSearch);
+            			 
+            			    // if we find a match, get the group
+            			    if (m.find())
+            			    {
+            			      // we're only looking for one group, so get it
+            			      String theGroup = m.group(1);
+            			       
+            			      // print and log the group out for verification
+            			      System.out.format("%s", theGroup);
+            			      
+            			      Log.info(String.format("%s", theGroup));
+            			      
+            			      //add the matching urls to the links List
+                	          links.add(String.format("%s", theGroup));
+          	                  builder.append(String.format("%s", theGroup));
+          	                  
+          	                  if (links.isEmpty()) {
+          	                	  
+              			    	Log.info("Url matcher failed!");
+              			    	Log.info("Urls will be returned unfiltered from dataToBeReturned List!");
+              			    	
+              					return dataToBeReturned;
+          	                	  
+          	                  }
+            			    }
+        			    
+                        } catch (Exception e) {
+                        		                      		
+            			    	Log.info("Url matcher failed!");
+            			    	Log.info("Urls will be returned unfiltered from dataToBeReturned List!");
+            			    	Log.info(e.getMessage());
+            			    	
+            					return dataToBeReturned;
+
+                        	}                      
+                  }
+                
+    	        }	return links;
 
 	    }
 	    
