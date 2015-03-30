@@ -53,18 +53,13 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    }			
 
 		    TestBase.verifyNotNull(playPuttony);
-		    
-		    try {
 		  
-		    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		    	TestBase.clearJavaScript(By.xpath(PlayButton));
-		    	Thread.sleep(5000);
-		    	js.executeScript("return window.location.reload(true)");
-		    	Thread.sleep(3000);
-		    	} catch (Exception e) {
-		    	e.getStackTrace();
+		    	//JavascriptExecutor js = (JavascriptExecutor) driver;
 		    	
-		    }
+		    	TestBase.clearJavaScript(By.xpath(PlayButton));
+		    	WaitTool.waitForJavaScriptCondition(driver, refreshJS, 10);
+		    	js.executeScript("return window.location.reload(true)");
+		    	WaitTool.waitForJavaScriptCondition(driver, reloadJS, 10);
 		    
 		    TestBase.MouseHoverByJavaScript(By.xpath(PlayButton));	
 	    	Thread.sleep(3000);
@@ -88,13 +83,14 @@ public class PlayMainContent extends TestBase implements WebElements{
     	    //wait for title presence with regex
 	    	Pattern title = Pattern.compile("(.)");
     	    Matcher matchertitle = title.matcher(titleName);
+    	    
     	    if (matchertitle.find()) {
     	    	
     	    	String theGroup = matchertitle.group(1);
     	    	
     	    	String titletext = String.format("%s", theGroup);
     	    	WaitTool.waitForTextPresent(driver, By.id(playbackTitle), titletext, 20);	
-
+    	    	
     	    }
 	    		    	
 	    	//wait for element, where second = nr. of attempts

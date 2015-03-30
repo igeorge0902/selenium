@@ -50,7 +50,7 @@ public class TestBase extends Verify implements WebElements{
 	 *  The constructor driver for all classes, that extend TestBase. The driver is returned in {@link WebDriverManager.class}, 
 	 *  where it will be instantiated with {@value browser} and {@value url} params.
 	 */
-	protected static WebDriver driver = null;
+	protected static WebDriver driver;
 	public TestBase(WebDriver driver) {
 		  TestBase.driver = WebDriverManager.driver; 
 	  }
@@ -659,16 +659,17 @@ public class TestBase extends Verify implements WebElements{
 	*/
 	
 	public static void playContents(){
+		
     	JavascriptExecutor js = (JavascriptExecutor) driver;
 		
     	List<WebElement> playbuttonmenu;
         playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
                 
-        for(int i =0; i<playbuttonmenu.size();i++)    
+        for(int i = 0; i<playbuttonmenu.size();i++)    
         {
             String onClick = playbuttonmenu.get(i).getAttribute("onclick");
             
-            for(int j=0; j<playContent.length;j++)
+            for(int j= 0; j<playContent.length;j++)
             {
                 if(onClick.contains(playContent[j]))
                 {
@@ -835,7 +836,7 @@ public class TestBase extends Verify implements WebElements{
                         	String stringToSearch = contentlist;
             			    
             			    //*** the pattern we want to search for
-            			    Pattern p = Pattern.compile(huvip);
+            			    Pattern p = Pattern.compile(BaseUrls.PLAYER.toString());
             			    
             			    Matcher m = p.matcher(stringToSearch);
             			 
@@ -915,7 +916,7 @@ public class TestBase extends Verify implements WebElements{
                         	String stringToSearch = contentlist;
             			    
             			    //*** the pattern we want to search for
-            			    Pattern p = Pattern.compile(huvip);
+            			    Pattern p = Pattern.compile(BaseUrls.PLAYER.toString());
             			    
             			    Matcher m = p.matcher(stringToSearch);
             			 

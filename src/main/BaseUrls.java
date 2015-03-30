@@ -1,6 +1,6 @@
 package main;
 
-public enum BaseUrls {
+public enum BaseUrls implements WebElements {
 	  
 	  GOOGLE("https://www.google.hu/"),
 	  YAHOO("https://www.yahoo.com/"),
@@ -16,5 +16,10 @@ public enum BaseUrls {
 	  	public String get() {
 		  return myUrls;
 		}
-
+	  	
+	  	public String toString(){
+	  		if (this.equals(PLAYER)) {	  			
+	  		}
+	  		return huvip;  			  	
+	  	}
 }

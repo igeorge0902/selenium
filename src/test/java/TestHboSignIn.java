@@ -20,8 +20,6 @@ import testng.TestMethodListener;
 
 public class TestHboSignIn extends TestBase{
 	
-	  private static Logger Log = Logger.getLogger(Logger.class.getName());
-
 
   @Parameters ({"operator"})
   @Test (groups = { "functional_test1" }, description= "HBO login" )

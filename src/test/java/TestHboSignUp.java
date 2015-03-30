@@ -26,8 +26,6 @@ public class TestHboSignUp extends TestBase{
 		    m_numberOfTimes = numberOfTimes;
 		}
 	  
-	
-	
   @Test 
   public static void testSignupFail() throws Exception{
 		  

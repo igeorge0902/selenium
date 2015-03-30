@@ -64,7 +64,6 @@ public interface WebElements {
     
     //WebPage elements
     public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton));
-	public static String hashmarks = "http://player.mediaux.biz/#";
 
     
     //Player elements
@@ -106,5 +105,20 @@ public interface WebElements {
 	
 	public String urlsFile = "lib/urls.txt";
 	public String outputFile = "lib/output.txt";
+	
+	//JavaScripts
+	public String refreshJS = "var scripts =  document.getElementsByTagName('script');"+
+							  "var torefreshs = ['HBO.min.js'];"+ // list of js to be refresh
+							  "var key = 1;"+ // change this key every time you want force a refresh
+							  "for(var i=0;i<scripts.length;i++){"+ 
+							  "for(var j=0;j<torefreshs;j++){"+ 
+							  "if(scripts[i].src && (scripts[i].src.indexOf(torefreshs[j]) > -1)){"+
+							  "new_src = scripts[i].src.replace(torefreshs[j],torefreshs[j] + 'k=' + key );"+
+							  "scripts[i].src = new_src;"+ // change src in order to refresh js
+							  		"}"+ 
+							  	  "}"+
+							  "}";
+	
+	public String reloadJS = "window.location.reload(true)";
 
 }
