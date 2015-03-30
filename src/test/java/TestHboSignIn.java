@@ -2,11 +2,8 @@ package test.java;
 
 
 import main.TestBase;
-import main.WebDriverManager;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
@@ -23,40 +20,8 @@ import testng.TestMethodListener;
 
 public class TestHboSignIn extends TestBase{
 	
-	  private static WebDriver driver = null;
 	  private static Logger Log = Logger.getLogger(Logger.class.getName());
 
-	@BeforeClass
-	  public void setUp(ITestContext context) throws Exception {
-		
-		  try {			  
-		  // get the web driver parameters from the testng xml file
-	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      String url = context.getCurrentXmlTest().getParameter("url");
-	      
-	      driver = WebDriverManager.startDriver(browser, url, 40); 
-	      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-	      Log.info("Before setUp is SUCCESS!");
-
-		  } catch (Exception e) {
-			
-			  Log.info(e);
-			  Log.info("Safari is reconnecting!");
-			  // get the web driver parameters from the testng xml file
-		      String browser = context.getCurrentXmlTest().getParameter("browser");
-		      String url = context.getCurrentXmlTest().getParameter("url");
-		      
-		      driver = WebDriverManager.startDriver(browser, url, 40); 
-		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-		  }
-		  
-	}
-	      	  
-		
-	@AfterClass
-	private void closeBrowser(ITestContext context) {
-		WebDriverManager.stopDriver();
-	}
 
   @Parameters ({"operator"})
   @Test (groups = { "functional_test1" }, description= "HBO login" )

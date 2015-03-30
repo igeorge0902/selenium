@@ -81,17 +81,17 @@ public class WebDriverManager
     		TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
     			
     		System.setProperty("webdriver.ie.driver", "lib/IEDriverServer32.exe");
-    		
+    				
     		DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
             Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
             Capabilities.isJavascriptEnabled();
-            Capabilities.setCapability("enablePersistentHover", false);
             Capabilities.setVersion("11");
             Capabilities.getVersion();
             Capabilities.equals(browser);
             Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
             Capabilities.setCapability(InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
-            
+            Capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+
 
             // start a internet explorer driver instance
             driver = new InternetExplorerDriver(Capabilities);

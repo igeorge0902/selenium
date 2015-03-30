@@ -20,6 +20,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 
+import testng.CustomException;
 import testng.TestListeners;
 import testng.TestMethodListener;
 import utils.WaitTool;
@@ -36,12 +37,14 @@ public class PlayMainContent extends TestBase implements WebElements{
 		super(driver); 
 	}
 	
-	public PlayMainContent playMainContent(String urls) throws Exception {
+	public PlayMainContent playMainContent(String urls) throws Exception, CustomException {
 
 		Actions action = new Actions(driver);
 					
 			driver.get(urls);
 		    
+			//driver.get("http://huvip.hbogo.eu/content/angelique-976043498");
+		
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
 		    	try { if (isElementPresentAndDisplay(By.xpath(PlayButton))) break; } catch (Exception e) {
@@ -54,7 +57,8 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    try {
 		  
 		    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		    	//TestBase.clearJavaScript(By.xpath(PlayButton));
+		    	TestBase.clearJavaScript(By.xpath(PlayButton));
+		    	Thread.sleep(5000);
 		    	js.executeScript("return window.location.reload(true)");
 		    	Thread.sleep(3000);
 		    	} catch (Exception e) {
@@ -62,15 +66,22 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    	
 		    }
 		    
-		    Thread.sleep(3000);
-		    TestBase.MouseHoverByJavaScript(By.xpath(PlayButton));		    
-		    
+		    TestBase.MouseHoverByJavaScript(By.xpath(PlayButton));	
+	    	Thread.sleep(3000);
+
+		    /*
+	        action.moveToElement(playPuttony).perform();	        
+	        WebElement subElement = driver.findElement(By.xpath(PlayButton));	 
+	        action.moveToElement(subElement);	 	 
+	        action.perform();
+		    */
 	    	//start playback
 	    	TestBase.playContents();
 	    	
 	    	//TODO: parental
+	    	//TODO: proper check if content has really been started (maybe without "try")
 	    	
-	    	try {
+	    	//try {
 	    	
     	    String titleName = driver.findElement(By.id(playbackTitle)).getText();
     	   
@@ -111,14 +122,19 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	
 		    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
 		    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
-		    try{
-		    action.dragAndDropBy(SeekDot, 0, -1100).build().perform();
+		    
+	    		WaitTool.waitForElement(driver, By.id(positionsSeek), 10);
+	    	if (TestBase.isElementPresent(By.id(positionsSeek))) {
+		    
+		    	action.dragAndDropBy(SeekDot, 0, -1100).build().perform();
 	    		Reporter.log("Drag and drop action succeeded!");
-	    		Log.info("Drag and drop action succeeded!");
-		    } catch (Exception e) {
+	    		Log.info("Drag and drop action succeeded!"); 
+	    	}
+	    		
+	    	else if (!TestBase.isElementPresent(By.id(positionsSeek))) {
 		    	Reporter.log("Drag and drop action failed!");
 		    	Log.info("Drag and drop action failed!");
-		    	
+		    	throw new CustomException ();
 		    }
 		    
 		    //start
@@ -198,12 +214,12 @@ public class PlayMainContent extends TestBase implements WebElements{
 		    Reporter.log("Playback works fine");
 		    Log.info("Playback works fine");
 		    
-	    		} catch (Exception e) {
-	            CaptureScreenshotOnFailureListener.captureScreenShot();
+	    		//} catch (Exception e) {
+	            //CaptureScreenshotOnFailureListener.captureScreenShot();
 			    Reporter.log("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
 	    		Log.info("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
 	    			
-	    	}
+	    	//}
 		    	Thread.sleep(5000);	    
 
 	return new PlayMainContent(driver); 

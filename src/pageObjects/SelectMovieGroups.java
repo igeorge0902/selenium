@@ -51,9 +51,7 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-			
-			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
-			
+						
 			WaitTool.waitForElement(driver, By.id(HeaderButton), 10);
 			driver.findElement(By.id(HeaderButton)).click();
 

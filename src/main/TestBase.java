@@ -27,8 +27,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import testng.Verify;
 import utils.WaitTool;
@@ -59,6 +62,35 @@ public class TestBase extends Verify implements WebElements{
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 		  
 
+	@BeforeClass
+	  public void setUp(ITestContext context) throws Exception {
+		
+		  try {			  
+		  // get the web driver parameters from the testng xml file
+	      String browser = context.getCurrentXmlTest().getParameter("browser");
+	      String url = context.getCurrentXmlTest().getParameter("url");
+	      
+	      driver = WebDriverManager.startDriver(browser, url, 40); 
+	      TestBase.verifyNotNull(driver, "Driver setUp failed!");
+
+		  } catch (Exception e) {
+			
+			  Log.info(e);
+			  Log.info("Safari is reconnecting!");
+			  // get the web driver parameters from the testng xml file
+		      String browser = context.getCurrentXmlTest().getParameter("browser");
+		      String url = context.getCurrentXmlTest().getParameter("url");
+		      
+		      driver = WebDriverManager.startDriver(browser, url, 40); 
+		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
+		  }
+		  
+	}
+
+	@AfterClass
+	private void closeBrowser(ITestContext context) {
+		WebDriverManager.stopDriver();
+	}
 
 	/*
 	 * softAssert methods
@@ -382,12 +414,10 @@ public class TestBase extends Verify implements WebElements{
 	public static boolean ElementMouseOver(By by) throws Exception
         {
 		
-		WebElement element = null; 
+		WebElement element; 
 		
-		//wait for the Error Message Element to be present and display
 		element = WaitTool.waitForElement(driver, by, 3);
 		
-            driver.manage().window().maximize();
             Actions actions = new Actions(driver);
             try
             {

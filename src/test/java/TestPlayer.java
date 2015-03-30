@@ -3,10 +3,7 @@ package test.java;
 
 import main.BaseUrls;
 import main.TestBase;
-import main.WebDriverManager;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
@@ -23,38 +20,6 @@ import testng.TestMethodListener;
 
 public class TestPlayer extends TestBase{
 	
-	  private static WebDriver driver = null;
-
-
-		@BeforeClass
-		  public void setUp(ITestContext context) throws Exception {
-			
-			  try {			  
-			  // get the web driver parameters from the testng xml file
-		      String browser = context.getCurrentXmlTest().getParameter("browser");
-		      String url = context.getCurrentXmlTest().getParameter("url");
-		      
-		      driver = WebDriverManager.startDriver(browser, url, 40); 
-		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-
-			  } catch (Exception e) {
-				
-				  Log.info(e);
-				  Log.info("Safari is reconnecting!");
-				  // get the web driver parameters from the testng xml file
-			      String browser = context.getCurrentXmlTest().getParameter("browser");
-			      String url = context.getCurrentXmlTest().getParameter("url");
-			      
-			      driver = WebDriverManager.startDriver(browser, url, 40); 
-			      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-			  }
-			  
-		}
-	
-	@AfterClass
-	private void closeBrowser(ITestContext context) {
-		WebDriverManager.stopDriver();
-	}
 	
   @Parameters ({"operator"})
   @Test (groups = { "signin" }, description= "HBO login" )
@@ -82,7 +47,7 @@ public class TestPlayer extends TestBase{
   }
     
     
-	@Test (/*dependsOnMethods = { "testSignInSuccess" },*/ groups = { "player" }, description= "Selecting contents for playback tests.")
+	@Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "player" }, description= "Selecting contents for playback tests.")
 	public void testSelectContentsPlay() throws Exception{
 		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
 		
@@ -93,7 +58,7 @@ public class TestPlayer extends TestBase{
 		
 	}
 	
-    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", /*dependsOnMethods = { "testSelectContentsPlay" },*/ description= "Playback test of main contents")
+    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", dependsOnMethods = { "testSelectContentsPlay" }, description= "Playback test of main contents")
     public void testPlayerSuccess(String urls) throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		

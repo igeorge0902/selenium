@@ -4,12 +4,10 @@ package test.java;
 import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
-import main.WebDriverManager;
 import main.WebElements;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.ITestContext;
 import org.testng.annotations.*;
 import org.testng.Reporter;
 
@@ -30,37 +28,6 @@ public class TestTest extends TestBase implements WebElements{
   public TestTest() {
   }
   
-  
-	@BeforeClass
-	  public void setUp(ITestContext context) throws Exception {
-		
-		  try {			  
-		  // get the web driver parameters from the testng xml file
-	      String browser = context.getCurrentXmlTest().getParameter("browser");
-	      String url = context.getCurrentXmlTest().getParameter("url");
-	      
-	      driver = WebDriverManager.startDriver(browser, url, 40); 
-	      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-
-		  } catch (Exception e) {
-			
-			  Log.info(e);
-			  Log.info("Safari is reconnecting!");
-			  // get the web driver parameters from the testng xml file
-		      String browser = context.getCurrentXmlTest().getParameter("browser");
-		      String url = context.getCurrentXmlTest().getParameter("url");
-		      
-		      driver = WebDriverManager.startDriver(browser, url, 40); 
-		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
-		  }
-		  
-	}
-	
-	@AfterClass
-	private void closeBrowser(ITestContext context) {
-		WebDriverManager.stopDriver();
-	}
-	
   
   @Test
   public void testHbogoWebdriverTest1() throws Exception { 

@@ -31,52 +31,119 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br>Passed</th><th>Scenarios<br>Passed</th><th># skipped</th><th># failed</th><th>Total<br>Time</th><th>Included<br>Groups</th><th>Excluded<br>Groups</th></tr>
 <tr><th colspan="8">Test Demo Run</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Default test</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Test Groups</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi">checkintest functest </td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Test on Safari</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Test on Internet Explorer</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">1</td><td class="numi">0h:0m:23s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t5">Test on Chrome</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">1</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <p></p>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <b align="center">Result Summary Table</b>
 <tr><th>Class</th><th>Method</th><th># of<br>Scenarios</th><th>Start</th><th>Time<br>elapsed</th><th>Custom</th></tr>
-<tr id="t1"><th colspan="6">Default test ‚Äî passed</th></tr>
-<tr class="passedodd"><td rowspan="3">utils.GroupTestExample</td><td><a href="#m1"><b>testPrintMessage</b> (checkintest, functest) </a></td><td class="numi">1</td><td> m√°rc. 28 at 05:39 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="passedodd"><td><a href="#m2"><b>testSalutationMessage</b> (checkintest) </a></td><td class="numi">1</td><td> m√°rc. 28 at 05:39 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="passedodd"><td><a href="#m3"><b>testingExitMessage</b> (functest) </a></td><td class="numi">1</td><td> m√°rc. 28 at 05:39 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr id="t4"><th colspan="6">Test on Internet Explorer ó failed</th></tr>
+<tr class="failedodd"><td>test.java.TestPlayer</td><td><a href="#m1"><b>testSignInSuccess</b> (signin) ("HBO login")</a></td><td class="numi">1</td><td> m·rc. 30 at 07:11 DU</td><td class="numi">0h:0m:13s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr><th colspan="6">Test on Internet Explorer ó skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">test.java.TestPlayer</td><td><a href="#m2"><b>testPlayerSuccess</b>  ("Playback test of main contents")</a></td><td class="numi">1</td><td> m·rc. 30 at 07:11 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="skippedodd"><td><a href="#m3"><b>testSelectContentsPlay</b> (player) ("Selecting contents for playback tests.")</a></td><td class="numi">1</td><td> m·rc. 30 at 07:11 DU</td><td class="numi">0h:0m:0s</td><td><a href='emailable-report.html'>Test</a></td></tr>
 </table>
 <br/><b align="center">Method Summaries</b><br/>
 <h1>Test Demo Run</h1>
-<h3>Default test</h3>
-<h2 id="m1">utils.GroupTestExample : testSalutationMessage</h2>
+<h3>Test Groups</h3>
+<h3>Test on Safari</h3>
+<h3>Test on Firefox</h3>
+<h3>Test on Internet Explorer</h3>
+<h2 id="m1">test.java.TestPlayer : testSignInSuccess</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr><td><i>Test did not have parameters.</i></td></tr> 
-<div>
-Completed executing following method : GroupTestExample.testSalutationMessage<br>
-Completed executing following method : GroupTestExample.testSalutationMessage<br>
-Test Method resides in utils.GroupTestExample<br>
-Test Status: Pass<br>
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
+</tr>
+<tr><td>
+<h3>Test Messages</h3>
+Found element:By.id: headerButtonLogin<br>
+Found element:By.id: headerButtonLogin<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (52fdb6a0-bce5-45b8-9dd7-abc3c0287e52)] -> id: headerButtonLogin]<br>
+Found element:By.id: OperatorId<br>
+Found element:By.id: OperatorId<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (52fdb6a0-bce5-45b8-9dd7-abc3c0287e52)] -> id: OperatorId]<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (52fdb6a0-bce5-45b8-9dd7-abc3c0287e52)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+<p>selectOperator test is done<br></p><br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (52fdb6a0-bce5-45b8-9dd7-abc3c0287e52)] -> css selector: #sign-in-buttons > button.button_submit]<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Completed executing following method : TestPlayer.testSignInSuccess<br>
+Fuck<br><br>
+Test Method resides in test.java.TestPlayer<br>
+Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
+Test Status: Failed<br>
+<a href="C:/Users/igeorge1982/Documents/Tests/INTERNET_EXPLORER-testSignInSuccess(test.java.TestPlayer)-2015-2-30-19-11-23-487.png"><p align="left">Error screenshot at Mon Mar 30 19:11:23 CEST 2015</p><br>
+<p><img width="50%" src="C:\Users\igeorge1982\Documents\Tests\INTERNET_EXPLORER-testSignInSuccess(test.java.TestPlayer)-2015-2-30-19-11-23-487.png" alt="screenshot at Mon Mar 30 19:11:23 CEST 2015"/></p></a><br /><br>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at main.TestBase.assertTrue(TestBase.java:139)
+	at test.java.TestPlayer.testSignInSuccess(TestPlayer.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </div>
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">utils.GroupTestExample : testPrintMessage</h2>
+<h2 id="m2">test.java.TestPlayer : testPlayerSuccess</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><td><i>Test did not have parameters.</i></td></tr> 
-<div>
-Completed executing following method : GroupTestExample.testPrintMessage<br>
-Completed executing following method : GroupTestExample.testPrintMessage<br>
-Test Method resides in utils.GroupTestExample<br>
-Test Status: Pass<br>
-</div>
+<tr><td><i>Test did not have report output.</i></td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">utils.GroupTestExample : testingExitMessage</h2>
+<h2 id="m3">test.java.TestPlayer : testSelectContentsPlay</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><td><i>Test did not have parameters.</i></td></tr> 
-<div>
-Completed executing following method : GroupTestExample.testingExitMessage<br>
-Completed executing following method : GroupTestExample.testingExitMessage<br>
-Test Method resides in utils.GroupTestExample<br>
-Test Status: Pass<br>
-</div>
+<tr><td><i>Test did not have report output.</i></td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
+<h3>Test on Chrome</h3>
 <center><h4>Customized TestNG Report</h4></center>
 </body></html>
