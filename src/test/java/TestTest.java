@@ -98,7 +98,7 @@ public class TestTest extends TestBase implements WebElements{
         Log.info("Action performed");
                   
         
-        TestBase.playContents();
+        TestBase.playContents(playTrailer);;
            	
             	       
 	   //// The readyState property returns the (loading) status of the current document: 'document.readyState'

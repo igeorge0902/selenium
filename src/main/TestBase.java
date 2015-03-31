@@ -88,7 +88,7 @@ public class TestBase extends Verify implements WebElements{
 	}
 
 	@AfterClass
-	private void closeBrowser(ITestContext context) {
+	public void closeBrowser(ITestContext context) {
 		WebDriverManager.stopDriver();
 	}
 
@@ -658,29 +658,21 @@ public class TestBase extends Verify implements WebElements{
 	*
 	*/
 	
-	public static void playContents(){
+	public static void playContents(String playcontent){
 		
     	JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
+    	WebElement playbuttonmenu;
+        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElement(By.tagName("a")); 
                 
-        for(int i = 0; i<playbuttonmenu.size();i++)    
+        String onClick = playbuttonmenu.getAttribute("onclick");
+        
+        if(onClick.contains(playcontent))
         {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-            for(int j= 0; j<playContent.length;j++)
-            {
-                if(onClick.contains(playContent[j]))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            }
-            
+            js.executeScript(onClick);
         }
-		
-	}
+  }
+	
 	
 	/**
 	 * Checks if the playback has started, where the nr. of attempts equals the cycle to go, 

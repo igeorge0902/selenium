@@ -94,7 +94,7 @@ public class PlayTrailer extends TestBase implements WebElements{
 		    }
 		    		    
 	        TestBase.MouseHoverByJavaScript(By.id("play-button-894d224d-00d6-43f7-92df-6ac52c4cdfc4"));
-	        TestBase.playContents();
+	        TestBase.playContents(playTrailer);
 	        
 	       
 	return new PlayTrailer(driver); 

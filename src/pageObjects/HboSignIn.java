@@ -16,8 +16,8 @@ public class HboSignIn extends TestBase implements WebElements{
 		super(driver); 
 	}
 
-	private static String password = "";
-	private static String email = "";
+	private static String password = "common";
+	private static String email = "gyorgy.gaspar03@mediaux.biz";
 
 		
 	public HboSignIn selectOperator(String operator) throws Exception{

@@ -30,6 +30,7 @@
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
+					<exclude name="testSignInSuccess" />
 					<exclude name="testMouseHover" />
 				</methods>
 			</class>
@@ -69,7 +70,8 @@
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
-					<exclude name="testMouseHover" />
+					<include name="testSignInSuccess" />
+					<include name="testMouseHover" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignUp">
@@ -108,6 +110,7 @@
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
+					<exclude name="testSignInSuccess" />
 					<exclude name="testMouseHover" />
 				</methods>
 			</class>
@@ -147,7 +150,8 @@
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
-					<exclude name="testMouseHover" />
+					<include name="testSignInSuccess" />
+					<include name="testMouseHover" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignUp">
@@ -157,9 +161,9 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testSelectContentsPlay" />
-					<include name="testPlayerSuccess" />
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">

@@ -17,23 +17,13 @@ import org.openqa.selenium.WebElement;
 public interface WebElements { 
 	
 	//playButton
-	public static String[] playTrailer = new String[]{"PlayTrailer"};
-	public static String[] playContent = new String[]{"PlayContent"};
-	public static String[] playFree = new String[]{"PlayFree"};
-	public static String[] playLive = new String[]{"PlayLive"};
-	public static String[] playExtra = new String[]{"PlayExtra"};
-	public static String[] playInteractive = new String[]{"PlayInteractive"};
-	public static String[] playFreeInteractive = new String[]{"PlayFreeInteractive"};
-	
-	//playButton also
-    public static String[] playContents = new String[]{
-    	"PlayTrailer",
-    	"PlayContent", 
-    	"PlayFree", 
-    	"PlayLive", 
-    	"PlayExtra", 
-    	"PlayInteractive", 
-    	"PlayFreeInteractive"};
+	public static String playTrailer = "PlayTrailer";
+	public static String playContent = "PlayContent";
+	public static String playFree = "PlayFree";
+	public static String playLive = "PlayLive";
+	public static String playExtra = "PlayExtra";
+	public static String playInteractive = "PlayInteractive";
+	public static String playFreeInteractive = "PlayFreeInteractive";
     
     //play states
     public static String playPause = "PlayerManager.playPause()";
@@ -60,7 +50,7 @@ public interface WebElements {
     
     public static String ContentUrl1 = "/content/game-of-thrones-iv.-1-two-swords-255061514";
     public static String PlayButton = "//img[starts-with(@id, 'play-button-')]";
-    
+    public static String ContentDetail = ".//*[@id='content-inner']/div[1]/div[1]/div[2]";
     
     //WebPage elements
     public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton));
