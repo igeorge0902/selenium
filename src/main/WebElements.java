@@ -90,6 +90,7 @@ public interface WebElements {
     
     public static String player_mediaux_biz = "(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)";
     public static String huvip = "(^[a-z]{4}\\W\\/\\/+[a-z]{5}\\.[a-z]{5}\\.[a-z]{2}\\/[content]+\\/.+-[0-9]+$)";
+    public static String playbutton_css = "(play-button-[a-z0-9-]{36}$)";
 
     
     /**
@@ -107,7 +108,7 @@ public interface WebElements {
 	public String outputFile = "lib/output.txt";
 	
 	//JavaScripts
-	public String refreshJS = "var scripts =  document.getElementsByTagName('script');"+
+	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"+
 							  "var torefreshs = ['HBO.min.js'];"+ // list of js to be refresh
 							  "var key = 1;"+ // change this key every time you want force a refresh
 							  "for(var i=0;i<scripts.length;i++){"+ 
@@ -119,6 +120,7 @@ public interface WebElements {
 							  	  "}"+
 							  "}";
 	
-	public String reloadJS = "window.location.reload(true)";
-
+	public static String reloadJS = "window.location.reload(true)";
+	
+	
 }

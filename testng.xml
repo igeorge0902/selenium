@@ -28,6 +28,11 @@
 		<parameter name="browser" value="*safari" />
 		<parameter name="url" value="http://www.google.com" />
 		<classes>
+		    <class name="test.java.TestMouseHover">
+				<methods>
+					<exclude name="testMouseHover" />
+				</methods>
+			</class>
 			<class name="test.java.TestHboSignUp">
 				<methods>
 					<exclude name="testSignupFail" />
@@ -62,6 +67,11 @@
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
+		    <class name="test.java.TestMouseHover">
+				<methods>
+					<exclude name="testMouseHover" />
+				</methods>
+			</class>
 			<class name="test.java.TestHboSignUp">
 				<methods>
 					<exclude name="testSignupFail" />
@@ -70,7 +80,7 @@
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<include name="testSelectContentsPlay" />
+					<exclude name="testSelectContentsPlay" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
@@ -96,6 +106,11 @@
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
+		    <class name="test.java.TestMouseHover">
+				<methods>
+					<exclude name="testMouseHover" />
+				</methods>
+			</class>
 			<class name="test.java.TestHboSignUp">
 				<methods>
 					<exclude name="testSignupFail" />
@@ -130,6 +145,11 @@
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 	    <parameter name="filenamePath" value=".\lib\output.txt" />		
 		<classes>
+		    <class name="test.java.TestMouseHover">
+				<methods>
+					<exclude name="testMouseHover" />
+				</methods>
+			</class>
 			<class name="test.java.TestHboSignUp">
 				<methods>
 					<exclude name="testSignupFail" />
@@ -137,9 +157,9 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<exclude name="testSignInSuccess" />
-					<exclude name="testSelectContentsPlay" />
-					<exclude name="testPlayerSuccess" />
+					<include name="testSignInSuccess" />
+					<include name="testSelectContentsPlay" />
+					<include name="testPlayerSuccess" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">

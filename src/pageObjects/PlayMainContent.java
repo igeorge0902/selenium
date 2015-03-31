@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 import main.BaseUrls;
 import main.ElementScreenshot;
 import main.TestBase;
+import main.WebDriverManager;
 import main.WebElements;
 
 import org.openqa.selenium.By;
@@ -37,46 +38,27 @@ public class PlayMainContent extends TestBase implements WebElements{
 		super(driver); 
 	}
 	
+	private final String Firefox = "Firefox";
+	
 	public PlayMainContent playMainContent(String urls) throws Exception, CustomException {
 
 		Actions action = new Actions(driver);
 					
 			driver.get(urls);
-		    
-			//driver.get("http://huvip.hbogo.eu/content/angelique-976043498");
-		
-		    for (int second = 0;; second++) {
-		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementPresentAndDisplay(By.xpath(PlayButton))) break; } catch (Exception e) {
-		    		Log.info(e.getCause());
-		    	} Thread.sleep(1000);
-		    }			
-
-		    TestBase.verifyNotNull(playPuttony);
-		  
-		    	//JavascriptExecutor js = (JavascriptExecutor) driver;
-		    	
-		    	TestBase.clearJavaScript(By.xpath(PlayButton));
-		    	WaitTool.waitForJavaScriptCondition(driver, refreshJS, 10);
-		    	js.executeScript("return window.location.reload(true)");
-		    	WaitTool.waitForJavaScriptCondition(driver, reloadJS, 10);
-		    
-		    TestBase.MouseHoverByJavaScript(By.xpath(PlayButton));	
-	    	Thread.sleep(3000);
-
-		    /*
-	        action.moveToElement(playPuttony).perform();	        
-	        WebElement subElement = driver.findElement(By.xpath(PlayButton));	 
-	        action.moveToElement(subElement);	 	 
-	        action.perform();
-		    */
-	    	//start playback
-	    	TestBase.playContents();
+	    	
+			
+			//start playback
+			MouseHover MouseHover = new MouseHover(driver);			
+			MouseHover.mouseHover();
+			Thread.sleep(5000);
+				    	
 	    	
 	    	//TODO: parental
-	    	//TODO: proper check if content has really been started (maybe without "try")
 	    	
 	    	//try {
+	    	
+	    	//TODO: proper playback start check
+	    	//TestBase.assertTrue(TestBase.isPlayBackrunning(2, 20, true));
 	    	
     	    String titleName = driver.findElement(By.id(playbackTitle)).getText();
     	   
@@ -176,7 +158,7 @@ public class PlayMainContent extends TestBase implements WebElements{
 
 	        	    //find and replace elapsed time string value       	    
 	        	    Pattern replace2 = Pattern.compile("\\:+");
-	        	    Matcher matcher2 = replace.matcher(text2);
+	        	    Matcher matcher2 = replace2.matcher(text2);
 	        	    System.out.println(matcher2.replaceAll(""));
 	        	    
 	        	    //convert replaced string value to integer

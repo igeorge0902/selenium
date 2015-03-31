@@ -1,7 +1,6 @@
 package main;
 
 
-import java.io.File;
 import java.util.Arrays;
 
 import org.apache.log4j.Logger;
@@ -165,8 +164,7 @@ public class WebDriverManager
             	
             	else if (TestBase.isSupportedPlatformMac(true)) {
             		
-                    String userHome = System.getProperty("user.home");
-                    String chromeDriverPath = userHome +File.separator+File.separator + "Tests" + File.separator+"chromedriver";
+            		String chromeDriverPath = "lib/chromedriver";
             		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
             	}
             	

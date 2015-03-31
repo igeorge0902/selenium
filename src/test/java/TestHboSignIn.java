@@ -3,7 +3,6 @@ package test.java;
 
 import main.TestBase;
 
-import org.apache.log4j.Logger;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 

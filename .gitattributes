@@ -47,6 +47,7 @@ src/pageObjects/Google.java -text
 src/pageObjects/HboSignIn.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUp.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
+src/pageObjects/MouseHover.java -text
 src/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
 src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
 src/pageObjects/SelectMovieGroups.java -text
@@ -54,6 +55,7 @@ src/pageObjects/Yahoo.java -text
 src/test/java/TesseractTest.java -text svneol=unset#text/plain
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
+src/test/java/TestMouseHover.java -text
 src/test/java/TestPlayer.java -text svneol=unset#text/plain
 src/test/java/TestSearchEngines.java -text
 src/test/java/TestStringMatcher.java -text

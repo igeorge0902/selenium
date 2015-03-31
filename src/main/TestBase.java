@@ -681,6 +681,78 @@ public class TestBase extends Verify implements WebElements{
         }
 		
 	}
+	
+	/**
+	 * Checks if the playback has started, where the nr. of attempts equals the cycle to go, 
+	 * and the nr. of seconds equals the interval that is used to check the elapsed time.
+	 * 
+	 * @param attempt
+	 * @param second
+	 * @param condition
+	 * @return true
+	 */
+	
+	public static boolean isPlayBackRunning(int attempt, int second, boolean condition) {
+		
+    	//int second;
+
+		while(attempt > 0) {
+		
+		try {
+ 		   	    	
+		    //runs javascript to get elapsed time
+		    WebElement elapsedTime;
+		    elapsedTime = driver.findElement(By.id(playbackElapsedTime));				    				    
+		    
+		    String text = TestBase.getText(driver, elapsedTime);
+		    
+		    //prints out elapsed time
+		    System.out.println("Elapsed time first: "+text);
+    	    Thread.sleep(333L);
+    	    
+    	    //find and replace elapsed time string value       	    
+    	    Pattern replace = Pattern.compile("\\:+");
+    	    Matcher matcher = replace.matcher(text);
+    	    System.out.println(matcher.replaceAll(""));
+    	    
+		    //runs javascript to get elapsed time
+		    WebElement elapsedTime2;
+		    elapsedTime2 = driver.findElement(By.id(playbackElapsedTime));				    				    
+		    
+		    
+		    //Thread goes to sleep for 5 seconds 
+		    //so that the second elapsed time check will be after the first one
+    	    Thread.sleep(second);
+		    
+    	    //prints out elapsed time
+		    String text2 = TestBase.getText(driver, elapsedTime2);
+		    System.out.println("Elapsed time second: "+text2);
+
+    	    //find and replace elapsed time string value       	    
+    	    Pattern replace2 = Pattern.compile("\\:+");
+    	    Matcher matcher2 = replace2.matcher(text2);
+    	    System.out.println(matcher.replaceAll(""));
+    	    
+    	    //convert replaced string value to integer
+		    int elapsedtime = Integer.parseInt(matcher.replaceAll(""));
+		    int elapsedtime2 = Integer.parseInt(matcher2.replaceAll(""));
+
+		    TestBase.verifyNotSame(elapsedTime, elapsedTime2);
+		    
+		    //verify should work the way that if playback fails, next content will be loaded to avoid loop for playback fails
+		    TestBase.assertTrue(elapsedtime2>elapsedtime, "Playback stopped after "+second+" seconds!");
+		    
+	   }
+	   catch(Exception e) {       		   
+		   CaptureScreenshotOnFailureListener.captureScreenShot();
+			   Reporter.log("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
+		   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
+    	   attempt--;
+	   		
+	   		}
+		}
+		return true;			
+	}
 
 	
 	/**
