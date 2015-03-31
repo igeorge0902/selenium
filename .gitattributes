@@ -12,6 +12,7 @@
 /eurotext_unlv.png -text
 /eurotext_unlv.uzn -text
 lib/IEDriverServer32.exe -text svneol=unset#application/x-dosexec
+lib/chromedriver -text
 lib/chromedriver.exe -text svneol=unset#application/x-dosexec
 lib/commons-io-2.4.jar -text
 lib/ghost4j-0.5.1.jar -text
