@@ -1,5 +1,6 @@
 package pageObjects;
 
+import main.Clicks;
 import main.TestBase;
 
 import org.openqa.selenium.By;
@@ -33,25 +34,26 @@ public class MouseHover extends TestBase {
     	WebElement selectedplaygomb = driver.findElement(By.xpath(ContentDetail));
         
     	if (selectedplaygomb.isDisplayed()){
+    		
     		action.moveToElement(selectedplaygomb).build().perform();
     		Log.info("Mouse hove action succeeded!");
+    		
     		WebElement playbuttonmenu;
             playbuttonmenu = driver.findElement(By.id("play_dropdown"));
             action.moveToElement(playbuttonmenu);
             
+            Clicks.clickEpisode();
+                      
         }
-    	/*
-    	else if (!selectedplaygomb.isDisplayed()) {
-        	JavascriptExecutor js = (JavascriptExecutor) driver;
-
-    		js.executeScript("return window.location.reload(true)");
-    		TestBase.MouseHoverByJavaScript((By.xpath(ContentDetail)));
-    	}*/
+    	
+    	else if (!selectedplaygomb.isDisplayed()){
+    		throw new CustomException();
+    	}
     	
     	
     	TestBase.playContents(playFreeInteractive);
      
-    	TestBase.isPlayBackRunning(2, 10000, true);
+    	TestBase.isPlayBackRunning(2, 20000, true);
 	
     return new MouseHover(driver); 	
 	

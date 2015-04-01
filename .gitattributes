@@ -37,7 +37,8 @@ lib/win32-x86/libtesseract302.dll -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
 src/main/CaptureScreenshotOnFailureListener.java -text
-src/main/ClickActions.java -text svneol=unset#text/plain
+src/main/Click.java -text svneol=unset#text/plain
+src/main/Clicks.java -text svneol=unset#text/plain
 src/main/ElementScreenshot.java -text
 src/main/EventListener.java -text
 src/main/TestBase.java -text

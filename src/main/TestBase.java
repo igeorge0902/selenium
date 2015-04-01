@@ -623,40 +623,10 @@ public class TestBase extends Verify implements WebElements{
     /**
      * 
      * Play any contents method. PlayButton types are selected from the PlayButton menu list. 
-     * PlayButton types are iterated from a String [] array defined in the {@link main.WebElements.class}
+     * PlayButton types are listed as String defined in the {@link main.WebElements.class}
      *     
      * @param String play
      */
-	/*
-	public static void playContents(String playContent){
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-    	List<WebElement> playbuttonmenu;
-        playbuttonmenu = driver.findElement(By.id("play_dropdown")).findElements(By.tagName("a")); 
-                
-        for(int i =0; i<playbuttonmenu.size();i++)    
-        {
-            String onClick = playbuttonmenu.get(i).getAttribute("onclick");
-            
-           // for(int j=0; j<playContent.length;j++)
-            //{
-            
-                if(onClick.contains(playContent))
-                {
-                    js.executeScript(onClick);
-                
-                }
-            //}
-            
-        }
-		
-	}*/
-	
-	 /**
-	*
-	* Play main content method. PlayButtons are selected from the PlayButton menu list.
-	*
-	*/
 	
 	public static void playContents(String playcontent){
 		

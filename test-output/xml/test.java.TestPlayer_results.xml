@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test on Internet Explorer"
+<testsuite name="Test on Firefox"
            tests="3"
            failures="1"
            errors="0"
-           skipped="2"
-           time="13,935">
+           skipped="1"
+           time="68,086">
   <properties />
-            <testcase name="testSignInSuccess" time="13,932" classname="test.java.TestPlayer">
-                <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
+            <testcase name="testSelectContentsPlay" time="33,541" classname="test.java.TestPlayer">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Akció, Kaland&quot;}
+Command duration or timeout: 31.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.4, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 092065a7-6422-7845-8b5c-da2ded1653a0
+*** Element info: {Using=link text, value=Akció, Kaland}"
               >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:494)
-  org.testng.Assert.assertTrue(Assert.java:42)
-  org.testng.Assert.assertTrue(Assert.java:52)
-  main.TestBase.assertTrue(TestBase.java:139)
-  test.java.TestPlayer.testSignInSuccess(TestPlayer.java:37)
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Akció, Kaland"}
+Command duration or timeout: 31.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.4, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 092065a7-6422-7845-8b5c-da2ded1653a0
+*** Element info: {Using=link text, value=Akció, Kaland}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+  org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy10.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy11.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  pageObjects.SelectMovieGroups.actionGroups(SelectMovieGroups.java:62)
+  test.java.TestPlayer.testSelectContentsPlay(TestPlayer.java:55)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -41,6 +124,13 @@
   org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
   org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
   org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Akció, Kaland"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous3959705674113331571webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+  <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous3959705674113331571webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
       </failure>
 
@@ -49,9 +139,7 @@
             <testcase name="testPlayerSuccess" time="0.0" classname="test.java.TestPlayer">
           <skipped />
     </testcase>
-            <testcase name="testSelectContentsPlay" time="0.0" classname="test.java.TestPlayer">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="testSignInSuccess" time="34,545" classname="test.java.TestPlayer" />
+      
 </testsuite>

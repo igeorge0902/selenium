@@ -17,13 +17,17 @@ import org.openqa.selenium.WebElement;
 public interface WebElements { 
 	
 	//playButton
-	public static String playTrailer = "PlayTrailer";
-	public static String playContent = "PlayContent";
+	public static String playTrailer = "Előzetes megtekintése";
+	public static String playContent = "Film megtekintése";
+	public static String playEpisode = "Epizód megtekintése";
+	
 	public static String playFree = "PlayFree";
 	public static String playLive = "PlayLive";
 	public static String playExtra = "PlayExtra";
 	public static String playInteractive = "PlayInteractive";
 	public static String playFreeInteractive = "PlayFreeInteractive";
+	
+	
     
     //play states
     public static String playPause = "PlayerManager.playPause()";
