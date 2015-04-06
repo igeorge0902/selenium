@@ -2,6 +2,7 @@ package main;
 
 
 
+import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -100,6 +101,8 @@ public interface WebElements {
 	
 	public String urlsFile = "lib/urls.txt";
 	public String outputFile = "lib/output.txt";
+	
+	public String proprtyFile = "properties.properties";
 	
 	//JavaScripts
 	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"+

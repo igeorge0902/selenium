@@ -34,7 +34,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import testng.Verify;
-import utils.MySQLAccess;
+import utils.SQLAccess;
+import utils.PropertyUtils;
 import utils.WaitTool;
 
 import java.util.regex.Matcher;
@@ -86,8 +87,16 @@ public class TestBase extends Verify implements WebElements{
 		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		  }
 		  
-		    MySQLAccess dao = new MySQLAccess();
-		    dao.SetUpDataBase();
+		  PropertyUtils.loadPropertyFile(proprtyFile);
+		  	
+		  	String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
+		  	String dbUrl = PropertyUtils.getProperty("dbUrl");
+		  	String dbUserName = PropertyUtils.getProperty("dbUserName");
+		  	String dbPassWord = PropertyUtils.getProperty("dbPassWord");	  
+	        	
+			    SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
+			    dao.SetUpDataBase();	            
+
 
 	}
 

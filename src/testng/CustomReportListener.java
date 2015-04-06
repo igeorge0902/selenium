@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Collection;
@@ -30,6 +31,9 @@ import org.testng.TestNGException;
 import org.testng.collections.Lists;
 import org.testng.internal.Utils;
 import org.testng.xml.XmlSuite;
+import org.testng.xml.XmlTest;
+
+import utils.SQLAccess;
 
 public class CustomReportListener extends TestListenerAdapter implements IReporter 
 {
@@ -57,15 +61,32 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 			String suiteName = suite.getName();
 			//Getting the results for the said suite
 			Map<String, ISuiteResult> suiteResults = suite.getResults();
+			
 			for ( ISuiteResult sr : suiteResults.values() ) {
 				ITestContext tc = sr.getTestContext();
+				String testName = tc.getName();
+				Date EndDate = tc.getEndDate();
+				Date StartDate = tc.getStartDate();
+				XmlTest xmlTest = tc.getCurrentXmlTest();
+
+
 				System.out.println( "Passed tests for suite '" + suiteName + "' is:" + 
 				    tc.getPassedTests().getAllResults().size() );
 				System.out.println( "Failed tests for suite '" + suiteName + "' is:" + 
 				    tc.getFailedTests().getAllResults().size() );
 				System.out.println( "Skipped tests for suite '" + suiteName + "' is:" + 
 				    tc.getSkippedTests().getAllResults().size() );
+				
+				try {
+					SQLAccess.generateMethodSummaryReport(suiteName, testName);
+				
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+
 			}
+			
+			
 		}
 		System.out.println();
 		try {
@@ -91,6 +112,8 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	/**
 	 * Creates a table showing the highlights of each test method with links to
 	 * the method details
+	 * @throws Exception 
+	 * @throws SQLException 
 	 */
 	protected void generateMethodSummaryReport( List<ISuite> suites ) {
 		m_methodIndex = 0;

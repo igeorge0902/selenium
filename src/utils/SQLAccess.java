@@ -8,26 +8,39 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
 
+
 import main.TestBase;
 
 
-public class MySQLAccess extends TestBase {
+public class SQLAccess extends TestBase {
 	
-	
-  private Connection connect = null;
-  private Statement statement = null;
-  private PreparedStatement preparedStatement = null;
-  private ResultSet resultSet = null;
+  private String dbDriverClass;
+  private String dbUrl;
+  private String dbUserName;
+  private String dbPassWord;
+  
+  private static Connection connect = null;
+  private static Statement statement = null;
+  private static PreparedStatement preparedStatement = null;
+  private static ResultSet resultSet = null;
 
+  public SQLAccess (String dbDriverClass, String dbUrl, String dbUserName, String dbPassWord) {
+	  
+	  this.dbDriverClass = dbDriverClass;
+	  this.dbUrl = dbUrl;
+	  this.dbUserName = dbUserName;
+	  this.dbPassWord = dbPassWord;
+  
+  }
+  
 public void SetUpDataBase() throws Exception {
     
 	try {
       // This will load the MySQL driver, each DB has its own driver
-      Class.forName("com.mysql.jdbc.Driver");
+      Class.forName(dbDriverClass);
       
       // Setup the connection with the DB
-      connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/feedback?"
-              + "user=sqluser&password=sqluserpw");
+      connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
 
       // Statements allow to issue SQL queries to the database
       statement = connect.createStatement();
@@ -41,15 +54,61 @@ public void SetUpDataBase() throws Exception {
 
   }
 
+@SuppressWarnings("deprecation")
+public static void generateMethodSummaryReport(String suite, String testname) throws Exception {
+
+	  PropertyUtils.loadPropertyFile(proprtyFile);
+	  	
+	  	String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
+	  	String dbUrl = PropertyUtils.getProperty("dbUrl");
+	  	String dbUserName = PropertyUtils.getProperty("dbUserName");
+	  	String dbPassWord = PropertyUtils.getProperty("dbPassWord");
+	  	
+	  	if (testname == null) {
+	  		return;
+	  	}  	
+	  	
+	try {
+	  // This will load the MySQL driver, each DB has its own driver
+	  Class.forName(dbDriverClass);
+	  
+	  // Setup the connection with the DB
+	  connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
+	
+    // Statements allow to issue SQL queries to the database
+    statement = connect.createStatement();
+	
+	// PreparedStatements can use variables and are more efficient
+	preparedStatement = connect.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?)");
+	
+	preparedStatement.setString(1, suite);
+	preparedStatement.setString(2, testname);
+	preparedStatement.setString(3, testname);
+	preparedStatement.setString(4, testname);
+    preparedStatement.setDate(5, new java.sql.Date(2009, 12, 11));
+	preparedStatement.setString(6, testname);
+
+	preparedStatement.executeUpdate();
+
+    } catch (Exception e) {
+	      throw e;
+	      
+	    } finally {
+	      
+	    	close();
+	    }
+
+	  }
+
   @SuppressWarnings("deprecation")
 public void readDataBase() throws Exception {
+	  
 	    try {
 	      // This will load the MySQL driver, each DB has its own driver
-	      Class.forName("com.mysql.jdbc.Driver");
-	      
-	      // Setup the connection with the DB
-	      connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/feedback?"
-	              + "user=sqluser&password=sqluserpw");
+	        Class.forName(dbDriverClass);
+	        
+	        // Setup the connection with the DB
+	        connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
 
 	      // Statements allow to issue SQL queries to the database
 	      statement = connect.createStatement();
@@ -102,8 +161,9 @@ public void readDataBase() throws Exception {
     }
   }
 
-  private void writeResultSet(ResultSet resultSet) throws SQLException {
-    // ResultSet is initially before the first data set
+  private static void writeResultSet(ResultSet resultSet) throws SQLException {
+    
+	  // ResultSet is initially before the first data set
     while (resultSet.next()) {
       // It is possible to get the columns via name
       // also possible to get the columns via the column number
@@ -123,7 +183,7 @@ public void readDataBase() throws Exception {
   }
 
   // You need to close the resultSet
-  private void close() {
+  private static void close() {
     try {
       if (resultSet != null) {
         resultSet.close();

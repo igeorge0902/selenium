@@ -33,7 +33,11 @@ lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
 /logfile.log -text
+/logfile.log.2015-03-31 -text
+/logfile.log.2015-04-01 -text
 /pom.xml -text
+/properties.properties -text svneol=unset#text/plain
+sql/suite_methodSummaryReport.sql -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
 src/main/CaptureScreenshotOnFailureListener.java -text
@@ -79,8 +83,9 @@ src/utils/FileSeparator.java -text svneol=unset#text/plain
 src/utils/GroupTestExample.java -text svneol=unset#text/plain
 src/utils/LinkGetter.java -text
 src/utils/MessageUtil.java -text svneol=unset#text/plain
-src/utils/MySQLAccess.java -text svneol=unset#text/plain
+src/utils/PropertyUtils.java -text svneol=unset#text/plain
 src/utils/RegexTestPatternMatcher.java -text
+src/utils/SQLAccess.java -text svneol=unset#text/plain
 src/utils/SQLTest.java -text svneol=unset#text/plain
 src/utils/SampleDataProvider.java -text
 src/utils/StringMatcher.java -text
@@ -144,6 +149,7 @@ test-output/xml/test.java.CopyOfTestHboSignIn_results.xml -text
 test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestHboSignIn_results.xml -text
 test-output/xml/test.java.TestHboSignUp_results.xml -text
+test-output/xml/test.java.TestMouseHover_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestPlayer_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestSearchEngines_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text
