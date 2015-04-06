@@ -22,7 +22,7 @@ public class TestPlayer extends TestBase{
 	
 	
   @Parameters ({"operator"})
-  @Test (groups = { "signin" }, description= "HBO login" )
+  @Test (description= "HBO login" )
   public void testSignInSuccess(String operator) throws Exception{
 		HboSignIn SignInPage = new HboSignIn(driver); 
 		
@@ -47,7 +47,7 @@ public class TestPlayer extends TestBase{
   }
     
     
-	@Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "player" }, description= "Selecting contents for playback tests.")
+	@Test (dependsOnMethods = { "testSignInSuccess" }, description= "Selecting contents for playback tests.")
 	public void testSelectContentsPlay() throws Exception{
 		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
 		

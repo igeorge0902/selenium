@@ -70,6 +70,7 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	        WebElement element = driver.findElement(By.id(Movies));
 	        actions.moveToElement(element);
 	        actions.perform();
+
 			//**
 	        
 	        //click on the category link found by linkText
@@ -106,11 +107,11 @@ public class SelectMovieGroups extends TestBase implements WebElements{
     			e.printStackTrace();
     		}
     		*/
-    			
+    			/*
     		  //callind deleteLines java app to delete lines from urls.txt
     	      String[] arguments = new String[] {"123"};
     	      deleteLines.main(arguments);
-    		
+    		*/
         	
 	return new SelectMovieGroups(driver); 
 	}	

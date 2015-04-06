@@ -97,11 +97,17 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	//TODO: player controller tests (volume, audio, subs track, fullscreen, exit fullscreen, GUI goes away after 3 seconds)
 		    
 	    	//TODO: if there is next or previous episode, it could be tested here
-	    	
-		    //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
-		    TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
+	    		
+	    		try {
+	    			//TODO: check if seek not succeeds, whether the content has reached the end
+		        //mousehover the position seek dot, and drag&drop toward the given direction, which is set by int (+-)
+		    	WaitTool.waitForElement(driver, By.id(positionsSeek), 10);
+	    		TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
+		    	
+	    		WebElement seekBar;
+		    	seekBar = driver.findElement(By.id(positionsSeek));
+		    	action.moveToElement(seekBar).build().perform();
 		    
-	    		WaitTool.waitForElement(driver, By.id(positionsSeek), 10);
 	    	if (TestBase.isElementPresent(By.id(positionsSeek))) {
 		    
 		    	action.dragAndDropBy(SeekDot, 0, -1100).build().perform();
@@ -112,7 +118,11 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	else if (!TestBase.isElementPresent(By.id(positionsSeek))) {
 		    	Reporter.log("Drag and drop action failed!");
 		    	Log.info("Drag and drop action failed!");
-		    	throw new CustomException ();
+		    	//throw new CustomException ();
+		    	} 
+	    	}catch (CustomException e) {
+		    	Log.info(e.getMessage());
+		    	throw new CustomException (); //?
 		    }
 		    
 		    //start
@@ -120,7 +130,8 @@ public class PlayMainContent extends TestBase implements WebElements{
 	    	Log.info("playback is running");
 		    
 		    //while cycle for elapsed time check
-        	int second = 30;
+        	int x = 30;
+	    	int second = x;
        	
         	while(second > 0) {
         	   
@@ -150,7 +161,9 @@ public class PlayMainContent extends TestBase implements WebElements{
 				    
 				    //Thread goes to sleep for 5 seconds 
 				    //so that the second elapsed time check will be after the first one
-	        	    Thread.sleep(10000);
+				    //this value could be parameter, too
+				    int sleep = 10000;
+	        	    Thread.sleep(sleep);
 				    
 	        	    //prints out elapsed time
 				    String text2 = TestBase.getText(driver, elapsedTime2);
@@ -166,9 +179,10 @@ public class PlayMainContent extends TestBase implements WebElements{
 				    int elapsedtime2 = Integer.parseInt(matcher2.replaceAll(""));
 
 				    TestBase.verifyNotSame(elapsedTime, elapsedTime2);
+				    Log.info("Current cycle is "+second+" out of "+x);
 				    
 				    //verify should work the way that if playback fails, next content will be loaded to avoid loop for playback fails
-				    TestBase.assertTrue(elapsedtime2>elapsedtime, "Playback stopped after 10 seconds!");
+				    TestBase.assertTrue(elapsedtime2>elapsedtime, "Playback stopped after "+sleep+" seconds!");
 				    
         	   }
         	   catch(Exception e) {       		   
@@ -183,21 +197,16 @@ public class PlayMainContent extends TestBase implements WebElements{
         	
     		try {
     			TestBase.MouseHoverByJavaScript(By.id(playbackClose));
+    			driver.findElement(By.id(playbackClose)).click();
     		
     				} catch (Exception e) {
     			Reporter.log("Playback quit not succeeded...");
     			Log.info("Playback quit not succeeded...");
     			}
-			Reporter.log("Playback works fine: "+driver.findElement(By.id(playbackTitle)).getText());
-		    Reporter.log("Playback works fine");
+			
+    		Reporter.log("Playback works fine: "+driver.findElement(By.id(playbackTitle)).getText());
 		    Log.info("Playback works fine");
 		    
-	    		//} catch (Exception e) {
-	            //CaptureScreenshotOnFailureListener.captureScreenShot();
-			    Reporter.log("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
-	    		Log.info("Playback start failed!"+"-"+driver.findElement(By.id(playbackTitle)).getText());
-	    			
-	    	//}
 		    	Thread.sleep(5000);	    
 
 	return new PlayMainContent(driver); 

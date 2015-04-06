@@ -84,7 +84,7 @@ public class WebDriverManager
     		DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
             Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
             Capabilities.isJavascriptEnabled();
-            Capabilities.setVersion("11");
+            Capabilities.setVersion("10");
             Capabilities.getVersion();
             Capabilities.equals(browser);
             Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
@@ -97,6 +97,7 @@ public class WebDriverManager
 
             driver = driverEventListener(Capabilities);
             Log.info(browser + "driver initialized with eventListeners");
+            Log.info(Capabilities.getVersion());
             WaitTool.setImplicitWait(driver, timeout);
 
             driver.get(portalUrl);
@@ -255,17 +256,22 @@ public class WebDriverManager
             
     		TestBase.assertFalse(TestBase.isSupportedPlatformWindows(false));
 
+            DesiredCapabilities Capabilities = DesiredCapabilities.safari();
+            
+            Capabilities.setCapability("nativeEvents", false);
             
             SafariOptions options = new SafariOptions();  
 
-            //options.setSkipExtensionInstallation(true);
             options.setUseCleanSession(true);
-            options.getUseCleanSession();            
+            options.getUseCleanSession();  
+            
+            Object object = new Object [] {options, Capabilities};
+
             
             // For use with SafariDriver:           
             driver = new SafariDriver(options);
             
-            driver = driverEventListener(options);
+            driver = driverEventListener(object);
             Log.info(browser + "driver initialized with eventListeners");
 
             WaitTool.setImplicitWait(driver, timeout);

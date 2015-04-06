@@ -43,30 +43,31 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	/**
 	 * This method is the entry point of this class. TestNG calls this listener method to generate the report.
 	 */
+	
+	//TODO: put the relevant data into DB and then read them for the actual HTML report
 	@Override
 	public void generateReport( List<XmlSuite> xml, List<ISuite> suites, String outdir ) {
 		Reporter.log( "", true );
 		Reporter.log( "-------------------------------------", true );
 		Reporter.log( "-- Generating test HTML report...  --", true );
 		Reporter.log( "-------------------------------------", true );
-		
 		//Iterating over each suite included in the test
 		for ( ISuite suite : suites ) {
-			
 			//Following code gets the suite name
 			String suiteName = suite.getName();
-			
 			//Getting the results for the said suite
 			Map<String, ISuiteResult> suiteResults = suite.getResults();
-			
 			for ( ISuiteResult sr : suiteResults.values() ) {
 				ITestContext tc = sr.getTestContext();
-
+				System.out.println( "Passed tests for suite '" + suiteName + "' is:" + 
+				    tc.getPassedTests().getAllResults().size() );
+				System.out.println( "Failed tests for suite '" + suiteName + "' is:" + 
+				    tc.getFailedTests().getAllResults().size() );
+				System.out.println( "Skipped tests for suite '" + suiteName + "' is:" + 
+				    tc.getSkippedTests().getAllResults().size() );
 			}
 		}
-		
 		System.out.println();
-		
 		try {
 			m_out = createWriter( outdir );
 		} catch ( IOException e ) {
@@ -92,22 +93,15 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	 * the method details
 	 */
 	protected void generateMethodSummaryReport( List<ISuite> suites ) {
-		
 		m_methodIndex = 0;
 		startResultSummaryTable( "methodOverview" );
-		
 		int testIndex = 1;
-		
 		for ( ISuite suite : suites ) {
-		
 			if ( suites.size() > 1 ) {
 				titleRow( suite.getName(), 5 );
 			}
-			
 			Map<String, ISuiteResult> r = suite.getResults();
-			
 			for ( ISuiteResult r2 : r.values() ) {
-			
 				ITestContext testContext = r2.getTestContext();
 				String testName = testContext.getName();
 				m_testIndex = testIndex;
@@ -186,23 +180,19 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 		if ( tests.getAllResults().size() > 0 ) {
 			StringBuffer buff = new StringBuffer();
 			String lastClassName = "";
-			
 			int mq = 0;
 			int cq = 0;
-			
 			for ( ITestNGMethod method : getMethodSet( tests, suite ) ) {
 				m_row += 1;
 				m_methodIndex += 1;
 				ITestClass testClass = method.getTestClass();
 				String className = testClass.getName();
-			
 				if ( mq == 0 ) {
 					String id = ( m_testIndex == null ? null : "t" + Integer.toString( m_testIndex ) );
-					titleRow( testname + " — " + style + details, 6, id );  // sets width of 'Tests -- Passed' row
+					titleRow( testname + " â€” " + style + details, 6, id );  // sets width of 'Tests -- Passed' row
 					m_testIndex = null;
 				}
 				if ( !className.equalsIgnoreCase( lastClassName ) ) {
-					
 					if (mq > 0) {
 						cq += 1;
 						m_out.print("<tr class=\"" + style + (cq % 2 == 0 ? "even" : "odd") + "\">"	+ "<td");
@@ -216,32 +206,24 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 					lastClassName = className;
 				}
 				Set<ITestResult> resultSet = tests.getResults(method);
-				
 				long end = Long.MIN_VALUE;
 				long start = Long.MAX_VALUE;
-				
 				for ( ITestResult testResult : tests.getResults( method ) ) {
-				
 					if ( testResult.getEndMillis() > end ) {
 						end = testResult.getEndMillis();
 					}
-					
 					if ( testResult.getStartMillis() < start ) {
 						start = testResult.getStartMillis();
 					}
 				}
 				mq += 1;
-				
 				if ( mq > 1 ) {
 					buff.append("<tr class=\"" + style + (cq % 2 == 0 ? "odd" : "even") + "\">");
-					}
-				
+				}
 				Date d = new Date(start);
-				
 				String formattedDate = dateFormatter.format( d );
 				String description = method.getDescription();
 				String testInstanceName = resultSet.toArray( new ITestResult[] { } )[0].getTestName();
-				
 				buff.append("<td><a href=\"#m" + m_methodIndex + "\">" + qualifiedName(method)
 						+ " " + (description != null && description.length() > 0 ? "(\""
 								+ description + "\")" : "") + "</a>" + (null == testInstanceName ? "" : "<br>("
@@ -272,15 +254,11 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	}
 	
 	private String qualifiedName(ITestNGMethod method) {
-		
 		StringBuilder addon = new StringBuilder();
 		String[] groups = method.getGroups();
-		
 		int length = groups.length;
-		
 		if (length > 0 && !"basic".equalsIgnoreCase(groups[0])) {
 			addon.append("(");
-		
 			for (int i = 0; i < length; i++) {
 				if (i > 0) {
 					addon.append(", ");
@@ -299,16 +277,14 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	private void resultDetail( IResultMap tests ) {
 		if ( tests.size() > 0 ) {
 		        for ( ITestResult result : tests.getAllResults() ) {
-			    
-		        	ITestNGMethod method = result.getMethod();
-		        	m_methodIndex++;
-		        	String cname = method.getTestClass().getName();
-		        	m_out.println("<h2 id=\"m" + m_methodIndex + "\">" + cname + " : " + method.getMethodName() + "</h2>");
-		        	
-		        	Set<ITestResult> resultSet = tests.getResults( method );
-		        	generateForResult( result, method, resultSet.size() );
-		        	m_out.println("<p class=\"totop\"><a href=\"#summary\">back to summary</a></p>");
-		        }
+			    ITestNGMethod method = result.getMethod();
+			    m_methodIndex++;
+			    String cname = method.getTestClass().getName();
+			    m_out.println("<h2 id=\"m" + m_methodIndex + "\">" + cname + " : " + method.getMethodName() + "</h2>");
+			    Set<ITestResult> resultSet = tests.getResults( method );
+			    generateForResult( result, method, resultSet.size() );
+			    m_out.println("<p class=\"totop\"><a href=\"#summary\">back to summary</a></p>");
+		    }
 		} else {
 			Reporter.log( "Result map was empty.", true );
 		}
@@ -321,19 +297,14 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 	 */
 	@SuppressWarnings("unused")
 	private void getShortException( IResultMap tests ) {
-		
 		for ( ITestResult result : tests.getAllResults() ) {
 			m_methodIndex++;
 			Throwable exception = result.getThrowable();
 			List<String> msgs = Reporter.getOutput( result );
-		
 			boolean hasReporterOutput = msgs.size() > 0;
 			boolean hasThrowable = exception != null;
-			
 			if (hasThrowable) {
-			
 				boolean wantsMinimalOutput = result.getStatus() == ITestResult.SUCCESS;
-				
 				if (hasReporterOutput) {
 					m_out.print("<h3>"
 							+ (wantsMinimalOutput ? "Expected Exception"
@@ -658,7 +629,6 @@ public class CustomReportListener extends TestListenerAdapter implements IReport
 		}
 		// return r;
 	}
-
 }
 
 

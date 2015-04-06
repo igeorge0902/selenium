@@ -44,7 +44,7 @@ public class TestHboSignIn extends TestBase{
   
   }
   	
-    @Test //(dataProviderClass=utils.SampleDataProvider.class,dataProvider="contenturls")
+    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider")
     public void testListActionGroupContents() throws Exception{
     	SelectMovieGroups ActionGroup = new SelectMovieGroups(driver);
     	
@@ -54,7 +54,7 @@ public class TestHboSignIn extends TestBase{
     	
     }
   
-    @Test (/*dependsOnMethods = { "testSignInSuccess" }, alwaysRun=true,*/ groups = { "functional_test2" }, description= "Play trailer after login")
+    @Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "functional_test2" }, description= "Play trailer after login")
     public void testPlayerSuccess() throws Exception{
 		PlayTrailer PlayTrailer = new PlayTrailer(driver);
 		

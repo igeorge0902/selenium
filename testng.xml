@@ -5,7 +5,8 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-    <parameter name="filenamePath" value=".\lib\output.txt" />		
+    <parameter name="filenamePathWin" value=".\lib\output.txt" />
+	<parameter name="filenamePathMac" value="./lib/output.txt" />						
 	<parameter name="browser" value="Firefox" />
 	<parameter name="url" value="http://www.google.com" />
 	<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
@@ -13,7 +14,8 @@
 		<parameter name="browser" value="*safari" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
-	    <parameter name="filenamePath" value=".\lib\output.txt" />		
+	    <parameter name="filenamePathWin" value=".\lib\output.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />						
 		<groups>
 			<run>
 				<exclude name="functest" />
@@ -66,12 +68,13 @@
 		<parameter name="browser" value="Firefox" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
-	    <parameter name="filenamePath" value=".\lib\output.txt" />		
+	    <parameter name="filenamePathWin" value=".\lib\output.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />				
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testMouseHover" />
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignUp">
@@ -106,7 +109,7 @@
 		<parameter name="browser" value="INTERNET_EXPLORER" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
-	    <parameter name="filenamePath" value=".\lib\output.txt" />		
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
@@ -121,9 +124,9 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<exclude name="testSignInSuccess" />
-					<exclude name="testSelectContentsPlay" />
-					<exclude name="testPlayerSuccess" />					
+					<include name="testSignInSuccess" />
+					<include name="testSelectContentsPlay" />
+					<include name="testPlayerSuccess" />					
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -146,12 +149,13 @@
 		<parameter name="browser" value="CHROME" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
-	    <parameter name="filenamePath" value=".\lib\output.txt" />		
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />						
 		<classes>
 		    <class name="test.java.TestMouseHover">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testMouseHover" />
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignUp">

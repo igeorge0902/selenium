@@ -15,6 +15,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import main.TestBase;
+
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
@@ -24,8 +26,18 @@ public class SampleDataProvider {
     @DataProvider
     public static Iterator<Object[]> fileDataProvider (ITestContext context) {
     	
-        //Get the input file path from the ITestContext
-        String inputFile = context.getCurrentXmlTest().getParameter("filenamePath");
+    	String inputFile = "";
+    	if (!TestBase.isSupportedPlatformMac(true)) {
+    		//Get the input file path from the ITestContext
+    		inputFile = context.getCurrentXmlTest().getParameter("filenamePathWin");
+    		} 
+    	
+    	else if (TestBase.isSupportedPlatformMac(true)) {
+            //Get the input file path from the ITestContext
+            inputFile = context.getCurrentXmlTest().getParameter("filenamePathMac");
+        	} 
+        	
+        	//String inputFile = input_File;
         
         //Get a list of String file content (line items) from the test file.
         List<String> testData = getFileContentList(inputFile);
