@@ -34,6 +34,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import testng.Verify;
+import utils.MySQLAccess;
 import utils.WaitTool;
 
 import java.util.regex.Matcher;
@@ -85,6 +86,9 @@ public class TestBase extends Verify implements WebElements{
 		      TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		  }
 		  
+		    MySQLAccess dao = new MySQLAccess();
+		    dao.SetUpDataBase();
+
 	}
 
 	@AfterClass
@@ -461,6 +465,32 @@ public class TestBase extends Verify implements WebElements{
           }
         }
 	
+	/**
+	 * Mouse actions with javaScript for Safari.
+	 * 
+	 * @param element
+	 * @return
+	 */
+	
+	public static boolean onMouseOver(WebElement element)
+	{
+		boolean result = false;
+		try
+		{
+			String mouseOverScript = "if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript(mouseOverScript, element);
+			result = true;
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			result = false;
+		}
+		return result;
+	}
+
+	
 	public static void clearJavaScript(By by) throws Exception
     {                     
 		
@@ -646,10 +676,10 @@ public class TestBase extends Verify implements WebElements{
 	
 	/**
 	 * Checks if the playback has started, where the nr. of attempts equals the cycle to go, 
-	 * and the nr. of seconds equals the interval that is used to check the elapsed time.
+	 * and the nr. of seconds (milis) equals the interval that is used to check the elapsed time.
 	 * 
 	 * @param attempt
-	 * @param second
+	 * @param second (milis)
 	 * @param condition
 	 * @return true
 	 */
@@ -693,7 +723,7 @@ public class TestBase extends Verify implements WebElements{
     	    //find and replace elapsed time string value       	    
     	    Pattern replace2 = Pattern.compile("\\:+");
     	    Matcher matcher2 = replace2.matcher(text2);
-    	    System.out.println(matcher.replaceAll(""));
+    	    System.out.println(matcher2.replaceAll(""));
     	    
     	    //convert replaced string value to integer
 		    int elapsedtime = Integer.parseInt(matcher.replaceAll(""));
@@ -708,10 +738,15 @@ public class TestBase extends Verify implements WebElements{
 	   catch(Exception e) {       		   
 		   CaptureScreenshotOnFailureListener.captureScreenShot();
 			   Reporter.log("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
-		   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
-    	   attempt--;
+			   Log.info("Playback failed for content: "+driver.findElement(By.id(playbackTitle)).getText());
+    	   
+		   attempt--;
 	   		
 	   		}
+ 	   attempt--;
+ 	   
+ 	   Log.info("Current cycle: "+attempt);
+
 		}
 		return true;			
 	}

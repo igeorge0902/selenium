@@ -49,11 +49,23 @@ public class Clicks extends TestBase implements WebElements {
         }
     }
     
+    /**
+     * 
+     * Clicks on the Episode-like play button, and initiates the playback.
+     * 
+     */
+    
     public static void clickEpisode() {
     	Clicks clickepisode = new Clicks(Click.CLICKEPISODE);
     	clickepisode.ContentTypes();
 
     }
+    
+    /**
+     * 
+     * Clicks on the Content-like play button, and initiates the playback.
+     * 
+     */
     
     public static void clickContent() {
     	Clicks clickcontent = new Clicks(Click.CLICKCONTENT);

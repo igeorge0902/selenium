@@ -20,7 +20,7 @@ public class MouseHover extends TestBase {
 		
 		Actions action = new Actions(driver);
 
-		driver.get("http://huvip.hbogo.eu/content/game-of-thrones-1-winter-is-coming-2012115219");
+		//driver.get("http://huvip.hbogo.eu/content/game-of-thrones-1-winter-is-coming-2012115219");
 		
     for (int second = 0;; second++) {
     	if (second >= 60) fail("timeout");
@@ -35,6 +35,7 @@ public class MouseHover extends TestBase {
         
     	if (selectedplaygomb.isDisplayed()){
     		
+    		//mouse hover action
     		action.moveToElement(selectedplaygomb).build().perform();
     		Log.info("Mouse hove action succeeded!");
     		
@@ -42,7 +43,8 @@ public class MouseHover extends TestBase {
             playbuttonmenu = driver.findElement(By.id("play_dropdown"));
             action.moveToElement(playbuttonmenu);
             
-            Clicks.clickEpisode();
+            //click in the playbutton menu
+            Clicks.clickContent();
                       
         }
     	
@@ -51,8 +53,7 @@ public class MouseHover extends TestBase {
     	}
     	
     	
-    	TestBase.playContents(playFreeInteractive);
-     
+    	//assert if the playback got under way within 20 seconds
     	TestBase.isPlayBackRunning(2, 20000, true);
 	
     return new MouseHover(driver); 	
