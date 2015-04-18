@@ -9614,3 +9614,231 @@ Session ID: c57b3b30b2ae3ac19d26bda98908b711
 [15/04/15 07:20:09:009 CEST]  INFO log4j.Logger: Test Status:Pass
 [15/04/15 07:20:09:009 CEST]  INFO log4j.Logger: testSignInSuccess test succeeded!
 [15/04/15 07:20:09:009 CEST]  INFO log4j.Logger: The execution of testPlaySingleContent starts now
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: CREATE DATABASE IF NOT EXISTS feedback;
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger:  
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: USE feedback;
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger:  
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: CREATE TABLE HTML_reports (
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger:   testrun_id int(11) UNSIGNED UNIQUE not null auto_increment,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	index_ mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	output mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	overview mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	reporting_css mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	reporting_js mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	sortable mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_groups mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_test1 mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_test2 mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_test3 mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_test4 mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suite_test5 mediumblob,
+[18/04/15 06:34:37:037 CEST]  INFO log4j.Logger: 	suites mediumblob,
+[18/04/15 07:32:35:035 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:32:35:035 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:32:36:036 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@68be2bc2
+[18/04/15 07:32:36:036 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@1593948d
+[18/04/15 07:33:41:041 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:33:41:041 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:33:42:042 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@68be2bc2
+[18/04/15 07:33:42:042 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@1593948d
+[18/04/15 07:36:26:026 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:36:26:026 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:36:27:027 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@68be2bc2
+[18/04/15 07:36:27:027 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@1593948d
+[18/04/15 07:38:46:046 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:38:46:046 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:38:46:046 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@68be2bc2
+[18/04/15 07:38:46:046 CEST]  INFO log4j.Logger: true
+[18/04/15 07:41:30:030 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:41:30:030 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:41:30:030 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:41:30:030 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:43:22:022 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:43:22:022 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:43:23:023 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:43:23:023 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:43:44:044 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 07:45:42:042 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:45:42:042 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:45:43:043 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:45:43:043 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:45:43:043 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 07:50:41:041 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:50:41:041 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:50:42:042 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:50:42:042 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:50:42:042 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 07:55:04:004 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 07:55:04:004 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 07:55:05:005 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:55:05:005 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 07:55:05:005 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:00:45:045 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:00:45:045 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:00:46:046 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:00:46:046 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:00:46:046 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:00:46:046 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:04:06:006 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:04:06:006 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:04:09:009 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:04:09:009 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:04:09:009 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:04:09:009 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:05:10:010 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:05:10:010 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:05:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:05:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:05:11:011 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:05:11:011 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:11:38:038 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:11:38:038 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:11:38:038 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:11:39:039 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:11:39:039 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:11:39:039 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:13:30:030 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:13:30:030 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:13:31:031 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:13:31:031 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:13:31:031 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:13:31:031 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:14:03:003 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:14:03:003 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:14:04:004 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:14:04:004 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:14:05:005 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:14:05:005 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:20:13:013 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:20:13:013 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:20:14:014 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:20:14:014 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:20:14:014 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:20:14:014 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:21:24:024 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:21:24:024 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:21:25:025 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:21:25:025 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:21:25:025 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:21:25:025 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:26:46:046 CEST]  INFO log4j.Logger: /Users/georgegaspar/Documents/workspace/Selenium_Testlink/properties.properties is loaded.
+[18/04/15 08:26:46:046 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:26:47:047 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:26:47:047 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:26:48:048 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:26:48:048 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:52:10:010 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 08:52:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:52:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 08:52:11:011 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 08:52:11:011 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 09:12:42:042 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 09:16:39:039 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:16:39:039 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:16:39:039 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:16:39:039 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 09:18:05:005 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:18:05:005 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:18:05:005 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:18:05:005 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 09:20:58:058 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:20:58:058 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:20:58:058 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:20:58:058 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[18/04/15 09:23:22:022 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:23:22:022 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:23:22:022 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:35:44:044 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:35:44:044 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:35:44:044 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:36:17:017 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:36:17:017 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:36:17:017 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:41:18:018 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:41:18:018 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:41:18:018 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:46:26:026 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:46:26:026 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:46:26:026 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:47:59:059 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:47:59:059 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:47:59:059 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:48:12:012 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[18/04/15 09:48:15:015 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:48:15:015 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:48:15:015 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:48:15:015 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[18/04/15 09:49:05:005 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
+[18/04/15 09:49:06:006 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[18/04/15 09:49:06:006 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[18/04/15 09:49:06:006 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[18/04/15 09:49:07:007 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (1895bcff-c395-cf41-893a-5793c473fb05)] -> id: headerButtonLogin]
+[18/04/15 09:49:07:007 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[18/04/15 09:49:07:007 CEST]  INFO log4j.Logger: By.id: OperatorId
+[18/04/15 09:49:07:007 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[18/04/15 09:49:08:008 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (1895bcff-c395-cf41-893a-5793c473fb05)] -> id: OperatorId]
+[18/04/15 09:49:08:008 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:49:08:008 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:49:08:008 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:49:09:009 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (1895bcff-c395-cf41-893a-5793c473fb05)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[18/04/15 09:49:09:009 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:49:09:009 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[18/04/15 09:49:09:009 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:49:10:010 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:49:10:010 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:49:10:010 CEST]  INFO log4j.Logger: By.name: Password
+[18/04/15 09:49:10:010 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: selectOperator is successful
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: selectOperator test is done
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:49:11:011 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:49:12:012 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (1895bcff-c395-cf41-893a-5793c473fb05)] -> css selector: #sign-in-buttons > button.button_submit]
+[18/04/15 09:49:12:012 CEST]  INFO log4j.Logger: submit is successful
+[18/04/15 09:49:16:016 CEST]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+[18/04/15 09:49:16:016 CEST]  INFO log4j.Logger: Firefox-2015-3-18-21-49-15-346.png
+[18/04/15 09:49:16:016 CEST]  INFO log4j.Logger: Test Status:Failed
+[18/04/15 09:49:16:016 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[18/04/15 09:49:16:016 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[18/04/15 09:51:15:015 CEST]  INFO log4j.Logger: New driver instantiated
+[18/04/15 09:51:15:015 CEST]  INFO log4j.Logger: MAC
+[18/04/15 09:51:15:015 CEST]  INFO log4j.Logger: Firefox
+[18/04/15 09:51:31:031 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[18/04/15 09:51:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:51:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[18/04/15 09:51:35:035 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[18/04/15 09:51:35:035 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[18/04/15 09:51:52:052 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
+[18/04/15 09:51:53:053 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[18/04/15 09:51:53:053 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[18/04/15 09:51:53:053 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[18/04/15 09:51:54:054 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: headerButtonLogin]
+[18/04/15 09:51:54:054 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[18/04/15 09:51:54:054 CEST]  INFO log4j.Logger: By.id: OperatorId
+[18/04/15 09:51:54:054 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[18/04/15 09:51:54:054 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: OperatorId]
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:51:55:055 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[18/04/15 09:51:56:056 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:51:56:056 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[18/04/15 09:51:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:51:56:056 CEST]  INFO log4j.Logger: By.name: Password
+[18/04/15 09:51:57:057 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:51:57:057 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[18/04/15 09:51:57:057 CEST]  INFO log4j.Logger: selectOperator is successful
+[18/04/15 09:51:57:057 CEST]  INFO log4j.Logger: selectOperator test is done
+[18/04/15 09:51:58:058 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:51:58:058 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:51:58:058 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[18/04/15 09:51:58:058 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> css selector: #sign-in-buttons > button.button_submit]
+[18/04/15 09:51:58:058 CEST]  INFO log4j.Logger: submit is successful
+[18/04/15 09:52:02:002 CEST]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+[18/04/15 09:52:02:002 CEST]  INFO log4j.Logger: Firefox-2015-3-18-21-52-1-838.png
+[18/04/15 09:52:02:002 CEST]  INFO log4j.Logger: Test Status:Failed
+[18/04/15 09:52:02:002 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[18/04/15 09:52:02:002 CEST]  INFO log4j.Logger: Driver closed afterInvocation

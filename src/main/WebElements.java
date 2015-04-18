@@ -17,7 +17,7 @@ public interface WebElements {
 	public static String playTrailer = "Előzetes megtekintése";
 	public static String playContent = "Film megtekintése";
 	public static String playEpisode = "Epizód megtekintése";
-	
+
 	public static String playEpisodeXpath = "(//a[contains(text(),'Epizód megtekintése')])[100]";
 
 	public static String playFree = "PlayFree";
@@ -52,7 +52,6 @@ public interface WebElements {
 	public static String HU = "hu-HU";
 	public static String EN = "en-EN";
 
-	
 	public static String ContentUrl1 = "/content/game-of-thrones-iv.-1-two-swords-255061514";
 	public static String PlayButton = "//img[starts-with(@id, 'play-button-')]";
 	public static String ContentDetail = ".//*[@id='content-inner']/div[1]/div[1]/div[2]";
@@ -79,33 +78,29 @@ public interface WebElements {
 			.id(player));
 
 	public static String positionsSeek = "seekbar";
-	public WebElement SeekDot = WebDriverManager.driver.findElement(By.id(positionsSeek));
+	public WebElement SeekDot = WebDriverManager.driver.findElement(By
+			.id(positionsSeek));
 
 	public static String playbackElapsedTime = "playbackElapsedTime";
-	public WebElement playbackElapsed_Time = WebDriverManager.driver.findElement(By.id(playbackElapsedTime));
+	public WebElement playbackElapsed_Time = WebDriverManager.driver
+			.findElement(By.id(playbackElapsedTime));
 
 	public static String playbackClose = "playbackClose";
-	public WebElement playBack_Close = WebDriverManager.driver.findElement(By.id(playbackClose));
+	public WebElement playBack_Close = WebDriverManager.driver.findElement(By
+			.id(playbackClose));
 
 	public static String player_mediaux_biz = "(^[a-z]{4}\\W\\/\\/+[a-z]{6}\\.[a-z]{7}\\.[a-z]{3}\\/[content]+\\/.+-[0-9]+$)";
 	public static String huvip = "(^[a-z]{4}\\W\\/\\/+[a-z]{5}\\.[a-z]{5}\\.[a-z]{2}\\/[content]+\\/.+-[0-9]+$)";
 	public static String playbutton_css = "(play-button-[a-z0-9-]{36}$)";
 
-	/**
-	 * input file containing urls from a given category view.
-	 */
-
+	// files
 	public Path textFile = Paths.get("lib/urls.txt");
-
-	/**
-	 * output file for test urls.
-	 */
 	public Path textFile2 = Paths.get("lib/output.txt");
-
 	public String urlsFile = "lib/urls.txt";
 	public String outputFile = "lib/output.txt";
-
 	public String proprtyFile = "properties.properties";
+	public String create_db_sql = "sql/create_db.sql";
+
 
 	// JavaScripts
 	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"

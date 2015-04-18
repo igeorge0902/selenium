@@ -46,8 +46,7 @@ lib/win32-x86/libtesseract302.dll -text
 /logfile.log.2015-04-14 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
-sql/htmlReports.sql -text
-sql/suite_methodSummaryReport.sql -text
+sql/create_db.sql -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
 src/main/CaptureScreenshotOnFailureListener.java -text
@@ -106,7 +105,6 @@ src/utils/MessageUtil.java -text svneol=unset#text/plain
 src/utils/PropertyUtils.java -text svneol=unset#text/plain
 src/utils/RegexTestPatternMatcher.java -text
 src/utils/SQLAccess.java -text svneol=unset#text/plain
-src/utils/SQLTest.java -text svneol=unset#text/plain
 src/utils/SampleDataProvider.java -text
 src/utils/StringMatcher.java -text
 src/utils/TesseractExample.java -text svneol=unset#text/plain

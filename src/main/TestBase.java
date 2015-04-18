@@ -51,6 +51,11 @@ public class TestBase extends Verify implements WebElements {
 	public static Logger Log = Logger.getLogger(Logger.class.getName());
 	protected static WebElement element = null;
 
+	public static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
+	public static String dbUrl = PropertyUtils.getProperty("dbUrl");
+	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
+	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
+	
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
 	 * is returned in {@link WebDriverManager.class}, where it will be
@@ -65,7 +70,7 @@ public class TestBase extends Verify implements WebElements {
 	public TestBase() {
 
 	}
-
+	
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	@BeforeClass
@@ -93,23 +98,20 @@ public class TestBase extends Verify implements WebElements {
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		}
 
-		PropertyUtils.loadPropertyFile(proprtyFile);
-		PropertyUtils.listProperties();
-
-		String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
-		String dbUrl = PropertyUtils.getProperty("dbUrl");
-		String dbUserName = PropertyUtils.getProperty("dbUserName");
-		String dbPassWord = PropertyUtils.getProperty("dbPassWord");
-
-		SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
-		
-		dao.SetUpDataBase();
+		dao.SetUpDataBase();		
+		dao.runSqlScript(create_db_sql);
 	}
 
 	@AfterClass
 	public void closeBrowser(ITestContext context) {
 		WebDriverManager.stopDriver();
 
+		try {
+			dao.insertReport();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		
 		// TODO: copy report output to apache docs folder, and replace the
 		// existing, after the existing has been backed up
 	}
@@ -119,6 +121,7 @@ public class TestBase extends Verify implements WebElements {
 	 */
 
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
+	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
 
 	// private static Map<String, List<WebElement>> contentsMap = new
 	// HashMap<String, List<WebElement>>();
@@ -615,7 +618,7 @@ public class TestBase extends Verify implements WebElements {
 	 */
 	
 	//TODO: make it buffered (this method is never used yet btw)
-	public static boolean readFile(Path textFile, boolean condition) {
+	public static void readFile(Path textFile) {
 
 		List<String> linesRead = null;
 		try {
@@ -629,7 +632,7 @@ public class TestBase extends Verify implements WebElements {
 				Log.info(line);
 			}
 		}
-		return true;
+		//return true;
 	}
 	
 	/**

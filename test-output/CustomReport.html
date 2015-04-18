@@ -33,71 +33,78 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <tr><th colspan="8">Test Demo Run</th></tr>
 <tr><td style="text-align:left;padding-right:2em"><a href="#t1">Test Groups</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi">checkintest functest </td></tr>
 <tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Test on Safari</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0h:0m:48s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Test on Internet Explorer</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t5">Test on Chrome</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0h:2m:53s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t5">Test on Chrome</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <p></p>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <b align="center">Result Summary Table</b>
 <tr><th>Class</th><th>Method</th><th># of<br>Scenarios</th><th>Start</th><th>Time<br>elapsed</th><th>Custom</th></tr>
-<tr id="t5"><th colspan="6">Test on Chrome ‚Äî failed</th></tr>
-<tr class="failedodd"><td>test.java.TestPlayer</td><td><a href="#m1"><b>testPlaySingleContent</b>  </a></td><td class="numi">1</td><td> ·pr. 15 at 06:13 DU</td><td class="numi">0h:0m:36s</td><td><a href='emailable-report.html'>Test</a></td></tr>
-<tr><th colspan="6">Test on Chrome ‚Äî passed</th></tr>
-<tr class="passedodd"><td>test.java.TestPlayer</td><td><a href="#m2"><b>testSignInSuccess</b>  ("HBO login")</a></td><td class="numi">1</td><td> ·pr. 15 at 06:11 DU</td><td class="numi">0h:2m:6s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr id="t3"><th colspan="6">Test on Firefox √¢‚Ç¨‚Äù failed</th></tr>
+<tr class="failedodd"><td>test.java.TestSingleContent</td><td><a href="#m1"><b>testSignInSuccess</b>  ("HBO login")</a></td><td class="numi">1</td><td> √°pr. 18 at 09:51 DU</td><td class="numi">0h:0m:26s</td><td><a href='emailable-report.html'>Test</a></td></tr>
 </table>
 <br/><b align="center">Method Summaries</b><br/>
 <h1>Test Demo Run</h1>
 <h3>Test Groups</h3>
 <h3>Test on Safari</h3>
 <h3>Test on Firefox</h3>
-<h3>Test on Internet Explorer</h3>
-<h3>Test on Chrome</h3>
-<h2 id="m1">test.java.TestPlayer : testPlaySingleContent</h2>
+<h2 id="m1">test.java.TestSingleContent : testSignInSuccess</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr><td><i>Test did not have parameters.</i></td></tr> 
-<div>
+<tr class="param"><th>Param.1</th></tr>
+<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
+</tr>
+<tr><td>
 <h3>Test Messages</h3>
-Found element:By.xpath: .//*[@id='content-inner']/div[1]/div[1]/div[2]<br>
-Found element:By.xpath: .//*[@id='content-inner']/div[1]/div[1]/div[2]<br>
-Found element:By.id: play_dropdown<br>
-Found element:By.partialLinkText: EpizÛd megtekintÈse<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> partial link text: EpizÛd megtekintÈse]<br>
-Found element:By.id: playbackElapsedTime<br>
-Script run: return jQuery(arguments[0]).text();<br>
-Found element:By.id: playbackElapsedTime<br>
-Script run: return jQuery(arguments[0]).text();<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
-Completed executing following method : TestPlayer.testPlaySingleContent<br>
+Found element:By.id: headerButtonLogin<br>
+Found element:By.id: headerButtonLogin<br>
+Clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: headerButtonLogin]<br>
+Found element:By.id: OperatorId<br>
+Found element:By.id: OperatorId<br>
+Clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: OperatorId]<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
+Clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: EmailAddress<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+Found element:By.name: Password<br>
+<p>selectOperator test is done<br></p><br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
+Clicked on:[[FirefoxDriver: firefox on MAC (3b11932f-ecce-7b40-aeae-08794000ff6d)] -> css selector: #sign-in-buttons > button.button_submit]<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
+Completed executing following method : TestSingleContent.testSignInSuccess<br>
 Fuck<br><br>
-Test Method resides in test.java.TestPlayer<br>
+<a href="Firefox-2015-3-18-21-52-1-838.png"><p align="left">Error screenshot at Sat Apr 18 21:52:02 CEST 2015</p><br>
+<p><img width="50%" src="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots/Firefox-2015-3-18-21-52-1-838.png" alt="screenshot at Sat Apr 18 21:52:02 CEST 2015"/></p></a><br /><br>
+Test Method resides in test.java.TestSingleContent<br>
+Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
 Test Status: Failed<br>
-<a href="CHROME-2015-3-15-18-14-10-768.png"><p align="left">Error screenshot at Wed Apr 15 18:14:10 CEST 2015</p><br>
-<p><img width="50%" src="C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\CHROME-2015-3-15-18-14-10-768.png" alt="screenshot at Wed Apr 15 18:14:10 CEST 2015"/></p></a><br /><br>
 <h3>Failure</h3>
-<div class="stacktrace">java.lang.AssertionError: Playback stopped after 10 seconds! expected [true] but found [false]
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at main.TestBase.assertTrue(TestBase.java:161)
-	at main.TestBase.isPlayBackRunning(TestBase.java:793)
-	at pageObjects.MouseHover.mouseHover(MouseHover.java:56)
-	at pageObjects.PlaySingleMainContent.playMainContent(PlaySingleMainContent.java:62)
-	at test.java.TestPlayer.testPlaySingleContent(TestPlayer.java:54)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at main.TestBase.assertTrue(TestBase.java:162)
+	at test.java.TestSingleContent.testSignInSuccess(TestSingleContent.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -119,61 +126,10 @@ Test Status: Failed<br>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </div>
-</div>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">test.java.TestPlayer : testSignInSuccess</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Param.1</th></tr>
-<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
-</tr>
-<tr><td>
-Found element:By.id: headerButtonLogin<br>
-Found element:By.id: headerButtonLogin<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: headerButtonLogin]<br>
-Found element:By.id: OperatorId<br>
-Found element:By.id: OperatorId<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: OperatorId]<br>
-Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
-Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: Password<br>
-Found element:By.name: Password<br>
-Found element:By.name: Password<br>
-<p>selectOperator test is done<br></p><br>
-Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
-Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> css selector: #sign-in-buttons > button.button_submit]<br>
-<p>submit test is done<br></p><br>
-Found element:By.id: headerButtonMenu<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: headerButtonMenu]<br>
-Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1<br>
-Found element:By.id: menuTabs_settings<br>
-Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: menuTabs_settings]<br>
-Found element:By.id: menucat_settings_customerMenu<br>
-Found element:By.id: menucat_settings_customerMenu<br>
-Found element:By.id: menucat_settings_customerMenu<br>
-Found element:By.tagName: a<br>
-<p>language check test is done<br></p><br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Completed executing following method : TestPlayer.testSignInSuccess<br>
-Minden fasza<br>
-Test Method resides in test.java.TestPlayer<br>
-Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
-Test Status: Pass<br>
 </td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
+<h3>Test on Internet Explorer</h3>
+<h3>Test on Chrome</h3>
 <center><h4>Customized TestNG Report</h4></center>
 </body></html>

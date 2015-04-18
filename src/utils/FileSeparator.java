@@ -58,6 +58,7 @@ public class FileSeparator extends TestBase implements WebElements {
 
 		TestBase.writeFile(urlsFile, bookList);
 
+		TestBase.readFile(Paths.get("sql/create_db.sql"));
 
 		Path testOutput = Paths.get("test-output/html");
 
@@ -79,7 +80,7 @@ public class FileSeparator extends TestBase implements WebElements {
 			System.out.println(children[i]);
 
 			files.add(children[i]);
-			TestBase.openAll(files);
+			//TestBase.openAll(files);
 			
 
 		

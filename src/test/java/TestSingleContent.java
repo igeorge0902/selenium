@@ -29,22 +29,18 @@ public class TestSingleContent extends TestBase {
 		    Log.info("submit test is done");
 		    Reporter.log("<p>submit test is done<br></p>");
 
-		    //language check
+/*		    //language check
 		    SignInPage.checkLanguage();
 		    Log.info("language check test is done");
 		    Reporter.log("<p>language check test is done<br></p>");
+	*/
 	  }
-	  
-	  public static int m_numberOfTimes;
-	  public TestSingleContent (int numberOfTimes) {
-		    m_numberOfTimes = numberOfTimes;
-		}
 	
 	@Parameters ({"contents"})
   	@Test (dependsOnMethods = {"testSignInSuccess" })
     public void testPlaySingleContent(String contents) throws Exception {
   		
-  		for (int i = 0; i < m_numberOfTimes; i++) {
+  		//for (int i = 0; i < m_numberOfTimes; i++) {
   		
   			PlaySingleMainContent PlayMainContent = new PlaySingleMainContent(driver);
   		
@@ -53,4 +49,4 @@ public class TestSingleContent extends TestBase {
   		}
 
   	}
-}
+//}

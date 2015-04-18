@@ -1,22 +1,22 @@
 package temp;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import main.TestBase;
 import main.WebElements;
-import utils.PropertyUtils;
-import utils.SQLAccess;
 
-public class SQLTest implements WebElements {
+
+public class SQLTest extends TestBase implements WebElements {
 	
+	public static Logger Log = Logger.getLogger(Logger.class.getName());
+
   public static void main(String[] args) throws Exception {
 	  
-	  PropertyUtils.loadPropertyFile(proprtyFile);
-	  	
-	  	String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
-	  	String dbUrl = PropertyUtils.getProperty("dbUrl");
-	  	String dbUserName = PropertyUtils.getProperty("dbUserName");
-	  	String dbPassWord = PropertyUtils.getProperty("dbPassWord");
-	  
-    SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
-    dao.readDataBase();
+	    DOMConfigurator.configure("log4j.xml");
+
+    dao.SetUpDataBase();
+    dao.runSqlScript(create_db_sql);
+    dao.insertReport();
   }
 
 } 

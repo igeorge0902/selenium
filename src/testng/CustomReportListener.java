@@ -17,6 +17,8 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import main.TestBase;
+
 import org.testng.IInvokedMethod;
 import org.testng.IReporter;
 import org.testng.IResultMap;
@@ -35,6 +37,7 @@ import org.testng.xml.XmlTest;
 
 import utils.SQLAccess;
 
+@SuppressWarnings("unused")
 public class CustomReportListener extends TestListenerAdapter implements
 		IReporter {
 
@@ -51,9 +54,9 @@ public class CustomReportListener extends TestListenerAdapter implements
 	 * method to generate the report.
 	 */
 
-	@SuppressWarnings("unused")
 	// TODO: put the relevant data into DB and then read them for the actual
 	// HTML report
+
 	@Override
 	public void generateReport(List<XmlSuite> xml, List<ISuite> suites,
 			String outdir) {
@@ -85,7 +88,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 								+ tc.getSkippedTests().getAllResults().size());
 
 				try {
-					SQLAccess.generateMethodSummaryReport(suiteName, testName);
+					TestBase.dao.generateMethodSummaryReport(suiteName, testName);
 
 				} catch (Exception e) {
 					e.printStackTrace();

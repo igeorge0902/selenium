@@ -16,70 +16,69 @@ import main.TestBase;
 import org.testng.Assert;
 
 public class PropertyUtils extends TestBase {
-	
-    private static Properties p = new Properties();
 
-    static
-    {
-        String workingDir = System.getProperty("user.dir");		 
-        
-        try
-        {
-            loadPropertyFile(workingDir + File.separator + proprtyFile);
-        	
-        	} catch (FileNotFoundException realCause) {
-        		
-        		Assert.fail("Unable to load file!", realCause);
-        
-        	} catch (IOException realCause) {
-        		
-        		Assert.fail("Unable to load file!", realCause);
-        }
-    }
+	private static Properties p = new Properties();
 
-    public static void loadPropertyFile(String propertyFileName) throws FileNotFoundException, IOException
-    {
-    	  InputStream is;
-	            
-	        	is = new FileInputStream(new File(propertyFileName));
-	            DataInputStream in = new DataInputStream(is);
-	            BufferedReader br = new BufferedReader(new InputStreamReader(in));
-	        	
-	            p.load(br);
-	            System.out.println(propertyFileName + " is loaded.");
-	        	Log.info(propertyFileName + " is loaded.");
-	        	in.close();	    
-	        	br.close();
-    }
+	static {
+		String workingDir = System.getProperty("user.dir");
 
-    public static String getProperty(String propertyKey)
-    {
-        String propertyValue = p.getProperty(propertyKey.trim());
+		try {
+			loadPropertyFile(workingDir + File.separator + proprtyFile);
 
-        if (propertyValue == null || propertyValue.trim().length() == 0)
-        
-        	{
-            
-        		Log.info(propertyKey + "is missing!");
-        	
-        	}
+		} catch (FileNotFoundException realCause) {
 
-        return propertyValue;
-    }
+			Assert.fail("Unable to load file!", realCause);
 
-    public static void setProperty(String propertyKey, String value) throws FileNotFoundException, IOException
-    {
-        p.setProperty(propertyKey, value);
-    }
-    
-	public static void listProperties() throws FileNotFoundException, IOException {
-        
-		for (Enumeration<?> e = p.propertyNames(); e.hasMoreElements();)
-			
-			while (e.hasMoreElements()) {		
-			String propertyKey = (String)e.nextElement();						
-		    System.out.println(propertyKey + " -- " + p.getProperty(propertyKey)); 
-	        
-			}						
+		} catch (IOException realCause) {
+
+			Assert.fail("Unable to load file!", realCause);
 		}
+	}
+
+	public static void loadPropertyFile(String propertyFileName)
+			throws FileNotFoundException, IOException {
+		InputStream is;
+
+		is = new FileInputStream(new File(propertyFileName));
+		DataInputStream in = new DataInputStream(is);
+		BufferedReader br = new BufferedReader(new InputStreamReader(in));
+
+		p.load(br);
+		System.out.println(propertyFileName + " is loaded.");
+		Log.info(propertyFileName + " is loaded.");
+		in.close();
+		br.close();
+	}
+
+	public static String getProperty(String propertyKey) {
+		String propertyValue = p.getProperty(propertyKey.trim());
+
+		if (propertyValue == null || propertyValue.trim().length() == 0)
+
+		{
+
+			Log.info(propertyKey + "is missing!");
+
+		}
+
+		return propertyValue;
+	}
+
+	public static void setProperty(String propertyKey, String value)
+			throws FileNotFoundException, IOException {
+		p.setProperty(propertyKey, value);
+	}
+
+	public static void listProperties() throws FileNotFoundException,
+			IOException {
+
+		for (Enumeration<?> e = p.propertyNames(); e.hasMoreElements();)
+
+			while (e.hasMoreElements()) {
+				String propertyKey = (String) e.nextElement();
+				System.out.println(propertyKey + " -- "
+						+ p.getProperty(propertyKey));
+
+			}
+	}
 }

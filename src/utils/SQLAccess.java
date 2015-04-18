@@ -1,9 +1,13 @@
 package utils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Reader;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -15,16 +19,31 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
 
+import org.apache.ibatis.jdbc.ScriptRunner;
+
 import main.TestBase;
 import main.WebElements;
 
 public class SQLAccess extends TestBase implements WebElements {
-
+	
 	private String dbDriverClass;
 	private String dbUrl;
 	private String dbUserName;
 	private String dbPassWord;
-	private static String filePath;
+	//private static String filePath;
+	private static String index;
+	private static String output;
+	private static String overview;
+	private static String reportng_css;
+	private static String reportng_js;
+	private static String sorttable;
+	private static String suite_groups;
+	private static String suite_test1;
+	private static String suite_test2;
+	private static String suite_test3;
+	private static String suite_test4;
+	private static String suite_test5;
+	private static String suites;
 
 	private static Connection connect = null;
 	private static Statement statement = null;
@@ -38,7 +57,7 @@ public class SQLAccess extends TestBase implements WebElements {
 		this.dbUrl = dbUrl;
 		this.dbUserName = dbUserName;
 		this.dbPassWord = dbPassWord;
-		//this.filePath = filePath;
+		// this.filePath = filePath;
 
 	}
 
@@ -49,13 +68,9 @@ public class SQLAccess extends TestBase implements WebElements {
 			Class.forName(dbDriverClass);
 
 			// Setup the connection with the DB
-			connect = DriverManager
-					.getConnection(dbUrl, dbUserName, dbPassWord);
-
-			// Statements allow to issue SQL queries to the database
-			statement = connect.createStatement();
-
-			Log.info(connect.toString());
+			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);			
+			
+			Log.info("MySql connection is " + connect.isValid(3000));
 
 		} catch (SQLException e) {
 			Log.info(e.getSQLState());
@@ -64,15 +79,8 @@ public class SQLAccess extends TestBase implements WebElements {
 	}
 
 	@SuppressWarnings("deprecation")
-	public static void generateMethodSummaryReport(String suite, String testname)
+	public void generateMethodSummaryReport(String suite, String testname)
 			throws Exception {
-
-		PropertyUtils.loadPropertyFile(proprtyFile);
-
-		String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
-		String dbUrl = PropertyUtils.getProperty("dbUrl");
-		String dbUserName = PropertyUtils.getProperty("dbUserName");
-		String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 
 		if (testname == null) {
 			return;
@@ -83,15 +91,14 @@ public class SQLAccess extends TestBase implements WebElements {
 			Class.forName(dbDriverClass);
 
 			// Setup the connection with the DB
-			connect = DriverManager
-					.getConnection(dbUrl, dbUserName, dbPassWord);
+			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
 
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
 
 			// PreparedStatements can use variables and are more efficient
 			preparedStatement = connect
-					.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?)");
+					.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?, ?)");
 
 			preparedStatement.setString(1, suite);
 			preparedStatement.setString(2, testname);
@@ -99,6 +106,9 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.setString(4, testname);
 			preparedStatement.setDate(5, new java.sql.Date(2009, 12, 11));
 			preparedStatement.setString(6, testname);
+			preparedStatement.setInt(7, 1);
+
+
 
 			preparedStatement.executeUpdate();
 
@@ -112,20 +122,14 @@ public class SQLAccess extends TestBase implements WebElements {
 
 	}
 
-	public static void insertReport() throws Exception {
-
-		PropertyUtils.loadPropertyFile(proprtyFile);
-
-		String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
-		String dbUrl = PropertyUtils.getProperty("dbUrl");
-		String dbUserName = PropertyUtils.getProperty("dbUserName");
-		String dbPassWord = PropertyUtils.getProperty("dbPassWord");
+	public void insertReport() throws Exception {
 
 		Path testOutput = Paths.get("test-output/html");
 
 		if (testOutput.toFile().exists()) {
 			try {
-				System.out.println("Real path: " + testOutput.toRealPath(LinkOption.NOFOLLOW_LINKS));
+				System.out.println("Real path: "
+						+ testOutput.toRealPath(LinkOption.NOFOLLOW_LINKS));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -133,16 +137,21 @@ public class SQLAccess extends TestBase implements WebElements {
 			System.out.println("The directory does not exist");
 		}
 
-		String[] children = testOutput.toFile().list();
+		//filePath = urlsFile;
+		index = testOutput + File.separator + "index.html";
+		output = testOutput + File.separator + "output.html";
+		overview = testOutput + File.separator + "overview.html";
+		reportng_css = testOutput + File.separator + "reportng.css";
+		reportng_js = testOutput + File.separator + "reportng.js";
+		sorttable = testOutput + File.separator + "sorttable.js";
+		suite_groups = testOutput + File.separator + "suite1_groups.html";
+		suite_test1 = testOutput + File.separator + "suite1_test1_results.html";
+		suite_test2 = testOutput + File.separator + "suite1_test2_results.html";
+		suite_test3 = testOutput + File.separator + "suite1_test3_results.html";
+		suite_test4 = testOutput + File.separator + "suite1_test4_results.html";
+		suite_test5 = testOutput + File.separator + "suite1_test5_results.html";
+		suites = testOutput + File.separator + "suites.html";
 
-		try {
-			filePath = urlsFile;
-			
-			} catch (NullPointerException e) {
-			
-				e.getMessage();
-		}
-		
 		try {
 			// This will load the MySQL driver, each DB has its own driver
 			Class.forName(dbDriverClass);
@@ -150,30 +159,57 @@ public class SQLAccess extends TestBase implements WebElements {
 			// Setup the connection with the DB
 			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
 
-			String sql = "insert into feedback.report (html_files, urls) values (?, ?)";
+			String sql = "insert into feedback.HTML_reports  "
+					+ "(testrun_id, index_, output, overview,	reportng_css, "
+					+ "reportng_js, sorttable, suite_groups, suite_test1,suite_test2, "
+					+ "suite_test3, suite_test4, suite_test5, suites) values (default, ?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			
 			PreparedStatement statement = connect.prepareStatement(sql);
 
-			for (int i = 0; i < children.length; i++) {
-
-				// TODO: unkown source error to be fixed
-				InputStream inputStream = new FileInputStream(new File(children[i]));
-
-				statement.setBlob(1, inputStream);
-			}
+			InputStream inputStream = new FileInputStream(new File(index));
+			statement.setBlob(1, inputStream);
+			InputStream inputStream2 = new FileInputStream(new File(output));
+			statement.setBlob(2, inputStream2);
+			InputStream inputStream3 = new FileInputStream(new File(overview));
+			statement.setBlob(3, inputStream3);
+			InputStream inputStream4 = new FileInputStream(new File(reportng_css));
+			statement.setBlob(4, inputStream4);
+			InputStream inputStream5 = new FileInputStream(new File(reportng_js));
+			statement.setBlob(5, inputStream5);
+			InputStream inputStream6 = new FileInputStream(new File(sorttable));
+			statement.setBlob(6, inputStream6);
+			InputStream inputStream7 = new FileInputStream(new File(suite_groups));
+			statement.setBlob(7, inputStream7);
+			InputStream inputStream8 = new FileInputStream(new File(suite_test1));
+			statement.setBlob(8, inputStream8);
+			InputStream inputStream9 = new FileInputStream(new File(suite_test2));
+			statement.setBlob(9, inputStream9);
+			InputStream inputStream10 = new FileInputStream(new File(suite_test3));
+			statement.setBlob(10, inputStream10);
+			InputStream inputStream11 = new FileInputStream(new File(suite_test4));
+			statement.setBlob(11, inputStream11);
+			InputStream inputStream12 = new FileInputStream(new File(suite_test5));
+			statement.setBlob(12, inputStream12);
+			InputStream inputStream13 = new FileInputStream(new File(suites));
+			statement.setBlob(13, inputStream13);
 			
+			/*
 			if (filePath != null) {
-			InputStream inputStream = new FileInputStream(new File(filePath));
-			statement.setBlob(2, inputStream);
+				InputStream inputStream14 = new FileInputStream(new File(filePath));
+				statement.setBlob(14, inputStream14);
 			}
 			
+
 			else {
 				TestBase.createFile(urlsFile);
 				Log.info("Empty urls.txt file was created. Test urls were retreived from property file.");
 				filePath = urlsFile;
-				InputStream inputStream = new FileInputStream(new File(filePath));
-				statement.setBlob(2, inputStream);
+				InputStream inputStream15 = new FileInputStream(
+						new File(filePath));
+				statement.setBlob(15, inputStream15);
 			}
-			
+			*/
+
 			int row = statement.executeUpdate();
 
 			if (row > 0) {
@@ -208,8 +244,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			statement = connect.createStatement();
 
 			// Result set get the result of the SQL query
-			resultSet = statement
-					.executeQuery("select * from feedback.comments");
+			resultSet = statement.executeQuery("select * from feedback.comments");
 			writeResultSet(resultSet);
 
 			// PreparedStatements can use variables and are more efficient
@@ -236,8 +271,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.setString(1, "Test");
 			preparedStatement.executeUpdate();
 
-			resultSet = statement
-					.executeQuery("select * from feedback.comments");
+			resultSet = statement.executeQuery("select * from feedback.comments");
 			writeMetaData(resultSet);
 
 		} catch (Exception e) {
@@ -261,6 +295,34 @@ public class SQLAccess extends TestBase implements WebElements {
 		}
 	}
 
+	public void runSqlScript(String sqlPath) throws ClassNotFoundException, SQLException, FileNotFoundException {
+
+		try {
+			// This will load the MySQL driver, each DB has its own driver
+			Class.forName(dbDriverClass);
+
+			// Setup the connection with the DB
+			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);			
+			connect.isValid(3000);
+			
+			Log.info("MySql connection is " + connect.isValid(3000));
+				
+		// Initialize object for ScripRunner
+		ScriptRunner sr = new ScriptRunner(connect);
+
+		// Give the input file to Reader
+		Reader reader = new BufferedReader(new FileReader(sqlPath));
+
+		// Exctute script
+		sr.runScript(reader);
+		Log.info("Script run: "+ sqlPath);
+
+	} catch (SQLException ex) {
+		ex.getLocalizedMessage();
+			}
+		}
+	
+	
 	private static void writeResultSet(ResultSet resultSet) throws SQLException {
 
 		// ResultSet is initially before the first data set
