@@ -38,20 +38,18 @@ public class TestPlayer extends TestBase{
 	    Log.info("submit test is done");
 	    Reporter.log("<p>submit test is done<br></p>");
 
-		
-		//new device dialog
-		SignInPage.enterNewDevice();
-	    Log.info("newDevice test is done");
-	    Reporter.log("<p>newDevice test is done<br></p>");
-  
+	    //language check
+	    SignInPage.checkLanguage();
+	    Log.info("language check test is done");
+	    Reporter.log("<p>language check test is done<br></p>");
   }
-    
-    
+     
+  
 	@Test (dependsOnMethods = { "testSignInSuccess" }, description= "Selecting contents for playback tests.")
 	public void testSelectContentsPlay() throws Exception{
 		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
 		
-	    //playTrailer
+	    //select contents
 		SelectMovieGroups.actionGroups();
 	    Log.info("selectMovieGroups test is done"); 
 	    Reporter.log("<p>selectMovieGroups test is done<br></p>");
@@ -62,7 +60,7 @@ public class TestPlayer extends TestBase{
     public void testPlayerSuccess(String urls) throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		
-	    //playTrailer
+	    //play mainContent
 	    PlayMainContent.playMainContent(urls);
 	    Log.info("playMainContent test is done"); 
 	    Reporter.log("<p>playMainContent test is done<br></p>");

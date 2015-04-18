@@ -1,0 +1,227 @@
+[09/04/15 11:30:48:048 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 11:30:48:048 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 11:30:48:048 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 11:30:56:056 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 11:30:59:059 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[09/04/15 11:30:59:059 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 11:31:16:016 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (437432db-98fd-45c9-ad5d-4f5851d27d15)] -> id: headerButtonLogin]
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (437432db-98fd-45c9-ad5d-4f5851d27d15)] -> id: OperatorId]
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 11:31:17:017 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (437432db-98fd-45c9-ad5d-4f5851d27d15)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 11:31:18:018 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (437432db-98fd-45c9-ad5d-4f5851d27d15)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 11:31:19:019 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 11:31:22:022 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 11:31:22:022 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 11:31:23:023 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\testSignInSuccess(test.java.TestPlayer)
+[09/04/15 11:31:23:023 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[09/04/15 05:23:50:050 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 05:23:50:050 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 05:23:50:050 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 05:23:59:059 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 05:24:01:001 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[09/04/15 05:24:01:001 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 05:24:20:020 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 05:24:20:020 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:24:20:020 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 05:24:20:020 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (278a1b3f-51e5-4bb6-90d1-711b040e73a1)] -> id: headerButtonLogin]
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (278a1b3f-51e5-4bb6-90d1-711b040e73a1)] -> id: OperatorId]
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:24:21:021 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (278a1b3f-51e5-4bb6-90d1-711b040e73a1)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 05:24:22:022 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (278a1b3f-51e5-4bb6-90d1-711b040e73a1)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 05:24:23:023 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 05:24:26:026 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 05:24:26:026 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 05:24:26:026 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\testSignInSuccess(test.java.TestPlayer)
+[09/04/15 05:24:26:026 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[09/04/15 05:31:34:034 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 05:31:34:034 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 05:31:34:034 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 05:31:42:042 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 05:31:45:045 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[09/04/15 05:31:45:045 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (98ef1b97-abe4-4355-a567-846f431f2597)] -> id: headerButtonLogin]
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 05:31:52:052 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (98ef1b97-abe4-4355-a567-846f431f2597)] -> id: OperatorId]
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (98ef1b97-abe4-4355-a567-846f431f2597)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 05:31:53:053 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (98ef1b97-abe4-4355-a567-846f431f2597)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 05:31:54:054 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 05:31:57:057 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 05:31:57:057 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 05:31:58:058 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\
+[09/04/15 05:31:58:058 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[09/04/15 05:35:20:020 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 05:35:20:020 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 05:35:20:020 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 05:35:28:028 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 05:35:30:030 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[09/04/15 05:35:30:030 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 05:35:36:036 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (447f5ad6-4129-4e5b-86d4-12ea35d1c1ba)] -> id: headerButtonLogin]
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 05:35:37:037 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (447f5ad6-4129-4e5b-86d4-12ea35d1c1ba)] -> id: OperatorId]
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (447f5ad6-4129-4e5b-86d4-12ea35d1c1ba)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 05:35:38:038 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (447f5ad6-4129-4e5b-86d4-12ea35d1c1ba)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 05:35:39:039 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 05:35:42:042 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 05:35:42:042 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 05:35:43:043 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\
+[09/04/15 05:35:43:043 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[09/04/15 06:03:11:011 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 06:03:11:011 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 06:03:11:011 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 06:03:20:020 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 06:03:23:023 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@54e3658c
+[09/04/15 06:03:23:023 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 06:03:38:038 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 06:03:38:038 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 06:03:38:038 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 06:03:38:038 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (37870f99-eed7-43bf-bc4f-569f870938d3)] -> id: headerButtonLogin]
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (37870f99-eed7-43bf-bc4f-569f870938d3)] -> id: OperatorId]
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:03:39:039 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (37870f99-eed7-43bf-bc4f-569f870938d3)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:03:40:040 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:03:41:041 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (37870f99-eed7-43bf-bc4f-569f870938d3)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 06:03:41:041 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 06:03:44:044 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 06:03:44:044 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 06:03:44:044 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\
+[09/04/15 06:24:36:036 CEST]  INFO log4j.Logger: New driver instantiated
+[09/04/15 06:24:36:036 CEST]  INFO log4j.Logger: WIN8_1
+[09/04/15 06:24:36:036 CEST]  INFO log4j.Logger: Firefox
+[09/04/15 06:24:44:044 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[09/04/15 06:24:46:046 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@2849434b
+[09/04/15 06:24:46:046 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[09/04/15 06:25:01:001 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[09/04/15 06:25:01:001 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 06:25:01:001 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[09/04/15 06:25:01:001 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (080949f9-2c4c-4929-bb6e-2c5007914ce3)] -> id: headerButtonLogin]
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: By.id: OperatorId
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (080949f9-2c4c-4929-bb6e-2c5007914ce3)] -> id: OperatorId]
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:25:02:002 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (080949f9-2c4c-4929-bb6e-2c5007914ce3)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: By.name: Password
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:25:03:003 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: selectOperator is successful
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: selectOperator test is done
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (080949f9-2c4c-4929-bb6e-2c5007914ce3)] -> css selector: #sign-in-buttons > button.button_submit]
+[09/04/15 06:25:04:004 CEST]  INFO log4j.Logger: submit is successful
+[09/04/15 06:25:07:007 CEST]  INFO log4j.Logger: Test Status:Failed
+[09/04/15 06:25:07:007 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[09/04/15 06:25:07:007 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\Documents\Tests\
+[09/04/15 06:26:17:017 CEST]  INFO log4j.Logger: Driver closed afterInvocation

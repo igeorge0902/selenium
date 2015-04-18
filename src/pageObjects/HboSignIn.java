@@ -1,6 +1,7 @@
 package pageObjects;
 
 
+
 import main.BaseUrls;
 import main.TestBase;
 import main.WebElements;
@@ -9,6 +10,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
+import utils.WaitTool;
+
+
 public class HboSignIn extends TestBase implements WebElements{
 		
 
@@ -16,8 +20,8 @@ public class HboSignIn extends TestBase implements WebElements{
 		super(driver); 
 	}
 
-	private static String password = "";
 	private static String email = "";
+	private static String password = "";
 
 		
 	public HboSignIn selectOperator(String operator) throws Exception{
@@ -79,7 +83,7 @@ public class HboSignIn extends TestBase implements WebElements{
 		return new HboSignIn(driver); 
 	}
 	
-	
+	//TODO: change it to parental
 	public HboSignIn enterNewDevice() {
 		try {
 			if (isNewDeviceDialog() == false) {
@@ -100,6 +104,36 @@ public class HboSignIn extends TestBase implements WebElements{
 		return new HboSignIn(driver);
 		
 	}
+	
+	public HboSignIn checkLanguage() {
+		try {
+		
+			if (driver.getTitle().equals("HBO GO. It's HBO. Anywhere.")) {
+				Log.info("Language is  " + EN);
+			return new HboSignIn(driver);
+			
+			} else if (!driver.getTitle().equals("HBO GO. It's HBO. Anywhere.")) {
+				
+				driver.findElement(By.id(HeaderButton)).click();
+				TestBase.isElementPresent(By.id(Movies));
+				driver.findElement(By.id(Settings)).click();
+				TestBase.assertEquals(driver.findElement(By.id(CustomerMenu)).isDisplayed(), driver.findElement(By.id(CustomerMenu)).isDisplayed());
+				TestBase.clickLinkByHref(language);
+				
+				driver.findElement(By.linkText("English")).click();
+				
+				driver.findElement(By.cssSelector("button.button_submit")).click();
+
+				WaitTool.waitForElementRefresh(driver, By.cssSelector("button.button_submit"), 10);
+				TestBase.assertTrue(TestBase.isTextPresent(EN));
+				Log.info("Language has been changed to" + EN +"!");
+		}
+			} catch (Exception e) {
+			
+		}
+		return new HboSignIn(driver);
+	}
 }
+		
 
 

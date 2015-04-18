@@ -10,10 +10,12 @@
 	<parameter name="browser" value="Firefox" />
 	<parameter name="url" value="http://www.google.com" />
 	<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	<parameter name="contents" value="content1" />
 	<test name="Test Groups">
 		<parameter name="browser" value="*safari" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+		<parameter name="contents" value="content1" />
 	    <parameter name="filenamePathWin" value=".\lib\output.txt" />
 	    <parameter name="filenamePathMac" value="./lib/urls.txt" />						
 		<groups>
@@ -41,6 +43,12 @@
 					<exclude name="testSignupFail" />
 				</methods>
 			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
@@ -68,6 +76,7 @@
 		<parameter name="browser" value="Firefox" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="contents" value="content1" />
 	    <parameter name="filenamePathWin" value=".\lib\output.txt" />
 	    <parameter name="filenamePathMac" value="./lib/urls.txt" />				
 		<classes>
@@ -82,11 +91,17 @@
 					<exclude name="testSignupFail" />
 				</methods>
 			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
 			<class name="test.java.TestPlayer">
 				<methods>
 					<exclude name="testSignInSuccess" />
 					<exclude name="testSelectContentsPlay" />
-					<exclude name="testPlayerSuccess" />
+					<exclude name="testPlayerSuccess" />	
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -109,6 +124,7 @@
 		<parameter name="browser" value="INTERNET_EXPLORER" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="contents" value="content1" />
 	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
 		<classes>
 		    <class name="test.java.TestMouseHover">
@@ -122,11 +138,17 @@
 					<exclude name="testSignupFail" />
 				</methods>
 			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
 			<class name="test.java.TestPlayer">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testSelectContentsPlay" />
-					<include name="testPlayerSuccess" />					
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
 				</methods>
 			</class>
 			<class name="test.java.TestHboSignIn">
@@ -149,7 +171,8 @@
 		<parameter name="browser" value="CHROME" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
-	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="contents" value="content1" />
+	    <parameter name="filenamePathWin" value=".\lib\output.txt" />
 	    <parameter name="filenamePathMac" value="./lib/urls.txt" />						
 		<classes>
 		    <class name="test.java.TestMouseHover">
@@ -165,16 +188,23 @@
 			</class>
 			<class name="test.java.TestPlayer">
 				<methods>
-					<exclude name="testSignInSuccess" />
+					<include name="testSignInSuccess" />
+					<include name="testPlaySingleContent" />
 					<exclude name="testSelectContentsPlay" />
 					<exclude name="testPlayerSuccess" />
 				</methods>
 			</class>
-			<class name="test.java.TestHboSignIn">
+			<class name="test.java.TestSingleContent">
 				<methods>
 					<exclude name="testSignInSuccess" />
-					<exclude name="testListActionGroupContents" />
-					<exclude name="testPlayerSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
 				</methods>
 			</class>
 			<class name="test.java.TestSearchEngines">

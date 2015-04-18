@@ -1,0 +1,295 @@
+[14/04/15 05:28:14:014 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 05:28:14:014 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 05:28:14:014 CEST]  INFO log4j.Logger: Firefox
+[14/04/15 05:28:23:023 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[14/04/15 05:28:25:025 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@7a0e7ecd
+[14/04/15 05:28:25:025 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 05:28:31:031 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 05:28:31:031 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:28:31:031 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 05:28:31:031 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (4c2dbd74-5d78-43ed-b6f4-413ec41a43ee)] -> id: headerButtonLogin]
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (4c2dbd74-5d78-43ed-b6f4-413ec41a43ee)] -> id: OperatorId]
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:28:32:032 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (4c2dbd74-5d78-43ed-b6f4-413ec41a43ee)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: By.name: Password
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:28:33:033 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: selectOperator is successful
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: selectOperator test is done
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (4c2dbd74-5d78-43ed-b6f4-413ec41a43ee)] -> css selector: #sign-in-buttons > button.button_submit]
+[14/04/15 05:28:34:034 CEST]  INFO log4j.Logger: submit is successful
+[14/04/15 05:28:37:037 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 05:28:37:037 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 05:28:37:037 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\ScreenShots\\
+[14/04/15 05:30:01:001 CEST]  INFO log4j.Logger: Firefox-2015-3-14-17-28-37-521.png
+[14/04/15 05:30:01:001 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[14/04/15 05:33:53:053 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 05:33:53:053 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 05:33:53:053 CEST]  INFO log4j.Logger: Firefox
+[14/04/15 05:34:00:000 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[14/04/15 05:34:02:002 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[14/04/15 05:34:02:002 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 05:34:08:008 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 05:34:08:008 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:34:08:008 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 05:34:08:008 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:34:08:008 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (b356b9b2-8855-4325-abdc-0ebb4b3493a0)] -> id: headerButtonLogin]
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (b356b9b2-8855-4325-abdc-0ebb4b3493a0)] -> id: OperatorId]
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:34:09:009 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (b356b9b2-8855-4325-abdc-0ebb4b3493a0)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: By.name: Password
+[14/04/15 05:34:10:010 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: selectOperator is successful
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: selectOperator test is done
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (b356b9b2-8855-4325-abdc-0ebb4b3493a0)] -> css selector: #sign-in-buttons > button.button_submit]
+[14/04/15 05:34:11:011 CEST]  INFO log4j.Logger: submit is successful
+[14/04/15 05:34:14:014 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 05:34:14:014 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 05:34:14:014 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\ScreenShots\\
+[14/04/15 05:34:14:014 CEST]  INFO log4j.Logger: Firefox-2015-3-14-17-34-14-551.png
+[14/04/15 05:34:14:014 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[14/04/15 05:40:06:006 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 05:40:06:006 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 05:40:06:006 CEST]  INFO log4j.Logger: Firefox
+[14/04/15 05:40:13:013 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[14/04/15 05:40:15:015 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[14/04/15 05:40:15:015 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f37f104a-f181-40af-beed-c105a2d0d604)] -> id: headerButtonLogin]
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 05:40:22:022 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f37f104a-f181-40af-beed-c105a2d0d604)] -> id: OperatorId]
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f37f104a-f181-40af-beed-c105a2d0d604)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:40:23:023 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: By.name: Password
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: selectOperator is successful
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: selectOperator test is done
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:40:24:024 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:40:25:025 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f37f104a-f181-40af-beed-c105a2d0d604)] -> css selector: #sign-in-buttons > button.button_submit]
+[14/04/15 05:40:25:025 CEST]  INFO log4j.Logger: submit is successful
+[14/04/15 05:40:28:028 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 05:40:28:028 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 05:40:28:028 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
+[14/04/15 05:40:28:028 CEST]  INFO log4j.Logger: Firefox-2015-3-14-17-40-28-81.png
+[14/04/15 05:40:28:028 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[14/04/15 05:46:38:038 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 05:46:38:038 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 05:46:38:038 CEST]  INFO log4j.Logger: Firefox
+[14/04/15 05:46:46:046 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[14/04/15 05:46:48:048 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@d59970a
+[14/04/15 05:46:48:048 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (92fef8cf-4e5f-4bb2-a1e5-240b8c3c7780)] -> id: headerButtonLogin]
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 05:46:54:054 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (92fef8cf-4e5f-4bb2-a1e5-240b8c3c7780)] -> id: OperatorId]
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (92fef8cf-4e5f-4bb2-a1e5-240b8c3c7780)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:46:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: By.name: Password
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: selectOperator is successful
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: selectOperator test is done
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (92fef8cf-4e5f-4bb2-a1e5-240b8c3c7780)] -> css selector: #sign-in-buttons > button.button_submit]
+[14/04/15 05:46:56:056 CEST]  INFO log4j.Logger: submit is successful
+[14/04/15 05:46:59:059 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 05:46:59:059 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 05:47:00:000 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
+[14/04/15 05:47:00:000 CEST]  INFO log4j.Logger: Firefox-2015-3-14-17-46-59-732.png
+[14/04/15 05:47:00:000 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[14/04/15 05:51:05:005 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 05:51:05:005 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 05:51:05:005 CEST]  INFO log4j.Logger: Firefox
+[14/04/15 05:51:13:013 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[14/04/15 05:51:15:015 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@54e3658c
+[14/04/15 05:51:15:015 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 05:51:20:020 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (0c53195b-e29a-41f4-975e-f4c682c81116)] -> id: headerButtonLogin]
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 05:51:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (0c53195b-e29a-41f4-975e-f4c682c81116)] -> id: OperatorId]
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (0c53195b-e29a-41f4-975e-f4c682c81116)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:51:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: By.name: Password
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: selectOperator is successful
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: selectOperator test is done
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (0c53195b-e29a-41f4-975e-f4c682c81116)] -> css selector: #sign-in-buttons > button.button_submit]
+[14/04/15 05:51:23:023 CEST]  INFO log4j.Logger: submit is successful
+[14/04/15 05:51:26:026 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 05:51:26:026 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 05:51:27:027 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
+[14/04/15 05:51:55:055 CEST]  INFO log4j.Logger: Firefox-2015-3-14-17-51-26-928.png
+[14/04/15 05:52:39:039 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[14/04/15 06:11:24:024 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:11:24:024 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:11:24:024 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:11:24:024 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:17:36:036 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:17:36:036 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:17:36:036 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:17:36:036 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.61 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: Safari is reconnecting!
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:18:39:039 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:19:41:041 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:19:41:041 CEST]  INFO log4j.Logger: Test Status:Failed
+[14/04/15 06:19:41:041 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[14/04/15 06:20:39:039 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:20:39:039 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:20:39:039 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:20:39:039 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:20:42:042 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:20:50:050 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:20:50:050 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:25:23:023 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:25:23:023 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:25:23:023 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:25:23:023 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:25:23:023 CEST]  INFO log4j.Logger: org.openqa.selenium.chrome.ChromeOptions@20fe17c8
+[14/04/15 06:25:31:031 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:25:38:038 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:25:38:038 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:42:05:005 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:42:05:005 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:42:05:005 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:42:05:005 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:42:08:008 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:42:15:015 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:42:15:015 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:42:21:021 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 06:42:22:022 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 06:42:22:022 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 06:42:23:023 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 06:42:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on WIN8_1 (76023964f41e6e0e54af9bffc300e969)] -> id: headerButtonLogin]
+[14/04/15 06:47:36:036 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:47:36:036 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:47:36:036 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:47:36:036 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:47:39:039 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:47:45:045 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:47:45:045 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:50:37:037 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:50:37:037 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:50:37:037 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:50:37:037 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:50:40:040 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:50:44:044 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:50:44:044 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:52:48:048 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:52:48:048 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:52:48:048 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:52:48:048 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:52:51:051 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:52:55:055 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:52:55:055 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 06:53:01:001 CEST]  INFO log4j.Logger: http://player.mediaux.biz/group/offers
+[14/04/15 06:53:02:002 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 06:53:02:002 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[14/04/15 06:53:03:003 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[14/04/15 06:53:04:004 CEST]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on WIN8_1 (072e78233dde93f2ee180fa104327f01)] -> id: headerButtonLogin]
+[14/04/15 06:53:05:005 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 06:53:05:005 CEST]  INFO log4j.Logger: By.id: OperatorId
+[14/04/15 06:53:06:006 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[14/04/15 06:53:06:006 CEST]  INFO log4j.Logger: Element clicked on:[[ChromeDriver: chrome on WIN8_1 (072e78233dde93f2ee180fa104327f01)] -> id: OperatorId]
+[14/04/15 06:56:03:003 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 06:56:03:003 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 06:56:03:003 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 06:56:03:003 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 06:56:06:006 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 06:56:10:010 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 06:56:10:010 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 07:00:31:031 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 07:00:31:031 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 07:00:31:031 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 07:00:31:031 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 07:00:34:034 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 07:00:40:040 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 07:00:40:040 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[14/04/15 07:05:14:014 CEST]  INFO log4j.Logger: New driver instantiated
+[14/04/15 07:05:14:014 CEST]  INFO log4j.Logger: WIN8_1
+[14/04/15 07:05:14:014 CEST]  INFO log4j.Logger: CHROME
+[14/04/15 07:05:14:014 CEST]  INFO log4j.Logger: Capabilities [{browserName=chrome, version=, platform=ANY}]
+[14/04/15 07:05:17:017 CEST]  INFO log4j.Logger: CHROMEdriver initialized with eventListeners
+[14/04/15 07:05:24:024 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4Connection@63a5e46c
+[14/04/15 07:05:24:024 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now

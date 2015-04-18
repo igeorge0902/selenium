@@ -5,7 +5,7 @@ public enum BaseUrls implements WebElements {
 	  GOOGLE("https://www.google.hu/"),
 	  YAHOO("https://www.yahoo.com/"),
 	  HBO("http://www.hbogo.hu/"),
-	  PLAYER("http://player.mediaux.biz");
+	  PLAYER("http://huvip.hbogo.eu");
 
 	  public String myUrls;
 
@@ -20,6 +20,6 @@ public enum BaseUrls implements WebElements {
 	  	public String toString(){
 	  		if (this.equals(PLAYER)) {	  			
 	  		}
-	  		return player_mediaux_biz;  			  	
+	  		return huvip;  			  	
 	  	}
 }

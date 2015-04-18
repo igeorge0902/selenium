@@ -12,13 +12,163 @@
 <body>
 <h1>Test on Chrome</h1>
 <p>
-  Test duration: 0,000s
+  Test duration: 173,227s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestPlayer</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testPlaySingleContent
+      </td>
+  <td class="duration">
+    36,038s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Found element:By.xpath: .//*[@id='content-inner']/div[1]/div[1]/div[2]
+                                Found element:By.xpath: .//*[@id='content-inner']/div[1]/div[1]/div[2]
+                                Found element:By.id: play_dropdown
+                                Found element:By.partialLinkText: Epizód megtekintése
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> partial link text: Epizód megtekintése]
+                                Found element:By.id: playbackElapsedTime
+                                Script run: return jQuery(arguments[0]).text();
+                                Found element:By.id: playbackElapsedTime
+                                Script run: return jQuery(arguments[0]).text();
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Completed executing following method : TestPlayer.testPlaySingleContent
+                                Fuck<br>
+                                Test Method resides in test.java.TestPlayer
+                                Test Status: Failed
+                                <a href="CHROME-2015-3-15-18-14-10-768.png"><p align="left">Error screenshot at Wed Apr 15 18:14:10 CEST 2015</p>
+                                <p><img width="50%" src="C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\CHROME-2015-3-15-18-14-10-768.png" alt="screenshot at Wed Apr 15 18:14:10 CEST 2015"/></p></a><br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Playback stopped after 10 seconds! expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              main.TestBase.assertTrue(TestBase.java:161)<br />
+              main.TestBase.isPlayBackRunning(TestBase.java:793)<br />
+              pageObjects.MouseHover.mouseHover(MouseHover.java:56)<br />
+              pageObjects.PlaySingleMainContent.playMainContent(PlaySingleMainContent.java:62)<br />
+              test.java.TestPlayer.testPlaySingleContent(TestPlayer.java:54)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">test.java.TestPlayer</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="HBO login">testSignInSuccess</span>
+      </td>
+  <td class="duration">
+    126,426s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"</span><br />
+    
+            <div class="testOutput">
+                        Found element:By.id: headerButtonLogin
+                                Found element:By.id: headerButtonLogin
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: headerButtonLogin]
+                                Found element:By.id: OperatorId
+                                Found element:By.id: OperatorId
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: OperatorId]
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+                                Found element:By.name: EmailAddress
+                                Found element:By.name: EmailAddress
+                                Found element:By.name: EmailAddress
+                                Found element:By.name: Password
+                                Found element:By.name: Password
+                                Found element:By.name: Password
+                                <p>selectOperator test is done<br></p>
+                                Found element:By.cssSelector: #sign-in-buttons > button.button_submit
+                                Found element:By.cssSelector: #sign-in-buttons > button.button_submit
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> css selector: #sign-in-buttons > button.button_submit]
+                                <p>submit test is done<br></p>
+                                Found element:By.id: headerButtonMenu
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: headerButtonMenu]
+                                Found element:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+                                Found element:By.id: menuTabs_settings
+                                Clicked on:[[ChromeDriver: chrome on WIN8_1 (4780f3ce964ae337414f8257e90f8d51)] -> id: menuTabs_settings]
+                                Found element:By.id: menucat_settings_customerMenu
+                                Found element:By.id: menucat_settings_customerMenu
+                                Found element:By.id: menucat_settings_customerMenu
+                                Found element:By.tagName: a
+                                <p>language check test is done<br></p>
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Completed executing following method : TestPlayer.testSignInSuccess
+                                Minden fasza
+                                Test Method resides in test.java.TestPlayer
+                                Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,
+                                Test Status: Pass
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

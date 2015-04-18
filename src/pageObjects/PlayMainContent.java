@@ -3,7 +3,9 @@ package pageObjects;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Enumeration;
 import java.util.List;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,6 +26,7 @@ import org.testng.annotations.Listeners;
 import testng.CustomException;
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.PropertyUtils;
 import utils.WaitTool;
 import main.CaptureScreenshotOnFailureListener;
 
@@ -42,11 +45,31 @@ public class PlayMainContent extends TestBase implements WebElements{
 	
 	public PlayMainContent playMainContent(String urls) throws Exception, CustomException {
 
-		Actions action = new Actions(driver);
-					
-			driver.get(urls);
-	    	
-			
+		Actions action = new Actions(driver);		
+		
+		//TODO: load one content url from property file
+		
+		/*
+    	if (PropertyUtils.setContents()) {
+    		String content = PropertyUtils.getProperty("content");
+    		String url = content;
+    		
+    		//TODO: match the url with the base url
+
+    		driver.get(url);
+
+    	} 
+    	
+    	else if (!PropertyUtils.setContents()) {
+    		
+    		driver.get(urls);
+    		
+        	}			
+	    */
+	    
+		driver.get(urls);
+
+    	
 			//start playback
 			MouseHover MouseHover = new MouseHover(driver);			
 			MouseHover.mouseHover();

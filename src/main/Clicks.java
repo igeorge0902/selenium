@@ -21,15 +21,15 @@ public class Clicks extends TestBase implements WebElements {
     	
         switch (click) {
             case CLICKEPISODE:
-            	driver.findElement(By.linkText(playEpisode)).click();
+            	driver.findElement(By.partialLinkText(playEpisode)).click();
                 break;
                     
             case CLICKCONTENT:
-            	driver.findElement(By.linkText(playContent)).click();
+            	driver.findElement(By.partialLinkText(playContent)).click();
                 break;
                          
             case CLICKFREE:
-            	driver.findElement(By.linkText(playTrailer)).click();
+            	driver.findElement(By.partialLinkText(playTrailer)).click();
                 break;
                         
             case CLICKFREEINTERACTIVE:

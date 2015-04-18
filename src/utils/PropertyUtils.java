@@ -8,6 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Enumeration;
 import java.util.Properties;
 
 import main.TestBase;
@@ -43,10 +44,12 @@ public class PropertyUtils extends TestBase {
 	        	is = new FileInputStream(new File(propertyFileName));
 	            DataInputStream in = new DataInputStream(is);
 	            BufferedReader br = new BufferedReader(new InputStreamReader(in));
-	        	p.load(br);
 	        	
+	            p.load(br);
+	            System.out.println(propertyFileName + " is loaded.");
+	        	Log.info(propertyFileName + " is loaded.");
 	        	in.close();	    
-	 
+	        	br.close();
     }
 
     public static String getProperty(String propertyKey)
@@ -68,4 +71,15 @@ public class PropertyUtils extends TestBase {
     {
         p.setProperty(propertyKey, value);
     }
+    
+	public static void listProperties() throws FileNotFoundException, IOException {
+        
+		for (Enumeration<?> e = p.propertyNames(); e.hasMoreElements();)
+			
+			while (e.hasMoreElements()) {		
+			String propertyKey = (String)e.nextElement();						
+		    System.out.println(propertyKey + " -- " + p.getProperty(propertyKey)); 
+	        
+			}						
+		}
 }

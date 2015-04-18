@@ -42,7 +42,6 @@ public class TestMouseHover extends TestBase{
     public void testMouseHover() throws Exception{
 		MouseHover MouseHover = new MouseHover(driver);
 		
-	    //playTrailer
 		MouseHover.mouseHover();
 
 		

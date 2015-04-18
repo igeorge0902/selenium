@@ -20,6 +20,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import utils.PropertyUtils;
 import utils.WaitTool;
 
 import com.opera.core.systems.OperaDriver;
@@ -39,7 +40,7 @@ import org.openqa.selenium.Platform;
  *
  */
 
-public class WebDriverManager
+public class WebDriverManager implements WebElements
 {
     public static WebDriver driver = null;
     private static String browser = null;
@@ -184,14 +185,28 @@ public class WebDriverManager
              * http://code.google.com/p/selenium/wiki/ChromeDriver
              */
             ChromeOptions options = new ChromeOptions();
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.isJavascriptEnabled();
+
             options.addArguments(Arrays.asList(new String[]{"--ignore-certificate-errors", "--start-maximized"}));
             
+        	String chromeProfile = "";
+        	if (!TestBase.isSupportedPlatformMac(true)) {
+        		PropertyUtils.loadPropertyFile(proprtyFile);
+        		String chromeProfileWin = PropertyUtils.getProperty("chromeProfileWin");
+        		chromeProfile = chromeProfileWin;
+        		} 
+        	
+        	else if (TestBase.isSupportedPlatformMac(true)) {
+        		PropertyUtils.loadPropertyFile(proprtyFile);
+        		String chromeProfileMac = PropertyUtils.getProperty("chromeProfileMac");
+        		chromeProfile = chromeProfileMac;
+            	} 
+
+
+            options.addArguments("user-data-dir="+ chromeProfile);                                
             
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             Log.info(DesiredCapabilities.chrome());
-            capabilities.isJavascriptEnabled();
-            
-        
             Object object = new Object [] {options, capabilities};
             
             driver = new ChromeDriver(options);

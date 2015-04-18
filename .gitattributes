@@ -4,6 +4,9 @@
 .settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 .settings/org.eclipse.jdt.core.prefs -text
 .settings/org.eclipse.m2e.core.prefs -text
+ScreenShots/Firefox-2015-3-14-17-28-37-521.png -text svneol=unset#image/png
+ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
+/employee.txt -text
 /eurotext.bmp -text
 /eurotext.pdf -text
 /eurotext.png -text
@@ -33,10 +36,17 @@ lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
 /logfile.log -text
+/logfile.log.2015-03-25 -text
+/logfile.log.2015-03-30 -text
 /logfile.log.2015-03-31 -text
 /logfile.log.2015-04-01 -text
+/logfile.log.2015-04-02 -text
+/logfile.log.2015-04-08 -text
+/logfile.log.2015-04-09 -text
+/logfile.log.2015-04-14 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
+sql/htmlReports.sql -text
 sql/suite_methodSummaryReport.sql -text
 src/main/AbstractWebDriverEventListener.java -text
 src/main/BaseUrls.java -text
@@ -54,15 +64,25 @@ src/pageObjects/HboSignUp.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
 src/pageObjects/MouseHover.java -text
 src/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
+src/pageObjects/PlaySingleMainContent.java -text
 src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
 src/pageObjects/SelectMovieGroups.java -text
 src/pageObjects/Yahoo.java -text
+src/temp/DeserializationClass.java -text
+src/temp/LinkGetter.java -text
+src/temp/Names.java -text
+src/temp/RegexTestPatternMatcher.java -text
+src/temp/SQLTest.java -text
+src/temp/SerializaitonClass.java -text
+src/temp/StringMatcher.java -text
+src/temp/TesseractExample.java -text
 src/test/java/TesseractTest.java -text svneol=unset#text/plain
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
 src/test/java/TestMouseHover.java -text
 src/test/java/TestPlayer.java -text svneol=unset#text/plain
 src/test/java/TestSearchEngines.java -text
+src/test/java/TestSingleContent.java -text
 src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
@@ -109,6 +129,24 @@ test-output/bullet_point.png -text
 test-output/collapseall.gif -text
 test-output/emailable-report.html -text svneol=unset#text/plain
 test-output/failed.png -text
+test-output/html/ScreenShots/CHROME-2015-3-15-11-31-5-2.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-11-14-242.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-13-55-29.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-17-57-325.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-18-33-498.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-19-45-171.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-12-19-9-1.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-14-47-3-829.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-14-49-49-197.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-14-51-48-179.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-16-16-24-771.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-16-25-43-452.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-16-32-49-441.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-16-58-28-661.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME-2015-3-15-18-14-10-768.png -text svneol=unset#image/png
+test-output/html/ScreenShots/Firefox-2015-3-14-17-40-28-81.png -text svneol=unset#image/png
+test-output/html/ScreenShots/Firefox-2015-3-14-17-46-59-732.png -text svneol=unset#image/png
+test-output/html/ScreenShots/Firefox-2015-3-14-17-51-26-928.png -text svneol=unset#image/png
 test-output/html/index.html -text
 test-output/html/output.html -text
 test-output/html/overview.html -text
