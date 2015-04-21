@@ -116,15 +116,10 @@ public class TestBase extends Verify implements WebElements {
 		// existing, after the existing has been backed up
 	}
 
-	/*
-	 * softAssert methods
-	 */
 
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
 
-	// private static Map<String, List<WebElement>> contentsMap = new
-	// HashMap<String, List<WebElement>>();
 
 	public static void currentPlatform() {
 		Platform.getCurrent();
@@ -158,6 +153,10 @@ public class TestBase extends Verify implements WebElements {
 		return alertText;
 	}
 
+	/*
+	 * softAssert methods
+	 */
+	
 	public static void assertTrue(boolean condition) {
 		Assert.assertTrue(condition);
 	}
@@ -790,9 +789,9 @@ public class TestBase extends Verify implements WebElements {
 	}
 	
 	/**
+	 * Clicks on a menu element.
 	 * 
-	 * Click on an element defined by @Param.
-	 * 
+	 * @param menu
 	 * @param href
 	 */
 	
@@ -1009,14 +1008,14 @@ public class TestBase extends Verify implements WebElements {
 	 * 
 	 */
 
-	public static Iterator<String> contents_() {
+	public static Iterator<String> contents_(String view) {
 
 		List<String> dataToBeReturned = new ArrayList<String>();
 		List<String> links = new ArrayList<String>();
 		StringBuilder builder = new StringBuilder();
 
 		List<WebElement> findElements;
-		findElements = driver.findElement(By.id("normalView")).findElements(
+		findElements = driver.findElement(By.id(view)).findElements(
 				By.tagName("a"));
 
 		for (WebElement webElement : findElements)
@@ -1090,14 +1089,14 @@ public class TestBase extends Verify implements WebElements {
 
 	}
 
-	public static List<String> contentsList() {
+	public static List<String> contentsList(String view) {
 
 		List<String> dataToBeReturned = new ArrayList<String>();
 		List<String> links = new ArrayList<String>();
 		StringBuilder builder = new StringBuilder();
 
 		List<WebElement> findElements;
-		findElements = driver.findElement(By.id("normalView")).findElements(By.tagName("a"));
+		findElements = driver.findElement(By.id(view)).findElements(By.tagName("a"));
 
 		for (WebElement webElement : findElements)
 

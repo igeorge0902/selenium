@@ -9,6 +9,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -16,37 +18,73 @@ import java.util.List;
 import java.util.Set;
 
 import main.TestBase;
+import main.WebElements;
 
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
  
-public class SampleDataProvider {
+public class SampleDataProvider implements WebElements{
 	
 	
     @DataProvider
     public static Iterator<Object[]> fileDataProvider (ITestContext context) {
     	
+    
     	String inputFile = "";
     	if (!TestBase.isSupportedPlatformMac(true)) {
     		//Get the input file path from the ITestContext
+    		Path input = Paths.get(urlsFile);
+
+    		if (input.toFile().exists()) {
+    		
     		inputFile = context.getCurrentXmlTest().getParameter("filenamePathWin");
     		} 
+    	}
+    		
+    	else if (TestBase.isSupportedPlatformMac(true)) {
+            //Get the input file path from the ITestContext
+    		Path input = Paths.get(urlsFile);
+
+    		if (input.toFile().exists()) {
+    		
+            inputFile = context.getCurrentXmlTest().getParameter("filenamePathMac");
+        	} 
+    	}
+    		
+    	String inputFile_series = "";
+    	if (!TestBase.isSupportedPlatformMac(true)) {
+    		//Get the input file path from the ITestContext
+    		Path input = Paths.get(episodeUrlsFile);
+
+    		if (input.toFile().exists()) {
+    		inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathWin");
+    		} 
+    	}
     	
     	else if (TestBase.isSupportedPlatformMac(true)) {
             //Get the input file path from the ITestContext
-            inputFile = context.getCurrentXmlTest().getParameter("filenamePathMac");
-        	} 
-        	
-        	//String inputFile = input_File;
+    		Path input = Paths.get(episodeUrlsFile);
+
+    		if (input.toFile().exists()) {
+            inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathMac");
+        	}
+    	}
         
         //Get a list of String file content (line items) from the test file.
         List<String> testData = getFileContentList(inputFile);
+        List<String> testData_series = getFileContentList(inputFile_series);
+
  
         //We will be returning an iterator of Object arrays so create that first.
         List<Object[]> dataToBeReturned = new ArrayList<Object[]>();
  
         //Populate our List of Object arrays with the file content.
         for (String userData : testData)
+        {
+            dataToBeReturned.add(new Object[] { userData } );
+        }
+        
+        for (String userData : testData_series)
         {
             dataToBeReturned.add(new Object[] { userData } );
         }

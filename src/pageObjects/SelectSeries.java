@@ -25,10 +25,10 @@ import org.testng.annotations.Listeners;
 
 import testng.TestListeners;
 import testng.TestMethodListener;
+import utils.PropertyUtils;
 import utils.SampleDataProvider;
 import utils.WaitTool;
 import utils.deleteLines;
-
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -38,14 +38,14 @@ import java.util.regex.Pattern;
 @SuppressWarnings("unused")
 @Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class})
 
-public class SelectMovieGroups extends TestBase implements WebElements{
+public class SelectSeries extends TestBase implements WebElements{
 	
 	
-	public SelectMovieGroups(WebDriver driver){
+	public SelectSeries(WebDriver driver){
 		super(driver); 
 	}
 	
-	public SelectMovieGroups actionGroups() throws Exception {
+	public SelectSeries selectSeries() throws Exception {
 
 		Actions actions = new Actions(driver);
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
@@ -55,26 +55,9 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 			WaitTool.waitForElement(driver, By.id(HeaderButton), 10);
 			driver.findElement(By.id(HeaderButton)).click();
 
-			TestBase.isElementPresent(By.id(Movies));
+			//TestBase.isElementPresent(By.id(Series));
 			
-			//get the category
-			WebElement category;
-			category = driver.findElement(By.linkText(actionCategory));
-			
-			//**scroll into view of the element (one of them should work)
-			js.executeScript("arguments[0].scrollIntoView(true);", category);
-			Thread.sleep(500);
-						
-	        js.executeScript("javascript:window.scrollBy(250,350)");
-			
-	        WebElement element = driver.findElement(By.id(Movies));
-	        actions.moveToElement(element);
-	        actions.perform();
-
-			//**
-	        
-	        //click on the category link found by linkText
-			driver.findElement(By.linkText(actionCategory)).click();
+			TestBase.clickLinkByHref(Series);
 	        
 			//wait for page to load
 	        WaitTool.waitForElement(driver, By.id("normalView"), 10);	        
@@ -83,20 +66,32 @@ public class SelectMovieGroups extends TestBase implements WebElements{
 	        
 	        //get url list as Iterator<String> list from TestBase.contents_() method
 	        //Iterator<String> list = TestBase.contents_(NormalView);	        
-        	
         	List<String> urslList = TestBase.contentsList(NormalView);
+        	
+        	TestBase.deleteFile(seriesUrlsFile);
+        	TestBase.createFile(seriesUrlsFile);
+        	TestBase.writeFile(seriesUrlsFile, urslList);
+        	
+        	PropertyUtils.loadPropertyFile(proprtyFile);
+        	String series = PropertyUtils.getProperty("series");
+        	driver.get(BaseUrls.PLAYER.get() + series);
+        	
+	        WaitTool.waitForElement(driver, By.id(EpisodeList), 10);
+	        
+	        //get url list as Iterator<String> list from TestBase.contents_() method
+	        Iterator<String> list_ = TestBase.contents_(EpisodeList);	                	
+        	List<String> urslList_ = TestBase.contentsList(EpisodeList);
+        	
+        	TestBase.deleteFile(episodeUrlsFile);
+        	TestBase.createFile(episodeUrlsFile);
+        	TestBase.writeFile(episodeUrlsFile, urslList_);
         	TestBase.deleteFile(urlsFile);
-        	TestBase.createFile(urlsFile);
-        	TestBase.writeFile(urlsFile, urslList);
-        	
 
-    			/*
-    		  //callind deleteLines java app to delete lines from urls.txt
-    	      String[] arguments = new String[] {"123"};
-    	      deleteLines.main(arguments);
-    			 */
+	        
         	
-	return new SelectMovieGroups(driver); 
+        	
+        	
+	return new SelectSeries(driver); 
 	}	
 
 }

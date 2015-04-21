@@ -18,6 +18,7 @@ lib/IEDriverServer32.exe -text svneol=unset#application/x-dosexec
 lib/chromedriver -text
 lib/chromedriver.exe -text svneol=unset#application/x-dosexec
 lib/commons-io-2.4.jar -text
+lib/episode_urls.txt -text
 lib/ghost4j-0.5.1.jar -text
 lib/jai_imageio.jar -text
 lib/jna-4.1.0.jar -text
@@ -26,6 +27,7 @@ lib/log4j-1.2.17.jar -text
 lib/mysql-connector-java-5.1.35-bin.jar -text
 lib/output.txt -text
 lib/pdfpagecount.ps -text
+lib/series_urls.txt -text
 lib/tess4j.jar -text
 lib/urls.txt -text
 lib/win32-x86-64/gsdll64.dll -text
@@ -44,6 +46,7 @@ lib/win32-x86/libtesseract302.dll -text
 /logfile.log.2015-04-08 -text
 /logfile.log.2015-04-09 -text
 /logfile.log.2015-04-14 -text
+/logfile.log.2015-04-20 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 sql/create_db.sql -text
@@ -66,6 +69,7 @@ src/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
 src/pageObjects/PlaySingleMainContent.java -text
 src/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
 src/pageObjects/SelectMovieGroups.java -text
+src/pageObjects/SelectSeries.java -text
 src/pageObjects/Yahoo.java -text
 src/temp/DeserializationClass.java -text
 src/temp/LinkGetter.java -text
@@ -80,6 +84,7 @@ src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
 src/test/java/TestMouseHover.java -text
 src/test/java/TestPlayer.java -text svneol=unset#text/plain
+src/test/java/TestPlayerSeries.java -text
 src/test/java/TestSearchEngines.java -text
 src/test/java/TestSingleContent.java -text
 src/test/java/TestStringMatcher.java -text
@@ -145,6 +150,8 @@ test-output/html/ScreenShots/CHROME-2015-3-15-18-14-10-768.png -text svneol=unse
 test-output/html/ScreenShots/Firefox-2015-3-14-17-40-28-81.png -text svneol=unset#image/png
 test-output/html/ScreenShots/Firefox-2015-3-14-17-46-59-732.png -text svneol=unset#image/png
 test-output/html/ScreenShots/Firefox-2015-3-14-17-51-26-928.png -text svneol=unset#image/png
+test-output/html/ScreenShots/INTERNET_EXPLORER-2015-3-21-19-42-26-240.png -text svneol=unset#image/png
+test-output/html/ScreenShots/INTERNET_EXPLORER-2015-3-21-19-51-44-334.png -text svneol=unset#image/png
 test-output/html/index.html -text
 test-output/html/output.html -text
 test-output/html/overview.html -text
@@ -186,6 +193,7 @@ test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/pla
 test-output/xml/test.java.TestHboSignIn_results.xml -text
 test-output/xml/test.java.TestHboSignUp_results.xml -text
 test-output/xml/test.java.TestMouseHover_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestPlayerSeries_results.xml -text svneol=unset#application/xml
 test-output/xml/test.java.TestPlayer_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestSearchEngines_results.xml -text
 test-output/xml/test.java.TestTest2_results.xml -text

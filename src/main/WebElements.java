@@ -34,21 +34,35 @@ public interface WebElements {
 	public static String[] actionGroup = new String[] { "GoogleHelper.track('CLICKSTAT','MENU_CATEGORIES','Akció, Kaland');" };
 	public static String actionCategory = "Akció, Kaland";
 
+	//operators
+	public static String HBO_GO_Vip_Club_Hungary = "OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26";
+
+	
 	// WebPage String elements
 	public static String SignInRegister_button = "headerButtonLogin";
 	public static String HeaderButton = "headerButtonMenu";
 	public static String Register_button = "div.settings_description_white > #headerButtonLogin";
 	public static String Operator_button = "OperatorId";
-	public static String HBO_GO_Vip_Club_Hungary = "OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26";
 	public static String Voucher_code = "SpecificData";
 	public static String Next_Step = "button.button_submit.next";
 	public static String EmailAddress = "EmailAddress";
 	public static String Terms_of_use = "Terms_theme";
-	public static String Movies = "categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1";
-	public static String OffersScreen = "/group/offers";
+	
+	//views
+	public static String NormalView = "normalView";
+	public static String EpisodeList = "episode_list";
 	public static String Settings = "menuTabs_settings";
-	public static String CustomerMenu = "menucat_settings_customerMenu";
+	public static String MainMenu = "menuGroup_categories";
+
+	
+	//menu points
 	public static String language = "pages/settings/changelanguage.aspx";
+	public static String Series = "group/series";
+	public static String Movies = "categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1";
+	public static String CustomerMenu = "menucat_settings_customerMenu";
+	public static String OffersScreen = "/group/offers";
+
+	//languages
 	public static String HU = "hu-HU";
 	public static String EN = "en-EN";
 
@@ -97,6 +111,8 @@ public interface WebElements {
 	public Path textFile = Paths.get("lib/urls.txt");
 	public Path textFile2 = Paths.get("lib/output.txt");
 	public String urlsFile = "lib/urls.txt";
+	public String seriesUrlsFile = "lib/series_urls.txt";
+	public String episodeUrlsFile = "lib/episode_urls.txt";
 	public String outputFile = "lib/output.txt";
 	public String proprtyFile = "properties.properties";
 	public String create_db_sql = "sql/create_db.sql";

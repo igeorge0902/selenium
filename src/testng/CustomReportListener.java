@@ -88,7 +88,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 								+ tc.getSkippedTests().getAllResults().size());
 
 				try {
-					TestBase.dao.generateMethodSummaryReport(suiteName, testName);
+					//TestBase.dao.generateMethodSummaryReport(suiteName, testName);
 
 				} catch (Exception e) {
 					e.printStackTrace();

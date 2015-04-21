@@ -77,7 +77,8 @@ public class SQLAccess extends TestBase implements WebElements {
 		}
 
 	}
-
+	//TODO: insert scripts should run in the order to match foreign key insert (first the script that holds the foreign key reference) -- @AfterClass in TestBase
+	// it also should be run with runSqlScript method
 	@SuppressWarnings("deprecation")
 	public void generateMethodSummaryReport(String suite, String testname)
 			throws Exception {
@@ -98,7 +99,7 @@ public class SQLAccess extends TestBase implements WebElements {
 
 			// PreparedStatements can use variables and are more efficient
 			preparedStatement = connect
-					.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?, ?)");
+					.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?, (SELECT testrun_id FROM feedback.HTML_reports WHERE type='testrun_id'))"); //??
 
 			preparedStatement.setString(1, suite);
 			preparedStatement.setString(2, testname);
@@ -106,6 +107,8 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.setString(4, testname);
 			preparedStatement.setDate(5, new java.sql.Date(2009, 12, 11));
 			preparedStatement.setString(6, testname);
+			
+			//TODO: foreign key insert comes here
 			preparedStatement.setInt(7, 1);
 
 

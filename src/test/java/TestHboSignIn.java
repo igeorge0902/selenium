@@ -7,8 +7,6 @@ import org.testng.Reporter;
 import org.testng.annotations.*;
 
 import pageObjects.HboSignIn;
-import pageObjects.PlayTrailer;
-import pageObjects.SelectMovieGroups;
 import testng.LoggingListener;
 import testng.TestListeners;
 import testng.TestMethodListener;
@@ -43,26 +41,5 @@ public class TestHboSignIn extends TestBase{
 	    Reporter.log("<p>newDevice test is done<br></p>");
   
   }
-  	
-    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider")
-    public void testListActionGroupContents() throws Exception{
-    	SelectMovieGroups ActionGroup = new SelectMovieGroups(driver);
-    	
-    	ActionGroup.actionGroups();
-	    Log.info("testListActionGroupContents test is done"); 
-	    Reporter.log("<p>testListActionGroupContents test is done<br></p>");
-    	
-    }
-  
-    @Test (dependsOnMethods = { "testSignInSuccess" }, groups = { "functional_test2" }, description= "Play trailer after login")
-    public void testPlayerSuccess() throws Exception{
-		PlayTrailer PlayTrailer = new PlayTrailer(driver);
-		
-	    //playTrailer
-	    PlayTrailer.playTrailer();
-	    Log.info("playTrailer test is done"); 
-	    Reporter.log("<p>playTrailer test is done<br></p>");
-		
-	}
 
 }
