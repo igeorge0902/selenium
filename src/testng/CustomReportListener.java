@@ -48,6 +48,8 @@ public class CustomReportListener extends TestListenerAdapter implements
 	private Integer m_testIndex;
 	private int m_methodIndex;
 	private Scanner scanner;
+	public static String suiteName;
+	public static String testName;
 
 	/**
 	 * This method is the entry point of this class. TestNG calls this listener
@@ -60,12 +62,12 @@ public class CustomReportListener extends TestListenerAdapter implements
 	@Override
 	public void generateReport(List<XmlSuite> xml, List<ISuite> suites,
 			String outdir) {
-
+		
 		// Iterating over each suite included in the test
 		for (ISuite suite : suites) {
 
 			// Following code gets the suite name
-			String suiteName = suite.getName();
+			suiteName = suite.getName();
 
 			// Getting the results for the said suite
 			Map<String, ISuiteResult> suiteResults = suite.getResults();
@@ -73,7 +75,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 			for (ISuiteResult sr : suiteResults.values()) {
 
 				ITestContext tc = sr.getTestContext();
-				String testName = tc.getName();
+				testName = tc.getName();
 				Date EndDate = tc.getEndDate();
 				Date StartDate = tc.getStartDate();
 				XmlTest xmlTest = tc.getCurrentXmlTest();
@@ -88,7 +90,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 								+ tc.getSkippedTests().getAllResults().size());
 
 				try {
-					//TestBase.dao.generateMethodSummaryReport(suiteName, testName);
+					TestBase.dao.generateMethodSummaryReport(suiteName, testName);
 
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -143,12 +145,16 @@ public class CustomReportListener extends TestListenerAdapter implements
 			if (suites.size() > 1) {
 				titleRow(suite.getName(), 5);
 			}
+			
+			String suiteName = suite.getName();
+
 			Map<String, ISuiteResult> r = suite.getResults();
 
 			for (ISuiteResult r2 : r.values()) {
 
 				ITestContext testContext = r2.getTestContext();
 				String testName = testContext.getName();
+				String testResults = r.values().toString();
 
 				m_testIndex = testIndex;
 				resultSummary(suite, testContext.getFailedConfigurations(),
@@ -162,7 +168,9 @@ public class CustomReportListener extends TestListenerAdapter implements
 				resultSummary(suite, testContext.getPassedTests(), testName,
 						"passed", "");
 				testIndex++;
-			}
+				
+			}			
+			
 		}
 		m_out.println("</table>");
 	}

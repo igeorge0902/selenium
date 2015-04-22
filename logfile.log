@@ -1,775 +1,148 @@
-[21/04/15 07:41:56:056 CEST]  INFO log4j.Logger: New driver instantiated
-[21/04/15 07:41:56:056 CEST]  INFO log4j.Logger: WIN8_1
-[21/04/15 07:41:56:056 CEST]  INFO log4j.Logger: INTERNET_EXPLORER
-[21/04/15 07:42:01:001 CEST]  INFO log4j.Logger: INTERNET_EXPLORERdriver initialized with eventListeners
-[21/04/15 07:42:01:001 CEST]  INFO log4j.Logger: 10
-[21/04/15 07:42:04:004 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:42:04:004 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:42:04:004 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
-[21/04/15 07:42:04:004 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
-[21/04/15 07:42:19:019 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (693981a3-5837-448d-a5e9-35d2c9de8f4e)] -> id: headerButtonLogin]
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:42:20:020 CEST]  INFO log4j.Logger: By.id: OperatorId
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (693981a3-5837-448d-a5e9-35d2c9de8f4e)] -> id: OperatorId]
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (693981a3-5837-448d-a5e9-35d2c9de8f4e)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: By.name: EmailAddress
-[21/04/15 07:42:21:021 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: By.name: Password
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: selectOperator is successful
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: selectOperator test is done
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:42:22:022 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:42:23:023 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (693981a3-5837-448d-a5e9-35d2c9de8f4e)] -> css selector: #sign-in-buttons > button.button_submit]
-[21/04/15 07:42:23:023 CEST]  INFO log4j.Logger: submit is successful
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: Test Status:Failed
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: INTERNET_EXPLORER-2015-3-21-19-42-26-240.png
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: Test Status:Skipped
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: testSelectSeries was skipped!
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: Test Status:Skipped
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: testPlayerSuccess was skipped!
-[21/04/15 07:42:26:026 CEST]  INFO log4j.Logger: Driver closed afterInvocation
-[21/04/15 07:46:25:025 CEST]  INFO log4j.Logger: New driver instantiated
-[21/04/15 07:46:25:025 CEST]  INFO log4j.Logger: WIN8_1
-[21/04/15 07:46:25:025 CEST]  INFO log4j.Logger: INTERNET_EXPLORER
-[21/04/15 07:46:30:030 CEST]  INFO log4j.Logger: INTERNET_EXPLORERdriver initialized with eventListeners
-[21/04/15 07:46:30:030 CEST]  INFO log4j.Logger: 10
-[21/04/15 07:46:32:032 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:46:32:032 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:46:32:032 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
-[21/04/15 07:46:32:032 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
-[21/04/15 07:46:41:041 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 07:46:41:041 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:46:41:041 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
-[21/04/15 07:46:41:041 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (0b55fe7e-2359-4e49-ae3e-6e845579e154)] -> id: headerButtonLogin]
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: By.id: OperatorId
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (0b55fe7e-2359-4e49-ae3e-6e845579e154)] -> id: OperatorId]
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:46:42:042 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (0b55fe7e-2359-4e49-ae3e-6e845579e154)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: By.name: EmailAddress
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: By.name: Password
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: selectOperator is successful
-[21/04/15 07:46:43:043 CEST]  INFO log4j.Logger: selectOperator test is done
-[21/04/15 07:46:44:044 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:46:44:044 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:46:44:044 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:46:44:044 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (0b55fe7e-2359-4e49-ae3e-6e845579e154)] -> css selector: #sign-in-buttons > button.button_submit]
-[21/04/15 07:46:44:044 CEST]  INFO log4j.Logger: submit is successful
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: submit test is done
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: testSignInSuccess test succeeded!
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: The execution of testSelectSeries starts now
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:46:47:047 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:46:48:048 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (0b55fe7e-2359-4e49-ae3e-6e845579e154)] -> id: headerButtonMenu]
-[21/04/15 07:50:51:051 CEST]  INFO log4j.Logger: New driver instantiated
-[21/04/15 07:50:51:051 CEST]  INFO log4j.Logger: WIN8_1
-[21/04/15 07:50:51:051 CEST]  INFO log4j.Logger: INTERNET_EXPLORER
-[21/04/15 07:50:56:056 CEST]  INFO log4j.Logger: INTERNET_EXPLORERdriver initialized with eventListeners
-[21/04/15 07:50:56:056 CEST]  INFO log4j.Logger: 10
-[21/04/15 07:50:58:058 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:50:58:058 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:50:58:058 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
-[21/04/15 07:50:58:058 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
-[21/04/15 07:51:03:003 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 07:51:03:003 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:51:03:003 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
-[21/04/15 07:51:03:003 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:51:04:004 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (1f2bdc64-a90c-4c38-a640-49d9a49a9f1b)] -> id: headerButtonLogin]
-[21/04/15 07:51:04:004 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:51:04:004 CEST]  INFO log4j.Logger: By.id: OperatorId
-[21/04/15 07:51:04:004 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (1f2bdc64-a90c-4c38-a640-49d9a49a9f1b)] -> id: OperatorId]
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (1f2bdc64-a90c-4c38-a640-49d9a49a9f1b)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: By.name: EmailAddress
-[21/04/15 07:51:05:005 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: By.name: Password
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: selectOperator is successful
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: selectOperator test is done
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:51:06:006 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:51:07:007 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (1f2bdc64-a90c-4c38-a640-49d9a49a9f1b)] -> css selector: #sign-in-buttons > button.button_submit]
-[21/04/15 07:51:07:007 CEST]  INFO log4j.Logger: submit is successful
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: submit test is done
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: testSignInSuccess test succeeded!
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: The execution of testSelectSeries starts now
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:51:10:010 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:51:11:011 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (1f2bdc64-a90c-4c38-a640-49d9a49a9f1b)] -> id: headerButtonMenu]
-[21/04/15 07:51:41:041 CEST]  INFO log4j.Logger: [org.openqa.selenium.NoSuchElementException: Unable to find element with id == group/series (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
-System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48231/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1f2bdc64-a90c-4c38-a640-49d9a49a9f1b
-*** Element info: {Using=id, value=group/series}]
-org.openqa.selenium.NoSuchElementException: Unable to find element with id == group/series (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
-System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48231/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1f2bdc64-a90c-4c38-a640-49d9a49a9f1b
-*** Element info: {Using=id, value=group/series}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
-	at main.TestBase.isElementPresent(TestBase.java:295)
-	at pageObjects.SelectSeries.selectSeries(SelectSeries.java:58)
-	at test.java.TestPlayerSeries.testSelectSeries(TestPlayerSeries.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-[21/04/15 07:51:41:041 CEST]  INFO log4j.Logger: Element found:By.id: menu
-[21/04/15 07:51:43:043 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: Test Status:Failed
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: testSelectSeries test failed!
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: INTERNET_EXPLORER-2015-3-21-19-51-44-334.png
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: Test Status:Skipped
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: testPlayerSuccess was skipped!
-[21/04/15 07:51:44:044 CEST]  INFO log4j.Logger: Driver closed afterInvocation
-[21/04/15 07:54:09:009 CEST]  INFO log4j.Logger: New driver instantiated
-[21/04/15 07:54:09:009 CEST]  INFO log4j.Logger: WIN8_1
-[21/04/15 07:54:09:009 CEST]  INFO log4j.Logger: INTERNET_EXPLORER
-[21/04/15 07:54:14:014 CEST]  INFO log4j.Logger: INTERNET_EXPLORERdriver initialized with eventListeners
-[21/04/15 07:54:14:014 CEST]  INFO log4j.Logger: 10
-[21/04/15 07:54:16:016 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:54:16:016 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 07:54:16:016 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
-[21/04/15 07:54:16:016 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
-[21/04/15 07:54:24:024 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 07:54:24:024 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:54:24:024 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
-[21/04/15 07:54:24:024 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> id: headerButtonLogin]
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: By.id: OperatorId
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> id: OperatorId]
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:54:25:025 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 07:54:26:026 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
-[21/04/15 07:54:26:026 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:54:26:026 CEST]  INFO log4j.Logger: By.name: EmailAddress
-[21/04/15 07:54:26:026 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:54:26:026 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: By.name: Password
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: selectOperator is successful
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: selectOperator test is done
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> css selector: #sign-in-buttons > button.button_submit]
-[21/04/15 07:54:27:027 CEST]  INFO log4j.Logger: submit is successful
-[21/04/15 07:54:30:030 CEST]  INFO log4j.Logger: submit test is done
-[21/04/15 07:54:30:030 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 07:54:30:030 CEST]  INFO log4j.Logger: testSignInSuccess test succeeded!
-[21/04/15 07:54:30:030 CEST]  INFO log4j.Logger: The execution of testSelectSeries starts now
-[21/04/15 07:54:31:031 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:54:31:031 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 07:54:32:032 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> id: headerButtonMenu]
-[21/04/15 07:54:32:032 CEST]  INFO log4j.Logger: Element found:By.id: menu
-[21/04/15 07:54:32:032 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 07:54:35:035 CEST]  INFO log4j.Logger: Element clicked on:[[[[InternetExplorerDriver: internet explorer on WINDOWS (3089f065-1fd3-4faa-84c1-1594deaedd05)] -> id: menu]] -> tag name: a]
-[21/04/15 07:54:57:057 CEST]  INFO log4j.Logger: Element found:By.id: normalView
-[21/04/15 07:54:57:057 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series
-[21/04/15 07:54:57:057 CEST]  INFO log4j.Logger: Element found:By.id: normalView
-[21/04/15 07:54:57:057 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/#
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/newseason
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/#
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/views
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/dateadded
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/az
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/rating
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/banshee-1617114248
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/banshee-1617114248
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/game-of-thrones-103631830
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/game-of-thrones-103631830
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack--8964454
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack--8964454
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--789194502
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--789194502
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/californication-525981529
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/californication-525981529
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sex-and-the-city-2031860348
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sex-and-the-city-2031860348
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/girls-1635546103
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/girls-1635546103
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-sopranos--1431015216
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-sopranos--1431015216
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/togetherness--781556746
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/togetherness--781556746
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-blood-769597189
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-blood-769597189
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/entourage-846313738
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/entourage-846313738
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/boardwalk-empire-497183408
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/boardwalk-empire-497183408
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/rome-1764837687
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/rome-1764837687
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/when-shall-we-kiss-336056909
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/when-shall-we-kiss-336056909
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-lies--1292297554
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-lies--1292297554
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/last-week-tonight-with-john-oliver-1658803716
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/last-week-tonight-with-john-oliver-1658803716
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gomorrah-2115871947
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gomorrah-2115871947
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-borgias--397856519
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-borgias--397856519
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bugged-612994101
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bugged-612994101
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/looking--19928388
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/looking--19928388
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-knick--1192372457
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-knick--1192372457
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-detective--1091067834
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-detective--1091067834
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-fall-1165525212
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-fall-1165525212
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/strike-back-1262380146
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/strike-back-1262380146
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/band-of-brothers-1090885000
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/band-of-brothers-1090885000
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pacific--380611918
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pacific--380611918
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/six-feet-under-1977857039
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/six-feet-under-1977857039
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-newsroom--280945477
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-newsroom--280945477
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-wire-1166532087
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-wire-1166532087
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/penny-dreadful-444298981
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/penny-dreadful-444298981
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/big-love-1561093227
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/big-love-1561093227
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/real-sex-71938920
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/real-sex-71938920
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/generation-kill-896269052
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/generation-kill-896269052
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-leftovers--719578211
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-leftovers--719578211
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/eastbound-&-down-785564748
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/eastbound-&-down-785564748
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/capadocia--793513298
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/capadocia--793513298
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/fugitives--614184451
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/fugitives--614184451
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--1476190500
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--1476190500
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/web-therapy--2064900892
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/web-therapy--2064900892
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cathouse--1209439075
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cathouse--1209439075
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/silicon-valley--820757005
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/silicon-valley--820757005
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/carnivale-1521903895
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/carnivale-1521903895
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/curb-your-enthusiasm-46981421
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/curb-your-enthusiasm-46981421
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gigolos-1030399332
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gigolos-1030399332
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sexo-urbano--430692503
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sexo-urbano--430692503
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/foo-fighters-sonic-highways-1380513057
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/foo-fighters-sonic-highways-1380513057
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/getting-on--415151288
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/getting-on--415151288
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/little-britain-usa--492282930
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/little-britain-usa--492282930
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/tell-me-you-love-me--400381547
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/tell-me-you-love-me--400381547
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bored-to-death-543751363
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bored-to-death-543751363
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/olive-kitteridge--1139767109
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/olive-kitteridge--1139767109
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hung--2075332796
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hung--2075332796
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/luck--515069498
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/luck--515069498
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/veep--1359854267
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/veep--1359854267
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/how-to-make-it-in-america-1493393149
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/how-to-make-it-in-america-1493393149
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/films-&-stars--678089975
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/films-&-stars--678089975
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cuckoo-445508960
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cuckoo-445508960
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/epitafios--608254495
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/epitafios--608254495
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angels-in-america--610363864
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angels-in-america--610363864
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hollywood-on-set--1360345679
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hollywood-on-set--1360345679
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-comeback--1488720217
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-comeback--1488720217
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hello-ladies--754359499
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hello-ladies--754359499
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/lucky-louie--708674264
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/lucky-louie--708674264
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-saddam--538454246
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-saddam--538454246
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-from-cincinnati-1004482919
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-from-cincinnati-1004482919
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jamie-private-school-girl--1429856097
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jamie-private-school-girl--1429856097
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-adams--1207750904
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-adams--1207750904
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/states-of-grace--1639207474
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/states-of-grace--1639207474
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake-1471442772
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake-1471442772
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/five-days-1562959216
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/five-days-1562959216
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mildred-pierce--1123758490
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mildred-pierce--1123758490
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice--956129172
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice--956129172
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/treme-1356800800
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/treme-1356800800
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/episodes-1652769003
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/episodes-1652769003
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/burning-bush-1852098135
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/burning-bush-1852098135
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/crashbox-771351686
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/crashbox-771351686
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/addiction-the-supplementary-series-1157321003
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/addiction-the-supplementary-series-1157321003
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/funny-or-die-presents--408484550
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/funny-or-die-presents--408484550
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/enlightened--910051803
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/enlightened--910051803
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice-especial--384851795
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice-especial--384851795
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/flight-of-the-conchords-1109583355
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/flight-of-the-conchords-1109583355
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angry-boys--1244742994
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angry-boys--1244742994
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sons-of-carnaval-1544754775
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sons-of-carnaval-1544754775
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jonah-from-tonga--543728051
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jonah-from-tonga--543728051
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake--1236013434
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake--1236013434
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-casual-vacancy--2038398271
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-casual-vacancy--2038398271
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bad-education-1625221630
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bad-education-1625221630
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-jinx-the-life-and-deaths-of-robert-durst-779334870
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-jinx-the-life-and-deaths-of-robert-durst-779334870
-[21/04/15 07:55:02:002 CEST]  INFO log4j.Logger: properties.properties is loaded.
-[21/04/15 07:55:07:007 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 07:55:08:008 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: selectSeries test is done
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: testSelectSeries test succeeded!
-[21/04/15 07:55:09:009 CEST]  INFO log4j.Logger: The execution of testPlayerSuccess starts now
-[21/04/15 08:00:46:046 CEST]  INFO log4j.Logger: New driver instantiated
-[21/04/15 08:00:46:046 CEST]  INFO log4j.Logger: WIN8_1
-[21/04/15 08:00:46:046 CEST]  INFO log4j.Logger: INTERNET_EXPLORER
-[21/04/15 08:00:51:051 CEST]  INFO log4j.Logger: INTERNET_EXPLORERdriver initialized with eventListeners
-[21/04/15 08:00:51:051 CEST]  INFO log4j.Logger: 10
-[21/04/15 08:00:53:053 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 08:00:53:053 CEST]  INFO log4j.Logger: MySql connection is true
-[21/04/15 08:00:53:053 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
-[21/04/15 08:00:53:053 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
-[21/04/15 08:01:02:002 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 08:01:02:002 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 08:01:02:002 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
-[21/04/15 08:01:02:002 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> id: headerButtonLogin]
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: By.id: OperatorId
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> id: OperatorId]
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 08:01:03:003 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 08:01:04:004 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
-[21/04/15 08:01:04:004 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: By.name: EmailAddress
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: By.name: Password
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 08:01:05:005 CEST]  INFO log4j.Logger: Element found:By.name: Password
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: selectOperator is successful
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: selectOperator test is done
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> css selector: #sign-in-buttons > button.button_submit]
-[21/04/15 08:01:06:006 CEST]  INFO log4j.Logger: submit is successful
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: submit test is done
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: testSignInSuccess test succeeded!
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: The execution of testSelectSeries starts now
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 08:01:09:009 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
-[21/04/15 08:01:10:010 CEST]  INFO log4j.Logger: Element clicked on:[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> id: headerButtonMenu]
-[21/04/15 08:01:10:010 CEST]  INFO log4j.Logger: Element found:By.id: menu
-[21/04/15 08:01:12:012 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 08:01:13:013 CEST]  INFO log4j.Logger: Element clicked on:[[[[InternetExplorerDriver: internet explorer on WINDOWS (4b315231-3289-42d9-b47f-1e853f44bae7)] -> id: menu]] -> tag name: a]
-[21/04/15 08:01:34:034 CEST]  INFO log4j.Logger: Element found:By.id: normalView
-[21/04/15 08:01:34:034 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series
-[21/04/15 08:01:34:034 CEST]  INFO log4j.Logger: Element found:By.id: normalView
-[21/04/15 08:01:35:035 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/#
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/newseason
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/#
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/views
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/dateadded
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/az
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/series/all/rating
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/banshee-1617114248
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/banshee-1617114248
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/game-of-thrones-103631830
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/game-of-thrones-103631830
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack--8964454
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack--8964454
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--789194502
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--789194502
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/californication-525981529
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/californication-525981529
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sex-and-the-city-2031860348
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sex-and-the-city-2031860348
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/girls-1635546103
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/girls-1635546103
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-sopranos--1431015216
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-sopranos--1431015216
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/togetherness--781556746
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/togetherness--781556746
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-blood-769597189
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-blood-769597189
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/entourage-846313738
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/entourage-846313738
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/boardwalk-empire-497183408
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/boardwalk-empire-497183408
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/rome-1764837687
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/rome-1764837687
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/when-shall-we-kiss-336056909
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/when-shall-we-kiss-336056909
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-lies--1292297554
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-lies--1292297554
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/last-week-tonight-with-john-oliver-1658803716
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/last-week-tonight-with-john-oliver-1658803716
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gomorrah-2115871947
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gomorrah-2115871947
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-borgias--397856519
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-borgias--397856519
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bugged-612994101
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bugged-612994101
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/looking--19928388
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/looking--19928388
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-knick--1192372457
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-knick--1192372457
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-detective--1091067834
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/true-detective--1091067834
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-fall-1165525212
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-fall-1165525212
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/strike-back-1262380146
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/strike-back-1262380146
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/band-of-brothers-1090885000
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/band-of-brothers-1090885000
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pacific--380611918
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pacific--380611918
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/six-feet-under-1977857039
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/six-feet-under-1977857039
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-newsroom--280945477
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-newsroom--280945477
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-wire-1166532087
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-wire-1166532087
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/penny-dreadful-444298981
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/penny-dreadful-444298981
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/big-love-1561093227
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/big-love-1561093227
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/real-sex-71938920
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/real-sex-71938920
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/generation-kill-896269052
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/generation-kill-896269052
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-leftovers--719578211
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-leftovers--719578211
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/eastbound-&-down-785564748
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/eastbound-&-down-785564748
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/capadocia--793513298
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/capadocia--793513298
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/fugitives--614184451
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/fugitives--614184451
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--1476190500
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/in-treatment--1476190500
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/web-therapy--2064900892
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/web-therapy--2064900892
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cathouse--1209439075
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cathouse--1209439075
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/silicon-valley--820757005
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/silicon-valley--820757005
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/carnivale-1521903895
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/carnivale-1521903895
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/curb-your-enthusiasm-46981421
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/curb-your-enthusiasm-46981421
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gigolos-1030399332
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/gigolos-1030399332
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sexo-urbano--430692503
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sexo-urbano--430692503
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/foo-fighters-sonic-highways-1380513057
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/foo-fighters-sonic-highways-1380513057
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/getting-on--415151288
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/getting-on--415151288
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/little-britain-usa--492282930
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/little-britain-usa--492282930
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/tell-me-you-love-me--400381547
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/tell-me-you-love-me--400381547
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bored-to-death-543751363
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bored-to-death-543751363
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/olive-kitteridge--1139767109
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/olive-kitteridge--1139767109
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hung--2075332796
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hung--2075332796
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/luck--515069498
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/luck--515069498
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/veep--1359854267
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/veep--1359854267
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/how-to-make-it-in-america-1493393149
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/how-to-make-it-in-america-1493393149
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/films-&-stars--678089975
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/films-&-stars--678089975
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cuckoo-445508960
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/cuckoo-445508960
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/epitafios--608254495
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/epitafios--608254495
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angels-in-america--610363864
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angels-in-america--610363864
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hollywood-on-set--1360345679
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hollywood-on-set--1360345679
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-comeback--1488720217
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-comeback--1488720217
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hello-ladies--754359499
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/hello-ladies--754359499
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/lucky-louie--708674264
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/lucky-louie--708674264
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-saddam--538454246
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/house-of-saddam--538454246
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-from-cincinnati-1004482919
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-from-cincinnati-1004482919
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jamie-private-school-girl--1429856097
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jamie-private-school-girl--1429856097
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-adams--1207750904
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/john-adams--1207750904
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/states-of-grace--1639207474
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/states-of-grace--1639207474
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake-1471442772
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake-1471442772
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/five-days-1562959216
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/five-days-1562959216
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mildred-pierce--1123758490
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mildred-pierce--1123758490
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice--956129172
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice--956129172
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/treme-1356800800
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/treme-1356800800
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/episodes-1652769003
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/episodes-1652769003
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/burning-bush-1852098135
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/burning-bush-1852098135
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/crashbox-771351686
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/crashbox-771351686
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/addiction-the-supplementary-series-1157321003
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/addiction-the-supplementary-series-1157321003
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/funny-or-die-presents--408484550
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/funny-or-die-presents--408484550
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/enlightened--910051803
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/enlightened--910051803
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice-especial--384851795
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/alice-especial--384851795
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/flight-of-the-conchords-1109583355
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/flight-of-the-conchords-1109583355
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angry-boys--1244742994
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/angry-boys--1244742994
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sons-of-carnaval-1544754775
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/sons-of-carnaval-1544754775
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jonah-from-tonga--543728051
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/jonah-from-tonga--543728051
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake--1236013434
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/mandrake--1236013434
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-casual-vacancy--2038398271
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-casual-vacancy--2038398271
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bad-education-1625221630
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/bad-education-1625221630
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-jinx-the-life-and-deaths-of-robert-durst-779334870
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-jinx-the-life-and-deaths-of-robert-durst-779334870
-[21/04/15 08:01:39:039 CEST]  INFO log4j.Logger: properties.properties is loaded.
-[21/04/15 08:01:41:041 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 08:01:42:042 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 08:01:42:042 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: Element found:By.id: episode_list
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: Element found:By.tagName: a
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-1--358251093
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-2--1864305869
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-3--1031709961
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-4-1370984315
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-5-1752854036
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/content/the-pack-6-403378268
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: selectSeries test is done
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: Test Status:Pass
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: testSelectSeries test succeeded!
-[21/04/15 08:01:43:043 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[22/04/15 02:19:55:055 CEST]  INFO log4j.Logger: New driver instantiated
+[22/04/15 02:19:55:055 CEST]  INFO log4j.Logger: MAC
+[22/04/15 02:19:55:055 CEST]  INFO log4j.Logger: Firefox
+[22/04/15 02:20:21:021 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[22/04/15 02:20:24:024 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:20:24:024 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:20:24:024 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:20:24:024 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[22/04/15 02:20:52:052 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
+[22/04/15 02:20:52:052 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[22/04/15 02:20:52:052 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[22/04/15 02:20:52:052 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[22/04/15 02:20:52:052 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (33c29a67-e0cf-5d40-b2c0-95eda133583a)] -> id: headerButtonLogin]
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: By.id: OperatorId
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (33c29a67-e0cf-5d40-b2c0-95eda133583a)] -> id: OperatorId]
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:20:53:053 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:20:54:054 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:20:54:054 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (33c29a67-e0cf-5d40-b2c0-95eda133583a)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[22/04/15 02:20:54:054 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:20:54:054 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[22/04/15 02:20:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:20:55:055 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:20:55:055 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:20:55:055 CEST]  INFO log4j.Logger: By.name: Password
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: selectOperator is successful
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: selectOperator test is done
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:20:56:056 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:20:57:057 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:20:57:057 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (33c29a67-e0cf-5d40-b2c0-95eda133583a)] -> css selector: #sign-in-buttons > button.button_submit]
+[22/04/15 02:20:57:057 CEST]  INFO log4j.Logger: submit is successful
+[22/04/15 02:21:02:002 CEST]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+[22/04/15 02:21:02:002 CEST]  INFO log4j.Logger: Firefox-2015-3-22-2-21-1-0.png
+[22/04/15 02:21:02:002 CEST]  INFO log4j.Logger: Test Status:Failed
+[22/04/15 02:21:02:002 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[22/04/15 02:21:02:002 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[22/04/15 02:27:49:049 CEST]  INFO log4j.Logger: New driver instantiated
+[22/04/15 02:27:49:049 CEST]  INFO log4j.Logger: MAC
+[22/04/15 02:27:49:049 CEST]  INFO log4j.Logger: Firefox
+[22/04/15 02:28:00:000 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[22/04/15 02:28:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:28:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:28:03:003 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:28:03:003 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[22/04/15 02:28:17:017 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
+[22/04/15 02:28:17:017 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[22/04/15 02:28:17:017 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[22/04/15 02:28:17:017 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[22/04/15 02:28:17:017 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (56eeb157-2b52-3d46-9e91-03dcf8a80d1d)] -> id: headerButtonLogin]
+[22/04/15 02:28:18:018 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[22/04/15 02:28:18:018 CEST]  INFO log4j.Logger: By.id: OperatorId
+[22/04/15 02:28:18:018 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[22/04/15 02:28:18:018 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (56eeb157-2b52-3d46-9e91-03dcf8a80d1d)] -> id: OperatorId]
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (56eeb157-2b52-3d46-9e91-03dcf8a80d1d)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:28:19:019 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[22/04/15 02:28:20:020 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:28:20:020 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[22/04/15 02:28:20:020 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:28:20:020 CEST]  INFO log4j.Logger: By.name: Password
+[22/04/15 02:28:21:021 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:28:21:021 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[22/04/15 02:28:21:021 CEST]  INFO log4j.Logger: selectOperator is successful
+[22/04/15 02:28:21:021 CEST]  INFO log4j.Logger: selectOperator test is done
+[22/04/15 02:28:22:022 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:28:22:022 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:28:22:022 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[22/04/15 02:28:22:022 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on MAC (56eeb157-2b52-3d46-9e91-03dcf8a80d1d)] -> css selector: #sign-in-buttons > button.button_submit]
+[22/04/15 02:28:22:022 CEST]  INFO log4j.Logger: submit is successful
+[22/04/15 02:28:26:026 CEST]  INFO log4j.Logger:  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+[22/04/15 02:28:26:026 CEST]  INFO log4j.Logger: Firefox-2015-3-22-2-28-25-659.png
+[22/04/15 02:28:26:026 CEST]  INFO log4j.Logger: Test Status:Failed
+[22/04/15 02:28:26:026 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[22/04/15 02:28:26:026 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[22/04/15 02:30:46:046 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:30:46:046 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:30:46:046 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:35:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:35:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:35:03:003 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:37:01:001 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:37:01:001 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:37:01:001 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:37:40:040 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:37:40:040 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:37:40:040 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:38:12:012 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:38:12:012 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:38:12:012 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:39:54:054 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:39:54:054 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:39:55:055 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:42:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:42:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:42:20:020 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 02:52:16:016 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:52:16:016 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 02:52:16:016 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:05:55:055 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:05:55:055 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:05:55:055 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:06:55:055 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:06:55:055 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:06:56:056 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:08:03:003 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:08:03:003 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:08:04:004 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:08:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:08:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:08:34:034 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:12:08:008 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:12:08:008 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:12:09:009 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:13:38:038 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:13:38:038 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:13:38:038 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:14:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:14:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:14:12:012 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:17:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:17:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:17:00:000 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:20:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:20:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:20:21:021 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:24:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:24:20:020 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:24:20:020 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:26:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:26:02:002 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:26:03:003 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:31:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:31:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:31:00:000 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:31:52:052 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:31:52:052 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:31:53:053 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql
+[22/04/15 03:34:45:045 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:34:45:045 CEST]  INFO log4j.Logger: MySql connection is true
+[22/04/15 03:34:45:045 CEST]  INFO log4j.Logger: Script run: sql/create_db.sql

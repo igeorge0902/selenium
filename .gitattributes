@@ -38,15 +38,6 @@ lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
 /log4j.xml -text
 /logfile.log -text
-/logfile.log.2015-03-25 -text
-/logfile.log.2015-03-30 -text
-/logfile.log.2015-03-31 -text
-/logfile.log.2015-04-01 -text
-/logfile.log.2015-04-02 -text
-/logfile.log.2015-04-08 -text
-/logfile.log.2015-04-09 -text
-/logfile.log.2015-04-14 -text
-/logfile.log.2015-04-20 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 sql/create_db.sql -text
@@ -122,84 +113,4 @@ tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
 tessdata/eng.traineddata -text
-test-output/CustomReport.html -text
-test-output/Default[!!-~]suite/Default[!!-~]test.html -text svneol=unset#text/plain
-test-output/Default[!!-~]suite/Default[!!-~]test.xml -text svneol=unset#text/plain
-test-output/Default[!!-~]suite/testng-failed.xml -text svneol=unset#text/plain
-test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.html -text svneol=unset#text/plain
-test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.xml -text svneol=unset#text/plain
-test-output/bullet_point.png -text
-test-output/collapseall.gif -text
-test-output/emailable-report.html -text svneol=unset#text/plain
-test-output/failed.png -text
-test-output/html/ScreenShots/CHROME-2015-3-15-11-31-5-2.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-11-14-242.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-13-55-29.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-17-57-325.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-18-33-498.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-19-45-171.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-12-19-9-1.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-14-47-3-829.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-14-49-49-197.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-14-51-48-179.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-16-16-24-771.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-16-25-43-452.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-16-32-49-441.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-16-58-28-661.png -text svneol=unset#image/png
-test-output/html/ScreenShots/CHROME-2015-3-15-18-14-10-768.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-3-14-17-40-28-81.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-3-14-17-46-59-732.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-3-14-17-51-26-928.png -text svneol=unset#image/png
-test-output/html/ScreenShots/INTERNET_EXPLORER-2015-3-21-19-42-26-240.png -text svneol=unset#image/png
-test-output/html/ScreenShots/INTERNET_EXPLORER-2015-3-21-19-51-44-334.png -text svneol=unset#image/png
-test-output/html/index.html -text
-test-output/html/output.html -text
-test-output/html/overview.html -text
-test-output/html/reportng.css -text
-test-output/html/reportng.js -text
-test-output/html/sorttable.js -text
-test-output/html/suite1_groups.html -text
-test-output/html/suite1_test1_results.html -text
-test-output/html/suite1_test2_results.html -text
-test-output/html/suite1_test3_results.html -text svneol=unset#text/plain
-test-output/html/suite1_test4_results.html -text svneol=unset#text/plain
-test-output/html/suite1_test5_results.html -text svneol=unset#text/plain
-test-output/html/suites.html -text
-test-output/index.html -text svneol=unset#text/plain
-test-output/jquery-1.7.1.min.js -text svneol=unset#text/plain
-test-output/junitreports/TEST-utils.SafariTest.xml -text svneol=unset#text/plain
-test-output/navigator-bullet.png -text
-test-output/old/Default[!!-~]suite/Default[!!-~]test.properties -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/classes.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/groups.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/index.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/main.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/methods-alphabetical.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/methods-not-run.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/methods.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/reporter-output.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/testng.xml.html -text svneol=unset#text/plain
-test-output/old/Default[!!-~]suite/toc.html -text svneol=unset#text/plain
-test-output/old/index.html -text svneol=unset#text/plain
-test-output/passed.png -text
-test-output/skipped.png -text
-test-output/testng-failed.xml -text svneol=unset#text/plain
-test-output/testng-reports.css -text svneol=unset#text/plain
-test-output/testng-reports.js -text svneol=unset#text/plain
-test-output/testng-results.xml -text svneol=unset#text/plain
-test-output/testng.css -text svneol=unset#text/plain
-test-output/xml/test.java.CopyOfTestHboSignIn_results.xml -text
-test-output/xml/test.java.TestDataSample_results.xml -text svneol=unset#text/plain
-test-output/xml/test.java.TestHboSignIn_results.xml -text
-test-output/xml/test.java.TestHboSignUp_results.xml -text
-test-output/xml/test.java.TestMouseHover_results.xml -text svneol=unset#text/plain
-test-output/xml/test.java.TestPlayerSeries_results.xml -text svneol=unset#application/xml
-test-output/xml/test.java.TestPlayer_results.xml -text svneol=unset#text/plain
-test-output/xml/test.java.TestSearchEngines_results.xml -text
-test-output/xml/test.java.TestTest2_results.xml -text
-test-output/xml/test.java.TestTest_results.xml -text
-test-output/xml/test.java.TestYahoo_results.xml -text
-test-output/xml/utils.GroupTestExample_results.xml -text svneol=unset#text/plain
-test-output/xml/utils.SafariTest_results.xml -text
-test-output/xml/utils.TestDataSample_results.xml -text svneol=unset#text/plain
 /testng.xml -text

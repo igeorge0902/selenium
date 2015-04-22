@@ -51,7 +51,7 @@ public class TestPlayerSeries extends TestBase{
 		
 	}
 	
-    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider", dependsOnMethods = { "testSelectSeries" }, description= "Playback test of main contents")
+    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider_", dependsOnMethods = { "testSelectSeries" }, description= "Playback test of main contents")
     public void testPlayerSuccess(String urls) throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		

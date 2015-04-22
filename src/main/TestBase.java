@@ -42,6 +42,7 @@ import testng.Verify;
 import utils.SQLAccess;
 import utils.PropertyUtils;
 import utils.WaitTool;
+import testng.CustomReportListener;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -108,6 +109,7 @@ public class TestBase extends Verify implements WebElements {
 
 		try {
 			dao.insertReport();
+			dao.generateMethodSummaryReport(CustomReportListener.suiteName, CustomReportListener.testName);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

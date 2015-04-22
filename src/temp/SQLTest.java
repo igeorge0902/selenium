@@ -2,6 +2,8 @@ package temp;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+
+import testng.CustomReportListener;
 import main.TestBase;
 import main.WebElements;
 
@@ -17,6 +19,8 @@ public class SQLTest extends TestBase implements WebElements {
     dao.SetUpDataBase();
     dao.runSqlScript(create_db_sql);
     dao.insertReport();
+	dao.generateMethodSummaryReport("test", "hello");
+
   }
 
 } 

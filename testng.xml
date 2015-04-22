@@ -124,7 +124,7 @@
 			</class>
 			<class name="test.java.TestPlayerSeries">
 				<methods>
-					<exclude name="testSignInSuccess" />
+					<include name="testSignInSuccess" />
 					<exclude name="testSelectSeries" />
 					<exclude name="testPlayerSuccess" />					
 				</methods>
@@ -178,9 +178,9 @@
 			</class>
 			<class name="test.java.TestPlayerSeries">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testSelectSeries" />
-					<include name="testPlayerSuccess" />					
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectSeries" />
+					<exclude name="testPlayerSuccess" />					
 				</methods>
 			</class>				
 			<class name="test.java.TestSearchEngines">

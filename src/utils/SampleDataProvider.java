@@ -32,6 +32,7 @@ public class SampleDataProvider implements WebElements{
     
     	String inputFile = "";
     	if (!TestBase.isSupportedPlatformMac(true)) {
+    		
     		//Get the input file path from the ITestContext
     		Path input = Paths.get(urlsFile);
 
@@ -42,7 +43,8 @@ public class SampleDataProvider implements WebElements{
     	}
     		
     	else if (TestBase.isSupportedPlatformMac(true)) {
-            //Get the input file path from the ITestContext
+            
+    		//Get the input file path from the ITestContext
     		Path input = Paths.get(urlsFile);
 
     		if (input.toFile().exists()) {
@@ -50,29 +52,10 @@ public class SampleDataProvider implements WebElements{
             inputFile = context.getCurrentXmlTest().getParameter("filenamePathMac");
         	} 
     	}
-    		
-    	String inputFile_series = "";
-    	if (!TestBase.isSupportedPlatformMac(true)) {
-    		//Get the input file path from the ITestContext
-    		Path input = Paths.get(episodeUrlsFile);
-
-    		if (input.toFile().exists()) {
-    		inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathWin");
-    		} 
-    	}
-    	
-    	else if (TestBase.isSupportedPlatformMac(true)) {
-            //Get the input file path from the ITestContext
-    		Path input = Paths.get(episodeUrlsFile);
-
-    		if (input.toFile().exists()) {
-            inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathMac");
-        	}
-    	}
         
         //Get a list of String file content (line items) from the test file.
-        List<String> testData = getFileContentList(inputFile);
-        List<String> testData_series = getFileContentList(inputFile_series);
+        
+    	List<String> testData = getFileContentList(inputFile);
 
  
         //We will be returning an iterator of Object arrays so create that first.
@@ -84,6 +67,47 @@ public class SampleDataProvider implements WebElements{
             dataToBeReturned.add(new Object[] { userData } );
         }
         
+        //return the iterator - testng will initialize the test class and calls the
+        //test method with each of the content of this iterator.
+        
+        return dataToBeReturned.iterator();
+ 
+    }
+
+    @DataProvider
+    public static Iterator<Object[]> fileDataProvider_ (ITestContext context) {
+   		
+    	String inputFile_series = "";
+    	if (!TestBase.isSupportedPlatformMac(true)) {
+    		
+    		//Get the input file path from the ITestContext
+    		Path input = Paths.get(episodeUrlsFile);
+
+    		if (input.toFile().exists()) {
+    		inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathWin_series");
+    		} 
+    	}
+    	
+    	else if (TestBase.isSupportedPlatformMac(true)) {
+            
+    		//Get the input file path from the ITestContext
+    		Path input = Paths.get(episodeUrlsFile);
+
+    		if (input.toFile().exists()) {
+            inputFile_series = context.getCurrentXmlTest().getParameter("filenamePathMac_series");
+        	}
+    	}
+        
+        //Get a list of String file content (line items) from the test file.
+        
+    	//if (!inputFile.isEmpty()) 
+        List<String> testData_series = getFileContentList(inputFile_series);
+
+ 
+        //We will be returning an iterator of Object arrays so create that first.
+        List<Object[]> dataToBeReturned = new ArrayList<Object[]>();
+ 
+        //Populate our List of Object arrays with the file content.        
         for (String userData : testData_series)
         {
             dataToBeReturned.add(new Object[] { userData } );
@@ -108,7 +132,6 @@ public class SampleDataProvider implements WebElements{
  
         //We will be returning an iterator of String arrays so create that first.
         List<String> dataToBeReturned = new ArrayList<String>();
-        StringBuilder builder = new StringBuilder();
 
  
         //Populate our List of Object arrays with the file content.
@@ -116,7 +139,6 @@ public class SampleDataProvider implements WebElements{
         for (String urlData : testData)
         {
             dataToBeReturned.add( urlData  );
-            builder.append(urlData);
         	}       
         }
         

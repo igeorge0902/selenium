@@ -79,14 +79,14 @@ public class SQLAccess extends TestBase implements WebElements {
 	}
 	//TODO: insert scripts should run in the order to match foreign key insert (first the script that holds the foreign key reference) -- @AfterClass in TestBase
 	// it also should be run with runSqlScript method
-	@SuppressWarnings("deprecation")
+
 	public void generateMethodSummaryReport(String suite, String testname)
 			throws Exception {
 
 		if (testname == null) {
 			return;
 		}
-
+		
 		try {
 			// This will load the MySQL driver, each DB has its own driver
 			Class.forName(dbDriverClass);
@@ -96,27 +96,34 @@ public class SQLAccess extends TestBase implements WebElements {
 
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
-
+		
 			// PreparedStatements can use variables and are more efficient
-			preparedStatement = connect
-					.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?, (SELECT testrun_id FROM feedback.HTML_reports WHERE type='testrun_id'))"); //??
+			PreparedStatement getLastInsertId = connect.prepareStatement("select LAST_INSERT_ID() from feedback.HTML_reports");
+			ResultSet rs = getLastInsertId.executeQuery();
+			
+			if (rs.next())
+				{
+			 
+				long insertId = rs.getLong("last_insert_id()");
+				long time = System.currentTimeMillis();
+				java.sql.Timestamp timestamp = new java.sql.Timestamp(time);
+				
+			preparedStatement = connect.prepareStatement("insert into  feedback.SUITE_MethodSummaryReport values (default, ?, ?, ?, ? , ?, ?, ?)");
 
 			preparedStatement.setString(1, suite);
 			preparedStatement.setString(2, testname);
 			preparedStatement.setString(3, testname);
 			preparedStatement.setString(4, testname);
-			preparedStatement.setDate(5, new java.sql.Date(2009, 12, 11));
+			preparedStatement.setTimestamp(5, timestamp);
 			preparedStatement.setString(6, testname);
+			preparedStatement.setLong(7, insertId);
 			
-			//TODO: foreign key insert comes here
-			preparedStatement.setInt(7, 1);
-
-
-
+				}
+			
 			preparedStatement.executeUpdate();
 
 		} catch (Exception e) {
-			throw e;
+			e.getLocalizedMessage();
 
 		} finally {
 
@@ -163,7 +170,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
 
 			String sql = "insert into feedback.HTML_reports  "
-					+ "(testrun_id, index_, output, overview,	reportng_css, "
+					+ "(id, index_, output, overview,	reportng_css, "
 					+ "reportng_js, sorttable, suite_groups, suite_test1,suite_test2, "
 					+ "suite_test3, suite_test4, suite_test5, suites) values (default, ?,?,?,?,?,?,?,?,?,?,?,?,?)";
 			
@@ -251,8 +258,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			writeResultSet(resultSet);
 
 			// PreparedStatements can use variables and are more efficient
-			preparedStatement = connect
-					.prepareStatement("insert into  feedback.comments values (default, ?, ?, ?, ? , ?, ?)");
+			preparedStatement = connect.prepareStatement("insert into  feedback.comments values (default, ?, ?, ?, ? , ?, ?)");
 			// "myuser, webpage, datum, summery, COMMENTS from feedback.comments");
 			// Parameters start with 1
 			preparedStatement.setString(1, "Test");
@@ -263,14 +269,12 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.setString(6, "TestComment");
 			preparedStatement.executeUpdate();
 
-			preparedStatement = connect
-					.prepareStatement("SELECT myuser, webpage, datum, summary, COMMENTS from feedback.comments");
+			preparedStatement = connect.prepareStatement("SELECT myuser, webpage, datum, summary, COMMENTS from feedback.comments");
 			resultSet = preparedStatement.executeQuery();
 			writeResultSet(resultSet);
 
 			// Remove again the insert comment
-			preparedStatement = connect
-					.prepareStatement("delete from feedback.comments where myuser= ? ; ");
+			preparedStatement = connect.prepareStatement("delete from feedback.comments where myuser= ? ; ");
 			preparedStatement.setString(1, "Test");
 			preparedStatement.executeUpdate();
 
