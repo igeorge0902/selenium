@@ -2,20 +2,20 @@ package test.java;
 
 
 
-import main.ElementScreenshot;
-import main.TestBase;
+import main.java.qa.framework.main.ElementScreenshot;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.pageObjects.HboSignUp;
+import main.java.qa.framework.pageObjects.HboSignUpForm;
+import main.java.qa.framework.testng.LoggingListener;
+import main.java.qa.framework.testng.MethodInterceptor;
+import main.java.qa.framework.testng.TestListeners;
+import main.java.qa.framework.testng.TestMethodListener;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
-import pageObjects.HboSignUp;
-import pageObjects.HboSignUpForm;
-import testng.LoggingListener;
-import testng.TestListeners;
-import testng.TestMethodListener;
-import testng.MethodInterceptor;
 
-
-@Listeners({ MethodInterceptor.class, TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({ MethodInterceptor.class, TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignUp extends TestBase{

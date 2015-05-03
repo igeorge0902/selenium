@@ -1,21 +1,20 @@
 package test.java;
 
 
-import main.BaseUrls;
-import main.TestBase;
+import main.java.qa.framework.main.BaseUrls;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.pageObjects.HboSignIn;
+import main.java.qa.framework.pageObjects.PlayMainContent;
+import main.java.qa.framework.pageObjects.SelectSeries;
+import main.java.qa.framework.testng.LoggingListener;
+import main.java.qa.framework.testng.TestListeners;
+import main.java.qa.framework.testng.TestMethodListener;
 
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
-import pageObjects.HboSignIn;
-import pageObjects.PlayMainContent;
-import pageObjects.SelectSeries;
-import testng.LoggingListener;
-import testng.TestListeners;
-import testng.TestMethodListener;
  
 
-@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestPlayerSeries extends TestBase{
@@ -51,7 +50,7 @@ public class TestPlayerSeries extends TestBase{
 		
 	}
 	
-    @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="fileDataProvider_", dependsOnMethods = { "testSelectSeries" }, description= "Playback test of main contents")
+    @Test (dataProviderClass=main.java.qa.framework.utils.SampleDataProvider.class,dataProvider="fileDataProvider_", dependsOnMethods = { "testSelectSeries" }, description= "Playback test of main contents")
     public void testPlayerSuccess(String urls) throws Exception{
 		PlayMainContent PlayMainContent = new PlayMainContent(driver);
 		

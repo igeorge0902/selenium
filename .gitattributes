@@ -14,43 +14,83 @@ ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
 /eurotext_deskew.png -text
 /eurotext_unlv.png -text
 /eurotext_unlv.uzn -text
-lib/IEDriverServer32.exe -text svneol=unset#application/x-dosexec
+lib/IEDriverServer32.exe -text
 lib/chromedriver -text
-lib/chromedriver.exe -text svneol=unset#application/x-dosexec
-lib/commons-io-2.4.jar -text
-lib/episode_urls.txt -text
-lib/ghost4j-0.5.1.jar -text
-lib/jai_imageio.jar -text
-lib/jna-4.1.0.jar -text
-lib/junit-4.10.jar -text
-lib/log4j-1.2.17.jar -text
-lib/mysql-connector-java-5.1.35-bin.jar -text
-lib/output.txt -text
-lib/pdfpagecount.ps -text
-lib/series_urls.txt -text
-lib/tess4j.jar -text
-lib/urls.txt -text
+lib/chromedriver.exe -text
+lib/episode_urls.txt -text svneol=unset#text/plain
+lib/output.txt -text svneol=unset#text/plain
+lib/series_urls.txt -text svneol=unset#text/plain
+lib/urls.txt -text svneol=unset#text/plain
 lib/win32-x86-64/gsdll64.dll -text
 lib/win32-x86-64/liblept168.dll -text
 lib/win32-x86-64/libtesseract302.dll -text
 lib/win32-x86/gsdll32.dll -text
 lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
-/log4j.xml -text
-/logfile.log -text
+log/logfile.log -text
+log/logfile.log.2015-04-22 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 sql/create_db.sql -text
-src/main/AbstractWebDriverEventListener.java -text
-src/main/BaseUrls.java -text
-src/main/CaptureScreenshotOnFailureListener.java -text
-src/main/Click.java -text svneol=unset#text/plain
-src/main/Clicks.java -text svneol=unset#text/plain
-src/main/ElementScreenshot.java -text
-src/main/EventListener.java -text
-src/main/TestBase.java -text
-src/main/WebDriverManager.java -text
-src/main/WebElements.java -text
+src/main/config/log4j.xml -text svneol=unset#text/plain
+src/main/java/qa/framework/main/AbstractWebDriverEventListener.java -text
+src/main/java/qa/framework/main/BaseUrls.java -text
+src/main/java/qa/framework/main/CaptureScreenshotOnFailureListener.java -text
+src/main/java/qa/framework/main/Click.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/Clicks.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/ElementScreenshot.java -text
+src/main/java/qa/framework/main/EventListener.java -text
+src/main/java/qa/framework/main/Main.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/TestBase.java -text
+src/main/java/qa/framework/main/WebDriverManager.java -text
+src/main/java/qa/framework/main/WebElements.java -text
+src/main/java/qa/framework/pageObjects/Google.java -text
+src/main/java/qa/framework/pageObjects/HboSignIn.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/HboSignUp.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/MouseHover.java -text
+src/main/java/qa/framework/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/PlaySingleMainContent.java -text
+src/main/java/qa/framework/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/SelectMovieGroups.java -text
+src/main/java/qa/framework/pageObjects/SelectSeries.java -text
+src/main/java/qa/framework/pageObjects/Yahoo.java -text
+src/main/java/qa/framework/temp/DeserializationClass.java -text
+src/main/java/qa/framework/temp/LinkGetter.java -text
+src/main/java/qa/framework/temp/Names.java -text
+src/main/java/qa/framework/temp/RegexTestPatternMatcher.java -text
+src/main/java/qa/framework/temp/SQLTest.java -text
+src/main/java/qa/framework/temp/SerializaitonClass.java -text
+src/main/java/qa/framework/temp/StringMatcher.java -text
+src/main/java/qa/framework/temp/TesseractExample.java -text
+src/main/java/qa/framework/testng/CustomException.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/CustomReportListener.java -text
+src/main/java/qa/framework/testng/CustomTestListener.java -text
+src/main/java/qa/framework/testng/CustomVerification.java -text
+src/main/java/qa/framework/testng/ExpectedExceptions.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/LoggingListener.java -text
+src/main/java/qa/framework/testng/MethodInterceptor.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/TestListenerAdapter.java -text
+src/main/java/qa/framework/testng/TestListeners.java -text
+src/main/java/qa/framework/testng/TestMethodErrorBuffer.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/TestMethodListener.java -text
+src/main/java/qa/framework/testng/VerificationError.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/Verify.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/FileSeparator.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/GroupTestExample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/LinkGetter.java -text
+src/main/java/qa/framework/utils/MessageUtil.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/PropertyUtils.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/RegexTestPatternMatcher.java -text
+src/main/java/qa/framework/utils/SQLAccess.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/SampleDataProvider.java -text
+src/main/java/qa/framework/utils/StringMatcher.java -text
+src/main/java/qa/framework/utils/TesseractExample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/TestDataSample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/WaitTool.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/WebTestFactory.java -text
+src/main/java/qa/framework/utils/deleteLines.java -text
+src/main/scripts/create_db.sql -text
 src/pageObjects/Google.java -text
 src/pageObjects/HboSignIn.java -text svneol=unset#text/plain
 src/pageObjects/HboSignUp.java -text svneol=unset#text/plain
@@ -108,9 +148,37 @@ src/utils/TestDataSample.java -text svneol=unset#text/plain
 src/utils/WaitTool.java -text svneol=unset#text/plain
 src/utils/WebTestFactory.java -text
 src/utils/deleteLines.java -text
+src/webapp/WEB-INF/lib/jai_imageio.jar -text
+src/webapp/WEB-INF/lib/jna-4.1.0.jar -text
+src/webapp/WEB-INF/lib/log4j-1.2.17.jar -text
+src/webapp/WEB-INF/lib/tess4j.jar -text
 target/test-classes/suite.xml -text svneol=unset#text/plain
 tessdata/configs/api_config -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
 tessdata/eng.traineddata -text
+tessdata/osd.traineddata -text
+tessdata/pdf.ttf -text
+tessdata/pdf.ttx -text
+test-output/CustomReport.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.xml -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.xml -text svneol=unset#text/plain
+test-output/html/ScreenShots/Firefox-2015-4-3-18-51-44-779.png -text
+test-output/html/index.html -text svneol=unset#text/plain
+test-output/html/output.html -text svneol=unset#text/plain
+test-output/html/overview.html -text svneol=unset#text/plain
+test-output/html/reportng.css -text svneol=unset#text/plain
+test-output/html/reportng.js -text svneol=unset#text/plain
+test-output/html/sorttable.js -text svneol=unset#text/plain
+test-output/html/suite1_groups.html -text svneol=unset#text/plain
+test-output/html/suite1_test1_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test2_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test3_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test4_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test5_results.html -text svneol=unset#text/plain
+test-output/html/suites.html -text svneol=unset#text/plain
+test-output/xml/test.java.TestHboSignIn_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestPlayerSeries_results.xml -text svneol=unset#text/plain
 /testng.xml -text

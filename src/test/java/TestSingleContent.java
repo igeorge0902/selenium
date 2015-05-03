@@ -1,14 +1,13 @@
 package test.java;
 
-import main.BaseUrls;
-import main.TestBase;
+import main.java.qa.framework.main.BaseUrls;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.pageObjects.HboSignIn;
+import main.java.qa.framework.pageObjects.PlaySingleMainContent;
 
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import pageObjects.HboSignIn;
-import pageObjects.PlaySingleMainContent;
 
 public class TestSingleContent extends TestBase {
 	

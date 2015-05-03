@@ -1,18 +1,17 @@
 package test.java;
 
 
-import main.TestBase;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.pageObjects.HboSignIn;
+import main.java.qa.framework.testng.LoggingListener;
+import main.java.qa.framework.testng.TestListeners;
+import main.java.qa.framework.testng.TestMethodListener;
 
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
-import pageObjects.HboSignIn;
-import testng.LoggingListener;
-import testng.TestListeners;
-import testng.TestMethodListener;
  
 
-@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
+@Listeners({TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class})
 
 
 public class TestHboSignIn extends TestBase{

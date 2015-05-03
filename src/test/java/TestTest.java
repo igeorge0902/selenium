@@ -1,23 +1,22 @@
 package test.java;
 
 
-import main.BaseUrls;
-import main.ElementScreenshot;
-import main.TestBase;
-import main.WebElements;
+import main.java.qa.framework.main.BaseUrls;
+import main.java.qa.framework.main.ElementScreenshot;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.main.WebElements;
+import main.java.qa.framework.testng.CustomReportListener;
+import main.java.qa.framework.testng.TestListeners;
+import main.java.qa.framework.testng.TestMethodListener;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.*;
 import org.testng.Reporter;
 
-import testng.TestListeners;
-import testng.TestMethodListener;
-import testng.CustomReportListener;
 
 
-
-@Listeners({ TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReportListener.class})
+@Listeners({ TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReportListener.class})
 
 
 public class TestTest extends TestBase implements WebElements{

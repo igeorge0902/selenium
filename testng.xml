@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Demo Run" verbose="10">
+
+<!--
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
+-->    
+    
     <parameter name="filenamePathWin" value=".\lib\output.txt" />
 	<parameter name="filenamePathMac" value="./lib/output.txt" />						
 	<parameter name="browser" value="Firefox" />
@@ -27,7 +31,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="utils.GroupTestExample" />
+			<class name="main.java.qa.framework.utils.GroupTestExample" />
 		</classes>
 	</test>
 	<test name="Test on Safari" preserve-order="true">
@@ -80,7 +84,7 @@
 					<exclude name="Google" />
 				</methods>
 			</class>
-			<class name="utils.WebTestFactory" />
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
 		</classes>
 	</test>
 	<test name="Test on Firefox" preserve-order="true">
@@ -135,7 +139,7 @@
 					<exclude name="Google" />
 				</methods>
 			</class>
-			<class name="utils.WebTestFactory" />
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
 		</classes>
 	</test>
 	<test name="Test on Internet Explorer" preserve-order="true">
@@ -189,7 +193,7 @@
 					<exclude name="Google" />
 				</methods>
 			</class>
-			<class name="utils.WebTestFactory" />
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
 		</classes>
 	</test>
 	<test name="Test on Chrome" preserve-order="true">
@@ -244,7 +248,7 @@
 					<exclude name="Google" />
 				</methods>
 			</class>
-			<class name="utils.WebTestFactory" />
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
 		</classes>
 	</test>
 </suite>

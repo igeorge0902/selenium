@@ -1,22 +1,22 @@
 package test.java;
 
 
-import main.TestBase;
+import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.pageObjects.Google;
+import main.java.qa.framework.pageObjects.Yahoo;
+import main.java.qa.framework.testng.CustomReportListener;
+import main.java.qa.framework.testng.TestListeners;
+import main.java.qa.framework.testng.TestMethodListener;
+
 import org.testng.annotations.*;
 
-import pageObjects.Google;
-import pageObjects.Yahoo;
-import testng.CustomReportListener;
-import testng.TestListeners;
-import testng.TestMethodListener;
 
-
-@Listeners({TestListeners.class, main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReportListener.class})
+@Listeners({TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, CustomReportListener.class})
 
 public class TestSearchEngines extends TestBase{
 	
 	
-  @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  @Test (dataProviderClass=main.java.qa.framework.utils.SampleDataProvider.class,dataProvider="getColors")
   public void Yahoo(String input) throws Exception {
 	  Yahoo YahooSearch = new Yahoo(driver);
 	  
@@ -25,7 +25,7 @@ public class TestSearchEngines extends TestBase{
   }
   
   
-  @Test (dataProviderClass=utils.SampleDataProvider.class,dataProvider="getColors")
+  @Test (dataProviderClass=main.java.qa.framework.utils.SampleDataProvider.class,dataProvider="getColors")
   public void Google(String input) throws Exception {
 	  Google GoogleSearch = new Google(driver);
 	  

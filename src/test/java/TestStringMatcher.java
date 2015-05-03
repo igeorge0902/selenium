@@ -1,9 +1,10 @@
 package test.java;
 
+import main.java.qa.framework.temp.StringMatcher;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import temp.StringMatcher;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

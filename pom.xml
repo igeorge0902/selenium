@@ -4,63 +4,60 @@
                  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
         <groupId>Selenium</groupId>
-        <artifactId>Selenium_Testlink</artifactId>
-        <version>2.0</version>
+        <artifactId>HBO_automation_tool</artifactId>
+        <packaging>jar</packaging>
+        <version>2.0</version>       
         
     <name>Selenium</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <selenium.version>2.45.0</selenium.version>
+    	<testng.version>6.8.21</testng.version>
 	</properties>
        
        <dependencies>
-            <dependency>
-                <groupId>org.seleniumhq.selenium</groupId>
-                <artifactId>selenium-java</artifactId>
-                <version>2.45.0</version> 
-                <scope>test</scope>
-            </dependency>
+            
+             <dependency>
+   				<groupId>org.testng</groupId>
+		      	<artifactId>testng</artifactId>
+		      	<version>${testng.version}</version>
+		    </dependency>
+	    
+		    <dependency>
+		      <groupId>org.seleniumhq.selenium</groupId>
+		      <artifactId>selenium-java</artifactId>
+		      <version>${selenium.version}</version>
+		    </dependency>
             
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
-                <scope>test</scope>
-            </dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>4.1.0</version>
+			</dependency>
             
             <dependency>
 				<groupId>javax.jms</groupId>
 				<artifactId>javax.jms-api</artifactId>
 				<version>2.0.1-b01</version>
-				 <scope>test</scope>
 			</dependency>
 			
 			<dependency>
 				<groupId>commons-logging</groupId>
 				<artifactId>commons-logging</artifactId>
 				<version>1.2</version>
-				  <scope>test</scope>
 			</dependency>
 			
            	<dependency>
             	<groupId>log4j</groupId>
             	<artifactId>log4j</artifactId>
             	<version>1.2.17</version>
-            	  <scope>test</scope>
            	</dependency>
            	
            	<dependency>
             	<groupId>org.apache.poi</groupId>
             	<artifactId>poi</artifactId>
             	<version>3.10-FINAL</version>
-            	  <scope>test</scope>
-           	</dependency>
-           	
-           	<dependency>
-            	<groupId>org.testng</groupId>
-            	<artifactId>testng</artifactId>
-            	<version>6.8.21</version>
-            	  <scope>test</scope>
            	</dependency>
            	
            	<dependency>
@@ -73,21 +70,18 @@
 				                <artifactId>testng</artifactId>
 				            </exclusion>
 				        </exclusions>
-				    <scope>test</scope>
 			</dependency>
 			
 			<dependency>
 				<groupId>org.apache.maven.surefire</groupId>
 				<artifactId>surefire-api</artifactId>
 				<version>2.18.1</version>
-				  <scope>test</scope>
 			</dependency>
 			
 	        <dependency>
             	<groupId>xml-apis</groupId>
             	<artifactId>xml-apis</artifactId>
             	<version>2.0.2</version>
-            	  <scope>test</scope>
         	</dependency>
         	
         	<dependency>
@@ -95,19 +89,56 @@
 				<artifactId>mybatis</artifactId>
 				<version>3.2.8</version>
 			</dependency>
-        	
-        	<dependency>
-				<groupId>opensymphony</groupId>
-				<artifactId>xwork</artifactId>
-				<version>2.0.3</version>
-			</dependency>       	
+         	
     		
-    		<dependency>
+			<dependency>
 				<groupId>net.sourceforge.tess4j</groupId>
 				<artifactId>tess4j</artifactId>
 				<version>1.5.0</version>
-			</dependency>	
-        	  
+			</dependency>
+			
+		    <dependency>
+		      <groupId>net.lingala.zip4j</groupId>
+		      <artifactId>zip4j</artifactId>
+		      <version>1.3.2</version>
+    		</dependency>
+    
+    		<dependency>
+		      <groupId>com.googlecode.json-simple</groupId>
+		      <artifactId>json-simple</artifactId>
+		      <version>1.1.1</version>
+    		</dependency>
+    
+        <dependency>
+            <groupId>net.lightbody.bmp</groupId>
+            <artifactId>browsermob-proxy</artifactId>
+            <version>2.0-beta-9</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-gwt</artifactId>
+            <version>18.0</version>
+        </dependency> 
+		    
+		    <dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.35</version>
+			</dependency>
+      	  
         </dependencies>
  
    <reporting>
@@ -125,35 +156,96 @@
           <name>performRelease</name>
         </property>
       </activation>
+   	</profile>
+  </profiles>
              
-     <build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.4.1</version>
-			</plugin>
+ <build>
+	<directory>target</directory>
+	<defaultGoal>install</defaultGoal>
+	<finalName>${project.artifactId}-${project.version}</finalName>
+	
+	<plugins>
+	
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      
+   	  <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>lib</source>
+                <source>tessdata</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-enforcer-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>enforce-versions</id>
+          <goals>
+            <goal>enforce</goal>
+          </goals>
+          <configuration>
+            <rules>
+              <requireJavaVersion>
+                <version>1.8</version>
+              </requireJavaVersion>
+            </rules>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
 			
-	  <plugin>
+	<plugin>
        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>	
 		<configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            </manifest>
-          </archive>
+			<archive>
+			  <addMavenDescriptor/>
+			  <compress/>
+			  <forced/>
+			  <index/>
+			  <manifest>
+			    <addClasspath/>
+			    <addDefaultImplementationEntries/>
+			    <addDefaultSpecificationEntries/>
+			    <addExtensions/>
+			    <classpathLayoutType/>
+			    <classpathMavenRepositoryLayout/>
+			    <classpathPrefix/>
+			    <customClasspathLayout/>
+				<mainClass>main.java.qa.framework.main.Main</mainClass>
+			    <packageName/>
+			    <useUniqueVersions>true</useUniqueVersions>
+			  </manifest>
+			  <manifestEntries/>
+			  <manifestFile/>
+			  <pomPropertiesFile/>
+			</archive>
         </configuration>
 		</plugin>
 			
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			
+ 
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -174,29 +266,16 @@
             </configuration>
         </plugin>
         
+        
+        
     <plugin>
     	<groupId>org.apache.maven.plugins</groupId>
-    		<artifactId>maven-eclipse-plugin</artifactId>
-    			<configuration>
-        			<downloadSources>true</downloadSources>
-        			<downloadJavadocs>true</downloadJavadocs>
-    			</configuration>
+    	<artifactId>maven-eclipse-plugin</artifactId>
+ 		<configuration>
+       			<downloadSources>true</downloadSources>
+      			<downloadJavadocs>true</downloadJavadocs>
+		</configuration>
 	</plugin>
-        
-        <plugin>
-         <inherited>true</inherited>
-          <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-javadoc-plugin</artifactId>
-			<version>2.10.1</version>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
           
           <plugin>
             <inherited>true</inherited>
@@ -210,8 +289,5 @@
         
 		</plugins>
 	</build>
-	</profile>
-  </profiles>
-	
 </project>
 
