@@ -31,7 +31,6 @@ log/logfile.log -text
 log/logfile.log.2015-04-22 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
-sql/create_db.sql -text
 src/main/config/log4j.xml -text svneol=unset#text/plain
 src/main/java/qa/framework/main/AbstractWebDriverEventListener.java -text
 src/main/java/qa/framework/main/BaseUrls.java -text
