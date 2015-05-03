@@ -101,10 +101,6 @@ src/test/java/TestSingleContent.java -text
 src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
-src/webapp/WEB-INF/lib/jai_imageio.jar -text
-src/webapp/WEB-INF/lib/jna-4.1.0.jar -text
-src/webapp/WEB-INF/lib/log4j-1.2.17.jar -text
-src/webapp/WEB-INF/lib/tess4j.jar -text
 target/test-classes/suite.xml -text svneol=unset#text/plain
 tessdata/configs/api_config -text
 tessdata/configs/digits -text
