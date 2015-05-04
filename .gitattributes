@@ -6,6 +6,7 @@
 .settings/org.eclipse.m2e.core.prefs -text
 ScreenShots/Firefox-2015-3-14-17-28-37-521.png -text svneol=unset#image/png
 ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
+config/log4j.xml -text svneol=unset#text/plain
 /employee.txt -text
 /eurotext.bmp -text
 /eurotext.pdf -text
@@ -14,7 +15,7 @@ ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
 /eurotext_deskew.png -text
 /eurotext_unlv.png -text
 /eurotext_unlv.uzn -text
-lib/IEDriverServer32.exe -text
+lib/IEDriverServer32.exe.svntmp -text
 lib/chromedriver -text
 lib/chromedriver.exe -text
 lib/episode_urls.txt -text svneol=unset#text/plain
@@ -31,7 +32,7 @@ log/logfile.log -text
 log/logfile.log.2015-04-22 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
-src/main/config/log4j.xml -text svneol=unset#text/plain
+scripts/create_db.sql -text
 src/main/java/qa/framework/main/AbstractWebDriverEventListener.java -text
 src/main/java/qa/framework/main/BaseUrls.java -text
 src/main/java/qa/framework/main/CaptureScreenshotOnFailureListener.java -text
@@ -89,7 +90,7 @@ src/main/java/qa/framework/utils/TestDataSample.java -text svneol=unset#text/pla
 src/main/java/qa/framework/utils/WaitTool.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/WebTestFactory.java -text
 src/main/java/qa/framework/utils/deleteLines.java -text
-src/main/scripts/create_db.sql -text
+src/main/resources/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 src/test/java/TesseractTest.java -text svneol=unset#text/plain
 src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
 src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
@@ -102,7 +103,7 @@ src/test/java/TestStringMatcher.java -text
 src/test/java/TestTest.java -text
 src/test/resources/suite.xml -text
 target/test-classes/suite.xml -text svneol=unset#text/plain
-tessdata/configs/api_config -text
+tessdata/configs/api_config.svntmp -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
 tessdata/eng.traineddata -text

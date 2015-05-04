@@ -73,7 +73,7 @@ public class TestBase extends Verify implements WebElements {
 	}
 
 	public TestBase() {
-		DOMConfigurator.configure("./src/main/config/log4j.xml");
+		DOMConfigurator.configure("config/log4j.xml");
 	}
 
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;

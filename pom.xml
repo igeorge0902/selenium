@@ -22,12 +22,14 @@
    				<groupId>org.testng</groupId>
 		      	<artifactId>testng</artifactId>
 		      	<version>${testng.version}</version>
+		      	<scope>compile</scope>
 		    </dependency>
 	    
 		    <dependency>
 		      <groupId>org.seleniumhq.selenium</groupId>
 		      <artifactId>selenium-java</artifactId>
 		      <version>${selenium.version}</version>
+		      <scope>compile</scope>
 		    </dependency>
             
             <dependency>
@@ -35,6 +37,13 @@
 				<artifactId>jna-platform</artifactId>
 				<version>4.1.0</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>org.seleniumhq.selenium.client-drivers</groupId>
+				<artifactId>selenium-java-client-driver</artifactId>
+				<version>1.0.2</version>
+			</dependency>
+			
             
             <dependency>
 				<groupId>javax.jms</groupId>
@@ -42,18 +51,44 @@
 				<version>2.0.1-b01</version>
 			</dependency>
 			
-			<dependency>
-				<groupId>commons-logging</groupId>
-				<artifactId>commons-logging</artifactId>
-				<version>1.2</version>
-			</dependency>
-			
            	<dependency>
             	<groupId>log4j</groupId>
             	<artifactId>log4j</artifactId>
             	<version>1.2.17</version>
            	</dependency>
-           	
+           	  
+  <!--         	  
+           	  <dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-api</artifactId>
+			    <version>2.2</version>
+			  </dependency>
+			  <dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-core</artifactId>
+			    <version>2.2</version>
+			  </dependency>
+			    <dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-1.2-api</artifactId>
+			    <version>2.2</version>
+			  </dependency>
+			    <dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-jcl</artifactId>
+			    <version>2.2</version>
+			  </dependency>
+			    <dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-slf4j-impl</artifactId>
+			    <version>2.2</version>
+			  </dependency>
+			  <dependency>
+				<groupId>slide</groupId>
+				<artifactId>log4jlogger</artifactId>
+				<version>2.0</version>
+			</dependency>
+     -->      	
            	<dependency>
             	<groupId>org.apache.poi</groupId>
             	<artifactId>poi</artifactId>
@@ -143,7 +178,35 @@
  
    <reporting>
     <outputDirectory>target/site</outputDirectory>
-  </reporting>
+      <plugins>
+      
+    <plugin>
+      <artifactId>maven-dependency-plugin</artifactId>
+      <version>2.5.1</version>
+      <reportSets>
+        <reportSet>
+          <reports>
+            <report>analyze-report</report>
+          </reports>
+        </reportSet>
+      </reportSets>
+    </plugin>
+      
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>2.15</version>
+          <reportSets>
+            <reportSet>
+              <reports>
+                <report>checkstyle</report>
+              </reports>
+            </reportSet>
+          </reportSets>
+        </plugin>
+      
+      </plugins>
+    </reporting>
 
   <profiles>
     <profile>
@@ -178,19 +241,33 @@
    	  <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
-        <version>1.1</version>
+        <version>1.9.1</version>
         <executions>
           <execution>
-            <id>add-source</id>
-            <phase>generate-sources</phase>
+            <id>add-resource</id>
+            <phase>generate-resources</phase>
             <goals>
-              <goal>add-source</goal>
+              <goal>add-resource</goal>
             </goals>
             <configuration>
-              <sources>
-                <source>lib</source>
-                <source>tessdata</source>
-              </sources>
+              <resources>
+                <resource>
+                  <directory>lib</directory>
+                  <targetPath>lib</targetPath>
+                </resource>
+                <resource>
+                  <directory>tessdata</directory>
+                  <targetPath>tessdata</targetPath>
+                </resource>
+                <resource>
+                  <directory>config</directory>
+                  <targetPath>config</targetPath>
+                </resource>
+                <resource>
+                  <directory>scripts</directory>
+                  <targetPath>scripts</targetPath>
+                </resource>               
+              </resources>
             </configuration>
           </execution>
         </executions>
@@ -218,7 +295,8 @@
 			
 	<plugin>
        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>	
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>	
 		<configuration>
 			<archive>
 			  <addMavenDescriptor/>
@@ -226,8 +304,8 @@
 			  <forced/>
 			  <index/>
 			  <manifest>
-			    <addClasspath/>
-			    <addDefaultImplementationEntries/>
+              <addClasspath>true</addClasspath>			    
+              <addDefaultImplementationEntries/>
 			    <addDefaultSpecificationEntries/>
 			    <addExtensions/>
 			    <classpathLayoutType/>
@@ -239,12 +317,11 @@
 			    <useUniqueVersions>true</useUniqueVersions>
 			  </manifest>
 			  <manifestEntries/>
-			  <manifestFile/>
-			  <pomPropertiesFile/>
+        <!-- <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>	-->
+        	  <pomPropertiesFile/>
 			</archive>
         </configuration>
-		</plugin>
-			
+		</plugin>			
  
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -264,9 +341,7 @@
                    </systemProperties>
                 </properties>
             </configuration>
-        </plugin>
-        
-        
+        </plugin>       
         
     <plugin>
     	<groupId>org.apache.maven.plugins</groupId>
@@ -277,15 +352,25 @@
 		</configuration>
 	</plugin>
           
-          <plugin>
-            <inherited>true</inherited>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
+       <plugin>
+         <inherited>true</inherited>
+         <groupId>org.apache.maven.plugins</groupId>
+         	<artifactId>maven-deploy-plugin</artifactId>
 			<version>2.8.2</version>		
-            <configuration>
-              <updateReleaseInfo>true</updateReleaseInfo>
-            </configuration>
-          </plugin>
+         	<configuration>
+           <updateReleaseInfo>true</updateReleaseInfo>
+         </configuration>
+       </plugin>
+          
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+        <configuration>
+          <show>private</show>
+          <nohelp>false</nohelp>
+        </configuration>
+      </plugin>
         
 		</plugins>
 	</build>

@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: georgegaspar
+Class-Path: testng-6.8.21.jar bsh-2.0b4.jar jcommander-1.27.jar seleni
+ um-java-2.45.0.jar selenium-chrome-driver-2.45.0.jar selenium-remote-
+ driver-2.45.0.jar cglib-nodep-2.1_3.jar gson-2.3.1.jar selenium-api-2
+ .45.0.jar selenium-htmlunit-driver-2.45.0.jar htmlunit-2.15.jar xalan
+ -2.7.1.jar serializer-2.7.1.jar commons-collections-3.2.1.jar commons
+ -lang3-3.3.2.jar htmlunit-core-js-2.15.jar xercesImpl-2.11.0.jar neko
+ html-1.9.21.jar cssparser-0.9.14.jar sac-1.3.jar jetty-websocket-8.1.
+ 15.v20140411.jar jetty-util-8.1.15.v20140411.jar selenium-firefox-dri
+ ver-2.45.0.jar commons-exec-1.1.jar selenium-ie-driver-2.45.0.jar sel
+ enium-safari-driver-2.45.0.jar selenium-support-2.45.0.jar webbit-0.4
+ .14.jar netty-3.5.2.Final.jar selenium-leg-rc-2.45.0.jar jna-platform
+ -4.1.0.jar jna-4.1.0.jar selenium-java-client-driver-1.0.2.jar javax.
+ jms-api-2.0.1-b01.jar log4j-1.2.17.jar poi-3.10-FINAL.jar commons-cod
+ ec-1.5.jar reportng-1.1.4.jar velocity-1.4.jar velocity-dep-1.4.jar s
+ urefire-api-2.18.1.jar xml-apis-1.0.b2.jar mybatis-3.2.8.jar tess4j-1
+ .5.0.jar hamcrest-integration-1.2.1.jar hamcrest-library-1.2.1.jar pl
+ atform-3.5.2.jar jai-imageio-core-standalone-1.2-pre-dr-b04-2011-07-0
+ 4.jar ghost4j-0.5.1.jar commons-beanutils-1.8.3.jar xmlgraphics-commo
+ ns-1.4.jar itext-2.1.7.jar zip4j-1.3.2.jar json-simple-1.1.1.jar juni
+ t-4.10.jar hamcrest-core-1.1.jar browsermob-proxy-2.0-beta-9.jar slf4
+ j-api-1.5.3.jar slf4j-jdk14-1.5.3.jar sitebricks-0.8.3.jar mvel2-2.0.
+ 18.jar annotations-7.0.3.jar commons-httpclient-3.1.jar commons-lang-
+ 2.5.jar dom4j-1.6.1.jar jaxen-1.1.1.jar jdom-1.0.jar xom-1.0.jar xmlP
+ arserAPIs-2.6.2.jar icu4j-2.6.1.jar saxpath-1.0-FCS.jar servlet-api-2
+ .5.jar xstream-1.3.1.jar xpp3_min-1.1.4c.jar jsoup-1.4.1.jar freemark
+ er-2.3.10.jar guice-multibindings-3.0.jar jackson-core-asl-1.7.1.jar 
+ jackson-mapper-asl-1.7.1.jar httpmime-4.2.3.jar commons-io-1.3.2.jar 
+ jopt-simple-3.2.jar ant-1.8.2.jar ant-launcher-1.8.2.jar bcprov-jdk15
+ on-1.47.jar jetty-server-7.3.0.v20110203.jar jetty-continuation-7.3.0
+ .v20110203.jar jetty-http-7.3.0.v20110203.jar jetty-io-7.3.0.v2011020
+ 3.jar jetty-servlet-7.3.0.v20110203.jar jetty-security-7.3.0.v2011020
+ 3.jar guice-3.0.jar javax.inject-1.jar aopalliance-1.0.jar guice-serv
+ let-3.0.jar jcip-annotations-1.0.jar uadetector-resources-2013.10.jar
+  uadetector-core-0.9.10.jar quality-check-1.3.jar jsr250-api-1.0.jar 
+ httpclient-4.3.6.jar httpcore-4.3.3.jar commons-logging-1.1.3.jar gua
+ va-gwt-18.0.jar jsr305-1.3.9.jar guava-18.0.jar mysql-connector-java-
+ 5.1.35.jar
+Created-By: Apache Maven 3.2.1
+Build-Jdk: 1.8.0_25
+Main-Class: main.java.qa.framework.main.Main
+
