@@ -114,6 +114,8 @@ public interface WebElements {
 	public String outputFile = "lib/output.txt";
 	public String proprtyFile = "properties.properties";
 	public String create_db_sql = "./src/main/scripts/create_db.sql";
+	public String log4jxml = "config/log4j.xml";
+
 
 	// JavaScripts
 	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"

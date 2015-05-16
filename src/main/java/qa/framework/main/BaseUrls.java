@@ -1,11 +1,15 @@
 package main.java.qa.framework.main;
 
+import main.java.qa.framework.utils.PropertyUtils;
+
+
 public enum BaseUrls implements WebElements {
-	  
+
+	
 	  GOOGLE("https://www.google.hu/"),
 	  YAHOO("https://www.yahoo.com/"),
 	  HBO("http://www.hbogo.hu/"),
-	  PLAYER("http://huvip.hbogo.eu");
+	  PLAYER(PropertyUtils.getProperty("baseUrl"));
 
 	  public String myUrls;
 
@@ -20,6 +24,6 @@ public enum BaseUrls implements WebElements {
 	  	public String toString(){
 	  		if (this.equals(PLAYER)) {	  			
 	  		}
-	  		return huvip;  			  	
+	  		return PropertyUtils.getProperty("MainContents");  			  	
 	  	}
 }

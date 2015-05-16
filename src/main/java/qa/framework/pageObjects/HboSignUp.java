@@ -3,6 +3,7 @@ package main.java.qa.framework.pageObjects;
 
 import main.java.qa.framework.main.BaseUrls;
 import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.utils.PropertyUtils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,13 +15,13 @@ public class HboSignUp extends TestBase {
 		super(driver); 
 	}
 	 
-	  private static String voucher = "AAABBB";
+	  private static String voucher = PropertyUtils.getProperty("voucher");
 
 	
-	public HboSignUp selectOperator() throws Exception{
+	public HboSignUp selectOperator(String operator) throws Exception{
 		
-			driver.get(BaseUrls.HBO.get() + "/group/offers");
-			Log.info(BaseUrls.HBO.get() + "/group/offers");
+			driver.get(BaseUrls.PLAYER.get() + "/group/offers");
+			Log.info(BaseUrls.PLAYER.get() + "/group/offers");
 
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
@@ -46,10 +47,10 @@ public class HboSignUp extends TestBase {
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");
-		    	try { if (isElementPresent(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"))) break; } catch (Exception e) {}
+		    	try { if (isElementPresent(By.id(operator))) break; } catch (Exception e) {}
 		    	Thread.sleep(1000);
 		    }
-		    driver.findElement(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26")).click();
+		    driver.findElement(By.id(operator)).click();
 		    
 		    for (int second = 0;; second++) {
 		    	if (second >= 60) fail("timeout");

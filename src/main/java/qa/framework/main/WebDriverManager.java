@@ -55,7 +55,7 @@ public class WebDriverManager implements WebElements {
 			int timeout) throws Exception {
 
 		WebDriverManager.browser = browser;
-		DOMConfigurator.configure("config/log4j.xml");
+		DOMConfigurator.configure(log4jxml);
 		Log.info("New driver instantiated");
 		Log.info(Platform.getCurrent());
 		Log.info(getBroswer());

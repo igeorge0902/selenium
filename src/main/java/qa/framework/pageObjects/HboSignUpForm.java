@@ -4,6 +4,7 @@ package main.java.qa.framework.pageObjects;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.testng.TestListeners;
 import main.java.qa.framework.testng.TestMethodListener;
+import main.java.qa.framework.utils.PropertyUtils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,11 @@ public class HboSignUpForm extends TestBase {
 	public HboSignUpForm(WebDriver driver){
 		super(driver); 
 	}
+	
+	private static String email = PropertyUtils.getProperty("email");
+	private static String email2 = PropertyUtils.getProperty("email2");
+	private static String password = PropertyUtils.getProperty("password");
+
 	  
 	public HboSignUpForm fillCustomerData() throws Exception{
 
@@ -27,7 +33,7 @@ public class HboSignUpForm extends TestBase {
 	    	Thread.sleep(1000);
 	    }	    
 		driver.findElement(By.name("EmailAddress")).clear();
-	    driver.findElement(By.name("EmailAddress")).sendKeys("gyorgy.gaspar@mediaux.biz");
+	    driver.findElement(By.name("EmailAddress")).sendKeys(email);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -35,7 +41,7 @@ public class HboSignUpForm extends TestBase {
 	    	Thread.sleep(1000);
 	    }	    
 	    driver.findElement(By.name("EmailAddressAgain")).clear();
-	    driver.findElement(By.name("EmailAddressAgain")).sendKeys("gyorgy.gaspar@mediaux.bi");
+	    driver.findElement(By.name("EmailAddressAgain")).sendKeys(email2);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -51,7 +57,7 @@ public class HboSignUpForm extends TestBase {
 	    	Thread.sleep(1000);
 	    }	    
 	    driver.findElement(By.name("Password")).clear();
-	    driver.findElement(By.name("Password")).sendKeys("common");
+	    driver.findElement(By.name("Password")).sendKeys(password);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
@@ -59,7 +65,7 @@ public class HboSignUpForm extends TestBase {
 	    	Thread.sleep(1000);
 	    }	    
 	    driver.findElement(By.name("PasswordAgain")).clear();
-	    driver.findElement(By.name("PasswordAgain")).sendKeys("common");
+	    driver.findElement(By.name("PasswordAgain")).sendKeys(password);
 	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");

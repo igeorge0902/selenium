@@ -78,16 +78,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 				Date EndDate = tc.getEndDate();
 				Date StartDate = tc.getStartDate();
 				XmlTest xmlTest = tc.getCurrentXmlTest();
-
-				System.out.println("Passed tests for suite '" + suiteName
-						+ "' is:" + tc.getPassedTests().getAllResults().size());
-				System.out.println("Failed tests for suite '" + suiteName
-						+ "' is:" + tc.getFailedTests().getAllResults().size());
-				System.out
-						.println("Skipped tests for suite '" + suiteName
-								+ "' is:"
-								+ tc.getSkippedTests().getAllResults().size());
-
+				
 				try {
 					TestBase.dao.generateMethodSummaryReport(suiteName,
 							testName);
@@ -99,7 +90,6 @@ public class CustomReportListener extends TestListenerAdapter implements
 			}
 
 		}
-		System.out.println();
 
 		try {
 			m_out = createWriter(outdir);
@@ -196,29 +186,11 @@ public class CustomReportListener extends TestListenerAdapter implements
 				if (r.values().size() > 0) {
 					m_out.println("<h3>" + testContext.getName() + "</h3>");
 				}
-				Reporter.log(
-						"Generating method detail for failed configurations...",
-						true);
-				resultDetail(testContext.getFailedConfigurations());
-				Reporter.log("Generating method detail for failed tests...",
-						true);
-				resultDetail(testContext.getFailedTests());
-				Reporter.log(
-						"Generating method detail for skipped configurations...",
-						true);
-				resultDetail(testContext.getSkippedConfigurations());
-				Reporter.log("Generating method detail for skipped tests...",
-						true);
-				resultDetail(testContext.getSkippedTests());
-				Reporter.log("Generating method detail for passed tests...",
-						true);
-				resultDetail(testContext.getPassedTests());
 			}
 		}
 	}
 
 	public String convertLongToCanonicalLengthOfTime(long timeLength) {
-		System.out.println("Time passed in is: " + timeLength);
 		if (timeLength >= 86400000) {
 			throw new IllegalArgumentException(
 					"Duration must be greater than zero or less than 24 hours!");

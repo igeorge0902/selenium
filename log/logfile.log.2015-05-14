@@ -1,0 +1,35 @@
+[14/05/15 11:42:02:002 CEST]  INFO log4j.Logger: properties.properties is loaded.
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: CREATE DATABASE IF NOT EXISTS feedback;
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:  
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: USE feedback;
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:  
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: CREATE TABLE IF NOT EXISTS HTML_reports 
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: (
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     id int(11) UNSIGNED not null auto_increment,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	index_ blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	output blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	overview blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	reportng_css blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	reportng_js blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	sorttable blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_groups blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_test1 blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_test2 blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_test3 blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_test4 blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suite_test5 blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	suites blob,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	PRIMARY KEY (id))
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	ENGINE = MyISAM DEFAULT COLLATE utf8_bin; 
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:  
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: CREATE TABLE IF NOT EXISTS SUITE_MethodSummaryReport (
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     id int(11) not null auto_increment,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     SUITE_NAME VARCHAR(255),
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     TEST_NAME VARCHAR(255), 
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     ITEST_CONTEXT VARCHAR(255), 
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     TEST_RESULTS VARCHAR(40),
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	TIME_ timestamp,    
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	COMMENTS VARCHAR(255),
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger: 	testrun_id int(11) UNSIGNED not null,
+[14/05/15 11:42:03:003 CEST]  INFO log4j.Logger:     PRIMARY KEY (id), 
+[14/05/15 11:43:08:008 CEST]  INFO log4j.Logger: properties.properties is loaded.

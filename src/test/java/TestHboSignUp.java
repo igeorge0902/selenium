@@ -2,6 +2,7 @@ package test.java;
 
 
 
+import main.java.qa.framework.main.BaseUrls;
 import main.java.qa.framework.main.ElementScreenshot;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.pageObjects.HboSignUp;
@@ -25,15 +26,15 @@ public class TestHboSignUp extends TestBase{
 	  public TestHboSignUp (int numberOfTimes) {
 		    m_numberOfTimes = numberOfTimes;
 		}
-	  
+  @Parameters ({"operator"})	  
   @Test 
-  public static void testSignupFail() throws Exception{
+  public static void testSignupFail(String operator) throws Exception{
 		  
 		HboSignUp SignUpPage = new HboSignUp(driver); 
 		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
 		
 		//select operator
-		SignUpPage.selectOperator();
+		SignUpPage.selectOperator(operator);
 		
 		//enter data
 		SignUpForm.fillCustomerData();
@@ -45,6 +46,25 @@ public class TestHboSignUp extends TestBase{
 				
 		ElementScreenshot.captureElementScreenshot(driver.findElement(By.xpath(".//*[@id='operatorTypeNormal']/div[2]")));
 				
+ 
+	}
+  
+  @Parameters ({"operator"})	  
+  @Test 
+  public static void testSignupSuccess(String operator) throws Exception{
+		  
+		HboSignUp SignUpPage = new HboSignUp(driver); 
+		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
+		
+		//select operator
+		SignUpPage.selectOperator(operator);
+		
+		//enter data
+		SignUpForm.fillCustomerData();
+		
+		//submit form
+		SignUpForm.submitForm();
+		TestBase.assertEquals(driver.getCurrentUrl(),(BaseUrls.PLAYER.get() + OffersScreen));
  
 	}
 }

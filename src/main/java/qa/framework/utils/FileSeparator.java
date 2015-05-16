@@ -8,6 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
 
@@ -15,6 +16,11 @@ public class FileSeparator extends TestBase implements WebElements {
 
 	public static void main(String[] args) throws FileNotFoundException,
 			IOException {
+
+		PropertyUtils.loadPropertyFile(proprtyFile);
+		String imageFile = PropertyUtils.getProperty("imageFile");
+		String imageFile_ = Paths.get(imageFile).toFile().toString();
+		System.out.println(imageFile_);
 
 		String userHome = System.getProperty("user.home");
 		String screenShotsFolder = userHome + File.separator + "Documents"

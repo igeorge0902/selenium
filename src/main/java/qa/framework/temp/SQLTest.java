@@ -18,7 +18,7 @@ public class SQLTest extends TestBase implements WebElements {
 		dao.runSqlScript(create_db_sql);
 		dao.insertReport();
 		dao.generateMethodSummaryReport("test", "hello");
-
+		 
 	}
 
 }

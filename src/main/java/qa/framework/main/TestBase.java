@@ -54,12 +54,13 @@ public class TestBase extends Verify implements WebElements {
 
 	protected static WebElement element = null;
 
-	public static String dbDriverClass = PropertyUtils
-			.getProperty("dbDriverClass");
+	public static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
 	public static String dbUrl = PropertyUtils.getProperty("dbUrl");
 	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public static String testngXml = PropertyUtils.getProperty("testngXml");
+	public static String imageFile = PropertyUtils.getProperty("imageFile");
+
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
@@ -73,7 +74,7 @@ public class TestBase extends Verify implements WebElements {
 	}
 
 	public TestBase() {
-		DOMConfigurator.configure("config/log4j.xml");
+		DOMConfigurator.configure(log4jxml);
 	}
 
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -102,9 +103,16 @@ public class TestBase extends Verify implements WebElements {
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		}
-
-		dao.SetUpDataBase();
-		dao.runSqlScript(create_db_sql);
+		
+		try {
+		
+			dao.SetUpDataBase();
+			dao.runSqlScript(create_db_sql);
+	
+		}catch (Exception e) {
+		
+		Log.info(e.getLocalizedMessage());
+		}
 	}
 
 	@AfterClass
@@ -116,7 +124,7 @@ public class TestBase extends Verify implements WebElements {
 			dao.generateMethodSummaryReport(CustomReportListener.suiteName,
 					CustomReportListener.testName);
 		} catch (Exception e) {
-			e.printStackTrace();
+			Log.info(e.getMessage());
 		}
 
 		// TODO: copy report output to apache docs folder, and replace the

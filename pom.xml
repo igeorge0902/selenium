@@ -14,9 +14,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	    <selenium.version>2.45.0</selenium.version>
     	<testng.version>6.8.21</testng.version>
+    	<java.ext.dirs>${project.build.directory}/libs</java.ext.dirs>
 	</properties>
        
-       <dependencies>
+<dependencies>
             
              <dependency>
    				<groupId>org.testng</groupId>
@@ -56,39 +57,7 @@
             	<artifactId>log4j</artifactId>
             	<version>1.2.17</version>
            	</dependency>
-           	  
-  <!--         	  
-           	  <dependency>
-			    <groupId>org.apache.logging.log4j</groupId>
-			    <artifactId>log4j-api</artifactId>
-			    <version>2.2</version>
-			  </dependency>
-			  <dependency>
-			    <groupId>org.apache.logging.log4j</groupId>
-			    <artifactId>log4j-core</artifactId>
-			    <version>2.2</version>
-			  </dependency>
-			    <dependency>
-			    <groupId>org.apache.logging.log4j</groupId>
-			    <artifactId>log4j-1.2-api</artifactId>
-			    <version>2.2</version>
-			  </dependency>
-			    <dependency>
-			    <groupId>org.apache.logging.log4j</groupId>
-			    <artifactId>log4j-jcl</artifactId>
-			    <version>2.2</version>
-			  </dependency>
-			    <dependency>
-			    <groupId>org.apache.logging.log4j</groupId>
-			    <artifactId>log4j-slf4j-impl</artifactId>
-			    <version>2.2</version>
-			  </dependency>
-			  <dependency>
-				<groupId>slide</groupId>
-				<artifactId>log4jlogger</artifactId>
-				<version>2.0</version>
-			</dependency>
-     -->      	
+           	       	
            	<dependency>
             	<groupId>org.apache.poi</groupId>
             	<artifactId>poi</artifactId>
@@ -222,78 +191,37 @@
    	</profile>
   </profiles>
              
- <build>
-	<directory>target</directory>
-	<defaultGoal>install</defaultGoal>
-	<finalName>${project.artifactId}-${project.version}</finalName>
-	
-	<plugins>
-	
+  <build>
+    <plugins>
+      
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
+        <version>3.1</version>
       </plugin>
       
-   	  <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <version>1.9.1</version>
+  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
         <executions>
           <execution>
-            <id>add-resource</id>
-            <phase>generate-resources</phase>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
             <goals>
-              <goal>add-resource</goal>
+              <goal>copy-dependencies</goal>
             </goals>
-            <configuration>
-              <resources>
-                <resource>
-                  <directory>lib</directory>
-                  <targetPath>lib</targetPath>
-                </resource>
-                <resource>
-                  <directory>tessdata</directory>
-                  <targetPath>tessdata</targetPath>
-                </resource>
-                <resource>
-                  <directory>config</directory>
-                  <targetPath>config</targetPath>
-                </resource>
-                <resource>
-                  <directory>scripts</directory>
-                  <targetPath>scripts</targetPath>
-                </resource>               
-              </resources>
-            </configuration>
+			<configuration>
+              <outputDirectory>${basedir}/target/libs</outputDirectory>              
+            </configuration>   
           </execution>
         </executions>
       </plugin>
-    
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-enforcer-plugin</artifactId>
-      <executions>
-        <execution>
-          <id>enforce-versions</id>
-          <goals>
-            <goal>enforce</goal>
-          </goals>
-          <configuration>
-            <rules>
-              <requireJavaVersion>
-                <version>1.8</version>
-              </requireJavaVersion>
-            </rules>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
-			
-	<plugin>
+      
+      <plugin>
        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.6</version>	
@@ -310,20 +238,20 @@
 			    <addExtensions/>
 			    <classpathLayoutType/>
 			    <classpathMavenRepositoryLayout/>
-			    <classpathPrefix/>
+			    <classpathPrefix>libs/</classpathPrefix>
 			    <customClasspathLayout/>
 				<mainClass>main.java.qa.framework.main.Main</mainClass>
 			    <packageName/>
 			    <useUniqueVersions>true</useUniqueVersions>
 			  </manifest>
 			  <manifestEntries/>
-        <!-- <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>	-->
+        			<!-- <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile> -->
         	  <pomPropertiesFile/>
 			</archive>
         </configuration>
-		</plugin>			
- 
-        <plugin>
+		</plugin>
+		
+       <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.5</version>
@@ -341,9 +269,133 @@
                    </systemProperties>
                 </properties>
             </configuration>
-        </plugin>       
+        </plugin> 
         
-    <plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/</outputDirectory>
+              <resources>          
+                    <resource>
+        				<directory>${basedir}</directory>
+					        <includes>
+					           	<include>testng.xml</include>
+					           	<include>properties.properties</include>
+					           	<include>**.apk</include>
+					        </includes>
+    				</resource>                 
+              </resources>              
+            </configuration>            
+          </execution>
+          
+          <execution>
+            <id>copy-config</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/config</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/config</directory>
+   					    <includes>
+    					    <include>log4j.xml</include>
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-libs</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/libs</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/libs</directory>
+   					    <includes>
+    					    <include>**.jar</include>
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-lib</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/lib</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/lib</directory>                
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-scripts</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/scripts</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/scripts</directory>
+   					    <includes>
+    					    <include>**.sql</include>
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-tessdata</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/tessdata</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/tessdata/</directory>                 
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+                   
+        </executions>
+      </plugin>
+      
+          <plugin>
     	<groupId>org.apache.maven.plugins</groupId>
     	<artifactId>maven-eclipse-plugin</artifactId>
  		<configuration>
@@ -371,8 +423,28 @@
           <nohelp>false</nohelp>
         </configuration>
       </plugin>
-        
-		</plugins>
-	</build>
+      
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>saucelabs-repository</id>
+      <url>https://repository-saucelabs.forge.cloudbees.com/release</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    
+    <repository>
+		<id>in-project</id>
+		<name>In Project Repo</name>
+		<url>file://${project.basedir}/libs</url>
+	</repository>
+    
+  </repositories>
 </project>
 

@@ -57,7 +57,7 @@ public class PropertyUtils extends TestBase {
 
 		{
 
-			Log.info(propertyKey + "is missing!");
+			Log.info("The property key: " + propertyKey + " is missing!");
 
 		}
 

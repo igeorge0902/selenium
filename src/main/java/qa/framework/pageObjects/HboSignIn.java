@@ -5,6 +5,7 @@ package main.java.qa.framework.pageObjects;
 import main.java.qa.framework.main.BaseUrls;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
+import main.java.qa.framework.utils.PropertyUtils;
 import main.java.qa.framework.utils.WaitTool;
 
 import org.openqa.selenium.By;
@@ -19,8 +20,8 @@ public class HboSignIn extends TestBase implements WebElements{
 		super(driver); 
 	}
 
-	private static String email = "";
-	private static String password = "";
+	private static String email = PropertyUtils.getProperty("email");
+	private static String password = PropertyUtils.getProperty("password");
 
 		
 	public HboSignIn selectOperator(String operator) throws Exception{
@@ -48,7 +49,7 @@ public class HboSignIn extends TestBase implements WebElements{
 	    	Thread.sleep(1000);
 	    }	
 	    
-	    driver.findElement(By.id("OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26")).click();
+	    driver.findElement(By.id(operator)).click();
 	    	    
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");

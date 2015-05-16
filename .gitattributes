@@ -4,6 +4,7 @@
 .settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 .settings/org.eclipse.jdt.core.prefs -text
 .settings/org.eclipse.m2e.core.prefs -text
+/README.md -text
 ScreenShots/Firefox-2015-3-14-17-28-37-521.png -text svneol=unset#image/png
 ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
 config/log4j.xml -text svneol=unset#text/plain
@@ -19,8 +20,12 @@ lib/IEDriverServer32.exe.svntmp -text
 lib/chromedriver -text
 lib/chromedriver.exe -text
 lib/episode_urls.txt -text svneol=unset#text/plain
+lib/ghost4j-0.5.1.jar -text svneol=unset#application/zip
+lib/jai_imageio.jar -text svneol=unset#application/zip
+lib/jna.jar -text svneol=unset#application/java-archive
 lib/output.txt -text svneol=unset#text/plain
 lib/series_urls.txt -text svneol=unset#text/plain
+lib/tess4j.jar -text svneol=unset#application/java-archive
 lib/urls.txt -text svneol=unset#text/plain
 lib/win32-x86-64/gsdll64.dll -text
 lib/win32-x86-64/liblept168.dll -text
@@ -28,8 +33,11 @@ lib/win32-x86-64/libtesseract302.dll -text
 lib/win32-x86/gsdll32.dll -text
 lib/win32-x86/liblept168.dll -text
 lib/win32-x86/libtesseract302.dll -text
+libs/xml-apis-1.4.01.jar -text
 log/logfile.log -text
 log/logfile.log.2015-04-22 -text
+log/logfile.log.2015-05-04 -text
+log/logfile.log.2015-05-14 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 scripts/create_db.sql -text
@@ -110,6 +118,13 @@ tessdata/eng.traineddata -text
 tessdata/osd.traineddata -text
 tessdata/pdf.ttf -text
 tessdata/pdf.ttx -text
+tessdata/screenshots/eurotext.bmp -text svneol=unset#image/x-ms-bmp
+tessdata/screenshots/eurotext.pdf -text svneol=unset#application/pdf
+tessdata/screenshots/eurotext.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext.tif -text svneol=unset#image/tiff
+tessdata/screenshots/eurotext_deskew.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext_unlv.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext_unlv.uzn -text
 test-output/CustomReport.html -text svneol=unset#text/plain
 test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.html -text svneol=unset#text/plain
 test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.xml -text svneol=unset#text/plain
