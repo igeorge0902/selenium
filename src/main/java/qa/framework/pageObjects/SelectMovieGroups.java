@@ -43,6 +43,8 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 
 	public SelectMovieGroups groups() throws Exception {
 
+		Actions actions = new Actions(driver);
+
 		if (!driver.getCurrentUrl().equals(
 				driver.getCurrentUrl().equals(
 						BaseUrls.PLAYER.get() + OffersScreen))) {
@@ -55,6 +57,14 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 
 		TestBase.isElementPresent(By.id(Movies));
 
+		try {
+			WebElement movieGroup = driver.findElement(By.id("mCSB_1"));
+			actions.moveToElement(movieGroup).build().perform();
+
+		} catch (Exception e) {
+			Log.info(e.getMessage());
+		}
+
 		TestBase.clickLinkByHref(PropertyUtils.getProperty("movieCategory"));
 
 		// wait for page to load
@@ -64,8 +74,6 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 
 		// get url list as Iterator<String> list from TestBase.contents_()
 		// method
-		// Iterator<String> list = TestBase.contents_(NormalView);
-
 		List<String> urslList = TestBase.contentsList(NormalView);
 		TestBase.deleteFile(urlsFile);
 		TestBase.createFile(urlsFile);
