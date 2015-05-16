@@ -70,7 +70,6 @@ src/main/java/qa/framework/temp/TesseractExample.java -text
 src/main/java/qa/framework/testng/CustomException.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/CustomReportListener.java -text
 src/main/java/qa/framework/testng/CustomTestListener.java -text
-src/main/java/qa/framework/testng/CustomVerification.java -text
 src/main/java/qa/framework/testng/ExpectedExceptions.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/LoggingListener.java -text
 src/main/java/qa/framework/testng/MethodInterceptor.java -text svneol=unset#text/plain

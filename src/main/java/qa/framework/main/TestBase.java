@@ -132,7 +132,6 @@ public class TestBase extends Verify implements WebElements {
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl,
 			dbUserName, dbPassWord);
-	public static Actions actions = new Actions(driver);
 	public JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static void currentPlatform() {
@@ -818,6 +817,7 @@ public class TestBase extends Verify implements WebElements {
 	public static void clickLinkByHref(String href) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		Actions actions = new Actions(driver);
 
 		List<WebElement> menupoints = driver.findElement(By.id("menu"))
 				.findElements(By.tagName("a"));

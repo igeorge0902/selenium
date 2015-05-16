@@ -134,7 +134,7 @@
 				<methods>
 					<exclude name="testSignInSuccess" />
 					<exclude name="testMouseHover" />
-					<include name="testSelectContentsPlay"></exclude>
+					<include name="testSelectContentsPlay"/>
 				</methods>
 			</class>
 			<class name="test.java.TestSingleContent">
