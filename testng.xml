@@ -122,7 +122,7 @@
 		    <class name="test.java.TestHboSignUp">
 				<methods>
 					<exclude name="testSignupFail" />
-					<include name="testSignupSuccess" />
+					<exclude name="testSignupSuccess" />
 				</methods>
 			</class>
 		    <class name="test.java.TestHboSignIn">
@@ -134,7 +134,7 @@
 				<methods>
 					<exclude name="testSignInSuccess" />
 					<exclude name="testMouseHover" />
-					<exclude name="testSelectContentsPlay"></exclude>
+					<include name="testSelectContentsPlay"></exclude>
 				</methods>
 			</class>
 			<class name="test.java.TestSingleContent">

@@ -43,10 +43,12 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 
 	public SelectMovieGroups groups() throws Exception {
 
-		Actions actions = new Actions(driver);
-		PlayMainContent PlayMainContent = new PlayMainContent(driver);
+		if (!driver.getCurrentUrl().equals(
+				driver.getCurrentUrl().equals(
+						BaseUrls.PLAYER.get() + OffersScreen))) {
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
+		}
 
 		WaitTool.waitForElement(driver, By.id(HeaderButton), 10);
 		driver.findElement(By.id(HeaderButton)).click();
