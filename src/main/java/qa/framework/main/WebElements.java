@@ -59,6 +59,8 @@ public interface WebElements {
 	public static String Movies = "categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1";
 	public static String CustomerMenu = "menucat_settings_customerMenu";
 	public static String OffersScreen = "/group/offers";
+	public static String SeasonChooser = "season_chooser";
+	public static String SeasonContainer = "seasonContainer";
 
 	// languages
 	public static String HU = "hu-HU";
@@ -109,13 +111,13 @@ public interface WebElements {
 	public Path textFile = Paths.get("lib/urls.txt");
 	public Path textFile2 = Paths.get("lib/output.txt");
 	public String urlsFile = "lib/urls.txt";
+	public String seasonUrlsFile = "lib/season_urls.txt";
 	public String seriesUrlsFile = "lib/series_urls.txt";
 	public String episodeUrlsFile = "lib/episode_urls.txt";
 	public String outputFile = "lib/output.txt";
 	public String proprtyFile = "properties.properties";
 	public String create_db_sql = "./src/main/scripts/create_db.sql";
 	public String log4jxml = "config/log4j.xml";
-
 
 	// JavaScripts
 	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"

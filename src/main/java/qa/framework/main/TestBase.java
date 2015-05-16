@@ -54,13 +54,13 @@ public class TestBase extends Verify implements WebElements {
 
 	protected static WebElement element = null;
 
-	public static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
+	public static String dbDriverClass = PropertyUtils
+			.getProperty("dbDriverClass");
 	public static String dbUrl = PropertyUtils.getProperty("dbUrl");
 	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public static String testngXml = PropertyUtils.getProperty("testngXml");
 	public static String imageFile = PropertyUtils.getProperty("imageFile");
-
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
@@ -76,8 +76,6 @@ public class TestBase extends Verify implements WebElements {
 	public TestBase() {
 		DOMConfigurator.configure(log4jxml);
 	}
-
-	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	@BeforeClass
 	public void setUp(ITestContext context) throws Exception {
@@ -103,15 +101,15 @@ public class TestBase extends Verify implements WebElements {
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		}
-		
+
 		try {
-		
+
 			dao.SetUpDataBase();
 			dao.runSqlScript(create_db_sql);
-	
-		}catch (Exception e) {
-		
-		Log.info(e.getLocalizedMessage());
+
+		} catch (Exception e) {
+
+			Log.info(e.getLocalizedMessage());
 		}
 	}
 
@@ -134,6 +132,8 @@ public class TestBase extends Verify implements WebElements {
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl,
 			dbUserName, dbPassWord);
+	public static Actions actions = new Actions(driver);
+	public JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static void currentPlatform() {
 		Platform.getCurrent();
@@ -620,6 +620,7 @@ public class TestBase extends Verify implements WebElements {
 				e1.printStackTrace();
 			}
 		}
+		Log.info(newfile + "has been written with the " + list);
 	}
 
 	/**
@@ -816,6 +817,8 @@ public class TestBase extends Verify implements WebElements {
 
 	public static void clickLinkByHref(String href) {
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
 		List<WebElement> menupoints = driver.findElement(By.id("menu"))
 				.findElements(By.tagName("a"));
 
@@ -824,6 +827,24 @@ public class TestBase extends Verify implements WebElements {
 		{
 			if (webElement.getAttribute("href").contains(href)) {
 
+				try {
+					// **scroll into view of the element (one of them should
+					// work)
+					js.executeScript("arguments[0].scrollIntoView(true);",
+							webElement);
+					Thread.sleep(500);
+
+					js.executeScript("javascript:window.scrollBy(250,350)");
+
+					actions.moveToElement(webElement);
+					actions.perform();
+
+					// **
+
+				} catch (Exception e) {
+					Log.info(e.getMessage());
+
+				}
 				webElement.click();
 
 			}
