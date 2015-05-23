@@ -10,7 +10,6 @@ import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
@@ -34,10 +33,6 @@ import main.java.qa.framework.utils.WaitTool;
 		TestMethodListener.class })
 public class PlaySingleMainContent extends TestBase implements WebElements {
 
-	public PlaySingleMainContent(WebDriver driver) {
-		super(driver);
-	}
-
 	private final String Firefox = "Firefox";
 
 	public PlaySingleMainContent playMainContent(String contents)
@@ -51,7 +46,7 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 		driver.get(url);
 
 		// start playback
-		MouseHover MouseHover = new MouseHover(driver);
+		MouseHover MouseHover = new MouseHover();
 		MouseHover.mouseHover();
 		Thread.sleep(5000);
 
@@ -216,6 +211,6 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 
 		Thread.sleep(5000);
 
-		return new PlaySingleMainContent(driver);
+		return new PlaySingleMainContent();
 	}
 }

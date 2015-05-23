@@ -22,7 +22,6 @@ import main.java.qa.framework.utils.deleteLines;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
@@ -37,14 +36,10 @@ import java.util.regex.Pattern;
 		TestMethodListener.class })
 public class SelectSeries extends TestBase implements WebElements {
 
-	public SelectSeries(WebDriver driver) {
-		super(driver);
-	}
-
 	public SelectSeries selectSeries() throws Exception {
 
 		Actions actions = new Actions(driver);
-		PlayMainContent PlayMainContent = new PlayMainContent(driver);
+		PlayMainContent PlayMainContent = new PlayMainContent();
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -91,7 +86,7 @@ public class SelectSeries extends TestBase implements WebElements {
 		TestBase.createFile(seasonUrlsFile);
 		TestBase.writeFile(seasonUrlsFile, urslListofSeasons);
 
-		return new SelectSeries(driver);
+		return new SelectSeries();
 	}
 
 }

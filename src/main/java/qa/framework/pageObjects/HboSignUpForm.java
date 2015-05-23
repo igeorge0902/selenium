@@ -7,17 +7,12 @@ import main.java.qa.framework.testng.TestMethodListener;
 import main.java.qa.framework.utils.PropertyUtils;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 
 @Listeners({ TestListeners.class,
 		main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class,
 		TestMethodListener.class })
 public class HboSignUpForm extends TestBase {
-
-	public HboSignUpForm(WebDriver driver) {
-		super(driver);
-	}
 
 	private static String email = PropertyUtils.getProperty("email");
 	private static String email2 = PropertyUtils.getProperty("email2");
@@ -114,7 +109,7 @@ public class HboSignUpForm extends TestBase {
 		}
 		driver.findElement(By.id("Terms_theme")).click();
 
-		return new HboSignUpForm(driver);
+		return new HboSignUpForm();
 	}
 
 	public HboSignUpForm submitForm() throws Exception {
@@ -122,14 +117,14 @@ public class HboSignUpForm extends TestBase {
 				.click();
 		TestBase.assertEquals(driver.getCurrentUrl(),
 				(BaseUrls.PLAYER.get() + OffersScreen));
-		return new HboSignUpForm(driver);
+		return new HboSignUpForm();
 	}
 
 	public HboSignUpForm newDevice() {
 		driver.findElement(By.id("newDeviceInput")).clear();
 		driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
 		driver.findElement(By.cssSelector("button.button_submit")).click();
-		return new HboSignUpForm(driver);
+		return new HboSignUpForm();
 	}
 
 }

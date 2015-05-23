@@ -37,10 +37,6 @@ import java.util.regex.Pattern;
 		TestMethodListener.class })
 public class SelectMovieGroups extends TestBase implements WebElements {
 
-	public SelectMovieGroups(WebDriver driver) {
-		super(driver);
-	}
-
 	public SelectMovieGroups groups() throws Exception {
 
 		Actions actions = new Actions(driver);
@@ -56,14 +52,15 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 		driver.findElement(By.id(HeaderButton)).click();
 
 		TestBase.isElementPresent(By.id(Movies));
+		WebElement movieGroup = driver.findElement(By.id("mCSB_1"));
+		actions.moveToElement(movieGroup).build().perform();
 
-		try {
-			WebElement movieGroup = driver.findElement(By.id("mCSB_1"));
-			actions.moveToElement(movieGroup).build().perform();
-
-		} catch (Exception e) {
-			Log.info(e.getMessage());
-		}
+		/*
+		 * try { WebElement movieGroup = driver.findElement(By.id("mCSB_1"));
+		 * actions.moveToElement(movieGroup).build().perform();
+		 * 
+		 * } catch (Exception e) { Log.info(e.getMessage()); }
+		 */
 
 		TestBase.clickLinkByHref(PropertyUtils.getProperty("movieCategory"));
 
@@ -84,7 +81,7 @@ public class SelectMovieGroups extends TestBase implements WebElements {
 		 * arguments = new String[] {"123"}; deleteLines.main(arguments);
 		 */
 
-		return new SelectMovieGroups(driver);
+		return new SelectMovieGroups();
 	}
 
 }

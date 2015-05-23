@@ -60,14 +60,13 @@ public class TestBase extends Verify implements WebElements {
 	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public static String testngXml = PropertyUtils.getProperty("testngXml");
-	public static String imageFile = PropertyUtils.getProperty("imageFile");
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
 	 * is returned in {@link WebDriverManager.class}, where it will be
 	 * instantiated with {@value browser} and {@value url} params.
 	 */
-	protected static WebDriver driver;
+	protected static WebDriver driver = null;
 
 	public TestBase(WebDriver driver) {
 		TestBase.driver = WebDriverManager.driver;
@@ -429,15 +428,21 @@ public class TestBase extends Verify implements WebElements {
 	}
 
 	/**
-	 * Check the actual language by a given text in the page source.
+	 * Check language by meta tag.
 	 * 
-	 * @param string
-	 * @return isTextPresent(string)
-	 * @throws Exception
+	 * @param property = the given language code.
+	 * @param seconds
+	 * @return
 	 */
-
-	public static boolean isLanguage(String string) throws Exception {
-		return isTextPresent(string);
+	public static boolean languageMeta(String property, int seconds) {
+		WebElement language;
+		
+		language = WaitTool.waitForElementPresent(driver, By.cssSelector("meta[content='"+property+"']"), seconds);		
+		
+		if (language != null) {
+			return true;
+			}
+	return false;
 	}
 
 	/**

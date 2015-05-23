@@ -13,17 +13,16 @@ import org.testng.Reporter;
 import org.testng.annotations.*;
 
 @SuppressWarnings("unused")
-@Listeners({ TestListeners.class, CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class })
+@Listeners({ TestListeners.class, CaptureScreenshotOnFailureListener.class,
+		TestMethodListener.class, LoggingListener.class })
 public class TestLanguage extends TestBase {
 
-	@Parameters({ "czech", "slovak", "czeMeta", "sloMeta" })
+	@Parameters({ "english", "engMeta" })
 	@Test(description = "ChangeLanguage")
-	
-	public void testLanguageChange(String czech, String slovak, String czeMeta, String sloMeta) throws Exception {
-		LanguageChange LanguageChange = new LanguageChange(driver);
+	public void testLanguageChange(String english, String engMeta) throws Exception {
+		LanguageChange LanguageChange = new LanguageChange();
 
-		LanguageChange.changeLanguage(czech, slovak, czeMeta, sloMeta);
+		LanguageChange.changeLanguage(english, engMeta);
 	}
-	
 
 }

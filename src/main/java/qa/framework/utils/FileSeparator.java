@@ -17,11 +17,6 @@ public class FileSeparator extends TestBase implements WebElements {
 	public static void main(String[] args) throws FileNotFoundException,
 			IOException {
 
-		PropertyUtils.loadPropertyFile(proprtyFile);
-		String imageFile = PropertyUtils.getProperty("imageFile");
-		String imageFile_ = Paths.get(imageFile).toFile().toString();
-		System.out.println(imageFile_);
-
 		String userHome = System.getProperty("user.home");
 		String screenShotsFolder = userHome + File.separator + "Documents"
 				+ File.separator + "Tests" + File.separator;

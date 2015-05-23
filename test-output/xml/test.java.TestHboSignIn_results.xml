@@ -4,31 +4,73 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="64,153">
+           time="45,018">
   <properties />
-            <testcase name="testSignInSuccess" time="64,153" classname="test.java.TestHboSignIn">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="testSignInSuccess" time="45,018" classname="test.java.TestHboSignIn">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;meta[content=&apos;hu-HU&apos;]&quot;}
+Command duration or timeout: 40.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;igeorge.local&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d4a3aaa9-89e6-9e45-b6d0-3ba5bd028854
+*** Element info: {Using=css selector, value=meta[content=&apos;hu-HU&apos;]}"
               >
-<![CDATA[java.lang.NullPointerException
-  main.java.qa.framework.pageObjects.HboSignIn.checkLanguage(HboSignIn.java:163)
-  test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:33)
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"meta[content='hu-HU']"}
+Command duration or timeout: 40.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d4a3aaa9-89e6-9e45-b6d0-3ba5bd028854
+*** Element info: {Using=css selector, value=meta[content='hu-HU']}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+  org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy8.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+  com.sun.proxy.$Proxy9.findElement(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+  main.java.qa.framework.main.TestBase.languageMeta(TestBase.java:431)
+  main.java.qa.framework.pageObjects.HboSignIn.checkLanguage(HboSignIn.java:153)
+  test.java.TestHboSignIn.testSignInSuccess(TestHboSignIn.java:32)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
   org.testng.TestRunner.privateRun(TestRunner.java:767)
   org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-  org.testng.SuiteRunner.run(SuiteRunner.java:254)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
   org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
   org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
   org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
@@ -37,6 +79,13 @@
   org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
   org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
   org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"meta[content='hu-HU']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous5178966505238082635webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+  <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/_v/64sw74mj5pjb91nb05vftygh0000gn/T/anonymous5178966505238082635webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
       </failure>
 

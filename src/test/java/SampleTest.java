@@ -15,7 +15,7 @@ public class SampleTest extends TestBase {
 	@Parameters({ "operator" })
 	@Test(groups = { "signin" }, description = "HBO login")
 	public void testSignInSuccess(String operator) throws Exception {
-		HboSignIn SignInPage = new HboSignIn(driver);
+		HboSignIn SignInPage = new HboSignIn();
 
 		// select operator
 		SignInPage.selectOperator(operator);
@@ -34,7 +34,7 @@ public class SampleTest extends TestBase {
 
 	@Test
 	public void testMouseHover() throws Exception {
-		MouseHover MouseHover = new MouseHover(driver);
+		MouseHover MouseHover = new MouseHover();
 
 		MouseHover.mouseHover();
 
@@ -42,7 +42,7 @@ public class SampleTest extends TestBase {
 
 	@Test
 	public void testSelectContentsPlay() throws Exception {
-		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups(driver);
+		SelectMovieGroups SelectMovieGroups = new SelectMovieGroups();
 
 		// select contents
 		SelectMovieGroups.groups();

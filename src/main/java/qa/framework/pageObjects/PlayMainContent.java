@@ -4,7 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
@@ -23,10 +22,6 @@ import main.java.qa.framework.utils.WaitTool;
 		TestMethodListener.class })
 public class PlayMainContent extends TestBase implements WebElements {
 
-	public PlayMainContent(WebDriver driver) {
-		super(driver);
-	}
-
 	public PlayMainContent playMainContent(String urls) throws Exception,
 			CustomException {
 
@@ -35,7 +30,7 @@ public class PlayMainContent extends TestBase implements WebElements {
 		driver.get(urls);
 
 		// start playback
-		MouseHover MouseHover = new MouseHover(driver);
+		MouseHover MouseHover = new MouseHover();
 		MouseHover.mouseHover();
 		Thread.sleep(5000);
 
@@ -198,6 +193,6 @@ public class PlayMainContent extends TestBase implements WebElements {
 
 		Thread.sleep(5000);
 
-		return new PlayMainContent(driver);
+		return new PlayMainContent();
 	}
 }

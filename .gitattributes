@@ -35,6 +35,7 @@ log/logfile.log -text
 log/logfile.log.2015-04-22 -text
 log/logfile.log.2015-05-04 -text
 log/logfile.log.2015-05-14 -text
+log/logfile.log.2015-05-16 -text
 log/logfile.log.2015-05-20 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
@@ -287,6 +288,10 @@ test-output/bullet_point.png -text svneol=unset#image/png
 test-output/collapseall.gif -text svneol=unset#image/gif
 test-output/emailable-report.html -text
 test-output/failed.png -text svneol=unset#image/png
+test-output/html/ScreenShots/Firefox-2015-4-19-20-15-52-482.png -text
+test-output/html/ScreenShots/Firefox-2015-4-19-20-23-39-344.png -text
+test-output/html/ScreenShots/Firefox-2015-4-19-20-29-6-261.png -text
+test-output/html/ScreenShots/Firefox-2015-4-19-20-37-18-582.png -text
 test-output/html/ScreenShots/Firefox-2015-4-20-16-28-29-481.png -text svneol=unset#image/png
 test-output/html/ScreenShots/Firefox-2015-4-20-16-31-11-526.png -text svneol=unset#image/png
 test-output/html/ScreenShots/Firefox-2015-4-20-16-35-26-90.png -text svneol=unset#image/png
@@ -305,6 +310,8 @@ test-output/html/ScreenShots/firefox--2015-4-22-12-22-48-424.png -text svneol=un
 test-output/html/ScreenShots/firefox--2015-4-22-12-28-33-766.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox--2015-4-22-14-57-4-620.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox--2015-4-22-15-1-20-165.png -text svneol=unset#image/png
+test-output/html/ScreenShots/firefox--2015-4-23-12-7-44-103.png -text
+test-output/html/ScreenShots/firefox--2015-4-23-13-18-33-841.png -text
 test-output/html/ScreenShots/firefox-2015-4-22-11-11-26-481.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox-2015-4-22-11-51-0-486.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox-2015-4-22-11-57-47-585.png -text svneol=unset#image/png
@@ -313,6 +320,14 @@ test-output/html/ScreenShots/firefox-2015-4-22-13-58-54-989.png -text svneol=uns
 test-output/html/ScreenShots/firefox-2015-4-22-14-5-47-174.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox-2015-4-22-14-57-9-482.png -text svneol=unset#image/png
 test-output/html/ScreenShots/firefox-2015-4-22-15-1-26-200.png -text svneol=unset#image/png
+test-output/html/ScreenShots/firefox-2015-4-23-10-44-33-590.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-11-21-8-783.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-11-52-9-448.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-11-54-17-663.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-11-57-48-595.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-12-3-45-147.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-12-33-55-282.png -text
+test-output/html/ScreenShots/firefox-2015-4-23-12-47-42-446.png -text
 test-output/html/index.html -text svneol=unset#text/plain
 test-output/html/output.html -text svneol=unset#text/plain
 test-output/html/overview.html -text svneol=unset#text/plain

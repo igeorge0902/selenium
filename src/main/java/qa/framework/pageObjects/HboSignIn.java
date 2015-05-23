@@ -1,23 +1,19 @@
 package main.java.qa.framework.pageObjects;
 
 import main.java.qa.framework.main.BaseUrls;
+import main.java.qa.framework.main.CaptureScreenshotOnFailureListener;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
 import main.java.qa.framework.utils.PropertyUtils;
-import main.java.qa.framework.utils.WaitTool;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
 public class HboSignIn extends TestBase implements WebElements {
 
-	public HboSignIn(WebDriver driver) {
-		super(driver);
-	}
-
 	private static String email = PropertyUtils.getProperty("email");
 	private static String password = PropertyUtils.getProperty("password");
+	protected boolean _languagecheck_;
 
 	public HboSignIn selectOperator(String operator) throws Exception {
 
@@ -88,7 +84,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		driver.findElement(By.name("Password")).sendKeys(password);
 
 		Log.info("selectOperator is successful");
-		return new HboSignIn(driver);
+		return new HboSignIn();
 	}
 
 	public HboSignIn submit() throws Exception {
@@ -113,7 +109,7 @@ public class HboSignIn extends TestBase implements WebElements {
 				BaseUrls.PLAYER.get() + OffersScreen));
 		Log.info("Login is successful!");
 
-		return new HboSignIn(driver);
+		return new HboSignIn();
 	}
 
 	// TODO: change it to parental
@@ -121,7 +117,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		try {
 			if (isNewDeviceDialog() == false) {
 				Log.info("hello");
-				return new HboSignIn(driver);
+				return new HboSignIn();
 
 			} else if (isNewDeviceDialog() == true) {
 
@@ -135,40 +131,28 @@ public class HboSignIn extends TestBase implements WebElements {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return new HboSignIn(driver);
+		return new HboSignIn();
 
 	}
 
-	public HboSignIn checkLanguage() {
-		try {
+	public HboSignIn checkLanguage(String languageMeta) {
 
-			if (driver.getTitle().equals("HBO GO. It's HBO. Anywhere.")) {
-				Log.info("Language is  " + EN);
-				return new HboSignIn(driver);
+		String baseLanguageMeta_ = PropertyUtils.getProperty(languageMeta);
+		Log.info(baseLanguageMeta_);
 
-			} else if (!driver.getTitle().equals("HBO GO. It's HBO. Anywhere.")) {
+		if (!driver.getCurrentUrl().equals(
+				driver.getCurrentUrl().equals(
+						BaseUrls.PLAYER.get() + OffersScreen))) {
 
-				driver.findElement(By.id(HeaderButton)).click();
-				TestBase.isElementPresent(By.id(Movies));
-				driver.findElement(By.id(Settings)).click();
-				TestBase.assertEquals(driver.findElement(By.id(CustomerMenu))
-						.isDisplayed(), driver.findElement(By.id(CustomerMenu))
-						.isDisplayed());
-				TestBase.clickLinkByHref(language);
-
-				driver.findElement(By.linkText("English")).click();
-
-				driver.findElement(By.cssSelector("button.button_submit"))
-						.click();
-
-				WaitTool.waitForElementRefresh(driver,
-						By.cssSelector("button.button_submit"), 10);
-				TestBase.assertTrue(TestBase.isTextPresent(EN));
-				Log.info("Language has been changed to" + EN + "!");
-			}
-		} catch (Exception e) {
-
+			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		}
-		return new HboSignIn(driver);
+
+		String pageSource = driver.getTitle();
+		Log.info(pageSource);
+
+		TestBase.languageMeta(baseLanguageMeta_, 5);
+		CaptureScreenshotOnFailureListener.captureScreenShot();
+
+		return new HboSignIn();
 	}
 }

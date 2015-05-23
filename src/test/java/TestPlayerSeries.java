@@ -20,7 +20,7 @@ public class TestPlayerSeries extends TestBase {
 	@Parameters({ "operator" })
 	@Test(description = "HBO login")
 	public void testSignInSuccess(String operator) throws Exception {
-		HboSignIn SignInPage = new HboSignIn(driver);
+		HboSignIn SignInPage = new HboSignIn();
 
 		// select operator
 		SignInPage.selectOperator(operator);
@@ -39,7 +39,7 @@ public class TestPlayerSeries extends TestBase {
 
 	@Test(dependsOnMethods = { "testSignInSuccess" }, description = "Selecting contents for playback tests.")
 	public void testSelectSeries() throws Exception {
-		SelectSeries SelectSeries = new SelectSeries(driver);
+		SelectSeries SelectSeries = new SelectSeries();
 
 		// select contents
 		SelectSeries.selectSeries();
@@ -50,7 +50,7 @@ public class TestPlayerSeries extends TestBase {
 
 	@Test(dataProviderClass = main.java.qa.framework.utils.SampleDataProvider.class, dataProvider = "fileDataProviderSeries", dependsOnMethods = { "testSelectSeries" }, description = "Playback test of main contents")
 	public void testPlayerSuccess(String urls) throws Exception {
-		PlayMainContent PlayMainContent = new PlayMainContent(driver);
+		PlayMainContent PlayMainContent = new PlayMainContent();
 
 		// play mainContent
 		PlayMainContent.playMainContent(urls);

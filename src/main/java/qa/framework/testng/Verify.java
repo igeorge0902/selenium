@@ -119,7 +119,7 @@ public class Verify {
 	static public void verifyNotNull(Object object) {
 		try{
 			Assert.assertNotNull(object);
-			TestBase.Log.info(object+"verifyNotNull is SUCCESS!");
+			TestBase.Log.info("Object is " +object+ " verifyNotNull is SUCCESS!");
 		}catch(AssertionError e){
 			addToErrorBuffer(e);
 		}

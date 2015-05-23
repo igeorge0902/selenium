@@ -27,8 +27,8 @@ public class TestHboSignUp extends TestBase {
 	@Test
 	public static void testSignupFail(String operator) throws Exception {
 
-		HboSignUp SignUpPage = new HboSignUp(driver);
-		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
+		HboSignUp SignUpPage = new HboSignUp();
+		HboSignUpForm SignUpForm = new HboSignUpForm();
 
 		// select operator
 		SignUpPage.selectOperator(operator);
@@ -51,8 +51,8 @@ public class TestHboSignUp extends TestBase {
 	@Test
 	public static void testSignupSuccess(String operator) throws Exception {
 
-		HboSignUp SignUpPage = new HboSignUp(driver);
-		HboSignUpForm SignUpForm = new HboSignUpForm(driver);
+		HboSignUp SignUpPage = new HboSignUp();
+		HboSignUpForm SignUpForm = new HboSignUpForm();
 
 		// select operator
 		SignUpPage.selectOperator(operator);
