@@ -283,7 +283,7 @@
                     <resource>
         				<directory>${basedir}</directory>
 					        <includes>
-					           	<include>testng.xml</include>
+					           	<include>**.xml</include>
 					           	<include>properties.properties</include>
 					           	<include>**.apk</include>
 					        </includes>

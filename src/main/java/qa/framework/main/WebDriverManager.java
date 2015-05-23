@@ -222,6 +222,7 @@ public class WebDriverManager implements WebElements {
 			WaitTool.setImplicitWait(driver, timeout);
 
 			driver.get(portalUrl);
+			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 
 			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)

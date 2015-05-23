@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Demo Run" verbose="10">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>   
+    
+    <parameter name="browser" value="Firefox" />
+    
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f3b52ca0-ea89-4f1d-91eb-02a4f7f60e7d" />
+		<parameter name="english" value="langENG_theme"/>
+		<parameter name="croatian" value="langHRV_theme"/>
+		<parameter name="macedon" value="langMKD_theme"/>
+		<parameter name="slovenian" value="langSLV_theme"/>
+		<parameter name="serbian" value="langSRP_theme"/>
+		
+  <test name="Language test">
+		
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f3b52ca0-ea89-4f1d-91eb-02a4f7f60e7d" />
+		
+		<parameter name="english" value="langENG_theme"/>
+		<parameter name="engMeta" value="en-us" />
+		
+		<parameter name="croatian" value="langHRV_theme"/>
+		
+		<parameter name="macedon" value="langMKD_theme"/>
+		
+		<parameter name="slovenian" value="langSLV_theme"/>
+		
+		<parameter name="serbian" value="langSRP_theme"/>
+		
+		<parameter name="czech" value="langCES_theme"/>
+		<parameter name="czeMeta" value="cs-CK"/>
+		
+		<parameter name="slovak" value="langSLO_theme"/>
+		<parameter name="sloMeta" value="Cs-CZ"/>
+		
+		<parameter name="languageMeta" value="baseLanguageMeta" />		
+	<classes>
+		<class name="test.java.TestLanguage">
+			<methods>
+				<include name="testLanguageChange"/>
+			</methods>
+		</class>
+		    
+		    <class name="test.java.TestHboSignIn">
+	
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSignOutSuccess" />
+				</methods>
+			</class>
+	</classes>
+	</test>
+</suite>

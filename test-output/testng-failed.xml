@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [Test Demo Run]">
+  <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt"/>
+  <parameter name="contents" value="content1"/>
+  <parameter name="browser" value="CHROME"/>
+  <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt"/>
+  <parameter name="filenamePathMac" value="./lib/urls.txt"/>
+  <parameter name="url" value="http://www.google.com"/>
+  <parameter name="operator" value="OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659"/>
+  <parameter name="filenamePathWin" value=".\lib\urls.txt"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test on Firefox(failed)">
+    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt"/>
+    <parameter name="contents" value="content1"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt"/>
+    <parameter name="filenamePathMac" value="./lib/urls.txt"/>
+    <parameter name="url" value="http://www.google.com"/>
+    <parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"/>
+    <parameter name="filenamePathWin" value=".\lib\urls.txt"/>
+    <classes>
+      <class name="test.java.TestHboSignIn">
+        <methods>
+          <include name="testSignInSuccess" invocation-numbers="0"/>
+          <include name="testSignOutSuccess"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.TestHboSignIn -->
+    </classes>
+  </test> <!-- Test on Firefox(failed) -->
+</suite> <!-- Failed suite [Test Demo Run] -->

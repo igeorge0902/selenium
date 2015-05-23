@@ -12,104 +12,17 @@
 <body>
 <h1>Test on Firefox</h1>
 <p>
-  Test duration: 0,117s
+  Test duration: 31,911s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">test.java.TestPlayerSeries</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  setUp
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">org.testng.TestRunner@acb0951</span><br />
-    
-            <div class="testOutput">
-                        Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                                Completed executing following method : TestBase.setUp<br />
-                  </div>
-    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)<br />
-              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)<br />
-              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)<br />
-              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)<br />
-              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)<br />
-              main.java.qa.framework.main.WebDriverManager.startDriver(WebDriverManager.java:233)<br />
-              main.java.qa.framework.main.TestBase.setUp(TestBase.java:87)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                </div>
-      </td>
-</tr>
-    
-          <tr><td colspan="3">&nbsp;</td></tr>
-      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
-                    <tr>
-          <td colspan="3" class="group">test.java.TestPlayerSeries</td>
-        </tr>
-                
-<tr>
-  <td class="method">
-                  closeBrowser
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-    
-        
 
-      </td>
-</tr>
-            </table>
 
 
   <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">test.java.TestPlayerSeries</td>
+        <td colspan="3" class="group">test.java.TestHboSignIn</td>
       </tr>
             
 <tr>
@@ -117,47 +30,91 @@
                   <span class="description" title="HBO login">testSignInSuccess</span>
       </td>
   <td class="duration">
-    0,117s
+    12,947s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26"</span><br />
+    
+            <div class="testOutput">
+                        Found element:By.id: headerButtonLogin<br />
+                                Found element:By.id: headerButtonLogin<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; id: headerButtonLogin]<br />
+                                Found element:By.id: OperatorId<br />
+                                Found element:By.id: OperatorId<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; id: OperatorId]<br />
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br />
+                                Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br />
+                                Found element:By.name: EmailAddress<br />
+                                Found element:By.name: EmailAddress<br />
+                                Found element:By.name: EmailAddress<br />
+                                Found element:By.name: Password<br />
+                                Found element:By.name: Password<br />
+                                Found element:By.name: Password<br />
+                                &lt;p&gt;selectOperator test is done&lt;br&gt;&lt;/p&gt;<br />
+                                Found element:By.cssSelector: #sign-in-buttons &gt; button.button_submit<br />
+                                Found element:By.cssSelector: #sign-in-buttons &gt; button.button_submit<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; css selector: #sign-in-buttons &gt; button.button_submit]<br />
+                                Found element:By.id: headerButtonMenu<br />
+                                &lt;p&gt;submit test is done&lt;br&gt;&lt;/p&gt;<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignInSuccess<br />
+                                Minden fasza<br />
+                                Test Method resides in test.java.TestHboSignIn<br />
+                                Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br />
+                                Test Status: Pass<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="HBO logout">testSignOutSuccess</span>
+      </td>
+  <td class="duration">
+    3,023s
   </td>
   <td class="result">
         
     
-        
+            <div class="testOutput">
+                        Found element:By.id: headerButtonMenu<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; id: headerButtonMenu]<br />
+                                Found element:By.id: menuTabs_settings<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; id: menuTabs_settings]<br />
+                                Found element:By.cssSelector: a[href*=&apos;signout&apos;]<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; css selector: a[href*=&apos;signout&apos;]]<br />
+                                Found element:By.cssSelector: div.form_buttons &gt; button.button_submit<br />
+                                Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -&gt; css selector: div.form_buttons &gt; button.button_submit]<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Completed executing following method : TestHboSignIn.testSignOutSuccess<br />
+                                Minden fasza<br />
+                                Test Method resides in test.java.TestHboSignIn<br />
+                                Test Status: Pass<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              org.openqa.selenium.support.events.EventFiringWebDriver.extractInterfaces(EventFiringWebDriver.java:117)<br />
-              org.openqa.selenium.support.events.EventFiringWebDriver.&lt;init&gt;(EventFiringWebDriver.java:89)<br />
-              main.java.qa.framework.main.WebDriverManager.unregister(WebDriverManager.java:291)<br />
-              main.java.qa.framework.testng.TestMethodListener.afterInvocation(TestMethodListener.java:98)<br />
-              org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeAfterInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:100)<br />
-              org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)<br />
-              org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:619)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:777)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                </div>
       </td>
 </tr>
       </table>
-
-
   
 </body>
 </html>

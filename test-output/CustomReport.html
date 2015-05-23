@@ -33,102 +33,24 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <tr><th colspan="8">Test Demo Run</th></tr>
 <tr><td style="text-align:left;padding-right:2em"><a href="#t1">Test Groups</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi">checkintest functest </td></tr>
 <tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Test on Safari</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0h:1m:51s</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Test on Firefox</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:31s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Test on Internet Explorer</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr><td style="text-align:left;padding-right:2em"><a href="#t5">Test on Chrome</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0h:0m:0s</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9999</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <p></p>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <b align="center">Result Summary Table</b>
 <tr><th>Class</th><th>Method</th><th># of<br>Scenarios</th><th>Start</th><th>Time<br>elapsed</th><th>Custom</th></tr>
-<tr id="t3"><th colspan="6">Test on Firefox â€” failed</th></tr>
-<tr class="failedodd"><td>test.java.TestPlayerSeries</td><td><a href="#m1"><b>testSignInSuccess</b>  ("HBO login")</a></td><td class="numi">1</td><td> máj. 3 at 06:50 DU</td><td class="numi">0h:0m:54s</td><td><a href='emailable-report.html'>Test</a></td></tr>
+<tr id="t3"><th colspan="6">Test on Firefox — passed</th></tr>
+<tr class="passedodd"><td rowspan="2">test.java.TestHboSignIn</td><td><a href="#m1"><b>testSignInSuccess</b> (functional_test1) ("HBO login")</a></td><td class="numi">1</td><td> m�j. 20 at 04:54 DU</td><td class="numi">0h:0m:12s</td><td><a href='emailable-report.html'>Test</a></td></tr><tr class="passedodd"><td><a href="#m2"><b>testSignOutSuccess</b>  ("HBO logout")</a></td><td class="numi">1</td><td> m�j. 20 at 04:54 DU</td><td class="numi">0h:0m:3s</td><td><a href='emailable-report.html'>Test</a></td></tr>
 </table>
 <br/><b align="center">Method Summaries</b><br/>
 <h1>Test Demo Run</h1>
 <h3>Test Groups</h3>
 <h3>Test on Safari</h3>
 <h3>Test on Firefox</h3>
-<h2 id="m1">test.java.TestPlayerSeries : testSignInSuccess</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Param.1</th></tr>
-<tr class="param stripe"><td>&quot;OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26&quot;</td>
-</tr>
-<tr><td>
-<h3>Test Messages</h3>
-Found element:By.id: headerButtonLogin<br>
-Found element:By.id: headerButtonLogin<br>
-Clicked on:[[FirefoxDriver: firefox on MAC (6faa1d1c-d5d2-b642-82c0-be6c4b2761af)] -> id: headerButtonLogin]<br>
-Found element:By.id: OperatorId<br>
-Found element:By.id: OperatorId<br>
-Clicked on:[[FirefoxDriver: firefox on MAC (6faa1d1c-d5d2-b642-82c0-be6c4b2761af)] -> id: OperatorId]<br>
-Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
-Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26<br>
-Clicked on:[[FirefoxDriver: firefox on MAC (6faa1d1c-d5d2-b642-82c0-be6c4b2761af)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: EmailAddress<br>
-Found element:By.name: Password<br>
-Found element:By.name: Password<br>
-Found element:By.name: Password<br>
-<p>selectOperator test is done<br></p><br>
-Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
-Found element:By.cssSelector: #sign-in-buttons > button.button_submit<br>
-Clicked on:[[FirefoxDriver: firefox on MAC (6faa1d1c-d5d2-b642-82c0-be6c4b2761af)] -> css selector: #sign-in-buttons > button.button_submit]<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-Completed executing following method : TestPlayerSeries.testSignInSuccess<br>
-<a href="Firefox-2015-4-3-18-51-44-779.png"><p align="left">Error screenshot at Sun May 03 18:51:45 CEST 2015</p><br>
-<p><img width="50%" src="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots/Firefox-2015-4-3-18-51-44-779.png" alt="screenshot at Sun May 03 18:51:45 CEST 2015"/></p></a><br /><br>
-Fuck<br><br>
-Test Method resides in test.java.TestPlayerSeries<br>
-Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,<br>
-Test Status: Failed<br>
-<h3>Failure</h3>
-<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at main.java.qa.framework.main.TestBase.assertTrue(TestBase.java:165)
-	at test.java.TestPlayerSeries.testSignInSuccess(TestPlayerSeries.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</div>
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
 <h3>Test on Internet Explorer</h3>
 <h3>Test on Chrome</h3>
 <center><h4>Customized TestNG Report</h4></center>

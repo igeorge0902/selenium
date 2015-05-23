@@ -201,3 +201,67 @@ Caused by: java.net.ConnectException: Connection refused
 [15/05/15 03:20:29:029 CEST]  INFO log4j.Logger: New driver instantiated
 [15/05/15 03:20:29:029 CEST]  INFO log4j.Logger: MAC
 [15/05/15 03:20:29:029 CEST]  INFO log4j.Logger: Firefox
+[15/05/15 06:38:41:041 CEST]  INFO log4j.Logger: New driver instantiated
+[15/05/15 06:38:41:041 CEST]  INFO log4j.Logger: WIN8_1
+[15/05/15 06:38:41:041 CEST]  INFO log4j.Logger: Firefox
+[15/05/15 06:38:49:049 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[15/05/15 06:38:52:052 CEST]  INFO log4j.Logger: MySql connection is true
+[15/05/15 06:38:52:052 CEST]  INFO log4j.Logger: MySql connection is true
+[15/05/15 06:38:52:052 CEST]  INFO log4j.Logger: .\src\main\scripts\create_db.sql (A rendszer nem talÃ¡lja a megadott elÃ©rÃ©si utat)
+[15/05/15 06:38:52:052 CEST]  INFO log4j.Logger: The execution of testSignInSuccess starts now
+[15/05/15 06:38:56:056 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/offers
+[15/05/15 06:38:56:056 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[15/05/15 06:38:56:056 CEST]  INFO log4j.Logger: By.id: headerButtonLogin
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonLogin
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f16f4872-4e72-4b8a-a4b0-9c4dddbcabe9)] -> id: headerButtonLogin]
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: By.id: OperatorId
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId
+[15/05/15 06:38:57:057 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f16f4872-4e72-4b8a-a4b0-9c4dddbcabe9)] -> id: OperatorId]
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: By.id: OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element found:By.id: OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f16f4872-4e72-4b8a-a4b0-9c4dddbcabe9)] -> id: OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659]
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: By.name: EmailAddress
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[15/05/15 06:38:58:058 CEST]  INFO log4j.Logger: Element found:By.name: EmailAddress
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: By.name: Password
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element found:By.name: Password
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: selectOperator is successful
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: selectOperator test is done
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: By.cssSelector: #sign-in-buttons > button.button_submit
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (f16f4872-4e72-4b8a-a4b0-9c4dddbcabe9)] -> css selector: #sign-in-buttons > button.button_submit]
+[15/05/15 06:38:59:059 CEST]  INFO log4j.Logger: submit is successful
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger:  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: Firefox-2015-4-15-18-39-2-772.png
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: Test Status:Failed
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: testSignInSuccess test failed!
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: Test Status:Skipped
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: testSelectContentsPlay was skipped!
+[15/05/15 06:39:03:003 CEST]  INFO log4j.Logger: Driver closed afterInvocation
+[15/05/15 06:43:07:007 CEST]  INFO log4j.Logger: New driver instantiated
+[15/05/15 06:43:07:007 CEST]  INFO log4j.Logger: WIN8_1
+[15/05/15 06:43:07:007 CEST]  INFO log4j.Logger: Firefox
+[15/05/15 06:43:15:015 CEST]  INFO log4j.Logger: Firefoxdriver initialized with eventListeners
+[15/05/15 06:43:19:019 CEST]  INFO log4j.Logger: MySql connection is true
+[15/05/15 06:43:19:019 CEST]  INFO log4j.Logger: MySql connection is true
+[15/05/15 06:43:19:019 CEST]  INFO log4j.Logger: .\src\main\scripts\create_db.sql (A rendszer nem találja a megadott elérési utat)
+[15/05/15 06:43:19:019 CEST]  INFO log4j.Logger: The execution of testSelectContentsPlay starts now
+[15/05/15 06:43:24:024 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[15/05/15 06:43:24:024 CEST]  INFO log4j.Logger: Element found:By.id: headerButtonMenu
+[15/05/15 06:43:25:025 CEST]  INFO log4j.Logger: Element clicked on:[[FirefoxDriver: firefox on WINDOWS (07e61fcd-e6b9-467e-883c-df8e9e879048)] -> id: headerButtonMenu]
+[15/05/15 06:43:25:025 CEST]  INFO log4j.Logger: Element found:By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[15/05/15 06:43:25:025 CEST]  INFO log4j.Logger: By.id: categories_group_b84a7a5f-ff13-4854-956b-9bc1070457f1
+[15/05/15 06:43:25:025 CEST]  INFO log4j.Logger: Element found:By.id: menu
+[15/05/15 06:43:25:025 CEST]  INFO log4j.Logger: Element found:By.tagName: a
+[15/05/15 06:43:26:026 CEST]  INFO log4j.Logger: 
+[15/05/15 06:43:30:030 CEST]  INFO log4j.Logger: Element clicked on:[[[[FirefoxDriver: firefox on WINDOWS (07e61fcd-e6b9-467e-883c-df8e9e879048)] -> id: menu]] -> tag name: a]
+[15/05/15 06:43:33:033 CEST]  INFO log4j.Logger: Element found:By.id: normalView
+[15/05/15 06:43:33:033 CEST]  INFO log4j.Logger: http://huvip.hbogo.eu/group/action,-adventure
+[15/05/15 06:43:34:034 CEST]  INFO log4j.Logger: Element found:By.id: normalView
+[15/05/15 06:43:34:034 CEST]  INFO log4j.Logger: Element found:By.tagName: a

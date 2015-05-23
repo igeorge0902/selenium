@@ -123,7 +123,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.executeUpdate();
 
 		} catch (Exception e) {
-			e.getLocalizedMessage();
+			//e.getLocalizedMessage();
 
 		} finally {
 
@@ -230,11 +230,11 @@ public class SQLAccess extends TestBase implements WebElements {
 
 		} catch (SQLException ex) {
 
-			ex.printStackTrace();
+			//ex.printStackTrace();
 
 		} catch (IOException ex) {
 
-			ex.printStackTrace();
+			//ex.printStackTrace();
 		}
 
 	}
