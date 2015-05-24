@@ -1,13 +1,25 @@
 package main.java.qa.framework.main;
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Paths;
 import java.util.Arrays;
 
 import main.java.qa.framework.utils.PropertyUtils;
 import main.java.qa.framework.utils.WaitTool;
+import net.lightbody.bmp.core.har.Har;
+import net.lightbody.bmp.proxy.ProxyServer;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,10 +27,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.Platform;
 
@@ -33,7 +45,7 @@ import org.openqa.selenium.Platform;
  *
  */
 
-public class WebDriverManager implements WebElements {
+public class WebDriverManager extends TestBase implements WebElements {
 	public static WebDriver driver = null;
 	private static String browser = null;
 
@@ -56,6 +68,7 @@ public class WebDriverManager implements WebElements {
 
 		WebDriverManager.browser = browser;
 		DOMConfigurator.configure(log4jxml);
+		PropertyConfigurator.configure(log4jProperties);
 		Log.info("New driver instantiated");
 		Log.info(Platform.getCurrent());
 		Log.info(getBroswer());
@@ -73,22 +86,15 @@ public class WebDriverManager implements WebElements {
 			System.setProperty("webdriver.ie.driver",
 					"lib/IEDriverServer32.exe");
 
-			DesiredCapabilities Capabilities = DesiredCapabilities
-					.internetExplorer();
-			Capabilities
-					.setCapability(
-							InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
-							true);
+			DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
+			Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,	true);
 			Capabilities.isJavascriptEnabled();
-			Capabilities.setVersion("10");
+			Capabilities.setVersion("11");
 			Capabilities.getVersion();
 			Capabilities.equals(browser);
-			Capabilities.setCapability(
-					InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
-			Capabilities.setCapability(
-					InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
-			Capabilities.setCapability(
-					InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+			Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+			Capabilities.setCapability(InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
+			Capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
 
 			// start a internet explorer driver instance
 			driver = new InternetExplorerDriver(Capabilities);
@@ -139,23 +145,20 @@ public class WebDriverManager implements WebElements {
 				if (!TestBase.isSupportedPlatformMac(true)) {
 
 					// String userHome = System.getProperty("user.home");
-					String chromeDriverPath = "lib/chromedriver.exe";
-					System.setProperty("webdriver.chrome.driver",
-							chromeDriverPath);
+					String chromeDriverPath = Paths.get("lib/chromedriver.exe").toFile().toString();
+					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 				}
 
 				else if (TestBase.isSupportedPlatformMac(true)) {
 
-					String chromeDriverPath = "lib/chromedriver";
-					System.setProperty("webdriver.chrome.driver",
-							chromeDriverPath);
+					String chromeDriverPath = Paths.get("lib/chromedriver").toFile().toString();
+					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 				}
 
 			}
 
 			catch (Exception ex) {
-				System.out
-						.println("\nException in getting and setting the webdriver chrome driver: "
+				System.out.println("\nException in getting and setting the webdriver chrome driver: "
 								+ ex.getMessage() + ex.getClass());
 				ex.printStackTrace();
 			}
@@ -166,35 +169,30 @@ public class WebDriverManager implements WebElements {
 			 * http://code.google.com/p/selenium/wiki/ChromeDriver
 			 */
 			ChromeOptions options = new ChromeOptions();
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			capabilities.isJavascriptEnabled();
+			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
+			Capabilities.isJavascriptEnabled();
 
-			options.addArguments(Arrays.asList(new String[] {
-					"--ignore-certificate-errors", "--start-maximized" }));
+			options.addArguments(Arrays.asList(new String[] {"--ignore-certificate-errors", "--start-maximized" }));
 
 			String chromeProfile = "";
 			if (!TestBase.isSupportedPlatformMac(true)) {
 				PropertyUtils.loadPropertyFile(proprtyFile);
-				String chromeProfileWin = PropertyUtils
-						.getProperty("chromeProfileWin");
+				String chromeProfileWin = PropertyUtils.getProperty("chromeProfileWin");
 				chromeProfile = chromeProfileWin;
 			}
 
+			//TODO: set chromeProfileMac
 			else if (TestBase.isSupportedPlatformMac(true)) {
 				PropertyUtils.loadPropertyFile(proprtyFile);
-				String chromeProfileMac = PropertyUtils
-						.getProperty("chromeProfileMac");
+				String chromeProfileMac = PropertyUtils.getProperty("chromeProfileMac");
 				chromeProfile = chromeProfileMac;
 			}
 
 			options.addArguments("user-data-dir=" + chromeProfile);
 
-			Log.info(DesiredCapabilities.chrome());
-			Object object = new Object[] { options, capabilities };
-
 			driver = new ChromeDriver(options);
 
-			driver = driverEventListener(object);
+			driver = driverEventListener(options);
 			Log.info(browser + "driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
@@ -214,40 +212,82 @@ public class WebDriverManager implements WebElements {
 			// Use specific Firefox profile
 			ProfilesIni profilesIni = new ProfilesIni();
 			FirefoxProfile profile = profilesIni.getProfile("Test");
-			driver = new FirefoxDriver(profile);
+			
+			//ProxyServer server = new ProxyServer(9090);
+			server.start();
+			//captures the mouse movements and navigations
+			server.setCaptureHeaders(true);
+			server.setCaptureContent(true);
+						
+			server.getStreamManager().enable();
+			
+			server.getStreamManager().setDownstreamMaxKB(10240);
+			Log.info(server.getStreamManager().getRemainingDownstreamKB());		
+			Log.info(server.getStreamManager().getMaxDownstreamKB());
+			
+			server.getStreamManager().setDownstreamKbps(Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
 
-			driver = driverEventListener(profile);
+		    // get the Selenium proxy object
+		    Proxy proxy = server.seleniumProxy();
+		    
+		    // configure it as a desired capability
+		    DesiredCapabilities Capabilities = new DesiredCapabilities();
+		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
+		    Capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+
+			driver = new FirefoxDriver(Capabilities);
+			
+			driver = driverEventListener(Capabilities);
 			Log.info(browser + "driver initialized with eventListeners");
-			// keepAlive();
+
 			WaitTool.setImplicitWait(driver, timeout);
+			server.newHar(BaseUrls.PLAYER.get());
 
 			driver.get(portalUrl);
+			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
+			
+			
+			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
-			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
-					.keyUp(Keys.CONTROL).perform();
+			// get the HAR data
+			Har har = server.getHar();
+			
+			String path = Paths.get("har.har").toString();
+			TestBase.deleteFile(path);
+
+	        FileOutputStream fileOutputStream = new FileOutputStream(path, true);
+	        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream, 100 * 256);
+
+	//	    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
+	//		PrintWriter printWriter = new PrintWriter(bufferedWriter);
+
+			har.writeTo(bufferedOutputStream);
+	        
+			bufferedOutputStream.flush();
+	        fileOutputStream.close();
+	        
+	//		printWriter.flush();
+	//		printWriter.close();
+			
 
 		} else {
 			System.out.println("browser : Safari (Default)\n");
 
-			TestBase.assertFalse(TestBase.isSupportedPlatformWindows(false));
+			TestBase.assertTrue(TestBase.isSupportedPlatformMac(true));
 
+			new DesiredCapabilities();
 			DesiredCapabilities Capabilities = DesiredCapabilities.safari();
 
 			Capabilities.setCapability("nativeEvents", false);
-
-			SafariOptions options = new SafariOptions();
-
-			options.setUseCleanSession(true);
-			options.getUseCleanSession();
-
-			Object object = new Object[] { options, Capabilities };
+			Capabilities.setCapability("unexpectedAlertBehaviour", "accept");
+			Capabilities.setCapability("acceptSslCerts", true);
 
 			// For use with SafariDriver:
-			driver = new SafariDriver(options);
+			driver = new SafariDriver(Capabilities);
 
-			driver = driverEventListener(object);
+			driver = driverEventListener(Capabilities);
 			Log.info(browser + "driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
@@ -280,11 +320,24 @@ public class WebDriverManager implements WebElements {
 		return driver = eventFiringDriver.unregister(eventListener);
 
 	}
+	
+	
+	public static ProxyServer serverStart() {
+		
+		ProxyServer server = new ProxyServer(9090);
+		return server;
+	}
+	
+	protected static PrintWriter createWriter(String string) throws IOException {
+		new File(string);
+		return new PrintWriter(new BufferedWriter(new FileWriter(new File(string))));
+	}
 
 	/**
 	 * Stops the browser driver started
 	 *
 	 * @param - the instance of the driver to stop
+	 * @throws Exception 
 	 */
 	public static void stopDriver() {
 		driver.close();

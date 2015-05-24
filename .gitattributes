@@ -5,12 +5,12 @@
 .settings/org.eclipse.jdt.core.prefs -text
 .settings/org.eclipse.m2e.core.prefs -text
 /README.md -text
-ScreenShots/Firefox-2015-3-14-17-28-37-521.png -text svneol=unset#image/png
-ScreenShots/Firefox-2015-3-14-17-34-14-551.png -text svneol=unset#image/png
+config/log4j.properties -text svneol=unset#text/plain
 config/log4j.xml -text svneol=unset#text/plain
 /employee.txt -text
 /eurotext.png -text
 /eurotext.tif -text
+/har.har -text
 /languagetestng.xml -text svneol=unset#application/xml
 lib/IEDriverServer.exe -text
 lib/IEDriverServer32.exe.svntmp -text
@@ -37,6 +37,7 @@ log/logfile.log.2015-05-04 -text
 log/logfile.log.2015-05-14 -text
 log/logfile.log.2015-05-16 -text
 log/logfile.log.2015-05-20 -text
+log/logfile.log.2015-05-23 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 scripts/create_db.sql -text
@@ -78,7 +79,7 @@ src/main/java/qa/framework/testng/CustomTestListener.java -text
 src/main/java/qa/framework/testng/ExpectedExceptions.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/LoggingListener.java -text
 src/main/java/qa/framework/testng/MethodInterceptor.java -text svneol=unset#text/plain
-src/main/java/qa/framework/testng/TestListenerAdapter.java -text
+src/main/java/qa/framework/testng/TestListenerAdapter_.java -text
 src/main/java/qa/framework/testng/TestListeners.java -text
 src/main/java/qa/framework/testng/TestMethodErrorBuffer.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/TestMethodListener.java -text
@@ -88,6 +89,7 @@ src/main/java/qa/framework/utils/FileSeparator.java -text svneol=unset#text/plai
 src/main/java/qa/framework/utils/GroupTestExample.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/LinkGetter.java -text
 src/main/java/qa/framework/utils/MessageUtil.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/PerformanceTest.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/PropertyUtils.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/RegexTestPatternMatcher.java -text
 src/main/java/qa/framework/utils/SQLAccess.java -text svneol=unset#text/plain
@@ -288,46 +290,6 @@ test-output/bullet_point.png -text svneol=unset#image/png
 test-output/collapseall.gif -text svneol=unset#image/gif
 test-output/emailable-report.html -text
 test-output/failed.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-19-20-15-52-482.png -text
-test-output/html/ScreenShots/Firefox-2015-4-19-20-23-39-344.png -text
-test-output/html/ScreenShots/Firefox-2015-4-19-20-29-6-261.png -text
-test-output/html/ScreenShots/Firefox-2015-4-19-20-37-18-582.png -text
-test-output/html/ScreenShots/Firefox-2015-4-20-16-28-29-481.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-20-16-31-11-526.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-20-16-35-26-90.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-20-16-45-5-922.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-20-16-52-46-402.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-22-10-16-43-268.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-22-10-8-52-894.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-22-9-55-49-834.png -text svneol=unset#image/png
-test-output/html/ScreenShots/Firefox-2015-4-3-18-51-44-779.png -text
-test-output/html/ScreenShots/firefox--2015-4-22-11-25-11-369.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-11-25-15-828.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-11-50-55-943.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-11-57-42-673.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-12-20-43-620.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-12-22-48-424.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-12-28-33-766.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-14-57-4-620.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-22-15-1-20-165.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox--2015-4-23-12-7-44-103.png -text
-test-output/html/ScreenShots/firefox--2015-4-23-13-18-33-841.png -text
-test-output/html/ScreenShots/firefox-2015-4-22-11-11-26-481.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-11-51-0-486.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-11-57-47-585.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-13-52-13-355.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-13-58-54-989.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-14-5-47-174.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-14-57-9-482.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-22-15-1-26-200.png -text svneol=unset#image/png
-test-output/html/ScreenShots/firefox-2015-4-23-10-44-33-590.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-11-21-8-783.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-11-52-9-448.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-11-54-17-663.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-11-57-48-595.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-12-3-45-147.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-12-33-55-282.png -text
-test-output/html/ScreenShots/firefox-2015-4-23-12-47-42-446.png -text
 test-output/html/index.html -text svneol=unset#text/plain
 test-output/html/output.html -text svneol=unset#text/plain
 test-output/html/overview.html -text svneol=unset#text/plain

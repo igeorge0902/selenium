@@ -7,13 +7,26 @@ package main.java.qa.framework.testng;
  */
 
 
+import main.java.qa.framework.main.TestBase;
+
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
 public class LoggingListener extends TestListenerAdapter {
-		  private int m_count = 0;
+	
+	  @Override
+	  public void onConfigurationFailure(ITestResult tr) {
+	    
+			// call the superclass
+	        super.onConfigurationFailure(tr);
+	        super.getConfigurationFailures();
+	        super.getConfigurationSkips();
+	        	        
+	        Reporter.log("Fuck<br>");
+	        TestBase.Log.info("Fuck");
+	  	}
 		  	 
 		  @Override
 		  public void onTestFailure(ITestResult tr) {
@@ -21,9 +34,10 @@ public class LoggingListener extends TestListenerAdapter {
 		    
 				// call the superclass
 		        super.onTestFailure(tr);
+		        super.getFailedTests();
 		        	        
 	        Reporter.log("Fuck<br>");
-	        log("Fuck\n");
+	        TestBase.Log.info("Fuck");
 		  }
 		 
 		  @Override
@@ -31,19 +45,21 @@ public class LoggingListener extends TestListenerAdapter {
 			  
 				// call the superclass
 		        super.onTestSkipped(tr);
+		        super.getSkippedTests();
 		     
 		     Reporter.log("Shit happens");
-		     log("Shit happens\n");
+		     TestBase.Log.info("Shit happens");
 		  }
 		 
 		  @Override
 		  public void onTestSuccess(ITestResult tr) {
 			  
 				// call the superclass
-		        super.onTestSuccess(tr); 
+		        super.onTestSuccess(tr);
+		        super.getPassedTests();
   
 		    Reporter.log("Minden fasza");
-		    log("Minden fasza\n");
+		    TestBase.Log.info("Minden fasza");
 		  }
 		  
 		  @Override
@@ -51,15 +67,10 @@ public class LoggingListener extends TestListenerAdapter {
 			  
 				// call the superclass
 		        super.onFinish(context); 
+		        super.getAllTestMethods();
 		        
 		  }
 		 
-		  private void log(String string) {
-		    System.out.print(string);
-		    if (++m_count % 40 == 0) {
-		      System.out.println("Hello");
-		    }
-		  }
 		} 
 
 

@@ -30,6 +30,8 @@ public class TestHboSignIn extends TestBase {
 		 */
 
 		SignInPage.checkLanguage(languageMeta);
+		Log.info(server.getStreamManager().getRemainingDownstreamKB());
+
 	}
 
 	@Test(dependsOnMethods = { "testSignInSuccess" }, description = "HBO logout")

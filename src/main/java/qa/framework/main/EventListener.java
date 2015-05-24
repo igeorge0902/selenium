@@ -1,6 +1,8 @@
 package main.java.qa.framework.main;
 
 import main.java.qa.framework.utils.WaitTool;
+import main.java.qa.framework.main.WebDriverManager;
+
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -30,7 +32,7 @@ System.out.println("Before Navigate To "+url);
 
 @Override
 public void afterNavigateTo(String url, WebDriver driver) {
-// TODO Auto-generated method stub
+	
 
 }
 

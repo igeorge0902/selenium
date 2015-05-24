@@ -19,9 +19,11 @@
 		
   <test name="Language test">
 		
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="CHROME" />
 		<parameter name="url" value="http://www.google.com" />
 		<parameter name="operator" value="OperatorId_f3b52ca0-ea89-4f1d-91eb-02a4f7f60e7d" />
+		
+		<parameter name="huMeta" value="hu-hu" />
 		
 		<parameter name="english" value="langENG_theme"/>
 		<parameter name="engMeta" value="en-us" />
@@ -44,14 +46,14 @@
 	<classes>
 		<class name="test.java.TestLanguage">
 			<methods>
-				<include name="testLanguageChange"/>
+				<exclude name="testLanguageChange"/>
 			</methods>
 		</class>
 		    
 		    <class name="test.java.TestHboSignIn">
 	
 				<methods>
-					<exclude name="testSignInSuccess" />
+					<include name="testSignInSuccess" />
 					<exclude name="testSignOutSuccess" />
 				</methods>
 			</class>

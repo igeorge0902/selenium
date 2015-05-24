@@ -121,41 +121,6 @@ public class SampleDataProvider implements WebElements {
 
 	}
 
-	@DataProvider
-	public static Iterator<String> urlDataProvider(ITestContext context)
-			throws FileNotFoundException {
-
-		// Get the input file path from the ITestContext
-
-		String inputFile = context.getCurrentXmlTest().getParameter(
-				"filenamePath");
-
-		// Get a list of String file content (line items) from the test file.
-		List<String> testData = getFileContentList(inputFile);
-
-		// We will be returning an iterator of String arrays so create that
-		// first.
-		List<String> dataToBeReturned = new ArrayList<String>();
-
-		// Populate our List of Object arrays with the file content.
-		if (!testData.isEmpty()) {
-			for (String urlData : testData) {
-				dataToBeReturned.add(urlData);
-			}
-		}
-
-		else {
-			// TODO: do something
-		}
-
-		// return the iterator - testng will initialize the test class and calls
-		// the
-		// test method with each of the content of this iterator.
-
-		return dataToBeReturned.iterator();
-
-	}
-
 	@DataProvider(name = "colors")
 	public static Iterator<Object[]> getColors() {
 		Set<Object[]> result = new HashSet<Object[]>();

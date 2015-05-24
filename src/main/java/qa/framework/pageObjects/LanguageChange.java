@@ -22,7 +22,8 @@ public class LanguageChange extends TestBase implements WebElements {
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		}
 		
-		_languagecheck1_ = TestBase.languageMeta(meta1, 5);		
+		//TestBase.isElementPresent("meta[content='"+meta1+"']");
+		_languagecheck1_ = TestBase.checkMetaContent(meta1, 5);		
 
 		if (_languagecheck1_) {
 
@@ -50,7 +51,7 @@ public class LanguageChange extends TestBase implements WebElements {
 					By.cssSelector("div.form_buttons > button.button_submit"),
 					10);
 
-			TestBase.languageMeta(meta1, 5);		
+			TestBase.checkMetaContent(meta1, 5);		
 			CaptureScreenshotOnFailureListener.captureScreenShot();
 
 		}

@@ -28,8 +28,10 @@ import main.java.qa.framework.testng.Verify;
 import main.java.qa.framework.utils.PropertyUtils;
 import main.java.qa.framework.utils.SQLAccess;
 import main.java.qa.framework.utils.WaitTool;
+import net.lightbody.bmp.proxy.ProxyServer;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -54,8 +56,7 @@ public class TestBase extends Verify implements WebElements {
 
 	protected static WebElement element = null;
 
-	public static String dbDriverClass = PropertyUtils
-			.getProperty("dbDriverClass");
+	public static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
 	public static String dbUrl = PropertyUtils.getProperty("dbUrl");
 	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
@@ -68,12 +69,20 @@ public class TestBase extends Verify implements WebElements {
 	 */
 	protected static WebDriver driver = null;
 
+	protected static ProxyServer server = new ProxyServer(9090);
+	
 	public TestBase(WebDriver driver) {
 		TestBase.driver = WebDriverManager.driver;
 	}
-
+	
+	public TestBase(ProxyServer server) {
+		server = WebDriverManager.server;
+	}
+	
 	public TestBase() {
-		DOMConfigurator.configure(log4jxml);
+		String configFile = Paths.get(log4jxml).toFile().toString();
+		DOMConfigurator.configure(configFile);
+		PropertyConfigurator.configure(log4jProperties);
 	}
 
 	@BeforeClass
@@ -81,20 +90,20 @@ public class TestBase extends Verify implements WebElements {
 
 		try {
 			// get the web driver parameters from the testng xml file
-			String browser = context.getCurrentXmlTest()
-					.getParameter("browser");
+			String browser = context.getCurrentXmlTest().getParameter("browser");
 			String url = context.getCurrentXmlTest().getParameter("url");
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
+			
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 
 		} catch (Exception e) {
 
 			Log.info(e);
 			// get the web driver parameters from the testng xml file
-			String browser = context.getCurrentXmlTest()
-					.getParameter("browser");
+			String browser = context.getCurrentXmlTest().getParameter("browser");
 			String url = context.getCurrentXmlTest().getParameter("url");
+			
 			Log.info(browser + " is reconnecting!");
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
@@ -113,7 +122,7 @@ public class TestBase extends Verify implements WebElements {
 	}
 
 	@AfterClass
-	public void closeBrowser(ITestContext context) {
+	public void closeBrowser(ITestContext context) throws Exception {
 		WebDriverManager.stopDriver();
 
 		try {
@@ -145,7 +154,10 @@ public class TestBase extends Verify implements WebElements {
 
 	public static boolean isSupportedPlatformWindows(boolean condition) {
 		Platform current = Platform.getCurrent();
-		return Platform.WIN8.is(current) || Platform.WIN8_1.is(current);
+		return Platform.WINDOWS.is(current) 
+			 ||Platform.VISTA.is(current) 
+			 ||Platform.WIN8.is(current) 
+			 ||Platform.WIN8_1.is(current);
 	}
 
 	/**
@@ -362,11 +374,11 @@ public class TestBase extends Verify implements WebElements {
 	 * Check if the Element present in the DOM.
 	 * 
 	 * @param _cssSelector
-	 *            element locater
+	 *            
 	 * @return WebElement
 	 */
 
-	public boolean isElementPresent(String _cssSelector) {
+	public static boolean isElementPresent(String _cssSelector) {
 		try {
 			driver.findElement(By.cssSelector(_cssSelector));
 			Log.info((_cssSelector));
@@ -402,10 +414,12 @@ public class TestBase extends Verify implements WebElements {
 	/**
 	 * Verify if the error message is displayed.
 	 * 
+	 * @param text
 	 * @throws Exceptions
+	 * @return text as element
 	 */
-	public boolean verifyErrorMessageRequired_displayed() throws Exception {
-		return isElementDisplayed(By.name("EmailAddressAgain"));
+	public boolean verifyErrorMessageRequired_displayed(String text) throws Exception {
+		return isElementDisplayed(By.name(text));
 	}
 
 	/**
@@ -413,18 +427,19 @@ public class TestBase extends Verify implements WebElements {
 	 * 
 	 * @throws Exceptions
 	 */
-	public static boolean isErrorMessageRequired_Check_TOS_displayed()
-			throws Exception {
+	public static boolean isErrorMessageRequired_Check_TOS_displayed() throws Exception {
 		return isElementDisplayed(By.id("Terms"));
 	}
 
 	/**
 	 * Verify if the new device dialog is displayed.
 	 * 
+	 * @param text
 	 * @throws Exceptions
+	 * @return text as element
 	 */
-	public static boolean isNewDeviceDialog() throws Exception {
-		return isElementDisplayed(By.id("newDeviceInput"));
+	public static boolean isDialogDisplayed(String text) throws Exception {
+		return isElementDisplayed(By.id(text));
 	}
 
 	/**
@@ -432,9 +447,9 @@ public class TestBase extends Verify implements WebElements {
 	 * 
 	 * @param property = the given language code.
 	 * @param seconds
-	 * @return
+	 * @return property as element
 	 */
-	public static boolean languageMeta(String property, int seconds) {
+	public static boolean checkMetaContent(String property, int seconds) {
 		WebElement language;
 		
 		language = WaitTool.waitForElementPresent(driver, By.cssSelector("meta[content='"+property+"']"), seconds);		
@@ -452,8 +467,8 @@ public class TestBase extends Verify implements WebElements {
 	 * @param cssSelector
 	 * @param text
 	 */
-	protected void sendText(String cssSelector, String text) {
-		driver.findElement(By.cssSelector(cssSelector)).sendKeys(text);
+	protected static void sendText(By by, String text) {
+		driver.findElement(by).sendKeys(text);
 	}
 
 	/**
@@ -624,7 +639,7 @@ public class TestBase extends Verify implements WebElements {
 				e1.printStackTrace();
 			}
 		}
-		Log.info(newfile + "has been written with the " + list);
+		Log.info(newfile + " has been written with the " + list);
 	}
 
 	/**
@@ -689,22 +704,13 @@ public class TestBase extends Verify implements WebElements {
 
 	public static void deleteFile(String textfile) {
 
-		try {
-
 			File file = new File(textfile);
 
 			if (file.delete()) {
-				System.out.println(file.getName() + " is deleted!");
+				Log.info(file.getName() + " is deleted!");
 			} else {
-				System.out.println("Delete operation is failed.");
+				Log.info("Delete operation is failed.");
 			}
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-		}
-
 	}
 
 	/**
@@ -725,8 +731,7 @@ public class TestBase extends Verify implements WebElements {
 
 			String[] children = sourceLocation.list();
 			for (int i = 0; i < children.length; i++) {
-				copyDirectory(new File(sourceLocation, children[i]), new File(
-						targetLocation, children[i]));
+				copyDirectory(new File(sourceLocation, children[i]), new File(targetLocation, children[i]));
 			}
 		} else {
 
@@ -868,8 +873,7 @@ public class TestBase extends Verify implements WebElements {
 	 * @return true
 	 */
 
-	public static boolean isPlayBackRunning(int attempt, int second,
-			boolean condition) {
+	public static boolean isPlayBackRunning(int attempt, int second, boolean condition) {
 
 		// int second;
 

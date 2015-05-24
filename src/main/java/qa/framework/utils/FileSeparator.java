@@ -23,7 +23,7 @@ public class FileSeparator extends TestBase implements WebElements {
 
 		System.out.println(TestBase.getCurrentTime());
 
-		int second = 2;
+		int second = 4;
 
 		while (second > 0) {
 			try {
@@ -42,16 +42,21 @@ public class FileSeparator extends TestBase implements WebElements {
 		String book2 = "Book2";
 		String book3 = "Book3";
 		String book4 = "Book4";
+		String book5 = "Book5";
+
 
 		List<String> bookList = new ArrayList<String>();
 		bookList.add(book1);
 		bookList.add(book2);
 		bookList.add(book3);
 		bookList.add(book4);
+		bookList.add(book5);
+
 
 		TestBase.writeFile(urlsFile, bookList);
+		System.out.println(urlsFile);
 
-		TestBase.readFile(Paths.get("scripts/create_db.sql"));
+		//TestBase.readFile(Paths.get("scripts/create_db.sql"));
 
 		Path testOutput = Paths.get("test-output/html");
 
@@ -74,7 +79,7 @@ public class FileSeparator extends TestBase implements WebElements {
 			System.out.println(children[i]);
 
 			files.add(children[i]);
-			// TestBase.openAll(files);
+			//System.out.println(files);
 
 		}
 

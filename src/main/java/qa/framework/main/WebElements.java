@@ -116,8 +116,12 @@ public interface WebElements {
 	public String episodeUrlsFile = "lib/episode_urls.txt";
 	public String outputFile = "lib/output.txt";
 	public String proprtyFile = "properties.properties";
-	public String create_db_sql = "./src/main/scripts/create_db.sql";
+	public String create_db_sql = "scripts/create_db.sql";
 	public String log4jxml = "config/log4j.xml";
+	public String log4jProperties = "config/log4j.properties";
+	
+	//properties
+	
 
 	// JavaScripts
 	public static String refreshJS = "var scripts =  document.getElementsByTagName('script');"

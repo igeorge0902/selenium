@@ -58,7 +58,7 @@ public class PropertyUtils extends TestBase {
 		{
 
 			Log.info("The property key: " + propertyKey + " is missing!");
-			//TestBase.assertFalse(!propertyValue.isEmpty(), "The property key: " + propertyKey + " is missing!");
+			TestBase.fail("The property key: " + propertyKey + " is missing!");
 
 		}
 

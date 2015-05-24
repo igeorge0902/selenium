@@ -108,7 +108,7 @@ public class WaitTool extends TestBase {
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element
 		} catch (Exception e) {
-			Log.info(e.getMessage());
+			Log.info(e.getLocalizedMessage());
 		} 
 		return null; 
 	}

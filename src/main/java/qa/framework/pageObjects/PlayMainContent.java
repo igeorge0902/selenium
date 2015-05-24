@@ -48,8 +48,7 @@ public class PlayMainContent extends TestBase implements WebElements {
 			String theGroup = matchertitle.group(1);
 
 			String titletext = String.format("%s", theGroup);
-			WaitTool.waitForTextPresent(driver, By.id(playbackTitle),
-					titletext, 20);
+			WaitTool.waitForTextPresent(driver, By.id(playbackTitle),titletext, 20);
 
 		}
 
@@ -116,6 +115,9 @@ public class PlayMainContent extends TestBase implements WebElements {
 		int second = x;
 
 		while (second > 0) {
+			
+			server.setConnectionTimeout(90);
+			Log.info("Connection timeout is set to 90 seconds.");
 
 			try {
 
@@ -163,15 +165,12 @@ public class PlayMainContent extends TestBase implements WebElements {
 
 				// verify should work the way that if playback fails, next
 				// content will be loaded to avoid loop for playback fails
-				TestBase.assertTrue(elapsedtime2 > elapsedtime,
-						"Playback stopped after " + sleep + " seconds!");
+				TestBase.assertTrue(elapsedtime2 > elapsedtime, "Playback stopped after " + sleep + " seconds!");
 
 			} catch (Exception e) {
 				CaptureScreenshotOnFailureListener.captureScreenShot();
-				Reporter.log("Playback failed for content: "
-						+ driver.findElement(By.id(playbackTitle)).getText());
-				Log.info("Playback failed for content: "
-						+ driver.findElement(By.id(playbackTitle)).getText());
+				Reporter.log("Playback failed for content: " + driver.findElement(By.id(playbackTitle)).getText());
+				Log.info("Playback failed for content: " + driver.findElement(By.id(playbackTitle)).getText());
 				second--;
 			}
 
@@ -187,8 +186,7 @@ public class PlayMainContent extends TestBase implements WebElements {
 			Log.info("Playback quit not succeeded...");
 		}
 
-		Reporter.log("Playback works fine: "
-				+ driver.findElement(By.id(playbackTitle)).getText());
+		Reporter.log("Playback works fine: " + driver.findElement(By.id(playbackTitle)).getText());
 		Log.info("Playback works fine");
 
 		Thread.sleep(5000);

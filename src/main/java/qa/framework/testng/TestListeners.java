@@ -22,7 +22,8 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 
 	public void onStart(ISuite arg0) {
 
-		Reporter.log("About to begin executing Suite " + arg0.getName(), true);
+		System.out.println("About to begin executing Suite " + arg0.getName());
+
 
 	}
 
@@ -32,7 +33,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 
 	public void onFinish(ISuite arg0) {
 
-		Reporter.log("About to end executing Suite " + arg0.getName(), true);
+		System.out.println("About to end executing Suite " + arg0.getName());
 
 	}
 
@@ -40,7 +41,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 
 	public void onStart(ITestContext arg0) {
 
-		Reporter.log("About to begin executing Test " + arg0.getName(), true);
+		System.out.println("About to begin executing Test " + arg0.getName());
 
 	}
 
@@ -49,6 +50,8 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 	public void onFinish(ITestContext arg0) {
 
 		Reporter.log("Completed executing test " + arg0.getName(), true);
+		Log.info("Completed executing test " + arg0.getName());
+
 
 	}
 
@@ -59,6 +62,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		Reporter.log(arg0.getName()+" test succeeded!", true);
 		Log.info(arg0.getName()+" test succeeded!");
 
 	}
@@ -70,6 +74,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 		// This is calling the printTestResults method
 
 		printTestResults(arg0);
+		Reporter.log(arg0.getName()+" test failed!", true);
 		Log.info(arg0.getName()+" test failed!");
 		
 
@@ -108,18 +113,22 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 	private void printTestResults(ITestResult result) {
 
 		Reporter.log("Test Method resides in " + result.getTestClass().getName(), true);
+		Log.info("Test Method resides in " + result.getTestClass().getName());
+
 
 		if (result.getParameters().length != 0) {
 
-			String params = null;
+			String params = " ";
 
 			for (Object parameter : result.getParameters()) {
 
-				params += parameter.toString() + ",";
+				params += parameter.toString() + " , ";
 
 			}
 
 			Reporter.log("Test Method had the following parameters : " + params, true);
+			Log.info("Test Method had the following parameters : " + params);
+
 
 		}
 
@@ -146,7 +155,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 		}
 
 		Reporter.log("Test Status: " + status, true);
-		Log.info("Test Status:" + status);
+		Log.info("Test Status: " + status);
 
 	}
 
@@ -156,7 +165,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 
 		String textMsg = "About to begin executing following method : " + returnMethodName(arg0.getTestMethod());
 
-		Reporter.log(textMsg, true);
+		System.out.println(textMsg);
 
 	}
 
@@ -166,7 +175,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 
 		String textMsg = "Completed executing following method : " + returnMethodName(arg0.getTestMethod());
 
-		Reporter.log(textMsg, true);
+		System.out.println(textMsg);
 
 	}
 

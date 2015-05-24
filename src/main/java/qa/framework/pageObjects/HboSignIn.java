@@ -115,11 +115,11 @@ public class HboSignIn extends TestBase implements WebElements {
 	// TODO: change it to parental
 	public HboSignIn enterNewDevice() {
 		try {
-			if (isNewDeviceDialog() == false) {
+			if (isDialogDisplayed("newDeviceInput") == false) {
 				Log.info("hello");
 				return new HboSignIn();
 
-			} else if (isNewDeviceDialog() == true) {
+			} else if (isDialogDisplayed("newDeviceInput") == true) {
 
 				driver.findElement(By.id("newDeviceInput")).clear();
 				driver.findElement(By.id("newDeviceInput")).sendKeys("MacBook");
@@ -150,7 +150,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		String pageSource = driver.getTitle();
 		Log.info(pageSource);
 
-		TestBase.languageMeta(baseLanguageMeta_, 5);
+		TestBase.checkMetaContent(baseLanguageMeta_, 5);
 		CaptureScreenshotOnFailureListener.captureScreenShot();
 
 		return new HboSignIn();

@@ -37,7 +37,7 @@ import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
 @SuppressWarnings("unused")
-public class CustomReportListener extends TestListenerAdapter implements
+public class CustomReportListener extends TestMethodListener implements
 		IReporter {
 
 	private static final SimpleDateFormat dateFormatter = new SimpleDateFormat(
@@ -59,8 +59,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 	// HTML report
 
 	@Override
-	public void generateReport(List<XmlSuite> xml, List<ISuite> suites,
-			String outdir) {
+	public void generateReport(List<XmlSuite> xml, List<ISuite> suites,	String outdir) {
 
 		// Iterating over each suite included in the test
 		for (ISuite suite : suites) {
@@ -113,8 +112,7 @@ public class CustomReportListener extends TestListenerAdapter implements
 
 	protected PrintWriter createWriter(String outdir) throws IOException {
 		new File(outdir).mkdirs();
-		return new PrintWriter(new BufferedWriter(new FileWriter(new File(
-				outdir, "CustomReport.html"))));
+		return new PrintWriter(new BufferedWriter(new FileWriter(new File(outdir, "CustomReport.html"))));
 	}
 
 	/**
