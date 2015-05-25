@@ -2996,3 +2996,368 @@ INFO main org.apache.log4j.Logger - Driver closed afterInvocation
 INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
 INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
 INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9090
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51775
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51786
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51790
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51801
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - 08S01
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51866
+INFO SocketListener0-22 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51923
+INFO SocketListener0-26 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51932
+INFO SocketListener0-27 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51934
+INFO SocketListener0-25 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51939
+INFO SocketListener0-28 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51946
+INFO SocketListener0-30 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51956
+INFO SocketListener0-31 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51961
+INFO SocketListener0-33 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51963
+INFO SocketListener0-32 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51973
+INFO SocketListener0-36 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51976
+INFO SocketListener0-34 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51995
+INFO SocketListener0-43 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:51999
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO SocketListener0-34 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52026
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (5b792fa9-dd59-1049-9e91-35a0b1b219c0)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (5b792fa9-dd59-1049-9e91-35a0b1b219c0)] -> id: menuTabs_settings]
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menu
+INFO main org.apache.log4j.Logger - Element found:By.tagName: a
+INFO main org.apache.log4j.Logger - Script run: arguments[0].scrollIntoView(true);
+INFO main org.apache.log4j.Logger - Script run: javascript:window.scrollBy(250,350)
+INFO main org.apache.log4j.Logger - Element clicked on:[[[[FirefoxDriver: firefox on MAC (5b792fa9-dd59-1049-9e91-35a0b1b219c0)] -> id: menu]] -> tag name: a]
+INFO main org.apache.log4j.Logger - Element found:By.id: langENG_theme
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (5b792fa9-dd59-1049-9e91-35a0b1b219c0)] -> id: langENG_theme]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO SocketListener0-11 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52155
+INFO SocketListener0-34 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52179
+INFO SocketListener0-24 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52183
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (5b792fa9-dd59-1049-9e91-35a0b1b219c0)] -> css selector: div.form_buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testLanguageChange test succeeded!
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9090
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52420
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9090
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - java.lang.NumberFormatException: For input string: "10240 "
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener1@0.0.0.0:9090
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testLanguageChange test failed!
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9090
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - java.lang.NumberFormatException: For input string: "10240 "
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener1@0.0.0.0:9090
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testLanguageChange test failed!
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - java.lang.NullPointerException
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testLanguageChange test failed!
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - 10240
+INFO main org.apache.log4j.Logger - 10240
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52861
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52872
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52877
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52883
+INFO main org.apache.log4j.Logger - 08S01
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO SocketListener0-20 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52954
+INFO SocketListener0-33 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52959
+INFO SocketListener0-34 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52968
+INFO SocketListener0-36 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52974
+INFO SocketListener0-35 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:52977
+INFO SocketListener0-3 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53003
+INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53005
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53007
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53013
+INFO SocketListener0-37 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53016
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53027
+INFO SocketListener0-38 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53034
+INFO SocketListener0-47 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53050
+INFO SocketListener0-44 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53055
+INFO SocketListener0-46 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53064
+INFO SocketListener0-24 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53069
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (39f6d1f0-9d67-7b48-8e07-ecb0dcb0adf2)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (39f6d1f0-9d67-7b48-8e07-ecb0dcb0adf2)] -> id: menuTabs_settings]
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menu
+INFO main org.apache.log4j.Logger - Element found:By.tagName: a
+INFO main org.apache.log4j.Logger - Script run: arguments[0].scrollIntoView(true);
+INFO main org.apache.log4j.Logger - Script run: javascript:window.scrollBy(250,350)
+INFO main org.apache.log4j.Logger - Element clicked on:[[[[FirefoxDriver: firefox on MAC (39f6d1f0-9d67-7b48-8e07-ecb0dcb0adf2)] -> id: menu]] -> tag name: a]
+INFO main org.apache.log4j.Logger - Element found:By.id: langENG_theme
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (39f6d1f0-9d67-7b48-8e07-ecb0dcb0adf2)] -> id: langENG_theme]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (39f6d1f0-9d67-7b48-8e07-ecb0dcb0adf2)] -> css selector: div.form_buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO SocketListener0-17 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53231
+INFO SocketListener0-15 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53242
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - 3785
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testLanguageChange test succeeded!
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 10240
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 10240
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53695
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53705
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53709
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53719
+INFO main org.apache.log4j.Logger - 08S01
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO SocketListener0-20 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53786
+INFO SocketListener0-33 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53796
+INFO SocketListener0-32 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53798
+INFO SocketListener0-34 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53825
+INFO SocketListener0-2 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53830
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53833
+INFO SocketListener0-35 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53840
+INFO SocketListener0-3 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53843
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53855
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53858
+INFO SocketListener0-41 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53866
+INFO SocketListener0-42 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53868
+INFO SocketListener0-43 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53888
+INFO SocketListener0-45 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53891
+INFO SocketListener0-46 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53894
+INFO SocketListener0-47 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53907
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (9dc5235f-d990-ef4a-89f2-ea2774e25d13)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (9dc5235f-d990-ef4a-89f2-ea2774e25d13)] -> id: menuTabs_settings]
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menu
+INFO main org.apache.log4j.Logger - Element found:By.tagName: a
+INFO main org.apache.log4j.Logger - Script run: arguments[0].scrollIntoView(true);
+INFO main org.apache.log4j.Logger - Script run: javascript:window.scrollBy(250,350)
+INFO main org.apache.log4j.Logger - Element clicked on:[[[[FirefoxDriver: firefox on MAC (9dc5235f-d990-ef4a-89f2-ea2774e25d13)] -> id: menu]] -> tag name: a]
+INFO SocketListener0-20 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:53988
+INFO main org.apache.log4j.Logger - Element found:By.id: langENG_theme
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (9dc5235f-d990-ef4a-89f2-ea2774e25d13)] -> id: langENG_theme]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (9dc5235f-d990-ef4a-89f2-ea2774e25d13)] -> css selector: div.form_buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO SocketListener0-8 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:54103
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 3695
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testLanguageChange test succeeded!
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@75db5df9
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 10240
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 10240
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59245
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59256
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59260
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59267
+INFO main org.apache.log4j.Logger - 08S01
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59336
+INFO SocketListener0-25 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59394
+INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59398
+INFO SocketListener0-23 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59404
+INFO SocketListener0-28 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59411
+INFO SocketListener0-27 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59415
+INFO SocketListener0-30 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59421
+INFO SocketListener0-29 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59423
+INFO SocketListener0-31 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59433
+INFO SocketListener0-37 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59453
+INFO SocketListener0-40 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59455
+INFO SocketListener0-41 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59463
+INFO SocketListener0-17 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59482
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (f2bf507f-c1f1-a64a-9b0c-447b8b50e252)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (f2bf507f-c1f1-a64a-9b0c-447b8b50e252)] -> id: menuTabs_settings]
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menu
+INFO main org.apache.log4j.Logger - Element found:By.tagName: a
+INFO main org.apache.log4j.Logger - Script run: arguments[0].scrollIntoView(true);
+INFO main org.apache.log4j.Logger - Script run: javascript:window.scrollBy(250,350)
+INFO main org.apache.log4j.Logger - Element clicked on:[[[[FirefoxDriver: firefox on MAC (f2bf507f-c1f1-a64a-9b0c-447b8b50e252)] -> id: menu]] -> tag name: a]
+INFO SocketListener0-39 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59530
+INFO main org.apache.log4j.Logger - Element found:By.id: langENG_theme
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (f2bf507f-c1f1-a64a-9b0c-447b8b50e252)] -> id: langENG_theme]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59599
+INFO SocketListener0-20 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59621
+INFO SocketListener0-39 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59628
+INFO SocketListener0-43 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:59638
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (f2bf507f-c1f1-a64a-9b0c-447b8b50e252)] -> css selector: div.form_buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: div.form_buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 3877
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testLanguageChange test succeeded!
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test

@@ -62,7 +62,7 @@ public class PropertyUtils extends TestBase {
 
 		}
 
-		return propertyValue;
+		return propertyValue.trim();
 	}
 
 	public static void setProperty(String propertyKey, String value)
@@ -70,15 +70,13 @@ public class PropertyUtils extends TestBase {
 		p.setProperty(propertyKey, value);
 	}
 
-	public static void listProperties() throws FileNotFoundException,
-			IOException {
+	public static void listProperties() throws FileNotFoundException, IOException {
 
 		for (Enumeration<?> e = p.propertyNames(); e.hasMoreElements();)
 
 			while (e.hasMoreElements()) {
 				String propertyKey = (String) e.nextElement();
-				System.out.println(propertyKey + " -- "
-						+ p.getProperty(propertyKey));
+				System.out.println(propertyKey + " -- " + p.getProperty(propertyKey));
 
 			}
 	}

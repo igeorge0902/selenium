@@ -12,7 +12,6 @@ import main.java.qa.framework.utils.PropertyUtils;
 import main.java.qa.framework.utils.WaitTool;
 import net.lightbody.bmp.proxy.ProxyServer;
 
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.Keys;
@@ -46,8 +45,8 @@ import org.openqa.selenium.Platform;
 public class WebDriverManager extends TestBase implements WebElements {
 	public static WebDriver driver = null;
 	private static String browser = null;
-
-	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	static Boolean setDownstreamMaxKB;
+	static Boolean setDownStreamKbps;
 
 	// Default constructor, no need to extend this just use as a static
 	public WebDriverManager() {
@@ -61,8 +60,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @param url
 	 * @throws Exception
 	 */
-	public static WebDriver startDriver(String browser, String portalUrl,
-			int timeout) throws Exception {
+	public static WebDriver startDriver(String browser, String portalUrl, int timeout) throws Exception {
 
 		WebDriverManager.browser = browser;
 		DOMConfigurator.configure(log4jxml);
@@ -80,9 +78,9 @@ public class WebDriverManager extends TestBase implements WebElements {
 			System.out.println("browser : " + browser);
 
 			TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
-
-			System.setProperty("webdriver.ie.driver",
-					"lib/IEDriverServer32.exe");
+			
+			String IEDriverPath = Paths.get("lib/IEDriverServer32.exe").toFile().toString();
+			System.setProperty("webdriver.ie.driver", IEDriverPath);
 
 			DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
 			Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,	true);
@@ -106,8 +104,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 
-			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
-					.keyUp(Keys.CONTROL).perform();
+			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 
 			/*
 			 * // click the override link if it exists try {
@@ -210,8 +207,6 @@ public class WebDriverManager extends TestBase implements WebElements {
 			// Use specific Firefox profile
 			ProfilesIni profilesIni = new ProfilesIni();
 			FirefoxProfile profile = profilesIni.getProfile("Test");
-			
-			//ProxyServer server = new ProxyServer(9090);
 			server.start();
 			
 			//captures the mouse movements and navigations
@@ -220,16 +215,26 @@ public class WebDriverManager extends TestBase implements WebElements {
 						
 			server.getStreamManager().enable();
 			
-			//server.getStreamManager().setDownstreamMaxKB(10240);
-			//Log.info(server.getStreamManager().getRemainingDownstreamKB());		
-			//Log.info(server.getStreamManager().getMaxDownstreamKB());
+			if (setDownstreamMaxKB = Boolean.valueOf(PropertyUtils.getProperty("setDownstreamMaxKB"))) {
+				Log.info("setDownstreamMaxKB: "+setDownstreamMaxKB);
+			server.getStreamManager().setDownstreamMaxKB(Integer.parseInt(PropertyUtils.getProperty("downStreamMaxKB")));
+			Log.info("Remaining DownStreamKB: "+server.getStreamManager().getRemainingDownstreamKB());		
+			Log.info("Maximum DownStreamKB: "+server.getStreamManager().getMaxDownstreamKB());
+			}
 			
+			if (setDownStreamKbps = Boolean.valueOf(PropertyUtils.getProperty("setDownStreamKbps"))) {
+				Log.info("setDownStreamKbps: "+setDownStreamKbps);
 			server.getStreamManager().setDownstreamKbps(Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
-
+			Log.info("DownStream speed is set to: " + Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
+			}
+			
 		    // get the Selenium proxy object
 		    Proxy proxy = server.seleniumProxy();
+			
+		    String path = Paths.get("har.har").toString();
+			TestBase.deleteFile(path);
 		    
-		    // configure it as a desired capability
+			// configure it as a desired capability
 		    DesiredCapabilities Capabilities = new DesiredCapabilities();
 		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
 		    Capabilities.setCapability(FirefoxDriver.PROFILE, profile);
@@ -237,7 +242,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 			driver = new FirefoxDriver(Capabilities);
 			
 			driver = driverEventListener(Capabilities);
-			Log.info(browser + "driver initialized with eventListeners");
+			Log.info(browser + " driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
 			server.newHar(BaseUrls.PLAYER.get());
@@ -342,5 +347,6 @@ public class WebDriverManager extends TestBase implements WebElements {
 	public static String getBroswer() {
 		return browser;
 	}
+
 
 } // end class

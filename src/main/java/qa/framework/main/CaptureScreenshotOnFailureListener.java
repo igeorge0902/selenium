@@ -38,8 +38,9 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 		implements WebElements {
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	private static Logger Log = Logger.getLogger(Logger.class.getName());
+	public static String filename;
 
-	public static void captureScreenShot() {
+	public static String captureScreenShot(String filename_) {
 
 		WebDriver driver = WebDriverManager.getDriverInstance();
 
@@ -55,7 +56,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 				|| (driver instanceof EventFiringWebDriver)) {
 			// Create a calendar object so we can create a date and time for the
 			// screenshot
-			Calendar calendar = Calendar.getInstance();
+			//Calendar calendar = Calendar.getInstance();
 
 			// Get the users home path and append the screen shots folder
 			// destination
@@ -75,14 +76,8 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 			}
 
 			// Create the filename for the screen shots
-			String filename = screenShotsFolder + WebDriverManager.getBroswer()
-					+ "-" + "-" + calendar.get(Calendar.YEAR) + "-"
-					+ calendar.get(Calendar.MONTH) + "-"
-					+ calendar.get(Calendar.DAY_OF_MONTH) + "-"
-					+ calendar.get(Calendar.HOUR_OF_DAY) + "-"
-					+ calendar.get(Calendar.MINUTE) + "-"
-					+ calendar.get(Calendar.SECOND) + "-"
-					+ calendar.get(Calendar.MILLISECOND) + ".png";
+			filename = screenShotsFolder + WebDriverManager.getBroswer()
+					+ "-" + "-" + filename_ + ".png";
 
 			// Take the screen shot and then copy the file to the screen shot
 			// folder
@@ -126,6 +121,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 					+ new Date() + "\"/></p></a><br />");
 
 		}
+		return filename;
 
 	}
 

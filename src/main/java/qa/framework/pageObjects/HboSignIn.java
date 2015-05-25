@@ -13,7 +13,6 @@ public class HboSignIn extends TestBase implements WebElements {
 
 	private static String email = PropertyUtils.getProperty("email");
 	private static String password = PropertyUtils.getProperty("password");
-	protected boolean _languagecheck_;
 
 	public HboSignIn selectOperator(String operator) throws Exception {
 
@@ -93,21 +92,19 @@ public class HboSignIn extends TestBase implements WebElements {
 			if (second >= 60)
 				fail("timeout");
 			try {
-				if (isElementPresent(By
-						.cssSelector("#sign-in-buttons > button.button_submit")))
+				if (isElementPresent(By.cssSelector("#sign-in-buttons > button.button_submit")))
 					break;
 			} catch (Exception e) {
 			}
 			Thread.sleep(1000);
 		}
-		driver.findElement(
-				By.cssSelector("#sign-in-buttons > button.button_submit"))
-				.click();
+		driver.findElement(By.cssSelector("#sign-in-buttons > button.button_submit")).click();
 		Log.info("submit is successful");
 
 		Log.info(driver.getCurrentUrl());
 		Thread.sleep(5000);
 		Log.info(driver.getCurrentUrl());
+		
 		TestBase.assertTrue(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen), driver.getCurrentUrl());
 		Log.info("Login is successful!");
 
@@ -142,8 +139,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		String baseLanguageMeta_ = PropertyUtils.getProperty(languageMeta);
 		Log.info(baseLanguageMeta_);
 
-		if (!driver.getCurrentUrl().equals(driver.getCurrentUrl().equals(
-						BaseUrls.PLAYER.get() + OffersScreen))) {
+		if (!driver.getCurrentUrl().equals(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen))) {
 
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		}
@@ -152,7 +148,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		Log.info(pageSource);
 
 		TestBase.checkMetaContent(baseLanguageMeta_, 5);
-		CaptureScreenshotOnFailureListener.captureScreenShot();
+		CaptureScreenshotOnFailureListener.captureScreenShot(baseLanguageMeta_);
 
 		return new HboSignIn();
 	}

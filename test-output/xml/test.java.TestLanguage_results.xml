@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="48,625">
+           time="66,594">
   <properties />
   
   
-            <testcase name="testLanguageChange" time="48,625" classname="test.java.TestLanguage" />
+            <testcase name="testLanguageChange" time="66,594" classname="test.java.TestLanguage" />
       
 </testsuite>

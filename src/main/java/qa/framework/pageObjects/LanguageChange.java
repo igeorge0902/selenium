@@ -4,6 +4,7 @@ import main.java.qa.framework.main.BaseUrls;
 import main.java.qa.framework.main.CaptureScreenshotOnFailureListener;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
+import main.java.qa.framework.utils.TesseractExample;
 import main.java.qa.framework.utils.WaitTool;
 
 import org.openqa.selenium.By;
@@ -49,7 +50,9 @@ public class LanguageChange extends TestBase implements WebElements {
 			WaitTool.waitForElement(driver,	By.cssSelector("div.form_buttons > button.button_submit") ,5);
 
 			TestBase.checkMetaContent(meta1, 5);		
-			CaptureScreenshotOnFailureListener.captureScreenShot();
+			String screenShot = CaptureScreenshotOnFailureListener.captureScreenShot(meta1);
+			String[] arguments = new String[] {screenShot}; 
+			TesseractExample.main(arguments);
 
 		}
 

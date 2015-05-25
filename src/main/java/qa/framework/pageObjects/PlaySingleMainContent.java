@@ -39,6 +39,7 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 			throws Exception, CustomException {
 
 		Actions action = new Actions(driver);
+		String titletext = "";
 
 		String content = PropertyUtils.getProperty(contents);
 
@@ -53,6 +54,7 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 		// TODO: proper playback start check
 
 		String titleName = driver.findElement(By.id(playbackTitle)).getText();
+		Log.info(titleName);
 
 		// wait for title presence with regex
 		Pattern title = Pattern.compile("(.)");
@@ -62,9 +64,8 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 
 			String theGroup = matchertitle.group(1);
 
-			String titletext = String.format("%s", theGroup);
-			WaitTool.waitForTextPresent(driver, By.id(playbackTitle),
-					titletext, 20);
+			titletext = String.format("%s", theGroup);
+			WaitTool.waitForTextPresent(driver, By.id(playbackTitle), titletext, 20);
 
 		}
 
@@ -185,7 +186,7 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 						"Playback stopped after " + sleep + " seconds!");
 
 			} catch (Exception e) {
-				CaptureScreenshotOnFailureListener.captureScreenShot();
+				CaptureScreenshotOnFailureListener.captureScreenShot(titletext);
 				Reporter.log("Playback failed for content: "
 						+ driver.findElement(By.id(playbackTitle)).getText());
 				Log.info("Playback failed for content: "

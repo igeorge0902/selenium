@@ -43,7 +43,6 @@ public void afterNavigateTo(String url, WebDriver driver) {
 	Har har = server.getHar();
 	
 	String path = Paths.get("har.har").toString();
-	TestBase.deleteFile(path);
 
     FileOutputStream fileOutputStream = new FileOutputStream(path, true);
     BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream, 100 * 256);

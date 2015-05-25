@@ -61,6 +61,7 @@ public class TestBase extends Verify implements WebElements {
 	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public static String testngXml = PropertyUtils.getProperty("testngXml");
+	public static String port = PropertyUtils.getProperty("port");
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
@@ -69,7 +70,7 @@ public class TestBase extends Verify implements WebElements {
 	 */
 	protected static WebDriver driver = null;
 
-	protected static ProxyServer server = new ProxyServer(9090);
+	protected static ProxyServer server = new ProxyServer(Integer.parseInt(port));
 	
 	public TestBase(WebDriver driver) {
 		TestBase.driver = WebDriverManager.driver;
@@ -925,7 +926,7 @@ public class TestBase extends Verify implements WebElements {
 				TestBase.assertTrue(elapsedtime2 > elapsedtime, "Playback stopped after "+second+" miliseconds for the content " + driver.findElement(By.id(playbackTitle)).getText() +" !");
 
 			} catch (Exception e) {
-				CaptureScreenshotOnFailureListener.captureScreenShot();
+				CaptureScreenshotOnFailureListener.captureScreenShot(driver.findElement(By.id(playbackTitle)).getText());
 				Reporter.log("Playback failed for content: " + driver.findElement(By.id(playbackTitle)).getText());
 				Log.info("Playback failed for content: " + driver.findElement(By.id(playbackTitle)).getText());
 
