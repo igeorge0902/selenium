@@ -5,7 +5,6 @@ import main.java.qa.framework.main.CaptureScreenshotOnFailureListener;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
 import main.java.qa.framework.utils.PropertyUtils;
-import main.java.qa.framework.utils.WaitTool;
 
 import org.openqa.selenium.By;
 import org.testng.Reporter;
@@ -107,7 +106,9 @@ public class HboSignIn extends TestBase implements WebElements {
 		Log.info("submit is successful");
 
 		Log.info(driver.getCurrentUrl());
-		//TestBase.assertTrue(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen), driver.getCurrentUrl());
+		Thread.sleep(5000);
+		Log.info(driver.getCurrentUrl());
+		TestBase.assertTrue(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen), driver.getCurrentUrl());
 		Log.info("Login is successful!");
 
 		return new HboSignIn();

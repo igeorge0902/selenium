@@ -38,6 +38,7 @@ log/logfile.log.2015-05-14 -text
 log/logfile.log.2015-05-16 -text
 log/logfile.log.2015-05-20 -text
 log/logfile.log.2015-05-23 -text
+log/logfile.log.2015-05-24 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 scripts/create_db.sql -text
@@ -290,6 +291,24 @@ test-output/bullet_point.png -text svneol=unset#image/png
 test-output/collapseall.gif -text svneol=unset#image/gif
 test-output/emailable-report.html -text
 test-output/failed.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME--2015-4-25-2-28-47-49.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-25-13-840.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-32-14-223.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-45-45-729.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-16-7-93.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-25-8-114.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-31-33-622.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-35-15-187.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-44-36-509.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-48-46-838.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-51-47-409.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-56-33-776.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-37-44-429.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-46-8-529.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-48-59-618.png -text
+test-output/html/ScreenShots/Firefox-2015-4-25-12-34-59-162.png -text
+test-output/html/ScreenShots/\*safari-2015-4-25-12-15-37-129.png -text
+test-output/html/ScreenShots/\*safari-2015-4-25-12-24-34-455.png -text
 test-output/html/index.html -text svneol=unset#text/plain
 test-output/html/output.html -text svneol=unset#text/plain
 test-output/html/overview.html -text svneol=unset#text/plain
@@ -335,4 +354,5 @@ test-output/xml/test.java.SampleTest_results.xml -text svneol=unset#application/
 test-output/xml/test.java.TestHboSignIn_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestLanguage_results.xml -text svneol=unset#application/xml
 test-output/xml/test.java.TestPlayerSeries_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestSingleContent_results.xml -text svneol=unset#text/plain
 /testng.xml -text

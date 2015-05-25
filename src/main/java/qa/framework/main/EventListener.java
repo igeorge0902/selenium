@@ -89,7 +89,7 @@ public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 
     if (WebDriverManager.getBroswer().equals(safari)) {
     	try {
-    		WaitTool.waitForElementPresent(driver, by, 10);
+    		WaitTool.waitForElementPresent(driver, by, 3);
     		driver.switchTo().activeElement();
     		System.out.println("beforeFindBy event done for Safari");
     	} catch (Exception e) {
@@ -102,6 +102,16 @@ public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 
 @Override
 public void afterFindBy(By by, WebElement element, WebDriver driver) {
+	
+    if (WebDriverManager.getBroswer().equals(safari)) {
+    	try {
+    		WaitTool.waitForElementPresent(driver, by, 3);
+    		driver.switchTo().activeElement().click();
+    		System.out.println("beforeFindBy event done for Safari");
+    	} catch (Exception e) {
+    		System.out.println("No beforeFindBy event done for Safari");
+    	}
+    }
     
     if (WebDriverManager.getBroswer().equals(chrome)) {  
     	

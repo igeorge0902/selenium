@@ -101,6 +101,7 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 			WaitTool.waitForElement(driver, By.id(positionsSeek), 10);
 			TestBase.MouseHoverByJavaScript(By.id(positionsSeek));
 
+			//TODO: it fails now
 			WebElement seekBar;
 			seekBar = driver.findElement(By.id(positionsSeek));
 			action.moveToElement(seekBar).build().perform();

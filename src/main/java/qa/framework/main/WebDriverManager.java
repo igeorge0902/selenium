@@ -1,9 +1,7 @@
 package main.java.qa.framework.main;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +10,6 @@ import java.util.Arrays;
 
 import main.java.qa.framework.utils.PropertyUtils;
 import main.java.qa.framework.utils.WaitTool;
-import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.proxy.ProxyServer;
 
 import org.apache.log4j.Logger;
@@ -27,6 +24,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -188,12 +186,12 @@ public class WebDriverManager extends TestBase implements WebElements {
 			capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
 			capabilities.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
 
-			options.addArguments(Arrays.asList(new String[] {"user-data-dir=" + chromeProfile,"--clear-data-reduction-proxy-data-savings","--ignore-certificate-errors", "--start-maximized" }));	
+			options.addArguments(Arrays.asList(new String[] {"--use-gpu-in-tests" ,"--clear-token-service" ,"user-data-dir=" + chromeProfile,"--clear-data-reduction-proxy-data-savings","--ignore-certificate-errors", "--start-maximized" }));	
 
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver(capabilities);
 
-			driver = driverEventListener(options);
-			Log.info(browser + "driver initialized with eventListeners");
+			driver = driverEventListener(capabilities);
+			Log.info(browser + " driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
 
@@ -259,11 +257,16 @@ public class WebDriverManager extends TestBase implements WebElements {
 
 			new DesiredCapabilities();
 			DesiredCapabilities Capabilities = DesiredCapabilities.safari();
+			SafariOptions options = new SafariOptions();
 
 			Capabilities.setCapability("nativeEvents", false);
 			Capabilities.setCapability("unexpectedAlertBehaviour", "accept");
 			Capabilities.setCapability("acceptSslCerts", true);
-
+			Capabilities.setCapability(SafariOptions.CAPABILITY, options);
+			Capabilities.setCapability(CapabilityType.HAS_NATIVE_EVENTS, false);
+			
+			options.setUseCleanSession(true);
+			
 			// For use with SafariDriver:
 			driver = new SafariDriver(Capabilities);
 

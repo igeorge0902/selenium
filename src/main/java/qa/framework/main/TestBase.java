@@ -922,7 +922,7 @@ public class TestBase extends Verify implements WebElements {
 
 				// verify should work the way that if playback fails, next
 				// content will be loaded to avoid loop for playback fails
-				TestBase.assertTrue(elapsedtime2 > elapsedtime, "Playback stopped after "+second+" seconds for the content " + driver.findElement(By.id(playbackTitle)).getText() +" !");
+				TestBase.assertTrue(elapsedtime2 > elapsedtime, "Playback stopped after "+second+" miliseconds for the content " + driver.findElement(By.id(playbackTitle)).getText() +" !");
 
 			} catch (Exception e) {
 				CaptureScreenshotOnFailureListener.captureScreenShot();

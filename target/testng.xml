@@ -49,7 +49,7 @@
 	
 		<parameter name="browser" value="*safari" />
 		<parameter name="url" value="http://www.google.com" />
-		<parameter name="operator" value="OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 		<parameter name="contents" value="content1" />
 	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
 	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />
@@ -110,7 +110,7 @@
 	<test name="Test on Firefox" preserve-order="true">
 		<parameter name="browser" value="Firefox" />
 		<parameter name="url" value="http://www.google.com" />
-		<parameter name="operator" value="OperatorId_d4125db5-bc12-4ee4-b68f-0b39b5276659" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
 	    <parameter name="contents" value="content1" />
 	    
 	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
@@ -140,8 +140,8 @@
 			</class>
 			<class name="test.java.TestSingleContent">
 				<methods>
-					<exclude name="testSignInSuccess" />
-					<exclude name="testPlaySingleContent" />
+					<include name="testSignInSuccess" />
+					<include name="testPlaySingleContent" />
 				</methods>
 			</class>								
 			<class name="test.java.TestPlayer">
@@ -259,8 +259,8 @@
 			</class>
 			<class name="test.java.TestSingleContent">
 				<methods>
-					<include name="testSignInSuccess" />
-					<include name="testPlaySingleContent" />
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
 				</methods>
 			</class>								
 			<class name="test.java.TestPlayer">
