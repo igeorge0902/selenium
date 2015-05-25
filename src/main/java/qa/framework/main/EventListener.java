@@ -1,8 +1,14 @@
 package main.java.qa.framework.main;
 
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.nio.file.Paths;
+
 import main.java.qa.framework.utils.WaitTool;
 import main.java.qa.framework.main.WebDriverManager;
 
+
+import net.lightbody.bmp.core.har.Har;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -33,12 +39,29 @@ System.out.println("Before Navigate To "+url);
 @Override
 public void afterNavigateTo(String url, WebDriver driver) {
 	
+	try {
+	Har har = server.getHar();
+	
+	String path = Paths.get("har.har").toString();
+	TestBase.deleteFile(path);
+
+    FileOutputStream fileOutputStream = new FileOutputStream(path, true);
+    BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream, 100 * 256);
+
+	har.writeTo(bufferedOutputStream);
+    
+	bufferedOutputStream.flush();
+    fileOutputStream.close();
+	} catch (Exception e) {
+		Log.info(e.getMessage());
+	}
 
 }
 
 @Override
 public void beforeNavigateBack(WebDriver driver) {
-System.out.println("Before Navigate Back. Right now I'm at "+driver.getCurrentUrl());
+	
+	Log.info("Before Navigate Back. Right now I'm at "+driver.getCurrentUrl());
 
 }
 
@@ -80,16 +103,6 @@ public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 @Override
 public void afterFindBy(By by, WebElement element, WebDriver driver) {
     
-    if (WebDriverManager.getBroswer().equals(safari)) {
-    	try {
-    		WaitTool.waitForElement(driver, by, 5);
-    		driver.switchTo().activeElement().click();
-    		System.out.println("afterFindBy event done for Safari");
-    	} catch (Exception e) {
-    		System.out.println("No afterFindBy event done for Safari");
-    	}
-    }
-    
     if (WebDriverManager.getBroswer().equals(chrome)) {  
     	
     	try {
@@ -104,8 +117,7 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
         	
         	if (driver instanceof JavascriptExecutor) {
         		
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].scrollIntoView(true);", by);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", by);
             System.out.println("afterFindBy event done for CHROME");
         	}
         } catch (Exception e) {
@@ -122,15 +134,15 @@ public void afterFindBy(By by, WebElement element, WebDriver driver) {
 ////////////////////CLICKON RELATED METHODS ///////////////
 @Override
 public void beforeClickOn(WebElement element, WebDriver driver) {
-/*
-    if (WebDriverManager.getBroswer().equals(safari)) {
+
+    if (WebDriverManager.getBroswer().equalsIgnoreCase(safari)) {
     	try {
     		driver.switchTo().activeElement();
     		System.out.println("beforeClickOn event done for Safari");
     	} catch (Exception e) {
     		System.out.println("No beforeClickOn event done for Safari");
     	}
-    }*/
+    }
 }
 
 @Override

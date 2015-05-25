@@ -43,7 +43,7 @@ public class MouseHover extends TestBase {
 			playbuttonmenu = driver.findElement(By.id("play_dropdown"));
 			action.moveToElement(playbuttonmenu);
 
-			Clicks.clickEpisode();
+			Clicks.clickContent();
 
 		}
 

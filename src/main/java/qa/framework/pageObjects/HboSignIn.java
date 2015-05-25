@@ -5,6 +5,7 @@ import main.java.qa.framework.main.CaptureScreenshotOnFailureListener;
 import main.java.qa.framework.main.TestBase;
 import main.java.qa.framework.main.WebElements;
 import main.java.qa.framework.utils.PropertyUtils;
+import main.java.qa.framework.utils.WaitTool;
 
 import org.openqa.selenium.By;
 import org.testng.Reporter;
@@ -105,8 +106,8 @@ public class HboSignIn extends TestBase implements WebElements {
 				.click();
 		Log.info("submit is successful");
 
-		TestBase.assertTrue(driver.getCurrentUrl().equals(
-				BaseUrls.PLAYER.get() + OffersScreen));
+		Log.info(driver.getCurrentUrl());
+		//TestBase.assertTrue(driver.getCurrentUrl().equals(BaseUrls.PLAYER.get() + OffersScreen), driver.getCurrentUrl());
 		Log.info("Login is successful!");
 
 		return new HboSignIn();
@@ -140,8 +141,7 @@ public class HboSignIn extends TestBase implements WebElements {
 		String baseLanguageMeta_ = PropertyUtils.getProperty(languageMeta);
 		Log.info(baseLanguageMeta_);
 
-		if (!driver.getCurrentUrl().equals(
-				driver.getCurrentUrl().equals(
+		if (!driver.getCurrentUrl().equals(driver.getCurrentUrl().equals(
 						BaseUrls.PLAYER.get() + OffersScreen))) {
 
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);

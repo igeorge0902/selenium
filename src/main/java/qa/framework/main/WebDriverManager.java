@@ -168,12 +168,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 			 * 
 			 * http://code.google.com/p/selenium/wiki/ChromeDriver
 			 */
-			ChromeOptions options = new ChromeOptions();
-			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
-			Capabilities.isJavascriptEnabled();
-
-			options.addArguments(Arrays.asList(new String[] {"--ignore-certificate-errors", "--start-maximized" }));
-
+			
 			String chromeProfile = "";
 			if (!TestBase.isSupportedPlatformMac(true)) {
 				PropertyUtils.loadPropertyFile(proprtyFile);
@@ -181,14 +176,19 @@ public class WebDriverManager extends TestBase implements WebElements {
 				chromeProfile = chromeProfileWin;
 			}
 
-			//TODO: set chromeProfileMac
 			else if (TestBase.isSupportedPlatformMac(true)) {
 				PropertyUtils.loadPropertyFile(proprtyFile);
 				String chromeProfileMac = PropertyUtils.getProperty("chromeProfileMac");
 				chromeProfile = chromeProfileMac;
 			}
+			
+			ChromeOptions options = new ChromeOptions();
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
+			capabilities.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
 
-			options.addArguments("user-data-dir=" + chromeProfile);
+			options.addArguments(Arrays.asList(new String[] {"user-data-dir=" + chromeProfile,"--clear-data-reduction-proxy-data-savings","--ignore-certificate-errors", "--start-maximized" }));	
 
 			driver = new ChromeDriver(options);
 
@@ -215,15 +215,16 @@ public class WebDriverManager extends TestBase implements WebElements {
 			
 			//ProxyServer server = new ProxyServer(9090);
 			server.start();
+			
 			//captures the mouse movements and navigations
 			server.setCaptureHeaders(true);
 			server.setCaptureContent(true);
 						
 			server.getStreamManager().enable();
 			
-			server.getStreamManager().setDownstreamMaxKB(10240);
-			Log.info(server.getStreamManager().getRemainingDownstreamKB());		
-			Log.info(server.getStreamManager().getMaxDownstreamKB());
+			//server.getStreamManager().setDownstreamMaxKB(10240);
+			//Log.info(server.getStreamManager().getRemainingDownstreamKB());		
+			//Log.info(server.getStreamManager().getMaxDownstreamKB());
 			
 			server.getStreamManager().setDownstreamKbps(Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
 
@@ -246,30 +247,9 @@ public class WebDriverManager extends TestBase implements WebElements {
 			driver.get(portalUrl);
 			
 			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			
+			driver.manage().deleteAllCookies();			
 			
 			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
-
-			// get the HAR data
-			Har har = server.getHar();
-			
-			String path = Paths.get("har.har").toString();
-			TestBase.deleteFile(path);
-
-	        FileOutputStream fileOutputStream = new FileOutputStream(path, true);
-	        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream, 100 * 256);
-
-	//	    BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
-	//		PrintWriter printWriter = new PrintWriter(bufferedWriter);
-
-			har.writeTo(bufferedOutputStream);
-	        
-			bufferedOutputStream.flush();
-	        fileOutputStream.close();
-	        
-	//		printWriter.flush();
-	//		printWriter.close();
 			
 
 		} else {

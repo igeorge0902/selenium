@@ -44,12 +44,9 @@ public class LanguageChange extends TestBase implements WebElements {
 
 			driver.findElement(By.id(lang1)).click();
 			driver.findElement(
-					By.cssSelector("div.form_buttons > button.button_submit"))
-					.click();
+					By.cssSelector("div.form_buttons > button.button_submit")).click();
 
-			WaitTool.waitForElement(driver,
-					By.cssSelector("div.form_buttons > button.button_submit"),
-					10);
+			WaitTool.waitForElement(driver,	By.cssSelector("div.form_buttons > button.button_submit") ,5);
 
 			TestBase.checkMetaContent(meta1, 5);		
 			CaptureScreenshotOnFailureListener.captureScreenShot();

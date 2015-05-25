@@ -41,9 +41,8 @@ public class PlaySingleMainContent extends TestBase implements WebElements {
 		Actions action = new Actions(driver);
 
 		String content = PropertyUtils.getProperty(contents);
-		String url = content;
 
-		driver.get(url);
+		driver.get(BaseUrls.PLAYER.get() + content);
 
 		// start playback
 		MouseHover MouseHover = new MouseHover();
