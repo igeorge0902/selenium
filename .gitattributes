@@ -7,13 +7,12 @@
 /README.md -text
 config/log4j.properties -text svneol=unset#text/plain
 config/log4j.xml -text svneol=unset#text/plain
+config/sun_checks.xml -text svneol=unset#text/plain
 /employee.txt -text
-/eurotext.png -text
-/eurotext.tif -text
 /har.har -text
+/image1.JPG -text
 /languagetestng.xml -text svneol=unset#application/xml
 lib/IEDriverServer.exe -text
-lib/IEDriverServer32.exe.svntmp -text
 lib/chromedriver -text
 lib/chromedriver.exe -text
 lib/episode_urls.txt -text svneol=unset#text/plain
@@ -39,6 +38,9 @@ log/logfile.log.2015-05-16 -text
 log/logfile.log.2015-05-20 -text
 log/logfile.log.2015-05-23 -text
 log/logfile.log.2015-05-24 -text
+log/logfile.log.2015-05-25 -text
+log/logfile.log.2015-05-26 -text
+log/logfile.log.2015-05-27 -text
 /pom.xml -text
 /properties.properties -text svneol=unset#text/plain
 scripts/create_db.sql -text
@@ -67,36 +69,40 @@ src/main/java/qa/framework/pageObjects/SelectMovieGroups.java -text
 src/main/java/qa/framework/pageObjects/SelectSeries.java -text
 src/main/java/qa/framework/pageObjects/Yahoo.java -text
 src/main/java/qa/framework/temp/DeserializationClass.java -text
+src/main/java/qa/framework/temp/GUI.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/GradeDemo.java -text svneol=unset#text/plain
 src/main/java/qa/framework/temp/LinkGetter.java -text
+src/main/java/qa/framework/temp/MessageDialog.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/MessageUtil.java -text svneol=unset#text/plain
 src/main/java/qa/framework/temp/Names.java -text
+src/main/java/qa/framework/temp/PerformanceTest.java -text svneol=unset#text/plain
 src/main/java/qa/framework/temp/RegexTestPatternMatcher.java -text
 src/main/java/qa/framework/temp/SQLTest.java -text
 src/main/java/qa/framework/temp/SerializaitonClass.java -text
 src/main/java/qa/framework/temp/StringMatcher.java -text
+src/main/java/qa/framework/temp/TabbedPane.java -text svneol=unset#text/plain
 src/main/java/qa/framework/temp/TesseractExample.java -text
+src/main/java/qa/framework/temp/TestListenerAdapter_.java -text
+src/main/java/qa/framework/testng/CreateTestNGXml.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/CustomException.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/CustomReportListener.java -text
 src/main/java/qa/framework/testng/CustomTestListener.java -text
 src/main/java/qa/framework/testng/ExpectedExceptions.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/LoggingListener.java -text
 src/main/java/qa/framework/testng/MethodInterceptor.java -text svneol=unset#text/plain
-src/main/java/qa/framework/testng/TestListenerAdapter_.java -text
 src/main/java/qa/framework/testng/TestListeners.java -text
 src/main/java/qa/framework/testng/TestMethodErrorBuffer.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/TestMethodListener.java -text
 src/main/java/qa/framework/testng/VerificationError.java -text svneol=unset#text/plain
 src/main/java/qa/framework/testng/Verify.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/CreateXML.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/FileSeparator.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/GroupTestExample.java -text svneol=unset#text/plain
-src/main/java/qa/framework/utils/LinkGetter.java -text
-src/main/java/qa/framework/utils/MessageUtil.java -text svneol=unset#text/plain
-src/main/java/qa/framework/utils/PerformanceTest.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/PropertyUtils.java -text svneol=unset#text/plain
-src/main/java/qa/framework/utils/RegexTestPatternMatcher.java -text
 src/main/java/qa/framework/utils/SQLAccess.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/SampleDataProvider.java -text
-src/main/java/qa/framework/utils/StringMatcher.java -text
 src/main/java/qa/framework/utils/TesseractExample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/TesseractUtil.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/TestDataSample.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/WaitTool.java -text svneol=unset#text/plain
 src/main/java/qa/framework/utils/WebTestFactory.java -text
@@ -265,6 +271,7 @@ tessdata/configs/api_config.svntmp -text
 tessdata/configs/digits -text
 tessdata/configs/hocr -text
 tessdata/eng.traineddata -text
+tessdata/hun.traineddata -text
 tessdata/osd.traineddata -text
 tessdata/pdf.ttf -text
 tessdata/pdf.ttx -text
@@ -354,6 +361,7 @@ test-output/testng-reports.css -text
 test-output/testng-reports.js -text
 test-output/testng-results.xml -text svneol=unset#application/xml
 test-output/testng.css -text
+test-output/xml/main.java.qa.framework.testng.CreateTestNGXml_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.SampleTest_results.xml -text svneol=unset#application/xml
 test-output/xml/test.java.TestHboSignIn_results.xml -text svneol=unset#text/plain
 test-output/xml/test.java.TestLanguage_results.xml -text svneol=unset#application/xml

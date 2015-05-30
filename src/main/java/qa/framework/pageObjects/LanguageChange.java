@@ -54,6 +54,7 @@ public class LanguageChange extends TestBase implements WebElements {
 			String[] arguments = new String[] {screenShot}; 
 			TesseractExample.main(arguments);
 
+
 		}
 
 		return new LanguageChange();

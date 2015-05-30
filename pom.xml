@@ -7,6 +7,10 @@
         <artifactId>HBO_automation_tool</artifactId>
         <packaging>jar</packaging>
         <version>2.0</version>       
+   <scm>
+    <connection>scm:svn:file:///usr/local/repo/branches/44.4</connection>
+    <developerConnection>scm:svn:file:///usr/local/repo/branches/44.4</developerConnection>
+  </scm>
         
     <name>Selenium</name>
 
@@ -17,7 +21,7 @@
     	<java.ext.dirs>${project.build.directory}/libs</java.ext.dirs>
 	</properties>
        
-<dependencies>
+	<dependencies>
             
              <dependency>
    				<groupId>org.testng</groupId>
@@ -92,7 +96,7 @@
 			<dependency>
 				<groupId>net.sourceforge.tess4j</groupId>
 				<artifactId>tess4j</artifactId>
-				<version>1.5.0</version>
+				<version>2.0.0</version>
 			</dependency>
 			
 		    <dependency>
@@ -155,18 +159,20 @@
       </reportSets>
     </plugin>
       
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>2.15</version>
-          <reportSets>
-            <reportSet>
-              <reports>
-                <report>checkstyle</report>
-              </reports>
-            </reportSet>
-          </reportSets>
-        </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.15</version>
+        <configuration>
+          <configLocation>${basedir}/config/sun_checks.xml</configLocation>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changelog-plugin</artifactId>
+        <version>2.3</version>
+      </plugin>
       
       </plugins>
     </reporting>

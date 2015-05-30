@@ -16,8 +16,7 @@
 package test.java;
 
 import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.vietocr.ImageHelper;
-import net.sourceforge.vietocr.ImageIOHelper;
+import net.sourceforge.tess4j.util.*;
 
 import com.recognition.software.jdeskew.ImageDeskew;
 
@@ -53,7 +52,7 @@ public class TesseractTest {
 
 	@Before
 	public void setUp() {
-		instance = Tesseract.getInstance();
+		instance = new Tesseract();
 	}
 
 	@After
@@ -74,6 +73,7 @@ public class TesseractTest {
 		System.out.println(result);
 		assertEquals(expResult, result.substring(0, expResult.length()));
 	}
+	
 
 	/**
 	 * Test of doOCR method, of class Tesseract.

@@ -28,7 +28,7 @@ public class TesseractExample extends TestBase implements WebElements {
 			}
 		
     	Log.info(System.getProperty("jna.library.path"));
-        Tesseract instance = Tesseract.getInstance();  // JNA Interface Mapping
+        Tesseract instance = new Tesseract();  // JNA Interface Mapping
 
         //Tesseract1 instance = new Tesseract1(); // JNA Direct Mapping
         //File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Maven build bundles English data
@@ -39,10 +39,11 @@ public class TesseractExample extends TestBase implements WebElements {
 		try {
 			
 			image = ImageIO.read(new File(CaptureScreenshotOnFailureListener.filename));
-			
+			Log.info("OCR processing is starting...");
+
 			String result = instance.doOCR(image);
-            System.out.println(result);
-            
+            Log.info(result);
+            Log.info("OCR processing is done!");
 		} catch (IOException | TesseractException e) {
 			e.printStackTrace();
 		}
