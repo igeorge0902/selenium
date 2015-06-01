@@ -52,5 +52,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/TaskDialog-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/TaskDialog-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/georgegaspar/Selenium-Server/TaskDialog-1.2.0-javadoc.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

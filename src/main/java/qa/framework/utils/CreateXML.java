@@ -17,6 +17,8 @@ import org.testng.xml.XmlInclude;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
+import com.ezware.dialog.task.TaskDialog;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.*;
@@ -31,6 +33,7 @@ public class CreateXML extends JFrame{
     private static XmlInclude included;
 
     private static Map<String, XmlInclude> includes = new HashMap<String, XmlInclude>();
+	private Set<String> includesSet = Collections.synchronizedSet(new HashSet<String>());
     
     private static Set<String> testSet_ = Collections.synchronizedSet(new HashSet<String>());
     private ArrayList<XmlClass> classes = new ArrayList<XmlClass>();
@@ -40,7 +43,7 @@ public class CreateXML extends JFrame{
 
 	private Set<String> setlisteners = new HashSet<String>();
 	
-	private Set<String> excludesSet = new HashSet<String>();
+	private Set<String> excludesSet = Collections.synchronizedSet(new HashSet<String>());
 	private List<String> excludes = new ArrayList<String>();
 	
 	private List<XmlInclude> includesList = new ArrayList<XmlInclude>();
@@ -209,11 +212,12 @@ public class CreateXML extends JFrame{
         	    	m_class = ClassHelper.forName(value6);     
         	    	
         			if (m_class !=null){   				
-                    	
+                    	if (testSet_.contains(value6) == false) {
+                    	testSet_.add(value6);
         				testClasses_.put(testClass.getName(), testClass);	
                     	classes.addAll(testClasses_.values());
                     	test.setXmlClasses(classes);
-                    	          				        				
+                    	}                    	          				        				
         			} 
         			
         			else if (m_class==null) {
@@ -234,15 +238,20 @@ public class CreateXML extends JFrame{
         				
         				for (Method method : methods) {
         					if (method.getName().equals(included.getName())) {
-        						
-        						includes.put(included.getName(), included);        						
+        						if (includesSet.contains(value7) == false) {
+        						includesSet.add(value7);
+        						System.out.println("IncSet: "+includesSet);
+        						includes.put(included.getName(), included);
+        						excludesSet.remove(method.getName());
+        						includesList.clear();
         		        	    includesList.addAll(includes.values());
         						
         		        	    for (int i = 0;i<test.getClasses().size();i++) {
         						
         		        	    	test.getClasses().get(i).setIncludedMethods(includesList);
         		        		
-        		        		}
+        		        			}
+        						}
         					} 
         				}
 
@@ -262,7 +271,10 @@ public class CreateXML extends JFrame{
         				methods = m_class.getDeclaredMethods();
             				
         				for (Method method : methods) {
+        					if(method.getName().equals(value7)==false) {
+        					
         				excludesSet.add(method.getName());
+        				System.out.println("ExSet_: "+excludesSet);
         				
         				if (value7.isEmpty()) {
         				
@@ -277,29 +289,24 @@ public class CreateXML extends JFrame{
         					
         				} else {
         					
-        				excludesSet.remove(included.getName());
+        				excludesSet.removeAll(includesSet);
+        				System.out.println("ExSet: "+excludesSet);
         				excludes.removeAll(excludes);
         				excludes.addAll(excludesSet);
-        				excludes.remove(includesList);
+
             				
         				for (int i = 0; i<test.getClasses().size();i++){
             				
         					test.getClasses().get(i).setExcludedMethods(excludes);
         				}
             		}
-        		}
-
-            	}
-            			
-    			else if (m_class==null) {
-            	    
-    				JOptionPane.showMessageDialog(null, "No matching Test Class to add", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
-
-    				}	
-            			
         		} 
+        	}
+    	}   			
+	} 
 
-				JOptionPane.showMessageDialog(null, "Done", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
+		JOptionPane.showMessageDialog(null, "Done", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
+           
            }
     }
     
@@ -311,6 +318,8 @@ public class CreateXML extends JFrame{
     
     class REMOVEButtonHandler implements ActionListener {
         public void actionPerformed(ActionEvent e){
+
+	//TaskDialog taskDialog = new TaskDialog(frame, "");
 
     final JDialog dialog = new JDialog(frame, "Click a button", true);
   
@@ -326,7 +335,7 @@ public class CreateXML extends JFrame{
     
     private JPanel createSimpleDialogBox() {
     	
-        final int numButtons = 4;
+    	final int numButtons = 4;
         JRadioButton[] radioButtons = new JRadioButton[numButtons];
         final ButtonGroup group = new ButtonGroup();
 
@@ -386,7 +395,9 @@ public class CreateXML extends JFrame{
         				testClass = new XmlClass(value6);
         				testSet_.remove(value6);
         				testClasses_.keySet().remove(testClass.getName());
-        				classes.retainAll(testClasses_.values());
+        				classes.clear();
+        				classes.addAll(testClasses_.values());
+        				
         				test.setXmlClasses(classes);        				
         				
                 	    JOptionPane.showMessageDialog(null, "Test Class removed", "What happened?", JOptionPane. INFORMATION_MESSAGE);
