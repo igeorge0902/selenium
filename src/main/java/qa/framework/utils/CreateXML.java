@@ -17,8 +17,6 @@ import org.testng.xml.XmlInclude;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
-import com.ezware.dialog.task.TaskDialog;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.*;
@@ -207,26 +205,32 @@ public class CreateXML extends JFrame{
         	    } 
         	    
         	    if (!value6.isEmpty()) {
-        	        
-        	    	testClass = new XmlClass(value6);
-        	    	m_class = ClassHelper.forName(value6);     
+        	    	m_class = ClassHelper.forName(value6); 
         	    	
-        			if (m_class !=null){   				
-                    	if (testSet_.contains(value6) == false) {
-                    	testSet_.add(value6);
-        				testClasses_.put(testClass.getName(), testClass);	
-                    	classes.addAll(testClasses_.values());
-                    	test.setXmlClasses(classes);
-                    	}                    	          				        				
-        			} 
-        			
-        			else if (m_class==null) {
-        	    
-        				JOptionPane.showMessageDialog(null, "No matching Test Class to add", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
+        	    	if (m_class !=null){  
+        				testClass = new XmlClass(value6);
 
-        			}
-        			
-        	    } 
+                    	if (testSet_.contains(value6) == false) {
+                    		
+                    	testSet_.add(value6);
+        				testClasses_.put(testClass.getName(), testClass);
+        				
+        				classes.clear();        				
+                    	classes.addAll(testClasses_.values());
+                    	System.out.println(testClasses_.keySet().size());
+                               	
+                    	test.setXmlClasses(classes);
+                    	}
+        	    	}
+                    	
+            			else if (m_class==null) {
+                    	    
+            				JOptionPane.showMessageDialog(null, "No matching Test Class to add", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
+
+            			}
+                    	
+        			}       	    
+        	    
         	    
         		if (!value7.isEmpty()){
         	    	included = new XmlInclude(value7);
@@ -236,13 +240,21 @@ public class CreateXML extends JFrame{
         		
         				methods = m_class.getDeclaredMethods();
         				
+        				
         				for (Method method : methods) {
+        					
         					if (method.getName().equals(included.getName())) {
+        						
         						if (includesSet.contains(value7) == false) {
+        					
         						includesSet.add(value7);
         						System.out.println("IncSet: "+includesSet);
+        						
         						includes.put(included.getName(), included);
+        						System.out.println("IncMap: "+includes.values() +", keys:" + includes.keySet());
+        						        						
         						excludesSet.remove(method.getName());
+        						
         						includesList.clear();
         		        	    includesList.addAll(includes.values());
         						
@@ -271,39 +283,93 @@ public class CreateXML extends JFrame{
         				methods = m_class.getDeclaredMethods();
             				
         				for (Method method : methods) {
+        					        					
         					if(method.getName().equals(value7)==false) {
-        					
+        				        						
         				excludesSet.add(method.getName());
         				System.out.println("ExSet_: "+excludesSet);
         				
         				if (value7.isEmpty()) {
         				
-            				excludes.removeAll(excludes);
+            				excludes.clear();
             				excludes.addAll(excludesSet);
-            				excludes.remove(includesList);
+            				excludes.remove(includesList);           				
                 				
-            				for (int i = 0; i<test.getClasses().size();i++){
-                				
-            					test.getClasses().get(i).setExcludedMethods(excludes);
+            				List<String> list = new ArrayList<String>(testClasses_.keySet());
+            				
+            				for (int i = 0; i<testClasses_.keySet().size();i++){
+            					if (testClasses_.keySet().contains(testClass.getName())) {
+            					
+            						classes.get(classes.size()-1).setExcludedMethods(excludes);
+                					System.out.println(classes.get(classes.size()-1));
+
+            					}
+            					//test.getClasses().get(i).setExcludedMethods(excludes);
             				}
         					
         				} else {
-        					
+        				
         				excludesSet.removeAll(includesSet);
         				System.out.println("ExSet: "+excludesSet);
-        				excludes.removeAll(excludes);
+        				
+        				excludes.clear();
         				excludes.addAll(excludesSet);
 
             				
-        				for (int i = 0; i<test.getClasses().size();i++){
-            				
-        					test.getClasses().get(i).setExcludedMethods(excludes);
+        				for (int i = 0; i<testClasses_.keySet().size();i++){
+        					
+    						classes.get(classes.size()-1).setExcludedMethods(excludes);
+        					System.out.println(classes.get(classes.size()-1));
+
+        					//test.getClasses().get(i).setExcludedMethods(excludes);
         				}
-            		}
+
+        			}
         		} 
         	}
-    	}   			
-	} 
+    	}
+            			
+            			else if (m_class==null) {
+                    	    
+            				JOptionPane.showMessageDialog(null, "No matching Test Class to add", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
+
+            				}
+            			
+	}
+        		
+        		if (!value8.isEmpty()){
+        			m_class = ClassHelper.forName(value6);       	    	
+        			if (m_class !=null){
+        				
+        				methods = m_class.getDeclaredMethods();
+        				
+        				for (Method method : methods) {
+        					        					
+        					if(method.getName().equals(value8)) {
+        			    				
+						includesSet.remove(value8);
+						includes.keySet().remove(value8);
+						
+						includesList.clear();
+		        	    includesList.addAll(includes.values());
+		        	    
+		        	    excludesSet.add(value8);
+		        	    excludes.clear();
+        				excludes.addAll(excludesSet);
+		        	    
+						
+		        	    for (int i = 0;i<test.getClasses().size();i++) {
+						
+		        	    	test.getClasses().get(i).setIncludedMethods(includesList);
+		        	    	test.getClasses().get(i).setExcludedMethods(excludes);
+		        		
+		        				}
+        					
+        					}
+        				}
+        			
+        			}
+        		}
 
 		JOptionPane.showMessageDialog(null, "Done", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
            
@@ -392,17 +458,52 @@ public class CreateXML extends JFrame{
         			} 
         			else {
         				
-        				testClass = new XmlClass(value6);
+        				//testClass = new XmlClass(value6);
+            	    	m_class = ClassHelper.forName(value6);       	    	
+            	    	
         				testSet_.remove(value6);
         				testClasses_.keySet().remove(testClass.getName());
+        				
         				classes.clear();
         				classes.addAll(testClasses_.values());
         				
-        				test.setXmlClasses(classes);        				
+        				test.setXmlClasses(classes); 
+        				
+        				methods = m_class.getDeclaredMethods();
+        				
+        				for (Method method : methods) {
+        					
+        					if(includesSet.contains(method.getName()) ) {
+        			    				
+						includesSet.remove(method.getName());
+						includes.keySet().remove(method.getName());
+						
+						includesList.clear();
+		        	    includesList.addAll(includes.values());
+		        	    
+		        	    for (int i = 0;i<test.getClasses().size();i++) {
+							
+		        	    	test.getClasses().get(i).setIncludedMethods(includesList);
+		        		
+		        				}
+        					}
+        					
+		        	    excludesSet.remove(method.getName());
+		        	    excludes.clear();
+        				excludes.addAll(excludesSet);
+        				System.out.println("ExSet: "+excludesSet);
+        				        				
+		        	    for (int i = 0;i<test.getClasses().size();i++) {
+							
+		        	    	test.getClasses().get(i).setExcludedMethods(excludes);
+		        		
+		        				}
+
+        					}
         				
                 	    JOptionPane.showMessageDialog(null, "Test Class removed", "What happened?", JOptionPane. INFORMATION_MESSAGE);
                     	value6 = JOptionPane.showInputDialog("Enter the Test Class you want to remove:");
-        				
+                    	
         				} 
         			}
 

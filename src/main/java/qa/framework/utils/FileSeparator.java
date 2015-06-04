@@ -79,7 +79,7 @@ public class FileSeparator extends TestBase implements WebElements {
 			System.out.println(children[i]);
 
 			files.add(children[i]);
-			//System.out.println(files);
+			System.out.println(files);
 
 		}
 
