@@ -133,9 +133,9 @@ public class TestBase extends Verify implements WebElements {
 		} catch (Exception e) {
 			Log.info(e.getMessage());
 		}
-
-		// TODO: copy report output to apache docs folder, and replace the
-		// existing, after the existing has been backed up
+		
+		Path apache = Paths.get(PropertyUtils.getProperty("apache"));
+		TestBase.copyDirectory(testOutput_.toFile(), apache.toFile());
 	}
 
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
@@ -722,7 +722,7 @@ public class TestBase extends Verify implements WebElements {
 	 * @throws IOException
 	 */
 
-	public void copyDirectory(File sourceLocation, File targetLocation)
+	public static void copyDirectory(File sourceLocation, File targetLocation)
 			throws IOException {
 
 		if (sourceLocation.isDirectory()) {

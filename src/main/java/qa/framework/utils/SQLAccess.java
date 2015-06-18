@@ -123,9 +123,10 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.executeUpdate();
 
 		} catch (Exception e) {
-			e.getLocalizedMessage();
+			Log.info(e.getLocalizedMessage());
 
 		} finally {
+			Log.info("Report was inserted into the db.");
 
 			close();
 		}
@@ -134,7 +135,7 @@ public class SQLAccess extends TestBase implements WebElements {
 
 	public void insertReport() throws Exception {
 
-		Path testOutput = Paths.get("test-output/html");
+		Path testOutput = Paths.get(workingDir + File.separator + "test-output/html");
 
 		if (testOutput.toFile().exists()) {
 			try {
@@ -144,23 +145,23 @@ public class SQLAccess extends TestBase implements WebElements {
 				e.printStackTrace();
 			}
 		} else {
-			System.out.println("The directory does not exist");
+			Log.info(testOutput.toFile().toString() + " directory does not exist");
 		}
 
 		//filePath = urlsFile;
-		index = testOutput + File.separator + "index.html";
-		output = testOutput + File.separator + "output.html";
-		overview = testOutput + File.separator + "overview.html";
-		reportng_css = testOutput + File.separator + "reportng.css";
-		reportng_js = testOutput + File.separator + "reportng.js";
-		sorttable = testOutput + File.separator + "sorttable.js";
-		suite_groups = testOutput + File.separator + "suite1_groups.html";
-		suite_test1 = testOutput + File.separator + "suite1_test1_results.html";
-		suite_test2 = testOutput + File.separator + "suite1_test2_results.html";
-		suite_test3 = testOutput + File.separator + "suite1_test3_results.html";
-		suite_test4 = testOutput + File.separator + "suite1_test4_results.html";
-		suite_test5 = testOutput + File.separator + "suite1_test5_results.html";
-		suites = testOutput + File.separator + "suites.html";
+		index = testOutput.toFile().toString() + File.separator + "index.html";
+		output = testOutput.toFile().toString() + File.separator + "output.html";
+		overview = testOutput.toFile().toString() + File.separator + "overview.html";
+		reportng_css = testOutput.toFile().toString() + File.separator + "reportng.css";
+		reportng_js = testOutput.toFile().toString() + File.separator + "reportng.js";
+		sorttable = testOutput.toFile().toString() + File.separator + "sorttable.js";
+		suite_groups = testOutput.toFile().toString() + File.separator + "suite1_groups.html";
+		suite_test1 = testOutput.toFile().toString() + File.separator + "suite1_test1_results.html";
+		suite_test2 = testOutput.toFile().toString() + File.separator + "suite1_test2_results.html";
+		suite_test3 = testOutput.toFile().toString() + File.separator + "suite1_test3_results.html";
+		suite_test4 = testOutput.toFile().toString() + File.separator + "suite1_test4_results.html";
+		suite_test5 = testOutput.toFile().toString() + File.separator + "suite1_test5_results.html";
+		suites = testOutput.toFile().toString() + File.separator + "suites.html";
 
 		try {
 			// This will load the MySQL driver, each DB has its own driver
@@ -223,18 +224,18 @@ public class SQLAccess extends TestBase implements WebElements {
 			int row = statement.executeUpdate();
 
 			if (row > 0) {
-				System.out.println("Files were inserted into the db.");
+				Log.info("Files were inserted into the db.");
 			}
 
 			close();
 
 		} catch (SQLException ex) {
 
-			ex.printStackTrace();
+			Log.info(ex.getMessage());
 
 		} catch (IOException ex) {
 
-			ex.printStackTrace();
+			Log.info(ex.getMessage());
 		}
 
 	}

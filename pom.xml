@@ -7,10 +7,6 @@
         <artifactId>HBO_automation_tool</artifactId>
         <packaging>jar</packaging>
         <version>2.0</version>       
-   <scm>
-    <connection>scm:svn:file:///usr/local/repo/branches/44.4</connection>
-    <developerConnection>scm:svn:file:///usr/local/repo/branches/44.4</developerConnection>
-  </scm>
         
     <name>Selenium</name>
 
@@ -215,7 +211,7 @@
               <goal>copy-dependencies</goal>
             </goals>
 			<configuration>
-              <outputDirectory>${basedir}/target/libs</outputDirectory>              
+              <outputDirectory>${project.build.directory}/libs</outputDirectory>              
             </configuration>   
           </execution>
         </executions>
@@ -284,14 +280,13 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/</outputDirectory>
+              <outputDirectory>${project.build.directory}/</outputDirectory>
               <resources>          
                     <resource>
         				<directory>${basedir}</directory>
 					        <includes>
 					           	<include>**.xml</include>
 					           	<include>properties.properties</include>
-					           	<include>**.apk</include>
 					        </includes>
     				</resource>                 
               </resources>              
@@ -306,12 +301,13 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/config</outputDirectory>
+              <outputDirectory>${project.build.directory}/config</outputDirectory>
               <resources>          
                 <resource>
                   <directory>${basedir}/config</directory>
    					    <includes>
     					    <include>log4j.xml</include>
+    					    <include>log4j.properties</include>    					    
    					    </includes>                  
                 </resource>
               </resources>              
@@ -326,7 +322,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/libs</outputDirectory>
+              <outputDirectory>${project.build.directory}/libs</outputDirectory>
               <resources>          
                 <resource>
                   <directory>${basedir}/libs</directory>
@@ -346,7 +342,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/lib</outputDirectory>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
               <resources>          
                 <resource>
                   <directory>${basedir}/lib</directory>                
@@ -363,7 +359,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/scripts</outputDirectory>
+              <outputDirectory>${project.build.directory}/scripts</outputDirectory>
               <resources>          
                 <resource>
                   <directory>${basedir}/scripts</directory>
@@ -383,7 +379,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/tessdata</outputDirectory>
+              <outputDirectory>${project.build.directory}/tessdata</outputDirectory>
               <resources>          
                 <resource>
                   <directory>${basedir}/tessdata/</directory>                 

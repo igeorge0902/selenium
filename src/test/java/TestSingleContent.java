@@ -28,6 +28,9 @@ public class TestSingleContent extends TestBase {
 				BaseUrls.PLAYER.get() + OffersScreen));
 		Log.info("submit test is done");
 		Reporter.log("<p>submit test is done<br></p>");
+		
+		Log.info("Remaining DownStreamKB: "+server.getStreamManager().getRemainingDownstreamKB());
+
 
 		/*
 		 * //language check SignInPage.checkLanguage();

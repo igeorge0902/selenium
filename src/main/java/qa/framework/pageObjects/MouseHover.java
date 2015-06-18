@@ -30,8 +30,7 @@ public class MouseHover extends TestBase {
 
 		Thread.sleep(5000);
 
-		WebElement selectedplaygomb = driver.findElement(By
-				.xpath(ContentDetail));
+		WebElement selectedplaygomb = driver.findElement(By.xpath(ContentDetail));
 
 		if (selectedplaygomb.isDisplayed()) {
 
@@ -41,7 +40,7 @@ public class MouseHover extends TestBase {
 
 			WebElement playbuttonmenu;
 			playbuttonmenu = driver.findElement(By.id("play_dropdown"));
-			action.moveToElement(playbuttonmenu);
+			action.moveToElement(playbuttonmenu).perform();
 
 			Clicks.clickContent();
 

@@ -328,10 +328,10 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception 
 	 */
 	public static void stopDriver() {
+		server.stop();
 		driver.close();
-		unregister(driver);
 		Log.info("Driver closed afterInvocation");
-		System.out.println("eventListeners unregistered");
+		unregister(driver);
 
 	}
 

@@ -184,6 +184,7 @@ public class CreateXML extends JFrame{
         	String value8=text8.getText();
 
         	    suite.setName (value1);
+        	    suite.setVerbose(10);
 
 				if (!value2.isEmpty()){     
 				setlisteners.add(value2);
@@ -220,6 +221,7 @@ public class CreateXML extends JFrame{
                     	System.out.println(testClasses_.keySet().size());
                                	
                     	test.setXmlClasses(classes);
+
                     	}
         	    	}
                     	
@@ -294,9 +296,7 @@ public class CreateXML extends JFrame{
             				excludes.clear();
             				excludes.addAll(excludesSet);
             				excludes.remove(includesList);           				
-                				
-            				List<String> list = new ArrayList<String>(testClasses_.keySet());
-            				
+                				            				
             				for (int i = 0; i<testClasses_.keySet().size();i++){
             					if (testClasses_.keySet().contains(testClass.getName())) {
             					
@@ -370,7 +370,7 @@ public class CreateXML extends JFrame{
         			
         			}
         		}
-
+        		
 		JOptionPane.showMessageDialog(null, "Done", "What happened?", JOptionPane. INFORMATION_MESSAGE);        				
            
            }
@@ -401,7 +401,7 @@ public class CreateXML extends JFrame{
     
     private JPanel createSimpleDialogBox() {
     	
-    	final int numButtons = 4;
+    	final int numButtons = 2;
         JRadioButton[] radioButtons = new JRadioButton[numButtons];
         final ButtonGroup group = new ButtonGroup();
 
@@ -417,12 +417,6 @@ public class CreateXML extends JFrame{
 
         radioButtons[1] = new JRadioButton("Remove Parameters");
         radioButtons[1].setActionCommand(parameter);
-
-        radioButtons[2] = new JRadioButton("Remove Included Methods");
-        radioButtons[2].setActionCommand(includedMethod);
-
-        radioButtons[3] = new JRadioButton("Remove Excluded Methods");
-        radioButtons[3].setActionCommand(excludedMethod);
 
         for (int i = 0; i < numButtons; i++) {
             group.add(radioButtons[i]);

@@ -141,7 +141,7 @@
 			<class name="test.java.TestSingleContent">
 				<methods>
 					<include name="testSignInSuccess" />
-					<include name="testPlaySingleContent" />
+					<exclude name="testPlaySingleContent" />
 				</methods>
 			</class>								
 			<class name="test.java.TestPlayer">

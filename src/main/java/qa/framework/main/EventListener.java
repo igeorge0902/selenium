@@ -1,6 +1,7 @@
 package main.java.qa.framework.main;
 
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.nio.file.Paths;
 
@@ -42,17 +43,14 @@ public void afterNavigateTo(String url, WebDriver driver) {
 	try {
 	Har har = server.getHar();
 	
-	String path = Paths.get("har.har").toString();
+	String path = Paths.get(workingDir + File.separator + testOutput_ + File.separator + "har.har").toString();
 
-    FileOutputStream fileOutputStream = new FileOutputStream(path, true);
+    FileOutputStream fileOutputStream = new FileOutputStream(path);
     BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream, 100 * 256);
 
 	har.writeTo(bufferedOutputStream);
     
-	bufferedOutputStream.flush();
-    fileOutputStream.close();
 	} catch (Exception e) {
-		Log.info(e.getMessage());
 	}
 
 }

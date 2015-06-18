@@ -2,9 +2,7 @@ package main.java.qa.framework.main;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import main.java.qa.framework.main.Click;
-import main.java.qa.framework.utils.PropertyUtils;
 
 public class Clicks extends TestBase implements WebElements {
 	Click click;
@@ -20,17 +18,16 @@ public class Clicks extends TestBase implements WebElements {
 	public void ContentTypes() {
 
 		switch (click) {
-		case CLICKEPISODE:
-			driver.findElement(By.partialLinkText(PropertyUtils.getProperty("episode"))).click();
+		case CLICKEPISODE:			
+			driver.findElement(By.linkText("Epizód megtekintése")).click();			
 			break;
 
 		case CLICKCONTENT:
-			driver.findElement(By.partialLinkText(PropertyUtils.getProperty("movie"))).click();
+			driver.findElement(By.linkText("Film megtekintése")).click();
 			break;
 
 		case CLICKFREE:
-			driver.findElement(
-					By.partialLinkText(PropertyUtils.getProperty("trailer"))).click();
+			driver.findElement(By.linkText("Előzetes megtekintése")).click();
 			break;
 
 		case CLICKFREEINTERACTIVE:

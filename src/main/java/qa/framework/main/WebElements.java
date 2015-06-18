@@ -68,8 +68,9 @@ public interface WebElements {
 
 	public static String ContentUrl1 = "/content/game-of-thrones-iv.-1-two-swords-255061514";
 	public static String PlayButton = "//img[starts-with(@id, 'play-button-')]";
-	public static String ContentDetail = ".//*[@id='content-inner']/div[1]/div[1]/div[2]";
-
+	//public static String ContentDetail = ".//*[@id='content-inner']/div[1]/div[1]/div[2]"; 
+	public static String ContentDetail = "//div[@id='content-inner']/div/div/div";
+	
 	// WebPage elements
 	public WebElement playPuttony = WebDriverManager.driver.findElement(By
 			.xpath(PlayButton));
@@ -108,8 +109,12 @@ public interface WebElements {
 	public static String playbutton_css = "(play-button-[a-z0-9-]{36}$)";
 
 	// files
+	public Path testOutput_ = Paths.get("test-output/html");
 	public Path textFile = Paths.get("lib/urls.txt");
 	public Path textFile2 = Paths.get("lib/output.txt");
+	
+	public String workingDir = System.getProperty("user.dir");
+	
 	public String urlsFile = "lib/urls.txt";
 	public String seasonUrlsFile = "lib/season_urls.txt";
 	public String seriesUrlsFile = "lib/series_urls.txt";
