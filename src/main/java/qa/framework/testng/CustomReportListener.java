@@ -77,14 +77,6 @@ public class CustomReportListener extends TestMethodListener implements
 				Date EndDate = tc.getEndDate();
 				Date StartDate = tc.getStartDate();
 				XmlTest xmlTest = tc.getCurrentXmlTest();
-				
-				try {
-					TestBase.dao.generateMethodSummaryReport(suiteName,
-							testName);
-
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 
 			}
 
@@ -157,6 +149,13 @@ public class CustomReportListener extends TestMethodListener implements
 						"passed", "");
 				testIndex++;
 
+				try {
+					TestBase.dao.generateMethodSummaryReport(suiteName,	testName);
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
 			}
 
 		}

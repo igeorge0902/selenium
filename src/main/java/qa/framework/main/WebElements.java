@@ -72,8 +72,7 @@ public interface WebElements {
 	public static String ContentDetail = "//div[@id='content-inner']/div/div/div";
 	
 	// WebPage elements
-	public WebElement playPuttony = WebDriverManager.driver.findElement(By
-			.xpath(PlayButton));
+	public WebElement playPuttony = WebDriverManager.driver.findElement(By.xpath(PlayButton));
 
 	// Player elements
 	public static String play_pause = "playbackControls";

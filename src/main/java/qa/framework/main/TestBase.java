@@ -115,6 +115,7 @@ public class TestBase extends Verify implements WebElements {
 
 			dao.SetUpDataBase();
 			dao.runSqlScript(create_db_sql);
+			dao.createProcedureGetTestRun();
 
 		} catch (Exception e) {
 
@@ -124,18 +125,15 @@ public class TestBase extends Verify implements WebElements {
 
 	@AfterClass
 	public void closeBrowser(ITestContext context) throws Exception {
-		WebDriverManager.stopDriver();
-
-		try {
+		
 			dao.insertReport();
-			dao.generateMethodSummaryReport(CustomReportListener.suiteName,
-					CustomReportListener.testName);
-		} catch (Exception e) {
-			Log.info(e.getMessage());
-		}
+			dao.generateMethodSummaryReport(CustomReportListener.suiteName,CustomReportListener.testName);
 		
 		Path apache = Paths.get(PropertyUtils.getProperty("apache"));
 		TestBase.copyDirectory(testOutput_.toFile(), apache.toFile());
+
+		WebDriverManager.stopDriver();
+
 	}
 
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
@@ -726,7 +724,12 @@ public class TestBase extends Verify implements WebElements {
 			throws IOException {
 
 		if (sourceLocation.isDirectory()) {
+			if (targetLocation.exists()) {
+				targetLocation.setWritable(true);
+			}
+			
 			if (!targetLocation.exists()) {
+				targetLocation.setWritable(true);
 				targetLocation.mkdir();
 			}
 

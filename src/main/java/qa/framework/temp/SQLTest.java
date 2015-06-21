@@ -12,13 +12,14 @@ public class SQLTest extends TestBase implements WebElements {
 
 	public static void main(String[] args) throws Exception {
 
-		DOMConfigurator.configure("log4j.xml");
+		DOMConfigurator.configure(log4jxml);
 
 		dao.SetUpDataBase();
 		dao.runSqlScript(create_db_sql);
-		dao.insertReport();
+		dao.createProcedureGetTestRun();
+		if (dao.insertReport()) {
 		dao.generateMethodSummaryReport("test", "hello");
-		 
+		}
 	}
 
 }

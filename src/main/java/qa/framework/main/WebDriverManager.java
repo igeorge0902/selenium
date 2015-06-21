@@ -45,6 +45,7 @@ import org.openqa.selenium.Platform;
 public class WebDriverManager extends TestBase implements WebElements {
 	public static WebDriver driver = null;
 	private static String browser = null;
+	public static Boolean serverStarted;
 	static Boolean setDownstreamMaxKB;
 	static Boolean setDownStreamKbps;
 
@@ -207,7 +208,8 @@ public class WebDriverManager extends TestBase implements WebElements {
 			// Use specific Firefox profile
 			ProfilesIni profilesIni = new ProfilesIni();
 			FirefoxProfile profile = profilesIni.getProfile("Test");
-			server.start();
+			WebDriverManager.serverStarted = serverStarted();
+			
 			
 			//captures the mouse movements and navigations
 			server.setCaptureHeaders(true);
@@ -316,6 +318,11 @@ public class WebDriverManager extends TestBase implements WebElements {
 		return server;
 	}
 	
+	private static boolean serverStarted() {
+		server.start();
+		return true;
+	}
+	
 	protected static PrintWriter createWriter(String string) throws IOException {
 		new File(string);
 		return new PrintWriter(new BufferedWriter(new FileWriter(new File(string))));
@@ -328,7 +335,9 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception 
 	 */
 	public static void stopDriver() {
-		server.stop();
+		if (serverStarted != null) {
+			server.stop();
+		}
 		driver.close();
 		Log.info("Driver closed afterInvocation");
 		unregister(driver);

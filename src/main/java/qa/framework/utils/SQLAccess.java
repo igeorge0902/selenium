@@ -49,7 +49,8 @@ public class SQLAccess extends TestBase implements WebElements {
 	private static Statement statement = null;
 	private static PreparedStatement preparedStatement = null;
 	private static ResultSet resultSet = null;
-
+	private static long lastInsertId;
+	
 	public SQLAccess(String dbDriverClass, String dbUrl, String dbUserName,
 			String dbPassWord) {
 
@@ -97,14 +98,7 @@ public class SQLAccess extends TestBase implements WebElements {
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
 		
-			// PreparedStatements can use variables and are more efficient
-			PreparedStatement getLastInsertId = connect.prepareStatement("select LAST_INSERT_ID() from feedback.HTML_reports");
-			ResultSet rs = getLastInsertId.executeQuery();
-			
-			if (rs.next())
-				{
 			 
-				long insertId = rs.getLong("last_insert_id()");
 				long time = System.currentTimeMillis();
 				java.sql.Timestamp timestamp = new java.sql.Timestamp(time);
 				
@@ -116,9 +110,9 @@ public class SQLAccess extends TestBase implements WebElements {
 			preparedStatement.setString(4, testname);
 			preparedStatement.setTimestamp(5, timestamp);
 			preparedStatement.setString(6, testname);
-			preparedStatement.setLong(7, insertId);
+			preparedStatement.setLong(7, lastInsertId);
 			
-				}
+				
 			
 			preparedStatement.executeUpdate();
 
@@ -126,16 +120,16 @@ public class SQLAccess extends TestBase implements WebElements {
 			Log.info(e.getLocalizedMessage());
 
 		} finally {
-			Log.info("Report was inserted into the db.");
+			Log.info("TestRuns was inserted into the db.");
 
 			close();
 		}
 
 	}
 
-	public void insertReport() throws Exception {
-
-		Path testOutput = Paths.get(workingDir + File.separator + "test-output/html");
+	public boolean insertReport() throws Exception {
+				
+		Path testOutput = Paths.get("test-output/html");
 
 		if (testOutput.toFile().exists()) {
 			try {
@@ -174,8 +168,8 @@ public class SQLAccess extends TestBase implements WebElements {
 					+ "(id, index_, output, overview,	reportng_css, "
 					+ "reportng_js, sorttable, suite_groups, suite_test1,suite_test2, "
 					+ "suite_test3, suite_test4, suite_test5, suites) values (default, ?,?,?,?,?,?,?,?,?,?,?,?,?)";
-			
-			PreparedStatement statement = connect.prepareStatement(sql);
+						
+			PreparedStatement statement = connect.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
 
 			InputStream inputStream = new FileInputStream(new File(index));
 			statement.setBlob(1, inputStream);
@@ -220,8 +214,15 @@ public class SQLAccess extends TestBase implements WebElements {
 				statement.setBlob(15, inputStream15);
 			}
 			*/
-
+			
 			int row = statement.executeUpdate();
+			
+			PreparedStatement getLastInsertId = connect.prepareStatement("select LAST_INSERT_ID() from feedback.HTML_reports");
+			ResultSet rs = getLastInsertId.executeQuery();
+			while (rs.next()) {
+
+				lastInsertId = rs.getLong("last_insert_id()");
+			}
 
 			if (row > 0) {
 				Log.info("Files were inserted into the db.");
@@ -231,15 +232,53 @@ public class SQLAccess extends TestBase implements WebElements {
 
 		} catch (SQLException ex) {
 
-			Log.info(ex.getMessage());
+			ex.printStackTrace();
+			Log.info(ex.getSQLState());
 
 		} catch (IOException ex) {
+			ex.printStackTrace();
+			Log.info(ex.getCause());
 
-			Log.info(ex.getMessage());
 		}
-
+		return true;
 	}
 
+	  public void createProcedureGetTestRun() throws SQLException {
+		    String createProcedure = null;
+
+		    String queryDrop = "DROP PROCEDURE IF EXISTS GET_TEST_RUN";
+
+		    createProcedure =
+		        "create procedure GET_TEST_RUN(IN id int(11)) " +
+		          "begin " +
+		            "select * " +
+		              "from feedback.SUITE_MethodSummaryReport " +
+		              "where feedback.SUITE_MethodSummaryReport.id = id; " +
+		          "end";
+		    Statement stmt = null;
+		    Statement stmtDrop = null;
+
+		    try {
+		      System.out.println("Calling DROP PROCEDURE");
+		      stmtDrop = connect.createStatement();
+		      stmtDrop.execute(queryDrop);
+		    } catch (SQLException e) {
+		      SQLAccess.printSQLException(e);
+		    } finally {
+		      if (stmtDrop != null) { stmtDrop.close(); }
+		    }
+
+
+		    try {
+		      stmt = connect.createStatement();
+		      stmt.executeUpdate(createProcedure);
+		    } catch (SQLException e) {
+		    	SQLAccess.printSQLException(e);
+		    } finally {
+		      if (stmt != null) { stmt.close(); }
+		    }
+		  }
+	
 	@SuppressWarnings("deprecation")
 	public void readDataBase() throws Exception {
 
@@ -370,5 +409,37 @@ public class SQLAccess extends TestBase implements WebElements {
 
 		}
 	}
+	
+	  public static void printSQLException(SQLException ex) {
+		    for (Throwable e : ex) {
+		      if (e instanceof SQLException) {
+		        if (ignoreSQLException(((SQLException)e).getSQLState()) == false) {
+		          e.printStackTrace(System.err);
+		          System.err.println("SQLState: " + ((SQLException)e).getSQLState());
+		          System.err.println("Error Code: " + ((SQLException)e).getErrorCode());
+		          System.err.println("Message: " + e.getMessage());
+		          Throwable t = ex.getCause();
+		          while (t != null) {
+		            System.out.println("Cause: " + t);
+		            t = t.getCause();
+		          }
+		        }
+		      }
+		    }
+		  }
+	  
+	  public static boolean ignoreSQLException(String sqlState) {
+		    if (sqlState == null) {
+		      System.out.println("The SQL state is not defined!");
+		      return false;
+		    }
+		    // X0Y32: Jar file already exists in schema
+		    if (sqlState.equalsIgnoreCase("X0Y32"))
+		      return true;
+		    // 42Y55: Table already exists in schema
+		    if (sqlState.equalsIgnoreCase("42Y55"))
+		      return true;
+		    return false;
+		  }
 
 }

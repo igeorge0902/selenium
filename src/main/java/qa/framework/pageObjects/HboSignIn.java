@@ -144,9 +144,6 @@ public class HboSignIn extends TestBase implements WebElements {
 			driver.get(BaseUrls.PLAYER.get() + OffersScreen);
 		}
 
-		String pageSource = driver.getTitle();
-		Log.info(pageSource);
-
 		TestBase.checkMetaContent(baseLanguageMeta_, 5);
 		CaptureScreenshotOnFailureListener.captureScreenShot(baseLanguageMeta_);
 
