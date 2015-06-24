@@ -32,7 +32,7 @@ public class TestHboSignIn extends TestBase {
 
 		SignInPage.checkLanguage(languageMeta);
 		
-		if (WebDriverManager.serverStarted != null) {
+		if (WebDriverManager.serverStarted = true) {
 		Log.info(server.getStreamManager().getRemainingDownstreamKB());
 		}
 	}

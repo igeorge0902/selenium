@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Suite Test Demo Run]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Test Groups]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing test Test Groups]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Test on Safari]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing test Test on Safari]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Test on Firefox]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: headerButtonLogin]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: headerButtonLogin]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: headerButtonLogin]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: OperatorId]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: OperatorId]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: OperatorId]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: EmailAddress]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: EmailAddress]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: EmailAddress]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: Password]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: Password]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.name: Password]]>
+    </line>
+    <line>
+      <![CDATA[<p>selectOperator test is done<br></p>]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.cssSelector: #sign-in-buttons > button.button_submit]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.cssSelector: #sign-in-buttons > button.button_submit]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: #sign-in-buttons > button.button_submit]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: headerButtonMenu]]>
+    </line>
+    <line>
+      <![CDATA[<p>submit test is done<br></p>]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Minden fasza]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in test.java.TestHboSignIn]]>
+    </line>
+    <line>
+      <![CDATA[Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: headerButtonMenu]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: headerButtonMenu]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.id: menuTabs_settings]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: menuTabs_settings]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.cssSelector: a[href*='signout']]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: a[href*='signout']]]]>
+    </line>
+    <line>
+      <![CDATA[Found element:By.cssSelector: div.form_buttons > button.button_submit]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: div.form_buttons > button.button_submit]]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+    </line>
+    <line>
+      <![CDATA[Minden fasza]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in test.java.TestHboSignIn]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+    </line>
+  </reporter-output>
+  <suite name="Test Demo Run" duration-ms="32126" started-at="2015-05-20T14:54:03Z" finished-at="2015-05-20T14:54:35Z">
+    <groups>
+      <group name="functional_test1">
+        <method signature="TestHboSignIn.testSignInSuccess(java.lang.String)[pri:0, instance:test.java.TestHboSignIn@7ef82753]" name="testSignInSuccess" class="test.java.TestHboSignIn"/>
+      </group> <!-- functional_test1 -->
+    </groups>
+    <test name="Test Groups" duration-ms="7" started-at="2015-05-20T14:54:03Z" finished-at="2015-05-20T14:54:03Z">
+    </test> <!-- Test Groups -->
+    <test name="Test on Safari" duration-ms="4" started-at="2015-05-20T14:54:03Z" finished-at="2015-05-20T14:54:03Z">
+    </test> <!-- Test on Safari -->
+    <test name="Test on Firefox" duration-ms="31926" started-at="2015-05-20T14:54:03Z" finished-at="2015-05-20T14:54:35Z">
+      <class name="test.java.TestHboSignIn">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:test.java.TestHboSignIn@7ef82753]" name="setUp" is-config="true" duration-ms="13583" started-at="2015-05-20T16:54:03Z" finished-at="2015-05-20T16:54:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64b70919]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.setUp]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSignInSuccess(java.lang.String)[pri:0, instance:test.java.TestHboSignIn@7ef82753]" name="testSignInSuccess" duration-ms="12947" started-at="2015-05-20T16:54:16Z" description="HBO login" finished-at="2015-05-20T16:54:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Found element:By.id: headerButtonLogin]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: headerButtonLogin]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: headerButtonLogin]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: OperatorId]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: OperatorId]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: OperatorId]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: EmailAddress]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: EmailAddress]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: EmailAddress]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: Password]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: Password]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.name: Password]]>
+            </line>
+            <line>
+              <![CDATA[<p>selectOperator test is done<br></p>]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.cssSelector: #sign-in-buttons > button.button_submit]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.cssSelector: #sign-in-buttons > button.button_submit]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: #sign-in-buttons > button.button_submit]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: headerButtonMenu]]>
+            </line>
+            <line>
+              <![CDATA[<p>submit test is done<br></p>]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignInSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Minden fasza]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in test.java.TestHboSignIn]]>
+            </line>
+            <line>
+              <![CDATA[Test Method had the following parameters : nullOperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26,]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSignInSuccess -->
+        <test-method status="PASS" signature="testSignOutSuccess()[pri:0, instance:test.java.TestHboSignIn@7ef82753]" name="testSignOutSuccess" duration-ms="3023" started-at="2015-05-20T16:54:29Z" description="HBO logout" depends-on-methods="test.java.TestHboSignIn.testSignInSuccess" finished-at="2015-05-20T16:54:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Found element:By.id: headerButtonMenu]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: headerButtonMenu]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.id: menuTabs_settings]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> id: menuTabs_settings]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.cssSelector: a[href*='signout']]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: a[href*='signout']]]]>
+            </line>
+            <line>
+              <![CDATA[Found element:By.cssSelector: div.form_buttons > button.button_submit]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on:[[FirefoxDriver: firefox on WINDOWS (86219dc6-b89f-4c5b-a7df-d31cb975c260)] -> css selector: div.form_buttons > button.button_submit]]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestHboSignIn.testSignOutSuccess]]>
+            </line>
+            <line>
+              <![CDATA[Minden fasza]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in test.java.TestHboSignIn]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSignOutSuccess -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestContext)[pri:0, instance:test.java.TestHboSignIn@7ef82753]" name="closeBrowser" is-config="true" duration-ms="2358" started-at="2015-05-20T16:54:32Z" finished-at="2015-05-20T16:54:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64b70919]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : TestBase.closeBrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.java.TestHboSignIn -->
+    </test> <!-- Test on Firefox -->
+    <test name="Test on Internet Explorer" duration-ms="3" started-at="2015-05-20T14:54:35Z" finished-at="2015-05-20T14:54:35Z">
+    </test> <!-- Test on Internet Explorer -->
+    <test name="Test on Chrome" duration-ms="1" started-at="2015-05-20T14:54:35Z" finished-at="2015-05-20T14:54:35Z">
+    </test> <!-- Test on Chrome -->
+  </suite> <!-- Test Demo Run -->
+</testng-results>

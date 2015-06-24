@@ -62,6 +62,11 @@ public class TestBase extends Verify implements WebElements {
 	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public static String testngXml = PropertyUtils.getProperty("testngXml");
 	public static String port = PropertyUtils.getProperty("port");
+	
+	static Boolean startServer;
+	static Boolean setDownstreamMaxKB;
+	static Boolean setDownStreamKbps;
+	public static boolean serverStarted;
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
@@ -96,6 +101,8 @@ public class TestBase extends Verify implements WebElements {
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			
+			TestBase.browserMobStarted();
+			
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 
 		} catch (Exception e) {
@@ -108,6 +115,9 @@ public class TestBase extends Verify implements WebElements {
 			Log.info(browser + " is reconnecting!");
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
+			
+			TestBase.browserMobStarted();
+			
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		}
 
@@ -130,17 +140,58 @@ public class TestBase extends Verify implements WebElements {
 			dao.generateMethodSummaryReport(CustomReportListener.suiteName,CustomReportListener.testName);
 		
 		Path apache = Paths.get(PropertyUtils.getProperty("apache"));
+		try {
 		TestBase.copyDirectory(testOutput_.toFile(), apache.toFile());
-
+		} catch (Exception e) {
+			Log.info("Output files were not copied. Possible reason is that apache directory is not set.");
+		}
 		WebDriverManager.stopDriver();
 
 	}
 
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
-	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl,
-			dbUserName, dbPassWord);
+	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
+	
 	public JavascriptExecutor js = (JavascriptExecutor) driver;
 
+	protected static boolean browserMobStarted() {
+		
+		if(startServer = Boolean.valueOf(PropertyUtils.getProperty("startServer"))) {
+		
+		server.start();
+		
+		serverStarted = true;
+		
+		//captures the mouse movements and navigations
+		server.setCaptureHeaders(true);
+		server.setCaptureContent(true);
+					
+		server.getStreamManager().enable();
+		
+		if (setDownstreamMaxKB = Boolean.valueOf(PropertyUtils.getProperty("setDownstreamMaxKB"))) {
+			Log.info("setDownstreamMaxKB: "+setDownstreamMaxKB);
+		server.getStreamManager().setDownstreamMaxKB(Integer.parseInt(PropertyUtils.getProperty("downStreamMaxKB")));
+		Log.info("Remaining DownStreamKB: "+server.getStreamManager().getRemainingDownstreamKB());		
+		Log.info("Maximum DownStreamKB: "+server.getStreamManager().getMaxDownstreamKB());
+		}
+		
+		if (setDownStreamKbps = Boolean.valueOf(PropertyUtils.getProperty("setDownStreamKbps"))) {
+			Log.info("setDownStreamKbps: "+setDownStreamKbps);
+		server.getStreamManager().setDownstreamKbps(Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
+		Log.info("DownStream speed is set to: " + Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
+		}
+					
+	    String path = Paths.get("har.har").toString();
+		TestBase.deleteFile(path);
+		server.newHar(BaseUrls.PLAYER.get());
+			
+			return true;
+		
+			}
+	
+		return false;
+	}
+	
 	public static void currentPlatform() {
 		Platform.getCurrent();
 		return;

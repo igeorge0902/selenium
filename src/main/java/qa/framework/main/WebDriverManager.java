@@ -45,9 +45,6 @@ import org.openqa.selenium.Platform;
 public class WebDriverManager extends TestBase implements WebElements {
 	public static WebDriver driver = null;
 	private static String browser = null;
-	public static Boolean serverStarted;
-	static Boolean setDownstreamMaxKB;
-	static Boolean setDownStreamKbps;
 
 	// Default constructor, no need to extend this just use as a static
 	public WebDriverManager() {
@@ -208,34 +205,10 @@ public class WebDriverManager extends TestBase implements WebElements {
 			// Use specific Firefox profile
 			ProfilesIni profilesIni = new ProfilesIni();
 			FirefoxProfile profile = profilesIni.getProfile("Test");
-			WebDriverManager.serverStarted = serverStarted();
-			
-			
-			//captures the mouse movements and navigations
-			server.setCaptureHeaders(true);
-			server.setCaptureContent(true);
 						
-			server.getStreamManager().enable();
-			
-			if (setDownstreamMaxKB = Boolean.valueOf(PropertyUtils.getProperty("setDownstreamMaxKB"))) {
-				Log.info("setDownstreamMaxKB: "+setDownstreamMaxKB);
-			server.getStreamManager().setDownstreamMaxKB(Integer.parseInt(PropertyUtils.getProperty("downStreamMaxKB")));
-			Log.info("Remaining DownStreamKB: "+server.getStreamManager().getRemainingDownstreamKB());		
-			Log.info("Maximum DownStreamKB: "+server.getStreamManager().getMaxDownstreamKB());
-			}
-			
-			if (setDownStreamKbps = Boolean.valueOf(PropertyUtils.getProperty("setDownStreamKbps"))) {
-				Log.info("setDownStreamKbps: "+setDownStreamKbps);
-			server.getStreamManager().setDownstreamKbps(Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
-			Log.info("DownStream speed is set to: " + Integer.parseInt(PropertyUtils.getProperty("downStreamKbps")));
-			}
-			
 		    // get the Selenium proxy object
 		    Proxy proxy = server.seleniumProxy();
-			
-		    String path = Paths.get("har.har").toString();
-			TestBase.deleteFile(path);
-		    
+	    
 			// configure it as a desired capability
 		    DesiredCapabilities Capabilities = new DesiredCapabilities();
 		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
@@ -247,7 +220,6 @@ public class WebDriverManager extends TestBase implements WebElements {
 			Log.info(browser + " driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
-			server.newHar(BaseUrls.PLAYER.get());
 
 			driver.get(portalUrl);
 			
@@ -310,17 +282,11 @@ public class WebDriverManager extends TestBase implements WebElements {
 		return driver = eventFiringDriver.unregister(eventListener);
 
 	}
-	
-	
+		
 	public static ProxyServer serverStart() {
 		
 		ProxyServer server = new ProxyServer(9090);
 		return server;
-	}
-	
-	private static boolean serverStarted() {
-		server.start();
-		return true;
 	}
 	
 	protected static PrintWriter createWriter(String string) throws IOException {
@@ -335,7 +301,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception 
 	 */
 	public static void stopDriver() {
-		if (serverStarted != null) {
+		if (TestBase.serverStarted = true) {
 			server.stop();
 		}
 		driver.close();
