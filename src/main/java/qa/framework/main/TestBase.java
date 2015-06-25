@@ -129,15 +129,19 @@ public class TestBase extends Verify implements WebElements {
 
 		} catch (Exception e) {
 
-			Log.info(e.getLocalizedMessage());
+			Log.info("DAO failed to complete!");
 		}
 	}
 
 	@AfterClass
 	public void closeBrowser(ITestContext context) throws Exception {
 		
+		try{
 			dao.insertReport();
 			dao.generateMethodSummaryReport(CustomReportListener.suiteName,CustomReportListener.testName);
+		} catch (Exception e) {
+			Log.info("SQL insert failed!");
+		}
 		
 		Path apache = Paths.get(PropertyUtils.getProperty("apache"));
 		try {

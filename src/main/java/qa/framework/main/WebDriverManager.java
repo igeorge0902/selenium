@@ -79,7 +79,10 @@ public class WebDriverManager extends TestBase implements WebElements {
 			
 			String IEDriverPath = Paths.get("lib/IEDriverServer32.exe").toFile().toString();
 			System.setProperty("webdriver.ie.driver", IEDriverPath);
-
+			
+		    // get the Selenium proxy object
+		    Proxy proxy = server.seleniumProxy();
+		    
 			DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
 			Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,	true);
 			Capabilities.isJavascriptEnabled();
@@ -89,6 +92,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 			Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 			Capabilities.setCapability(InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
 			Capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
 
 			// start a internet explorer driver instance
 			driver = new InternetExplorerDriver(Capabilities);
@@ -175,17 +179,22 @@ public class WebDriverManager extends TestBase implements WebElements {
 				chromeProfile = chromeProfileMac;
 			}
 			
+		    // get the Selenium proxy object
+		    Proxy proxy = server.seleniumProxy();
+			
 			ChromeOptions options = new ChromeOptions();
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
-			capabilities.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
+			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
+			Capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			Capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
+			Capabilities.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
+		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
+
 
 			options.addArguments(Arrays.asList(new String[] {"--use-gpu-in-tests" ,"--clear-token-service" ,"user-data-dir=" + chromeProfile,"--clear-data-reduction-proxy-data-savings","--ignore-certificate-errors", "--start-maximized" }));	
 
-			driver = new ChromeDriver(capabilities);
+			driver = new ChromeDriver(Capabilities);
 
-			driver = driverEventListener(capabilities);
+			driver = driverEventListener(Capabilities);
 			Log.info(browser + " driver initialized with eventListeners");
 
 			WaitTool.setImplicitWait(driver, timeout);
@@ -237,12 +246,17 @@ public class WebDriverManager extends TestBase implements WebElements {
 			new DesiredCapabilities();
 			DesiredCapabilities Capabilities = DesiredCapabilities.safari();
 			SafariOptions options = new SafariOptions();
-
+			
+		    // get the Selenium proxy object
+		    Proxy proxy = server.seleniumProxy();
+		    
 			Capabilities.setCapability("nativeEvents", false);
 			Capabilities.setCapability("unexpectedAlertBehaviour", "accept");
 			Capabilities.setCapability("acceptSslCerts", true);
 			Capabilities.setCapability(SafariOptions.CAPABILITY, options);
 			Capabilities.setCapability(CapabilityType.HAS_NATIVE_EVENTS, false);
+		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
+
 			
 			options.setUseCleanSession(true);
 			
