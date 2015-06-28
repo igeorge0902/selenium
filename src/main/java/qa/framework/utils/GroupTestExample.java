@@ -19,7 +19,7 @@ public class GroupTestExample extends TestBase {
 
 
 	@BeforeGroups
-	  public void setUp(ITestContext context) throws Exception {
+	  public static void setUp(ITestContext context) throws Exception {
 		/*
 		  try {			  
 		  // get the web driver parameters from the testng xml file

@@ -14,18 +14,38 @@ import main.java.qa.framework.main.WebElements;
 
 public class FileSeparator extends TestBase implements WebElements {
 
-	public static void main(String[] args) throws FileNotFoundException,
-			IOException {
-		
+	static int second = 0;
+	static String userHome = "";
+	static String screenShotsFolder = "";
+	static List<File> files = new ArrayList<File>();
+	static Path testOutput;
+
+	  private volatile String myField;
+
+	  public String getMyField() {
+	    String tmp = myField;
+	    if (tmp == null) {
+	      synchronized (this) {
+	        tmp = myField;
+	        if (tmp == null) {
+	          myField = tmp = new String();
+	        }
+	      }
+	    }
+	    return tmp; // Using tmp here instead of myField avoids an memory update
+	  }
+	
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		long start = System.currentTimeMillis();
+				
 		PropertyUtils.listProperties();
 
-		String userHome = System.getProperty("user.home");
-		String screenShotsFolder = userHome + File.separator + "Documents"
+		userHome = System.getProperty("user.home");
+		screenShotsFolder = userHome + File.separator + "Documents"
 				+ File.separator + "Tests" + File.separator;
 
 		System.out.println(TestBase.getCurrentTime());
-
-		int second = 4;
+		second = 4;
 
 		while (second > 0) {
 			try {
@@ -73,7 +93,6 @@ public class FileSeparator extends TestBase implements WebElements {
 			System.out.println("The directory does not exist");
 		}
 
-		List<File> files = new ArrayList<File>();
 
 		File[] children = testOutput.toFile().listFiles();
 
@@ -84,6 +103,9 @@ public class FileSeparator extends TestBase implements WebElements {
 			System.out.println(files);
 
 		}
-
+		
+		TestBase.memory();
+		long time = System.currentTimeMillis() - start;
+		Log.info("Elapsed time:" +time);
 	}
 }

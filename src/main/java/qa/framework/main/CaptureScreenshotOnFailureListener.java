@@ -64,7 +64,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 
 			String screenShotsFolder = workingDir + File.separator
 					+ "test-output" + File.separatorChar + "html"
-					+ File.separator + "ScreenShots" + File.separator;
+					+ File.separator;
 
 			Path screenShotsFolderPath = Paths.get(screenShotsFolder);
 
@@ -154,7 +154,7 @@ public class CaptureScreenshotOnFailureListener extends TestListenerAdapter
 
 			String screenShotsFolder = workingDir + File.separator
 					+ "test-output" + File.separatorChar + "html"
-					+ File.separator + "ScreenShots" + File.separator;
+					+ File.separator;
 
 			Path screenShotsFolderPath = Paths.get(screenShotsFolder);
 

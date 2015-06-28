@@ -40,15 +40,43 @@ import org.testng.xml.XmlTest;
 public class CustomReportListener extends TestMethodListener implements
 		IReporter {
 
-	private static final SimpleDateFormat dateFormatter = new SimpleDateFormat(
-			" MMM d 'at' hh:mm a");
+	private static final SimpleDateFormat dateFormatter = new SimpleDateFormat(" MMM d 'at' hh:mm a");
 	private PrintWriter m_out;
 	private int m_row;
 	private Integer m_testIndex;
 	private int m_methodIndex;
 	private Scanner scanner;
-	public static String suiteName;
-	public static String testName;
+	private static String suiteName;
+	private static String testName;
+	private static int configFailes;
+	private static int testFailes;
+	private static int testSkipped;
+	private static int testPassed;
+
+	  public static synchronized String getsuiteName() {
+		    return suiteName;
+		  }
+	  
+	  public static synchronized String gettestName() {
+		    return testName;
+		  }
+	  
+	  public static synchronized int getconfigFailes() {
+		    return configFailes;
+		  }
+	  
+	  public static synchronized int gettestFailes() {
+		    return testFailes;
+		  }
+	  
+	  public static synchronized int gettestSkipped() {
+		    return testSkipped;
+		  }
+	  
+	  public static synchronized int gettestPassed() {
+		    return testPassed;
+		  }
+	  
 
 	/**
 	 * This method is the entry point of this class. TestNG calls this listener
@@ -60,27 +88,6 @@ public class CustomReportListener extends TestMethodListener implements
 
 	@Override
 	public void generateReport(List<XmlSuite> xml, List<ISuite> suites,	String outdir) {
-
-		// Iterating over each suite included in the test
-		for (ISuite suite : suites) {
-
-			// Following code gets the suite name
-			suiteName = suite.getName();
-
-			// Getting the results for the said suite
-			Map<String, ISuiteResult> suiteResults = suite.getResults();
-
-			for (ISuiteResult sr : suiteResults.values()) {
-
-				ITestContext tc = sr.getTestContext();
-				testName = tc.getName();
-				Date EndDate = tc.getEndDate();
-				Date StartDate = tc.getStartDate();
-				XmlTest xmlTest = tc.getCurrentXmlTest();
-
-			}
-
-		}
 
 		try {
 			m_out = createWriter(outdir);
@@ -126,38 +133,38 @@ public class CustomReportListener extends TestMethodListener implements
 				titleRow(suite.getName(), 5);
 			}
 
-			String suiteName = suite.getName();
+			suiteName = suite.getName();
 
 			Map<String, ISuiteResult> r = suite.getResults();
-
+			ITestContext testContext = null;
+			testName = null;
 			for (ISuiteResult r2 : r.values()) {
 
-				ITestContext testContext = r2.getTestContext();
-				String testName = testContext.getName();
-				String testResults = r.values().toString();
+				testContext = r2.getTestContext();
+				testName = testContext.getName();
 
 				m_testIndex = testIndex;
-				resultSummary(suite, testContext.getFailedConfigurations(),
-						testName, "failed", " (configuration methods)");
-				resultSummary(suite, testContext.getFailedTests(), testName,
-						"failed", "");
-				resultSummary(suite, testContext.getSkippedConfigurations(),
-						testName, "skipped", " (configuration methods)");
-				resultSummary(suite, testContext.getSkippedTests(), testName,
-						"skipped", "");
-				resultSummary(suite, testContext.getPassedTests(), testName,
-						"passed", "");
+				resultSummary(suite, testContext.getFailedConfigurations(),testName, "failed", " (configuration methods)");
+				resultSummary(suite, testContext.getFailedTests(), testName, "failed", "");
+				resultSummary(suite, testContext.getSkippedConfigurations(), testName, "skipped", " (configuration methods)");
+				resultSummary(suite, testContext.getSkippedTests(), testName, "skipped", "");
+				resultSummary(suite, testContext.getPassedTests(), testName, "passed", "");
 				testIndex++;
-
+				
+				configFailes = testContext.getFailedConfigurations().size();
+				testFailes = testContext.getFailedTests().size();
+				testSkipped = testContext.getSkippedTests().size();
+				testPassed = testContext.getPassedTests().size();
+				 
+			}
+			
+			if (!SQLAccess.genSumRep) {
 				try {
-					TestBase.dao.generateMethodSummaryReport(suiteName,	testName);
-
+					SQLAccess.testSummaryReport(suiteName, testName, configFailes, testFailes, testSkipped, testPassed);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				
 			}
-
 		}
 		m_out.println("</table>");
 	}
@@ -214,21 +221,25 @@ public class CustomReportListener extends TestMethodListener implements
 	 * 
 	 * @param tests
 	 */
-	private void resultSummary(ISuite suite, IResultMap tests, String testname,
-			String style, String details) {
+	private void resultSummary(ISuite suite, IResultMap tests, String testname, String style, String details) {
 		if (tests.getAllResults().size() > 0) {
+			
 			StringBuffer buff = new StringBuffer();
 			String lastClassName = "";
+			
 			int mq = 0;
 			int cq = 0;
+			
 			for (ITestNGMethod method : getMethodSet(tests, suite)) {
+			
 				m_row += 1;
 				m_methodIndex += 1;
 				ITestClass testClass = method.getTestClass();
 				String className = testClass.getName();
+				
+				
 				if (mq == 0) {
-					String id = (m_testIndex == null ? null : "t"
-							+ Integer.toString(m_testIndex));
+					String id = (m_testIndex == null ? null : "t" + Integer.toString(m_testIndex));
 					titleRow(testname + " â€” " + style + details, 6, id); // sets
 																			// width
 																			// of
@@ -254,26 +265,32 @@ public class CustomReportListener extends TestMethodListener implements
 					lastClassName = className;
 				}
 				Set<ITestResult> resultSet = tests.getResults(method);
+			
+				
 				long end = Long.MIN_VALUE;
 				long start = Long.MAX_VALUE;
+				
 				for (ITestResult testResult : tests.getResults(method)) {
 					if (testResult.getEndMillis() > end) {
 						end = testResult.getEndMillis();
 					}
+				
 					if (testResult.getStartMillis() < start) {
 						start = testResult.getStartMillis();
 					}
 				}
 				mq += 1;
+				
 				if (mq > 1) {
 					buff.append("<tr class=\"" + style
 							+ (cq % 2 == 0 ? "odd" : "even") + "\">");
 				}
+				
 				Date d = new Date(start);
 				String formattedDate = dateFormatter.format(d);
 				String description = method.getDescription();
-				String testInstanceName = resultSet
-						.toArray(new ITestResult[] {})[0].getTestName();
+				String testInstanceName = resultSet.toArray(new ITestResult[] {})[0].getTestName();
+				
 				buff.append("<td><a href=\"#m"
 						+ m_methodIndex
 						+ "\">"
@@ -283,8 +300,7 @@ public class CustomReportListener extends TestMethodListener implements
 								+ description + "\")"
 								: "")
 						+ "</a>"
-						+ (null == testInstanceName ? "" : "<br>("
-								+ testInstanceName + ")")
+						+ (null == testInstanceName ? "" : "<br>("+ testInstanceName + ")")
 						+ "</td>"
 						+ "<td class=\"numi\">"
 						+ resultSet.size()
@@ -344,6 +360,7 @@ public class CustomReportListener extends TestMethodListener implements
 		if (tests.size() > 0) {
 			for (ITestResult result : tests.getAllResults()) {
 				ITestNGMethod method = result.getMethod();
+				
 				m_methodIndex++;
 				String cname = method.getTestClass().getName();
 				m_out.println("<h2 id=\"m" + m_methodIndex + "\">" + cname
@@ -367,10 +384,14 @@ public class CustomReportListener extends TestMethodListener implements
 			m_methodIndex++;
 			Throwable exception = result.getThrowable();
 			List<String> msgs = Reporter.getOutput(result);
+			
 			boolean hasReporterOutput = msgs.size() > 0;
 			boolean hasThrowable = exception != null;
+			
 			if (hasThrowable) {
+				
 				boolean wantsMinimalOutput = result.getStatus() == ITestResult.SUCCESS;
+				
 				if (hasReporterOutput) {
 					m_out.print("<h3>"
 							+ (wantsMinimalOutput ? "Expected Exception"
@@ -397,10 +418,11 @@ public class CustomReportListener extends TestMethodListener implements
 			boolean hasParameters = parameters != null && parameters.length > 0;
 			if (hasParameters) {
 				for (Object p : parameters) {
-					m_out.println(Utils.escapeHtml(org.testng.internal.Utils
-							.toString(p, String.class)) + " | ");
+					m_out.println(Utils.escapeHtml(org.testng.internal.Utils.toString(p, String.class)) + " | ");
 				}
 			}
+			
+			
 		}
 	}
 

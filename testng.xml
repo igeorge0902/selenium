@@ -127,7 +127,7 @@
 			</class>
 		    <class name="test.java.TestHboSignIn">
 				<methods>
-					<exclude name="testSignInSuccess" />
+					<include name="testSignInSuccess" />
 					<exclude name="testSignOutSuccess" />
 				</methods>
 			</class>

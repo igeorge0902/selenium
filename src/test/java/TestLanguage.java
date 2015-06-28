@@ -23,7 +23,6 @@ public class TestLanguage extends TestBase {
 		LanguageChange LanguageChange = new LanguageChange();
 
 		LanguageChange.changeLanguage(english, engMeta);
-		Log.info("Remaining DownStreamKB: "+server.getStreamManager().getRemainingDownstreamKB());
 
 	}
 

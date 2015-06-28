@@ -116,9 +116,6 @@ public class PlayMainContent extends TestBase implements WebElements {
 
 		while (second > 0) {
 			
-			server.setConnectionTimeout(90);
-			Log.info("Connection timeout is set to 90 seconds.");
-
 			try {
 
 				// runs javascript to get elapsed time

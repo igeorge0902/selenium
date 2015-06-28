@@ -45,7 +45,12 @@
 				<version>1.0.2</version>
 			</dependency>
 			
-            
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+											
             <dependency>
 				<groupId>javax.jms</groupId>
 				<artifactId>javax.jms-api</artifactId>
@@ -118,6 +123,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        
+            <dependency>
+		        <groupId>net.lightbody.bmp</groupId>
+		        <!-- To use the legacy, Jetty-based implementation, change the artifactId to browsermob-core -->
+		        <artifactId>browsermob-core-littleproxy</artifactId>
+		        <version>2.1.0-beta-1</version>
+		        <scope>test</scope>
+		    </dependency>
         
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>

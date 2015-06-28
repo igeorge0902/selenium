@@ -1,0 +1,649 @@
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testLanguageChange was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+ERROR LittleProxy-ClientToProxyWorker-0 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR LittleProxy-ClientToProxyWorker-0 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR LittleProxy-ClientToProxyWorker-3 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:677)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR LittleProxy-ClientToProxyWorker-1 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:677)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR LittleProxy-ClientToProxyWorker-6 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:677)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR LittleProxy-ClientToProxyWorker-2 io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:707)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:299)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:690)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:671)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:641)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:138)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:458)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.disconnected(ClientToProxyConnection.java:469)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:613)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.channelInactive(ClientToProxyConnection.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:247)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:677)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testLanguageChange was skipped!
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testLanguageChange was skipped!
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Chrome
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - Chrome driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on MAC (0a07512228a9d61809b84f0478481b74)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testLanguageChange test failed!
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Chrome-2015-5-24-1-2-53-912.png
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - 
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+[24/06/15 01:06:07:007 CEST]  INFO log4j.Logger: MySql connection is true
+[24/06/15 01:06:07:007 CEST]  INFO log4j.Logger: MySql connection is true
+[24/06/15 01:06:07:007 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[24/06/15 01:06:08:008 CEST]  INFO log4j.Logger: 
+[24/06/15 01:06:08:008 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Chrome
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - Chrome driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on MAC (06117dcadc10363e0e98c9c086bd97aa)] -> id: headerButtonMenu]
+INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on MAC (06117dcadc10363e0e98c9c086bd97aa)] -> id: menuTabs_settings]
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Element found:By.id: menucat_settings_customerMenu
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testLanguageChange test failed!
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Chrome-2015-5-24-1-15-3-722.png
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - 
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - 
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - Files were inserted into the db.
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - [[SuiteResult context=Test Groups], [SuiteResult context=Test on Safari], [SuiteResult context=Test on Firefox], [SuiteResult context=Test on Internet Explorer], [SuiteResult context=Test on Chrome]]
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - [[SuiteResult context=Test Groups], [SuiteResult context=Test on Safari], [SuiteResult context=Test on Firefox], [SuiteResult context=Test on Internet Explorer], [SuiteResult context=Test on Chrome]]
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - [[SuiteResult context=Test Groups], [SuiteResult context=Test on Safari], [SuiteResult context=Test on Firefox], [SuiteResult context=Test on Internet Explorer], [SuiteResult context=Test on Chrome]]
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - [[SuiteResult context=Test Groups], [SuiteResult context=Test on Safari], [SuiteResult context=Test on Firefox], [SuiteResult context=Test on Internet Explorer], [SuiteResult context=Test on Chrome]]
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - [[SuiteResult context=Test Groups], [SuiteResult context=Test on Safari], [SuiteResult context=Test on Firefox], [SuiteResult context=Test on Internet Explorer], [SuiteResult context=Test on Chrome]]
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - Files were inserted into the db.
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - Files were inserted into the db.
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - Files were inserted into the db.
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - WIN8_1
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@68ba310d
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - har.har is deleted!
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
+INFO main org.apache.log4j.Logger - 102400
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Files were inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.

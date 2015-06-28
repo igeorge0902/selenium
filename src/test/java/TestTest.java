@@ -25,6 +25,7 @@ public class TestTest extends TestBase implements WebElements {
 
 	@Test
 	public void testHbogoWebdriverTest1() throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		Actions action = new Actions(driver);
 

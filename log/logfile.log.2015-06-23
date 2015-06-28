@@ -1,0 +1,55 @@
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testLanguageChange was skipped!
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testLanguageChange was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Language test
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
+INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@399c4be1
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
+INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:50403
+INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:50411
+INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:50418
+INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:50426

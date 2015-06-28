@@ -23,6 +23,7 @@ public class TestListeners extends TestBase implements ITestListener, ISuiteList
 	public void onStart(ISuite arg0) {
 
 		System.out.println("About to begin executing Suite " + arg0.getName());
+		Log.info("hello");
 
 
 	}

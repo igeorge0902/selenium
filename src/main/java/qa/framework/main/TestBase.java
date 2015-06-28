@@ -51,17 +51,25 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TestBase extends Verify implements WebElements {
+	
+	  private static final long MEGABYTE = 1024L * 1024L;
+
+	  public static long bytesToMegabytes(long bytes) {
+	    return bytes / MEGABYTE;
+	  }
 
 	public static Logger Log = Logger.getLogger(Logger.class.getName());
 
 	protected static WebElement element = null;
 
-	public static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
-	public static String dbUrl = PropertyUtils.getProperty("dbUrl");
-	public static String dbUserName = PropertyUtils.getProperty("dbUserName");
-	public static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
-	public static String testngXml = PropertyUtils.getProperty("testngXml");
-	public static String port = PropertyUtils.getProperty("port");
+	public final static String dbDriverClass = PropertyUtils.getProperty("dbDriverClass");
+	public final static String dbUrl = PropertyUtils.getProperty("dbUrl");
+	public final static String dbUserName = PropertyUtils.getProperty("dbUserName");
+	public final static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
+	public final static String testngXml = PropertyUtils.getProperty("testngXml");
+	public final static String port = PropertyUtils.getProperty("port");
+	private final static String configFile = Paths.get(log4jxml).toFile().toString();
+
 	
 	static Boolean startServer;
 	static Boolean setDownstreamMaxKB;
@@ -73,7 +81,7 @@ public class TestBase extends Verify implements WebElements {
 	 * is returned in {@link WebDriverManager.class}, where it will be
 	 * instantiated with {@value browser} and {@value url} params.
 	 */
-	protected static WebDriver driver = null;
+	protected static WebDriver driver;
 
 	protected static ProxyServer server = new ProxyServer(Integer.parseInt(port));
 	
@@ -86,13 +94,12 @@ public class TestBase extends Verify implements WebElements {
 	}
 	
 	public TestBase() {
-		String configFile = Paths.get(log4jxml).toFile().toString();
 		DOMConfigurator.configure(configFile);
 		PropertyConfigurator.configure(log4jProperties);
 	}
 
 	@BeforeClass
-	public void setUp(ITestContext context) throws Exception {
+	public static void setUp(ITestContext context) throws Exception {
 
 		try {
 			// get the web driver parameters from the testng xml file
@@ -101,9 +108,9 @@ public class TestBase extends Verify implements WebElements {
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			
-			TestBase.browserMobStarted();
-			
+			TestBase.browserMobStarted();			
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
+			
 
 		} catch (Exception e) {
 
@@ -116,16 +123,18 @@ public class TestBase extends Verify implements WebElements {
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			
-			TestBase.browserMobStarted();
-			
+			//if (!serverStarted){
+			//Proxy proxy = server.seleniumProxy();
+			//TestBase.browserMobStarted();
+			//}
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 		}
 
 		try {
 
-			dao.SetUpDataBase();
-			dao.runSqlScript(create_db_sql);
-			dao.createProcedureGetTestRun();
+			SQLAccess.SetUpDataBase();
+			SQLAccess.runSqlScript(create_db_sql);
+			SQLAccess.createProcedureGetTestRun();
 
 		} catch (Exception e) {
 
@@ -134,20 +143,23 @@ public class TestBase extends Verify implements WebElements {
 	}
 
 	@AfterClass
-	public void closeBrowser(ITestContext context) throws Exception {
+	public static void closeBrowser(ITestContext context) throws Exception {
 		
+		if (SQLAccess.insertReport()) {
+
 		try{
-			dao.insertReport();
-			dao.generateMethodSummaryReport(CustomReportListener.suiteName,CustomReportListener.testName);
-		} catch (Exception e) {
-			Log.info("SQL insert failed!");
+			SQLAccess.testSummaryReport(CustomReportListener.getsuiteName(),CustomReportListener.gettestName(), CustomReportListener.getconfigFailes(), CustomReportListener.gettestFailes(), CustomReportListener.gettestSkipped(), CustomReportListener.gettestPassed());		
+
+			} catch (Exception e) {
+				Log.info("SQL insert failed!");
 		}
 		
 		Path apache = Paths.get(PropertyUtils.getProperty("apache"));
 		try {
-		TestBase.copyDirectory(testOutput_.toFile(), apache.toFile());
-		} catch (Exception e) {
-			Log.info("Output files were not copied. Possible reason is that apache directory is not set.");
+			TestBase.copyDirectory(testOutput_.toFile(), apache.toFile());
+			} catch (Exception e) {
+				Log.info("Output files were not copied. Possible reason is that apache directory is not set.");
+			}
 		}
 		WebDriverManager.stopDriver();
 
@@ -156,11 +168,23 @@ public class TestBase extends Verify implements WebElements {
 	private static Map<ITestResult, List<Throwable>> verificationFailuresMap = new HashMap<ITestResult, List<Throwable>>();
 	public static SQLAccess dao = new SQLAccess(dbDriverClass, dbUrl, dbUserName, dbPassWord);
 	
-	public JavascriptExecutor js = (JavascriptExecutor) driver;
+	  public static void memory() {
 
-	protected static boolean browserMobStarted() {
+		    // Get the Java runtime
+		    Runtime runtime = Runtime.getRuntime();
+		    
+		    // Run the garbage collector
+		    runtime.gc();
+		    
+		    // Calculate the used memory
+		    long memory = runtime.totalMemory() - runtime.freeMemory();
+		    System.out.println("Used memory is bytes: " + memory);
+		    System.out.println("Used memory is megabytes: " + bytesToMegabytes(memory));
+		  }
+	
+	protected static boolean browserMobStarted() {	
 		
-		if(startServer = Boolean.valueOf(PropertyUtils.getProperty("startServer"))) {
+		if (startServer = Boolean.valueOf(PropertyUtils.getProperty("startServer"))) {
 		
 		server.start();
 		
@@ -190,8 +214,7 @@ public class TestBase extends Verify implements WebElements {
 		server.newHar(BaseUrls.PLAYER.get());
 			
 			return true;
-		
-			}
+				}
 	
 		return false;
 	}
@@ -781,6 +804,7 @@ public class TestBase extends Verify implements WebElements {
 		if (sourceLocation.isDirectory()) {
 			if (targetLocation.exists()) {
 				targetLocation.setWritable(true);
+				targetLocation.delete();
 			}
 			
 			if (!targetLocation.exists()) {

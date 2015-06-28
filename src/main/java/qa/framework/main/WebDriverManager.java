@@ -43,8 +43,11 @@ import org.openqa.selenium.Platform;
  */
 
 public class WebDriverManager extends TestBase implements WebElements {
-	public static WebDriver driver = null;
+	protected static volatile WebDriver driver;
 	private static String browser = null;
+	private static String iEDriverPath;
+	private static String chromeDriverPath;
+	private static String chromeProfile;
 
 	// Default constructor, no need to extend this just use as a static
 	public WebDriverManager() {
@@ -59,7 +62,11 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception
 	 */
 	public static WebDriver startDriver(String browser, String portalUrl, int timeout) throws Exception {
-
+/*
+		if(driver == null){
+			synchronized(WebDriver.class) {
+			if(driver == null)	{
+	*/			
 		WebDriverManager.browser = browser;
 		DOMConfigurator.configure(log4jxml);
 		PropertyConfigurator.configure(log4jProperties);
@@ -77,8 +84,8 @@ public class WebDriverManager extends TestBase implements WebElements {
 
 			TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
 			
-			String IEDriverPath = Paths.get("lib/IEDriverServer32.exe").toFile().toString();
-			System.setProperty("webdriver.ie.driver", IEDriverPath);
+			iEDriverPath = Paths.get("lib/IEDriverServer32.exe").toFile().toString();
+			System.setProperty("webdriver.ie.driver", iEDriverPath);
 			
 		    // get the Selenium proxy object
 		    Proxy proxy = server.seleniumProxy();
@@ -141,14 +148,13 @@ public class WebDriverManager extends TestBase implements WebElements {
 
 				if (!TestBase.isSupportedPlatformMac(true)) {
 
-					// String userHome = System.getProperty("user.home");
-					String chromeDriverPath = Paths.get("lib/chromedriver.exe").toFile().toString();
+					chromeDriverPath = Paths.get("lib/chromedriver.exe").toFile().toString();
 					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 				}
 
 				else if (TestBase.isSupportedPlatformMac(true)) {
 
-					String chromeDriverPath = Paths.get("lib/chromedriver").toFile().toString();
+					chromeDriverPath = Paths.get("lib/chromedriver").toFile().toString();
 					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 				}
 
@@ -166,7 +172,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 			 * http://code.google.com/p/selenium/wiki/ChromeDriver
 			 */
 			
-			String chromeProfile = "";
+			chromeProfile = "";
 			if (!TestBase.isSupportedPlatformMac(true)) {
 				PropertyUtils.loadPropertyFile(proprtyFile);
 				String chromeProfileWin = PropertyUtils.getProperty("chromeProfileWin");
@@ -273,10 +279,12 @@ public class WebDriverManager extends TestBase implements WebElements {
 
 		}
 
-		// return a reference to the static web driver instance started
+				//}
+			//}
+		//}// return a reference to the static web driver instance started
 		return driver;
 	}
-
+		
 	private static WebDriver driverEventListener(Object object) {
 
 		EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(
@@ -321,6 +329,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 		driver.close();
 		Log.info("Driver closed afterInvocation");
 		unregister(driver);
+		TestBase.memory();
 
 	}
 

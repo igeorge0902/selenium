@@ -1,1053 +1,1305 @@
+[28/06/15 11:47:15:015 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 11:47:16:016 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 11:47:16:016 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 11:47:16:016 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: 
+[28/06/15 11:47:17:017 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 11:54:22:022 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:01:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:01:11:011 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:01:11:011 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:01:12:012 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:01:24:024 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:01:25:025 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:03:13:013 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:04:34:034 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:06:00:000 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:07:26:026 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:34:32:032 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:34:32:032 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:34:32:032 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:34:33:033 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:36:27:027 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:36:27:027 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:36:27:027 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:36:27:027 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:36:27:027 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:36:28:028 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:37:08:008 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:37:08:008 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:37:08:008 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:37:08:008 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: GenKey: 1
+[28/06/15 12:37:09:009 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:37:54:054 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:37:54:054 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:37:55:055 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:38:21:021 CEST]  INFO log4j.Logger: GenKey: 1
+[28/06/15 12:38:31:031 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: GenKey: 1
+[28/06/15 12:42:25:025 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:46:27:027 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:48:04:004 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: MySql connection is true
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/.DS_Store was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/CHROME--hu-HU.png was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/har.har was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_groups.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: GenKey: 5
+[28/06/15 12:53:41:041 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
 INFO main org.apache.log4j.Logger - Completed executing test Test Groups
 INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
-INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 10240
-INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 10240
-INFO main org.apache.log4j.Logger - setDownStreamKbps: true
-INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
-INFO main org.apache.log4j.Logger - har.har is deleted!
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-2 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-2 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61282
-INFO SocketListener0-11 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61287
-INFO SocketListener0-10 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61289
-WARN SeleniumProxyHandler$SslRelay2-1 net.lightbody.bmp.proxy.jetty.http.HttpConnection - Invalid length: Content-Length=54937 written=2192 for https://pagead2.googlesyndication.com/pagead/js/r20150611/r20150619/expansion_embed.js
-INFO SocketListener0-1 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61323
-INFO SocketListener0-10 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61329
-INFO SocketListener0-10 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61337
-INFO SocketListener0-12 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61346
-INFO SocketListener0-14 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61359
-INFO SocketListener0-1 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61405
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - Shit happens
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , 
-INFO main org.apache.log4j.Logger - Test Status: Skipped
-INFO main org.apache.log4j.Logger - testSignInSuccess was skipped!
-INFO main org.apache.log4j.Logger - Shit happens
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Status: Skipped
-INFO main org.apache.log4j.Logger - testPlaySingleContent was skipped!
 INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
 INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
 INFO main org.apache.log4j.Logger - New driver instantiated
 INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-3 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-3 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61589
-INFO SocketListener0-11 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61617
-INFO SocketListener0-12 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61626
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61643
-INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61652
-INFO SocketListener0-13 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61660
-INFO SocketListener0-8 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:61667
-[21/06/15 10:47:48:048 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 10:47:48:048 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 10:47:48:048 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 10:47:48:048 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 10:47:48:048 CEST]  INFO log4j.Logger: Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62031
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62041
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62048
-INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62052
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@399c4be1
-INFO main org.apache.log4j.Logger - har.har is deleted!
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62326
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62337
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62344
-INFO SocketListener0-8 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62352
-INFO SocketListener0-13 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62430
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62800
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62814
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62817
-INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:62824
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Chrome
+INFO main org.apache.log4j.Logger - CHROME
 INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - Chrome driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
 INFO main org.apache.log4j.Logger - MySql connection is true
 INFO main org.apache.log4j.Logger - MySql connection is true
 INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testLanguageChange starts now
-INFO main org.apache.log4j.Logger - Timed out after 5 seconds waiting for presence of element located by: By.cssSelector: meta[content='en-us']
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 98948
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/.DS_Store was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101636
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/.DS_Store was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101645
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/.DS_Store was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - lib/urls.txt has been written with the [Book1, Book2, Book3, Book4, Book5]
+INFO main org.apache.log4j.Logger - Elapsed time:2135
+INFO main org.apache.log4j.Logger - lib/urls.txt has been written with the [Book1, Book2, Book3, Book4, Book5]
+INFO main org.apache.log4j.Logger - Elapsed time:2055
+INFO main org.apache.log4j.Logger - lib/urls.txt has been written with the [Book1, Book2, Book3, Book4, Book5]
+INFO main org.apache.log4j.Logger - Elapsed time:2047
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101568
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101565
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 2
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - net.lightbody.bmp.exception.JettyException: Exception occurred when starting the server
+INFO main org.apache.log4j.Logger - CHROME is reconnecting!
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testSignInSuccess was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101631
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 4
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97355
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97005
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 5
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 94677
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 6
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97008
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97008
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97008
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97009
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - org.openqa.selenium.WebDriverException: unknown error: cannot parse capability: proxy
+from unknown error: must be a dictionary
+  (Driver info: chromedriver=2.15.322455 (ae8db840dac8d0c453355d3d922c91adfb61df8f),platform=Mac OS X 10.7.5 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 835 milliseconds
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
 System info: host: 'igeorge.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.7.5', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
-INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonMenu
-INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on MAC (9694a7cd96f48f4505791d2202f7210b)] -> id: headerButtonMenu]
-INFO main org.apache.log4j.Logger - Element found:By.id: menuTabs_settings
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - Chrome-2015-5-21-11-9-38-177.png
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestLanguage
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  langENG_theme , en-us , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testLanguageChange test failed!
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Language test
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+INFO main org.apache.log4j.Logger - CHROME is reconnecting!
 INFO main org.apache.log4j.Logger - New driver instantiated
 INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener0@0.0.0.0:4444
-INFO main org.apache.log4j.Logger - net.lightbody.bmp.exception.JettyException: Exception occurred when starting the server
-INFO main org.apache.log4j.Logger - Firefox is reconnecting!
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener1@0.0.0.0:4444
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
 INFO main org.apache.log4j.Logger - Fuck
 INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
 INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
 INFO main org.apache.log4j.Logger - Test Status: Failed
 INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Shit happens
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Status: Skipped
-INFO main org.apache.log4j.Logger - testPlaySingleContent was skipped!
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
 INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
 INFO main org.apache.log4j.Logger - Completed executing test Test Groups
 INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener0@0.0.0.0:4444
-INFO main org.apache.log4j.Logger - net.lightbody.bmp.exception.JettyException: Exception occurred when starting the server
-INFO main org.apache.log4j.Logger - Firefox is reconnecting!
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-WARN main net.lightbody.bmp.proxy.jetty.util.ThreadedServer - Failed to start: SocketListener1@0.0.0.0:4444
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Shit happens
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Status: Skipped
-INFO main org.apache.log4j.Logger - testPlaySingleContent was skipped!
 INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
 INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
 INFO main org.apache.log4j.Logger - New driver instantiated
 INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9999
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
 INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
 INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
 INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
 INFO main org.apache.log4j.Logger - setDownStreamKbps: true
 INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
 INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:64111
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:64122
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:64124
-INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:64135
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - Shit happens
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Status: Skipped
-INFO main org.apache.log4j.Logger - testSignInSuccess was skipped!
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
-INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
-INFO main org.apache.log4j.Logger - By.id: headerButtonLogin
-INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - CHROME-2015-5-21-11-31-6-614.png
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Driver closed afterInvocation
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Report was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - *safari
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9999
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
-INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - setDownStreamKbps: true
-INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:65482
-INFO SocketListener0-3 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:65491
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:65499
-INFO SocketListener0-1 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:65503
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9999
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
-INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - setDownStreamKbps: true
-INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49234
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49248
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49252
-INFO SocketListener0-7 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49259
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - Firefox
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:9999
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@420bc288
-INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
-INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - setDownStreamKbps: true
-INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
-INFO main org.apache.log4j.Logger - Delete operation is failed.
-INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.util.Credential - Checking Resource aliases
-INFO SocketListener0-0 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49371
-INFO SocketListener0-4 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49384
-INFO SocketListener0-5 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49388
-INFO SocketListener0-6 net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:49395
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - The property key: hu-HU is missing!
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - CHROME-2015-5-21-11-52-48-955.png
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , hu-HU , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - HBO GO. Bárhol. Bármikor.
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - CHROME-2015-5-21-12-8-26-880.png
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - HBO GO. Bárhol. Bármikor.
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - CHROME-2015-5-21-12-12-2-114.png
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - HBO GO. Bárhol. Bármikor.
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - CHROME-2015-5-21-12-18-8-661.png
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Failed
-INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
-INFO main org.apache.log4j.Logger - Driver closed afterInvocation
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - HBO GO. Bárhol. Bármikor.
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - Minden fasza
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Pass
-INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
-INFO main org.apache.log4j.Logger - Driver closed afterInvocation
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - HBO GO. Bárhol. Bármikor.
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - Minden fasza
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Pass
-INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
-INFO main org.apache.log4j.Logger - Element found:By.id: player
-INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
-INFO main org.apache.log4j.Logger - Fuck
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-[21/06/15 12:49:58:058 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:49:58:058 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:49:59:059 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 12:49:59:059 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 12:49:59:059 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 12:49:59:059 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: Got error 139 from storage engine
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: Got error 139 from storage engine
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: 
-[21/06/15 12:56:57:057 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: Got error 139 from storage engine
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: HY000
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: Got error 139 from storage engine
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: HY000
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: 
-[21/06/15 12:59:54:054 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:01:27:027 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:01:27:027 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:01:27:027 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:01:27:027 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: 
-[21/06/15 01:04:21:021 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: 
-[21/06/15 01:06:10:010 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:08:33:033 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:08:33:033 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:08:33:033 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: [Ljava.lang.StackTraceElement;@3d921e20
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: [Ljava.lang.StackTraceElement;@436e852b
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: 
-[21/06/15 01:08:34:034 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: 
-[21/06/15 01:09:56:056 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: 
-[21/06/15 01:12:21:021 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:43:56:056 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:43:56:056 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:43:57:057 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:43:57:057 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:43:57:057 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:43:57:057 CEST]  INFO log4j.Logger: 
-[21/06/15 01:43:57:057 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:47:07:007 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:47:07:007 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:47:08:008 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:47:08:008 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:47:08:008 CEST]  INFO log4j.Logger: HY000
-[21/06/15 01:47:08:008 CEST]  INFO log4j.Logger: 
-[21/06/15 01:47:08:008 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 01:52:18:018 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 01:56:40:040 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:56:40:040 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 01:56:40:040 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 01:56:40:040 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 01:56:40:040 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 02:32:19:019 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:32:19:019 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:32:19:019 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:32:19:019 CEST]  INFO log4j.Logger: 42000
-[21/06/15 02:32:19:019 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 02:34:03:003 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:34:03:003 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:34:03:003 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:34:03:003 CEST]  INFO log4j.Logger: 42000
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: 1
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 02:34:44:044 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 02:48:23:023 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:48:23:023 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:48:23:023 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:48:24:024 CEST]  INFO log4j.Logger: S0022
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4ResultSet@86be70a
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: 1
-[21/06/15 02:50:39:039 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4ResultSet@86be70a
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: 1
-[21/06/15 02:50:54:054 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 02:52:26:026 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:52:26:026 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 02:52:26:026 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 02:52:27:027 CEST]  INFO log4j.Logger: com.mysql.jdbc.JDBC4ResultSet@86be70a
-[21/06/15 02:52:27:027 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:03:01:001 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: 7
-[21/06/15 03:03:02:002 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:04:09:009 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:04:09:009 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:04:09:009 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:04:09:009 CEST]  INFO log4j.Logger: 1
-[21/06/15 03:04:09:009 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: 2
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: 2
-[21/06/15 03:04:23:023 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:15:16:016 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:15:16:016 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:31:45:045 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:31:45:045 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:32:06:006 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:32:06:006 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:32:06:006 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:32:06:006 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:32:06:006 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 03:33:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:33:54:054 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:33:55:055 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:33:55:055 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:33:55:055 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 03:35:09:009 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:35:09:009 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:35:09:009 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:35:09:009 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:35:09:009 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 03:35:55:055 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:35:55:055 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:35:55:055 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:35:55:055 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:35:55:055 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 03:51:27:027 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:51:27:027 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:51:27:027 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:51:27:027 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:51:27:027 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-[21/06/15 03:53:57:057 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:53:57:057 CEST]  INFO log4j.Logger: MySql connection is true
-[21/06/15 03:53:57:057 CEST]  INFO log4j.Logger: Script run: scripts/create_db.sql
-[21/06/15 03:53:57:057 CEST]  INFO log4j.Logger: Files were inserted into the db.
-[21/06/15 03:53:57:057 CEST]  INFO log4j.Logger: TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - MAC
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - MySql connection is true
-INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
-INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
-INFO main org.apache.log4j.Logger - hu-HU
-INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html/ScreenShots//
-INFO main org.apache.log4j.Logger - Minden fasza
-INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
-INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
-INFO main org.apache.log4j.Logger - Test Status: Pass
-INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
-INFO main org.apache.log4j.Logger - Element found:By.id: player
-INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
-INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
-INFO main org.apache.log4j.Logger - Driver closed afterInvocation
-INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - Completed executing test Test Groups
-INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
-INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
-INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
-INFO main org.apache.log4j.Logger - New driver instantiated
-INFO main org.apache.log4j.Logger - WIN8_1
-INFO main org.apache.log4j.Logger - CHROME
-INFO main org.apache.log4j.Logger - properties.properties is loaded.
-INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
-INFO main net.lightbody.bmp.proxy.jetty.http.HttpServer - Version Jetty/5.1.x
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started HttpContext[/,/]
-INFO main net.lightbody.bmp.proxy.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-INFO main net.lightbody.bmp.proxy.jetty.util.Container - Started net.lightbody.bmp.proxy.jetty.jetty.Server@68ba310d
-INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
-INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
-INFO main org.apache.log4j.Logger - setDownStreamKbps: true
-INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
-INFO main org.apache.log4j.Logger - har.har is deleted!
 INFO main org.apache.log4j.Logger - MySql connection is true
 INFO main org.apache.log4j.Logger - MySql connection is true
 INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
@@ -1062,38 +1314,136 @@ INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
 INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
 INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
 INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
-INFO main org.apache.log4j.Logger -  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\ScreenShots\\
-INFO main org.apache.log4j.Logger - 102400
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101622
+INFO main org.apache.log4j.Logger - Minden fasza
 INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
 INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
 INFO main org.apache.log4j.Logger - Test Status: Pass
 INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
-INFO main org.apache.log4j.Logger - Minden fasza
-INFO main org.apache.log4j.Logger - Files were inserted into the db.
-INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
 INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 8
 INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
-INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 97008
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - setDownstreamMaxKB: true
+INFO main org.apache.log4j.Logger - Remaining DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - Maximum DownStreamKB: 102400
+INFO main org.apache.log4j.Logger - setDownStreamKbps: true
+INFO main org.apache.log4j.Logger - DownStream speed is set to: 4096
+INFO main org.apache.log4j.Logger - Delete operation is failed.
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - hu-HU
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: meta[content='hu-HU']
+INFO main org.apache.log4j.Logger -  *** Capture files are created in /Users/georgegaspar/Documents/workspace/Selenium_Testlink/test-output/html//
+INFO main org.apache.log4j.Logger - 101654
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestHboSignIn
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , defaultLanguageMeta , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Chrome
+INFO main org.apache.log4j.Logger - GenKey: 9
 INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
