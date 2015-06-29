@@ -148,6 +148,7 @@ public class TestBase extends Verify implements WebElements {
 		if (SQLAccess.insertReport()) {
 
 		try{
+			SQLAccess.sessionId();
 			SQLAccess.testSummaryReport(CustomReportListener.getsuiteName(),CustomReportListener.gettestName(), CustomReportListener.getconfigFailes(), CustomReportListener.gettestFailes(), CustomReportListener.gettestSkipped(), CustomReportListener.gettestPassed());		
 
 			} catch (Exception e) {

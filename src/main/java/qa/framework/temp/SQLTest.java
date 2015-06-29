@@ -19,12 +19,24 @@ public class SQLTest extends TestBase implements WebElements {
 		SQLAccess.SetUpDataBase();
 		SQLAccess.runSqlScript(create_db_sql);
 		SQLAccess.createProcedureGetTestRun();
+		SQLAccess.sessionId();
+		SQLAccess.sessionId();
+
 		if (SQLAccess.insertReport()) {
 			
 			if (!SQLAccess.genSumRep) {
-				
+				Log.info(SQLAccess.genSumRep);	
 					SQLAccess.testSummaryReport("suite", "hello", 0, 0, 0, 0);
+					SQLAccess.genSumRep=true;
+					Log.info(SQLAccess.genSumRep);	
+			//Log.info(SQLAccess.getGenSumRep());	
+			
+			if (!SQLAccess.genSumRep) {
 				
+				SQLAccess.testSummaryReport("suite", "hello", 0, 0, 0, 0);
+		Log.info(SQLAccess.getGenSumRep());	
+		}
+			
 			}
 			
 		}

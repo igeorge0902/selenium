@@ -52,6 +52,7 @@ public class CustomReportListener extends TestMethodListener implements
 	private static int testFailes;
 	private static int testSkipped;
 	private static int testPassed;
+	private boolean genSumRep;
 
 	  public static synchronized String getsuiteName() {
 		    return suiteName;
@@ -150,21 +151,24 @@ public class CustomReportListener extends TestMethodListener implements
 				resultSummary(suite, testContext.getSkippedTests(), testName, "skipped", "");
 				resultSummary(suite, testContext.getPassedTests(), testName, "passed", "");
 				testIndex++;
+				Log.info("index: "+testIndex++);
 				
 				configFailes = testContext.getFailedConfigurations().size();
 				testFailes = testContext.getFailedTests().size();
 				testSkipped = testContext.getSkippedTests().size();
 				testPassed = testContext.getPassedTests().size();
-				 
-			}
-			
-			if (!SQLAccess.genSumRep) {
+
+				if (!SQLAccess.genSumRep) {
+
 				try {
 					SQLAccess.testSummaryReport(suiteName, testName, configFailes, testFailes, testSkipped, testPassed);
+
 				} catch (Exception e) {
 					e.printStackTrace();
+					}
 				}
-			}
+			} 
+				SQLAccess.genSumRep=true;
 		}
 		m_out.println("</table>");
 	}

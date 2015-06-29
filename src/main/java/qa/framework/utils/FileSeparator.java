@@ -46,7 +46,6 @@ public class FileSeparator extends TestBase implements WebElements {
 
 		System.out.println(TestBase.getCurrentTime());
 		second = 4;
-
 		while (second > 0) {
 			try {
 				Thread.sleep(500);

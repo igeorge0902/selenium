@@ -44,7 +44,7 @@ import org.openqa.selenium.Platform;
 
 public class WebDriverManager extends TestBase implements WebElements {
 	protected static volatile WebDriver driver;
-	private static String browser = null;
+	private static String browser;
 	private static String iEDriverPath;
 	private static String chromeDriverPath;
 	private static String chromeProfile;
@@ -62,229 +62,271 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception
 	 */
 	public static WebDriver startDriver(String browser, String portalUrl, int timeout) throws Exception {
-/*
-		if(driver == null){
-			synchronized(WebDriver.class) {
-			if(driver == null)	{
-	*/			
-		WebDriverManager.browser = browser;
-		DOMConfigurator.configure(log4jxml);
-		PropertyConfigurator.configure(log4jProperties);
-		Log.info("New driver instantiated");
-		Log.info(Platform.getCurrent());
-		Log.info(getBroswer());
 
-		/*
-		 * Determine what browser were using and start the appropiate driver
-		 * instance
-		 */
-		if (browser.equalsIgnoreCase("INTERNET_EXPLORER")) {
+				/*
+				 * if(driver == null){ synchronized(WebDriver.class) { if(driver
+				 * == null) {
+				 */
+				WebDriverManager.browser = browser;
+				DOMConfigurator.configure(log4jxml);
+				PropertyConfigurator.configure(log4jProperties);
+				Log.info("New driver instantiated");
+				Log.info(Platform.getCurrent());
+				Log.info(browser);
 
-			System.out.println("browser : " + browser);
+				/*
+				 * Determine what browser were using and start the appropiate
+				 * driver instance
+				 */
+				if (browser.equalsIgnoreCase("INTERNET_EXPLORER")) {
 
-			TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
-			
-			iEDriverPath = Paths.get("lib/IEDriverServer32.exe").toFile().toString();
-			System.setProperty("webdriver.ie.driver", iEDriverPath);
-			
-		    // get the Selenium proxy object
-		    Proxy proxy = server.seleniumProxy();
-		    
-			DesiredCapabilities Capabilities = DesiredCapabilities.internetExplorer();
-			Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,	true);
-			Capabilities.isJavascriptEnabled();
-			Capabilities.setVersion("11");
-			Capabilities.getVersion();
-			Capabilities.equals(browser);
-			Capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
-			Capabilities.setCapability(InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP, true);
-			Capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
-		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					System.out.println("browser : " + browser);
 
-			// start a internet explorer driver instance
-			driver = new InternetExplorerDriver(Capabilities);
+					TestBase.assertFalse(TestBase.isSupportedPlatformMac(false));
 
-			driver = driverEventListener(Capabilities);
-			Log.info(browser + "driver initialized with eventListeners");
-			Log.info(Capabilities.getVersion());
-			WaitTool.setImplicitWait(driver, timeout);
+					iEDriverPath = Paths.get("lib/IEDriverServer32.exe")
+							.toFile().toString();
+					System.setProperty("webdriver.ie.driver", iEDriverPath);
 
-			driver.get(portalUrl);
-			driver.manage().deleteAllCookies();
-			driver.manage().window().maximize();
+					// get the Selenium proxy object
+					Proxy proxy = server.seleniumProxy();
 
-			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
+					DesiredCapabilities Capabilities = DesiredCapabilities
+							.internetExplorer();
+					Capabilities
+							.setCapability(
+									InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
+									true);
+					Capabilities.isJavascriptEnabled();
+					Capabilities.setVersion("11");
+					Capabilities.getVersion();
+					Capabilities.equals(browser);
+					Capabilities.setCapability(
+							InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION,
+							true);
+					Capabilities
+							.setCapability(
+									InternetExplorerDriver.ENABLE_ELEMENT_CACHE_CLEANUP,
+									true);
+					Capabilities.setCapability(
+							InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING,
+							false);
+					Capabilities.setCapability(CapabilityType.PROXY, proxy);
 
-			/*
-			 * // click the override link if it exists try {
-			 * driver.navigate().to
-			 * ("javascript:document.getElementById('overridelink').click()"); }
-			 * catch (Exception e) { // do nothing as this exception is expected
-			 * if no security ssl cert issue }
-			 */
-		}
+					// start a internet explorer driver instance
+					driver = new InternetExplorerDriver(Capabilities);
 
-		/**
-		 * Installation and configuration steps for the Chrome driver.....
-		 *
-		 * 1. Go to http://code.google.com/p/chromium/downloads/list and
-		 * download the latest chromedriver for windows 2. Extract the
-		 * chromedriver.exe to a location of your choice 3. Create a
-		 * webdriver.chrome.driver environment variable and set the path to the
-		 * chromedriver.exe including the chromedriver.exe in the path.
-		 */
-		else if (browser.equalsIgnoreCase("CHROME")) {
-			System.out.println("browser :" + browser);
+					driver = driverEventListener(Capabilities);
+					Log.info(browser + "driver initialized with eventListeners");
+					Log.info(Capabilities.getVersion());
+					WaitTool.setImplicitWait(driver, timeout);
 
-			/**
-			 * Chrome web driver requires a webdriver.chrome.driver property to
-			 * be set to the path of the chrome driver exe so create a
-			 * webdriver.chrome.driver environment variable and determine where
-			 * the driver exe resides for each machine instance via this
-			 * variable. Use the environment variable to then set the property.
-			 */
+					driver.get(portalUrl);
+					driver.manage().deleteAllCookies();
+					driver.manage().window().maximize();
 
-			try {
+					new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
+							.keyUp(Keys.CONTROL).perform();
 
-				if (!TestBase.isSupportedPlatformMac(true)) {
-
-					chromeDriverPath = Paths.get("lib/chromedriver.exe").toFile().toString();
-					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+					/*
+					 * // click the override link if it exists try {
+					 * driver.navigate().to (
+					 * "javascript:document.getElementById('overridelink').click()"
+					 * ); } catch (Exception e) { // do nothing as this
+					 * exception is expected if no security ssl cert issue }
+					 */
 				}
 
-				else if (TestBase.isSupportedPlatformMac(true)) {
+				/**
+				 * Installation and configuration steps for the Chrome
+				 * driver.....
+				 *
+				 * 1. Go to http://code.google.com/p/chromium/downloads/list and
+				 * download the latest chromedriver for windows 2. Extract the
+				 * chromedriver.exe to a location of your choice 3. Create a
+				 * webdriver.chrome.driver environment variable and set the path
+				 * to the chromedriver.exe including the chromedriver.exe in the
+				 * path.
+				 */
+				else if (browser.equalsIgnoreCase("CHROME")) {
+					System.out.println("browser :" + browser);
 
-					chromeDriverPath = Paths.get("lib/chromedriver").toFile().toString();
-					System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+					/**
+					 * Chrome web driver requires a webdriver.chrome.driver
+					 * property to be set to the path of the chrome driver exe
+					 * so create a webdriver.chrome.driver environment variable
+					 * and determine where the driver exe resides for each
+					 * machine instance via this variable. Use the environment
+					 * variable to then set the property.
+					 */
+
+					try {
+
+						if (!TestBase.isSupportedPlatformMac(true)) {
+
+							chromeDriverPath = Paths
+									.get("lib/chromedriver.exe").toFile()
+									.toString();
+							System.setProperty("webdriver.chrome.driver",
+									chromeDriverPath);
+						}
+
+						else if (TestBase.isSupportedPlatformMac(true)) {
+
+							chromeDriverPath = Paths.get("lib/chromedriver")
+									.toFile().toString();
+							System.setProperty("webdriver.chrome.driver",
+									chromeDriverPath);
+						}
+
+					}
+
+					catch (Exception ex) {
+						System.out
+								.println("\nException in getting and setting the webdriver chrome driver: "
+										+ ex.getMessage() + ex.getClass());
+						ex.printStackTrace();
+					}
+					/*
+					 * Configure chrome to ignore the untrusted certificate
+					 * error for secure ssl. More information can be found
+					 * here...
+					 * 
+					 * http://code.google.com/p/selenium/wiki/ChromeDriver
+					 */
+
+					chromeProfile = "";
+					if (!TestBase.isSupportedPlatformMac(true)) {
+						PropertyUtils.loadPropertyFile(proprtyFile);
+						String chromeProfileWin = PropertyUtils
+								.getProperty("chromeProfileWin");
+						chromeProfile = chromeProfileWin;
+					}
+
+					else if (TestBase.isSupportedPlatformMac(true)) {
+						PropertyUtils.loadPropertyFile(proprtyFile);
+						String chromeProfileMac = PropertyUtils
+								.getProperty("chromeProfileMac");
+						chromeProfile = chromeProfileMac;
+					}
+
+					// get the Selenium proxy object
+					Proxy proxy = server.seleniumProxy();
+
+					ChromeOptions options = new ChromeOptions();
+					DesiredCapabilities Capabilities = DesiredCapabilities
+							.chrome();
+					Capabilities.setCapability(ChromeOptions.CAPABILITY,
+							options);
+					Capabilities
+							.setCapability(
+									CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
+									"ignore");
+					Capabilities.setCapability(
+							CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
+					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+
+					options.addArguments(Arrays
+							.asList(new String[] {
+									"--use-gpu-in-tests",
+									"--clear-token-service",
+									"user-data-dir=" + chromeProfile,
+									"--clear-data-reduction-proxy-data-savings",
+									"--ignore-certificate-errors",
+									"--start-maximized" }));
+
+					driver = new ChromeDriver(Capabilities);
+
+					driver = driverEventListener(Capabilities);
+					Log.info(browser
+							+ " driver initialized with eventListeners");
+
+					WaitTool.setImplicitWait(driver, timeout);
+
+					// open the url
+					driver.get(portalUrl);
+					driver.manage().window().maximize();
+
+					driver.manage().deleteAllCookies();
+
+					new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
+							.keyUp(Keys.CONTROL).perform();
+
+				} else if (browser.equalsIgnoreCase("Firefox")) {
+					System.out.println("browser :" + browser);
+
+					// Use specific Firefox profile
+					ProfilesIni profilesIni = new ProfilesIni();
+					FirefoxProfile profile = profilesIni.getProfile("Test");
+
+					// get the Selenium proxy object
+					Proxy proxy = server.seleniumProxy();
+
+					// configure it as a desired capability
+					DesiredCapabilities Capabilities = new DesiredCapabilities();
+					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					Capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+
+					driver = new FirefoxDriver(Capabilities);
+
+					driver = driverEventListener(Capabilities);
+					Log.info(browser
+							+ " driver initialized with eventListeners");
+
+					WaitTool.setImplicitWait(driver, timeout);
+
+					driver.get(portalUrl);
+
+					driver.manage().window().maximize();
+					driver.manage().deleteAllCookies();
+
+					new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
+							.keyUp(Keys.CONTROL).perform();
+
+				} else {
+					System.out.println("browser : Safari (Default)\n");
+
+					TestBase.assertTrue(TestBase.isSupportedPlatformMac(true));
+
+					new DesiredCapabilities();
+					DesiredCapabilities Capabilities = DesiredCapabilities
+							.safari();
+					SafariOptions options = new SafariOptions();
+
+					// get the Selenium proxy object
+					Proxy proxy = server.seleniumProxy();
+
+					Capabilities.setCapability("nativeEvents", false);
+					Capabilities.setCapability("unexpectedAlertBehaviour",
+							"accept");
+					Capabilities.setCapability("acceptSslCerts", true);
+					Capabilities.setCapability(SafariOptions.CAPABILITY,
+							options);
+					Capabilities.setCapability(
+							CapabilityType.HAS_NATIVE_EVENTS, false);
+					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+
+					options.setUseCleanSession(true);
+
+					// For use with SafariDriver:
+					driver = new SafariDriver(Capabilities);
+
+					driver = driverEventListener(Capabilities);
+					Log.info(browser + "driver initialized with eventListeners");
+
+					WaitTool.setImplicitWait(driver, timeout);
+
+					driver.get(portalUrl);
+					driver.manage().deleteAllCookies();
+
 				}
 
-			}
-
-			catch (Exception ex) {
-				System.out.println("\nException in getting and setting the webdriver chrome driver: "
-								+ ex.getMessage() + ex.getClass());
-				ex.printStackTrace();
-			}
-			/*
-			 * Configure chrome to ignore the untrusted certificate error for
-			 * secure ssl. More information can be found here...
-			 * 
-			 * http://code.google.com/p/selenium/wiki/ChromeDriver
-			 */
-			
-			chromeProfile = "";
-			if (!TestBase.isSupportedPlatformMac(true)) {
-				PropertyUtils.loadPropertyFile(proprtyFile);
-				String chromeProfileWin = PropertyUtils.getProperty("chromeProfileWin");
-				chromeProfile = chromeProfileWin;
-			}
-
-			else if (TestBase.isSupportedPlatformMac(true)) {
-				PropertyUtils.loadPropertyFile(proprtyFile);
-				String chromeProfileMac = PropertyUtils.getProperty("chromeProfileMac");
-				chromeProfile = chromeProfileMac;
-			}
-			
-		    // get the Selenium proxy object
-		    Proxy proxy = server.seleniumProxy();
-			
-			ChromeOptions options = new ChromeOptions();
-			DesiredCapabilities Capabilities = DesiredCapabilities.chrome();
-			Capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-			Capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, "ignore");
-			Capabilities.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
-		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
-
-
-			options.addArguments(Arrays.asList(new String[] {"--use-gpu-in-tests" ,"--clear-token-service" ,"user-data-dir=" + chromeProfile,"--clear-data-reduction-proxy-data-savings","--ignore-certificate-errors", "--start-maximized" }));	
-
-			driver = new ChromeDriver(Capabilities);
-
-			driver = driverEventListener(Capabilities);
-			Log.info(browser + " driver initialized with eventListeners");
-
-			WaitTool.setImplicitWait(driver, timeout);
-
-			// open the url
-			driver.get(portalUrl);
-			driver.manage().window().maximize();
-
-			driver.manage().deleteAllCookies();
-
-			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5)
-					.keyUp(Keys.CONTROL).perform();
-
-		} else if (browser.equalsIgnoreCase("Firefox")) {
-			System.out.println("browser :" + browser);
-
-			// Use specific Firefox profile
-			ProfilesIni profilesIni = new ProfilesIni();
-			FirefoxProfile profile = profilesIni.getProfile("Test");
-						
-		    // get the Selenium proxy object
-		    Proxy proxy = server.seleniumProxy();
-	    
-			// configure it as a desired capability
-		    DesiredCapabilities Capabilities = new DesiredCapabilities();
-		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
-		    Capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-
-			driver = new FirefoxDriver(Capabilities);
-			
-			driver = driverEventListener(Capabilities);
-			Log.info(browser + " driver initialized with eventListeners");
-
-			WaitTool.setImplicitWait(driver, timeout);
-
-			driver.get(portalUrl);
-			
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();			
-			
-			new Actions(driver).keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
-			
-
-		} else {
-			System.out.println("browser : Safari (Default)\n");
-
-			TestBase.assertTrue(TestBase.isSupportedPlatformMac(true));
-
-			new DesiredCapabilities();
-			DesiredCapabilities Capabilities = DesiredCapabilities.safari();
-			SafariOptions options = new SafariOptions();
-			
-		    // get the Selenium proxy object
-		    Proxy proxy = server.seleniumProxy();
-		    
-			Capabilities.setCapability("nativeEvents", false);
-			Capabilities.setCapability("unexpectedAlertBehaviour", "accept");
-			Capabilities.setCapability("acceptSslCerts", true);
-			Capabilities.setCapability(SafariOptions.CAPABILITY, options);
-			Capabilities.setCapability(CapabilityType.HAS_NATIVE_EVENTS, false);
-		    Capabilities.setCapability(CapabilityType.PROXY, proxy);
-
-			
-			options.setUseCleanSession(true);
-			
-			// For use with SafariDriver:
-			driver = new SafariDriver(Capabilities);
-
-			driver = driverEventListener(Capabilities);
-			Log.info(browser + "driver initialized with eventListeners");
-
-			WaitTool.setImplicitWait(driver, timeout);
-
-			driver.get(portalUrl);
-			driver.manage().deleteAllCookies();
-
-		}
-
-				//}
 			//}
+			// }
 		//}// return a reference to the static web driver instance started
-		return driver;
+		return  driver;
 	}
-		
+
 	private static WebDriver driverEventListener(Object object) {
 
 		EventFiringWebDriver eventFiringDriver = new EventFiringWebDriver(
@@ -304,23 +346,24 @@ public class WebDriverManager extends TestBase implements WebElements {
 		return driver = eventFiringDriver.unregister(eventListener);
 
 	}
-		
+
 	public static ProxyServer serverStart() {
-		
+
 		ProxyServer server = new ProxyServer(9090);
 		return server;
 	}
-	
+
 	protected static PrintWriter createWriter(String string) throws IOException {
 		new File(string);
-		return new PrintWriter(new BufferedWriter(new FileWriter(new File(string))));
+		return new PrintWriter(new BufferedWriter(new FileWriter(new File(
+				string))));
 	}
 
 	/**
 	 * Stops the browser driver started
 	 *
 	 * @param - the instance of the driver to stop
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static void stopDriver() {
 		if (TestBase.serverStarted = true) {
@@ -345,6 +388,5 @@ public class WebDriverManager extends TestBase implements WebElements {
 	public static String getBroswer() {
 		return browser;
 	}
-
 
 } // end class

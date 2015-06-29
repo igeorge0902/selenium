@@ -17,6 +17,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.UUID;
 
 import org.apache.ibatis.jdbc.ScriptRunner;
 
@@ -36,8 +37,22 @@ public class SQLAccess extends TestBase implements WebElements {
 	private static long lastInsertId;
 	private static String createProcedure_GetTestRun;
 	private static String createProcedure_JoinTestRun;
+	private volatile static UUID idOne;
 	
-	public static boolean genSumRep;
+	//public static boolean genSumRep;
+	
+	 public volatile static boolean genSumRep;
+
+	public synchronized static boolean getGenSumRep() {
+	    boolean tmp = genSumRep;
+	    if (tmp = false) {
+	        tmp = genSumRep;
+	        if (tmp = false) {
+	          genSumRep = tmp = true;
+	      }
+	    }
+	    return tmp; // Using tmp here instead of myField avoids an memory update
+	  }
 	
 	public SQLAccess(String dbDriverClass, String dbUrl, String dbUserName, String dbPassWord) {
 
@@ -47,7 +62,17 @@ public class SQLAccess extends TestBase implements WebElements {
 		SQLAccess.dbPassWord = dbPassWord;
 
 	}
+	
+	  public synchronized final static UUID uuId(){
 
+	          if (idOne == null) {
+		     SQLAccess.idOne = UUID.randomUUID();
+		     Log.info("UUID One: " + idOne);
+	          	}
+		  return idOne;
+	         
+	  }
+	          
 	public static void SetUpDataBase() throws Exception {
 
 		try {
@@ -110,16 +135,12 @@ public class SQLAccess extends TestBase implements WebElements {
 			Log.info("TestRuns was inserted into the db.");
 
 		}
-		genSumRep = true;
+		getGenSumRep();// = true;
 		return true;
 	}
 	
-	public static boolean methodSummaryReport(String method, String testResult, String description)
-			throws Exception {
+	public static boolean sessionId() throws Exception {
 
-		if (method == null) {
-			return false;
-		}
 		
 		try {
 			// This will load the MySQL driver, each DB has its own driver
@@ -131,13 +152,12 @@ public class SQLAccess extends TestBase implements WebElements {
 				long time = System.currentTimeMillis();
 				java.sql.Timestamp timestamp = new java.sql.Timestamp(time);
 				
-			String sql = "insert into  feedback.METHOD_Report values (default, ?, ?, ?, ? , ?)";
+			String sql = "insert into  feedback.Sessions values (default, ?, ?, ?)";
 				
 			preparedStatement = connect.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
-			preparedStatement.setString(1, method);
-			preparedStatement.setString(2, testResult);
-			preparedStatement.setString(3, description);
-			preparedStatement.setTimestamp(7, timestamp);
+			preparedStatement.setString(1,SQLAccess.uuId().toString());
+			preparedStatement.setLong(2, lastInsertId);
+			preparedStatement.setTimestamp(3, timestamp);
 			
 			preparedStatement.executeUpdate();
 			ResultSet rs = preparedStatement.getGeneratedKeys();
@@ -151,10 +171,9 @@ public class SQLAccess extends TestBase implements WebElements {
 		} finally {
 			
 			close();
-			Log.info("TestRuns was inserted into the db.");
+			Log.info("SessionId was created");
 
 		}
-		genSumRep = true;
 		return true;
 	}
 	

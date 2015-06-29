@@ -49,3 +49,12 @@ CREATE TABLE IF NOT EXISTS METHOD_Results (
     ON UPDATE CASCADE
     ON DELETE RESTRICT)
 	ENGINE = InnoDb DEFAULT COLLATE utf8_bin;
+	
+CREATE TABLE IF NOT EXISTS Sessions
+(
+    id int(11) UNSIGNED not null auto_increment,
+    SessionId VARCHAR(255),
+    testrun_id int(11), 
+	TIME_ timestamp,    
+	PRIMARY KEY (id))
+	ENGINE = InnoDb DEFAULT COLLATE utf8_bin; 
