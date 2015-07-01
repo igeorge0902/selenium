@@ -8,6 +8,7 @@ package main.java.qa.framework.testng;
 
 
 import main.java.qa.framework.main.TestBase;
+import main.java.qa.framework.utils.SQLAccess;
 
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -23,7 +24,22 @@ public class LoggingListener extends TestListenerAdapter {
 	        super.onConfigurationFailure(tr);
 	        super.getConfigurationFailures();
 	        super.getConfigurationSkips();
-	        	        
+	       
+			try {
+				if (SQLAccess.insertReport()) {
+
+					try{
+						SQLAccess.sessionId();
+						SQLAccess.testSummaryReport(CustomReportListener.getsuiteName(),CustomReportListener.gettestName(), CustomReportListener.getconfigFailes(), CustomReportListener.gettestFailes(), CustomReportListener.gettestSkipped(), CustomReportListener.gettestPassed());		
+
+						} catch (Exception e) {
+							TestBase.Log.info("SQL insert failed!");
+					}
+				}
+			} catch (Exception e) {
+				TestBase.Log.info("SQL insert failed!");
+			}
+				
 	        Reporter.log("Fuck<br>");
 	        TestBase.Log.info("Fuck");
 	  	}
