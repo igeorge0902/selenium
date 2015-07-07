@@ -1,0 +1,2 @@
+INFO main org.apache.log4j.Logger - lib/urls.txt has been written with the [Book1, Book2, Book3, Book4, Book5]
+INFO main org.apache.log4j.Logger - Elapsed time:2059

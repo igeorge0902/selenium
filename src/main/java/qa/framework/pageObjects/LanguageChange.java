@@ -35,17 +35,15 @@ public class LanguageChange extends TestBase implements WebElements {
 		} else if (!_languagecheck1_) {
 
 			driver.findElement(By.id(HeaderButton)).click();
+			WaitTool.waitForElement(driver, By.id(Settings), 5);
 			driver.findElement(By.id(Settings)).click();
 
-			TestBase.assertEquals(driver.findElement(By.id(CustomerMenu))
-					.isDisplayed(), driver.findElement(By.id(CustomerMenu))
-					.isDisplayed());
+			WaitTool.waitForElement(driver, By.id(CustomerMenu), 5);
 			
 			TestBase.clickLinkByHref(language);
-
+			WaitTool.waitForElement(driver, By.id(lang1), 5);
 			driver.findElement(By.id(lang1)).click();
-			driver.findElement(
-					By.cssSelector("div.form_buttons > button.button_submit")).click();
+			driver.findElement(By.cssSelector("div.form_buttons > button.button_submit")).click();
 
 			WaitTool.waitForElement(driver,	By.cssSelector("div.form_buttons > button.button_submit") ,5);
 
