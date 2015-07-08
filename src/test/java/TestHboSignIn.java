@@ -10,9 +10,7 @@ import main.java.qa.framework.testng.TestMethodListener;
 
 import org.testng.annotations.*;
 
-@Listeners({ TestListeners.class,
-		main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class,
-		TestMethodListener.class, LoggingListener.class })
+@Listeners({ TestListeners.class, main.java.qa.framework.main.CaptureScreenshotOnFailureListener.class, TestMethodListener.class, LoggingListener.class })
 public class TestHboSignIn extends TestBase {
 
 	@Parameters({ "operator", "languageMeta" })
@@ -21,9 +19,11 @@ public class TestHboSignIn extends TestBase {
 			throws Exception {
 		HboSignIn SignInPage = new HboSignIn();
 
-		/*
-		 * // select operator SignInPage.selectOperator(operator);
-		 * Log.info("selectOperator test is done");
+		
+		 // select operator
+		 SignInPage.selectOperator(operator);
+		 
+		 /* Log.info("selectOperator test is done");
 		 * Reporter.log("<p>selectOperator test is done<br></p>");
 		 * 
 		 * // submit SignInPage.submit(); Log.info("submit test is done");

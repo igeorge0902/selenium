@@ -151,7 +151,7 @@ public class CustomReportListener extends TestMethodListener implements
 				resultSummary(suite, testContext.getSkippedTests(), testName, "skipped", "");
 				resultSummary(suite, testContext.getPassedTests(), testName, "passed", "");
 				testIndex++;
-				Log.info("index: "+testIndex++);
+				//Log.info("index: "+testIndex++);
 				
 				configFailes = testContext.getFailedConfigurations().size();
 				testFailes = testContext.getFailedTests().size();
