@@ -89,7 +89,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 					System.setProperty("webdriver.ie.driver", iEDriverPath);
 
 					// get the Selenium proxy object
-					Proxy proxy = server.seleniumProxy();
+					//Proxy proxy = server.seleniumProxy();
 
 					DesiredCapabilities Capabilities = DesiredCapabilities
 							.internetExplorer();
@@ -111,7 +111,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 					Capabilities.setCapability(
 							InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING,
 							false);
-					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					//Capabilities.setCapability(CapabilityType.PROXY, proxy);
 
 					// start a internet explorer driver instance
 					driver = new InternetExplorerDriver(Capabilities);
@@ -211,7 +211,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 					}
 
 					// get the Selenium proxy object
-					Proxy proxy = server.seleniumProxy();
+					//Proxy proxy = server.seleniumProxy();
 
 					ChromeOptions options = new ChromeOptions();
 					DesiredCapabilities Capabilities = DesiredCapabilities
@@ -224,7 +224,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 									"ignore");
 					Capabilities.setCapability(
 							CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
-					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					//Capabilities.setCapability(CapabilityType.PROXY, proxy);
 
 					options.addArguments(Arrays
 							.asList(new String[] {
@@ -260,11 +260,11 @@ public class WebDriverManager extends TestBase implements WebElements {
 					FirefoxProfile profile = profilesIni.getProfile("Test");
 
 					// get the Selenium proxy object
-					Proxy proxy = server.seleniumProxy();
+					//Proxy proxy = server.seleniumProxy();
 
 					// configure it as a desired capability
 					DesiredCapabilities Capabilities = new DesiredCapabilities();
-					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					//Capabilities.setCapability(CapabilityType.PROXY, proxy);
 					Capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 
 					driver = new FirefoxDriver(Capabilities);
@@ -294,7 +294,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 					SafariOptions options = new SafariOptions();
 
 					// get the Selenium proxy object
-					Proxy proxy = server.seleniumProxy();
+					//Proxy proxy = server.seleniumProxy();
 
 					Capabilities.setCapability("nativeEvents", false);
 					Capabilities.setCapability("unexpectedAlertBehaviour",
@@ -304,7 +304,7 @@ public class WebDriverManager extends TestBase implements WebElements {
 							options);
 					Capabilities.setCapability(
 							CapabilityType.HAS_NATIVE_EVENTS, false);
-					Capabilities.setCapability(CapabilityType.PROXY, proxy);
+					//Capabilities.setCapability(CapabilityType.PROXY, proxy);
 
 					options.setUseCleanSession(true);
 
@@ -366,9 +366,9 @@ public class WebDriverManager extends TestBase implements WebElements {
 	 * @throws Exception
 	 */
 	public static void stopDriver() {
-		if (TestBase.serverStarted = true) {
-			server.stop();
-		}
+		//if (TestBase.serverStarted = true) {
+			//server.stop();
+		//}
 		driver.close();
 		Log.info("Driver closed afterInvocation");
 		unregister(driver);

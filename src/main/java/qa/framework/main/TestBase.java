@@ -67,14 +67,15 @@ public class TestBase extends Verify implements WebElements {
 	public final static String dbUserName = PropertyUtils.getProperty("dbUserName");
 	public final static String dbPassWord = PropertyUtils.getProperty("dbPassWord");
 	public final static String testngXml = PropertyUtils.getProperty("testngXml");
-	public final static String port = PropertyUtils.getProperty("port");
+	//public final static String port = PropertyUtils.getProperty("port");
 	private final static String configFile = Paths.get(log4jxml).toFile().toString();
 
-	
+	/*
 	static Boolean startServer;
 	static Boolean setDownstreamMaxKB;
 	static Boolean setDownStreamKbps;
 	public static boolean serverStarted;
+	*/
 
 	/**
 	 * The constructor driver for all classes, that extend TestBase. The driver
@@ -83,15 +84,15 @@ public class TestBase extends Verify implements WebElements {
 	 */
 	protected static WebDriver driver;
 
-	protected static ProxyServer server = new ProxyServer(Integer.parseInt(port));
+	//protected static ProxyServer server = new ProxyServer(Integer.parseInt(port));
 	
 	public TestBase(WebDriver driver) {
 		TestBase.driver = WebDriverManager.driver;
 	}
-	
+	/*
 	public TestBase(ProxyServer server) {
 		server = WebDriverManager.server;
-	}
+	}*/
 	
 	public TestBase() {
 		DOMConfigurator.configure(configFile);
@@ -108,7 +109,7 @@ public class TestBase extends Verify implements WebElements {
 
 			driver = WebDriverManager.startDriver(browser, url, 40);
 			
-			TestBase.browserMobStarted();			
+			//TestBase.browserMobStarted();			
 			TestBase.verifyNotNull(driver, "Driver setUp failed!");
 			
 
@@ -182,7 +183,7 @@ public class TestBase extends Verify implements WebElements {
 		    System.out.println("Used memory is bytes: " + memory);
 		    System.out.println("Used memory is megabytes: " + bytesToMegabytes(memory));
 		  }
-	
+	/*
 	protected static boolean browserMobStarted() {	
 		
 		if (startServer = Boolean.valueOf(PropertyUtils.getProperty("startServer"))) {
@@ -218,7 +219,7 @@ public class TestBase extends Verify implements WebElements {
 				}
 	
 		return false;
-	}
+	}*/
 	
 	public static void currentPlatform() {
 		Platform.getCurrent();

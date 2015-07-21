@@ -39,7 +39,7 @@ System.out.println("Before Navigate To "+url);
 
 @Override
 public void afterNavigateTo(String url, WebDriver driver) {
-	
+	/*
 	try {
 	Har har = server.getHar();
 	
@@ -52,7 +52,7 @@ public void afterNavigateTo(String url, WebDriver driver) {
     
 	} catch (Exception e) {
 	}
-
+*/
 }
 
 @Override
