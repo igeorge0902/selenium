@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Demo Run">  
+	<test name="Test on Firefox" preserve-order="true">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="url" value="http://www.google.com" />
+		<classes>
+		    <class name="UnitTest1.cs">
+				<methods>
+					<include name="TestMethod1" />
+				</methods>
+			</class>		    
+		</classes>
+	</test>
+</suite>
