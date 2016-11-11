@@ -51,6 +51,10 @@ TestNG listeners:
 ----
 The listeners are used to collect the test results, capture screenshots and for reporting. You need to annotate your listeners in your test classes, each. ReportNG is a custom reporting tool for TestNG, which had to be declared in the testng xml file.
 
+Database connection:
+----
+In order to successfully estabilish the database connection make sure the database user has sufficient rights to the schema. You can do it upfront by creating the schema and then grant the user the schema privileges. Important: if you use autocommit flag = true in your MySql settings you may comment out the corresponding lines in SQLAccess class, otherwise you must use it. 
+
 Data providing for tests with TestNG:
 ----
 - the main.java.qa.framework.utils/SampleDataProvider.java class implements the @DataProvider annotation, which takes in a file as parameter as follows:
