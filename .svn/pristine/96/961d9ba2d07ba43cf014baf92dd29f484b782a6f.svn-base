@@ -1,0 +1,9 @@
+<h2>Reporter output</h2><table><tr><td>Found element:By.xpath: .//*[@id='nblogin']</td></tr>
+<tr><td>Clicked on:[[FirefoxDriver: firefox on MAC (dc78eb0a-0449-2e43-a540-9e11d4c7e667)] -> xpath: .//*[@id='nblogin']]</td></tr>
+<tr><td>Found element:By.xpath: .//div[@id='signin-options']/div/div/a[1]</td></tr>
+<tr><td>Clicked on:[[FirefoxDriver: firefox on MAC (dc78eb0a-0449-2e43-a540-9e11d4c7e667)] -> xpath: .//div[@id='signin-options']/div/div/a[1]]</td></tr>
+<tr><td>Fuck<br></td></tr>
+<tr><td>Test Method resides in test.java.TestiMDB</td></tr>
+<tr><td>Test Status: Failed</td></tr>
+<tr><td>test_iMDB test failed!</td></tr>
+</table>

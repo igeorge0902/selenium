@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Demo Run" verbose="10">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>   
+    
+    <parameter name="browser" value="Firefox" />
+    
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+		<parameter name="contents" value="content1" />
+
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
+
+	    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt" />
+	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />	
+	    
+	<test name="Test Groups">
+		
+		<parameter name="browser" value="*safari" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+		<parameter name="contents" value="content1" />
+
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
+	    
+	    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt" />
+	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />												
+		
+		<groups>
+			<run>
+				<exclude name="functest" />
+				<exclude name="checkintest" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="main.java.qa.framework.utils.GroupTestExample" />
+		
+		</classes>
+	</test>
+	
+	<test name="Test on Safari" preserve-order="true">
+	
+		<parameter name="browser" value="*safari" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+		<parameter name="contents" value="content1" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
+	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />
+	
+		<classes>
+	
+		    <class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+					<exclude name="testSignupSuccess" />
+				</methods>
+			</class>
+	
+		    <class name="test.java.TestHboSignIn">	
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSignOutSuccess" />
+				</methods>
+			</class>
+	
+		    <class name="test.java.SampleTest">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
+					<exclude name="testSelectContentsPlay"></exclude>
+				</methods>
+			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
+				</methods>
+			</class>
+			<class name="test.java.TestPlayerSeries">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectSeries" />
+					<exclude name="testPlayerSuccess" />
+				</methods>
+			</class>				
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
+		</classes>
+	</test>
+	
+	<test name="Test on Firefox" preserve-order="true">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="contents" value="content1" />
+	    
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
+	    
+	    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt" />
+	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />				
+		<classes>
+		    <class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+					<exclude name="testSignupSuccess" />
+				</methods>
+			</class>
+		    <class name="test.java.TestHboSignIn">
+				<methods>
+					<include name="testSignInSuccess" />
+					<exclude name="testSignOutSuccess" />
+				</methods>
+			</class>
+		    <class name="test.java.SampleTest">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
+					<exclude name="testSelectContentsPlay"/>
+				</methods>
+			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
+				</methods>
+			</class>
+			<class name="test.java.TestPlayerSeries">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectSeries" />
+					<exclude name="testPlayerSuccess" />					
+				</methods>
+			</class>				
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
+		</classes>
+	</test>
+	
+	<test name="Test on Internet Explorer" preserve-order="true">
+	
+		<parameter name="browser" value="INTERNET_EXPLORER" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="contents" value="content1" />
+	
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt" />
+		<classes>
+		    <class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+					<exclude name="testSignupSuccess" />
+				</methods>
+			</class>
+		    <class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSignOutSuccess" />
+				</methods>
+			</class>
+		    <class name="test.java.SampleTest">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
+					<exclude name="testSelectContentsPlay"></exclude>
+				</methods>
+			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
+				</methods>
+			</class>
+			<class name="test.java.TestPlayerSeries">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectSeries" />
+					<exclude name="testPlayerSuccess" />					
+				</methods>
+			</class>				
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
+		</classes>
+	</test>
+	<test name="Test on Chrome" preserve-order="true">
+		<parameter name="browser" value="CHROME" />
+		<parameter name="url" value="http://www.google.com" />
+		<parameter name="operator" value="OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26" />
+	    <parameter name="contents" value="content1" />
+	    
+	    <parameter name="filenamePathWin" value=".\lib\urls.txt" />
+	    <parameter name="filenamePathMac" value="./lib/urls.txt" />
+	    
+	    <parameter name="filenamePathWin_series" value=".\lib/episode_urls.txt" />
+	    <parameter name="filenamePathMac_series" value="./lib/episode_urls.txt" />						
+		<classes>
+		    <class name="test.java.TestHboSignUp">
+				<methods>
+					<exclude name="testSignupFail" />
+					<exclude name="testSignupSuccess" />					
+				</methods>
+			</class>
+		    <class name="test.java.TestHboSignIn">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSignOutSuccess" />
+				</methods>
+			</class>
+		    <class name="test.java.SampleTest">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testMouseHover" />
+					<exclude name="testSelectContentsPlay"></exclude>
+				</methods>
+			</class>
+			<class name="test.java.TestSingleContent">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testPlaySingleContent" />
+				</methods>
+			</class>								
+			<class name="test.java.TestPlayer">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectContentsPlay" />
+					<exclude name="testPlayerSuccess" />	
+				</methods>
+			</class>
+			<class name="test.java.TestPlayerSeries">
+				<methods>
+					<exclude name="testSignInSuccess" />
+					<exclude name="testSelectSeries" />
+					<exclude name="testPlayerSuccess" />									
+				</methods>
+			</class>				
+			<class name="test.java.TestSearchEngines">
+				<methods>
+					<exclude name="Yahoo" />
+					<exclude name="Google" />
+				</methods>
+			</class>
+			<class name="main.java.qa.framework.utils.WebTestFactory" />
+		</classes>
+	</test>
+</suite>

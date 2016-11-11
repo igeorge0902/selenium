@@ -1,0 +1,370 @@
+* text=auto !eol
+/.classpath -text
+/.project -text
+.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+.settings/org.eclipse.jdt.core.prefs -text
+.settings/org.eclipse.m2e.core.prefs -text
+/README.md -text
+config/log4j.properties -text svneol=unset#text/plain
+config/log4j.xml -text svneol=unset#text/plain
+config/sun_checks.xml -text svneol=unset#text/plain
+/employee.txt -text
+/har.har -text
+/image1.JPG -text
+/languagetestng.xml -text svneol=unset#application/xml
+lib/IEDriverServer.exe -text
+lib/chromedriver -text
+lib/chromedriver.exe -text
+lib/episode_urls.txt -text svneol=unset#text/plain
+lib/ghost4j-0.5.1.jar -text svneol=unset#application/zip
+lib/jai_imageio.jar -text svneol=unset#application/zip
+lib/jna.jar -text svneol=unset#application/java-archive
+lib/output.txt -text svneol=unset#text/plain
+lib/series_urls.txt -text svneol=unset#text/plain
+lib/tess4j.jar -text svneol=unset#application/java-archive
+lib/urls.txt -text svneol=unset#text/plain
+lib/win32-x86-64/gsdll64.dll -text
+lib/win32-x86-64/liblept168.dll -text
+lib/win32-x86-64/libtesseract302.dll -text
+lib/win32-x86/gsdll32.dll -text
+lib/win32-x86/liblept168.dll -text
+lib/win32-x86/libtesseract302.dll -text
+libs/xml-apis-1.4.01.jar -text
+log/logfile.log -text
+log/logfile.log.2015-04-22 -text
+log/logfile.log.2015-05-04 -text
+log/logfile.log.2015-05-14 -text
+log/logfile.log.2015-05-16 -text
+log/logfile.log.2015-05-20 -text
+log/logfile.log.2015-05-23 -text
+log/logfile.log.2015-05-24 -text
+log/logfile.log.2015-05-25 -text
+log/logfile.log.2015-05-26 -text
+log/logfile.log.2015-05-27 -text
+/pom.xml -text
+/properties.properties -text svneol=unset#text/plain
+scripts/create_db.sql -text
+src/main/java/qa/framework/main/AbstractWebDriverEventListener.java -text
+src/main/java/qa/framework/main/BaseUrls.java -text
+src/main/java/qa/framework/main/CaptureScreenshotOnFailureListener.java -text
+src/main/java/qa/framework/main/Click.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/Clicks.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/ElementScreenshot.java -text
+src/main/java/qa/framework/main/EventListener.java -text
+src/main/java/qa/framework/main/Main.java -text svneol=unset#text/plain
+src/main/java/qa/framework/main/TestBase.java -text
+src/main/java/qa/framework/main/WebDriverManager.java -text
+src/main/java/qa/framework/main/WebElements.java -text
+src/main/java/qa/framework/pageObjects/Google.java -text
+src/main/java/qa/framework/pageObjects/HBOSignOut.java -text
+src/main/java/qa/framework/pageObjects/HboSignIn.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/HboSignUp.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/HboSignUpForm.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/LanguageChange.java -text
+src/main/java/qa/framework/pageObjects/MouseHover.java -text
+src/main/java/qa/framework/pageObjects/PlayMainContent.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/PlaySingleMainContent.java -text
+src/main/java/qa/framework/pageObjects/PlayTrailer.java -text svneol=unset#text/plain
+src/main/java/qa/framework/pageObjects/SelectMovieGroups.java -text
+src/main/java/qa/framework/pageObjects/SelectSeries.java -text
+src/main/java/qa/framework/pageObjects/Yahoo.java -text
+src/main/java/qa/framework/temp/DeserializationClass.java -text
+src/main/java/qa/framework/temp/GUI.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/GradeDemo.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/LinkGetter.java -text
+src/main/java/qa/framework/temp/MessageDialog.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/MessageUtil.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/Names.java -text
+src/main/java/qa/framework/temp/PerformanceTest.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/RegexTestPatternMatcher.java -text
+src/main/java/qa/framework/temp/SQLTest.java -text
+src/main/java/qa/framework/temp/SerializaitonClass.java -text
+src/main/java/qa/framework/temp/StringMatcher.java -text
+src/main/java/qa/framework/temp/TabbedPane.java -text svneol=unset#text/plain
+src/main/java/qa/framework/temp/TesseractExample.java -text
+src/main/java/qa/framework/temp/TestListenerAdapter_.java -text
+src/main/java/qa/framework/testng/CreateTestNGXml.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/CustomException.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/CustomReportListener.java -text
+src/main/java/qa/framework/testng/CustomTestListener.java -text
+src/main/java/qa/framework/testng/ExpectedExceptions.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/LoggingListener.java -text
+src/main/java/qa/framework/testng/MethodInterceptor.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/TestListeners.java -text
+src/main/java/qa/framework/testng/TestMethodErrorBuffer.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/TestMethodListener.java -text
+src/main/java/qa/framework/testng/VerificationError.java -text svneol=unset#text/plain
+src/main/java/qa/framework/testng/Verify.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/CreateXML.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/FileSeparator.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/GroupTestExample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/PropertyUtils.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/SQLAccess.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/SampleDataProvider.java -text
+src/main/java/qa/framework/utils/TesseractExample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/TesseractUtil.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/TestDataSample.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/WaitTool.java -text svneol=unset#text/plain
+src/main/java/qa/framework/utils/WebTestFactory.java -text
+src/main/java/qa/framework/utils/deleteLines.java -text
+src/main/resources/META-INF/MANIFEST.MF -text svneol=unset#text/plain
+src/test/java/SampleTest.java -text
+src/test/java/TesseractTest.java -text svneol=unset#text/plain
+src/test/java/TestHboSignIn.java -text svneol=unset#text/plain
+src/test/java/TestHboSignUp.java -text svneol=unset#text/plain
+src/test/java/TestLanguage.java -text
+src/test/java/TestPlayer.java -text svneol=unset#text/plain
+src/test/java/TestPlayerSeries.java -text
+src/test/java/TestSearchEngines.java -text
+src/test/java/TestSingleContent.java -text
+src/test/java/TestStringMatcher.java -text
+src/test/java/TestTest.java -text
+target/HBO_automation_tool-2.0.jar -text
+target/config/log4j.xml -text svneol=unset#text/plain
+target/lib/IEDriverServer.exe -text
+target/lib/chromedriver -text
+target/lib/chromedriver.exe -text
+target/lib/episode_urls.txt -text svneol=unset#text/plain
+target/lib/ghost4j-0.5.1.jar -text
+target/lib/jai_imageio.jar -text
+target/lib/jna.jar -text
+target/lib/output.txt -text svneol=unset#text/plain
+target/lib/series_urls.txt -text svneol=unset#text/plain
+target/lib/tess4j.jar -text
+target/lib/urls.txt -text svneol=unset#text/plain
+target/lib/win32-x86-64/gsdll64.dll -text
+target/lib/win32-x86-64/liblept168.dll -text
+target/lib/win32-x86-64/libtesseract302.dll -text
+target/lib/win32-x86/gsdll32.dll -text
+target/lib/win32-x86/liblept168.dll -text
+target/lib/win32-x86/libtesseract302.dll -text
+target/libs/annotations-7.0.3.jar -text
+target/libs/ant-1.8.2.jar -text
+target/libs/ant-launcher-1.8.2.jar -text
+target/libs/aopalliance-1.0.jar -text
+target/libs/bcprov-jdk15on-1.47.jar -text
+target/libs/browsermob-proxy-2.0-beta-9.jar -text
+target/libs/bsh-2.0b4.jar -text
+target/libs/cglib-nodep-2.1_3.jar -text
+target/libs/commons-beanutils-1.8.3.jar -text
+target/libs/commons-codec-1.5.jar -text
+target/libs/commons-collections-3.2.1.jar -text
+target/libs/commons-exec-1.1.jar -text
+target/libs/commons-httpclient-3.1.jar -text
+target/libs/commons-io-1.3.2.jar -text
+target/libs/commons-lang-2.5.jar -text
+target/libs/commons-lang3-3.3.2.jar -text
+target/libs/commons-logging-1.1.3.jar -text
+target/libs/cssparser-0.9.14.jar -text
+target/libs/dom4j-1.6.1.jar -text
+target/libs/freemarker-2.3.10.jar -text
+target/libs/ghost4j-0.5.1.jar -text
+target/libs/gson-2.3.1.jar -text
+target/libs/guava-18.0.jar -text
+target/libs/guava-gwt-18.0.jar -text
+target/libs/guice-3.0.jar -text
+target/libs/guice-multibindings-3.0.jar -text
+target/libs/guice-servlet-3.0.jar -text
+target/libs/hamcrest-core-1.1.jar -text
+target/libs/hamcrest-integration-1.2.1.jar -text
+target/libs/hamcrest-library-1.2.1.jar -text
+target/libs/htmlunit-2.15.jar -text
+target/libs/htmlunit-core-js-2.15.jar -text
+target/libs/httpclient-4.3.6.jar -text
+target/libs/httpcore-4.3.3.jar -text
+target/libs/httpmime-4.2.3.jar -text
+target/libs/icu4j-2.6.1.jar -text
+target/libs/itext-2.1.7.jar -text
+target/libs/jackson-core-asl-1.7.1.jar -text
+target/libs/jackson-mapper-asl-1.7.1.jar -text
+target/libs/jai-imageio-core-standalone-1.2-pre-dr-b04-2011-07-04.jar -text
+target/libs/javax.inject-1.jar -text
+target/libs/javax.jms-api-2.0.1-b01.jar -text
+target/libs/jaxen-1.1.1.jar -text
+target/libs/jcip-annotations-1.0.jar -text
+target/libs/jcommander-1.27.jar -text
+target/libs/jdom-1.0.jar -text
+target/libs/jetty-continuation-7.3.0.v20110203.jar -text
+target/libs/jetty-http-7.3.0.v20110203.jar -text
+target/libs/jetty-io-7.3.0.v20110203.jar -text
+target/libs/jetty-security-7.3.0.v20110203.jar -text
+target/libs/jetty-server-7.3.0.v20110203.jar -text
+target/libs/jetty-servlet-7.3.0.v20110203.jar -text
+target/libs/jetty-util-8.1.15.v20140411.jar -text
+target/libs/jetty-websocket-8.1.15.v20140411.jar -text
+target/libs/jna-4.1.0.jar -text
+target/libs/jna-platform-4.1.0.jar -text
+target/libs/jopt-simple-3.2.jar -text
+target/libs/json-simple-1.1.1.jar -text
+target/libs/jsoup-1.4.1.jar -text
+target/libs/jsr250-api-1.0.jar -text
+target/libs/jsr305-1.3.9.jar -text
+target/libs/junit-4.10.jar -text
+target/libs/log4j-1.2.17.jar -text
+target/libs/mvel2-2.0.18.jar -text
+target/libs/mybatis-3.2.8.jar -text
+target/libs/mysql-connector-java-5.1.35.jar -text
+target/libs/nekohtml-1.9.21.jar -text
+target/libs/netty-3.5.2.Final.jar -text
+target/libs/platform-3.5.2.jar -text
+target/libs/poi-3.10-FINAL.jar -text
+target/libs/quality-check-1.3.jar -text
+target/libs/reportng-1.1.4.jar -text
+target/libs/sac-1.3.jar -text
+target/libs/saxpath-1.0-FCS.jar -text
+target/libs/selenium-api-2.45.0.jar -text
+target/libs/selenium-chrome-driver-2.45.0.jar -text
+target/libs/selenium-firefox-driver-2.45.0.jar -text
+target/libs/selenium-htmlunit-driver-2.45.0.jar -text
+target/libs/selenium-ie-driver-2.45.0.jar -text
+target/libs/selenium-java-2.45.0.jar -text
+target/libs/selenium-java-client-driver-1.0.2.jar -text
+target/libs/selenium-leg-rc-2.45.0.jar -text
+target/libs/selenium-remote-driver-2.45.0.jar -text
+target/libs/selenium-safari-driver-2.45.0.jar -text
+target/libs/selenium-support-2.45.0.jar -text
+target/libs/serializer-2.7.1.jar -text
+target/libs/servlet-api-2.5.jar -text
+target/libs/sitebricks-0.8.3.jar -text
+target/libs/slf4j-api-1.5.3.jar -text
+target/libs/slf4j-jdk14-1.5.3.jar -text
+target/libs/surefire-api-2.18.1.jar -text
+target/libs/tess4j-1.5.0.jar -text
+target/libs/testng-6.8.21.jar -text
+target/libs/uadetector-core-0.9.10.jar -text
+target/libs/uadetector-resources-2013.10.jar -text
+target/libs/velocity-1.4.jar -text
+target/libs/velocity-dep-1.4.jar -text
+target/libs/webbit-0.4.14.jar -text
+target/libs/xalan-2.7.1.jar -text
+target/libs/xercesImpl-2.11.0.jar -text
+target/libs/xml-apis-1.0.b2.jar -text
+target/libs/xml-apis-1.4.01.jar -text
+target/libs/xmlParserAPIs-2.6.2.jar -text
+target/libs/xmlgraphics-commons-1.4.jar -text
+target/libs/xom-1.0.jar -text
+target/libs/xpp3_min-1.1.4c.jar -text
+target/libs/xstream-1.3.1.jar -text
+target/libs/zip4j-1.3.2.jar -text
+target/maven-archiver/pom.properties -text svneol=unset#text/plain
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst -text
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst -text
+target/properties.properties -text svneol=unset#text/plain
+target/scripts/create_db.sql -text
+target/tessdata/configs/api_config.svntmp -text
+target/tessdata/configs/digits -text
+target/tessdata/configs/hocr -text
+target/tessdata/eng.traineddata -text
+target/tessdata/osd.traineddata -text
+target/tessdata/pdf.ttf -text
+target/tessdata/pdf.ttx -text
+target/tessdata/screenshots/eurotext.bmp -text
+target/tessdata/screenshots/eurotext.pdf -text
+target/tessdata/screenshots/eurotext.png -text
+target/tessdata/screenshots/eurotext.tif -text
+target/tessdata/screenshots/eurotext_deskew.png -text
+target/tessdata/screenshots/eurotext_unlv.png -text
+target/tessdata/screenshots/eurotext_unlv.uzn -text
+target/test-classes/suite.xml -text svneol=unset#text/plain
+target/testng.xml -text svneol=unset#text/plain
+tessdata/configs/api_config.svntmp -text
+tessdata/configs/digits -text
+tessdata/configs/hocr -text
+tessdata/eng.traineddata -text
+tessdata/hun.traineddata -text
+tessdata/osd.traineddata -text
+tessdata/pdf.ttf -text
+tessdata/pdf.ttx -text
+tessdata/screenshots/eurotext.bmp -text svneol=unset#image/x-ms-bmp
+tessdata/screenshots/eurotext.pdf -text svneol=unset#application/pdf
+tessdata/screenshots/eurotext.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext.tif -text svneol=unset#image/tiff
+tessdata/screenshots/eurotext_deskew.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext_unlv.png -text svneol=unset#image/png
+tessdata/screenshots/eurotext_unlv.uzn -text
+test-output/CustomReport.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.xml -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Chrome.html -text
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Chrome.xml -text svneol=unset#application/xml
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Firefox.html -text
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Firefox.xml -text svneol=unset#application/xml
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Internet[!!-~]Explorer.html -text
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Internet[!!-~]Explorer.xml -text svneol=unset#application/xml
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.html -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.xml -text svneol=unset#text/plain
+test-output/Test[!!-~]Demo[!!-~]Run/testng-failed.xml -text svneol=unset#application/xml
+test-output/bullet_point.png -text svneol=unset#image/png
+test-output/collapseall.gif -text svneol=unset#image/gif
+test-output/emailable-report.html -text
+test-output/failed.png -text svneol=unset#image/png
+test-output/html/ScreenShots/CHROME--2015-4-25-2-28-47-49.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-25-13-840.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-32-14-223.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-11-45-45-729.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-16-7-93.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-25-8-114.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-31-33-622.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-35-15-187.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-44-36-509.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-48-46-838.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-51-47-409.png -text
+test-output/html/ScreenShots/CHROME-2015-4-25-3-56-33-776.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-37-44-429.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-46-8-529.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-2-48-59-618.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-20-36-31-797.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-20-50-45-227.png -text
+test-output/html/ScreenShots/Firefox--2015-4-25-21-1-53-322.png -text
+test-output/html/ScreenShots/Firefox--en-us.png -text
+test-output/html/ScreenShots/Firefox-2015-4-25-12-34-59-162.png -text
+test-output/html/ScreenShots/\*safari-2015-4-25-12-15-37-129.png -text
+test-output/html/ScreenShots/\*safari-2015-4-25-12-24-34-455.png -text
+test-output/html/index.html -text svneol=unset#text/plain
+test-output/html/output.html -text svneol=unset#text/plain
+test-output/html/overview.html -text svneol=unset#text/plain
+test-output/html/reportng.css -text svneol=unset#text/plain
+test-output/html/reportng.js -text svneol=unset#text/plain
+test-output/html/sorttable.js -text svneol=unset#text/plain
+test-output/html/suite1_groups.html -text svneol=unset#text/plain
+test-output/html/suite1_test1_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test2_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test3_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test4_results.html -text svneol=unset#text/plain
+test-output/html/suite1_test5_results.html -text svneol=unset#text/plain
+test-output/html/suites.html -text svneol=unset#text/plain
+test-output/index.html -text
+test-output/jquery-1.7.1.min.js -text
+test-output/junitreports/TEST-test.java.SampleTest.xml -text svneol=unset#application/xml
+test-output/junitreports/TEST-test.java.TestHboSignIn.xml -text svneol=unset#application/xml
+test-output/navigator-bullet.png -text svneol=unset#image/png
+test-output/old/Test[!!-~]Demo[!!-~]Run/Test[!!-~]Groups.properties -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Chrome.properties -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Firefox.properties -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Internet[!!-~]Explorer.properties -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/Test[!!-~]on[!!-~]Safari.properties -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/classes.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/groups.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/index.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/main.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/methods-alphabetical.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/methods-not-run.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/methods.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/reporter-output.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/testng.xml.html -text
+test-output/old/Test[!!-~]Demo[!!-~]Run/toc.html -text
+test-output/old/index.html -text
+test-output/passed.png -text svneol=unset#image/png
+test-output/skipped.png -text svneol=unset#image/png
+test-output/testng-failed.xml -text svneol=unset#application/xml
+test-output/testng-reports.css -text
+test-output/testng-reports.js -text
+test-output/testng-results.xml -text svneol=unset#application/xml
+test-output/testng.css -text
+test-output/xml/main.java.qa.framework.testng.CreateTestNGXml_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.SampleTest_results.xml -text svneol=unset#application/xml
+test-output/xml/test.java.TestHboSignIn_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestLanguage_results.xml -text svneol=unset#application/xml
+test-output/xml/test.java.TestPlayerSeries_results.xml -text svneol=unset#text/plain
+test-output/xml/test.java.TestSingleContent_results.xml -text svneol=unset#text/plain
+/testng.xml -text

@@ -1,15 +1,10 @@
 package main.java.qa.framework.main;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.nio.file.Paths;
-
 import main.java.qa.framework.utils.WaitTool;
 import main.java.qa.framework.main.WebDriverManager;
 
 
-import net.lightbody.bmp.core.har.Har;
+//import net.lightbody.bmp.core.har.Har;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
@@ -195,6 +190,31 @@ public void afterScript(String script, WebDriver driver) {
 @Override
 public void onException(Throwable throwable, WebDriver driver) {
 	}
+
+@Override
+public void beforeNavigateRefresh(WebDriver driver) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void afterNavigateRefresh(WebDriver driver) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
+	// TODO Auto-generated method stub
+	
+}
+
 
 }
 

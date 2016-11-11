@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Test Demo Run]">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="url" value="http://www.google.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="main.java.qa.framework.testng.CustomReportListener"/>
+  </listeners>
+  <test name="Test on Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://www.google.com"/>
+    <classes>
+      <class name="test.java.TestiMDB">
+        <methods>
+          <include name="test_iMDB"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.TestiMDB -->
+    </classes>
+  </test> <!-- Test on Firefox(failed) -->
+</suite> <!-- Failed suite [Test Demo Run] -->

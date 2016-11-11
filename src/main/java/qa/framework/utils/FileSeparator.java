@@ -37,7 +37,12 @@ public class FileSeparator extends TestBase implements WebElements {
 	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		long start = System.currentTimeMillis();
+		
+		System.out.println(start);
 				
+		java.util.Date time_ = new java.util.Date(start);
+		System.out.println(time_);
+
 		PropertyUtils.listProperties();
 
 		userHome = System.getProperty("user.home");

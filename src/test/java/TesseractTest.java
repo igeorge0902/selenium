@@ -31,6 +31,8 @@ import java.util.List;
 import javax.imageio.IIOImage;
 
 import org.junit.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import static org.junit.Assert.*;
 

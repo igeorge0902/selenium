@@ -1,0 +1,581 @@
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - org.openqa.selenium.UnsupportedCommandException: POST /session/e425f797-e0be-3f46-aba6-b3003919c37f/keys did not match a known command
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, firefoxOptions={args=[], profile=UEsDBBQACAgIAGS1akkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQM6zAyIvdF4ixSbjadQhq87UXtRpTwwx+uBN3NjtyE9u4mIjc1WDVn+Ii4+I4xBhJwU04p6JEKH6nMxvfr0an02th/SKMQZyAfbE9Iy7Djzy83e5PTdXN9NTpSg2Gl1FrlErekg9nrH9KOu24F+6Ot+TTm5nQ0zi3ZqJRBGXdGk/zMkqQHHJa+Br7/1gvW1//L6cUaYEDJFzGYmweTS/L/LsjJVlV4OW1xW+/d6qcv4GrUR27WQKrFPy6oO6sS023Mdb/wfaaNjI5AG98KOiIu0Szo4wGi3yqTVE4mNC+TMLrPre1X6aPsVYLdl/ANQSwcIy87bUaYDAAC2DAAAUEsBAhQAFAAICAgAZLVqScvO21GmAwAAtgwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA2wMAAAAA}, appBuildId=20161019084923, version=49.0.2, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21039, browserVersion=49.0.2, platformVersion=16.0.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
+Session ID: e425f797-e0be-3f46-aba6-b3003919c37f
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 61aaa0a0-fb35-4533-a459-99d50a88b454
+INFO main org.apache.log4j.Logger - GenKey: 2
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - test_iMDB was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - org.openqa.selenium.UnsupportedCommandException: POST /session/abed5165-5519-cf4d-b7a1-ace44e1e76b6/keys did not match a known command
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, firefoxOptions={args=[], profile=UEsDBBQACAgIAJG1akkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQM6zAyIvdF4ixSbjadQhq87UXtRpTwwx+uBN3NjtyE9u4mIjc1WDVn+Ii4+I4xBhJwU04p6JEKH6nMxvfr0an02th/SKMQZyAfbE9Iy7Djzy83e5PTdXN9NTpSg2Gl1FrlErekg9nrH9KOu24F+6Ot+TTm5nQ0zi3ZqJRBGXdGk/zMkqQHHJa+Br7/1gvW1//L6cUaYEDJFzGYmweTS/L/LsjJVlV4OW1xW+/d6qcv4GrUR27WQKrFPy6oO6sS023Mdb/wfaaNjI5AG98KOiIu0Szo4wGi3yqTVE4mNC+TMLrPre1X6aPsVYLdl/ANQSwcIy87bUaYDAAC2DAAAUEsBAhQAFAAICAgAkbVqScvO21GmAwAAtgwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA2wMAAAAA}, appBuildId=20161019084923, version=49.0.2, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21067, browserVersion=49.0.2, platformVersion=16.0.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
+Session ID: abed5165-5519-cf4d-b7a1-ace44e1e76b6
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 7af494dd-07fd-479b-880d-1feb27692272
+INFO main org.apache.log4j.Logger - GenKey: 3
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - test_iMDB was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - org.openqa.selenium.UnsupportedCommandException: POST /session/4b17a11a-751f-ef44-ab90-377b411eebcf/keys did not match a known command
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, firefoxOptions={args=[], profile=UEsDBBQACAgIAI+2akkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQM6zAyIvdF4ixSbjadQhq87UXtRpTwwx+uBN3NjtyE9u4mIjc1WDVn+Ii4+I4xBhJwU04p6JEKH6nMxvfr0an02th/SKMQZyAfbE9Iy7Djzy83e5PTdXN9NTpSg2Gl1FrlErekg9nrH9KOu24F+6Ot+TTm5nQ0zi3ZqJRBGXdGk/zMkqQHHJa+Br7/1gvW1//L6cUaYEDJFzGYmweTS/L/LsjJVlV4OW1xW+/d6qcv4GrUR27WQKrFPy6oO6sS023Mdb/wfaaNjI5AG98KOiIu0Szo4wGi3yqTVE4mNC+TMLrPre1X6aPsVYLdl/ANQSwcIy87bUaYDAAC2DAAAUEsBAhQAFAAICAgAj7ZqScvO21GmAwAAtgwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA2wMAAAAA}, appBuildId=20161019084923, version=49.0.2, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21200, browserVersion=49.0.2, platformVersion=16.0.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
+Session ID: 4b17a11a-751f-ef44-ab90-377b411eebcf
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: e05188d5-413c-4872-a9fb-ed1cdc636edc
+INFO main org.apache.log4j.Logger - GenKey: 4
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - test_iMDB was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - org.openqa.selenium.UnsupportedCommandException: POST /session/5f356fe9-f9e6-2a4d-9ec1-d48560cafd5e/keys did not match a known command
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, firefoxOptions={args=[], profile=UEsDBBQACAgIALu2akkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQM6zAyIvdF4ixSbjadQhq87UXtRpTwwx+uBN3NjtyE9u4mIjc1WDVn+Ii4+I4xBhJwU04p6JEKH6nMxvfr0an02th/SKMQZyAfbE9Iy7Djzy83e5PTdXN9NTpSg2Gl1FrlErekg9nrH9KOu24F+6Ot+TTm5nQ0zi3ZqJRBGXdGk/zMkqQHHJa+Br7/1gvW1//L6cUaYEDJFzGYmweTS/L/LsjJVlV4OW1xW+/d6qcv4GrUR27WQKrFPy6oO6sS023Mdb/wfaaNjI5AG98KOiIu0Szo4wGi3yqTVE4mNC+TMLrPre1X6aPsVYLdl/ANQSwcIy87bUaYDAAC2DAAAUEsBAhQAFAAICAgAu7ZqScvO21GmAwAAtgwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA2wMAAAAA}, appBuildId=20161019084923, version=49.0.2, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21242, browserVersion=49.0.2, platformVersion=16.0.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
+Session ID: 5f356fe9-f9e6-2a4d-9ec1-d48560cafd5e
+INFO main org.apache.log4j.Logger - Firefox is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 421dcad2-0f22-4160-a08a-64c1ec50109b
+INFO main org.apache.log4j.Logger - GenKey: 5
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - test_iMDB was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//*[@id='nblogin']
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (d1b27610-bced-6e40-8367-1edef642decd)] -> xpath: .//*[@id='nblogin']]
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//div[@id='signin-options']/div/div/a[1]
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (d1b27610-bced-6e40-8367-1edef642decd)] -> xpath: .//div[@id='signin-options']/div/div/a[1]]
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - test_iMDB test failed!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: fdda65a9-44de-4aed-a8eb-af4148ba35e1
+INFO main org.apache.log4j.Logger - GenKey: 6
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//*[@id='nblogin']
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (6c63d551-a2df-a742-adbf-7700bde61d22)] -> xpath: .//*[@id='nblogin']]
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//div[@id='signin-options']/div/div/a[1]
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (6c63d551-a2df-a742-adbf-7700bde61d22)] -> xpath: .//div[@id='signin-options']/div/div/a[1]]
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - test_iMDB test failed!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: e42fe87b-32f3-4138-b2ee-31a01e6ee6d9
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//*[@id='nblogin']
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (638b81e4-3514-e843-84c4-d3e37a2ba036)] -> xpath: .//*[@id='nblogin']]
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//div[@id='signin-options']/div/div/a[1]
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (638b81e4-3514-e843-84c4-d3e37a2ba036)] -> xpath: .//div[@id='signin-options']/div/div/a[1]]
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - test_iMDB test failed!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: fbe7586b-ecf1-4e51-9245-077ed00f28ad
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: UUID One: 9d81340a-ddcd-45aa-8559-0a8c2315bb14
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: GenKey: 2
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: GenKey: 3
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: false
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:14:42:042 CET]  INFO log4j.Logger: true
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: UUID One: 5303b8d6-e7b6-48a8-b490-6f20c92b8d53
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: GenKey: 1
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: GenKey: 2
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: false
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:16:26:026 CET]  INFO log4j.Logger: true
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: UUID One: fe68cdc7-143d-4ba5-a8e1-755d72849447
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: GenKey: 1
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: GenKey: 2
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: false
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:18:58:058 CET]  INFO log4j.Logger: true
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: UUID One: 143b1294-828c-482c-b2de-7644553fa6c8
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: GenKey: 3
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: GenKey: 4
+[10/11/16 11:24:45:045 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: false
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:25:18:018 CET]  INFO log4j.Logger: true
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: UUID One: f256aedf-7627-443d-8a9a-7be49d76355b
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: GenKey: 5
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: GenKey: 6
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: false
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: GenKey: 3
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:28:30:030 CET]  INFO log4j.Logger: true
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: MySql connection is true
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: Script run: scripts/create_db.sql
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: UUID One: 87b44959-f09b-4c4d-b745-ebe692fc57a7
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: GenKey: 7
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: GenKey: 8
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: SessionId was created
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/index.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/output.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/overview.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/reportng.css was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/reportng.js was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/sorttable.js was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suite1_test1_results.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suite1_test2_results.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suite1_test3_results.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suite1_test4_results.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suite1_test5_results.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: test-output/html/suites.html was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: false
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: GenKey: 4
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: TestRuns was inserted into the db.
+[10/11/16 11:32:02:002 CET]  INFO log4j.Logger: true
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Firefox
+INFO main org.apache.log4j.Logger - Firefox driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//*[@id='nblogin']
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (fbd7cf27-6a96-1c40-b4ff-1557814ec1f4)] -> xpath: .//*[@id='nblogin']]
+INFO main org.apache.log4j.Logger - Element found:By.xpath: .//div[@id='signin-options']/div/div/a[1]
+INFO main org.apache.log4j.Logger - Element clicked on:[[FirefoxDriver: firefox on MAC (fbd7cf27-6a96-1c40-b4ff-1557814ec1f4)] -> xpath: .//div[@id='signin-options']/div/div/a[1]]
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - test_iMDB test failed!
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 691630a5-235f-4f12-9162-6d60fbdabb15
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Driver closed afterInvocation
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - GenKey: 1
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - OCR processing is starting...
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - org.openqa.selenium.SessionNotCreatedException: Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: driver.version: SafariDriver
+INFO main org.apache.log4j.Logger - Safari is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - org.openqa.selenium.SessionNotCreatedException: Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Gaspars-MacBook-Pro.local', ip: '192.168.1.101', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_91'
+Driver info: driver.version: SafariDriver
+INFO main org.apache.log4j.Logger - Safari is reconnecting!
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 79162bf4-2b45-40f3-9a7e-fb6dd092639c
+INFO main org.apache.log4j.Logger - GenKey: 2
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - test_iMDB test failed!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - GenKey: 2
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - Safaridriver initialized with eventListeners
+INFO main org.apache.log4j.Logger - 64
+INFO main org.apache.log4j.Logger - lib/win32-x86-64
+INFO main org.apache.log4j.Logger - OCR processing is starting...
+INFO main org.apache.log4j.Logger - Elkészítési idő: 1 óra
+
+1 adag: 995 kcal/4159 kJ
+
+o 1 konyhakész csirke (1,2-1,3 kg)
+
+o 1 nagy fej hagyma '
+
+o 1 zöldpaprika+a díszítéshez
+
+o 1 paradicsom+a díszítéshez
+
+Í; 2 ek. olaj vagy sertészsír i
+
+f; 1 kk. enyhén csípős pirospaprika
+
+"5 só o 4+1 dl tejföl
+
+'o 1-2 kk. liszt/rizsliszt
+
+A galuskához: _
+o 4oo g liszt o 2 tojás , Ü
+o 1/2 kk. só o 3-4 dl tej Í
+0 50 g vaj/margarin vagy 5 ek. olaj _
+M z
+
+
+INFO main org.apache.log4j.Logger - OCR processing is done!
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - MAC
+INFO main org.apache.log4j.Logger - Safari
+INFO main org.apache.log4j.Logger - Safaridriver initialized with eventListeners
+INFO main org.apache.log4j.Logger - test-output/html/CHROME-2016-8-9-10-19-32-196.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/Chrome-2016-8-9-10-44-36-897.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output/html/suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: 7894ad7b-d638-415b-a7d8-7de8229c7607
+INFO main org.apache.log4j.Logger - GenKey: 3
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - The execution of test_iMDB starts now
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestiMDB
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - test_iMDB was skipped!
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - GenKey: 3
+INFO main org.apache.log4j.Logger - TestRuns was inserted into the db.

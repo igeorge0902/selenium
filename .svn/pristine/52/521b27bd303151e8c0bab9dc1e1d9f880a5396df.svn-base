@@ -1,0 +1,396 @@
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - WIN8_1
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , 
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testSignInSuccess test failed!
+INFO main org.apache.log4j.Logger -  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\\
+INFO main org.apache.log4j.Logger - CHROME-2015-6-21-17-9-32-955.png
+INFO main org.apache.log4j.Logger - Shit happens
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Status: Skipped
+INFO main org.apache.log4j.Logger - testPlaySingleContent was skipped!
+INFO main org.apache.log4j.Logger - test-output\html\CHROME-2015-6-16-16-50-51-201.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\CHROME-2015-6-21-17-9-32-955.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-16-16-36-27-920.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-17-16-11-6-178.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-17-16-20-3-109.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER-2015-6-17-16-7-50-14.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER-2015-6-9-9-39-37-850.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: c5ebc265-77e2-4363-99e4-312c5ebe7fd5
+INFO main org.apache.log4j.Logger - GenKey: 28
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - WIN8_1
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cf0215a9a42910a2b434a31ea89a2616)] -> id: headerButtonLogin]
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId
+INFO main org.apache.log4j.Logger - By.id: OperatorId
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cf0215a9a42910a2b434a31ea89a2616)] -> id: OperatorId]
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cf0215a9a42910a2b434a31ea89a2616)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - By.name: Password
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - selectOperator is successful
+INFO main org.apache.log4j.Logger - selectOperator test is done
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cf0215a9a42910a2b434a31ea89a2616)] -> css selector: #sign-in-buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - submit is successful
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/pages/settings/signin.aspx
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
+INFO main org.apache.log4j.Logger - Login is successful!
+INFO main org.apache.log4j.Logger - submit test is done
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - The execution of testPlaySingleContent starts now
+INFO main org.apache.log4j.Logger - [org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@id='content-inner']/div/div/div because of the following error:
+TypeError: Failed to execute 'createNSResolver' on 'Document': parameter 1 is not of type 'Node'.
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.75 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\igeorge1982\AppData\Local\Google\Chrome\User Data}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cf0215a9a42910a2b434a31ea89a2616
+*** Element info: {Using=xpath, value=//div[@id='content-inner']/div/div/div}]
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@id='content-inner']/div/div/div because of the following error:
+TypeError: Failed to execute 'createNSResolver' on 'Document': parameter 1 is not of type 'Node'.
+  (Session info: chrome=43.0.2357.134)
+  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.75 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Gyuri', ip: '192.168.21.50', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\igeorge1982\AppData\Local\Google\Chrome\User Data}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.134, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cf0215a9a42910a2b434a31ea89a2616
+*** Element info: {Using=xpath, value=//div[@id='content-inner']/div/div/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at main.java.qa.framework.main.TestBase.isElementPresentAndDisplay(TestBase.java:420)
+	at main.java.qa.framework.pageObjects.MouseHover.mouseHover(MouseHover.java:23)
+	at main.java.qa.framework.pageObjects.PlaySingleMainContent.playMainContent(PlaySingleMainContent.java:50)
+	at test.java.TestSingleContent.testPlaySingleContent(TestSingleContent.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //div[@id='content-inner']/div/div/div
+INFO main org.apache.log4j.Logger - By.xpath: //div[@id='content-inner']/div/div/div
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - hello
+INFO main org.apache.log4j.Logger - Completed executing test Test Groups
+INFO main org.apache.log4j.Logger - Completed executing test Test on Safari
+INFO main org.apache.log4j.Logger - Completed executing test Test on Firefox
+INFO main org.apache.log4j.Logger - Completed executing test Test on Internet Explorer
+INFO main org.apache.log4j.Logger - New driver instantiated
+INFO main org.apache.log4j.Logger - WIN8_1
+INFO main org.apache.log4j.Logger - CHROME
+INFO main org.apache.log4j.Logger - properties.properties is loaded.
+INFO main org.apache.log4j.Logger - CHROME driver initialized with eventListeners
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - MySql connection is true
+INFO main org.apache.log4j.Logger - Script run: scripts/create_db.sql
+INFO main org.apache.log4j.Logger - The execution of testSignInSuccess starts now
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Element found:By.id: headerButtonLogin
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cd72a2fe55a6029916094c8ddc901fdf)] -> id: headerButtonLogin]
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId
+INFO main org.apache.log4j.Logger - By.id: OperatorId
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cd72a2fe55a6029916094c8ddc901fdf)] -> id: OperatorId]
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - Element found:By.id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cd72a2fe55a6029916094c8ddc901fdf)] -> id: OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26]
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: EmailAddress
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - By.name: Password
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - Element found:By.name: Password
+INFO main org.apache.log4j.Logger - selectOperator is successful
+INFO main org.apache.log4j.Logger - selectOperator test is done
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element found:By.cssSelector: #sign-in-buttons > button.button_submit
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cd72a2fe55a6029916094c8ddc901fdf)] -> css selector: #sign-in-buttons > button.button_submit]
+INFO main org.apache.log4j.Logger - submit is successful
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/pages/settings/signin.aspx
+INFO main org.apache.log4j.Logger - http://www.hbogo.hu/group/offers
+INFO main org.apache.log4j.Logger - Login is successful!
+INFO main org.apache.log4j.Logger - submit test is done
+INFO main org.apache.log4j.Logger - Minden fasza
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  OperatorId_f320aa2c-e40e-49c2-8cdd-1ebef2ac6f26 , 
+INFO main org.apache.log4j.Logger - Test Status: Pass
+INFO main org.apache.log4j.Logger - testSignInSuccess test succeeded!
+INFO main org.apache.log4j.Logger - The execution of testPlaySingleContent starts now
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //div[@id='content-inner']/div/div/div
+INFO main org.apache.log4j.Logger - By.xpath: //div[@id='content-inner']/div/div/div
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //div[@id='content-inner']/div/div/div
+INFO main org.apache.log4j.Logger - Mouse hove action succeeded!
+INFO main org.apache.log4j.Logger - Element found:By.id: play_dropdown
+INFO main org.apache.log4j.Logger - Element found:By.linkText: Film megtekintése
+INFO main org.apache.log4j.Logger - Element clicked on:[[ChromeDriver: chrome on WIN8_1 (cd72a2fe55a6029916094c8ddc901fdf)] -> link text: Film megtekintése]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Script run: return jQuery(arguments[0]).text();
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Script run: return jQuery(arguments[0]).text();
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Fuck
+INFO main org.apache.log4j.Logger - Test Method resides in test.java.TestSingleContent
+INFO main org.apache.log4j.Logger - Test Method had the following parameters :  content1 , 
+INFO main org.apache.log4j.Logger - Test Status: Failed
+INFO main org.apache.log4j.Logger - testPlaySingleContent test failed!
+INFO main org.apache.log4j.Logger -  *** Capture files are created in C:\Users\igeorge1982\luna_workspace\Selenium_Testlink\test-output\html\\
+INFO main org.apache.log4j.Logger - CHROME-2015-6-21-17-13-6-863.png
+INFO main org.apache.log4j.Logger - test-output\html\CHROME-2015-6-16-16-50-51-201.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\CHROME-2015-6-21-17-13-6-863.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\CHROME-2015-6-21-17-9-32-955.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-16-16-36-27-920.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-17-16-11-6-178.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\Firefox-2015-6-17-16-20-3-109.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\har.har was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\index.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER--hu-HU.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER-2015-6-17-16-7-50-14.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\INTERNET_EXPLORER-2015-6-9-9-39-37-850.png was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\output.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\overview.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\reportng.css was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\reportng.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\sorttable.js was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_groups.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test1_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test2_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test3_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test4_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suite1_test5_results.html was inserted into the db.
+INFO main org.apache.log4j.Logger - test-output\html\suites.html was inserted into the db.
+INFO main org.apache.log4j.Logger - UUID One: c1899458-f764-424c-bac5-4fc6d65c6614
+INFO main org.apache.log4j.Logger - GenKey: 29
+INFO main org.apache.log4j.Logger - SessionId was created
+INFO main org.apache.log4j.Logger - Element found:By.xpath: //img[starts-with(@id, 'play-button-')]
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackControls
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackTitle
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackInfo
+INFO main org.apache.log4j.Logger - Element found:By.id: player
+INFO main org.apache.log4j.Logger - Element found:By.id: seekbar
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackElapsedTime
+INFO main org.apache.log4j.Logger - Element found:By.id: playbackClose

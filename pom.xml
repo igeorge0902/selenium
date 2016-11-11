@@ -4,7 +4,7 @@
                  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
         <groupId>Selenium</groupId>
-        <artifactId>HBO_automation_tool</artifactId>
+        <artifactId>Automation_tool</artifactId>
         <packaging>jar</packaging>
         <version>2.0</version>       
         
@@ -12,58 +12,41 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	    <selenium.version>2.45.0</selenium.version>
-    	<testng.version>6.9.4</testng.version>
+	    <selenium.version>3.0.1</selenium.version>
+    	<testng.version>6.9.10</testng.version>
     	<java.ext.dirs>${project.build.directory}/libs</java.ext.dirs>
 	</properties>
        
 	<dependencies>
-            
-             <dependency>
-   				<groupId>org.testng</groupId>
-		      	<artifactId>testng</artifactId>
-		      	<version>${testng.version}</version>
-		      	<scope>compile</scope>
-		    </dependency>
-	    
-		    <dependency>
+    
+    	<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>${testng.version}</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+		<dependency>
 		      <groupId>org.seleniumhq.selenium</groupId>
 		      <artifactId>selenium-java</artifactId>
 		      <version>${selenium.version}</version>
 		      <scope>compile</scope>
-		    </dependency>
-            
-            <dependency>
-				<groupId>net.java.dev.jna</groupId>
-				<artifactId>jna-platform</artifactId>
-				<version>4.1.0</version>
-			</dependency>
+		</dependency>
 			
 			<dependency>
-				<groupId>org.seleniumhq.selenium.client-drivers</groupId>
-				<artifactId>selenium-java-client-driver</artifactId>
-				<version>1.0.2</version>
+			    <groupId>com.google.inject</groupId>
+			    <artifactId>guice</artifactId>
+			    <version>4.0</version>
 			</dependency>
+			
 			
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.17</version>
 			</dependency>
-											
-            <dependency>
-				<groupId>javax.jms</groupId>
-				<artifactId>javax.jms-api</artifactId>
-				<version>2.0.1-b01</version>
-			</dependency>
-           	       	
-           	<dependency>
-            	<groupId>org.apache.poi</groupId>
-            	<artifactId>poi</artifactId>
-            	<version>3.10-FINAL</version>
-           	</dependency>
-           	
-           	<dependency>
+			
+			<dependency>
 				<groupId>org.uncommons</groupId>
 				<artifactId>reportng</artifactId>
 				<version>1.1.4</version>
@@ -81,76 +64,26 @@
 				<version>2.18.1</version>
 			</dependency>
 			
-	        <dependency>
-            	<groupId>xml-apis</groupId>
-            	<artifactId>xml-apis</artifactId>
-            	<version>1.4.01</version>
-        	</dependency>
-        	
-        	<dependency>
+			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
 				<version>3.2.8</version>
 			</dependency>
-         	
-    		
-			<dependency>
-				<groupId>net.sourceforge.tess4j</groupId>
-				<artifactId>tess4j</artifactId>
-				<version>2.0.0</version>
-			</dependency>
 			
-		    <dependency>
-		      <groupId>net.lingala.zip4j</groupId>
-		      <artifactId>zip4j</artifactId>
-		      <version>1.3.2</version>
-    		</dependency>
+		<dependency>
+        	<groupId>net.lightbody.bmp</groupId>
+        	<artifactId>browsermob-core</artifactId>
+        	<version>2.1.2</version>
+    	</dependency>
+			
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.37</version>
+		</dependency>
+			
     
-    		<dependency>
-		      <groupId>com.googlecode.json-simple</groupId>
-		      <artifactId>json-simple</artifactId>
-		      <version>1.1.1</version>
-    		</dependency>
-    
-        <dependency>
-            <groupId>net.lightbody.bmp</groupId>
-            <artifactId>browsermob-proxy</artifactId>
-            <version>2.0.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        
-            <dependency>
-		        <groupId>net.lightbody.bmp</groupId>
-		        <!-- To use the legacy, Jetty-based implementation, change the artifactId to browsermob-core -->
-		        <artifactId>browsermob-core-littleproxy</artifactId>
-		        <version>2.1.0-beta-1</version>
-		        <scope>test</scope>
-		    </dependency>
-        
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.3.6</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava-gwt</artifactId>
-            <version>18.0</version>
-        </dependency> 
-		    
-		    <dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>5.1.35</version>
-			</dependency>
-      	  
-        </dependencies>
+     </dependencies>
  
    <reporting>
     <outputDirectory>target/site</outputDirectory>

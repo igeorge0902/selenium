@@ -15,6 +15,7 @@ public class SQLTest extends TestBase implements WebElements {
 
 		DOMConfigurator.configure(log4jxml);
 		
+		//SQLAccess.insert_device("129", "GG");
 		
 		SQLAccess.SetUpDataBase();
 		SQLAccess.runSqlScript(create_db_sql);
@@ -43,7 +44,7 @@ public class SQLTest extends TestBase implements WebElements {
 		
 //		SQLAccess.insertReport2();
 		TestBase.memory();
-
+	
 	}
 
 }

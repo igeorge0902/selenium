@@ -7,10 +7,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,6 +21,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
 
+
+import org.apache.commons.io.IOUtils;
 import org.apache.ibatis.jdbc.ScriptRunner;
 
 import main.java.qa.framework.main.TestBase;
@@ -33,6 +37,7 @@ public class SQLAccess extends TestBase implements WebElements {
 	private static Connection connect = null;
 	private static Statement statement = null;
 	private static PreparedStatement preparedStatement = null;
+	private static volatile CallableStatement callableStatement = null;
 	private static ResultSet resultSet = null;
 	private static long lastInsertId;
 	private static String createProcedure_GetTestRun;
@@ -103,7 +108,9 @@ public class SQLAccess extends TestBase implements WebElements {
 
 			// Setup the connection with the DB
 			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
-					 
+			connect.setCatalog("feedback");
+			connect.setAutoCommit(true);
+			
 				long time = System.currentTimeMillis();
 				java.sql.Timestamp timestamp = new java.sql.Timestamp(time);
 				
@@ -148,7 +155,9 @@ public class SQLAccess extends TestBase implements WebElements {
 
 			// Setup the connection with the DB
 			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
-					 
+			connect.setCatalog("feedback");
+			connect.setAutoCommit(true);
+			
 				long time = System.currentTimeMillis();
 				java.sql.Timestamp timestamp = new java.sql.Timestamp(time);
 				
@@ -191,6 +200,8 @@ public class SQLAccess extends TestBase implements WebElements {
 
 			// Setup the connection with the DB
 			connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
+			connect.setCatalog("feedback");
+			connect.setAutoCommit(true);
 			String sqltestrun = "insert into feedback.testruns (id, time_) values (default, ?)";
 			
 			long time = System.currentTimeMillis();
@@ -242,6 +253,45 @@ public class SQLAccess extends TestBase implements WebElements {
 		} else {
 			
 			Log.info(testOutput.toFile().toString() + " directory does not exist");			
+		}
+		return false;
+	}
+
+public synchronized static boolean insert_device(String deviceId, String user) throws Exception {
+		
+		
+		try {
+			
+			// This will load the MySQL driver, each DB has its own driver
+			Class.forName(dbDriverClass);
+
+			// Setup the connection with the DB
+		    connect = DriverManager.getConnection(dbUrl, dbUserName, dbPassWord);
+			 
+			InputStream in_ = IOUtils.toInputStream(deviceId, "UTF-8");
+		    Reader reader_ = new BufferedReader(new InputStreamReader(in_));
+		    
+			InputStream ins = IOUtils.toInputStream(user, "UTF-8");
+		    Reader readers = new BufferedReader(new InputStreamReader(ins));
+		    connect.setAutoCommit(true);
+			connect.setCatalog("login");
+			callableStatement = connect.prepareCall("{call `insert_device_`(?, ?)}");
+			callableStatement.setCharacterStream(1, reader_);
+			callableStatement.setCharacterStream(2, readers);
+			callableStatement.executeUpdate();
+			//connect.commit();
+			reader_.close();
+			readers.close();
+								
+				
+				return true; 
+			
+		} catch (SQLException ex) {
+		      SQLAccess.printSQLException(ex);
+
+		} finally {
+			
+			close();
 		}
 		return false;
 	}

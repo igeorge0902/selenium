@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>Selenium</groupId>
+        <artifactId>HBO_automation_tool</artifactId>
+        <packaging>jar</packaging>
+        <version>2.0</version>       
+        
+    <name>Selenium</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <selenium.version>2.45.0</selenium.version>
+    	<testng.version>6.9.4</testng.version>
+    	<java.ext.dirs>${project.build.directory}/libs</java.ext.dirs>
+	</properties>
+       
+	<dependencies>
+            
+             <dependency>
+   				<groupId>org.testng</groupId>
+		      	<artifactId>testng</artifactId>
+		      	<version>${testng.version}</version>
+		      	<scope>compile</scope>
+		    </dependency>
+	    
+		    <dependency>
+		      <groupId>org.seleniumhq.selenium</groupId>
+		      <artifactId>selenium-java</artifactId>
+		      <version>${selenium.version}</version>
+		      <scope>compile</scope>
+		    </dependency>
+            
+            <dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>4.1.0</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.seleniumhq.selenium.client-drivers</groupId>
+				<artifactId>selenium-java-client-driver</artifactId>
+				<version>1.0.2</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+											
+            <dependency>
+				<groupId>javax.jms</groupId>
+				<artifactId>javax.jms-api</artifactId>
+				<version>2.0.1-b01</version>
+			</dependency>
+           	       	
+           	<dependency>
+            	<groupId>org.apache.poi</groupId>
+            	<artifactId>poi</artifactId>
+            	<version>3.10-FINAL</version>
+           	</dependency>
+           	
+           	<dependency>
+				<groupId>org.uncommons</groupId>
+				<artifactId>reportng</artifactId>
+				<version>1.1.4</version>
+				        <exclusions>
+				            <exclusion>
+				                <groupId>org.testng</groupId>
+				                <artifactId>testng</artifactId>
+				            </exclusion>
+				        </exclusions>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.maven.surefire</groupId>
+				<artifactId>surefire-api</artifactId>
+				<version>2.18.1</version>
+			</dependency>
+			
+	        <dependency>
+            	<groupId>xml-apis</groupId>
+            	<artifactId>xml-apis</artifactId>
+            	<version>1.4.01</version>
+        	</dependency>
+        	
+        	<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>3.2.8</version>
+			</dependency>
+         	
+    		
+			<dependency>
+				<groupId>net.sourceforge.tess4j</groupId>
+				<artifactId>tess4j</artifactId>
+				<version>2.0.0</version>
+			</dependency>
+			
+		    <dependency>
+		      <groupId>net.lingala.zip4j</groupId>
+		      <artifactId>zip4j</artifactId>
+		      <version>1.3.2</version>
+    		</dependency>
+    
+    		<dependency>
+		      <groupId>com.googlecode.json-simple</groupId>
+		      <artifactId>json-simple</artifactId>
+		      <version>1.1.1</version>
+    		</dependency>
+    
+        <dependency>
+            <groupId>net.lightbody.bmp</groupId>
+            <artifactId>browsermob-proxy</artifactId>
+            <version>2.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+            <dependency>
+		        <groupId>net.lightbody.bmp</groupId>
+		        <!-- To use the legacy, Jetty-based implementation, change the artifactId to browsermob-core -->
+		        <artifactId>browsermob-core-littleproxy</artifactId>
+		        <version>2.1.0-beta-1</version>
+		        <scope>test</scope>
+		    </dependency>
+        
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-gwt</artifactId>
+            <version>18.0</version>
+        </dependency> 
+		    
+		    <dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.35</version>
+			</dependency>
+      	  
+        </dependencies>
+ 
+   <reporting>
+    <outputDirectory>target/site</outputDirectory>
+      <plugins>
+      
+    <plugin>
+      <artifactId>maven-dependency-plugin</artifactId>
+      <version>2.5.1</version>
+      <reportSets>
+        <reportSet>
+          <reports>
+            <report>analyze-report</report>
+          </reports>
+        </reportSet>
+      </reportSets>
+    </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.15</version>
+        <configuration>
+          <configLocation>${basedir}/config/sun_checks.xml</configLocation>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changelog-plugin</artifactId>
+        <version>2.3</version>
+      </plugin>
+      
+      </plugins>
+    </reporting>
+
+  <profiles>
+    <profile>
+      <id>release-profile</id>
+      		<properties>
+				<testng.xml.file>testng.xml</testng.xml.file>
+			</properties>
+      <activation>
+        <property>
+          <name>performRelease</name>
+        </property>
+      </activation>
+   	</profile>
+  </profiles>
+             
+  <build>
+    <plugins>
+      
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+        <version>3.1</version>
+      </plugin>
+      
+  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+			<configuration>
+              <outputDirectory>${project.build.directory}/libs</outputDirectory>              
+            </configuration>   
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>	
+		<configuration>
+			<archive>
+			  <addMavenDescriptor/>
+			  <compress/>
+			  <forced/>
+			  <index/>
+			  <manifest>
+              <addClasspath>true</addClasspath>			    
+              <addDefaultImplementationEntries/>
+			    <addDefaultSpecificationEntries/>
+			    <addExtensions/>
+			    <classpathLayoutType/>
+			    <classpathMavenRepositoryLayout/>
+			    <classpathPrefix>libs/</classpathPrefix>
+			    <customClasspathLayout/>
+				<mainClass>main.java.qa.framework.main.Main</mainClass>
+			    <packageName/>
+			    <useUniqueVersions>true</useUniqueVersions>
+			  </manifest>
+			  <manifestEntries/>
+        			<!-- <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile> -->
+        	  <pomPropertiesFile/>
+			</archive>
+        </configuration>
+		</plugin>
+		
+       <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.5</version>
+            <configuration>
+                <properties>
+                    <property>
+                        <name>usedefaultlisteners</name>
+                        <value>false</value>
+                    </property>
+                   <systemProperties>
+                    <property>
+                        <name>listener</name>
+                        <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                    </property>
+                   </systemProperties>
+                </properties>
+            </configuration>
+        </plugin> 
+        
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/</outputDirectory>
+              <resources>          
+                    <resource>
+        				<directory>${basedir}</directory>
+					        <includes>
+					           	<include>**.xml</include>
+					           	<include>properties.properties</include>
+					        </includes>
+    				</resource>                 
+              </resources>              
+            </configuration>            
+          </execution>
+          
+          <execution>
+            <id>copy-config</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/config</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/config</directory>
+   					    <includes>
+    					    <include>log4j.xml</include>
+    					    <include>log4j.properties</include>    					    
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-libs</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/libs</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/libs</directory>
+   					    <includes>
+    					    <include>**.jar</include>
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-lib</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/lib</directory>                
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-scripts</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/scripts</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/scripts</directory>
+   					    <includes>
+    					    <include>**.sql</include>
+   					    </includes>                  
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+
+          <execution>
+            <id>copy-tessdata</id>
+            <!-- here the phase you need -->
+            <phase>install</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/tessdata</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/tessdata/</directory>                 
+                </resource>
+              </resources>              
+            </configuration>                        
+          </execution>
+                   
+        </executions>
+      </plugin>
+      
+          <plugin>
+    	<groupId>org.apache.maven.plugins</groupId>
+    	<artifactId>maven-eclipse-plugin</artifactId>
+ 		<configuration>
+       			<downloadSources>true</downloadSources>
+      			<downloadJavadocs>true</downloadJavadocs>
+		</configuration>
+	</plugin>
+          
+       <plugin>
+         <inherited>true</inherited>
+         <groupId>org.apache.maven.plugins</groupId>
+         	<artifactId>maven-deploy-plugin</artifactId>
+			<version>2.8.2</version>		
+         	<configuration>
+           <updateReleaseInfo>true</updateReleaseInfo>
+         </configuration>
+       </plugin>
+          
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+        <configuration>
+          <show>private</show>
+          <nohelp>false</nohelp>
+        </configuration>
+      </plugin>
+      
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>saucelabs-repository</id>
+      <url>https://repository-saucelabs.forge.cloudbees.com/release</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    
+    <repository>
+		<id>in-project</id>
+		<name>In Project Repo</name>
+		<url>file://${project.basedir}/libs</url>
+	</repository>
+    
+  </repositories>
+</project>
+
