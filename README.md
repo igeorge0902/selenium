@@ -1,5 +1,8 @@
-Selenium html project
+Selenium html project @George Gaspar
 ---
+
+I have created this test application for html browser testing. The HBO Go steps are originating from my previous workplace, but they are publically available - so no copyright infrigment may apply -  but the guys over there were too lazy to learn and contribute to it, even though I have tried everything to teach them! :)
+
 # Upgraded to Selenium 3.0.1
 
 # Tested on macOs with:
