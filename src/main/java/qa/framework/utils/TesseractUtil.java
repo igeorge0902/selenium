@@ -42,7 +42,7 @@ public class TesseractUtil extends TestBase implements WebElements {
         
         instance.setLanguage("hun");
         
-        String imageFile = "image1.JPG";
+        String imageFile = "image1.jpg";
         BufferedImage image;
         
 		try {

@@ -81,7 +81,13 @@
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>5.1.37</version>
 		</dependency>
-			
+		
+<dependency>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>3.2.1</version>
+</dependency>
+
     
      </dependencies>
  

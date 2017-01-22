@@ -1,8 +1,5 @@
-Selenium html project @George Gaspar
+Selenium html project
 ---
-
-I have created this test application for html browser testing. The HBO Go steps are originating from my previous workplace, but they are publically available - so no copyright infrigment may apply -  but the guys over there were too lazy to learn and contribute to it, even though I have tried everything to teach them! :)
-
 # Upgraded to Selenium 3.0.1
 
 # Tested on macOs with:
@@ -54,10 +51,6 @@ TestNG listeners:
 ----
 The listeners are used to collect the test results, capture screenshots and for reporting. You need to annotate your listeners in your test classes, each. ReportNG is a custom reporting tool for TestNG, which had to be declared in the testng xml file.
 
-Database connection:
-----
-In order to successfully estabilish the database connection make sure the database user has sufficient rights to the schema. You can do it upfront by creating the schema and then grant the user the schema privileges. Important: if you use autocommit flag = true in your MySql settings you may comment out the corresponding lines in SQLAccess class, otherwise you must use it. 
-
 Data providing for tests with TestNG:
 ----
 - the main.java.qa.framework.utils/SampleDataProvider.java class implements the @DataProvider annotation, which takes in a file as parameter as follows:
@@ -68,7 +61,9 @@ String inputFile = context.getCurrentXmlTest().getParameter("filenamePathWin");
 
 It also uses a private static method to read the file line by line:
 
+```java
 private static List<String> getFileContentList(String filenamePath) {}
+```
 
 Then you have to reference the "filenamePathWin" in the testng xml file as a parameter. The path is relative to your project root in this example:
 

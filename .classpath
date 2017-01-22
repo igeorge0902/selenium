@@ -16,7 +16,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/ghost4j-0.5.1.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/jai_imageio.jar"/>
 	<classpathentry kind="lib" path="/Users/georgegaspar/Documents/workspace/Selenium_Testlink/lib/tess4j.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
